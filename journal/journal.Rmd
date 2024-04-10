@@ -1,5 +1,5 @@
 ---
-title: "Measuring Children's Early Vocabulary in Low-Resource Languages Using a Swadesh-style Word List"
+title: "Measuring children's early vocabulary in low-resource languages using a Swadesh-style word list"
 bibliography: library.bib
 document-params: "10pt, letterpaper"
 
@@ -9,7 +9,7 @@ author-information: >
     \AND {\large \bf Virginia A. Marchman (marchman@stanford.edu)}^{1} 
     \AND {\large \bf Philip S. Dale (dalep@unm.edu)}^{2}
     \AND {\large \bf Michael C. Frank (mcfrank@stanford.edu)}^1 \\ ^{1}Department of Psychology, Stanford University \\
-      ^{2}Department of Speach and Hearing Sciences, University of New Mexico}
+      ^{2}Department of Speech and Hearing Sciences, University of New Mexico}
 
 abstract: >
     Early language skill is predictive of later life outcomes, and is thus of great interest to
