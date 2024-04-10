@@ -47,7 +47,8 @@ make_data <- function(language, forms, new_items) {
   all_long <- c()
   
   for (form in forms) {
-    d_demo <- get_administration_data(language = language, form = form) 
+    d_demo <- get_administration_data(language = language, form = form,
+                                      filter_age = FALSE) 
     
     items <- get_item_data(language = language, form = form) |> 
       filter(item_kind == "word") 

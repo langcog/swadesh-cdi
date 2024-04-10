@@ -58,6 +58,7 @@ for (language in languages) {
 }
 ```
 
+
 # IRT modelling and parameter extraction
 Run 2PL models
 ```{r}
@@ -72,6 +73,31 @@ for (language in setdiff(languages, completed)) {
   run_2PL_model(language)
 }
 ```
+
+Get demographics
+```{r}
+demog <- lapply(languages, \(language) {
+  lang_data <- readRDS(glue("data/all_forms/{language}_data.rds"))
+  # FIXME: all_demo is wrong---maybe because of filter_age
+  lang_data$all_long |> 
+    select(language, data_id, form_type) |> 
+    distinct() |> 
+    count(language, form_type)
+}) |> bind_rows()
+
+included <- sapply(languages, \(language) {
+  model <- readRDS(glue("data/prod_models/{language}_2PL_allforms_prod_fits.rds"))
+  model$model@Data$data |> nrow()
+})
+
+demog <- demog |> 
+  pivot_wider(names_from = form_type,
+              values_from = n) |> 
+  mutate(included = included)
+
+saveRDS(demog, "data/intermediates/demographics.rds")
+```
+
 
 Collapse cross-linguistic item parameters
 ```{r eval=F}
