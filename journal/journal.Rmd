@@ -225,67 +225,21 @@ All uni-lemmas are accessible from Wordbank; details about the recent update can
 
 ### Participants
 
-
 ```{r participant-data, eval=F, echo=F}
-# demo <- tibble()
-# for(lang in train_langs) {
-#   tmp <- readRDS(here(paste0("data/all_forms/",lang,"_data.rds")))
-#   demo <- bind_rows(demo, tmp$all_demo %>% 
-#                       select(data_id, age, production, language, form))
-# }
-# save(demo, file=here("data/all_demographic_data.Rdata"))
-
-demo <- tibble()
-WG_files <- list.files(path="../data/WG", pattern = "*.Rdata", full.names = T)
-for(file in WG_files) {
-  load(file)
-  demo <- bind_rows(demo, d_demo %>% 
-                      select(data_id, age, production, language))
-}
-save(demo, file=here("data/WG_combined_demo.Rdata"))
-```
-
-```{r combined-demo-data, echo=F}
-# where was this made?
-load(here("data/WS_combined_demo.Rdata"))
-demo_ws <- demo %>% mutate(form = "WS")
-
-load(here("data/WG_combined_demo.Rdata"))
-demo <- demo %>% mutate(form = "WG") %>%
-  bind_rows(demo_ws)
-
-# cor.test(demo$age, demo$production, na.rm=T) # r=.70
-
-# 45402 in the 26 high-data languages
-demo_age <- demo %>% group_by(language) %>%
-  summarise(n = n(), age = mean(age))
-
-# table(demo$form)
-# lots of non-WS/WG forms in here -- do we use all of those??
-
-#demo %>% 
-#  ggplot(aes(x=age, fill=language, color=language)) + 
-#    geom_histogram(position="identity", alpha=0.2)
-
-wg_ws_tab <- demo %>% 
-  filter(form=="WG" | form=="WS") %>%
-  group_by(language, form) %>%
-  summarise(n = n()) %>%
-  pivot_wider(id_cols = "language", names_from = "form", values_from = "n")
-
-wg_ws_tab %>%
+readRDS("data/intermediates/demographics.rds") |> 
   kable()
 ```
 
 
-The Wordbank[^2] datasets consisted of CDI:WS production data for `r nrow(demo %>% filter(form=="WS"))` children aged 16--30 months and CDI_WG production data from `r nrow(demo %>% filter(form=="WG"))` children aged 8--18 months
-on `r sum(all_tab$items)` items across `r nrow(all_tab)` forms.
+The Wordbank[^2] datasets consisted of CDI:WS production data for `r nrow(demo %>% filter(form=="WS"))` children aged 16--30 months and CDI:WG production data from `r nrow(demo %>% filter(form=="WG"))` children aged 8--18 months
+on `r sum(all_tab$items)` items across `r nrow(all_tab)` forms.[^3]
 Note that the distributions of demographic variables (age, sex, etc.) of these datasets are not matched, so comparing overall language ability estimates across languages would be ill-advised. 
 (See @frank2021 for a discussion of effects of demographic variables on vocabulary development.) 
 Thus, we focused only on the estimated item parameters, and in particular the variability of item difficulty ($b_i$).
 
 [^2]: [http://wordbank.stanford.edu/contributors](http://wordbank.stanford.edu/contributors)
 
+[^3]: Note that Wordbank contains some forms which are neither WS nor WG (e.g., TC in Mandarin (Beijing), Form A in American Sign Language). In Wordbank all forms have been assigned a form type (WS or WG) which broadly reflects the intended age range for the form, and the demographics table more precisely reflects the number of participants for each form type.
 
 
 ### Instruments
