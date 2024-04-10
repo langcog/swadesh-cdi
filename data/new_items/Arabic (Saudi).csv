@@ -1,0 +1,926 @@
+﻿WS,WG,category,definition,gloss,uni_lemma
+item_1,item_32,sounds,(صوت الغنمة) باع باع/ ماء ماء/ باء باء,"Sheep sound: baa baa, maa maa",baa baa
+item_2,item_38,sounds,(صوت القطة) مياو/ ميوميو,Cat sound: meow meow,meow
+item_3,item_44,sounds,(للتعبير عن الرغبة في الأكل) إممم/ هم هم,"To express desire to eat: amm, hm hm",
+item_4,item_33,sounds,(صوت السيارة) بيب بيب/ عن عن/ أن أن,"Car sound: beep beep, ann ann",beep beep
+item_5,item_39,sounds,(صوت البكاء) واء واء,Crying sound: wa wa,
+item_6,,sounds,(صوت الديك) كوكوكو/ أوأوأواو/ كككوو,"Rooster sound: ko ko ko, aw aw aw",cockadoodledoo
+item_7,,sounds,(صوت القطار) تشو تشو/ تووت تووت,Train sound: choo choo,choo choo
+item_8,,sounds,(صوت البقرة) مووو,Cow sound: moo,moo
+item_9,item_45,sounds,(للتعبير عن المفاجأة) واو,To express surprise: wow ,wow
+item_10,item_34,sounds,(للتعبير عن الألم) أي/أفو/واوا/ دا/ وا/ أح/ اه,"Sounds used to express pain: aay, afo, wawa, da, wa, ah",ouch
+item_11,item_40,sounds,(للتعبير عن طاح) دو,To express something has fallen down: doo,
+item_12,item_46,sounds,(للرائحة الكريهة) أفو/ إف,"To express something has a bad smell: aphw, eph",
+item_13,item_35,sounds,(صوت العصفور) سَوسَو/ صَوصَو,Bird sound: saw saw,
+item_14,item_41,sounds,(صوت المسدس) طع طع/ طخ طخ,"Gunshot sound: ta ta, tak tak",
+item_15,item_47,sounds,(للتعبير عن عدم الرغبة/ القرف)  يع/ يخ/ إخ/ إع,"To express refusal and disgust: ya, yakh, akh, e’e",yuck
+item_16,item_36,sounds,(للتعبير عن الحرارة)  أح/ أوف,"To describe something hot: ah, of",
+item_17,item_42,sounds,(للتعبير عن لذيذ) يمي يمي,To express something is delicious: yummy yummy,yum yum
+item_18,item_48,sounds,(صوت الكلب) وو/ هوهو,Dog sound: haw haw,woof woof
+item_19,,sounds,(صوت الدباب) فوووم فرووم/ بووم بووم,"Motorcycle sound: voom voom, boom boom",vroom
+item_20,item_43,sounds,(للتعبير عن الطفش) ووف/ اوف,"To express boredom: woof, off",
+item_21,item_49,sounds,(صوت الديك الرومي) كوكادوودليدوو,Turkey sound: cockadoodledoo ,
+item_22,,sounds,(صوت الذئب) قرررررر/ أووو,"Wolf sound: grrrr, awww",grrr
+item_23,item_50,sounds,(للتعبير عن الموافقة) آه/ ايوه/ ايه,"To express agreement: ah, ewah, eeh = [yes]",
+item_24,,sounds,(صوت الغراب) واق واق,Crow sound: waq waq ,
+item_25,item_37,sounds,(صوت الوحش) عووو/ أوو/ هووو,"Monster sound: aww, haw",grrr
+item_26,item_51,sounds,(صوت البطة) كواك كواك,Duck sound: quack quack,quack quack
+item_27,,sounds,(صوت الذبابة) ززززز,Fly sound: zzzz,
+item_28,item_52,animals,خروف,Sheep  ,sheep
+item_29,item_61,animals,حمامة,Pigeon  ,pigeon
+item_30,item_70,animals,حيوانات,Animals ,animal
+item_31,item_53,animals,قطة (بسة/ هره/ بسبوسه),Cat ,cat
+item_32,item_62,animals,عنزة (معزة/ غنمة),Goat ,goat
+item_33,item_71,animals,(الحصان الصغير) سي سي,Pony ,pony
+item_34,,animals,حصان,Horse ,horse
+item_35,item_63,animals,سمكة,Fish ,fish (animal)
+item_36,,animals,نمر,Tiger ,tiger
+item_37,,animals,جمل,Camel ,camel
+item_38,,animals,فيل,Elephant ,elephant
+item_39,,animals,سلحفاة,Turtle ,turtle
+item_40,,animals,كلب,Dog ,dog
+item_41,,animals,دب (دبدوب),Teddy/ bear ,teddybear
+item_42,item_74,animals,ضفدع,Frog ,frog
+item_43,,animals,دجاجة,Chicken ,chicken
+item_44,,animals,زرافة,Giraffe ,giraffe
+item_45,item_69,animals,نملة,Ant,ant
+item_46,,animals,فأر,Mouse ,mouse
+item_47,,animals,ارنب (ارنوب),Bunny/ rabbit ,bunny
+item_48,,animals,فراشة,Butterfly ,butterfly
+item_49,,animals,بطة,Duck ,duck
+item_50,item_68,animals,قرد,Monkey ,monkey
+item_51,item_77,animals,ذبابة (دُبّانة),Fly ,fly (animal)
+item_52,item_54,animals,عصفور/ عصفورة,Sparrow ,sparrow
+item_53,item_72,animals,صرصور/ صرصار,Cockroach,cockroach
+item_54,item_55,animals,بعوضة (ناموسة),Mosquito ,mosquito
+item_55,,animals,بومة,Owl ,owl
+item_56,,animals,بطريق,Penguin ,penguin
+item_57,,animals,دايناصور,Dinosaur ,dinosaur
+item_58,,animals,سنجاب,squirrel,squirrel
+item_59,,animals,نحلة,Bee  ,bee
+item_60,,animals,تمساح,Crocodile ,crocodile
+item_61,item_64,animals,غزال,Deer,deer
+item_62,item_57,animals,حمار,Donkey  ,donkey
+item_63,item_76,animals,وزة,Goose ,goose
+item_64,item_73,animals,ديك,Rooster ,rooster
+item_65,item_66,animals,بقرة,Cow  ,cow
+item_66,item_59,animals,ذئب,Wolf  ,wolf
+item_67,item_56,animals,حيوان,Animal ,animal
+item_68,item_58,animals,دودة,Worm  ,worm
+item_69,item_60,animals,ثور,Bull ,bull
+item_70,,animals,تيس,he-goat,goat
+item_71,,animals,خنزير,Pig  ,pig
+item_72,item_75,animals,نملة,Ant.2,ant
+item_73,,animals,صوص,Chick,chick
+item_74,,animals,حنطور,Carriage,
+item_75,item_582,animals,عنكبوت,Spider   ,spider
+item_76,,animals,ديك رومي,Turkey ,turkey
+item_77,,animals,وزغة,Gecko ,lizard
+item_78,item_583,animals,أسد,Lion ,lion
+item_79,,animals,ضب,Lizard ,lizard
+item_80,item_67,animals,جرو,Puppy  ,puppy
+item_81,item_78,animals,غراب,Crow ,crow
+item_82,item_65,animals,طائر/ طير,Bird  ,bird
+item_83,,animals,فهد,Leopard ,leopard
+item_84,item_79,toys,كرة (كورة),Ball ,ball
+item_85,item_87,toys,مشاية,Walker ,walker
+item_86,item_95,toys,قلم,Pen ,pen
+item_87,,toys,ورق ملون,Colored paper ,paper
+item_88,item_88,toys,مقص,Scissors ,scissors
+item_89,item_96,toys,كتاب,Book ,book
+item_90,item_81,toys,صمغ/ غراء (غرا),Glue ,glue
+item_91,item_89,toys,شخصيات كرتونية (يرجى التحديد),Cartoon characters (please specify) ,
+item_92,item_97,toys,صلصال (عجينة),Playdough ,play dough
+item_93,item_82,toys,بالونة / نفيخة,Balloon,balloon
+item_94,item_90,toys,فقاعات الصابون,Bubbles ,bubbles
+item_95,,toys,مضرب,Racket,racket
+item_96,item_83,toys,مكعبات,Blocks  ,blocks
+item_97,item_91,toys,لعبة,Toy ,toy (object)
+item_98,item_99,toys,طباشير,Chalks ,chalk
+item_99,item_84,toys,الوان (تلاوين),Colors ,colors
+item_100,item_92,toys,عروسة,Doll ,doll
+item_101,item_100,toys,قلم رصاص,Pencil ,pencil
+item_102,item_85,toys,هدية,Gift ,present
+item_103,item_93,toys,حكاية/ قصة,Story ,story
+item_104,item_101,toys,سكوتر,Scooter ,scooter
+item_105,item_86,toys,بلاي ستيشن,Playstation ,
+item_106,,toys,قالب,playdough molds?,
+item_107,item_103,toys,مصاصة,Pacifier ,pacifier
+item_108,item_102,toys,ألعاب,Toys ,toy (object)
+item_109,item_94,toys,صندوق ألعاب,Toy box ,
+item_110,item_98,toys,جيم بوي,Game boy ,
+item_111,item_80,toys,خشخيشة,Rattle ,
+item_112,,toys,مساحة,Eraser ,eraser
+item_113,,toys,دائرة,Circle ,circle
+item_114,item_104,vehicles,سيارة,Car ,car
+item_115,,vehicles,وانيت/ ونيت,Pickup truck,truck
+item_116,,vehicles,سيارة بوليس,Police car ,police car
+item_117,item_105,vehicles,طائرة (طيارة),Airplane ,airplane
+item_118,,vehicles,سفينة,Ship ,ship
+item_119,,vehicles,سكيت,Skating shoes,skates
+item_120,,vehicles,شاحنة ( ترلة),Truck ,truck
+item_121,item_110,vehicles,قطار,Train ,train
+item_122,item_114,vehicles,هيليوكوبتر,Helicopter ,helicopter
+item_123,item_106,vehicles,دراجة (بسكليتة/ سيكل),Bicycle ,bicycle
+item_124,item_111,vehicles,دباب (دبابة/ موتور),Motorcycle ,motorcycle
+item_125,,vehicles,قارب/زورق/ مركب,Boat ,boat
+item_126,,vehicles,عجلة,Wheel,wheel
+item_127,item_107,vehicles,إسعاف,Ambulance ,ambulance
+item_128,item_113,vehicles,مطافئ/ إطفاء,Fire fighting ,firetruck
+item_129,,vehicles,حافلة/ باص/ اتوبيس,Bus ,bus
+item_130,item_112,vehicles,عربة أطفال (عربية),Stroller ,stroller
+item_131,item_109,vehicles,تاكسي/ تكسي,Taxi ,taxi
+item_132,item_108,vehicles,السكوتر,Scooter,scooter
+item_133,item_115,food_drink,تمر,Dates ,
+item_134,item_130,food_drink,توست,Toast (bread),toast
+item_135,item_143,food_drink,سمك,Fish ,fish (food)
+item_136,item_116,food_drink,بسكويت/ بسكوت,Biscuits,biscuit
+item_137,item_131,food_drink,مخلل (طرشي),Pickles ,pickle
+item_138,item_144,food_drink,حليب,Milk ,milk
+item_139,item_117,food_drink,حلاوة,Candy ,candy
+item_140,item_132,food_drink,سلطة,Salad ,salad
+item_141,item_145,food_drink,جيلي,Gello ,jelly
+item_142,item_118,food_drink,حلاوة مصاصة,Lollipop ,lollipop
+item_143,,food_drink,طماطم,Tomatoes ,tomato
+item_144,item_146,food_drink,شوربة,Soup ,soup
+item_145,item_119,food_drink,شوكولاتة,Chocolate ,chocolate
+item_146,item_134,food_drink,جبن (جبنة),Cheese ,cheese
+item_147,item_147,food_drink,فستق,Pistachio,nut
+item_148,item_120,food_drink,أكل,Food ,food
+item_149,item_135,food_drink,خيار,Cucumber ,cucumber
+item_150,item_148,food_drink,لوز,almonds,nut
+item_151,item_121,food_drink,أرز (رز),Rice ,rice
+item_152,item_136,food_drink,جزر/ جزرة,Carrot ,carrot
+item_153,,food_drink,فصفص,Seeds,
+item_154,,food_drink,ساندويتش/ سندويتش,Sandwich ,sandwich
+item_155,,food_drink,كريم كراميل/ كريمة,Cream caramel/ flan ,
+item_156,item_150,food_drink,لبن رائب (شرب),Buttermilk ,
+item_157,item_123,food_drink,سكر,Sugar ,sugar
+item_158,,food_drink,مربى,Jam ,jam
+item_159,,food_drink,طعمية,Falafel ,
+item_160,,food_drink,ملح,Salt ,salt
+item_161,,food_drink,فشار,Popcorn ,popcorn
+item_162,,food_drink,زبيب,Raisins ,raisin
+item_163,,food_drink,فلفل,Pepper ,pepper
+item_164,item_140,food_drink,حلويات,Candies ,candy
+item_165,,food_drink,معمول,Ma'amoul,
+item_166,item_126,food_drink,تفاح/ تفاحة,Apple ,apple
+item_167,item_141,food_drink,شابورة,Rusk  ,
+item_168,,food_drink,مكرونة,Pasta ,pasta
+item_169,item_127,food_drink,دواء (دوا),Medicine ,medicine
+item_170,item_142,food_drink,هامبورجر,Hamburger ,hamburger
+item_171,,food_drink,فراولة,Strawberry,strawberry
+item_172,item_157,food_drink,موز/ موزة,Banana ,banana
+item_173,item_160,food_drink,بطاطس,Potato,potato
+item_174,,food_drink,تونة,Tuna ,tuna
+item_175,,food_drink,عنب,Grapes ,grapes
+item_176,,food_drink,تشيبس/ تشيبسي,Chips ,chips
+item_177,,food_drink,كاتشب,Ketchup  ,ketchup
+item_178,item_159,food_drink,حبحب/ بطيخ,Watermelon ,watermelon
+item_179,,food_drink,زبدة,Butter ,butter
+item_180,item_165,food_drink,عصير,Juice ,juice
+item_181,item_129,food_drink,برتقال/ برتقالة,Orange ,orange
+item_182,item_162,food_drink,عسل,Honey ,honey
+item_183,item_164,food_drink,ماء (مويا/ بو/ امبو),Water ,water (beverage)
+item_184,item_161,food_drink,ثلج,Ice ,ice
+item_185,item_156,food_drink,زيت,Oil ,oil
+item_186,,food_drink,شاي (شاهي),Tea ,tea
+item_187,item_128,food_drink,كمثرى,Pears ,pear
+item_188,,food_drink,زبدة لوز,Almond butter ,
+item_189,,food_drink,قهوة,Coffee ,coffee
+item_190,,food_drink,بيتزا,Pizza ,pizza
+item_191,item_155,food_drink,خس,Lettuce ,lettuce
+item_192,item_158,food_drink,بان كيك,Pancake ,pancake
+item_193,,food_drink,رقائق (كورن فليكس),Cornflakes,cereal
+item_194,,food_drink,سمبوسك/ سمبوسة,Samosa ,samosa
+item_195,item_163,food_drink,يوسفي/ يوسف افندي,Tangerine ,tangerine
+item_196,item_153,food_drink,بيض,Eggs ,egg
+item_197,item_154,food_drink,دجاج/ توتو,Chicken ,chicken
+item_198,item_125,food_drink,بيبسي,Pepsi ,coke
+item_199,item_139,food_drink,كيك,Cake ,cake
+item_200,,food_drink,لحم,Meat ,meat
+item_201,item_152,food_drink,رضاعة,Feeding bottle ,bottle
+item_202,item_151,food_drink,ايس كريم,Ice-cream ,ice cream
+item_203,,food_drink,ذرة,Corn ,corn
+item_204,,food_drink,كوسة,Zucchini ,zucchini
+item_205,item_138,food_drink,عيش/ خبز,Bread ,bread
+item_206,,food_drink,دونات,Doughnut,donut
+item_207,item_124,food_drink,ليمون,Lemon ,lemon
+item_208,,food_drink,لبانة,Gum ,gum
+item_209,,food_drink,فاصوليا,Beans ,beans
+item_210,,food_drink,كرز,Cherry ,cherry
+item_211,item_149,food_drink,لبن/ زبادي,Yogurt ,yogurt
+item_212,,food_drink,فيتامين,Vitamin,vitamin
+item_213,,food_drink,مرقوق,Margoog (traditional dish) ,
+item_214,item_122,food_drink,بطاطس مقلية/ بطاطس,Fries ,fries
+item_215,item_137,food_drink,فاكهة,Fruit,fruit
+item_216,,food_drink,صلصة,Sauce ,sauce
+item_217,,food_drink,ملوخية,Mulukhiyah,
+item_218,,food_drink,بازاليا/ بازيلاء,Peas,peas
+item_219,,food_drink,صامولي,Hot dog buns  ,
+item_220,,food_drink,قشطة,Heavy cream ,
+item_221,,food_drink,لحوح,Lahooh (traditional dish),
+item_222,item_133,food_drink,سيريلاك,Cerelac ,cereal
+item_223,item_166,clothing,ثوب,Thoub (Saudi dress for men),
+item_224,,clothing,تنورة,Skirt,skirt
+item_225,item_181,clothing,قبعة,Cap,cap
+item_226,item_167,clothing,فستان,Dress,dress (object)
+item_227,,clothing,طرحة,Head scarf,
+item_228,item_177,clothing,جاكيت,Coat,coat
+item_229,,clothing,بلوزة,Shirt ,shirt
+item_230,item_176,clothing,كفية/  طاقية,Taqiyah (head cap),
+item_231,item_182,clothing,بيجامة,Pajamas,pajamas
+item_232,item_168,clothing,بنطلون,Pants ,pants
+item_233,,clothing,غترة,Gutrah (head wear for men usually white in color),
+item_234,item_183,clothing,حذاء (جزمة),Shoes ,shoe
+item_235,item_169,clothing,مريلة,Apron ,apron
+item_236,,clothing,شماغ,Shemagh (head wear for men usually red in color) ,
+item_237,item_184,clothing,جورب (شراب),Socks ,sock
+item_238,item_170,clothing,فلينة/فنيلة,Undershirt ,undershirt
+item_239,,clothing,جاكيت/ بالطو,Coat ,coat
+item_240,item_185,clothing,شبشب,Slipper ,slipper
+item_241,item_171,clothing,سلسلة/عقد,Necklace ,necklace
+item_242,,clothing,ساعة,Clock/ watch?,clock
+item_243,item_186,clothing,صندل,Sandal ,sandal
+item_244,,clothing,حلق,Earings ,earrings
+item_245,,clothing,اسورة,Bracelet ,bracelet
+item_246,item_187,clothing,بكلة/ توكة,Hair tie,hair tie
+item_247,,clothing,خاتم,Ring ,ring
+item_248,item_178,clothing,نظارة (نضارة/ عوينات),Glasses ,glasses
+item_249,,clothing,قميص,Shirt ,shirt
+item_250,,clothing,حزام,Belt ,belt
+item_251,,clothing,قفاز (جونتي),Gloves ,gloves
+item_252,item_188,clothing,طوق,Headband (for women) ,headband
+item_253,item_172,clothing,كوفلة,Swaddle ,
+item_254,item_179,clothing,سحاب (سوستة),Zipper ,zipper
+item_255,,clothing,شريطة,Ribbon ,ribbon
+item_256,item_173,clothing,بربتوز,Baby bodysuits  ,
+item_257,,clothing,عقال,Igal (black headband) ,headband
+item_258,,clothing,شورت,Shorts ,shorts
+item_259,item_174,clothing,حفائض/ حفاظة (حفاضة/ مبامبز),Diapers ,diaper
+item_260,,clothing,زر/زرارر (أزرار),button,button
+item_261,item_189,clothing,سروال داخلي (كلسون),Underpants,underpants
+item_262,,clothing,جينز,Jeans ,jeans
+item_263,item_180,clothing,طربوش,Tarboosh (head wear for men),hat
+item_264,item_190,clothing,سروال (سروال طويل),Long sirwal (white pants worn by men under Thoub),pants
+item_265,item_175,clothing,عباية,Abaya,
+item_266,item_191,body_parts,عين,Eye ,eye
+item_267,item_197,body_parts,وجه (وش),Face ,face
+item_268,,body_parts,حاجب/ حواجب,Eyebrow ,eyebrow
+item_269,item_192,body_parts,فم,Mouth ,mouth
+item_270,,body_parts,رقبة,Neck ,neck
+item_271,,body_parts,ركبة,Knee ,knee
+item_272,item_193,body_parts,انف (خشم/ خيشوم/ نخرة),Nose ,nose
+item_273,item_198,body_parts,اصبع/ اصبع  القدم,Toe ,toe
+item_274,item_200,body_parts,مؤخرة (حسب مايطلق عليها في البيت),Butt ,butt
+item_275,item_194,body_parts,أذن,Ear ,ear
+item_276,item_207,body_parts,يد,Hand ,hand
+item_277,,body_parts,مرفق (كوع),Elbow ,elbow
+item_278,item_203,body_parts,شعر,Hair ,hair
+item_279,item_208,body_parts,رجل,Leg  ,leg
+item_280,item_201,body_parts,أسنان (سن),Teeth ,tooth
+item_281,item_204,body_parts,رأس,Head ,head
+item_282,,body_parts,ظهر,Back ,back
+item_283,,body_parts,كعب,Heel ,heel
+item_284,item_205,body_parts,خد,Cheek ,cheek
+item_285,item_209,body_parts,لسان,Tongue ,tongue
+item_286,item_202,body_parts,سرة البطن,Belly button ,belly button
+item_287,item_206,body_parts,ذقن,Chin ,chin
+item_288,,body_parts,قدم,Foot ,foot
+item_289,item_211,body_parts,كف,Palm ,palm
+item_290,item_195,body_parts,كتف ,Shoulder ,shoulder
+item_291,item_210,body_parts,شفاه (شفايف),Lips ,lips
+item_292,,body_parts,ساق,Leg ,leg
+item_293,,body_parts,فخذ,Thigh ,thigh
+item_294,item_199,body_parts,صدر,Chest ,
+item_295,item_212,body_parts,جبهة (جبين),Forehead ,forehead
+item_296,,body_parts,إظفر (ظفر),Nail ,nail
+item_297,,body_parts,ذراع,Arm ,arm
+item_298,,body_parts,إبهام,Thumb ,thumb
+item_299,item_196,body_parts,إبط (باط),Underarm ,
+item_300,,body_parts,رمش/ رموش,Eyelashes ,eyelash
+item_301,item_213,body_parts,بطن,Belly ,tummy
+item_302,item_214,household,بطانية/ لحاف,Blanket ,blanket
+item_303,item_230,household,شوكة,Fork ,fork
+item_304,item_246,household,منشفة/ محرمة,Towel ,towel
+item_305,item_215,household,سلة,Basket ,basket
+item_306,,household,سكينة,Knife ,knife
+item_307,,household,كاميرة,Camera ,camera
+item_308,item_216,household,سلة قمامة (زبالة/ كدافة),Trash can ,trash can
+item_309,item_232,household,كأس (كأسة/ كباية),Glass (to drink),cup
+item_310,item_248,household,ضوء/ لمبة (نور),Lamp/ light,lamp
+item_311,item_217,household,مخدة (مخدة),Pillow ,pillow
+item_312,item_233,household,فرشاة أسنان,Tooth brush ,toothbrush
+item_313,,household,معجون اسنان,Toothpaste ,toothpaste
+item_314,,household,مجلة,Magazine ,
+item_315,,household,شرشف,Sheet ,sheet
+item_316,,household,زرعة,Plant ,plant
+item_317,item_219,household,فرشاة شعر,Hair brush ,brush (object)
+item_318,item_235,household,تلفزيون,Television  ,television
+item_319,,household,ابرة,Needle ,needle
+item_320,item_220,household,مشط,Comb ,comb (object)
+item_321,item_236,household,فيديو,Video ,video
+item_322,item_252,household,حقيبة/شنطة,Bag ,bag
+item_323,,household,البوم صور,Album (photo),album
+item_324,item_237,household,صينية (تيبسي),Tray ,tray
+item_325,item_253,household,مكوى,Iron ,iron
+item_326,item_221,household,صابون,Soap ,soap
+item_327,item_238,household,هاتف/ تلفون,Telephone ,telephone
+item_328,,household,غلاية (كفتيرة),Kettle ,kettle
+item_329,,household,شريط,Cassette tape ,tape (object)
+item_330,item_229,household,نقود (فلوس/ ريال),Money ,money
+item_331,,household,فوطة (خرقة/ بشكير),Rag,rag
+item_332,,household,مسجل,Recorder ,
+item_333,,household,صورة,Photo ,photo
+item_334,item_255,household,كبريت,Matches ,matches
+item_335,item_222,household,صحن,Plate ,plate
+item_336,item_245,household,منديل,Tissue  ,tissue
+item_337,item_256,household,شمعة,Candle ,candle
+item_338,item_223,household,كوب,Mug ,mug
+item_339,item_239,household,ورقة,Paper ,paper
+item_340,item_240,household,مكينة حلاقة,Shaver ,
+item_341,item_224,household,فنجان,Cup ,cup
+item_342,item_225,household,مفتاح,Key ,key
+item_343,item_258,household,سشوار/ استشوار,Hair dryer ,hair dryer
+item_344,item_227,household,لهاية/ مصاصة/ كدابة,Pacifier ,pacifier
+item_345,,household,زبدية/ سلطانية,Bowl ,bowl
+item_346,item_257,household,جهاز التحكم (ريموت),Remote control ,remote control
+item_347,item_228,household,ملعقة,Spoon ,spoon
+item_348,item_244,household,ممسحة أرض,Floor wiper ,
+item_349,item_226,household,مطرقة (شاكوش),Hammer ,hammer
+item_350,item_243,household,مقشة/ مكنسة,Broom,broom
+item_351,,household,راديو,Radio ,radio
+item_352,,household,فانوس,Lantern ,
+item_353,item_242,household,تحفة,Decorative accent,
+item_354,item_259,household,طاوة/ صاج,Frying pan ,pan
+item_355,item_254,household,ساعة,Watch/ clock ,clock
+item_356,item_250,household,كيس,Carry bag,bag
+item_357,item_241,household,قارورة/ زجاجة,Glass bottle ,bottle
+item_358,item_251,household,عطر (كولونيا),Perfume ,perfume
+item_359,,household,مصباح/ قنديل,lantern/ lamp ,lamp
+item_360,,household,جك/ مغرف,Jug ,jug
+item_361,item_218,household,قدر,Pot ,pot
+item_362,,household,علبة,Container ,box
+item_363,,household,صندوق/ كرتون,Box ,box
+item_364,,household,لصق,Tape ,tape
+item_365,,household,زجاج,Glass (material),
+item_366,item_234,household,محفظة,Wallet ,wallet
+item_367,item_231,household,جوال,Phone ,phone
+item_368,item_247,household,روج,Lipstick ,
+item_369,,household,ولاعة,Lighter ,lighter
+item_370,,household,سطل/ دلو/ برميل (ابالدي),Pail ,bucket
+item_371,item_249,household,مرتبة (طراحة/ طوالة),Mattress  ,
+item_372,,household,قرص مرن ( سي دي),CD,CD
+item_373,item_260,furniture_rooms,حمام,Bathroom ,bathroom
+item_374,,furniture_rooms,فرن,Stove ,stove
+item_375,,furniture_rooms,غسالة,Washing machine ,washing machine
+item_376,item_261,furniture_rooms,بانيو,Bathtub ,bathtub
+item_377,item_271,furniture_rooms,بوتوجاز,Cooker ,stove
+item_378,item_281,furniture_rooms,كومودينو,Side table ,table
+item_379,item_262,furniture_rooms,مغسلة (حوض),Sink ,sink
+item_380,item_272,furniture_rooms,ثلاجة,Fridge ,refrigerator
+item_381,item_282,furniture_rooms,مكنسة كهربائية,Vacuum machine ,vacuum
+item_382,,furniture_rooms,كرسي حمام,Toilet seat ,
+item_383,,furniture_rooms,غرفة/ دار,Room ,room
+item_384,,furniture_rooms,مكيف,Air conditioner ,air conditioner
+item_385,item_264,furniture_rooms,غرفة نوم,Bedroom ,bedroom
+item_386,item_274,furniture_rooms,دُرج,Drawer ,drawer
+item_387,item_284,furniture_rooms,مروحة,Fan ,fan
+item_388,item_265,furniture_rooms,سرير,Bed ,bed
+item_389,item_275,furniture_rooms,دُش,Shower ,shower
+item_390,item_285,furniture_rooms,مرآة (مراية),Mirror ,mirror
+item_391,,furniture_rooms,تسريحة,Vanity table ,table
+item_392,item_276,furniture_rooms,كرسي,Chair ,chair
+item_393,item_286,furniture_rooms,كمبيوتر,Computer  ,computer
+item_394,,furniture_rooms,دفاية,Heater ,
+item_395,,furniture_rooms,نجفة,Chandeliers ,lamp
+item_396,,furniture_rooms,سطوح/ سطح,Rooftop ,roof
+item_397,item_268,furniture_rooms,غرفة معيشة/ مجلس/ جلسة,Living room ,living room
+item_398,item_278,furniture_rooms,غرفة سفرة/ غرفة الأكل,Dining room ,dining room
+item_399,,furniture_rooms,طاولة (طربيزة/ ماصة),Table ,table
+item_400,item_269,furniture_rooms,خزانة (دولاب/ كبت),Closet ,closet
+item_401,item_267,furniture_rooms,باب,Door ,door
+item_402,,furniture_rooms,قصرية,Potty ,potty
+item_403,item_289,furniture_rooms,شباك (طاقة),Window ,window
+item_404,,furniture_rooms,صالون,Salon ,
+item_405,,furniture_rooms,كرسي هزاز,Rocking chair ,rocking chair
+item_406,item_279,furniture_rooms,مطبخ,Kitchen ,kitchen
+item_407,item_288,furniture_rooms,كنبة,Couch ,couch
+item_408,item_287,furniture_rooms,درج/ سلالم,Stairs ,stairs
+item_409,,furniture_rooms,بدروم/ قبو,Basement ,basement
+item_410,,furniture_rooms,نشافة,Dryer ,dryer
+item_411,,furniture_rooms,جراج/ كراج,Garage ,garage
+item_412,item_277,furniture_rooms,هندول,Crib ,crib
+item_413,,furniture_rooms,بلكونة,Balcony ,balcony
+item_414,item_266,furniture_rooms,سكين,Knife ,knife
+item_415,,furniture_rooms,نقالة,Stretcher?,
+item_416,item_283,furniture_rooms,سفرة,Plastic sheets (used when serving food),tablecloth
+item_417,,furniture_rooms,أباجورة,Lamp ,lamp
+item_418,item_273,furniture_rooms,غرفة الألعاب,Playroom ,playroom
+item_419,,furniture_rooms,طاولة طعام,Dining table ,table
+item_420,item_263,furniture_rooms,كرسي أطفال,High chair ,high chair
+item_421,,furniture_rooms,بلاعة,Drain,
+item_422,item_280,furniture_rooms,سجادة,Mat ,mat
+item_423,,furniture_rooms,مكتبة,Library ,library
+item_424,,furniture_rooms,ستارة,Curtains ,curtain
+item_425,item_270,furniture_rooms,سقف,Roof  ,ceiling
+item_426,item_290,outside,حوش,Backyard ,backyard
+item_427,item_296,outside,وردة,Flower ,flower
+item_428,,outside,حشيش,Grass?,grass
+item_429,,outside,حديقة,Garden ,zoo
+item_430,item_297,outside,شجرة,Tree ,tree
+item_431,item_303,outside,سلّم,Ladder ,stairs
+item_432,,outside,بحر,Sea ,sea
+item_433,item_298,outside,نخلة,Palm tree ,tree
+item_434,,outside,شمس,Sun ,sun
+item_435,item_293,outside,مسبح,Swimming pool ,swimming pool
+item_436,item_299,outside,نجمة,Star ,star
+item_437,item_304,outside,مرجيحة,Swing (noun),swing
+item_438,item_294,outside,مطر,Rain  ,rain
+item_439,item_300,outside,عصى (عصايا),Stick ,stick
+item_440,,outside,زحليقة,Slide ,slide
+item_441,,outside,سماء (سما),Sky ,sky
+item_442,,outside,حجر/ حصى,Stone ,stone
+item_443,,outside,مسجد/ مصلى,Mosque ,church
+item_444,item_301,outside,البيت/ البيت,House ,house
+item_445,,outside,عمارة/ بيت,Building ,building
+item_446,,outside,حضانة,Nursery ,nursery
+item_447,,outside,مدرسة,School ,school
+item_448,,outside,روضة,Preschool ,preschool
+item_449,,outside,بقالة/ دكان,Grocery ,grocery
+item_450,item_306,outside,خيمة,Tent ,
+item_451,,outside,ميدان (دوار),Roundabout ,
+item_452,item_305,outside,حديقة حيوانات,Zoo ,zoo
+item_453,item_292,outside,شغل/ عمل,Work ,work (place)
+item_454,,outside,سحاب,Clouds ,cloud
+item_455,item_295,outside,جدار (جدر/ حيطة/ طوفة),Wall ,wall
+item_456,,outside,رصيف,Sidewalk ,sidewalk
+item_457,,outside,رياح/ ريح,Winds  ,wind
+item_458,,outside,رمل/ تراب,Sand ,sand
+item_459,,outside,قمر,Moon ,moon
+item_460,,outside,شارع/ طريق,Road ,road
+item_461,,outside,جاروف (مجرفة),Shovel ,shovel
+item_462,,outside,علم,Flag ,flag
+item_463,,outside,خرطوم (لي),Hose ,hose
+item_464,,outside,طين,Clay ,clay
+item_465,,outside,إشارة مرور,Traffic sign ,
+item_466,,outside,مطعم,Restaurant ,restaurant
+item_467,,outside,قلعة,Castle ,castle
+item_468,item_302,outside,جبل,Mountain ,mountain
+item_469,item_291,outside,ملاهي,Theme park ,
+item_470,,outside,سوق,Mall ,mall
+item_471,,outside,فندق,Hotel ,
+item_472,item_307,people,ماما,Mama ,mommy
+item_473,item_314,people,ست/ حرمة,Woman/ lady,woman
+item_474,item_321,people,خالة,Aunt (maternal aunt),aunt
+item_475,item_308,people,بابا,Papa ,daddy
+item_476,item_315,people,رجل (رجال),Man ,man
+item_477,item_322,people,جد (جدو/ سيدي),Grandfather ,grandpa
+item_478,item_309,people,خادمة (دادة/ شغالة),Domestic worker/ dada ,
+item_479,item_316,people,اسم حاضنة الطفل (الدادة),The name of the child’s babysitter ,babysitter's name
+item_480,item_323,people,جدة (سيتي/ حبابة/تيتة/ستو),Grandmother ,grandma
+item_481,item_310,people,بيبي/ نونو,Baby ,baby
+item_482,,people,شرطة/ بوليس,Police ,police
+item_483,item_324,people,اخت,Sister ,sister
+item_484,item_311,people,ولد ,Boy ,boy
+item_485,item_318,people,ناس,People ,people
+item_486,item_325,people,اخ,Brother ,brother
+item_487,item_312,people,بنت,Girl ,girl
+item_488,item_319,people,عم,Uncle (paternal uncle),uncle
+item_489,,people,طبيب/دكتور,Doctor ,doctor
+item_490,,people,معلمة,Teacher (female),teacher
+item_491,item_320,people,عمّة,Aunt (paternal aunt),aunt
+item_492,item_327,people,(اسم الطفل),Baby’s own name ,child's own name
+item_493,item_326,people,أطفال,Children ,children
+item_494,item_313,people,خال,Uncle (maternal uncle),uncle
+item_495,,people,سائق,Driver ,driver
+item_496,,people,مهرج,Clown ,clown
+item_497,,people,رجال مطافي,Firefighters  ,firefighter
+item_498,,people,صديق,Friend,friend
+item_499,,people,حلاق,Barber ,barber
+item_500,item_317,people,ممرضة,Nurse ,nurse
+item_501,,people,شخص,Person ,person
+item_502,,people,حارس,Guard  ,
+item_503,,people,استاذ,Teacher (male),teacher
+item_504,,people,ابلة,Teacher (female),teacher
+item_505,item_328,games_routines,الصلاة,Prayer,
+item_506,item_341,games_routines,تصبح على خير,Good night ,good night
+item_507,item_354,games_routines,بوسة,Kiss ,kiss
+item_508,item_329,games_routines,الأذان,Call for prayer ,
+item_509,item_342,games_routines,لا تفعل/ لاتسوي,Do not do ,don't
+item_510,item_355,games_routines,غذاء (غدا),Lunch ,lunch
+item_511,item_330,games_routines,هيا/ ياللا,Let’s go ,
+item_512,,games_routines,طير الحمامة,A finger game/ lullaby?,
+item_513,,games_routines,الحمدلله,Thank god ,
+item_514,item_331,games_routines,نروح السوق,We go shopping ,
+item_515,item_344,games_routines,صغير و عاقل,A finger game,
+item_516,item_357,games_routines,عشاء (عشا),Dinner ,dinner
+item_517,item_332,games_routines,كفّك,Give me five ,give me five
+item_518,item_345,games_routines,العنكبوت النونو,Incy wincy spider (finger game),
+item_519,item_358,games_routines,صفق (صفقة),Clap ,clap
+item_520,item_333,games_routines,سأمسك بك/ سأمسكك,Gonna get you!,gonna get you
+item_521,item_346,games_routines,قيلولة (غفوة/ نام),Nap ,nap
+item_522,item_359,games_routines,أهلا, Hi,welcome
+item_523,item_334,games_routines,اروح الحمام,Go potty,go potty
+item_524,,games_routines,شكرا,Thank you ,thank you
+item_525,item_360,games_routines,مرحبا,Marhaba,
+item_526,,games_routines,لعبة كيك القوالب/ سكر- مكر (لعبة التصفيق  تبادليا  باليد),Patty Cake,pattycake
+item_527,,games_routines,عفوا,Welcome  ,welcome
+item_528,item_361,games_routines,انتظر ( استنى),Wait ,wait
+item_529,item_336,games_routines,(ياللا) نوم,Time to sleep ,
+item_530,,games_routines,دور (دوران),Turn around ,turn around
+item_531,,games_routines,كبير مرة,So big,so big
+item_532,item_337,games_routines,بسم الله,In the name of Allah,
+item_533,item_350,games_routines,اتيه/ بيكا بو/ واء,Peekaboo,peekaboo
+item_534,item_363,games_routines,الوه ,Hello (on phone),hello
+item_535,item_338,games_routines,حمام (ترويش/ استحم),Taking a shower ,
+item_536,item_351,games_routines,اديني/ اعطيني/ هات,Give me ,give me
+item_537,,games_routines,صلى الله عليه وسلم,Peace be upon him (the prophet) ,
+item_538,,games_routines,هدف/ جول,Scoring a goal ,
+item_539,item_352,games_routines,الله اكبر,Allah is the greatest,
+item_540,item_353,games_routines,اهدأ,Calm down ,
+item_541,,games_routines,لو سمحت/ ممكن ( الله يخليك),Please ,please
+item_542,item_339,games_routines,(باي باي/ باي) مع السلامة,Bye bye ,bye
+item_543,item_340,games_routines,زغروطة/ زغريطة,Ululation ,
+item_544,item_362,games_routines,نعم/ حاضر (ايوة/ ايوا),Yes,yes
+item_545,,games_routines,افطار (فطور/ صبوح),Breakfast ,breakfast
+item_546,item_364,games_routines,لعبة غميمة/ ستغماية/ غميضة,Hide and seek ,hide and seek
+item_547,item_348,games_routines,(دوها يا دوها),A lullaby ,
+item_548,item_335,games_routines,يتصل,Calling ,call on phone
+item_549,item_349,games_routines,لا,No ,no
+item_550,,games_routines,العصايا,A game?,
+item_551,item_347,games_routines,تبغى,want,want
+item_552,item_356,games_routines,عطسة,Sneeze ,sneeze
+item_553,,games_routines,غدا (بكرة),Tomorrow ,tomorrow
+item_554,item_343,games_routines,امس (البارحة),Yesterday ,yesterday
+item_555,item_365,action_words,انام/ ينام,Sleep ,sleep
+item_556,item_385,action_words,أعطيني/ هات,Give ,give
+item_557,item_405,action_words,أنظف/ ينظف,Clean ,clean (action)
+item_558,item_366,games_routines,أريد (يبى/ يبغى)/ يريد,Want ,want
+item_559,item_386,action_words,اتخبط/ يتخبط/ ينضرب,Get hit ,
+item_560,item_406,action_words,أمسح/ يمسح,Wipe ,erase
+item_561,item_367,action_words,أعض/ يعض,Bite ,bite
+item_562,,action_words,اشتري/ يشتري,Buy ,buy
+item_563,item_407,action_words,أرمي/ يرمي,Throw ,throw
+item_564,item_368,action_words,أجيب/ يجيب,Bring ,bring
+item_565,,action_words,اقص/ يقص,Cut ,cut
+item_566,item_409,action_words,أوقظ/ يوقظ (صحيته),Wake up ,wake
+item_567,item_369,action_words,أبوس/  يبوس,Kiss ,kiss
+item_568,item_389,action_words,أجري/ يجري/ يركض,Run ,run
+item_569,item_410,action_words,اقفز/ يقفز (نط),Jump ,jump
+item_570,,action_words,أعجب/ يعجب,Like ,like
+item_571,item_390,action_words,اصفق/ يصفق,Clap ,clap
+item_572,item_411,action_words,أغسل/ يغسل,Wash ,wash
+item_573,item_371,action_words,ألعب/ يلعب,Play ,play
+item_574,,action_words,اطلع/ يطلع,Go out ,go out
+item_575,,action_words,أشتغل/ يشتغل,Work ,work (action)
+item_576,item_372,action_words,يصب,Pour ,pour
+item_577,item_392,action_words,أنشف/ ينشف/ يجفف,Dry ,dry
+item_578,item_413,action_words,احضن/ يحضن,Hug ,hug
+item_579,item_373,action_words,أأكل/ يأكل),Eat,eat
+item_580,item_393,action_words,أقيس/ يقيس,Measure ,measure
+item_581,item_414,action_words,اغني/ يغني,Sing ,sing
+item_582,item_374,action_words,أتكلم/ يتكلم,Speak ,speak
+item_583,item_394,action_words,اسمع/ يسمع,Hear ,hear
+item_584,item_415,action_words,أكنس/ يكنس,Sweep ,vacuum
+item_585,item_375,action_words,اقول/ يقول,Say ,say
+item_586,item_395,action_words,أرقص/ يرقص,Dance ,dance
+item_587,item_416,action_words,أسكب (اكب)/ يسكب (يكب),Spill ,spill
+item_588,,action_words,أقدر/ يقدر/ يستطيع,Can ,can
+item_589,item_396,action_words,أحضر (أجي)/ يحضر (يجي),Come ,come
+item_590,,action_words,أرج/ اخض يرج/ يخض,Shake ,shake
+item_591,item_377,action_words,أختار/ يختار,Choose ,choose
+item_592,item_397,action_words,أشارك ( أتعاون)/ يشارك (يتعاون),Share/ Collaborate ,share
+item_593,,action_words,أدهن/ يدهن (يزيت),Spread ,spread
+item_594,,action_words,أكتب/ يكتب,Write ,write
+item_595,item_398,action_words,ألعق (الحس)/ يلعق (يلحس),Lick ,lick
+item_596,item_419,action_words,أتزحلق/ يتزحلق,Slide ,slide
+item_597,,action_words,أقرأ/ يقرأ,Read ,read
+item_598,,action_words,ارسم/ يرسم,Draw ,draw
+item_599,item_420,action_words,ادفع (ادف)/ يدق,Push ,push
+item_600,item_380,action_words,أعيد/ يعيد/ يرجج,Return ,return
+item_601,item_399,action_words,أسوق (يسوق),Drive ,drive
+item_602,,action_words,اطبخ/ يطبخ,Cook ,cook
+item_603,item_381,action_words,يجري وراءه,Chase/ run after,chase
+item_604,,action_words,استخبى/ يستخبي,Hide ,hide
+item_605,,action_words,اغطي/ يغطي,Cover ,cover (action)
+item_606,item_382,action_words,أكره/ يكره ( ما يحب),Hate ,hate
+item_607,item_401,action_words,أدغدغ/ يدغدغ,Tickle ,tickle
+item_608,item_423,action_words,اطرطش/ يطرطش,Splash ,splash
+item_609,item_383,action_words,(ايس حقيقي)/ يعني يعني/ قلك قلك,pretend,pretend
+item_610,item_402,action_words,أسوك (أفرش)/ يسوك (يفرش)/ ينظف,Brush (teeth),brush (action)
+item_611,item_424,action_words,اقفل (يقفل)/ يغلق (يصك/ يسكر),Close ,close
+item_612,,action_words,لقيه (وجده)/ يلاقي (يجد),Find ,find
+item_613,item_403,action_words,أتذوق (ادوق)/ يتذوق (يطعم/ يدوق),Taste ,taste
+item_614,item_457,action_words,اسحب (أشد)/ يسحب (يشد/ يجر),Pull ,pull
+item_615,item_425,action_words,أطرق (أدق)/ يطرق (يدق),Knock ,knock
+item_616,item_404,action_words,أسب (يسب),Curse ,
+item_617,item_458,action_words,ألون/ يلون,Color ,color (action)
+item_618,item_426,action_words,أروح/ يروح (يخرج),Leave/ go,leave
+item_619,item_441,action_words,أضرب (يضرب),Hit ,hit
+item_620,item_454,action_words,امتلك (حقه)/ يمتلك (حقه),Own ,
+item_621,item_427,action_words,ألبس/ يلبس,Wear ,wear
+item_622,item_440,action_words,أتفرج (يتفرج),Watch ,watch (action)
+item_623,,action_words,أرمي (يرمي),Throw ,throw
+item_624,,action_words,أفكر/ يفكر,Think ,think
+item_625,item_442,action_words,أقشر (يقشر),Peel ,peel
+item_626,item_460,action_words,أداعب(الاعب)/ يداعب (يلاعب),Play with,play
+item_627,item_429,action_words,أصنع/ يصنع (يسوي),Make  ,make
+item_628,item_443,action_words,أطير (يطير),Fly ,fly (action)
+item_629,item_461,action_words,آخذ/ يأخذ (ياخد)/ خذ,Take ,take
+item_630,item_430,action_words,أصلي/ يصلي,Pray ,
+item_631,item_444,action_words,اعطس (يعطس),Sneeze ,sneeze
+item_632,,action_words,انزل/ ينزل,Go down ,go down
+item_633,,action_words,أفلح/ يفلح,Leave/ go out,leave
+item_634,item_445,action_words,أطل (يطل),Look ,look
+item_635,item_463,action_words,ادخل/ يدخل,Enter ,enter
+item_636,item_432,action_words,أنادي/ ينادي,Call ,call
+item_637,item_446,action_words,اتصل (يتصل),Call (on phone),call
+item_638,item_464,action_words,أنجرح (اتعور)/ ينجرح (يتعور),Get hurt (injury),
+item_639,item_433,action_words,أسبح/ يسبح,Swim ,swim
+item_640,item_447,action_words,عشان,Because/ for,
+item_641,,action_words,اساعد/ يساعد,Help ,help
+item_642,,action_words,اطيح/ يطيح,Fall down ,fall down
+item_643,item_428,action_words,يتساقط/ يتناثر,fall/ scatter ,fall
+item_644,item_466,action_words,أحك/ يحك,Scratch ,scratch
+item_645,item_434,action_words,أحب/ يحب,Love ,like
+item_646,item_421,action_words,أمشي/ يمشي,Walk ,walk
+item_647,,action_words,انتبه/ ينتبه,Be alert/ take caution ,
+item_648,item_435,action_words,احصل على/ يحصل على,Get ,get
+item_649,item_449,action_words,اصقع/ يصقع,Crash by/ hit something by accident ,hit
+item_650,item_468,action_words,أكل/ يأكل (ياكل),Eat ,eat
+item_651,item_436,action_words,افتح/ يفتح/ يفك,Open ,open
+item_652,,action_words,أعرف/ بعرف,Know ,know
+item_653,,action_words,أذاكر/ يذاكر,Study ,study
+item_654,,action_words,أوقف/ وقف,Stop ,stop
+item_655,item_451,action_words,أرش موية/ يرش موية,Spray,spray
+item_656,,action_words,أكبس/ يكبس,Press ,press
+item_657,,action_words,أوري/ يوري/ وريني وريني,Show ,show
+item_658,item_452,action_words,أسلم/ يسلم,Say hi ,greet
+item_659,item_471,action_words,أضحك/ يضحك,Laugh ,laugh
+item_660,,action_words,انتظر (استنى)/ ينتظر (يستنى),Wait ,wait
+item_661,,action_words,أكون/ يكون,Be ,be
+item_662,item_455,action_words,أنوم/ ينوم,Put to sleep,
+item_663,item_438,action_words,أقول آآآ/ يقول آآآ,Say a a a a a,
+item_664,item_465,action_words,أكسر/  يكسر,Break ,break
+item_665,,action_words,أقطع/ يقطع,Cut ,cut
+item_666,,action_words,اصدم/ يصدم ب/ يصدم,Hit something (by accident),hit
+item_667,,action_words,اخرج/ يخرج,Get out ,get out
+item_668,item_472,action_words,ابتسم/ يبتسم,Smile ,smile
+item_669,,action_words,أطلع/ يطلع,Go upstairs ,
+item_670,item_378,action_words,اركِب/ يُركِب,Build ,build
+item_671,item_459,action_words,أمرجح/ يمرجح,Swing (causative) ,swing (action)
+item_672,,action_words,أنزل/ ينزل,Go down ,go down
+item_673,item_439,action_words,هات/ اديني,Give me ,give me
+item_674,item_456,action_words,أضع (أحط)/ يضع (يحط),Put ,put
+item_675,item_470,action_words,أجلس/ يجلس/ يقعد,Sit down ,sit
+item_676,item_450,action_words,امسك/ يمسك,Hold/ catch,hold
+item_677,,action_words,أشوت/ يشوت,Kick ,kick
+item_678,item_469,action_words,أركب/ يركب,Ride,get on
+item_679,,action_words,اُكسِر/ يُكسِر,Break ,break
+item_680,,action_words,أافركش/ يفركش,Cancel ,
+item_681,item_448,action_words,أخلص/ يخلص/ ينتهي,Finish ,finish
+item_682,item_431,action_words,أبكي/ يبكي,Cry ,cry
+item_683,,action_words,أسقط (أطيح)/ يسقط (بطيح),Fall down ,fall down
+item_684,item_437,action_words,أشرب/ يشرب,Drink ,drink
+item_685,item_422,action_words,أشم/ يشم,Smell ,smell
+item_686,item_400,action_words,أتفخ/ ينفخ,Blow ,blow
+item_687,,action_words,أصلح/ يصلح,Fix ,fix
+item_688,,action_words,أوقف/ يوقف,Stop ,stop
+item_689,,action_words,أمشي/ يمشي,Walk.2,walk
+item_690,item_379,action_words,انظر (اشوف)/  ينظر (يشوف),look / see ,look
+item_691,item_418,action_words,أسرع/ يسرع/ بسرعة,Hurry ,hurry
+item_692,,action_words,أبني/ يبني,Build ,build
+item_693,item_384,action_words,أتمرجح/ يتمرجح (يتمردح),Swing ,swing
+item_694,item_417,action_words,يتوقف/ كفاية/ خلاص / وقف (بس),Stop / enough / that is it,stop
+item_695,item_376,action_words,أحمل/ أرفع (أشيل)/ يحمل/ يرفع (يشيل),Carry ,hold
+item_696,item_412,action_words,أكح/ يكح,Cough,cough
+item_697,item_388,action_words,أمخط/ يمخط,Blow nose ,
+item_698,item_408,action_words,أبصق (أتفل)/ يبصق (يتفل),Spit ,spit
+item_699,item_370,action_words,لدي (عندي),I have ,have
+item_700,item_387,action_words,تعال,Come (imperative),come
+item_701,item_473,descriptive_words,حلو/ زين,Nice ,nice
+item_702,,descriptive_words,مبلول/ مبلل,Wet ,wet
+item_703,,descriptive_words,اصفر,Yellow ,yellow
+item_704,item_474,descriptive_words,نايم,Asleep ,asleep
+item_705,item_479,descriptive_words,ناشف/ جاف,Dry ,dry
+item_706,item_484,descriptive_words,برتقالي,Orange ,orange
+item_707,,descriptive_words,ذوق,Having good taste,tasty
+item_708,item_480,descriptive_words,ثقيل,Heavy ,heavy
+item_709,,descriptive_words,ازرق,Blue ,blue
+item_710,item_476,descriptive_words,كبير,Big ,big
+item_711,item_481,descriptive_words,خفيف,Light ,light
+item_712,,descriptive_words,زهري/ بمبي,Pink ,pink
+item_713,item_477,descriptive_words,سريع,Fast ,fast
+item_714,,descriptive_words,طويل,Tall ,tall
+item_715,,descriptive_words,نحيف,Thin ,thin
+item_716,,descriptive_words,بطئ,Slow ,slow
+item_717,,descriptive_words,قصير,Short ,short
+item_718,item_510,descriptive_words,قليل/شوية,Little ,little
+item_719,item_489,descriptive_words,فاضي/ فارغ,Empty ,empty
+item_720,item_500,descriptive_words,منتبه/حذر/ انتبه,Alert ,alert
+item_721,item_511,descriptive_words,عطشان/ ظميان,Thirsty ,thirsty
+item_722,,descriptive_words,اول,First ,first
+item_723,,descriptive_words,أخير,Final/ last,last
+item_724,item_512,descriptive_words,صغير,Small ,young
+item_725,,descriptive_words,ثاني,Second ,
+item_726,,descriptive_words,مصلح/ متصلح,Fixed ,fixed
+item_727,,descriptive_words,ناعم,Soft (smooth),soft
+item_728,,descriptive_words,زعلان/ حزين,Sad ,sad
+item_729,item_503,descriptive_words,وسخ/ متسخ/ موسخ/ قذر,Dirty ,dirty
+item_730,item_514,descriptive_words,وحش/ مو حلو/ مو زين/ معفن,Ugly ,ugly
+item_731,item_492,descriptive_words,حار (حامي),Hot ,hot
+item_732,item_504,descriptive_words,ابيض,White ,white
+item_733,item_515,descriptive_words,نعسان,Sleepy ,sleepy
+item_734,item_493,descriptive_words,نظيف,Clean ,clean (description)
+item_735,item_505,descriptive_words,احمر,Red ,red
+item_736,,descriptive_words,سمين (دبة),Fat ,fat
+item_737,,descriptive_words,فاتح,Light in color ,
+item_738,,descriptive_words,اخضر,Green ,green
+item_739,,descriptive_words,غامق,Dark ,dark
+item_740,item_495,descriptive_words,اسود,Black ,black
+item_741,item_507,descriptive_words,بارد/ صاقع,Cold ,cold
+item_742,item_518,descriptive_words,فرحان/ مبسوط,Happy ,happy
+item_743,item_496,descriptive_words,مليان,Full ,full
+item_744,,descriptive_words,قاسي,Hard ,hard
+item_745,item_519,descriptive_words,مشاغب/ شقي/ شيطان,Naughty ,naughty
+item_746,item_497,descriptive_words,سيئ,Bad ,bad
+item_747,item_509,descriptive_words,خائف,Scared ,scared
+item_748,,descriptive_words,مريض,Sick  ,sick
+item_749,item_498,descriptive_words,يخ/ كخ,Yuck (To express disgust),
+item_750,,descriptive_words,منتهي,Expired/ finished ,
+item_751,,descriptive_words,كبير في السن,Elderly/ old in age,old
+item_752,item_520,descriptive_words,مقرف/  يع,Disgusting/ Yuck,disgusting
+item_753,,descriptive_words,بردان,Cold ,cold
+item_754,item_508,descriptive_words,عجوز/ شيبه,Elderly/ old in age,old
+item_755,item_494,descriptive_words,مزعج,Annoying ,noisy
+item_756,item_506,descriptive_words,قديم,Old ,old
+item_757,item_517,descriptive_words,فقير,Poor ,poor
+item_758,,descriptive_words,احسن/ أحلى,Better / nicer ,
+item_759,,descriptive_words,بنّي,Brown ,brown
+item_760,,descriptive_words,لذيذ,Yummy ,yummy
+item_761,,descriptive_words,عالي/ مرتفع,High ,high
+item_762,item_516,descriptive_words,جائع (جيعان),Hungry ,hungry
+item_763,,descriptive_words,اتعور,Got hurt ,
+item_764,,descriptive_words,عالي (الصوت),Loud ,loud
+item_765,item_513,descriptive_words,مجنون,Crazy ,crazy
+item_766,,descriptive_words,جديد,New ,new
+item_767,,descriptive_words,هدوء,Quietness,quiet
+item_768,,descriptive_words,بدق (يلزق/ يلصق),Sticky ,sticky
+item_769,item_502,descriptive_words,طري (لين),Soft (not firm),soft
+item_770,,descriptive_words,كثير,A lot ,a lot
+item_771,item_501,descriptive_words,ملّون,Colorful ,
+item_772,item_491,descriptive_words,متعب (تعبان),Tired ,tired
+item_773,item_490,descriptive_words,يعور/ أح,(it) hurts,
+item_774,item_499,descriptive_words,شاطر,Good boy/ Good girl ,
+item_775,item_488,descriptive_words,شيطان,Naughty ,naughty
+item_776,,descriptive_words,صعب,Difficult ,difficult
+item_777,,descriptive_words,حران,Feeling hot ,
+item_778,,descriptive_words,كويس,Good ,good
+item_779,,descriptive_words,مكسور/ محطم,Broken/ destroyed,broken
+item_780,item_487,descriptive_words,عيب,Brings shame,
+item_781,,descriptive_words,طيب,Kind,
+item_782,,descriptive_words,كلهم راحوا,They all left ,
+item_783,,descriptive_words,مؤدب,Well behaved/ well-mannered ,
+item_784,item_482,descriptive_words,ظلام/ مظلم,Dark ,dark
+item_785,item_475,descriptive_words,فهيقة,Hiccup ,
+item_786,item_485,descriptive_words,كحة,Cough ,
+item_787,item_486,descriptive_words,عطسه,Sneeze ,
+item_788,item_478,descriptive_words,تفلان,Saliva ,
+item_789,item_483,descriptive_words,مخطان,Mucus ,
+item_790,,time_words,يوم,Day ,day
+item_791,,time_words,ليل (مساء),Night/ evening ,night
+item_792,,time_words,غداْ (بكرة),Tomorrow ,tomorrow
+item_793,,time_words,فيما  بعد (بعدين),Later ,later
+item_794,,time_words,الصباح,Morning ,morning
+item_795,,time_words,الليلة,Tonight ,tonight
+item_796,,time_words,صباح,Morning ,morning
+item_797,,time_words,اليوم,Today ,today
+item_798,,time_words,قبل,Before ,before
+item_799,,time_words,بعد,After ,after
+item_800,,time_words,الوقت,Time ,time
+item_801,,time_words,البارحة (أمس),Yesterday/ last night,yesterday
+item_802,,time_words,الآن (دحين)/ ذلحين (الحين),Now ,now
+item_803,,question_words,كيف,How ,how
+item_804,item_523,question_words,مين,Who ,who
+item_805,,question_words,متى,When ,when (question)
+item_806,item_522,question_words,ماذا/ ايش (إيش هذا)/ (ايش دا),What ,what
+item_807,item_524,question_words,اين/ فين,Where ,where (question)
+item_808,item_521,question_words,لماذا (ليش),Why ,why
+item_809,item_525,pronouns,هو,He ,3SG
+item_810,item_531,pronouns,هذه (هادي),This (feminine),this
+item_811,item_537,pronouns,لك/ حقك,Yours ,2SG.POSS
+item_812,item_526,pronouns,هي,She ,3SG
+item_813,item_532,pronouns,انت,You (masculine),2SG
+item_814,item_538,pronouns,هذا (هدا),This (masculine) ,that
+item_815,item_527,pronouns,انا,I ,1SG
+item_816,,pronouns,انتم (انتو),You (plural),2PL
+item_817,item_539,pronouns,ذلك (داك),That (masculine),that
+item_818,item_528,pronouns,لي/ملكي (حقي),Mine ,1SG.POSS
+item_819,,pronouns,هم ( همه),They ,3PL
+item_820,item_540,pronouns,لها/ حقها,Hers ,3SG.POSS
+item_821,,pronouns,له (حقه),His ,3SG.POSS
+item_822,,pronouns,نحن (نحنا),We ,1PL
+item_823,item_541,pronouns,لنا/ حقنا,Ours ,1PL.POSS
+item_824,item_530,pronouns,هذول/ هدول,These,these
+item_825,item_535,pronouns,إنتِ,You (feminine),2SG
+item_826,,pronouns,لهم,Theirs,3PL.POSS
+item_827,item_529,pronouns,هذاك/هاداك,That (masculine),that
+item_828,item_534,pronouns,هنا,Here ,here
+item_829,item_533,pronouns,هناك,There ,there
+item_830,item_536,pronouns,هادولاك,Those ,those
+item_831,item_542,negation_words,مو / مو هادا ,Not this (masculine),
+item_832,item_546,negation_words,مافي ,There is nothing,
+item_833,,negation_words,خلاص,Finished ,finished
+item_834,item_543,negation_words,مو هنا,Not here ,
+item_835,item_547,negation_words,ما أحب,I do not like ,don't like
+item_836,item_550,negation_words,خلص/ خلصنا,Finished ,finished
+item_837,item_544,negation_words,مو حلو ,Not nice,
+item_838,item_548,negation_words,ما/ ما أبغى,I do not want ,don't want
+item_839,item_551,negation_words,بح/ بح ماما,finished/ no more,
+item_840,item_545,negation_words,مو حقي,Not mine,
+item_841,item_549,negation_words,لا/ لا تروح,no/ do not go,
+item_842,,quantifiers,جميع/كل (كله),All ,all
+item_843,item_557,quantifiers,لا شىء ( ولا شي/ ولا واحد/ ولا حاجة),None/ nothing ,nothing
+item_844,,quantifiers,قد بعض/ زي بعض,alike/ same,same
+item_845,item_552,quantifiers,مزيد/ زيادة (كمان),More ,more
+item_846,item_558,quantifiers,واحد.تاني,Another one,another
+item_847,item_563,quantifiers,أنا أيضا ( أنا كمان),Me too ,
+item_848,item_553,quantifiers,خمسة,Five ,five
+item_849,item_559,quantifiers,مرة ثانية,Again ,again
+item_850,,quantifiers,واحد/ واحدة,One ,one
+item_851,,quantifiers,خلص,Finished ,finished
+item_852,item_560,quantifiers,اي.واحد,Any one ,any
+item_853,,quantifiers,آخر,Another ,another
+item_854,,quantifiers,مختلف,Different ,different
+item_855,item_561,quantifiers,بعض (شوية),Some ,some
+item_856,,quantifiers,نفس الشيء,Same thing,same
+item_857,,quantifiers,غيره,Another ,another
+item_858,,quantifiers,آل (التعريف),Definite article = [The],the
+item_859,item_567,quantifiers,أكثر,More ,more
+item_860,item_556,quantifiers,اثنين (اتنين),Two ,two
+item_861,item_562,quantifiers,ثلاثة (تلاته),Three ,three
+item_862,item_566,quantifiers,أربعة,Four ,four
+item_863,,quantifiers,سبعة,Seven ,seven
+item_864,item_555,quantifiers,ثمانية (تمنيه),Eight ,eight
+item_865,item_565,quantifiers,تسعة,Nine ,nine
+item_866,item_554,quantifiers,عشرة,Ten ,ten
+item_867,,quantifiers,ستة,Six ,six
+item_868,item_564,quantifiers,كثير,A lot ,a lot
+item_869,,quantifiers,قليل,few / little ,few
+item_870,,quantifiers,خلاص.انتهى,Finished,finished
+item_871,,quantifiers,مافي,No more/  finished ,
+item_872,item_568,locations,فوق,above/ on top ,above
+item_873,,locations,جنب,Next to/ beside ,next to
+item_874,item_575,locations,داخل (جوه),Inside ,inside
+item_875,item_569,locations,تحت/ أسفل,below/ down ,below
+item_876,item_573,locations,خلف ( وراء),Behind ,behind
+item_877,item_576,locations,بعيد,Away ,far
+item_878,,locations,قريب,Near ,near
+item_879,item_574,locations,امام (قدام),In front of ,front
+item_880,item_577,locations,على,On ,on
+item_881,item_571,locations,برة/ خارج,Out ,out
+item_882,item_570,locations,مع,With ,with
+item_883,,locations,عن,About  ,about
+item_884,,locations,حول,Around ,around
+item_885,,locations,لـِ,For ,for
+item_886,,locations,في,In ,in
+item_887,,locations,من,Of/ from ,of
+item_888,,locations,بـِ,With ,with
+item_889,,locations,خلال,Through ,through
+item_890,item_572,locations,هنا,Here ,here
+item_891,,locations,أعلى,On top of ,on top of
+item_892,,connecting_words,إلى,To ,to
+item_893,,connecting_words,و,And ,and
+item_894,,connecting_words,إلا,Except ,
+item_895,item_581,connecting_words,لو,If ,if
+item_896,item_579,connecting_words,لكن,But ,but
+item_897,item_580,connecting_words,لأن,Because ,because
+item_898,item_578,connecting_words,كمان,Also,also
+item_899,,connecting_words,إذا,If ,if
+item_900,,animals,,dolphin,dolphin
+item_901,,animals,,falcon,
+item_902,,toys,,slime,
+item_903,item_584,toys,,whistle,whistle (object)
+item_904,item_586,food_drink,,nutella,nutella
+item_905,,food_drink,,peanut butter,peanut butter
+item_906,,food_drink,,noodles,noodles
+item_907,,food_drink,,fry bread,
+item_908,,clothing,,hair clip,hair clip
+item_909,item_585,household,,iPad,
+item_910,,household,,shampoo,shampoo
+item_911,,furniture_rooms,,basket,basket
+item_912,,action_words,,show,show
+item_913,,action_words,,go,go
+item_914,,action_words,,walk,walk
+item_915,,action_words,,joke (verb),
+item_916,,action_words,,mix,mix
+item_917,,action_words,,build,build
+item_918,,pronouns,,his.2,3SG.POSS
+item_919,,pronouns,,your (plural),2PL.POSS
+item_920,,pronouns,,his,3SG.POSS
+item_921,,quantifiers,,first,first
+,item_391,action_words,يطّلع,Throw up ,
+,item_453,action_words,يخرّج,Throw up ,
+,item_462,action_words,ينزل,Bring down ,
+,item_467,action_words,ينتبه,Pay attention ,

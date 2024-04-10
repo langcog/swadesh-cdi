@@ -1,0 +1,775 @@
+WS,WG,category,definition,gloss,uni_lemma
+item_1,item_22,sounds,brr-brr,vroom,vroom
+item_2,item_72,sounds,ga-ga,baa baa,baa baa
+item_3,item_83,sounds,grr,grr,grrr
+item_4,item_108,sounds,jao,ouch,ouch
+item_5,item_147,sounds,ku-ku (sound),choo choo,peekaboo
+item_6,,sounds,kukurikuuu,cockadoodledoo,cockadoodledoo
+item_7,item_155,sounds,kva-kva,quack quack,quack quack
+item_8,item_185,sounds,mijau,meow,meow
+item_9,item_195,sounds,muu,moo,moo
+item_10,item_204,sounds,njam-njam,yum yum,yum yum
+item_11,item_346,sounds,tu-tu,choo-choo,beep beep
+item_12,item_360,sounds,vau-vau,woof woof,woof woof
+item_13,item_24,animals,buba,bug,bug
+item_14,item_86,animals,guska,goose,goose
+item_15,,animals,jelen,deer,deer
+item_16,item_132,animals,koka,hen,hen
+item_17,item_136,animals,konj,horse,horse
+item_18,,animals,kornjača,turtle,turtle
+item_19,item_138,animals,koza,goat,goat
+item_20,item_140,animals,krava,cow,cow
+item_21,,animals,krokodil,crocodile,crocodile
+item_22,item_158,animals,lane,fawn,deer
+item_23,item_159,animals,lav,lion,lion
+item_24,item_160,animals,leptir,butterfly,butterfly
+item_25,item_164,animals,lisica,fox,fox
+item_26,item_173,animals,mačka,cat,cat
+item_27,item_174,animals,magarac,donkey,donkey
+item_28,item_176,animals,majmun,monkey,monkey
+item_29,,animals,medo (igračka),teddybear,teddybear
+item_30,,animals,medvjed (životinja),bear,bear
+item_31,item_186,animals,miš,mouse,mouse
+item_32,,animals,mrav,ant,ant
+item_33,item_222,animals,ovca,sheep,sheep
+item_34,item_229,animals,pas,dog,dog
+item_35,item_231,animals,patka,duck,duck
+item_36,item_233,animals,pčela,bee,bee
+item_37,item_237,animals,pijetao,rooster,rooster
+item_38,item_238,animals,pile,chicken,chicken (animal)
+item_39,,animals,pingvin,penguin,penguin
+item_40,item_254,animals,prase,pig,pig
+item_41,item_263,animals,ptica,bird,bird
+item_42,item_267,animals,purica,turkey,turkey
+item_43,item_271,animals,riba (animal),fish,fish (animal)
+item_44,item_292,animals,slon,elephant,elephant
+item_45,item_297,animals,sova,owl,owl
+item_46,,animals,srna,doe,deer
+item_47,item_333,animals,tigar,tiger,tiger
+item_48,item_368,animals,vjeverica,squirrel,squirrel
+item_49,item_374,animals,vrabac,sparrow,sparrow
+item_50,item_379,animals,vuk,wolf,wolf
+item_51,,animals,zebra,zebra,zebra
+item_52,item_387,animals,zeko,bunny,bunny
+item_53,item_380,animals,žaba,frog,frog
+item_54,,animals,žirafa,giraffe,giraffe
+item_55,item_389,animals,životinja,animal,animal
+item_56,item_1,vehicles,auto,car,car
+item_57,item_2,vehicles,autobus,bus,bus
+item_58,item_3,vehicles,avion,airplane,airplane
+item_59,item_10,vehicles,bicikl,bicycle,bicycle
+item_60,item_21,vehicles,brod,boat,boat
+item_61,,vehicles,helikopter,helicopter,helicopter
+item_62,item_122,vehicles,kamion,truck,truck
+item_63,,vehicles,kolica,stroller,stroller
+item_64,item_192,vehicles,motor,motorcycle,motorcycle
+item_65,,vehicles,sanjke,sled,sled
+item_66,,vehicles,traktor,tractor,tractor
+item_67,item_338,vehicles,tramvaj,tram,tram
+item_68,,vehicles,vatrogasci,firetruck,
+item_69,item_369,vehicles,vlak,train,train
+item_70,item_6,toys,balon,balloon,balloon
+item_71,,toys,bojica,crayon,crayon
+item_72,,toys,flomaster,felt pen,crayon
+item_73,,toys,igra,game,game
+item_74,item_97,toys,igračka,toy,toy (object)
+item_75,item_130,toys,knjiga,book,book
+item_76,item_131,toys,kocka,block,blocks
+item_77,,toys,kreda,chalk,chalk
+item_78,item_170,toys,lopatica,sand shovel,shovel
+item_79,item_171,toys,lopta,ball,ball
+item_80,item_172,toys,lutka,doll,doll
+item_81,,toys,ljepilo,glue,glue (object)
+item_82,item_218,toys,olovka,pencil,pen/pencil
+item_83,,toys,pikule,marbles,marbles
+item_84,,toys,plastelin,play dogh,play dough
+item_85,,toys,poklon,present,present
+item_86,,toys,slagalice (puzzle),puzzle,puzzle
+item_87,,toys,slikovnica,picture book,book
+item_88,item_7,food_drink,banana,banana,banana
+item_89,,food_drink,blitva,chard,kale
+item_90,item_18,food_drink,bombon,candy,candy
+item_91,,food_drink,bundeva,pumpkin,pumpkin
+item_92,item_25,food_drink,čaj,tea,tea
+item_93,,food_drink,čips,potato chip,chips
+item_94,item_39,food_drink,čokolada,chocolate,chocolate
+item_95,item_40,food_drink,čokolino,cokolino (Croatian children food),cheerios
+item_96,,food_drink,grah,beans,beans
+item_97,item_80,food_drink,grašak,peas,peas
+item_98,item_82,food_drink,griz,grits,porridge
+item_99,,food_drink,grožđe,grapes,grapes
+item_100,,food_drink,grožđica,raisin,raisin
+item_101,,food_drink,hamburger,hamburger,sandwich
+item_102,item_94,food_drink,hrana,food,food
+item_103,,food_drink,hrenovke,frankfurters,sausage
+item_104,item_104,food_drink,jabuka,apple,apple
+item_105,,food_drink,jagoda,strawberry,berry
+item_106,item_106,food_drink,jaje,egg,egg
+item_107,item_113,food_drink,jogurt,yogurt,yogurt
+item_108,item_115,food_drink,juha,soup,soup
+item_109,item_125,food_drink,kašica,gruel,cereal
+item_110,,food_drink,kava,coffee,coffee
+item_111,item_127,food_drink,keks,cookie,cookie
+item_112,,food_drink,kelj,savoy cabbage,cabbage
+item_113,,food_drink,kobasica,sausage,sausage
+item_114,,food_drink,koka (piletina),chicken,chicken (food)
+item_115,,food_drink,kokice,popcorn,popcorn
+item_116,item_133,food_drink,kolač,cake,cake
+item_117,,food_drink,krafna,donut,cake
+item_118,,food_drink,krastavac,cucumber,cucumber
+item_119,item_143,food_drink,kruh,bread,bread
+item_120,item_144,food_drink,krumpir,potato,potato
+item_121,,food_drink,kruška,pear,pear
+item_122,,food_drink,kukuruz,corn,corn
+item_123,,food_drink,lizalica,lollipop,lollipop
+item_124,,food_drink,mahune,green beans,beans
+item_125,,food_drink,marmelada,jam,jam
+item_126,,food_drink,maslac,butter,butter
+item_127,,food_drink,med,honey,honey
+item_128,item_183,food_drink,meso,meat,meat
+item_129,item_188,food_drink,mlijeko,milk,milk
+item_130,,food_drink,mrkve,carrots,carrot
+item_131,item_198,food_drink,naranča,orange,orange (food)
+item_132,,food_drink,njoke,gnocchi,pasta
+item_133,,food_drink,orasi,walnuts,nut
+item_134,,food_drink,palačinka,pancake,pancake
+item_135,,food_drink,pecivo,rolls,pastry
+item_136,,food_drink,piće,drink,drink (beverage)
+item_137,,food_drink,pizza,pizza,pizza
+item_138,,food_drink,pomfrit,french fries,chips
+item_139,,food_drink,puding,pudding,pudding
+item_140,item_272,food_drink,riba (food),fish,fish (food)
+item_141,,food_drink,salama,salami,sausage
+item_142,,food_drink,salata,lettuce,salad
+item_143,,food_drink,sendvič,sandwich,sandwich
+item_144,item_285,food_drink,sir,cheese,cheese
+item_145,,food_drink,sladole,ice cream,ice cream
+item_146,item_296,food_drink,sok,juice,juice
+item_147,,food_drink,sol,salt,salt
+item_148,,food_drink,šećer,sugar,sugar
+item_149,,food_drink,špageti,spaghetti,pasta
+item_150,item_301,food_drink,špinat,spinach,spinach
+item_151,item_334,food_drink,tijesto,pasta,pasta
+item_152,,food_drink,trešnja,cherry,cherry
+item_153,,food_drink,umak,sauce,sauce
+item_154,item_370,food_drink,voda (beverage),water,water (beverage)
+item_155,,food_drink,žvaka (žvakaća guma),chewing gum,gum
+item_156,,clothing,cipela,shoe,shoe
+item_157,,clothing,čarapa,sock,sock
+item_158,item_38,clothing,čizme,boots,boots
+item_159,item_71,clothing,gaćice,underpants,underpants
+item_160,item_84,clothing,gumb,button,button
+item_161,item_88,clothing,haljina,dress,dress (object)
+item_162,item_89,clothing,hlače,pants,pants
+item_163,,clothing,hulahopke,tights,tights
+item_164,item_107,clothing,jakna,jacket,jacket
+item_165,item_123,clothing,kapa,hat,hat
+item_166,item_124,clothing,kaput,coat,coat
+item_167,,clothing,(kratke) hlačice,shorts,shorts
+item_168,,clothing,lančić,necklace,necklace
+item_169,item_175,clothing,majica,shirt,t-shirt
+item_170,,clothing,Skafander (odijelce),snowsuit,snowsuit
+item_171,item_227,clothing,papuče,slipper,slipper
+item_172,item_235,clothing,pelena,diaper,diaper
+item_173,item_236,clothing,pidžama,pajamas,pajamas
+item_174,,clothing,pojas,belt,belt
+item_175,,clothing,rupčić,handkerchief,tissue
+item_176,item_277,clothing,rukavice,gloves,glove
+item_177,item_315,clothing,suknja,skirt,skirt
+item_178,item_280,clothing,šal,scarf,scarf
+item_179,,clothing,štramplice,children`s tights,tights
+item_180,,clothing,tenisice,sneaker,shoe
+item_181,,clothing,traperice,jeans,pants
+item_182,,clothing,trenirka,tracksuit,tracksuit
+item_183,item_383,clothing,zatvarač,zipper,zipper
+item_184,,body_parts,brada,chin,chin
+item_185,item_76,body_parts,glava,head,head
+item_186,,body_parts,gležanj,ankle,leg
+item_187,item_87,body_parts,guza,buttocks,butt
+item_188,item_112,body_parts,jezik,tongue,tongue
+item_189,item_135,body_parts,koljeno,knee,knee
+item_190,item_137,body_parts,kosa,hair,hair
+item_191,item_161,body_parts,lice,face,face
+item_192,item_209,body_parts,noga,leg,leg
+item_193,item_211,body_parts,nos,nose,nose
+item_194,,body_parts,obraz,cheek,cheek
+item_195,item_217,body_parts,oko,eye,eye
+item_196,item_224,body_parts,palac,thumb,thumb
+item_197,,body_parts,penis,penis,penis
+item_198,item_261,body_parts,prst,finger,finger
+item_199,item_266,body_parts,pupak,belly button,belly button
+item_200,,body_parts,rame,shoulder,arm
+item_201,item_276,body_parts,ruka,hand,arm
+item_202,,body_parts,stopalo,feet,foot
+item_203,,body_parts,šaka,fist,arm
+item_204,item_339,body_parts,trbuh,tummy,tummy
+item_205,item_350,body_parts,uho,ear,ear
+item_206,,body_parts,usnice,lips,lip
+item_207,item_356,body_parts,usta,mouth,mouth
+item_208,,body_parts,vagina,vagina,vagina
+item_209,,body_parts,vrat,neck,neck
+item_210,item_393,body_parts,zub,tooth,tooth
+item_211,item_11,household,biljka,plant,plant
+item_212,item_13,household,boca,bottle,bottle
+item_213,item_14,household,bočica (s dudom),feeding bottle,pacifier
+item_214,item_27,household,čaša,glass,glass
+item_215,,household,čavao,nail,nail (object)
+item_216,item_29,household,čekić,hammer,hammer
+item_217,item_31,household,češalj,comb,comb (object)
+item_218,item_32,household,četka,brush,brush (object)
+item_219,,household,četkica za zube,toothbrush,toothbrush
+item_220,item_49,household,deka,blanket,blanket
+item_221,,household,hodalica,walker,walker
+item_222,,household,igla,needle,needle
+item_223,item_110,household,jastuk,pillow,pillow
+item_224,,household,kamera,camera,camera
+item_225,,household,kantica,bucket,bucket
+item_226,,household,kanta (za smeće),trash can,bucket
+item_227,item_129,household,ključevi,keys,key
+item_228,,household,kolica,stroller,stroller
+item_229,,household,košara,basket,basket
+item_230,,household,kuhača,ladle,wooden ladle
+item_231,item_154,household,kutija,box,box
+item_232,,household,lavor,washbowl,sink
+item_233,item_162,household,lijek,medicine,medicine
+item_234,,household,limenka,can,can (object)
+item_235,,household,lonac,pot,pot
+item_236,,household,lopatica (za smeće),dustpan,dustpan
+item_237,item_184,household,metla,broom,broom
+item_238,item_197,household,naočale,glasses,glasses
+item_239,,household,novac,money,money
+item_240,item_212,household,novčanik,wallet,purse
+item_241,item_214,household,nož,knife,knife
+item_242,item_226,household,papir,paper,paper
+item_243,item_268,household,radio,radio,radio
+item_244,item_275,household,ručnik,towel,towel
+item_245,,household,salveta,napkin,tissue
+item_246,item_282,household,sapun,soap,soap
+item_247,item_283,household,sat,clock,clock
+item_248,item_291,household,slika,picture,picture
+item_249,item_293,household,smeće,trash,trash
+item_250,item_320,household,svjetiljka,lamp,lamp
+item_251,item_321,household,svjetlo,light,light (object)
+item_252,item_281,household,šalica,cup,cup
+item_253,item_287,household,škare,scissors,scissors
+item_254,item_324,household,tanjur,plate,plate
+item_255,item_328,household,telefon,telephone,telephone
+item_256,,household,usisavač,vacuum,vacuum
+item_257,item_366,household,vilica,fork,fork
+item_258,item_385,household,zdjelica,small bowl,bowl
+item_259,item_396,household,zvono,bell,bell
+item_260,item_390,household,žlica,spoon,spoon
+item_261,,furniture_rooms,balkon,balcony,balcony
+item_262,item_57,furniture_rooms,dnevna soba,living room,living room
+item_263,item_70,furniture_rooms,fotelja,armchair,armchair
+item_264,item_73,furniture_rooms,garaža,garage,garage
+item_265,item_90,furniture_rooms,hladnjak,refrigerator,refrigerator
+item_266,,furniture_rooms,hodnik,hallway,corridor
+item_267,,furniture_rooms,kada (object),bathtub,bathtub
+item_268,item_126,furniture_rooms,kauč,couch,couch
+item_269,,furniture_rooms,klupa,bench,chair
+item_270,item_134,furniture_rooms,kolijevka,cot,cradle
+item_271,item_141,furniture_rooms,krevet,bed,bed
+item_272,item_142,furniture_rooms,krevetić,crib,crib
+item_273,item_146,furniture_rooms,kuhinja,kitchen,kitchen
+item_274,item_152,furniture_rooms,kupaonica,bathroom,bathroom
+item_275,item_156,furniture_rooms,ladica,drawer,drawer
+item_276,item_216,furniture_rooms,ogradica (vrtić za igranje),play pen,play pen
+item_277,item_220,furniture_rooms,ormar,closet,closet
+item_278,item_234,furniture_rooms,pećnica,oven,oven
+item_279,,furniture_rooms,podrum,basement,room
+item_280,item_259,furniture_rooms,prozor,window,window
+item_281,,furniture_rooms,soba,room,room
+item_282,,furniture_rooms,spavaća soba,bedroom,bedroom
+item_283,item_307,furniture_rooms,stepenice,stairs,stairs
+item_284,item_309,furniture_rooms,stol,table,table
+item_285,item_310,furniture_rooms,stolica,chair,chair
+item_286,,furniture_rooms,stroj za (pranje) rublja,washing machine,washing machine
+item_287,item_306,furniture_rooms,štednjak,stove,stove
+item_288,item_329,furniture_rooms,televizor,tv,TV
+item_289,,furniture_rooms,tuš,shower,bath
+item_290,item_345,furniture_rooms,tuta,potty,potty
+item_291,item_352,furniture_rooms,umivaonik,sink,sink
+item_292,item_375,furniture_rooms,vrata,door,door
+item_293,,furniture_rooms,zahod,toilet,bathroom
+item_294,item_8,outside,bazen,pool,pool
+item_295,item_44,outside,cvijeće,flowers,flower
+item_296,item_67,outside,drvo,tree,tree
+item_297,item_68,outside,dvorište,backyard,yard
+item_298,item_121,outside,kamen,rock,rock (object)
+item_299,item_128,outside,kiša,rain,rain
+item_300,,outside,krov,roof,roof
+item_301,item_169,outside,lopata,shovel,shovel
+item_302,,outside,ljestve,ladder,ladder
+item_303,item_167,outside,ljuljačka,swing,swing (object)
+item_304,item_187,outside,mjesec,moon,moon
+item_305,,outside,more,sea(side),sea
+item_306,item_200,outside,nebo,sky,sky
+item_307,,outside,oblak,cloud,cloud
+item_308,,outside,ograda,fence,fence
+item_309,item_228,outside,park,park,park
+item_310,,outside,pješčanik,sandbox,sand
+item_311,,outside,pločnik,sidewalk,path
+item_312,item_295,outside,snijeg,snow,snow
+item_313,,outside,snjegović,snowman,snowman
+item_314,,outside,stijena,stone,rock (object)
+item_315,item_316,outside,sunce,sun,sun
+item_316,,outside,štap,stick,stick
+item_317,,outside,tobogan,toboggan,slide (object)
+item_318,,outside,trava,grass,grass
+item_319,,outside,ulica,street,street
+item_320,,outside,vjetar,wind,wind
+item_321,item_371,outside,voda (not beverage),water,water (not beverage)
+item_322,item_376,outside,vrt,garden,garden
+item_323,,outside,zastava,flag,flag
+item_324,item_395,outside,zvijezda,star,star
+item_325,,places,bolnica,hospital,hospital
+item_326,,places,cirkus,circus,fair
+item_327,,places,crkva,church,church
+item_328,,places,dom,home,home
+item_329,,places,grad,downtown,outside
+item_330,,places,igralište,playground,playground
+item_331,,places,izlet,picnic,outing
+item_332,,places,kino,cinema,movie
+item_333,,places,kuća,house,house
+item_334,,places,livada,meadow,field
+item_335,,places,park,park,park
+item_336,,places,plaža,beach,beach
+item_337,,places,posao,work,work (place)
+item_338,,places,proslava,party,party
+item_339,,places,selo,farm,town
+item_340,,places,šetnja,walk,outing
+item_341,,places,škola,school,school
+item_342,,places,šuma,woods,forest
+item_343,,places,trgovina,store,store
+item_344,,places,van(i),out(side),outside
+item_345,,places,vrtić,kindergarten,kindergarten
+item_346,,places,zoološki vrt,zoo,zoo
+item_347,item_5,people,baka,grandma,grandma
+item_348,item_19,people,brat,brother,brother
+item_349,,people,čovjek,man,man
+item_350,item_50,people,dijete,child,child
+item_351,,people,dimnjačar,chimney sweeper,chimney sweep
+item_352,item_54,people,dječak,boy,boy
+item_353,item_55,people,djed,grandpa,grandpa
+item_354,,people,djevojčica,girl,girl
+item_355,item_61,people,doktor,doctor,doctor
+item_356,,people,gospođa,lady,lady
+item_357,,people,ime kućnog ljubimca,pet`s name,pet's name
+item_358,item_99,people,ime osobe koja čuva dijete,babysitter`s name,babysitter's name
+item_359,,people,klaun,clown,clown
+item_360,item_150,people,kum/kuma,aunt,godfather
+item_361,item_166,people,ljudi,people,people
+item_362,item_179,people,mama,mommy,mommy
+item_363,,people,policajac,police,police
+item_364,,people,poštar,mailman,mailman
+item_365,,people,prijatelj,friend,friend
+item_366,item_284,people,sestra,sister,sister
+item_367,,people,smetlar,dustman,garbage man
+item_368,item_312,people,stric,uncle,uncle
+item_369,item_313,people,striček,s,man
+item_370,item_322,people,svoje ime,child`s own name,child's own name
+item_371,item_325,people,tata,daddy,daddy
+item_372,item_331,people,teta,aunt,aunt
+item_373,,people,učitelj,teacher,teacher
+item_374,item_351,people,ujak,uncle,uncle
+item_375,,people,vatrogasac,fireman,firefighter
+item_376,,games_routines,bježi!,run!,run
+item_377,,games_routines,bok!,hi!,hi
+item_378,item_45,games_routines,da,yes,yes
+item_379,,games_routines,daj ruku!,give me your hand!,hold hands
+item_380,item_58,games_routines,dobar dan,hello,hello
+item_381,item_65,games_routines,doručak,breakfast,breakfast
+item_382,,games_routines,hajde!,come on!,come on
+item_383,,games_routines,halo-halo,call (on phone),call
+item_384,,games_routines,Hoću tutu,go potty,potty
+item_385,item_95,games_routines,hvala,thank you,thank you
+item_386,,games_routines,kakiti,make poop,poop
+item_387,item_148,games_routines,ku-ku (routine),peekaboo,peekaboo
+item_388,item_151,games_routines,kupanje,bath,bath
+item_389,,games_routines,kupiti,buy,buy
+item_390,item_157,games_routines,laku noć,night night,good night
+item_391,,games_routines,lovi me,gonna get you!,tag
+item_392,item_191,games_routines,molim,plese,please
+item_393,,games_routines,Ne!,no,no
+item_394,,games_routines,okreni se,turn around,turn around
+item_395,item_225,games_routines,pa-pa,bye,bye
+item_396,,games_routines,piškiti,go pee-pee,pee
+item_397,item_262,games_routines,psst-tiho,shh/shush/hush,shh
+item_398,item_273,games_routines,ringe-raja,ring-around-the-rosy,ring around the rosie
+item_399,item_274,games_routines,ručak,lunch,lunch
+item_400,item_299,games_routines,spavanje,sleep,nap
+item_401,item_4,action_words,baciti,throw,throw
+item_402,item_12,action_words,bježati,run,flee
+item_403,,action_words,bojati,paint,paint (action)
+item_404,item_20,action_words,brisati,wipe,wipe
+item_405,,action_words,buditi,wake,wake
+item_406,item_42,action_words,crtati,draw,draw
+item_407,,action_words,čekati,wait,wait
+item_408,item_36,action_words,čistiti,clean,clean (action)
+item_409,item_37,action_words,čitati,read,read
+item_410,,action_words,čuti,hear,hear
+item_411,item_48,action_words,dati,give,give
+item_412,,action_words,dignuti,pick,pick up
+item_413,item_51,action_words,dirati,touch,touch
+item_414,item_59,action_words,dobiti,get,get
+item_415,item_64,action_words,donijeti,bring,bring
+item_416,,action_words,držati,hold,hold
+item_417,item_77,action_words,gledati,watch,look
+item_418,,action_words,govoriti,talk,talk
+item_419,item_81,action_words,gristi,bite,bite
+item_420,item_85,action_words,gurati,push,push
+item_421,item_93,action_words,hodati,walk,walk
+item_422,,action_words,hraniti,feed,feed
+item_423,,action_words,htjeti,want,want
+item_424,item_96,action_words,ići,go,go
+item_425,item_98,action_words,igrati se,play,play
+item_426,,action_words,imati,have,have
+item_427,,action_words,ispustiti,drop,drop
+item_428,item_105,action_words,jahati,ride,ride
+item_429,item_111,action_words,jesti,eat,eat
+item_430,,action_words,kazati,say,say
+item_431,,action_words,klizati,slide,slide (action)
+item_432,,action_words,kucati,knock,knock
+item_433,,action_words,kuhati,cook,cook
+item_434,item_153,action_words,kupiti,buy,buy
+item_435,,action_words,kušati,taste,taste
+item_436,,action_words,lizati,lick,lick
+item_437,,action_words,loviti,catch,catch
+item_438,item_168,action_words,ljuljati se,swing,swing (action)
+item_439,,action_words,mahati,wave,wave
+item_440,,action_words,maziti,cuddle,hug
+item_441,,action_words,mesti,wipe,sweep
+item_442,,action_words,misliti,think,think
+item_443,,action_words,naći,find,find
+item_444,,action_words,napraviti,build,make
+item_445,,action_words,nositi,carry,carry
+item_446,,action_words,ostati,stay,stay
+item_447,item_221,action_words,otvoriti,open,open (action)
+item_448,item_230,action_words,pasti,fall,fall
+item_449,item_232,action_words,paziti,look out,watch (action)
+item_450,item_240,action_words,pisati,write,write
+item_451,item_241,action_words,piti,drink,drink (action)
+item_452,item_242,action_words,pjevati,sing,sing
+item_453,item_243,action_words,plakati,cry,cry
+item_454,item_246,action_words,plesati,dance,dance
+item_455,item_247,action_words,plivati,swim,swim
+item_456,,action_words,pljeskati,clap,clap
+item_457,,action_words,poderati,tear,tear
+item_458,,action_words,pokazati,show,show
+item_459,,action_words,pokriti,cover,cover (action)
+item_460,item_249,action_words,poljubiti,kiss,kiss
+item_461,item_250,action_words,pomoći,help,help
+item_462,,action_words,popeti,climb,climb
+item_463,,action_words,popraviti,fix,repair
+item_464,item_255,action_words,prati,wash,wash
+item_465,,action_words,praviti,make,make
+item_466,,action_words,praviti se,pretend,pretend
+item_467,,action_words,prestati,stop,stop
+item_468,,action_words,proliti,spill,spill
+item_469,item_260,action_words,prskati,splash,splash
+item_470,item_264,action_words,puhati,blow,blow
+item_471,,action_words,raditi,work,work (action)
+item_472,item_269,action_words,razbiti,break,break
+item_473,item_270,action_words,reći,say,say
+item_474,,action_words,rezati,cut,cut
+item_475,,action_words,sakriti,hide,hide
+item_476,,action_words,sjediti,sit,sit
+item_477,item_288,action_words,skočiti,jump,jump
+item_478,,action_words,slomiti,break,break
+item_479,,action_words,slušati,listen,listen
+item_480,item_294,action_words,smijati se,smile,laugh
+item_481,item_300,action_words,spavati,sleep,sleep
+item_482,,action_words,spuštati,lower,lower (action)
+item_483,,action_words,stajati,stand,stand
+item_484,item_304,action_words,stati,stop,stop
+item_485,item_305,action_words,staviti,put,put
+item_486,,action_words,sušiti,dry,dry (action)
+item_487,,action_words,sviđati se,like,love
+item_488,item_286,action_words,škakljati,tickle,tickle
+item_489,item_317,action_words,šutnuti,kick,kick
+item_490,,action_words,točiti,pour,pour
+item_491,item_340,action_words,trčati,run,run
+item_492,,action_words,tresti,shake,shake
+item_493,item_341,action_words,trgati,tear,tear
+item_494,item_344,action_words,tući,beat,fight
+item_495,item_349,action_words,udariti se,bump,hit
+item_496,item_357,action_words,uzeti,take,take
+item_497,item_365,action_words,vidjeti,see,see
+item_498,item_372,action_words,voljeti,love,love
+item_499,item_373,action_words,voziti,drive,drive
+item_500,item_378,action_words,vući,pull,pull
+item_501,item_381,action_words,zagrliti,hug,hug
+item_502,item_384,action_words,zatvoriti,close,close
+item_503,item_394,action_words,žuriti,hurry,hurry
+item_504,,descriptive_words,bijela,white,white
+item_505,item_16,descriptive_words,bolestan,sick,sick
+item_506,item_17,descriptive_words,boli,hurt,hurt (description)
+item_507,,descriptive_words,bolje,better,good
+item_508,,descriptive_words,brzo,fast,fast
+item_509,,descriptive_words,budan,awake,awake
+item_510,,descriptive_words,crn,black,black
+item_511,item_43,descriptive_words,crvena,red,red
+item_512,item_35,descriptive_words,čist(o),clean,clean (description)
+item_513,item_60,descriptive_words,dobro,good,good
+item_514,,descriptive_words,dug(o),long,long
+item_515,,descriptive_words,fino,fine,fine
+item_516,,descriptive_words,fuj,yucky,yucky
+item_517,item_75,descriptive_words,gladan,hungry,hungry
+item_518,,descriptive_words,glasno,loud,loud
+item_519,item_79,descriptive_words,gotovo,over,finished
+item_520,item_91,descriptive_words,hladno,cold,cold
+item_521,,descriptive_words,jadan,lame,poor
+item_522,item_139,descriptive_words,krasno,nice,beautiful
+item_523,item_163,descriptive_words,lijep(o),pretty,pretty
+item_524,,descriptive_words,ljut(o),angry,angry
+item_525,item_177,descriptive_words,mal(o),tiny,little (description)
+item_526,item_181,descriptive_words,mekan(o),soft,soft
+item_527,,descriptive_words,mokro,wet,wet (description)
+item_528,item_193,descriptive_words,mrak,dark,dark
+item_529,,descriptive_words,narančasta,orange,orange (description)
+item_530,,descriptive_words,nema više,allgone,all gone
+item_531,,descriptive_words,nov(o),new,new
+item_532,item_207,descriptive_words,nježno,gentle,gentle
+item_533,,descriptive_words,pažljiv(o),careful,careful
+item_534,item_244,descriptive_words,plava,blue,blue
+item_535,item_248,descriptive_words,polako,slow,slow
+item_536,item_253,descriptive_words,pospan(o),sleepy,sleepy
+item_537,,descriptive_words,potrgan(o),broken,broken
+item_538,item_256,descriptive_words,prazno,empty,empty
+item_539,item_257,descriptive_words,prljav(o),dirty,dirty
+item_540,,descriptive_words,prvi,first,first
+item_541,,descriptive_words,pun(o),full,full
+item_542,,descriptive_words,puše,windy,windy
+item_543,item_278,descriptive_words,ružno,ugly,ugly
+item_544,,descriptive_words,slomljen(o),broken,broken
+item_545,,descriptive_words,smeđe,brown,brown
+item_546,item_298,descriptive_words,spava,sleeps,asleep
+item_547,item_302,descriptive_words,sretan,happy,happy
+item_548,,descriptive_words,staro,old,old
+item_549,,descriptive_words,suho,dry,dry (description)
+item_550,item_330,descriptive_words,teško,heavy,heavy
+item_551,,descriptive_words,tih(o),quiet,quietly
+item_552,item_337,descriptive_words,toplo,warm,warm
+item_553,,descriptive_words,tužan,sad,sad
+item_554,,descriptive_words,tvrd(o),hard,hard
+item_555,item_353,descriptive_words,umoran,tired,tired
+item_556,,descriptive_words,uplašen(o),scared,scared
+item_557,item_363,descriptive_words,velik(o),big,big
+item_558,,descriptive_words,visok(o),high,high
+item_559,item_377,descriptive_words,vruće,hot,hot
+item_560,,descriptive_words,zadnje,last,last
+item_561,,descriptive_words,zelena,green,green
+item_562,,descriptive_words,zgodno,cute,cute
+item_563,item_388,descriptive_words,zima,cold,winter
+item_564,,descriptive_words,zločesto,naughty,naughty
+item_565,,descriptive_words,žuta,yellow,yellow
+item_566,item_386,descriptive_words,žedan,thirsty,thirsty
+item_567,item_46,time_words,dan,day,day
+item_568,item_47,time_words,danas,today,today
+item_569,,time_words,jučer,yesterday,yesterday
+item_570,item_116,time_words,jutro,morning,morning
+item_571,,time_words,kasnije,later,later
+item_572,item_208,time_words,noć,night,night
+item_573,item_252,time_words,poslije,after,later
+item_574,,time_words,prije,before,before
+item_575,,time_words,sada,now,now
+item_576,,time_words,sati,hours,hour
+item_577,item_318,time_words,sutra,tomorrow,tomorrow
+item_578,item_362,time_words,večeras,tonight,tonight
+item_579,item_103,pronouns,ja,I,I
+item_580,,pronouns,mene/me,me,me
+item_581,,pronouns,meni/mi,to me,me
+item_582,,pronouns,mi,we,we
+item_583,item_189,pronouns,moj,my,my
+item_584,,pronouns,nama,to us,we
+item_585,,pronouns,nas,us,we
+item_586,,pronouns,naš,our,ours
+item_587,,pronouns,nje/je,her,her
+item_588,,pronouns,njega/ga,him,him
+item_589,item_205,pronouns,njegov,his,his
+item_590,,pronouns,njemu/mu,to him,him
+item_591,item_206,pronouns,njezin,hers,her
+item_592,,pronouns,njih/ih,them,them
+item_593,,pronouns,njihov,their,their
+item_594,,pronouns,njima/im,to them,them
+item_595,,pronouns,njoj/joj,to her,her
+item_596,,pronouns,nju/ju/je,her,her
+item_597,,pronouns,on,he,he
+item_598,,pronouns,ona,she,she
+item_599,,pronouns,one,they (female),they
+item_600,,pronouns,oni,they,they
+item_601,item_219,pronouns,ono,it,that
+item_602,,pronouns,ono/onaj/ona,that,that
+item_603,,pronouns,ovo/ovaj/ova,this,this
+item_604,,pronouns,ovi/ove,these,these
+item_605,,pronouns,sebe/se,myself,myself
+item_606,,pronouns,svoj,her/his own,hers
+item_607,,pronouns,to/taj/ta,this,this
+item_608,,pronouns,tebe/te,you,you
+item_609,,pronouns,tebi/ti,to you,you
+item_610,item_332,pronouns,ti,you,you
+item_611,item_347,pronouns,tvoj,your,your
+item_612,item_74,question_words,gdje,where,where (question)
+item_613,,question_words,kada (question),when,when (question)
+item_614,item_120,question_words,kako,how,how
+item_615,,question_words,koji,which,which (question)
+item_616,item_308,question_words,što,what,what
+item_617,item_335,question_words,tko,who,who
+item_618,item_382,question_words,zašto,why,why
+item_619,,locations,blizu,close,near
+item_620,item_62,locations,dolje,down,down
+item_621,item_78,locations,gore,up,up
+item_622,item_100,locations,ispod,under,under
+item_623,item_101,locations,ispred,in front of,in front
+item_624,item_102,locations,iza,behind,back (location)
+item_625,,locations,iznad,above,above
+item_626,item_196,locations,na,on,on
+item_627,,locations,nazad,back,back (location)
+item_628,,locations,negdje,somewhere,somewhere
+item_629,,locations,nigdje,nowhere,nowhere
+item_630,,locations,o,about,about
+item_631,,locations,od,from,from
+item_632,,locations,oko,around,around
+item_633,,locations,otraga,behind,behind
+item_634,,locations,ovamo,here,here
+item_635,,locations,ovdje,therein,here
+item_636,,locations,pored,beside,by
+item_637,,locations,preko,over,over
+item_638,,locations,s,with,with
+item_639,item_323,locations,tamo,there,there
+item_640,item_343,locations,tu,here,here
+item_641,,locations,unutra/u,in,in
+item_642,,locations,uz,by,by
+item_643,item_359,locations,vani,outside,out
+item_644,,locations,za,for,for
+item_645,,quantifiers,bilo koji,any,any
+item_646,,quantifiers,dosta,enough,enough
+item_647,,quantifiers,drugi/druga,another,another
+item_648,,quantifiers,isti/ista,same,same
+item_649,,quantifiers,jako,very,a lot
+item_650,item_114,quantifiers,još,more,more
+item_651,item_178,quantifiers,malo,few,little (amount)
+item_652,,quantifiers,mnogo,many/much/a lot,a lot
+item_653,,quantifiers,neki/neka,some,some
+item_654,,quantifiers,nešto,something,something
+item_655,item_203,quantifiers,ništa,nothing,none
+item_656,,quantifiers,opet,again,again
+item_657,,quantifiers,previše,too much,too much
+item_658,item_265,quantifiers,puno,a lot,many
+item_659,,quantifiers,svaki/svaka,each/every,all
+item_660,,quantifiers,sve/svi,all,all
+item_661,item_367,quantifiers,više,more,more
+item_662,,helping_verbs,bi(h),would,want
+item_663,,helping_verbs,bila,was,be
+item_664,,helping_verbs,bile,were (female),be
+item_665,,helping_verbs,bili,were,be
+item_666,,helping_verbs,bilo,(it) was,be
+item_667,,helping_verbs,bio,(he) was,was
+item_668,,helping_verbs,biti,to be,be
+item_669,,helping_verbs,bude,(he) is gonna/going to,be
+item_670,,helping_verbs,budem,(I) am gonna/going to,be
+item_671,,helping_verbs,budemo,(we) are gonna/going to,be
+item_672,,helping_verbs,budeš,(you) are gonna/going to,be
+item_673,,helping_verbs,budi,be!,be
+item_674,,helping_verbs,budu,(they) are gonna/going to,be
+item_675,,helping_verbs,će,(he) will be,be
+item_676,,helping_verbs,ćemo,(we) will be,be
+item_677,,helping_verbs,ćeš,(you) will be,be
+item_678,,helping_verbs,ću,(I) will,be
+item_679,,helping_verbs,hoće,(he/she) wanna/wants to,want
+item_680,,helping_verbs,hoćemo,(we) wanna/want to,want
+item_681,,helping_verbs,hoćeš,(you) wanna/want to,want
+item_682,,helping_verbs,hoću,(I) wanna/want to,want
+item_683,,helping_verbs,je,is,be
+item_684,,helping_verbs,jesam,am,be
+item_685,,helping_verbs,jesi,(you) are,be
+item_686,,helping_verbs,jesmo,(we) are,be
+item_687,,helping_verbs,jesu,(they) are,be
+item_688,,helping_verbs,mogao,(he) could,can (auxiliary)
+item_689,,helping_verbs,mogla,(she) could,can (auxiliary)
+item_690,,helping_verbs,mogle,(they/females) could,can (auxiliary)
+item_691,,helping_verbs,mogli,(they) could,can (auxiliary)
+item_692,,helping_verbs,mogu (oni),(they) can,can (auxiliary)
+item_693,,helping_verbs,mora,(he/she) must,have
+item_694,,helping_verbs,može,(he/she) can,can (auxiliary)
+item_695,,helping_verbs,možemo,(we) can,can (auxiliary)
+item_696,,helping_verbs,možeš,(you) can,can (auxiliary)
+item_697,,helping_verbs,neće,(he/she) doesn`t want,not
+item_698,,helping_verbs,nećemo,(we) don`t want,not
+item_699,,helping_verbs,nećeš,(you) don`t want,not
+item_700,,helping_verbs,neću,(I) don`t want,not
+item_701,,helping_verbs,nije,(he/she) is not,not
+item_702,,helping_verbs,nisam,(I) am not,not
+item_703,,helping_verbs,nisi,(you) are not,not
+item_704,,helping_verbs,nismo,(we) are not,not
+item_705,,helping_verbs,nisu,(they) are not,not
+item_706,,helping_verbs,sam,am,be
+item_707,,helping_verbs,si,(you) are,be
+item_708,,helping_verbs,may,(I) may,NA
+item_709,,helping_verbs,smo,(we) are,be
+item_710,,helping_verbs,su,(they) are,be
+item_711,,helping_verbs,treba,should,should
+item_712,,connecting_words,ako,if,if
+item_713,,connecting_words,ali,but,but
+item_714,,connecting_words,i,and,and
+item_715,,connecting_words,jer,because,because
+item_716,,connecting_words,onda,then,then
+item_717,,connecting_words,tako,so,so
+,item_180,animals,medo,bear,teddybear
+,item_327,animals,tele,calf,calf
+,item_109,animals,jare,kid,kid (goat)
+,item_215,body_parts,obrazi,cheek,cheek
+,item_30,body_parts,čelo,forehead,forehead
+,item_210,body_parts,nokti,nails,nail (body part)
+,item_34,clothing,cipele,shoe,shoe
+,item_26,clothing,čarape,sock,sock
+,item_364,clothing,vesta/džemper,sweater,sweater
+,item_391,descriptive_words,zločest(o),naughty,naughty
+,item_314,descriptive_words,suh(o),dry,dry (description)
+,item_23,descriptive_words,brz(o),fast,fast
+,item_52,descriptive_words,divno,fine,delightful
+,item_69,descriptive_words,fin(o),tasty,fine
+,item_303,descriptive_words,star(o),old,old
+,item_311,descriptive_words,strašno,horribly,scary
+,item_190,descriptive_words,mok(ro),wet,wet (description)
+,item_119,food_drink,kakao,cacao,cocoa
+,item_194,food_drink,mrkva,carrots,carrot
+,item_239,food_drink,piletina,chicken,chicken (food)
+,item_290,food_drink,sladoled,ice cream,ice cream
+,item_118,furniture_rooms,kada,bathtub,bathtub
+,item_361,games_routines,večera,dinner,dinner
+,item_202,games_routines,nemoj,don't,don't
+,item_15,games_routines,bog/bok!,hi,hi
+,item_199,games_routines,ne,no,no
+,item_28,games_routines,čekaj!,wait,wait
+,item_92,games_routines,hoću,wanna/want to,wanna
+,item_213,household,novci,money,money
+,item_33,household,četkica (za zube),toothbrush,toothbrush
+,item_355,household,usisivač,vacuum,vacuum
+,item_348,locations,u,in,in
+,item_354,locations,unutra,inside,inside
+,item_245,outside,plaža,beach,beach
+,item_41,outside,crkva,church,church
+,item_63,outside,dom,home,home
+,item_145,outside,kuća,house,house
+,item_165,outside,livada,field,field
+,item_358,outside,van(i),outside,outside
+,item_258,outside,proslava,party,party
+,item_289,outside,škola,school,school
+,item_342,outside,trgovina,store,store
+,item_251,outside,posao,work,work (place)
+,item_392,outside,zoološki (vrt),zoo,zoo
+,item_9,people,beba,baby,baby
+,item_53,people,djeca,children,children
+,item_56,people,djevojčice,girl,girl
+,item_336,pronouns,to,it,it
+,item_182,pronouns,meni,me,me
+,item_223,pronouns,ovo,this,this
+,item_326,pronouns,tebi,you,you
+,item_319,quantifiers,sve,all,all
+,item_66,quantifiers,drugi,another,another
+,item_201,quantifiers,nema,not,all gone
+,item_117,question_words,kad(a),when (question),when (question)
+,item_149,sounds,kukuriku,cockadoodledoo,cockadoodledoo
+,item_279,time_words,sad(a),now,now

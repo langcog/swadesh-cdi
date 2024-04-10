@@ -1,0 +1,539 @@
+Oxford CDI,OxfordShort,TEDS Twos,TEDS Threes,category,definition,gloss,uni_lemma
+item_1,,item_13,,sounds,baa baa,baa baa,baa baa
+item_2,,,,sounds,choo choo,choo choo,choo choo
+item_3,item_3,,,sounds,cockadoodledoo,cockadoodledoo,cockadoodledoo
+item_4,,,,sounds,grr,grr,grrr
+item_5,,item_17,,sounds,meow,meow,meow
+item_6,,,,sounds,moo,moo,moo
+item_7,,,,sounds,ouch,ouch,ouch
+item_8,,,,sounds,quack,quack,quack quack
+item_9,,,,sounds,uh oh,uh oh,uh oh
+item_10,,,,sounds,vroom,vroom,vroom
+item_11,,,,sounds,woof,woof,woof woof
+item_12,,,,sounds,yum,yum,yum yum
+item_13,,,,animals,animal,animal,animal
+item_14,,item_33,,animals,bear,bear,bear
+item_15,,,,animals,bee,bee,bee
+item_16,,item_37,,animals,bird,bird,bird
+item_17,,,,animals,bunny / rabbit,bunny / rabbit,bunny
+item_18,,,,animals,butterfly,butterfly,butterfly
+item_19,,item_41,,animals,cat,cat,cat
+item_20,,,,animals,chicken,chicken,chicken (animal)
+item_21,,,,animals,cow,cow,cow
+item_22,,,,animals,deer,deer,deer
+item_23,,item_45,,animals,dog,dog,dog
+item_24,item_24,,item_17,animals,donkey,donkey,donkey
+item_25,,item_49,,animals,duck,duck,duck
+item_26,item_26,,,animals,elephant,elephant,elephant
+item_27,item_27,item_85,,animals,fish,fish,fish (animal)
+item_28,,,,animals,frog,frog,frog
+item_29,,,,animals,giraffe,giraffe,giraffe
+item_30,item_30,,,animals,goose,goose,goose
+item_31,,item_53,,animals,horse,horse,horse
+item_32,item_32,,,animals,kitten,kitten,kitty
+item_33,,,,animals,lamb,lamb,lamb
+item_34,item_34,,,animals,lion,lion,lion
+item_35,,,,animals,monkey,monkey,monkey
+item_36,,,,animals,mouse,mouse,mouse
+item_37,,,,animals,owl,owl,owl
+item_38,item_38,,,animals,penguin,penguin,penguin
+item_39,item_39,,,animals,pig,pig,pig
+item_40,,,,animals,pony,pony,pony
+item_41,,,,animals,puppy,puppy,puppy
+item_42,,,,animals,sheep,sheep,sheep
+item_43,,,,animals,spider,spider,spider
+item_44,item_44,,,animals,squirrel,squirrel,squirrel
+item_45,,,,animals,tiger,tiger,tiger
+item_46,,,,animals,turkey,turkey,turkey
+item_47,,,,animals,turtle,turtle,turtle
+item_48,item_48,,,vehicles,aeroplane / plane,aeroplane / plane,airplane
+item_49,,,,vehicles,bicycle / bike,bicycle / bike,bicycle
+item_50,,item_61,,vehicles,boat,boat,boat
+item_51,,,,vehicles,lorry / truck,lorry / truck,truck
+item_52,,,,vehicles,motor-bike,motor-bike,motorcycle
+item_53,,,,vehicles,bus,bus,bus
+item_54,item_54,item_65,,vehicles,car,car,car
+item_55,,,,vehicles,fire engine,fire engine,firetruck
+item_56,,,,vehicles,pushchair / buggy,pushchair / buggy,stroller
+item_57,,,,vehicles,train,train,train
+item_58,item_58,item_69,,toys,ball,ball,ball
+item_59,item_59,,,toys,balloon,balloon,balloon
+item_60,item_60,,,toys,block / brick,block / brick,blocks
+item_61,item_61,item_73,,toys,book,book,book
+item_62,,,,toys,bubble,bubble,bubbles
+item_63,,,,toys,doll,doll,doll
+item_64,item_64,,,toys,pen,pen,pen
+item_65,,,,toys,teddy bear,teddy bear,teddybear
+item_66,,,,toys,toy,toy,toy (object)
+item_67,,,,food_drink,apple,apple,apple
+item_68,,,,food_drink,banana,banana,banana
+item_69,,,,food_drink,biscuit,biscuit,biscuit
+item_70,,,,food_drink,bread,bread,bread
+item_71,item_71,,,food_drink,butter,butter,butter
+item_72,item_72,,,food_drink,cake,cake,cake
+item_73,,,,food_drink,carrot,carrot,carrot
+item_74,item_74,,,food_drink,cereal,cereal,cereal
+item_75,,,,food_drink,cheese,cheese,cheese
+item_76,,,,food_drink,chicken,chicken,chicken (food)
+item_77,,,,food_drink,chips,chips,french fries
+item_78,,,,food_drink,coffee,coffee,coffee
+item_79,,,,food_drink,drink,drink,drink (beverage)
+item_80,,,,food_drink,egg,egg,egg
+item_81,,,,food_drink,fish,fish,fish (food)
+item_82,,,,food_drink,food,food,food
+item_83,,,,food_drink,ice cream,ice cream,ice cream
+item_84,,,,food_drink,jam,jam,jam
+item_85,,item_97,,food_drink,juice,juice,juice
+item_86,item_86,item_101,,food_drink,meat,meat,meat
+item_87,item_87,item_105,,food_drink,milk,milk,milk
+item_88,,,,food_drink,orange,orange,orange (food)
+item_89,,,,food_drink,pasta / spaghetti,pasta / spaghetti,pasta
+item_90,,item_109,,food_drink,peas,peas,peas
+item_91,,,,food_drink,pizza,pizza,pizza
+item_92,,,,food_drink,sweets,sweets,sweets
+item_93,item_93,,,food_drink,tea,tea,tea
+item_94,,,,food_drink,toast,toast,toast
+item_95,,,,food_drink,water,water,water (beverage)
+item_96,item_96,,,body_parts,arm,arm,arm
+item_97,,,,body_parts,belly button / tummy button,belly button / tummy button,belly button
+item_98,,,,body_parts,cheek,cheek,cheek
+item_99,,item_34,,body_parts,ear,ear,ear
+item_100,,,,body_parts,eye,eye,eye
+item_101,,,,body_parts,face,face,face
+item_102,,,,body_parts,finger,finger,finger
+item_103,,,,body_parts,foot,foot,foot
+item_104,,,,body_parts,tongue,tongue,tongue
+item_105,,,,body_parts,tooth,tooth,tooth
+item_106,,,,body_parts,hair,hair,hair
+item_107,,item_38,,body_parts,hand,hand,hand
+item_108,,,,body_parts,head,head,head
+item_109,,,,body_parts,knee,knee,knee
+item_110,,item_42,,body_parts,leg,leg,leg
+item_111,,,,body_parts,nail,nail,nail (body part)
+item_112,item_112,,,body_parts,nose,nose,nose
+item_113,item_113,,,body_parts,toe,toe,toe
+item_114,,,,body_parts,tummy,tummy,tummy
+item_115,item_115,,,body_parts,mouth,mouth,mouth
+item_116,item_116,,,clothing,bib,bib,bib
+item_117,,,,clothing,boot(s),boot(s),boots
+item_118,,,,clothing,button,button,button
+item_119,,,,clothing,coat,coat,coat
+item_120,,,,clothing,dress,dress,dress (object)
+item_121,item_121,,,clothing,glasses / specs,glasses / specs,glasses
+item_122,,item_14,,clothing,hat,hat,hat
+item_123,item_123,,,clothing,jacket,jacket,jacket
+item_124,,,item_85,clothing,jeans,jeans,jeans
+item_125,,,,clothing,jumper / sweater,jumper / sweater,sweater
+item_126,,,,clothing,nappy,nappy,diaper
+item_127,,item_18,,clothing,necklace,necklace,necklace
+item_128,,,,clothing,pyjamas,pyjamas,pajamas
+item_129,,,,clothing,shirt,shirt,shirt
+item_130,item_130,item_22,,clothing,shoe,shoe,shoe
+item_131,,,,clothing,shorts,shorts,shorts
+item_132,item_132,item_26,,clothing,sock,sock,sock
+item_133,,,,clothing,trousers,trousers,pants
+item_134,item_134,,,clothing,zip,zip,zipper
+item_135,,,,clothing,bath / bathtub,bath / bathtub,bathtub
+item_136,,,,furniture_rooms,bathroom,bathroom,bathroom
+item_137,item_137,item_74,,furniture_rooms,bed,bed,bed
+item_138,,item_78,,furniture_rooms,bedroom,bedroom,bedroom
+item_139,item_139,,,furniture_rooms,chair,chair,chair
+item_140,,,,furniture_rooms,cooker / stove / oven,cooker / stove / oven,stove
+item_141,,,,furniture_rooms,cot,cot,crib
+item_142,item_142,,,furniture_rooms,door,door,door
+item_143,,,,furniture_rooms,drawer,drawer,drawer
+item_144,,,,furniture_rooms,garage,garage,garage
+item_145,,,,furniture_rooms,high chair,high chair,high chair
+item_146,,,item_42,furniture_rooms,kitchen,kitchen,kitchen
+item_147,,,,furniture_rooms,living room,living room,living room
+item_148,,,,furniture_rooms,play pen,play pen,play pen
+item_149,,,,furniture_rooms,potty,potty,potty
+item_150,,,,furniture_rooms,refrigerator / fridge,refrigerator / fridge,refrigerator
+item_151,,,,furniture_rooms,rocking chair,rocking chair,rocking chair
+item_152,,item_82,item_46,furniture_rooms,settee / sofa,settee / sofa,couch
+item_153,,,,furniture_rooms,sink,sink,sink
+item_154,,item_90,,furniture_rooms,stairs,stairs,stairs
+item_155,item_155,,,furniture_rooms,table,table,table
+item_156,,,,furniture_rooms,TV / television,TV / television,TV
+item_157,,,,furniture_rooms,window,window,window
+item_158,,,,outside,beach,beach,beach
+item_159,,,,outside,bucket,bucket,bucket
+item_160,,,,outside,church,church,church
+item_161,item_161,,,outside,flower,flower,flower
+item_162,,,,outside,garden,garden,garden
+item_163,,,,outside,house,house,house
+item_164,,,,outside,moon,moon,moon
+item_165,item_165,item_15,,outside,sky,sky,sky
+item_166,,,,outside,slide,slide,slide (object)
+item_167,,,,outside,snow,snow,snow
+item_168,,,,outside,spade,spade,spade
+item_169,,item_102,,outside,star,star,star
+item_170,,,,outside,stone,stone,stone
+item_171,,,,outside,sun,sun,sun
+item_172,item_172,,,outside,outside,outside,outside
+item_173,,,,outside,park,park,park
+item_174,,,,outside,party,party,party
+item_175,,,,outside,pool,pool,pool
+item_176,,item_98,,outside,rain,rain,rain
+item_177,,item_110,,outside,school,school,school
+item_178,,,,outside,shop,shop,store
+item_179,item_179,item_106,,outside,swing,swing,swing (object)
+item_180,item_180,,,outside,tree,tree,tree
+item_181,item_181,,,outside,wall,wall,wall
+item_182,,,,outside,water,water,water (not beverage)
+item_183,,,,outside,work,work,work (place)
+item_184,,item_19,item_66,outside,zoo,zoo,zoo
+item_185,,,,household,bin,bin,basket
+item_186,,,,household,blanket,blanket,blanket
+item_187,,,,household,bottle,bottle,bottle
+item_188,item_188,,,household,bowl,bowl,bowl
+item_189,,,,household,box,box,box
+item_190,item_190,,,household,broom,broom,broom
+item_191,item_191,,,household,brush,brush,brush (object)
+item_192,,,,household,clock,clock,clock
+item_193,,item_50,,household,comb,comb,comb (object)
+item_194,item_194,,,household,cup,cup,cup
+item_195,,,,household,dish,dish,dish
+item_196,,,,household,dummy,dummy,pacifier
+item_197,,,,household,fork,fork,fork
+item_198,item_198,,item_14,household,glass,glass,glass
+item_199,,,,household,hammer,hammer,hammer
+item_200,,,,household,hoover / vacuum,hoover / vacuum,vacuum
+item_201,,,,household,jug,jug,NA
+item_202,item_202,,,household,key,key,key
+item_203,item_203,,,household,lamp,lamp,lamp
+item_204,item_204,,,household,light,light,light (object)
+item_205,,,,household,medicine,medicine,medicine
+item_206,item_206,,,household,money,money,money
+item_207,,,,household,mug,mug,cup
+item_208,,,,household,paper,paper,paper
+item_209,,,,household,penny,penny,penny
+item_210,,,,household,picture,picture,picture
+item_211,,item_46,,household,pillow,pillow,pillow
+item_212,,,,household,plant,plant,plant
+item_213,,item_58,,household,plate,plate,plate
+item_214,,,,household,purse,purse,purse
+item_215,,,,household,radio,radio,radio
+item_216,,item_62,,household,rubbish,rubbish,trash
+item_217,item_217,,,household,scissors,scissors,scissors
+item_218,item_218,,,household,soap,soap,soap
+item_219,,,,household,spoon,spoon,spoon
+item_220,,,,household,telephone,telephone,telephone
+item_221,,,,household,toothbrush,toothbrush,toothbrush
+item_222,,item_70,,household,towel,towel,towel
+item_223,item_223,,,household,watch,watch,watch (object)
+item_224,item_224,,,people,aunt,aunt,aunt
+item_225,,,,people,baby,baby,baby
+item_226,,,,people,boy,boy,boy
+item_227,,,,people,brother,brother,brother
+item_228,,,item_70,people,child,child,child
+item_229,,,,people,daddy,daddy,daddy
+item_230,,,,people,doctor,doctor,doctor
+item_231,,item_23,,people,friend,friend,friend
+item_232,,item_31,,people,person,person,person
+item_233,,,,people,policeman,policeman,police
+item_234,,,,people,sister,sister,sister
+item_235,,,,people,girl,girl,girl
+item_236,,,,people,grandma,grandma,grandma
+item_237,,,,people,grandpa,grandpa,grandpa
+item_238,,,,people,lady,lady,lady
+item_239,,,,people,man,man,man
+item_240,item_240,,,people,mummy,mummy,mommy
+item_241,,,,people,nanny,nanny,babysitter
+item_242,,,,people,people,people,people
+item_243,,,,people,teacher,teacher,teacher
+item_244,,,,people,uncle,uncle,uncle
+item_245,,,,games_routines,bath,bath,bath
+item_246,,,,games_routines,breakfast,breakfast,breakfast
+item_247,item_247,,,games_routines,bye bye,bye bye,bye
+item_248,item_248,,,games_routines,dinner,dinner,dinner
+item_249,,,,games_routines,don't,don't,don't
+item_250,,,,games_routines,hello,hello,hello
+item_251,,,,games_routines,hi,hi,hi
+item_252,,,,games_routines,lunch,lunch,lunch
+item_253,item_253,,,games_routines,nap,nap,nap
+item_254,,,,games_routines,night night,night night,good night
+item_255,,item_43,,games_routines,no,no,no
+item_256,,,,games_routines,pat-a-cake,pat-a-cake,pattycake
+item_257,item_257,,,games_routines,peekaboo,peekaboo,peekaboo
+item_258,,,,games_routines,please,please,please
+item_259,,,,games_routines,shh / hush / shush,shh / hush / shush,shh
+item_260,,,,games_routines,tea,tea,tea
+item_261,,item_51,,games_routines,thank you,thank you,thank you
+item_262,,,,games_routines,wait,wait,wait
+item_263,item_263,,,games_routines,want to,want to,wanna
+item_264,item_264,,,games_routines,yes,yes,yes
+item_265,,,,action_words,bite,bite,bite
+item_266,,,,action_words,blow,blow,blow
+item_267,,,,action_words,break,break,break
+item_268,,,,action_words,bring,bring,bring
+item_269,,,,action_words,bump,bump,bump
+item_270,item_270,,,action_words,call,call,call
+item_271,item_271,item_55,,action_words,carry,carry,carry
+item_272,item_272,,item_15,action_words,catch,catch,catch
+item_273,,,,action_words,clean,clean,clean (action)
+item_274,,,,action_words,cry,cry,cry
+item_275,,,,action_words,cuddle,cuddle,cuddle
+item_276,,,,action_words,cut,cut,cut
+item_277,,,,action_words,dance,dance,dance
+item_278,,,,action_words,draw,draw,draw
+item_279,,,,action_words,drink,drink,drink (action)
+item_280,,,,action_words,drive,drive,drive
+item_281,item_281,,item_19,action_words,drop,drop,drop
+item_282,,,,action_words,eat,eat,eat
+item_283,item_283,,,action_words,fall,fall,fall
+item_284,,,,action_words,feed,feed,feed
+item_285,,,,action_words,find,find,find
+item_286,item_286,item_67,,action_words,finish,finish,finish
+item_287,,,,action_words,get,get,get
+item_288,,,,action_words,give,give,give
+item_289,item_289,,,action_words,go,go,go
+item_290,,,,action_words,have,have,have
+item_291,,,,action_words,hear,hear,hear
+item_292,,,,action_words,help,help,help
+item_293,,,,action_words,hit,hit,hit
+item_294,,,,action_words,hug,hug,hug
+item_295,,,item_35,action_words,hurry,hurry,hurry
+item_296,,,,action_words,jump,jump,jump
+item_297,,,,action_words,kick,kick,kick
+item_298,,,,action_words,kiss,kiss,kiss
+item_299,,,,action_words,know,know,know
+item_300,,item_83,,action_words,like,like,like
+item_301,,,,action_words,look,look,look
+item_302,,,,action_words,love,love,love
+item_303,,,,action_words,make,make,make
+item_304,,,,action_words,open,open,open (action)
+item_305,item_305,,,action_words,play,play,play
+item_306,,,,action_words,pull,pull,pull
+item_307,,,,action_words,push,push,push
+item_308,,,,action_words,put,put,put
+item_309,,,,action_words,read,read,read
+item_310,,,,action_words,ride,ride,ride
+item_311,,,,action_words,run,run,run
+item_312,,,,action_words,say,say,say
+item_313,,,,action_words,scratch,scratch,scratch
+item_314,,,,action_words,see,see,see
+item_315,,,,action_words,show,show,show
+item_316,,,,action_words,shut / close,shut / close,close
+item_317,,,,action_words,sing,sing,sing
+item_318,,,,action_words,sleep,sleep,sleep
+item_319,,,,action_words,smile,smile,smile
+item_320,item_320,,,action_words,splash,splash,splash
+item_321,,,,action_words,stop,stop,stop
+item_322,item_322,,,action_words,swim,swim,swim
+item_323,,,,action_words,swing,swing,swing (action)
+item_324,,,,action_words,take,take,take
+item_325,,,,action_words,tell,tell,tell
+item_326,,,,action_words,throw,throw,throw
+item_327,item_327,,,action_words,tickle,tickle,tickle
+item_328,item_328,,,action_words,walk,walk,walk
+item_329,,,,action_words,wash,wash,wash
+item_330,,,,action_words,watch,watch,watch (action)
+item_331,,,,action_words,wipe,wipe,wipe
+item_332,,,,action_words,write,write,write
+item_333,,,,descriptive_words,all gone,all gone,all gone
+item_334,,,,descriptive_words,asleep,asleep,asleep
+item_335,,,,descriptive_words,bad,bad,bad
+item_336,item_336,,,descriptive_words,big,big,big
+item_337,,,,descriptive_words,blue,blue,blue
+item_338,,,,descriptive_words,broken,broken,broken
+item_339,,,,descriptive_words,careful,careful,careful
+item_340,item_340,,,descriptive_words,clean,clean,clean (description)
+item_341,item_341,item_20,,descriptive_words,cold,cold,cold
+item_342,,,,descriptive_words,dark,dark,dark
+item_343,item_343,,,descriptive_words,dirty,dirty,dirty
+item_344,,,,descriptive_words,dry,dry,dry (description)
+item_345,,,item_87,descriptive_words,empty,empty,empty
+item_346,item_346,item_24,,descriptive_words,fast,fast,fast
+item_347,,,item_95,descriptive_words,fine,fine,fine
+item_348,,item_103,,descriptive_words,gentle,gentle,gentle
+item_349,,,,descriptive_words,good,good,good
+item_350,,,,descriptive_words,green,green,green
+item_351,item_351,item_28,,descriptive_words,happy,happy,happy
+item_352,,,,descriptive_words,hard,hard,hard
+item_353,item_353,item_32,,descriptive_words,hot,hot,hot
+item_354,,,,descriptive_words,hungry,hungry,hungry
+item_355,,,,descriptive_words,hurt,hurt,hurt (description)
+item_356,,,,descriptive_words,little,little,little (description)
+item_357,,,,descriptive_words,nasty,nasty,nasty
+item_358,,,,descriptive_words,naughty,naughty,naughty
+item_359,,,,descriptive_words,nice,nice,nice
+item_360,item_360,,,descriptive_words,old,old,old
+item_361,,,,descriptive_words,pretty,pretty,pretty
+item_362,,,,descriptive_words,red,red,red
+item_363,,,,descriptive_words,sad,sad,sad
+item_364,,,,descriptive_words,scared,scared,scared
+item_365,,,,descriptive_words,sick,sick,sick
+item_366,,,,descriptive_words,sleepy,sleepy,sleepy
+item_367,item_367,,,descriptive_words,soft,soft,soft
+item_368,,,,descriptive_words,thirsty,thirsty,thirsty
+item_369,,,,descriptive_words,tired,tired,tired
+item_370,item_370,item_44,,descriptive_words,wet,wet,wet (description)
+item_371,,,,descriptive_words,yellow,yellow,yellow
+item_372,,,,question_words,how,how,how
+item_373,item_373,,,question_words,what,what,what
+item_374,,,,question_words,when,when,when (question)
+item_375,item_375,item_76,,question_words,where,where,where (question)
+item_376,,,,question_words,who,who,who
+item_377,item_377,,item_56,question_words,why,why,why
+item_378,,item_52,,time_words,day,day,day
+item_379,,,,time_words,later,later,later
+item_380,,,,time_words,morning,morning,morning
+item_381,,,,time_words,night,night,night
+item_382,item_382,,,time_words,now,now,now
+item_383,item_383,,item_28,time_words,today,today,today
+item_384,item_384,,,time_words,tomorrow,tomorrow,tomorrow
+item_385,,item_56,,time_words,tonight,tonight,tonight
+item_386,item_386,,,pronouns,her,her,her
+item_387,,,,pronouns,his,his,his
+item_388,item_388,,,pronouns,I,I,I
+item_389,,,,pronouns,it,it,it
+item_390,,,,pronouns,me,me,me
+item_391,,,,pronouns,mine,mine,mine
+item_392,,,,pronouns,my,my,my
+item_393,,,,pronouns,that,that,that
+item_394,,item_68,,pronouns,this,this,this
+item_395,,,,pronouns,you,you,you
+item_396,,,,pronouns,your,your,your
+item_397,,,item_68,prepositions,away,away,away
+item_398,item_398,,,prepositions,back,back,back (preposition)
+item_399,,item_84,,prepositions,down,down,down
+item_400,item_400,,,prepositions,in,in,in
+item_401,,,,prepositions,inside,inside,inside
+item_402,,,,prepositions,off,off,off
+item_403,,,,prepositions,on,on,on
+item_404,,,,prepositions,out,out,out
+item_405,item_405,,,prepositions,there,there,there
+item_406,,item_88,,prepositions,under,under,under
+item_407,,,,prepositions,up,up,up
+item_408,item_408,item_92,,prepositions,all,all,all
+item_409,,,,prepositions,again,again,again
+item_410,,,,prepositions,another,another,another
+item_411,,,,prepositions,more,more,more
+item_412,,,item_88,prepositions,none,none,none
+item_413,item_413,,,prepositions,not,not,not
+item_414,item_414,,,prepositions,other,other,other
+item_415,,,,prepositions,same,same,same
+item_416,item_416,,,prepositions,some,some,some
+item_417,,item_59,,action_words,chase,chase,chase
+item_418,,,,action_words,smell,smell,smell
+,,item_16,,,allgone,allgone,all gone
+,,item_21,,,ouch/ow,ouch/ow,owie
+,,item_25,,,uh-oh/oh dear,uh-oh/oh dear,uh oh
+,,item_27,,,mummy/mum,mummy/mum,mommy
+,,item_29,,,woof woof,woof woof,woof woof
+,,item_30,,,chin,chin,chin
+,,item_35,,,bye/byebye,bye/byebye,bye
+,,item_36,,,last,last,last
+,,item_39,,,hi/hello,hi/hello,hi
+,,item_40,,,tiny,tiny,little (description)
+,,item_47,,,shopping,shopping,shopping
+,,item_48,,,after,after,after
+,,item_54,,,lamp/torch,lamp/torch,lamp
+,,item_57,,,aeroplane,aeroplane,airplane
+,,item_60,,,our,our,our
+,,item_63,,,pour,pour,pour
+,,item_64,,,them,them,them
+,,item_66,,,tray,tray,tray
+,,item_71,,,fit,fit,fit
+,,item_72,,,us,us,us
+,,item_75,,,hug/cuddle,hug/cuddle,hug
+,,item_77,,,game,game,game
+,,item_79,,,listen,listen,listen
+,,item_80,,,beside,beside,beside
+,,item_81,,,sandwich,sandwich,sandwich
+,,item_86,,,oven/cooker,oven/cooker,oven
+,,item_87,,,pretend,pretend,pretend
+,,item_89,item_69,,sauce,sauce,sauce
+,,item_91,,,rip/tear,rip/tear,tear
+,,item_93,item_61,,cream cracker,cream cracker,biscuit
+,,item_94,,,flag,flag,flag
+,,item_95,,,shake,shake,shake
+,,item_96,,,much,much,much
+,,item_99,,,taste,taste,taste
+,,item_100,,,could,could,could
+,,item_104,item_96,,need to,need to,need
+,,item_107,item_67,,think,think,think
+,,item_108,,,would,would,would
+,,item_111,,,wish,wish,wish
+,,item_112,,,if,if,if
+,,,item_13,,dinosaur,dinosaur,dinosaur
+,,,item_16,,peculiar,peculiar,strange
+,,,item_18,,jar,jar,jar
+,,,item_20,,before,before,before
+,,,item_21,,reindeer,reindeer,reindeer
+,,,item_22,,ladder,ladder,ladder
+,,,item_23,,fasten,fasten,fasten
+,,,item_24,,then,then,then
+,,,item_25,,castle,castle,castle
+,,,item_26,,material,material,material
+,,,item_27,,forget/forgot,forget/forgot,forget
+,,,item_29,,drum,drum,drum (object)
+,,,item_30,,stamp,stamp,stamp (action)
+,,,item_31,,hate,hate,hate
+,,,item_32,,week,week,week
+,,,item_33,,football,football,soccer
+,,,item_34,,tyre,tyre,tire (object)
+,,,item_36,,yesterday,yesterday,yesterday
+,,,item_37,,microscope,microscope,microscope
+,,,item_38,,furniture,furniture,furniture
+,,,item_39,,leave,leave,leave
+,,,item_40,,their,their,their
+,,,item_41,,tricycle,tricycle,tricycle
+,,,item_43,,measure,measure,measure
+,,,item_44,,they,they,they
+,,,item_45,,kite,kite,kite
+,,,item_47,,peel,peel,peel
+,,,item_48,,those,those,those
+,,,item_49,,trolley,trolley,trolley
+,,,item_50,,cloud,cloud,cloud
+,,,item_51,,promise,promise,promise
+,,,item_52,,yourself,yourself,yourself
+,,,item_53,,lemon,lemon,lemon
+,,,item_54,,fence,fence,fence
+,,,item_55,,kate,kate,NA
+,,,item_57,,peanut,peanut,nut
+,,,item_58,,hose/hose-pipe,hose/hose-pipe,hose
+,,,item_59,,sneeze,sneeze,sneeze
+,,,item_60,,about,about,about
+,,,item_62,,pavement,pavement,pavement
+,,,item_63,,somersault,somersault,somersault
+,,,item_64,,above,above,above
+,,,item_65,,salt,salt,salt
+,,,item_71,,black,black,black
+,,,item_72,,between,between,between
+,,,item_73,,vanilla,vanilla,vanilla
+,,,item_74,,cowboy,cowboy,cowboy
+,,,item_75,,bored,bored,bored
+,,,item_76,,on top of,on top of,on top
+,,,item_77,,vegetable,vegetable,vegetable
+,,,item_78,,family,family,family
+,,,item_79,,deep,deep,deep
+,,,item_80,,each,each,each
+,,,item_81,,beads,beads,beads
+,,,item_82,,farmer,farmer,farmer
+,,,item_83,,different,different,different
+,,,item_84,,every,every,all
+,,,item_86,,nobody,nobody,no one
+,,,item_89,,elbow,elbow,elbow
+,,,item_90,,nurse,nurse,nurse
+,,,item_91,,expensive,expensive,expensive
+,,,item_92,,might,might,might
+,,,item_93,,(finger) nail,(finger) nail,nail (body part)
+,,,item_94,,accident,accident,accident
+,,,item_97,,thumb,thumb,thumb
+,,,item_98,,circle,circle,circle
+,,,item_99,,half,half,half
+,,,item_100,,were,were,were
+,,,item_101,,plaster/bandage,plaster/bandage,bandaid
+,,,item_102,,front,front,front
+,,,item_103,,long,long,long
+,,,item_104,,although,although,although
+,,,item_105,,blade,blade,knife
+,,,item_106,,idea,idea,idea
+,,,item_107,,lost,lost,lost
+,,,item_108,,because,because,because
+,,,item_109,,computer,computer,computer
+,,,item_110,,camping,camping,camping
+,,,item_111,,angry,angry,angry
+,,,item_112,,however,however,however

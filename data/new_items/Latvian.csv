@@ -1,0 +1,797 @@
+WS,WG,category,definition,gloss,uni_lemma
+item_1,,sounds,ai/au/vai/auč,ouch,ouch
+item_2,,sounds,be-e-e/bē/mē,sheep,baa baa
+item_3,item_2,sounds,br/brm/brum,car,vroom
+item_4,,sounds,brr,cold,brrr
+item_5,item_3,sounds,čiv-čiv,bird,tweet tweet
+item_6,item_4,sounds,čuk-čuk/tu-tū,train,choo choo
+item_7,,sounds,iā,horse,neigh
+item_8,item_5,sounds,kikerigū,rooster,cockadoodledoo
+item_9,item_6,sounds,krā-krā,crow,caw
+item_10,,sounds,ku-kū,coocoo bird,coo
+item_11,item_7,sounds,kvā-kvā,frog,ribbit
+item_12,item_8,sounds,mū,cow,moo
+item_13,item_9,sounds,ņam-ņam,eating,yum yum
+item_14,item_10,sounds,ņau/miau,cat,meow
+item_15,item_11,sounds,pēk-pēk/pek-pek,duck,quack quack
+item_16,item_12,sounds,pī-pī,mouse,squeak
+item_17,,sounds,puk-puk,hedgehog,snuffle
+item_18,item_13,sounds,ruk-ruk,pig,oink
+item_19,,sounds,sss/zzz/žžž,ply,buzz
+item_20,item_14,sounds,vau-vau,dog,woof woof
+item_21,item_15,animals,aita,sheep,sheep
+item_22,,animals,balodis,pidgeon,pigeon
+item_23,item_16,animals,bite,bee,bee
+item_24,item_17,animals,bruņurupucis,turtle,turtle
+item_25,item_18,animals,cālis,chicken,chicken
+item_26,item_19,animals,cūka,pig,pig
+item_27,item_20,animals,čūska,snake,snake
+item_28,item_21,animals,ezis,hendgehog,hedgehog
+item_29,item_22,animals,gailis,rooster,rooster
+item_30,item_23,animals,govs,cow,cow
+item_31,item_24,animals,kaķis,cat,cat
+item_32,,animals,kaza,goat,goat
+item_33,,animals,krokodils,crocodile,crocodile
+item_34,item_25,animals,kukainis,bug,bug
+item_35,item_26,animals,lācis,bear,bear
+item_36,item_27,animals,lapsa,fox,fox
+item_37,item_28,animals,lauva,lion,lion
+item_38,item_29,animals,mārīte,ladybug,ladybug
+item_39,item_30,animals,muša,fly,fly (animal)
+item_40,item_31,animals,pele,mouse,mouse
+item_41,item_32,animals,pērtiķis,monkey,monkey
+item_42,item_33,animals,pīle,duck,duck
+item_43,item_34,animals,pingvīns,penguin,penguin
+item_44,item_35,animals,pūce,owl,owl
+item_45,item_36,animals,putns,bird,bird
+item_46,,animals,sivēns,piglet,pig
+item_47,item_37,animals,skudra,ant,ant
+item_48,item_38,animals,suns,dog,dog
+item_49,item_39,animals,taurenis,butterfly,butterfly
+item_50,item_40,animals,tīģeris,tiger,tiger
+item_51,item_41,animals,varde,frog,frog
+item_52,,animals,vārna,crow,crow
+item_53,item_42,animals,vāvere,squirrel,squirrel
+item_54,item_43,animals,vilks,wolf,wolf
+item_55,item_44,animals,vista,hen,chicken (animal)
+item_56,item_45,animals,zaķis,hare,bunny
+item_57,item_46,animals,zilonis,elephant,elephant
+item_58,item_47,animals,zirgs,horse,horse
+item_59,item_48,animals,zirneklis,spider,spider
+item_60,item_49,animals,zivs,fish,fish (animal)
+item_61,item_50,animals,zoss,goose,goose
+item_62,,animals,zvirbulis,sparrow,sparrow
+item_63,item_51,animals,žirafe,giraffe,giraffe
+item_64,item_52,vehicles,autobuss,bus,bus
+item_65,item_53,vehicles,helikopters,helicopter,helicopter
+item_66,item_54,vehicles,kuģis,ship,boat
+item_67,,vehicles,laiva,boat,boat
+item_68,item_55,vehicles,lidmašīna,airplane,airplane
+item_69,item_56,vehicles,mašīna,car,car
+item_70,item_57,vehicles,motocikls,motorbike,motorcycle
+item_71,,vehicles,ragaviņas,sled,sled
+item_72,item_58,vehicles,ratiņi,pram,stroller
+item_73,,vehicles,ritenis / velosipēds,bicycle,bicycle
+item_74,item_60,vehicles,traktors,tractor,tractor
+item_75,,vehicles,tramvajs,tram,tram
+item_76,,vehicles,trolejbuss,trolleybus,trolley
+item_77,item_61,vehicles,vilciens,train,train
+item_78,item_63,toys,balons,balloon,balloon
+item_79,item_62,toys,bumba,ball,ball
+item_80,,toys,dāvana,gift,present
+item_81,,toys,formiņa (smilšu k.),sand mold,sandbox
+item_82,,toys,grābeklis,rake,rake (object)
+item_83,item_64,toys,grāmata,book,book
+item_84,item_65,toys,klucīši,blocks,blocks
+item_85,,toys,krāsas,paints,paint (object)
+item_86,item_66,toys,lāpsta,rake,shovel
+item_87,item_67,toys,lelle,doll,doll
+item_88,,toys,ota,paintbrush,brush (object)
+item_89,,toys,pasaka,fairytale,story
+item_90,,toys,pildspalva,pen,pen
+item_91,,toys,plastilīns,playdough,play dough
+item_92,item_68,toys,rotaļlieta/mantiņa,toy,toy (object)
+item_93,item_69,toys,spainītis,bucket,bucket
+item_94,,toys,spēle,game,game
+item_95,,toys,zīmulis,pencil/crayon,pencil
+item_96,item_70,food_drink,ābols,apple,apple
+item_97,item_71,food_drink,apelsīns,orage,orange (food)
+item_98,,food_drink,arbūzs,watermelon,watermelon
+item_99,,food_drink,avenes,raspberries,raspberry
+item_100,item_72,food_drink,banāns,banana,banana
+item_101,item_73,food_drink,biezpiens,quark/cottage cheese,cottage cheese
+item_102,item_74,food_drink,bumbieris,pear,pear
+item_103,item_75,food_drink,burkāns,carrot,carrot
+item_104,item_76,food_drink,cepums,cookie,cookie
+item_105,,food_drink,cīsiņš,hotdog,hot dog
+item_106,,food_drink,citrons,lemon,lemon
+item_107,,food_drink,cukurs,sugar,sugar
+item_108,,food_drink,desa,sausage,sausage
+item_109,item_77,food_drink,gaļa,meat,meat
+item_110,,food_drink,griķi,buckwheat,porridge
+item_111,item_78,food_drink,gurķis,cucumber,cucumber
+item_112,,food_drink,ievārījums,jam,jam
+item_113,item_79,food_drink,jogurts,yoghurt,yogurt
+item_114,,food_drink,kafija,coffee,coffee
+item_115,,food_drink,kakao,cocoa,hot chocolate
+item_116,item_80,food_drink,kāposti,cabbage,cabbage
+item_117,item_81,food_drink,kartupeļi,potatoes,potato
+item_118,,food_drink,kefīrs,kefir,kefir
+item_119,,food_drink,kompots,fruit drink,compote
+item_120,item_82,food_drink,konfekte,candy,candy
+item_121,item_83,food_drink,kotlete,meatballs,meatball
+item_122,item_84,food_drink,krējums,sour cream,cream
+item_123,,food_drink,ķirbis,pumpkin,pumpkin
+item_124,,food_drink,ķirši,cherries,cherry
+item_125,,food_drink,limonāde,lemonade,lemonade
+item_126,item_85,food_drink,maize,bread,bread
+item_127,item_86,food_drink,makaroni,macaroni,pasta
+item_128,,food_drink,mandarīns,tangerine,tangerine
+item_129,,food_drink,manna,semolina,pudding
+item_130,,food_drink,medus,honey,honey
+item_131,,food_drink,mellenes,blueberries,blueberry
+item_132,,food_drink,mērce,gravy/sauce,gravy
+item_133,item_88,food_drink,ola,egg,egg
+item_134,,food_drink,pankūka,pancake,pancake
+item_135,item_89,food_drink,piens,milk,milk
+item_136,,food_drink,piparkūkas,gingerbread,gingerbread
+item_137,,food_drink,pīrādziņš,pie/hot pocket,dumpling
+item_138,,food_drink,plūme,plum,plum
+item_139,item_91,food_drink,putra,porridge,porridge
+item_140,,food_drink,rieksti,nuts,nut
+item_141,,food_drink,rīsi,rice,rice
+item_142,,food_drink,rozīnes,raisins,raisin
+item_143,item_92,food_drink,salāti,salad,salad
+item_144,item_93,food_drink,saldējums,icecream,ice cream
+item_145,,food_drink,sāls,salt,salt
+item_146,,food_drink,sēnes,mushrooms,mushroom
+item_147,,food_drink,sieriņš,curd snack,NA
+item_148,item_94,food_drink,siers,cheese,cheese
+item_149,item_95,food_drink,sula,juice,juice
+item_150,,food_drink,sviestmaize,sandwich,sandwich
+item_151,item_96,food_drink,sviests,butter,butter
+item_152,,food_drink,šokolāde,chocolate,chocolate
+item_153,item_97,food_drink,tēja,tea,tea
+item_154,item_98,food_drink,tomāts,tomato,tomato
+item_155,item_99,food_drink,torte/kūka,cake,cake
+item_156,item_100,food_drink,ūdens,water,water (beverage)
+item_157,,food_drink,upenes,black currants,berry
+item_158,,food_drink,vīnogas,grapes,grapes
+item_159,,food_drink,vista,chicken,chicken (food)
+item_160,item_101,food_drink,zemenes,strawberries,strawberry
+item_161,,food_drink,zirņi,peas,peas
+item_162,item_102,food_drink,zivs,fish,fish (food)
+item_163,item_103,food_drink,zupa,soup,soup
+item_164,,clothing,apavi,shoes,shoe
+item_165,,clothing,apģērbs,clothes,clothes
+item_166,item_105,clothing,bikses,trousers,pants
+item_167,item_106,clothing,biksītes,knickers,underpants
+item_168,,clothing,botes,high overshoes,boot
+item_169,item_107,clothing,cepure,hat,hat
+item_170,item_108,clothing,cimdi,mittens,mitten
+item_171,item_109,clothing,čības,slippers,slipper
+item_172,item_110,clothing,džemperis,jumper,sweater
+item_173,item_111,clothing,jaka,cardigan,jacket
+item_174,,clothing,kapuce,hood,hood
+item_175,,clothing,kedas,sneakers,sneaker
+item_176,item_112,clothing,kleita,dress,dress (object)
+item_177,,clothing,kombinezons,overalls,overalls
+item_178,item_113,clothing,krekls,shirt,shirt
+item_179,item_114,clothing,krelles,beads,beads
+item_180,item_115,clothing,kurpes,shoes,shoe
+item_181,item_117,clothing,mētelis,coat,coat
+item_182,,clothing,pampers/autiņbiksītes,diaper,diaper
+item_183,,clothing,pidžama,pajamas,pajamas
+item_184,,clothing,pirkstaiņi,gloves,glove
+item_185,item_118,clothing,pogas,buttons,button
+item_186,,clothing,sandales,sandals,sandal
+item_187,,clothing,svārki,skirt,skirt
+item_188,item_119,clothing,šalle,scarf,scarf
+item_189,,clothing,šorti/īsbikses,shorts,shorts
+item_190,item_121,clothing,zābaki,boots,boot
+item_191,item_122,clothing,zeķbikses,tights,tights
+item_192,item_123,clothing,zeķes,socks,sock
+item_193,,body_parts,acs/acis,eye/eyes,eye
+item_194,,body_parts,auss/ausis,ear/ears,ear
+item_195,,body_parts,celis,knee,knee
+item_196,item_127,body_parts,deguns,nose,nose
+item_197,,body_parts,dibens,bottom,butt
+item_198,,body_parts,elkonis,elbow,elbow
+item_199,item_128,body_parts,galva,head,head
+item_200,item_129,body_parts,kāja,leg,leg
+item_201,item_130,body_parts,kakls,neck,neck
+item_202,,body_parts,lūpas,lip,lip
+item_203,item_131,body_parts,mati,hear,hair
+item_204,item_132,body_parts,mēle,tongue,tongue
+item_205,item_133,body_parts,mugura,back,back (body part)
+item_206,item_134,body_parts,mute,mouth,mouth
+item_207,item_135,body_parts,naba,navel/belly-button,belly button
+item_208,item_136,body_parts,nagi,nails,nail (body part)
+item_209,,body_parts,piere,forehead,forehead
+item_210,,body_parts,pirksts/pirksti,finger/fingers (also toe/toes),finger
+item_211,,body_parts,plauksta,palm,palm
+item_212,,body_parts,plecs/pleci,shoulder/shoulders,shoulder
+item_213,item_139,body_parts,roka,arm,arm
+item_214,item_140,body_parts,seja,face,face
+item_215,,body_parts,sirds,heart,heart
+item_216,,body_parts,skropstas,eyelashes,eyelash
+item_217,,body_parts,uzacs/uzacis,eyebrows,eyebrow
+item_218,item_141,body_parts,vaigi,cheeks,cheek
+item_219,item_142,body_parts,vēders,tummy,tummy
+item_220,item_143,body_parts,zobi,teeth,tooth
+item_221,,body_parts,zods,chin,chin
+item_222,item_168,household,āmurs,hammer,hammer
+item_223,item_169,household,atkritumi,trash/garbage,trash
+item_224,item_170,household,atslēgas,keys,key
+item_225,item_171,household,attēls,picture,picture
+item_226,item_172,household,birste,brush,brush (object)
+item_227,item_173,household,bļoda,dish,dish
+item_228,item_174,household,brilles,glasses,glasses
+item_229,,household,burka,jar,jar
+item_230,item_175,household,dakšiņa,fork,fork
+item_231,,household,dators,computer,computer
+item_232,item_176,household,dvielis,towel,towel
+item_233,,household,fotoaparāts,camera,camera
+item_234,item_177,household,gaisma,light,light (object)
+item_235,item_178,household,glāze,class,glass
+item_236,,household,gludeklis,iron,iron (object)
+item_237,,household,grozs,basket,basket
+item_238,item_179,household,karote,spoon,spoon
+item_239,item_180,household,kaste,box,box
+item_240,item_181,household,katls,pot,pot
+item_241,item_182,household,knupis,comforter,blanket
+item_242,item_183,household,krūze,mug,mug
+item_243,item_184,household,ķemme,comb,comb (object)
+item_244,,household,ķerra,barrow,wheelbarrow
+item_245,item_185,household,lampa,lamp,lamp
+item_246,,household,lupata,rag,rag
+item_247,,household,maisiņš,bag,bag
+item_248,,household,maks,purse,wallet
+item_249,item_186,household,matu suka,hairbrush,brush (object)
+item_250,,household,nagla,nail,nail (object)
+item_251,item_187,household,nauda,money,money
+item_252,,household,nazis,knife,knife
+item_253,,household,palags,bed sheet,sheet
+item_254,,household,panna,pan,pan
+item_255,item_188,household,papīrs,paper,paper
+item_256,item_189,household,pudele,bottle,bottle
+item_257,item_190,household,pulkstenis,clock,clock
+item_258,item_191,household,putekļsūcējs,vacuum,vacuum
+item_259,item_192,household,radio,radio,radio
+item_260,,household,salvetes,tissues,tissue
+item_261,item_193,household,sega,blanket,blanket
+item_262,item_194,household,slota,broom,broom
+item_263,,household,soma,purse,bag
+item_264,item_196,household,spilvens,pillow,pillow
+item_265,item_197,household,šķēres,scissors,scissors
+item_266,item_198,household,šķīvis,plate,plate
+item_267,item_199,household,telefons,phone,telephone
+item_268,,household,trauki,dishes/crockery,dish
+item_269,,household,tualetes papīrs,toilet paper,toilet paper
+item_270,item_200,household,zāles,medicine,medicine
+item_271,item_201,household,ziepes,soap,soap
+item_272,,household,zobu birste,toothbrush,toothbrush
+item_273,,household,zobu pasta,toothpaste,toothpaste
+item_274,,furniture_rooms,atvilktne,drawer,drawer
+item_275,,furniture_rooms,balkons,balcony,balcony
+item_276,item_144,furniture_rooms,dīvāns,couch,couch
+item_277,item_145,furniture_rooms,durvis,door,door
+item_278,item_146,furniture_rooms,duša,shower,shower
+item_279,item_147,furniture_rooms,gaitenis,corridor,corridor
+item_280,item_148,furniture_rooms,galds,table,table
+item_281,,furniture_rooms,garāža,garage,garage
+item_282,,furniture_rooms,grīda,floor,floor
+item_283,,furniture_rooms,griesti,ceiling,ceiling
+item_284,item_149,furniture_rooms,gulta,bed,bed
+item_285,item_150,furniture_rooms,istaba,room,room
+item_286,item_151,furniture_rooms,izlietne,sink,sink
+item_287,,furniture_rooms,jumts,roof,roof
+item_288,item_152,furniture_rooms,kāpnes,stairs,stairs
+item_289,item_153,furniture_rooms,krāns,tap/faucet,faucet
+item_290,item_154,furniture_rooms,krāsns,oven,oven
+item_291,item_155,furniture_rooms,krēsls,chair/armchair,chair
+item_292,item_156,furniture_rooms,ledusskapis,fridge,refrigerator
+item_293,,furniture_rooms,lifts,elevator,elevator
+item_294,,furniture_rooms,lodžija,loggia,balcony
+item_295,item_157,furniture_rooms,logs,window,window
+item_296,,furniture_rooms,mēbeles,furniture,furniture
+item_297,item_158,furniture_rooms,paklājs,carpet,carpet
+item_298,,furniture_rooms,plaukts,shelf,shelf
+item_299,item_159,furniture_rooms,plīts,stove,stove
+item_300,,furniture_rooms,podiņš,potty,potty
+item_301,item_161,furniture_rooms,skapis,closet,closet
+item_302,item_162,furniture_rooms,spogulis,mirror,mirror
+item_303,item_163,furniture_rooms,televizors,TV,TV
+item_304,item_164,furniture_rooms,tualete,toilet,toilet
+item_305,item_165,furniture_rooms,vanna,bath,bath
+item_306,,furniture_rooms,veļasmašīna,washing machine,washing machine
+item_307,item_167,furniture_rooms,virtuve,kitchen,kitchen
+item_308,item_202,outside,akmens,stone,rock (object)
+item_309,item_206,outside,ceļš,road,road
+item_310,,outside,čiekurs,conifer cone,pine cone
+item_311,item_208,outside,dārzs,garden,garden
+item_312,item_209,outside,debesis,sky,sky
+item_313,,outside,dobe,planting bed,bed
+item_314,,outside,dubļi,mud,mud
+item_315,,outside,ezers,lake,lake
+item_316,,outside,iela,street,street
+item_317,,outside,ietve/trotuārs,pavement,pavement
+item_318,item_211,outside,jūra,sea,sea
+item_319,item_223,outside,slidkalniņš,slide,slide (object)
+item_320,,outside,kastanis,chestnut,chestnut
+item_321,item_210,outside,koks,tree,tree
+item_322,,outside,krūms,bush,bush
+item_323,,outside,lāsteka,icicle,icicle
+item_324,,outside,ledus,ice,ice
+item_325,item_212,outside,lietus,rain,rain
+item_326,item_215,outside,mākonis,cloud,cloud
+item_327,item_216,outside,mēness,moon,moon
+item_328,,outside,nūja,stick,stick
+item_329,,outside,ozolzīle/zīle,acorn,acorn
+item_330,item_220,outside,peļķe,puddle,puddle
+item_331,,outside,pļava,field,field
+item_332,item_221,outside,puķe,flower,flower
+item_333,item_222,outside,saule,sun,sun
+item_334,,outside,smilšukaste,sandbox,sandbox
+item_335,item_224,outside,smiltis,sand,sand
+item_336,,outside,sniegavīrs,snowman,snowman
+item_337,item_225,outside,sniegs,snow,snow
+item_338,,outside,sols,bench,bench
+item_339,item_226,outside,šūpoles,swings,swing (object)
+item_340,,outside,taka,path,path
+item_341,,outside,upe,river,river
+item_342,,outside,vējš,wind,wind
+item_343,item_228,outside,zāle,grass,grass
+item_344,item_229,outside,zvaigznes,stars,star
+item_345,,places,ārā,outside,outside
+item_346,,places,baseins,(swimming) pool,pool
+item_347,,places,baznīca,church,church
+item_348,,places,bērnudārzs,kindergarten,kindergarten
+item_349,,places,ciemos,on a visit (i.e. visit someone as guests),outing
+item_350,,places,cirks,circus,circus
+item_351,,places,darbs,work,work (place)
+item_352,,places,grupa (b/d),class/group (in the kindergarten),group
+item_353,,places,kino,movies,movie
+item_354,,places,koncerts,concert,concert
+item_355,,places,lauki,countryside,country
+item_356,,places,māja,house,house
+item_357,,places,mājas,home,home
+item_358,,places,mežs,forest/woods,forest
+item_359,,places,pagalms,yard,yard
+item_360,,places,parks,park,park
+item_361,,places,pilsēta,city,city
+item_362,,places,pludmale,beach,beach
+item_363,,places,rotaļlaukums,playground,playground
+item_364,,places,skola,school,school
+item_365,,places,teātris,theater,theater
+item_366,,places,tirgus,market,market
+item_367,,places,veikals,shop,store
+item_368,,places,zooloģiskais dārzs/zvērudārzs,zoo,zoo
+item_369,item_231,people,ārsts,doctor,doctor
+item_370,,people,audzinātāja,kindergarten teacher,teacher
+item_371,item_233,people,aukle,nanny,babysitter
+item_372,,people,bērna vārds,child´s own name,child's own name
+item_373,item_235,people,bērns,child,child
+item_374,item_236,people,brālis,brother,brother
+item_375,,people,ciemiņš,guest,guest
+item_376,item_237,people,cilvēks,person,person
+item_377,,people,dēls,son,son
+item_378,,people,draudzene,friend (f),friend
+item_379,,people,draugs,friend (m),friend
+item_380,,people,klauns,clown,clown
+item_381,item_238,people,krustmāte,godmother,godmother
+item_382,item_239,people,krusttēvs,godfather,godfather
+item_383,item_240,people,ļaudis,people,people
+item_384,item_241,people,māsa,sister,sister
+item_385,item_242,people,māte*,mother,mommy
+item_386,item_243,people,mazulis/bēbis,baby,baby
+item_387,,people,meita,daughter,daughter
+item_388,item_244,people,meitene,girl,girl
+item_389,item_245,people,onkulis,man,man
+item_390,item_246,people,tēvocis,uncle,uncle
+item_391,,people,policists,policeman,police
+item_392,item_247,people,puika/zēns,boy,boy
+item_393,,people,skolotājs,teacher,teacher
+item_394,item_248,people,tante,aunt,aunt
+item_395,item_249,people,tēvs*,father,daddy
+item_396,,people,ugunsdzēsējs,fireman,firefighter
+item_397,item_250,people,vecāmāte*,grandmother,grandma
+item_398,item_251,people,vectēvs*,grandfather,grandpa
+item_399,,games_routines,"Cepu, cepu kukulīti... ",Latvian game routine,NA
+item_400,,games_routines,Ķer mani!,Catch me!,NA
+item_401,,games_routines,Šitā jāja lieli kungi...,Latvian game routine,NA
+item_402,,games_routines,"Vāru, vāru putriņu ...",Latvian game routine,NA
+item_403,,games_routines,ar labu nakti,good night,good night
+item_404,,games_routines,atvaino,sorry,sorry
+item_405,item_254,games_routines,brokastis,breakfast,breakfast
+item_406,item_255,games_routines,diendusa,siesta,nap
+item_407,item_258,games_routines,jā,yes,yes
+item_408,,games_routines,klusu!,be quiet,shh
+item_409,,games_routines,labdien,good afternoon,hello
+item_410,,games_routines,labrīt,good morning,good morning
+item_411,,games_routines,labvakar,good evening,good evening
+item_412,,games_routines,launags,afternoon snack,snack
+item_413,,games_routines,lūdzu,please,please
+item_414,item_264,games_routines,nē,no,no
+item_415,,games_routines,paldies,thank you,thank you
+item_416,,games_routines,piedod,excuse me,excuse me
+item_417,item_268,games_routines,pusdienas,lunch,lunch
+item_418,,games_routines,"sveiki, čau",hello,hello
+item_419,,games_routines,uz redzēšanos/atā,bye,bye
+item_420,item_270,games_routines,vakariņas,dinner,dinner
+item_421,item_271,action_words,aizvērt,close,close
+item_422,,action_words,apskaut/apkampt,hug,hug
+item_423,item_274,action_words,apstāties,stop,stop
+item_424,,action_words,atrast,find,find
+item_425,item_275,action_words,atvērt,open,open (action)
+item_426,,action_words,baidīties,be scared,fear
+item_427,item_276,action_words,barot,feed,feed
+item_428,item_277,action_words,beigt,finish,finish
+item_429,item_278,action_words,braukt,go (by car etc.),go
+item_430,item_279,action_words,bučot/skūpstīt,kiss,kiss
+item_431,,action_words,celt,build,build
+item_432,,action_words,celties,get up,get up
+item_433,,action_words,čurāt,pee,pee
+item_434,item_280,action_words,dabūt,get,get
+item_435,,action_words,darīt,do,do
+item_436,item_281,action_words,dejot,dance,dance
+item_437,,action_words,domāt,think,think
+item_438,item_282,action_words,dot,give,give
+item_439,,action_words,dusmoties,be angry,angry
+item_440,item_283,action_words,dzert,drink,drink (action)
+item_441,item_284,action_words,dziedāt,sing,sing
+item_442,item_285,action_words,dzirdēt,hear,hear
+item_443,item_286,action_words,ēst,eat,eat
+item_444,,action_words,gaidīt,wait,wait
+item_445,,action_words,garšot,taste,taste
+item_446,,action_words,gribēt,want,want
+item_447,,action_words,griezt,cut,cut
+item_448,item_287,action_words,grūst,push,push
+item_449,item_288,action_words,gulēt,sleep,sleep
+item_450,item_289,action_words,ģērbties,get dressed,dress (action)
+item_451,item_290,action_words,iet,go (on foot),go
+item_452,,action_words,kakāt,poop,poop
+item_453,,action_words,kāpt,climb,climb
+item_454,,action_words,klausīties,listen,listen
+item_455,,action_words,klauvēt,knock,knock
+item_456,,action_words,kliegt,scream,scream
+item_457,,action_words,kniebt,pinch,pinch
+item_458,item_291,action_words,kost,bite,bite
+item_459,,action_words,krāsot,pain,paint (action)
+item_460,item_292,action_words,krist,fall,fall
+item_461,,action_words,ķert,catch,catch
+item_462,,action_words,laizīt,lick,lick
+item_463,item_293,action_words,lasīt,read,read
+item_464,item_294,action_words,lauzt,break,break
+item_465,item_295,action_words,lēkt,jump,jump
+item_466,,action_words,lidot,fly,fly (action)
+item_467,,action_words,liet,pour,pour
+item_468,,action_words,likt,put,put
+item_469,item_296,action_words,mazgāt,wash,wash
+item_470,item_297,action_words,mazgāties,wash oneself,bathe
+item_471,item_298,action_words,meklēt,search,search
+item_472,item_299,action_words,mest,throw,throw
+item_473,,action_words,mīlēt,love,love
+item_474,item_300,action_words,nest,carry,carry
+item_475,,action_words,noķert,catch/grab,catch
+item_476,item_301,action_words,nolikt,put down,put
+item_477,item_302,action_words,ņemt,take,take
+item_478,item_303,action_words,palīdzēt,help,help
+item_479,item_304,action_words,parādīt,show,show
+item_480,,action_words,patikt,like,like
+item_481,item_305,action_words,peldēt,swim,swim
+item_482,,action_words,pirkt,buy,buy
+item_483,,action_words,plēst,tear,tear
+item_484,,action_words,prasīt,ask,ask
+item_485,,action_words,pūst,blow,blow
+item_486,,action_words,rādīt,show,show
+item_487,item_307,action_words,rakstīt,write,write
+item_488,,action_words,rakt,dig,dig
+item_489,,action_words,rāpot,crawl,crawl
+item_490,item_308,action_words,raudāt,cry,cry
+item_491,item_309,action_words,redzēt,see,see
+item_492,item_310,action_words,runāt,speak,speak
+item_493,item_311,action_words,sāpēt,hurt,hurt (action)
+item_494,,action_words,saukt,call,call
+item_495,,action_words,sēdēt,sit,sit
+item_496,,action_words,segt,cover,cover (action)
+item_497,item_314,action_words,sist,beat,hit
+item_498,item_313,action_words,sasisties,to hurt oneself,NA
+item_499,,action_words,skart/ pieskarties,touch,touch
+item_500,item_315,action_words,skatīties,watch/look,look
+item_501,item_317,action_words,skriet,run,run
+item_502,,action_words,slaucīt,wipe,wipe
+item_503,,action_words,slēpt/ slēpties,hide,hide
+item_504,,action_words,slīdēt,slide,slide (action)
+item_505,,action_words,slidot,skate,skate (action)
+item_506,item_320,action_words,smaidīt,smile,smile
+item_507,,action_words,smieties,laugh,laugh
+item_508,,action_words,spēlēties,play,play
+item_509,,action_words,rotaļāties,play,play
+item_510,,action_words,spert,kick,kick
+item_511,,action_words,spļaut,spit,spit
+item_512,,action_words,staigāt,walk,walk
+item_513,,action_words,stāstīt,tell,tell
+item_514,,action_words,stāvēt,stand,stand
+item_515,item_321,action_words,steigties,hurry,hurry
+item_516,,action_words,strādāt,work,work (action)
+item_517,,action_words,sukāt/ķemmēt,brush,brush (action)
+item_518,,action_words,šķaudīt,sneeze,sneeze
+item_519,item_322,action_words,šļakstināt,splash,splash
+item_520,,action_words,šūpot,rock/swing,say
+item_521,,action_words,teikt/sacīt,say/tell,say
+item_522,item_324,action_words,tīrīt,clean,clean (action)
+item_523,,action_words,turēt,hold,hold
+item_524,,action_words,vārīt,cook,cook
+item_525,,action_words,veidot,make,make
+item_526,item_325,action_words,vilkt,pull,pull
+item_527,item_326,action_words,zīmēt,draw,draw
+item_528,,action_words,zvanīt,ring,ring (action)
+item_529,,descriptive_words,atkal,again,again
+item_530,item_335,descriptive_words,ātrs/ātri,quick/quickly,fast
+item_531,,descriptive_words,augsts,high,high
+item_532,,descriptive_words,augstu,high above,NA
+item_533,item_336,descriptive_words,auksts/auksti,cold,cold
+item_534,,descriptive_words,balts,white,white
+item_535,,descriptive_words,brūns,brown,brown
+item_536,,descriptive_words,dusmīgs,angry,angry
+item_537,,descriptive_words,dzeltens,yellow,yellow
+item_538,,descriptive_words,garš,long,long
+item_539,,descriptive_words,garšīgs/garšīgi,tasty,yummy
+item_540,item_338,descriptive_words,grūti,difficult/hard,hard
+item_541,,descriptive_words,gudrs,smart,smart
+item_542,,descriptive_words,īss,short,short
+item_543,,descriptive_words,jauks/jauki,nice,nice
+item_544,,descriptive_words,jauns,new,new
+item_545,,descriptive_words,jautrs/jautri,merry,fun
+item_546,,descriptive_words,karsts/karsti,hot,hot
+item_547,,descriptive_words,kārtīgs,tidy,clean (description)
+item_548,,descriptive_words,kluss/klusi,quiet,quiet
+item_549,,descriptive_words,labi,fine (okay),ok
+item_550,,descriptive_words,labs,good,good
+item_551,,descriptive_words,lēns/lēni,slow,slow
+item_552,item_344,descriptive_words,liels,big,big
+item_553,item_345,descriptive_words,mazs,small,small
+item_554,item_346,descriptive_words,melns,black,black
+item_555,,descriptive_words,mierīgs/mierīgi,calm/calmly,calm
+item_556,,descriptive_words,mīksts/mīksti,soft,soft
+item_557,,descriptive_words,mīļš/mīļi,cute,cute
+item_558,item_349,descriptive_words,netīrs,dirty,dirty
+item_559,item_350,descriptive_words,nobijies,scared,scared
+item_560,item_351,descriptive_words,noguris,tired,tired
+item_561,,descriptive_words,pēdējais,last,last
+item_562,item_353,descriptive_words,pilns,full,full
+item_563,,descriptive_words,pirmais,first,first
+item_564,,descriptive_words,pliks,naked,naked
+item_565,,descriptive_words,priecīgs/priecīgi,happy,happy
+item_566,,descriptive_words,rozā,pink,pink
+item_567,,descriptive_words,salauzts/ salūzis,broken,broken
+item_568,item_355,descriptive_words,salds,sweet,sweet
+item_569,item_356,descriptive_words,sarkans,red,red
+item_570,item_357,descriptive_words,sauss,dry,dry (description)
+item_571,,descriptive_words,silts/silti,warm,warm
+item_572,,descriptive_words,skābs,sour,sour
+item_573,item_358,descriptive_words,skaists/skaisti,pretty,pretty
+item_574,item_359,descriptive_words,skaļš/skaļi,loud,loud
+item_575,,descriptive_words,skumjš/skumji,sad,sad
+item_576,item_360,descriptive_words,slapjš,wet,wet (description)
+item_577,,descriptive_words,slikts/slikti,bad,bad
+item_578,item_362,descriptive_words,slims,sick,sick
+item_579,item_363,descriptive_words,smags/smagi,heavy,heavy
+item_580,,descriptive_words,stiprs/stipri,strong,strong
+item_581,,descriptive_words,šausmīgs,terrible,terrible
+item_582,,descriptive_words,tālu,far away,far
+item_583,item_364,descriptive_words,tīrs,clean,clean (description)
+item_584,item_365,descriptive_words,tukšs,empty,empty
+item_585,item_366,descriptive_words,tumšs,dark,dark
+item_586,,descriptive_words,tuvu,close,near
+item_587,item_367,descriptive_words,uzmanīgs /uzmanīgi,careful,careful
+item_588,item_368,descriptive_words,vecs,old,old
+item_589,,descriptive_words,viegls/viegli,light/easy,light (description)
+item_590,,descriptive_words,zaļš,green,green
+item_591,item_369,descriptive_words,zils,blue,blue
+item_592,,time_words,agri,early,early
+item_593,item_327,time_words,diena,day,day
+item_594,,time_words,drīz,soon,soon
+item_595,item_328,time_words,nakts,night,night
+item_596,,time_words,no rīta,in the morning,NA
+item_597,,time_words,pēc,after,after
+item_598,,time_words,pirms,before,before
+item_599,item_329,time_words,rīt,tomorrow,tomorrow
+item_600,item_330,time_words,rīts,morning,morning
+item_601,item_331,time_words,šodien,today,today
+item_602,item_332,time_words,tagad,now,now
+item_603,,time_words,tūlīt,promptly,now
+item_604,,time_words,vakar,yesterday,yesterday
+item_605,,time_words,vakarā,in the evening,NA
+item_606,item_333,time_words,vakars,evening,evening
+item_607,item_334,time_words,vēlāk,later,later
+item_608,,time_words,vēlu,late,late
+item_609,item_371,pronouns,es,I,I
+item_610,,pronouns,jums,you.Dat.pl.,you
+item_611,,pronouns,jūs,you.Nom.pl.,you
+item_612,,pronouns,jūsu,your.pl,your
+item_613,item_372,pronouns,man,me.Dat.sg.,me
+item_614,,pronouns,manis,I.Gen.sg,my
+item_615,item_373,pronouns,mans/mana,"my.masc.sg, my.fem.sg",we
+item_616,,pronouns,mēs,we.nom.sg,we
+item_617,,pronouns,mums,we.dat.pl.,we
+item_618,,pronouns,mūsu,our,our
+item_619,item_374,pronouns,pats/pati,"self.masc.sg, self.fem.sg",self
+item_620,,pronouns,šī,this.fem.sg,this
+item_621,,pronouns,šie,this.masc.pl,these
+item_622,,pronouns,šis,this.masc.sg.,this
+item_623,,pronouns,šīs,this.fem.pl.,these
+item_624,,pronouns,tā,that.fem.sg,that
+item_625,,pronouns,tas,that.masc.sg,that (masc.)
+item_626,,pronouns,tās,that.fem.pl,that (fem.pl.)
+item_627,,pronouns,"tavs, tava","yours.masc.sg, yours.fem.sg","yours.masc.sg, yours.fem.sg"
+item_628,item_378,pronouns,tev,you.dat.sg,you.dat.sg
+item_629,,pronouns,tevis,you.gen.sg,you.gen.sg
+item_630,,pronouns,tie,that.masc.pl.,that.masc.pl.
+item_631,item_379,pronouns,tu,you.Nom.sg.,you (sg.)
+item_632,,pronouns,viņa,she.nom.sg,she.nom.sg
+item_633,,pronouns,viņai,she.dat.sg.,she.dat.sg.
+item_634,,pronouns,viņam,he.dat.sg.,he.dat.sg.
+item_635,,pronouns,viņi,they.nom.pl.,they.nom.pl.
+item_636,,pronouns,viņiem,they.dat.pl.,they.dat.pl.
+item_637,,pronouns,viņš,he.nom.sg.,he.nom.sg.
+item_638,,question_words,cik?,how many?,how many
+item_639,,question_words,kā?,how?,how
+item_640,,question_words,kad?,when?,when (question)
+item_641,,question_words,kāds?,what kind?,what kind
+item_642,,question_words,kam?,for whom/for what?,NA
+item_643,,question_words,kāpēc?,why?,why
+item_644,,question_words,kas?,what?,what
+item_645,,question_words,ko?,What (acc.)?,what
+item_646,,question_words,kur?,where?,where (question)
+item_647,,question_words,kurš?,which?,which (question)
+item_648,,locations,aiz (aiz mājas),behind (e.g. behind the house),behind
+item_649,,locations,aizmugurē,behind (one´s back),behind
+item_650,,locations,ar,with,with
+item_651,item_384,locations,atpakaļ,back,back (location)
+item_652,,locations,augšā/ augšup,up,up
+item_653,,locations,blakus,near,near
+item_654,,locations,iekšā/ iekšpusē,inside,inside
+item_655,,locations,lejā/ lejup,down,down
+item_656,,locations,līdz,until,until
+item_657,,locations,no (no tasītes),from (e.g. from the cup),from
+item_658,,locations,no šejienes,from here,here
+item_659,,locations,no turienes,from there,there
+item_660,,locations,pa (pa galdu),along (e.g. along the table),along
+item_661,item_388,locations,pāri,over,over
+item_662,,locations,pie (pie gultas),by (e.g. by the bed),by
+item_663,item_389,locations,priekšā,in front of,in front
+item_664,item_390,locations,prom,away,away
+item_665,item_391,locations,"te, šeit",here,here
+item_666,,locations,šurp,here (as in “come here”),here
+item_667,,locations,tālāk,further,further
+item_668,,locations,tur,there,there
+item_669,,locations,turp,there (as in “go there”),there
+item_670,,locations,tuvāk,closer,closer
+item_671,,locations,uz (uz krēsla),on (e.g. on the chair),on
+item_672,,locations,virs/ virsū,above,above
+item_673,item_394,locations,zem,under,under
+item_674,,quantifiers,abi/abas,both,both
+item_675,,quantifiers,arī,too,too
+item_676,,quantifiers,cits,other,other
+item_677,item_395,quantifiers,daudz,a lot,a lot
+item_678,,quantifiers,daži,some,some
+item_679,item_396,quantifiers,drusku/drusciņ,a bit,little (amount)
+item_680,,quantifiers,ikviens,each,each
+item_681,,quantifiers,katrs,every,every
+item_682,item_397,quantifiers,maz,little,little (amount)
+item_683,item_398,quantifiers,mazliet,a little bit,little (amount)
+item_684,,quantifiers,nedaudz,not much,a little
+item_685,item_399,quantifiers,nekā nav,nothing,nothing
+item_686,,quantifiers,neviens,no one,no one
+item_687,,quantifiers,tāds pats,same,same
+item_688,item_401,quantifiers,vairāk,more,more
+item_689,item_402,quantifiers,vēl,more,more
+item_690,item_400,quantifiers,visi/visas,all,all
+item_691,,helping_verbs,bija,be.3p.past,was
+item_692,,helping_verbs,biji,be.2p.sg.past,were
+item_693,,helping_verbs,biju,be.1p.sg.past,was
+item_694,,helping_verbs,būs,be.3p.fut,will be
+item_695,,helping_verbs,būsi,be.2p.fut.sg.,will be
+item_696,,helping_verbs,būšu,be.1p.fut.sg.,will be
+item_697,,helping_verbs,drīkst,allowed,allowed
+item_698,,helping_verbs,esi,be.2p.pres.sg,are
+item_699,,helping_verbs,esmu,be.1p.pres.sg.,am
+item_700,,helping_verbs,esmu bijis/bijusi,be.1p.pres.perf.sg,have been
+item_701,,helping_verbs,gribu,want.1p.pres.sg.,want
+item_702,,helping_verbs,ir,be.3p.pres,is
+item_703,,helping_verbs,likt (kaut ko darīt),make (make one do smth),make
+item_704,,helping_verbs,lūdzu (kaut ko),ask (for smth),ask
+item_705,,helping_verbs,māku,can.1p.pres.sg,can
+item_706,,helping_verbs,negribu,don´t want.1p.pres.sg,don't want
+item_707,,helping_verbs,nevaru,cannot.1p.pres.sg,cannot
+item_708,,helping_verbs,protu,can.1p.pres.sg,can
+item_709,,helping_verbs,vajag,need,need
+item_710,,helping_verbs,varu,can.1p.pres.sg,can
+item_711,,helping_verbs,vēlos,wish.1p.pres.sg,wish
+item_712,,helping_verbs,nedrīkst,not allowed,not allowed
+item_713,,connecting_words,bet,but,but
+item_714,,connecting_words,ja,if,if
+item_715,,connecting_words,jo,because,because
+item_716,,connecting_words,kā (apaļš kā pūpols),like (e.g. round like a willow-catkin),like
+item_717,,connecting_words,"ka (es redzu, ka līst lietus)",how (I see how rain falls),how (connecting)
+item_718,,connecting_words,lai,so that,so
+item_719,,connecting_words,taču,however,however
+item_720,,connecting_words,tāpēc ka,because,because
+item_721,,connecting_words,tādēļ,therefore,therefore
+item_722,,connecting_words,un,and,and
+item_723,,connecting_words,"vai (māmiņ, iedod lācīti vai zilonīti)","or (e.g. mummy,  give me a bear or an elephant)",NA
+,item_1,sounds,"ai-ai, ajajai",ouch,ouch
+,item_59,vehicles,ritenis/velosipēds,bicycle,bicycle
+,item_87,food_drink,ogas,berries,berry
+,item_90,food_drink,pīrādziņi,pie/hot pocket,pie
+,item_104,clothing,lacīte /krūšautiņš,diapers,diaper
+,item_116,clothing,lacīte /krūšautiņš,bib,bib
+,item_120,clothing,šorti /īsbikses,shorts,shorts
+,item_124,body_parts,acis,eyes,eye
+,item_125,body_parts,ausis,eyes,ear
+,item_126,body_parts,celis/ceļgals,knee,knee
+,item_137,body_parts,pirksti,fingers/toes,finger
+,item_138,body_parts,pleci,shoulders,shoulder
+,item_160,furniture_rooms,pods/podiņš,potty,potty
+,item_166,furniture_rooms,vannas istaba,bathroom,bathroom
+,item_195,household,"soma, somiņa",purse,purse
+,item_203,outside,(iet) ārā,outside,outside
+,item_204,outside,baseins,(swimming) pool,pool
+,item_205,outside,baznīca,church,church
+,item_207,outside,darbs,work,work (place)
+,item_213,outside,māja,house,house
+,item_214,outside,mājas,home,home
+,item_217,outside,mežs,forest,forest
+,item_218,outside,pagalms,yard,backyard
+,item_219,outside,parks,park,park
+,item_227,outside,veikals,shop,store
+,item_230,outside,zooloģiskais dārzs,zoo,zoo
+,item_232,people,audzinātāja/-s,kindergarten teacher,teacher
+,item_234,people,bērna (savs) vārds,child’s own name,child's own name
+,item_252,games_routines,Ar labu nakti!,Goodnight,good night
+,item_253,games_routines,Atā!/Uz redzēšanos!,Bye!,bye
+,item_256,games_routines,drīkst,allowed,allowed
+,item_257,games_routines,Gribu!,want,wanna
+,item_259,games_routines,Kuš! Klusu!,quiet!,shh
+,item_260,games_routines,Labdien!,Good afternoon!,good afternoon
+,item_261,games_routines,Labrīt!,Good morning!,good morning
+,item_262,games_routines,Labvakar!,Good evening!,good night
+,item_263,games_routines,Lūdzu!,please,please
+,item_265,games_routines,nedrīkst,not allowed,don't
+,item_266,games_routines,negribu,I don’t want,NA
+,item_267,games_routines,Paldies!,Thank you!,thank you
+,item_269,games_routines,Sveiki!/Čau!,Hello,hello
+,item_272,action_words,apskaut,hug,hug
+,item_273,action_words,apkampt,hug,hug
+,item_306,action_words,pūst (balonu),blow,blow
+,item_312,action_words,sacīt/teikt,say/tell,say
+,item_316,action_words,skart/pieskarties,touch,touch
+,item_318,action_words,slēpties,hide,hide
+,item_319,action_words,spēlēties/rotaļāties,play,play
+,item_323,action_words,šūpoties,rock/swing,swing (action)
+,item_337,descriptive_words,garšīgs/ņammīgs,tasty,yummy
+,item_339,descriptive_words,jauks/ jauki,nice,nice
+,item_340,descriptive_words,karsts/ karsti,hot,hot
+,item_341,descriptive_words,kluss/ klusu,quiet,quiet
+,item_342,descriptive_words,labs/labi,fine,good
+,item_343,descriptive_words,laimīgs,happy,happy
+,item_347,descriptive_words,mīksts,soft,soft
+,item_348,descriptive_words,mīļš/ mīļi,cute,cute
+,item_352,descriptive_words,patīkams,pleasant,nice
+,item_354,descriptive_words,"salauzts, salūzis",broken,broken
+,item_361,descriptive_words,slikts /slikti,bad,bad
+,item_370,pronouns,cits/cita,other,other
+,item_375,pronouns,šis/ šī,this.masc.sg/this.fem.sg,this
+,item_376,pronouns,tas/ tā,this.masc.sg/that.fem.sg,this
+,item_377,pronouns,tavs/tava,your.masc.sg./yours.fem.sg,your
+,item_380,pronouns,savs/sava,own.masc.sg/own.fem.sg,his
+,item_381,pronouns,viņš/viņa/viņi/viņas,he/she/they.masc./they.fem,he
+,item_382,pronouns,viss/visi/visas,everything/all.masc./all.fem,everything
+,item_383,locations,ārā,outside,outside
+,item_385,locations,"augšā, augšup",up,up
+,item_386,locations,"iekšā, iekšpusē",inside,in
+,item_387,locations,"lejā, lejup",down,down
+,item_392,locations,uz,on,on
+,item_393,locations,"virs, virsū",above,above

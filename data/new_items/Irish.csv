@@ -1,0 +1,728 @@
+WS,category,definition,gloss,uni_lemma
+item_1,sounds,ahah,ahah,ahah
+item_2,sounds,baabaa,baa baa,baa baa
+item_3,sounds,bowwow,bow wow,woof woof
+item_4,sounds,choochoo,choo choo,choo choo
+item_5,sounds,cockadoodledoo,cockadoodledoo,cockadoodledoo
+item_6,sounds,grr,grr,grrr
+item_7,sounds,meow,meow,meow
+item_8,sounds,moo,moo,moo
+item_9,sounds,ouch,ouch,ouch
+item_10,sounds,quackquack,quack quack,quack quack
+item_11,sounds,uhoh,uhoh,uh oh
+item_12,sounds,vroom,vroom,vroom
+item_13,sounds,yumyum,yum yum,yum yum
+item_14,animals,ainmhí,animal,animal
+item_16,animals,asal,donkey,donkey
+item_18,animals,beach,bee,bee
+item_20,animals,béar,bear,bear
+item_21,animals,bó,cow,cow
+item_23,animals,bóindé,ladybird,ladybug
+item_25,animals,caora,sheep,sheep
+item_27,animals,capallín,pony,pony
+item_29,animals,capall,horse,horse
+item_31,animals,cat,cat,cat
+item_32,animals,cearc,hen,hen
+item_34,animals,coileach,cock,rooster
+item_36,animals,coileán,puppy,puppy
+item_38,animals,coinín,rabbit,bunny
+item_40,animals,cuileog,fly,fly (animal)
+item_42,animals,damhánalla,spider,spider
+item_44,animals,eala,swan,swan
+item_46,animals,éan,bird,bird
+item_48,animals,eilifint,elephant,elephant
+item_49,animals,faoileán,seagull,seagull
+item_51,animals,féileacán,butterfly,butterfly
+item_53,animals,fia,deer,deer
+item_55,animals,frog,frog,frog
+item_56,animals,gabhar,goat,goat
+item_58,animals,gé,goose,goose
+item_60,animals,iasc,fish,fish (animal)
+item_62,animals,lacha,duck,duck
+item_64,animals,lao,calf,calf
+item_66,animals,leon,lion,lion
+item_68,animals,luch,mouse,mouse
+item_70,animals,mactíre,wolf,wolf
+item_72,animals,madra rua,fox,fox
+item_74,animals,madra,dog,dog
+item_76,animals,moncaí,monkey,monkey
+item_77,animals,muc,pig,pig
+item_79,animals,nathair nimhe,snake,snake
+item_81,animals,piongain,penguin,penguin
+item_83,animals,puisín,kitten,kitty
+item_85,animals,préachán,crow,crow
+item_87,animals,séabra,zebra,zebra
+item_89,animals,seilide,snail,snail
+item_91,animals,sicín,chicken,chicken
+item_93,animals,sioráf,giraffe,giraffe
+item_95,animals,spideog,robin,robin
+item_97,animals,teidí,bear,bear
+item_98,animals,tíogar,tiger,tiger
+item_100,animals,turcaí,turkey,turkey
+item_101,animals,uan,lamb,lamb
+item_103,vehicles,bád,boat,boat
+item_105,vehicles,bus,bus,bus
+item_106,vehicles,carr,car,car
+item_108,vehicles,eitleán,aeroplane,airplane
+item_110,vehicles,gluaisrothar,motorbike,motorcycle
+item_112,vehicles,héileacaptar,helicopter,helicopter
+item_113,vehicles,jíp,jeep,jeep
+item_114,vehicles,leoraí,lorry,truck
+item_116,vehicles,long,ship,ship
+item_117,vehicles,otharcharr,ambulance,ambulance
+item_119,vehicles,pram,pram,stroller
+item_120,vehicles,rothar,bicycle,bicycle
+item_122,vehicles,tarracóir,tractor,tractor
+item_124,vehicles,tochaltóir,digger,digger
+item_126,vehicles,traein,truck,train
+item_128,vehicles,veain,van,van
+item_129,toys,bábóg,doll,doll
+item_131,toys,balún,balloon,balloon
+item_132,toys,bloic,blocks,blocks
+item_134,toys,boilgeoga,bubbles,bubbles
+item_136,toys,bréagán,toy,toy (object)
+item_138,toys,bronntanas,present,present
+item_140,toys,camán,hurley,hurley
+item_142,toys,cluiche,game,game
+item_144,toys,crián,crayon,crayon
+item_145,toys,dathú,colouring,crayon
+item_146,toys,druma,drum,drum (object)
+item_148,toys,gliú,glue,glue
+item_149,toys,gunna,gun,gun
+item_151,toys,leabhar,book,book
+item_153,toys,liathróid,(foot)ball,ball
+item_156,toys,míreanna mearaí,jigsaw,puzzle
+item_157,toys,peann,pen,pen
+item_159,toys,peannluaidhe,pencil,pencil
+item_161,toys,scéal,story,story
+item_163,toys,sliotar,sliotar,ball
+item_164,food_drink,anraith,soup,soup
+item_166,food_drink,arán,bread,bread
+item_168,food_drink,bagún,bacon,bacon
+item_170,food_drink,bainne,milk,milk
+item_172,food_drink,banana,banana,banana
+item_173,food_drink,bia,food,food
+item_175,food_drink,bocaire,muffin,muffin
+item_177,food_drink,burgar,burger,hamburger
+item_178,food_drink,briosca,biscuit,biscuit
+item_180,food_drink,cabáiste,cabbage,cabbage
+item_182,food_drink,cáca,cake,cake
+item_184,food_drink,caife,coffee,coffee
+item_185,food_drink,cairéid,carrot,carrot
+item_187,food_drink,cáis,cheese,cheese
+item_189,food_drink,calóg arbhair,cornflakes,cheerios
+item_191,food_drink,caora fínúna,grapes,grapes
+item_193,food_drink,ceapaire,sandwich,sandwich
+item_195,food_drink,cnaipíní sicín,chicken nuggets,nugget
+item_197,food_drink,cnónna,nuts,nut
+item_199,food_drink,coke,coke,soda
+item_200,food_drink,criospaí,crisps,chips
+item_202,food_drink,cucumber,cucumber,cucumber
+item_203,food_drink,deoch,drink,drink (object)
+item_205,food_drink,taoschnó,donut,pastry
+item_207,food_drink,feoil,meat,meat
+item_209,food_drink,glóthach,jelly,jelly
+item_211,food_drink,iasc,fish,fish (food)
+item_213,food_drink,im,butter,butter
+item_215,food_drink,iógart,yoghurt,yogurt
+item_216,food_drink,ispíní,sausages,sausage
+item_218,food_drink,leite,porridge,porridge
+item_220,food_drink,liamhás,ham,ham
+item_222,food_drink,líreacán,lollipop,lollipop
+item_224,food_drink,mil,honey,honey
+item_226,food_drink,milseáin,sweets,sweets
+item_229,food_drink,oráiste,orange,orange (food)
+item_230,food_drink,pancóg,pancake,pancake
+item_232,food_drink,pasta,pasta,pasta
+item_233,food_drink,piorra,pear,pear
+item_235,food_drink,pizza,pizza,pizza
+item_236,food_drink,piseanna,peas,peas
+item_238,food_drink,pónairí,beans,beans
+item_240,food_drink,práta,potato,potato
+item_242,food_drink,reoiteog,icepop,popsicle
+item_244,food_drink,rísín,raisin,raisin
+item_246,food_drink,salann,salt,salt
+item_248,food_drink,sceallóga,chips,chips
+item_250,food_drink,seacláid,chocolate,chocolate
+item_252,food_drink,slisíní,rashers,bacon
+item_254,food_drink,spagetti,spagetti,spaghetti
+item_256,food_drink,sú talún,strawberry,strawberry
+item_257,food_drink,sú,juice,juice
+item_259,food_drink,subh,jam,jam
+item_261,food_drink,tae,tea,tea
+item_263,food_drink,tornapa,turnip,turnip
+item_265,food_drink,tósta,toast,toast
+item_267,food_drink,tráta,tomato,tomato
+item_269,food_drink,uachtarreoite,icecream,ice cream
+item_271,food_drink,ubh,egg,egg
+item_273,food_drink,uisce,water,water (beverage)
+item_275,food_drink,úll,apple,apple
+item_277,clothing,bibe,bib,bib
+item_279,clothing,bríste,trousers,pants
+item_281,clothing,brístegearra,shorts,shorts
+item_283,clothing,bróga,shoes,shoe
+item_285,clothing,brógareatha,runners,sneaker
+item_287,clothing,buataisí,boots,boots
+item_289,clothing,caipín,cap,hat
+item_291,clothing,cairdigean,cardigan,cardigan
+item_292,clothing,clúidín,nappy,diaper
+item_294,clothing,cnaipe,button,button
+item_296,clothing,cóta,coat,coat
+item_298,clothing,crios,belt,cross
+item_300,clothing,culaithleapa,pijamas,pajamas
+item_302,clothing,culaithsnámha,swimming costume,swimsuit
+item_304,clothing,éadaí,clothes,clothes
+item_306,clothing,fáinne,ring,ring (object)
+item_308,clothing,fobhríste,underpants,underpants
+item_310,clothing,geansaí,jumper,sweater
+item_312,clothing,gúna,dress,dress (object)
+item_314,clothing,hata,hat,hat
+item_316,clothing,lámhainní,gloves,glove
+item_318,clothing,léine,shirt,shirt
+item_320,clothing,riteoga,tights,tights
+item_322,clothing,scairf,scarf,scarf
+item_323,clothing,sciorta,skirt,skirt
+item_325,clothing,seaicéad,skirt,skirt
+item_326,clothing,jacket,jacket,jacket
+item_327,clothing,zip,zip,zip
+item_328,clothing,slipéir,slipper,slipper
+item_330,clothing,spéaclaí,slipper,slipper
+item_331,clothing,glasses,glasses,glasses
+item_332,clothing,stocaí,socks,sock
+item_335,clothing,t-léine,tshirt,t-shirt
+item_336,clothing,veist,vest,vest
+item_338,body_parts,aghaidh,face,face
+item_340,body_parts,barraicíní,toes,toe
+item_342,body_parts,béal,mouth,mouth
+item_344,body_parts,beola,lips,lip
+item_346,body_parts,bolg,tummy,tummy
+item_348,body_parts,ceann,head,head
+item_350,body_parts,cluasa,ears,ear
+item_352,body_parts,cos,foot,foot
+item_354,body_parts,droim,back,back (body part)
+item_356,body_parts,fiacla,teeth,tooth
+item_358,body_parts,glúin,knee,knee
+item_360,body_parts,gruaig,hair,hair
+item_362,body_parts,gualainn,shoulder(s),shoulder
+item_364,body_parts,lámh,hand,hand
+item_366,body_parts,leiceann,cheek,cheek
+item_368,body_parts,lúidín,little finger,NA
+item_369,body_parts,mala,eyebrow,eyebrow
+item_371,body_parts,méar,finger,finger
+item_373,body_parts,muineál,neck,neck
+item_375,body_parts,ordóg,thumb,thumb
+item_377,body_parts,pilibín,willy,penis
+item_379,body_parts,smig,chin,chin
+item_381,body_parts,srón,nose,nose
+item_383,body_parts,scornach,throat,throat
+item_385,body_parts,súil,eye,eye
+item_387,body_parts,teanga,tongue,tongue
+item_389,body_parts,tóin,bottom,butt
+item_391,body_parts,uilinn,elbow,elbow
+item_393,household,airgead,money,money
+item_395,household,babhla,bowl,bowl
+item_397,household,bascaed,basket,basket
+item_399,household,blaincéad,blanket,blanket
+item_401,household,bord,table,table
+item_403,household,bosca,box,box
+item_406,household,bosca bruscair,dustbin,bin
+item_407,household,bruscar,rubbish,trash
+item_409,household,buicéad,bucket,bucket
+item_411,household,buidéal,bottle,bottle
+item_413,household,casúr,hammer,hammer
+item_415,household,ceamara,camera,camera
+item_417,household,cíor,comb,comb (object)
+item_419,household,ciotal,kettle,kettle
+item_420,household,ciarsúir,tissue,tissue
+item_422,household,folúsghlantóir,hoover,vacuum
+item_424,household,guthán póca,mobile phone,telephone
+item_426,household,forc,fork,fork
+item_427,household,gallúnach,soap,soap
+item_429,household,gloine,glass,glass
+item_431,household,lampa,lamp,lamp
+item_433,household,leigheas,medicine,medicine
+item_435,household,mála,bag,bag
+item_437,household,mapa,map,map
+item_439,household,muga,mug,cup
+item_441,household,páipéar,paper,paper
+item_443,household,pingin,penny,penny
+item_445,household,pictúir,picture,picture
+item_447,household,radio,radio,radio
+item_448,household,sáspan,saucepan,pot
+item_450,household,scáthán,mirror,mirror
+item_452,household,scian,knife,knife
+item_454,household,sconna,tap,tap
+item_456,household,scuab,brush,brush (object)
+item_458,household,scuab fiacla,toothbrush,toothbrush
+item_460,household,seampú,shampoo,shampoo
+item_461,household,siosúr,scissors,scissors
+item_463,household,solas,light,light (object)
+item_465,household,spúnóg,spoon,spoon
+item_467,household,taephota,teapot,teapot
+item_469,household,taos fiacla,toothpaste,toothpaste
+item_471,household,teileafón,telephone,telephone
+item_473,household,clog,clock,clock
+item_475,household,crúiscín,jug,jug
+item_477,household,cupán,cup,cup
+item_479,household,eochair,key,key
+item_481,household,piliúr,pillow,pillow
+item_483,household,planda,plant,plant
+item_485,household,pláta,plate,plate
+item_487,household,pota,pot,pot
+item_489,household,téip,tape,tape
+item_490,household,túaille,towel,towel
+item_492,household,uaireadóir,watch,watch (object)
+item_494,furniture_rooms,beithilín,cot,crib
+item_496,furniture_rooms,cathaoir,chair,chair
+item_498,furniture_rooms,cathaoir ard,highchair,high chair
+item_500,furniture_rooms,cistin,kitchen,kitchen
+item_502,furniture_rooms,cith,shower,shower
+item_504,furniture_rooms,cófra,cupboard,cupboard
+item_506,furniture_rooms,cuisneoir,fridge,refrigerator
+item_508,furniture_rooms,doirteal,sink,sink
+item_510,furniture_rooms,doras,door,door
+item_512,furniture_rooms,folcadán,bath,bath
+item_514,furniture_rooms,fuinneog,window,window
+item_516,furniture_rooms,garáiste,garage,garage
+item_518,furniture_rooms,leaba,bed,bed
+item_520,furniture_rooms,leithreas,toilet,toilet
+item_522,furniture_rooms,meaisín níócháín,washing machine,washing machine
+item_524,furniture_rooms,oigheann,oven,oven
+item_526,furniture_rooms,potabeag,potty,potty
+item_528,furniture_rooms,seomra,room,room
+item_530,furniture_rooms,seomrafolctha,bathroom,bathroom
+item_532,furniture_rooms,seomraleapa,bedroom,bedroom
+item_534,furniture_rooms,seomrasuí,sitting room,living room
+item_536,furniture_rooms,seomrasúgartha,playroom,playroom
+item_538,furniture_rooms,sorn,cooker,cooker
+item_540,furniture_rooms,staighre,stairs,stairs
+item_542,furniture_rooms,stól,stool,chair
+item_544,furniture_rooms,tarraicéan,drawer,drawer
+item_546,furniture_rooms,teilifís,television,TV
+item_548,furniture_rooms,tine,fire,fire
+item_550,furniture_rooms,tolg,couch,couch
+item_552,furniture_rooms,urlár,floor,floor
+item_554,outside,báisteach,rain,rain
+item_556,outside,bata,stick,stick
+item_558,outside,bláth,flower,flower
+item_560,outside,bothán,shed,shed
+item_562,outside,bóthar,road,road
+item_564,outside,brat(ach),flag,flag
+item_566,outside,buicéad,bucket,bucket
+item_568,outside,carraig,rock,stone
+item_570,outside,ceo,fog,fog
+item_572,outside,claí,fence,ditch
+item_574,outside,cloch,stone,stone
+item_576,outside,cosán,foot path,sidewalk
+item_578,outside,crann,tree,tree
+item_580,outside,díon,roof,roof
+item_582,outside,dréimire,ladder,ladder
+item_584,outside,falla,wall,wall
+item_586,outside,farraige,sea,sea
+item_588,outside,féar,grass,grass
+item_590,outside,fearsneachta,snowman,snowman
+item_592,outside,gaineamh,sand,sand
+item_594,outside,gairdín,garden,garden
+item_596,outside,gaoth,wind,wind
+item_598,outside,gealach,moon,moon
+item_600,outside,geata,gate,gate
+item_602,outside,grian,sun,sun
+item_604,outside,laí,shovel,shovel
+item_606,outside,linnsnámha,(swimming) pool,pool
+item_608,outside,loch,pond,lake
+item_610,outside,luascán,swings,NA
+item_612,outside,réalta,stars,star
+item_614,outside,scamall,cloud,cloud
+item_616,outside,sceach,bush,bush
+item_618,outside,simléar,chimney,chimney
+item_620,outside,sleamhnán,slide,slide (object)
+item_622,outside,sneachta,snow,snow
+item_624,outside,spéir,sky,sky
+item_626,outside,sráid,street,street
+item_628,outside,uisce,water,water (not beverage)
+item_630,places,abhaile,home,home
+item_632,places,aifreann,mass,church
+item_634,places,amuigh,outside,outside
+item_636,places,campáil,camping,camping
+item_638,places,cathair,city,city
+item_640,places,coillte,forest,forest
+item_642,places,cóisir,party,party
+item_644,places,feirm,farm,farm
+item_646,places,gort,field,field
+item_648,places,istigh,inside,inside
+item_650,places,obair,work,work (place)
+item_652,places,ospidéal,hospital,hospital
+item_654,places,páirc,park,field
+item_656,places,naíonra,playschool,preschool
+item_658,places,naíolann,creche,nursery
+item_660,places,picnic,picnic,picnic
+item_661,places,scoil,school,school
+item_663,places,siopa,shop,store
+item_665,places,sorcas,circus,circus
+item_666,places,teach,house,house
+item_668,places,trá,beach,beach
+item_670,places,zú,zoo,zoo
+item_673,people,ainm féin an pháiste,child's own name,child's own name
+item_675,people,ainm feighlí páistí,babysitter's name,babysitter's name
+item_677,people,ainm peata,pet's name,pet's name
+item_678,people,aintín,aunty,aunt
+item_680,people,bean,woman,woman
+item_682,people,buachaill,boy,boy
+item_684,people,cailín,girl,girl
+item_686,people,cara,friend,friend
+item_688,people,colceathrar,cousin,cousin
+item_690,people,daideo,grandad,grandpa
+item_692,people,daidí,daddy,daddy
+item_693,people,daoine,people,people
+item_695,people,deartháir,brother,brother
+item_697,people,deirfiúr,sister,sister
+item_699,people,dochtúir,doctor,doctor
+item_701,people,duine,person,person
+item_703,people,fear,man,man
+item_705,people,feardóiteáin,fireman,firefighter
+item_707,people,feargrinn,clown,clown
+item_709,people,fear an phoist,postman,postman 
+item_711,people,feirmeoir,farmer,farmer
+item_713,people,fiaclóir,dentist,dentist
+item_715,people,garda,policeman,police
+item_717,people,gruagaire,hairdresser,hairdresser
+item_719,people,leanbh,baby ,baby
+item_721,people,mamaí,mommy,mommy
+item_722,people,mamó,granny,grandma
+item_724,people,múinteoir,teacher,teacher
+item_726,people,páiste,child,child
+item_728,people,uncail,uncle,uncle
+item_729,games_routines,amhrán,song,song
+item_731,games_routines,an muicín seo,this little pig,this little piggy
+item_733,games_routines,barróg,hug,hug
+item_735,games_routines,béarfaidh mé ort,gonna get you,gonna get you
+item_737,games_routines,bricfeasta,breakfast,breakfast
+item_739,games_routines,cas timpeall,turn around,turn around
+item_741,games_routines,chím thú,I see you,peekaboo
+item_743,games_routines,chomh mór,so big,so big 
+item_745,games_routines,dia dhuit,hello,hello
+item_747,games_routines,dinnéar,dinner,dinner
+item_749,games_routines,folcadh,bath,bath
+item_751,games_routines,glaoch(gutháin),phone call (call),call
+item_753,games_routines,go raibh maith agat,thank you,thank you
+item_755,games_routines,gráin,cuddle,NA
+item_757,games_routines,gabh anseo,c'mere,c'mere
+item_759,games_routines,in aon chor,at all,at all
+item_761,games_routines,(is) maith liom,I like,i like 
+item_763,games_routines,(is) breá  liom,I love,i love 
+item_765,games_routines,(is) liomsa é,mine,mine
+item_767,games_routines,más é do thoil é,please,please
+item_769,games_routines,lón,lunch,lunch
+item_771,games_routines,ní maith,don't like,don't like
+item_773,games_routines,n'fheadar,dunno,don't know
+item_775,games_routines,no,no,no
+item_776,games_routines,oíche mhaith,good night,good night
+item_778,games_routines,póigín,kiss,kiss
+item_780,games_routines,sea,yea,yes
+item_781,games_routines,seachain,look out,NA
+item_783,games_routines,shh,shh,shh
+item_784,games_routines,siopadóireacht,shopping,shopping
+item_786,games_routines,slán,bye,bye
+item_788,games_routines,tabhair dom,gimme,give me
+item_790,action_words,abair,say,say
+item_792,action_words,aithin,know,know
+item_794,action_words,ardaigh,lift,lift (action)
+item_796,action_words,bain,take,take
+item_798,action_words,beir(ar),catch,catch
+item_800,action_words,blais,taste,taste
+item_802,action_words,bolaigh,smell,smell
+item_804,action_words,bris,break,break
+item_806,action_words,cuimil,wipe,wipe
+item_808,action_words,cuir,put,put
+item_810,action_words,damhsaigh,dance,dance
+item_812,action_words,dathaigh,colour,color (action)
+item_814,action_words,déan,do,do
+item_816,action_words,doirt,spill,spill
+item_818,action_words,dreap,climb,climb
+item_820,action_words,dúisigh,wake,wake
+item_822,action_words,oscail,open,open (action)
+item_824,action_words,péinteáíl,paint,paint (action)
+item_826,action_words,pioc,pick,pick
+item_828,action_words,póg,kiss,kiss
+item_830,action_words,réab,tear,rip
+item_832,action_words,rith,run,run
+item_834,action_words,roinn,share,share
+item_836,action_words,sceamh,bark,bark
+item_838,action_words,brostaigh,hurry,hurry
+item_840,action_words,brúigh,push,push
+item_842,action_words,buaigh,win,win
+item_844,action_words,buail,hit,hit
+item_846,action_words,bualadh bos,clap,clap
+item_848,action_words,cabhraigh,help,help
+item_850,action_words,labhair,talk,talk
+item_852,action_words,caith,throw,throw
+item_854,action_words,can,sing,sing
+item_856,action_words,caoin,cry,cry
+item_858,action_words,cas,turn,turn
+item_860,action_words,ceannaigh,buy,buy
+item_862,action_words,ceap,think,think
+item_864,action_words,ciceáil,kick,kick
+item_866,action_words,cigil,tickle,tickle
+item_868,action_words,cíor,comb,comb (object)
+item_870,action_words,clois,hear,hear
+item_872,action_words,clúdaigh,cover,cover (action)
+item_874,action_words,cnag,knock,knock
+item_876,action_words,cócaráil,cook,cook
+item_878,action_words,codail,sleep,sleep
+item_880,action_words,coimeád,keep,keep
+item_882,action_words,críochnaigh,finish,finish
+item_884,action_words,croith,wave,shake
+item_886,action_words,dún,close,close
+item_888,action_words,éist,listen,listen
+item_890,action_words,fág,leave,leave
+item_892,action_words,faigh,find,find
+item_894,action_words,fan,wait,wait
+item_896,action_words,féach,look,look
+item_898,action_words,feic,see,see
+item_900,action_words,gáir,laugh,laugh
+item_902,action_words,gearr,cut,cut
+item_904,action_words,glan,clean,clean (action)
+item_906,action_words,imir,play,play
+item_908,action_words,inis,tell,tell
+item_910,action_words,ith,eat,eat
+item_912,action_words,léigh,read,read
+item_914,action_words,léim,jump,jump
+item_916,action_words,ligh,lick,lick
+item_918,action_words,línigh,draw,draw
+item_920,action_words,luasc,swing,swing (action)
+item_922,action_words,luigh síos,lie down,lie down
+item_924,action_words,magadh,joke,joke
+item_926,action_words,miongháire,smile,smile
+item_928,action_words,nigh,wash,wash
+item_930,action_words,oibrigh,work,work (action)
+item_932,action_words,ól,drink,drink (action)
+item_934,action_words,sciorr,slide,slip
+item_936,action_words,scríobh,write,write
+item_938,action_words,scuab,brush,brush (action)
+item_940,action_words,seas,stand,stand
+item_942,action_words,séid,blow,blow
+item_944,action_words,siúl,walk,walk
+item_946,action_words,snámh,swim,swim
+item_948,action_words,socraigh,fix,fix
+item_950,action_words,stad,stop,stop
+item_952,action_words,steall,splash,splash
+item_954,action_words,suigh(síos),sit (down),sit
+item_956,action_words,tabhair,give,give
+item_958,action_words,taispeáin,show,show
+item_960,action_words,tar,come,come
+item_962,action_words,tarraing,pull,pull
+item_964,action_words,téigh,go,go
+item_966,action_words,tiomáin,drive,drive
+item_968,action_words,tit,fall,fall
+item_970,action_words,tóg,take,take
+item_972,action_words,tosaigh,start,start
+item_974,action_words,triomaigh,dry,dry (action)
+item_976,action_words,troid,fight,fight
+item_978,action_words,tuig,understand,understand
+item_980,action_words,ard,high,high
+item_982,descriptive_words,báistí,rainy,rain
+item_984,descriptive_words,bán,white,white
+item_986,descriptive_words,beag,small,small
+item_988,descriptive_words,bídeach,tiny,tiny
+item_990,descriptive_words,bocht,poor,poor
+item_992,descriptive_words,bog,soft,soft
+item_994,descriptive_words,briste,broken,broken
+item_996,descriptive_words,brónach,sad,sad
+item_998,descriptive_words,buí,yellow,yellow
+item_1000,descriptive_words,céad,first,first
+item_1002,descriptive_words,ceomhar,foggy,foggy
+item_1004,descriptive_words,cineálta,kind,nice
+item_1006,descriptive_words,ciúin,quiet,quiet
+item_1008,descriptive_words,corcra,purple,purple
+item_1010,descriptive_words,crua,hard,hard
+item_1012,descriptive_words,cúramach,careful,careful
+item_1014,descriptive_words,dána,bold,bold
+item_1016,descriptive_words,dearg,red,red
+item_1018,descriptive_words,deireanach,last,last
+item_1020,descriptive_words,gortaithe,hurt,hurt (description)
+item_1022,descriptive_words,deas,nice,nice
+item_1024,descriptive_words,déanta,finished,finished
+item_1026,descriptive_words,donn,brown,brown
+item_1028,descriptive_words,dorcha,dark,dark
+item_1030,descriptive_words,dubh,black,black
+item_1032,descriptive_words,(ina)codladh,asleep,asleep
+item_1034,descriptive_words,(ina)dúiseacht,awake,awake
+item_1036,descriptive_words,éadrom,light,light (description)
+item_1038,descriptive_words,eaglach,scared,scared
+item_1040,descriptive_words,fada,long,long
+item_1042,descriptive_words,feargach,angry,angry
+item_1044,descriptive_words,(is)fearr,prefer,best
+item_1046,descriptive_words,fliuch,wet,wet (description)
+item_1048,descriptive_words,folamh,empty,empty
+item_1050,descriptive_words,fuar,cold,cold
+item_1052,descriptive_words,gaofar,windy,windy
+item_1054,descriptive_words,gearr,short,short
+item_1056,descriptive_words,glan,clean,clean (description)
+item_1058,descriptive_words,glas,green,green
+item_1060,descriptive_words,gleoite,pretty,pretty
+item_1062,descriptive_words,glic,clever,clever
+item_1064,descriptive_words,imithe,(all) gone,gone
+item_1066,descriptive_words,mall,slow,slow
+item_1068,descriptive_words,míshlachtmhar,messy,messy
+item_1070,descriptive_words,mór,big,big
+item_1072,descriptive_words,nua,new,new
+item_1074,descriptive_words,ocrach,hungry,hungry
+item_1076,descriptive_words,oráiste,orange,orange (description)
+item_1078,descriptive_words,ramhar,fat,fat
+item_1080,descriptive_words,salach,dirty,dirty
+item_1082,descriptive_words,sean,old,old
+item_1084,descriptive_words,sona,happy,happy
+item_1086,descriptive_words,tapa,fast,fast
+item_1088,descriptive_words,tartmhar,thirsty,thirsty
+item_1090,descriptive_words,te,hot,hot
+item_1092,descriptive_words,tinn,sick,sick
+item_1094,descriptive_words,tirim,dry,dry (description)
+item_1096,descriptive_words,trom,heavy,heavy
+item_1098,descriptive_words,tuirseach,tired,tired
+item_1100,descriptive_words,uafásach,yucky,yucky
+item_1102,descriptive_words,ullamh,ready,ready
+item_1104,time_words,am,time,time
+item_1106,time_words,amárach,tomorrow,tomorrow
+item_1108,time_words,anocht,tonight,tonight
+item_1110,time_words,anois,now,now
+item_1112,time_words,ar ball,later,later
+item_1114,time_words,inné,yesterday,yesterday
+item_1116,time_words,inniu,today,today
+item_1118,time_words,lá,day,day
+item_1120,time_words,maidin,morning,morning
+item_1122,time_words,oíche,night,night
+item_1124,time_words,tar éis,after,after
+item_1126,time_words,tráthnóna,afternoon,afternoon
+item_1128,pronouns,a,his/her/their,his/her/their
+item_1132,pronouns,ár,our,our
+item_1134,pronouns,ceann,one,a
+item_1136,pronouns,do,your,your
+item_1138,pronouns,é,it/he/him,it/he
+item_1140,pronouns,féin,(my)self,me
+item_1142,pronouns,í,she/her/it,she/her
+item_1146,pronouns,iad,they/them,they/them
+item_1149,pronouns,mé,me,me
+item_1151,pronouns,mise,me,me
+item_1152,pronouns,mo,my,my
+item_1154,pronouns,muid,we,we
+item_1156,pronouns,sé,he,he
+item_1158,pronouns,seo,this,this
+item_1160,pronouns,sí,she,she
+item_1162,pronouns,siad,they,they
+item_1164,pronouns,sibh,you (pl),ye
+item_1166,pronouns,sin,that,that
+item_1168,pronouns,tú,you,you
+item_1170,pronouns,tusa,hey you,you
+item_1171,prepositional_pronouns,agam,at me,NA
+item_1172,prepositional_pronouns,agat,at you,NA
+item_1173,prepositional_pronouns,aige,at him,NA
+item_1174,prepositional_pronouns,aici,at her,NA
+item_1175,prepositional_pronouns,againn,at us,NA
+item_1176,prepositional_pronouns,dom,to me,NA
+item_1177,prepositional_pronouns,duit,to you,NA
+item_1178,prepositional_pronouns,dúinn,to us,NA
+item_1179,prepositional_pronouns,liom,with me,NA
+item_1180,prepositional_pronouns,leat,with you,NA
+item_1181,prepositional_pronouns,leis,with him,with him
+item_1182,prepositional_pronouns,leí,with her,with her
+item_1183,prepositional_pronouns,linn,with us,with us
+item_1184,prepositional_pronouns,orm,on me,on me
+item_1185,prepositional_pronouns,ort,on you,on you
+item_1186,prepositional_pronouns,air,on him,on him
+item_1187,prepositional_pronouns,uirthi,on her,on her
+item_1188,prepositional_pronouns,orainn,on us,on us
+item_1189,prepositional_pronouns,díom,off me,off me
+item_1190,prepositional_pronouns,díot,off you,off you
+item_1191,prepositional_pronouns,uaim,from me,from me
+item_1192,prepositional_pronouns,uait,from you,from you
+item_1193,prepositional_pronouns,uaidh,from him,from him
+item_1194,prepositional_pronouns,uainn,from us,from us
+item_1195,question_words,cáil,where,where (question)
+item_1197,question_words,cad,what,what
+item_1199,question_words,cathain,when,when (question)
+item_1201,question_words,cé,who,who
+item_1203,question_words,cé acu,which,which (question)
+item_1205,question_words,cén fáth,why,why
+item_1207,question_words,conas,how,how
+item_1209,locations,ag,at,at
+item_1211,locations,áit,place,place
+item_1213,locations,ann,there,there
+item_1215,locations,ansin,there (in that place),there
+item_1217,locations,anuas,downward,down
+item_1219,locations,aníos,upward,up
+item_1221,locations,anseo,here,here
+item_1223,locations,ar,on,on
+item_1225,locations,ar barr,on top of,on top 
+item_1227,locations,amach,out,out
+item_1229,locations,as,of,of
+item_1231,locations,barr,top,top
+item_1233,locations,bun,bottom,bottom
+item_1235,locations,cúl,behind,behind
+item_1237,locations,de,off,off
+item_1239,locations,do,for,for
+item_1241,locations,faoi,under,under
+item_1243,locations,chun,to,to
+item_1245,locations,i bhfad,far,far
+item_1247,locations,i,in,in
+item_1249,locations,in aice,beside,next to
+item_1251,locations,isteach,inside,inside
+item_1253,locations,lár,middle,middle
+item_1255,locations,lasmuigh,outside,outside
+item_1257,locations,le,with,with
+item_1259,locations,ó,from,from
+item_1261,locations,síos,down,down
+item_1263,locations,suas,up,up
+item_1265,locations,taobh,side,beside
+item_1267,locations,thar,over,over
+item_1269,locations,timpeall,round,around
+item_1271,locations,transna,across,across
+item_1274,quantifiers,a lán,many,a lot
+item_1276,quantifiers,an,the,the
+item_1278,quantifiers,ana,very,very
+item_1280,quantifiers,aon ceann,any(thing),any
+item_1282,quantifiers,aon,one,one
+item_1284,quantifiers,arís,again,again
+item_1286,quantifiers,breis,more,more
+item_1288,quantifiers,céanna,same,same
+item_1290,quantifiers,eile,another,another
+item_1292,quantifiers,gach,each,every
+item_1294,quantifiers,gach aon,every,every
+item_1296,quantifiers,gan,none,none
+item_1298,quantifiers,mórán,many,many
+item_1300,quantifiers,na,na,the
+item_1301,quantifiers,píosa,piece,piece
+item_1303,quantifiers,ró,too,too
+item_1305,quantifiers,roinnt,some,some
+item_1307,quantifiers,saghas,kind of,type
+item_1309,helping_verbs,(ag)iarraidh,try (to),try
+item_1311,helping_verbs,(is)féidir,can,can
+item_1313,helping_verbs,beidh,will be,will be
+item_1315,helping_verbs,bhfuil,is,is
+item_1316,helping_verbs,bhí,was,was
+item_1318,helping_verbs,bí,be,be
+item_1320,helping_verbs,bíonn,am,is
+item_1322,helping_verbs,caithfidh,have to,has to
+item_1324,helping_verbs,is,is,is
+item_1326,helping_verbs,lig(dom),lemme,lemme
+item_1328,helping_verbs,ná,don't,don't
+item_1330,helping_verbs,ní(hea),not,not
+item_1332,helping_verbs,níl,isn't,isn't
+item_1334,helping_verbs,níor,didn't,did not
+item_1336,helping_verbs,raibh,thank you,was
+item_1337,helping_verbs,tá,yes,yes
+item_1338,helping_verbs,teastaigh,wanna,wanna
+item_1340,connecting_words,ach,but,but
+item_1342,connecting_words,agus,and,and
+item_1344,connecting_words,ansin,then,then
+item_1346,connecting_words,chomh,so,so
+item_1348,connecting_words,dá,if,if
+item_1350,connecting_words,mar,because,because
+item_1352,connecting_words,huair,when,when (conjunction)
+item_155,toys,míreannamearaí,jigsaw,puzzle
+item_228,food_drink,oráíste,orange,orange (food)
+item_255,food_drink,sútalún,strawberry,strawberry
+item_334,clothing,tléine,tshirt,t-shirt
+item_405,household,boscabruscair,dustbin,bin
+item_672,people,ainmféinanpháiste,child's own name,child's own name
+item_674,people,ainmfeighlípáistí,babysitter's name,babysitter's name
+item_676,people,ainmpeata,pet's name,pet's name

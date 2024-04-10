@@ -1,0 +1,554 @@
+WS,category,definition,gloss,uni_lemma
+item_1,sounds,au,ouch,ouch
+item_2,sounds,bác,bang/boom,boom
+item_3,sounds,bů,moo,moo
+item_4,sounds,crrr,ring,ring ring
+item_5,sounds,haf,bark,woof woof
+item_6,sounds,hop,hop,hop
+item_7,sounds,íí áá,hee-haw,neigh
+item_8,sounds,jupí,yippie,NA
+item_9,sounds,kvá kvá,quack,quack quack
+item_10,sounds,kykyryký,cock-a-doodle-doo,cockadoodledoo
+item_11,sounds,mé mé,baa,baa baa
+item_12,sounds,mňam,yum,yum yum
+item_13,sounds,mňau,meow,meow
+item_14,sounds,šššš hů,choochoo,choo choo
+item_15,sounds,tik tak,ticktack,tick tock
+item_16,sounds,vrn vrn (auto),vroom,vroom
+item_17,animals,beruška,ladybug,ladybug
+item_18,animals,brouk,bug,bug
+item_19,animals,had,snake,snake
+item_20,animals,jelen,deer,deer
+item_21,animals,kachna,duck,duck
+item_22,animals,kočka,cat,cat
+item_23,animals,kohout,rooster,rooster
+item_24,animals,koza,goat,goat
+item_25,animals,krokodýl,crocodile,crocodile
+item_26,animals,kůň,horse,horse
+item_27,animals,kuře,chicken,chick
+item_28,animals,lev,lion,lion
+item_29,animals,liška,fox,fox
+item_30,animals,medvěd,bear,bear
+item_31,animals,motýl,butterfly,butterfly
+item_32,animals,moucha,fly,fly (animal)
+item_33,animals,opice,monkey,monkey
+item_34,animals,ovce,sheep,sheep
+item_35,animals,pavouk,spider,spider
+item_36,animals,pes,dog,dog
+item_37,animals,prase,pig,pig
+item_38,animals,pták,bird,bird
+item_39,animals,ryba,fish,fish (animal)
+item_40,animals,slepice,chicken/hen,hen
+item_41,animals,šnek,snail,snail
+item_42,animals,tygr,tiger,tiger
+item_43,animals,tučňák,penguin,penguin
+item_44,animals,včela,bee,bee
+item_45,animals,vlk,wolf,wolf
+item_46,animals,vosa,wasp,NA
+item_47,animals,zvíře,animal,animal
+item_48,animals,žába,frog,frog
+item_49,animals,želva,turtle,turtle
+item_50,animals,žirafa,giraffe,giraffe
+item_51,animals,slon,elephant,elephant
+item_52,animals,sova,owl,owl
+item_53,animals,mravenec,ant,ant
+item_54,animals,myš,mouse,mouse
+item_55,animals,králik,rabbit,bunny
+item_56,animals,kráva,cow,cow
+item_57,vehicles,auto,car,car
+item_58,vehicles,autobus,bus,bus
+item_59,vehicles,bagr,excavator,NA
+item_60,vehicles,hasiči,firefighters,firetruck
+item_61,vehicles,kočárek,pram,stroller
+item_62,vehicles,kolo,bicycle,bicycle
+item_63,vehicles,letadlo,airplane,airplane
+item_64,vehicles,loď,ship,boat
+item_65,vehicles,motorka,motorbike,motorcycle
+item_66,vehicles,náklaďák,van,truck
+item_67,vehicles,policajti,policemen,police car
+item_68,vehicles,sanitka,ambulance,ambulance
+item_69,vehicles,traktor,tractor,tractor
+item_70,vehicles,vlak,train,train
+item_71,vehicles,vrtulník,helicopter,helicopter
+item_72,toys,bábovička,sandcake,NA
+item_73,toys,bubínek,drum,drum (object)
+item_74,toys,dárek,gift,present
+item_75,toys,foťák,camera,camera
+item_76,toys,fotbal,football,NA
+item_77,toys,hračka,toy,toy (object)
+item_78,toys,knížka,book,book
+item_79,toys,kostka,dice,NA
+item_80,toys,krabice,box,box
+item_81,toys,kytara,guitar,guitar
+item_82,toys,lepidlo,glue,glue (object)
+item_83,toys,míč,ball,ball
+item_84,toys,panenka,doll,doll
+item_85,toys,papír,paper,paper
+item_86,toys,štětec,brush,brush (object)
+item_87,toys,tužka,pencil,pen
+item_88,food_drink,banán,banana,banana
+item_89,food_drink,bonbón,bonbon,candy
+item_90,food_drink,brambory,potatoes,potato
+item_91,food_drink,citrón,lemon,lemon
+item_92,food_drink,hrášek,pea,peas
+item_93,food_drink,hruška,pear,pear
+item_94,food_drink,chleba,bread,bread
+item_95,food_drink,jablko,apple,apple
+item_96,food_drink,kaše,mash,NA
+item_97,food_drink,knedlík,dumpling,dumpling
+item_98,food_drink,kukuřice,corn,corn
+item_99,food_drink,lízátko,lolipop,candy
+item_100,food_drink,meloun,watermelon,melon
+item_101,food_drink,mléko,milk,milk
+item_102,food_drink,mrkev,carrot,carrot
+item_103,food_drink,okurka,cucumber,cucumber
+item_104,food_drink,čokoláda,chocolate,chocolate
+item_105,food_drink,dort,cake,cake
+item_106,food_drink,džus,juice,juice
+item_107,food_drink,hlad,hunger,NA
+item_108,food_drink,jahoda,strawberry,strawberry
+item_109,food_drink,jídlo,food,food
+item_110,food_drink,jogurt,yogurt,yogurt
+item_111,food_drink,kafe,coffee,coffee
+item_112,food_drink,mandarinka,mandarine,orange (food)
+item_113,food_drink,marmeláda,jam,jam
+item_114,food_drink,máslo,butter,butter
+item_115,food_drink,maso,meat,meat
+item_116,food_drink,omáčka,sauce,sauce
+item_117,food_drink,oříšky,nuts,nut
+item_118,food_drink,ovoce,fruit,fruit
+item_119,food_drink,palačinka,pancake,pancake
+item_120,food_drink,houby,mushrooms,mushroom
+item_121,food_drink,kakao,cocoa,NA
+item_122,food_drink,med,honey,honey
+item_123,food_drink,párek,frankfurter,hot dog
+item_124,food_drink,piškot,biscuit,biscuit
+item_125,food_drink,pití,drink,drink (beverage)
+item_126,food_drink,pivo,beer,beer
+item_127,food_drink,polévka,soup,soup
+item_128,food_drink,pomeranč,orange,orange (food)
+item_129,food_drink,rajče,tomato,tomato
+item_130,food_drink,rohlík,breadroll,bun
+item_131,food_drink,rozinka,sultana,raisin
+item_132,food_drink,ryba,fish,fish (food)
+item_133,food_drink,rýže,rice,rice
+item_134,food_drink,sůl,salt,salt
+item_135,food_drink,sušenka,cracker/biscuit,biscuit
+item_136,food_drink,sýr,cheese,cheese
+item_137,food_drink,špagety,spaghetti,spaghetti
+item_138,food_drink,šunka,ham,ham
+item_139,food_drink,vajičko,egg,egg
+item_140,food_drink,voda,water,water (beverage)
+item_141,food_drink,zmrzlina,ice cream,ice cream
+item_142,food_drink,žízeň,thirst,thirsty
+item_143,food_drink,žvýkačka,bubblegum,gum
+item_144,clothing,bačkory,slippers,slipper
+item_145,clothing,boty,shoes,shoe
+item_146,clothing,brýle,glasses,glasses
+item_147,clothing,bryndák,bib,bib
+item_148,clothing,bunda,jacket,jacket
+item_149,clothing,čepice,cap,hat
+item_150,clothing,holinky,boots,boots
+item_151,clothing,kabát,coat,coat
+item_152,clothing,kalhotky,panties,underpants
+item_153,clothing,kalhoty,trousers,pants
+item_154,clothing,klobouk,hat,hat
+item_155,clothing,knoflík,button,button
+item_156,clothing,korále,beads,necklace
+item_157,clothing,kraťasy,shorts,shorts
+item_158,clothing,mikina,pullover,sweater
+item_159,clothing,náušnice,earrings,earring
+item_160,clothing,oblečení,clothes,clothes
+item_161,clothing,plavky,swimwear,swimsuit
+item_162,clothing,plínka,diaper,diaper
+item_163,clothing,ponožky,socks,sock
+item_164,clothing,punčocháče,stockings,tights
+item_165,clothing,pyžamo,pajamas,pajamas
+item_166,clothing,rukavice,gloves,glove
+item_167,clothing,sandále,sandals,sandal
+item_168,clothing,sukně,skirt,skirt
+item_169,clothing,svetr,sweater,sweater
+item_170,clothing,šála,scarf,scarf
+item_171,clothing,šaty,dress,dress (object)
+item_172,clothing,tričko,t-shirt,t-shirt
+item_173,clothing,zip,zipper,zipper
+item_174,body_parts,bebí,owie,owie
+item_175,body_parts,brada,chin,chin
+item_176,body_parts,břicho,belly/tummy,tummy
+item_177,body_parts,fousy,facial hair,beard
+item_178,body_parts,hlava,head,head
+item_179,body_parts,jazyk,tongue,tongue
+item_180,body_parts,koleno,knee,knee
+item_181,body_parts,krk,neck,neck
+item_182,body_parts,nehet,nail,nail (body part)
+item_183,body_parts,noha,leg,leg
+item_184,body_parts,nos,nose,nose
+item_185,body_parts,obličej,face,face
+item_186,body_parts,oko,eye,eye
+item_187,body_parts,piha,freckle,NA
+item_188,body_parts,pindík (i jiné označení),penis (any name),penis
+item_189,body_parts,pipinka (i jiné označení),vagina (any name),vagina
+item_190,body_parts,prsa,breasts,breast
+item_191,body_parts,prst,finger,finger
+item_192,body_parts,pupík,bellybutton,belly button
+item_193,body_parts,pusa,mouth,mouth
+item_194,body_parts,rameno,shoulder,shoulder
+item_195,body_parts,ruka,hand/arm,arm
+item_196,household,baterka,flashlight/battery,light (object)
+item_197,household,cédéčko,CD,NA
+item_198,household,dudlík,dummy,pacifier
+item_199,household,hodinky,watch,watch (object)
+item_200,household,hrnek,cup,cup
+item_201,household,hřeben,comb,comb (object)
+item_202,household,kapesník,handkerchief,tissue
+item_203,household,kartáček na zuby,toothbrush,toothbrush
+item_204,household,kladivo,hammer,hammer
+item_205,household,klíč,key,key
+item_206,household,koš,bin,trash
+item_207,household,koště,broom,brush (object)
+item_208,household,kýbl,bucket,bucket
+item_209,household,kytka,flower,flower
+item_210,household,láhev,bottle,bottle
+item_211,household,lampa,lamp,lamp
+item_212,household,vysavač,vacuum cleaner,vacuum
+item_213,household,lžička,spoon,spoon
+item_214,household,mísa,bowl,bowl
+item_215,household,hadr,rag,cloth
+item_216,household,mýdlo,soap,soap
+item_217,household,noviny,newspaper,newspaper
+item_218,household,nůž,knife,knife
+item_219,household,nůžky,scissors,scissors
+item_220,household,obraz,painting/image,picture
+item_221,household,peněženka,wallet,purse
+item_222,household,peníze,money,money
+item_223,household,peřina,blanket,blanket
+item_224,household,počitáč,computer,computer
+item_225,household,polštář,pillow,pillow
+item_226,household,prášek,powder,NA
+item_227,household,rádio,radio,radio
+item_228,household,světlo,light,light (object)
+item_229,household,šuplík,drawer,drawer
+item_230,household,talíř,plate,plate
+item_231,household,telefon,phone,telephone
+item_232,household,televize,television,TV
+item_233,household,trouba,oven,oven
+item_234,household,ubrousek,napkin,tissue
+item_235,household,vidlička,fork,fork
+item_236,furniture_rooms,dveře,door,door
+item_237,furniture_rooms,chodba,corridor/hallway,corridor
+item_238,furniture_rooms,koupelna,bathroom,bathroom
+item_239,furniture_rooms,křeslo,armchair,armchair
+item_240,furniture_rooms,kuchýň,kitchen,kitchen
+item_241,furniture_rooms,lednička,fridge,refrigerator
+item_242,furniture_rooms,myčka,dishwasher,dishwasher
+item_243,furniture_rooms,obývák,living room,living room
+item_244,furniture_rooms,okno,window,window
+item_245,furniture_rooms,podlaha,floor,floor
+item_246,furniture_rooms,pokoj,room,room
+item_247,furniture_rooms,postel,bed,bed
+item_248,furniture_rooms,pračka,washing machine,washing machine
+item_249,furniture_rooms,schody,stairs,stairs
+item_250,furniture_rooms,sprcha,shower,shower
+item_251,furniture_rooms,stolička,stool,chair
+item_252,furniture_rooms,stůl,table,table
+item_253,furniture_rooms,umyvadlo,sink,sink
+item_254,furniture_rooms,vana,tub,bath
+item_255,furniture_rooms,židle,chair,chair
+item_256,outside_places,bazén,swimming pool,pool
+item_257,outside_places,déšť,rain,rain
+item_258,outside_places,doma,home,home
+item_259,outside_places,dům,house,house
+item_260,outside_places,hadice,hose,hose
+item_261,outside_places,houpačka,seesaw,swing (object)
+item_262,outside_places,hřiště,playground,playground
+item_263,outside_places,hvězda,star,star
+item_264,outside_places,chodník,sidewalk,sidewalk
+item_265,outside_places,kámen,stone,stone
+item_266,outside_places,klouzačka,slide,slide (object)
+item_267,outside_places,lavička,bench,bench
+item_268,outside_places,les,forrest,forest
+item_269,outside_places,lopata,shovel,spade
+item_270,outside_places,louže,puddle,puddle
+item_271,outside_places,měsíc,moon,moon
+item_272,outside_places,město,city,town
+item_273,outside_places,mrak,cloud,cloud
+item_274,outside_places,návštěva,visit,NA
+item_275,outside_places,nebe,sky,sky
+item_276,outside_places,obchod,shop,store
+item_277,outside_places,park,park,park
+item_278,outside_places,písek,sand,sand
+item_279,outside_places,práce,work,work (place)
+item_280,outside_places,sekačka,lawnmower,lawn mower
+item_281,outside_places,skála,rock,rock (object)
+item_282,outside_places,slunce,sun,sun
+item_283,outside_places,sněhulák,snowman,snowman
+item_284,outside_places,sníh,snow,snow
+item_285,outside_places,strom,tree,tree
+item_286,outside_places,střecha,roof,roof
+item_287,outside_places,školka,kindergarten/daycare,NA
+item_288,outside_places,tráva,grass,grass
+item_289,outside_places,venku,outside,outside
+item_290,outside_places,větev,branch,branch
+item_291,outside_places,vítr,wind,wind
+item_292,outside_places,zahrada,garden,garden
+item_293,outside_places,zoo,zoo,zoo
+item_294,outside_places,žebřík,ladder,ladder
+item_295,people,babička,grandma,grandma
+item_296,people,bráška,brother,brother
+item_297,people,děda,grandpa,grandpa
+item_298,people,děti,children,children
+item_299,people,doktor/ka,doctor,doctor
+item_300,people,holka,girl,girl
+item_301,people,kamarád/ka,friend,friend
+item_302,people,kluk,boy,boy
+item_303,people,lidi,people,people
+item_304,people,máma,mommy,mommy
+item_305,people,Mikuláš,st. Nicolas,NA
+item_306,people,miminko,baby,baby
+item_307,people,pán,mister,NA
+item_308,people,paní,miss/ms.,NA
+item_309,people,policajt,police officer,police
+item_310,people,pošťačka,mailwoman,mailman
+item_311,people,strejda,uncle,uncle
+item_312,people,sestrička (sourozenec),sister,sister
+item_313,people,táta,dad,daddy
+item_314,people,teta,aunt,aunt
+item_315,people,vlastní jméno dítěte,[child's own name],child's own name
+item_316,people,jméno zvířete napr. Fík,[a pet's name],pet's name
+item_317,people,jméno jiné osoby,[someone else's name],NA
+item_318,action_words,bát se,fear/be afraid,scared
+item_319,action_words,běhat,run,run
+item_320,action_words,běžet,run,run
+item_321,action_words,bolet,ache/hurt,hurt (action)
+item_322,action_words,bouchnout,hit/punch,hit
+item_323,action_words,brát,take,take
+item_324,action_words,brečet,cry,cry
+item_325,action_words,bydlet,live/stay,NA
+item_326,action_words,cákat,splah,splash
+item_327,action_words,čekat,wait,wait
+item_328,action_words,čist,read,read
+item_329,action_words,čistit,clean,clean (action)
+item_330,action_words,čůrat,pee,pee
+item_331,action_words,dát,give,give
+item_332,action_words,dělat,do,do
+item_333,action_words,dívat se,look,look
+item_334,action_words,dostat,get/receive,get
+item_335,action_words,držet,hold,hold
+item_336,action_words,dupat,stomp,stomp
+item_337,action_words,foukat,blow,blow
+item_338,action_words,házet,throw,throw
+item_339,action_words,hledat,search/look for,search
+item_340,action_words,hodit,throw,throw
+item_341,action_words,honit,chase,chase
+item_342,action_words,houpat se,swing,swing (action)
+item_343,action_words,hrát si,play,play
+item_344,action_words,chodit,walk,walk
+item_345,action_words,chytat,catch,catch
+item_346,action_words,jet,go (by vehicle),ride
+item_347,action_words,jíst,eat,eat
+item_348,action_words,jít,go/walk,walk
+item_349,action_words,kakat,poop,poop
+item_350,action_words,kopat,dig,kick
+item_351,action_words,koukat,watch,watch (action)
+item_352,action_words,koupit,buy,buy
+item_353,action_words,kousat,bite,NA
+item_354,action_words,kousnout,bite,bite
+item_355,action_words,krmit,feed,feed
+item_356,action_words,kříčet,shout,shout
+item_357,action_words,lechtat,tickle,tickle
+item_358,action_words,lézt,climb,climb
+item_359,action_words,lízat,lick,lick
+item_360,action_words,malovat,paint,paint (action)
+item_361,action_words,míchat,mix,stir
+item_362,action_words,mít,have,have
+item_363,action_words,mýt,wash,wash
+item_364,action_words,nakoupit,buy,buy
+item_365,action_words,nalít,pour,pour
+item_366,action_words,napít,drink up,drink (action)
+item_367,action_words,nést,carry,carry
+item_368,action_words,opravovat,repair,fix
+item_369,action_words,otevřít,open,open (action)
+item_370,action_words,pálit,burn,NA
+item_371,action_words,pít,drink,drink (action)
+item_372,action_words,plakat,cry,cry
+item_373,action_words,plavat,swimm,swim
+item_374,action_words,podívat se,look at,look
+item_375,action_words,položit,put/lay/place,put
+item_376,action_words,pomoct,help,help
+item_377,action_words,povídat,talk,talk
+item_378,action_words,pracovat,work,work (action)
+item_379,action_words,probudit se,wake up,wake
+item_380,action_words,pršet,rain,rain
+item_381,action_words,přikrýt,cover,cover (action)
+item_382,action_words,přinést,bring,bring
+item_383,action_words,psát,write,write
+item_384,action_words,rozsvítit,turn the light on,turn on
+item_385,action_words,řezat,cut,cut
+item_386,action_words,řídit,ride,drive
+item_387,action_words,říkat,say,talk
+item_388,action_words,sedět,sit,sit
+item_389,action_words,sednout si,sit down,sit
+item_390,action_words,schovat,hide,hide
+item_391,action_words,skákat,jump,jump
+item_392,action_words,skočit,jump,jump
+item_393,action_words,skončit,end/finish,finish
+item_394,action_words,slyšet,hear,hear
+item_395,action_words,smát se,laugh,smile
+item_396,action_words,spadnout,fall,fall
+item_397,action_words,spát,sleep,sleep
+item_398,action_words,stát,stay,stand
+item_399,action_words,stříhat,cut,cut
+item_400,action_words,tancovat,dance,dance
+item_401,action_words,tlačit,push,push
+item_402,action_words,tleskat,clap,clap
+item_403,action_words,trhat,tear,pull
+item_404,action_words,ukázat,show,show
+item_405,action_words,umýt,wash,wash
+item_406,action_words,utřít,wipe,wipe
+item_407,action_words,uvařit,cook,cook
+item_408,action_words,vařit,cook,cook
+item_409,action_words,vidět,see,see
+item_410,action_words,vyhodit,throw out,trash
+item_411,action_words,vylít,spill,climb
+item_412,action_words,vzít,také,take
+item_413,action_words,zamést,sweep,sweep
+item_414,action_words,zavřít,close,close
+item_415,action_words,zlomit,break,break
+item_416,action_words,zpívat,sing,sing
+item_417,action_words,zůstat,stay,stay
+item_418,games_routines,ahoj!,hi,hello
+item_419,games_routines,ano,yes,yes
+item_420,games_routines,básnička,[any rhyme],NA
+item_421,games_routines,cákycáky,splashsplash,splash
+item_422,games_routines,dej pusinku,kiss me,kiss
+item_423,games_routines,děkuji,thankyou,thank you
+item_424,games_routines,dobrou noc,goodnight,good night
+item_425,games_routines,dobrý den,good day,NA
+item_426,games_routines,ee [záchod],peepee/poop,poop
+item_427,games_routines,hači,sit [babyword],sit
+item_428,games_routines,haji,sleep [babyword],sleep
+item_429,games_routines,halóhaló,hello [on the phone],NA
+item_430,games_routines,ham,"num nums [eat,swallow]",eat
+item_431,games_routines,hotovo,alldone,finished
+item_432,games_routines,jdeme,let's go,come
+item_433,games_routines,kolo kolo mlýnský,ring-around-the-rosie,NA
+item_434,games_routines,malá malá,hush-hush [little],shh
+item_435,games_routines,nashledanou,bye bye,bye
+item_436,games_routines,ne,no,no
+item_437,games_routines,nech to,stop it!,leave
+item_438,games_routines,pacipaci,pat-a-cake,clap
+item_439,games_routines,pápá,seeyou,bye
+item_440,games_routines,pohádka,fairytale,story
+item_441,games_routines,prosím,please,please
+item_442,games_routines,pšt!,shh,quiet
+item_443,games_routines,ukaž,show me,show
+item_444,games_routines,vařila myšička,mouse-cooked-porridge [finger game],NA
+item_445,games_routines,že tě cghytím,I'll catch you,NA
+item_446,descriptive_words,bílý,white,white
+item_447,descriptive_words,černý,black,black
+item_448,descriptive_words,červený,red,red
+item_449,descriptive_words,čistý,clean,clean (description)
+item_450,descriptive_words,dlouhý,long,long
+item_451,descriptive_words,dobrý,good,good
+item_452,descriptive_words,hezký,pretty,nice
+item_453,descriptive_words,horký,hot,hot
+item_454,descriptive_words,jiný,different,different
+item_455,descriptive_words,malý,small,little (description)
+item_456,descriptive_words,modrý,blue,blue
+item_457,descriptive_words,mokrý,wet,wet (description)
+item_458,descriptive_words,nemocný,ill,sick
+item_459,descriptive_words,nový,new,new
+item_460,descriptive_words,pěkný,pretty,nice
+item_461,descriptive_words,prázdný,empty,empty
+item_462,descriptive_words,první,first,first
+item_463,descriptive_words,rozbitý,broken,broken
+item_464,descriptive_words,rychlý,fast,fast
+item_465,descriptive_words,smutný,sad,sad
+item_466,descriptive_words,starý,old,old
+item_467,descriptive_words,stejný,identical,same
+item_468,descriptive_words,studený,cold,cold
+item_469,descriptive_words,suchý,dry,dry (description)
+item_470,descriptive_words,špinavý,dirty,dirty
+item_471,descriptive_words,těžký,heavy,heavy
+item_472,descriptive_words,velký,big,big
+item_473,descriptive_words,zelený,green,green
+item_474,descriptive_words,zlobivý,naughty,naughty
+item_475,descriptive_words,žlutý,yellow,yellow
+item_476,time_words,brzy,soon,early
+item_477,time_words,den,day,day
+item_478,time_words,dnes,today,today
+item_479,time_words,noc,night,night
+item_480,time_words,pak,then,later
+item_481,time_words,potom,then,after
+item_482,time_words,ráno,morning,morning
+item_483,time_words,teď,now,now
+item_484,time_words,včera,yesterday,yesterday
+item_485,time_words,večer,evening,evening
+item_486,time_words,za chvilku,in a while,NA
+item_487,time_words,zítra,tomorrow,tomorrow
+item_488,pronouns,já,I,I
+item_489,pronouns,ty,you,you
+item_490,pronouns,on,he,he
+item_491,pronouns,ona,she,she
+item_492,pronouns,my,we,we
+item_493,pronouns,vy,you(pl.),you
+item_494,pronouns,oni,they,they
+item_495,pronouns,moje,my/mine,mine
+item_496,pronouns,můj,my/mine,my
+item_497,pronouns,tvůj,yours,your
+item_498,pronouns,tvoje,yours,your
+item_499,pronouns,naše,ours,our
+item_500,pronouns,vaše,yours(pl.),your
+item_501,pronouns,sám,himself/herself/alone,myself
+item_502,pronouns,nic,nothing,nothing
+item_503,pronouns,ten,this(masculine),him
+item_504,pronouns,ta,this(feminine),her
+item_505,pronouns,to,this(neuter),it
+item_506,pronouns,tenhle,this-one(masculine),him
+item_507,locations_quantities_adverbs,dobře,well,well (modifier)
+item_508,locations_quantities_adverbs,hodně,many/much,a lot
+item_509,locations_quantities_adverbs,málo,little/few,a little
+item_510,locations_quantities_adverbs,ještě,still/more,more
+item_511,locations_quantities_adverbs,nahoře,up,up
+item_512,locations_quantities_adverbs,dole,down,down
+item_513,locations_quantities_adverbs,"ne- (pije, dělá)",not [negation prefix],not
+item_514,locations_quantities_adverbs,rychle,fast,fast
+item_515,locations_quantities_adverbs,pomalu,slowly,slow
+item_516,locations_quantities_adverbs,špatně,wrong,wrong
+item_517,locations_quantities_adverbs,tam,there,there
+item_518,locations_quantities_adverbs,tady,here,here
+item_519,locations_quantities_adverbs,tak,so,so
+item_520,locations_quantities_adverbs,trochu,a little bit,a little
+item_521,locations_quantities_adverbs,vzadu,in the back,back (location)
+item_522,locations_quantities_adverbs,venku,outside,outside
+item_523,question_words,co?,what?,what
+item_524,question_words,jak?,how?,how
+item_525,question_words,kam?,where?,where (question)
+item_526,question_words,kde?,where?,where (question)
+item_527,question_words,kdo?,who?,who
+item_528,question_words,kolik?,how much/many?,how much
+item_529,question_words,proč?,why?,why
+item_530,prepositions,do,from,from
+item_531,prepositions,k,to/into,to
+item_532,prepositions,na,to/towards,to
+item_533,prepositions,od,on,on
+item_534,prepositions,okolo,around,around
+item_535,prepositions,pod,under/beneath,under
+item_536,prepositions,pro,for,for
+item_537,prepositions,s,with,with
+item_538,prepositions,u,by/near,by
+item_539,prepositions,v,in,in
+item_540,prepositions,vedle,next to,next to
+item_541,prepositions,za,behind/for/instead,behind
+item_542,connecting_words,a,and,and
+item_543,connecting_words,aby,so that/in order to,so
+item_544,connecting_words,ale,but,but
+item_545,connecting_words,až,until,when (conjunction)
+item_546,connecting_words,nebo,or,or
+item_547,connecting_words,protože,because,because
+item_548,helping_verbs,být,be,be
+item_549,helping_verbs,chtít,want,want
+item_550,helping_verbs,muset,must/have to,must
+item_551,helping_verbs,smět,can/be allowed to,can (auxiliary)
+item_552,helping_verbs,začít,begin,begin
+item_553,helping_verbs,zůstat,stay,stay

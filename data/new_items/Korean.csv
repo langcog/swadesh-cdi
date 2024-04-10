@@ -1,0 +1,704 @@
+WS,WG,WGComp,category,definition,gloss,uni_lemma
+item_1,item_3,item_3,sounds,꽥꽥,quack quack,quack quack
+item_2,item_4,item_4,sounds,꿀꿀,oink oink,oink
+item_3,item_5,item_5,sounds,똑똑,knock knock,knock knock
+item_4,item_6,item_6,sounds,멍멍,woof woof,woof woof
+item_5,item_8,item_8,sounds,빵빵,honk honk,beep beep
+item_6,item_9,item_9,sounds,야옹,meow,meow
+item_7,item_10,item_10,sounds,얌얌,yum yum,yum yum
+item_8,item_11,item_11,sounds,어흥,roar,roar
+item_9,item_13,item_13,sounds,음매,moo,moo
+item_10,,,sounds,짹짹,tweet tweet,tweet tweet
+item_11,item_14,item_14,sounds,칙칙폭폭,choo choo,choo choo
+item_12,item_15,item_15,vehicles,기차,train,train
+item_13,item_16,item_16,vehicles,배,boat,boat
+item_14,item_17,item_17,vehicles,버스,bus,bus
+item_15,item_19,item_19,vehicles,비행기,airplane,airplane
+item_16,item_18,item_18,vehicles,불자동차/소방차,firetruck,firetruck
+item_17,,,vehicles,썰매,sled,sled
+item_18,,,vehicles,오토바이,motorcycle,motorcycle
+item_19,,,vehicles,유모차,stroller,stroller
+item_20,,,vehicles,자전거,bicycle,bicycle
+item_21,item_20,item_20,vehicles,차/자동차,car,car
+item_22,item_21,item_21,vehicles,택시,taxi,taxi
+item_23,,,vehicles,트럭,truck,truck
+item_24,,,vehicles,헬리콥터,helicopter,helicopter
+item_25,item_73,item_73,toys,공,ball,ball
+item_26,,,toys,로봇,robot,robot
+item_27,item_75,item_75,toys,블록,block,blocks
+item_28,,,toys,비누방울,bubbles,bubbles
+item_29,,,toys,선물,present,present
+item_30,item_78,item_78,toys,연필,pencil,pencil
+item_31,item_79,item_79,toys,인형,doll,doll
+item_32,,,toys,장난감,toy,toy (object)
+item_33,item_77,item_77,toys,종이,paper,paper
+item_34,item_80,item_80,toys,책,book,book
+item_35,,,toys,총,gun,gun
+item_36,,,toys,크레용/크레파스,crayon,crayon
+item_37,,,toys,풀,glue,glue (object)
+item_38,item_82,item_82,toys,풍선,balloon,balloon
+item_39,,,animals,개,dog,dog
+item_40,item_23,item_23,animals,개구리,frog,frog
+item_41,,,animals,개미,ant,ant
+item_42,,,animals,거북이,turtle,turtle
+item_43,,,animals,거위,goose,goose
+item_44,item_24,item_24,animals,고양이,cat,cat
+item_45,item_25,item_25,animals,곰,bear,bear
+item_46,,,animals,공룡,dinosaur,dinosaur
+item_47,item_26,item_26,animals,기린,giraffe,giraffe
+item_48,item_27,item_27,animals,나비,butterfly,butterfly
+item_49,,,animals,다람쥐,squirrel,squirrel
+item_50,item_28,item_28,animals,닭,chicken (animal),chicken (animal)
+item_51,,,animals,당나귀,donkey,donkey
+item_52,,,animals,동물,animal,animal
+item_53,item_29,item_29,animals,돼지,pig,pig
+item_54,item_30,item_30,animals,말,horse,horse
+item_55,item_31,item_31,animals,물고기,fish,fish (animal)
+item_56,,,animals,뱀,snake,snake
+item_57,item_32,item_32,animals,벌,bee,bee
+item_58,,,animals,벌레,bug,bug
+item_59,,,animals,병아리,chick,chick
+item_60,,,animals,부엉이,owl,owl
+item_61,,,animals,비둘기,pigeon,pigeon
+item_62,,,animals,사슴,deer,deer
+item_63,item_33,item_33,animals,사자,lion,lion
+item_64,item_34,item_34,animals,새,bird,bird
+item_65,,,animals,소,cow,cow
+item_66,,,animals,송아지,calf,calf
+item_67,item_36,item_36,animals,악어,alligator,crocodile
+item_68,,,animals,양,sheep,sheep
+item_69,,,animals,여우,fox,fox
+item_70,,,animals,염소,goat,goat
+item_71,item_37,item_37,animals,오리,duck,duck
+item_72,,,animals,원숭이,monkey,monkey
+item_73,item_38,item_38,animals,쥐,mouse,mouse
+item_74,,,animals,참새,sparrow,sparrow
+item_75,item_39,item_39,animals,코끼리,elephant,elephant
+item_76,item_40,item_40,animals,토끼,rabbit,bunny
+item_77,,,animals,펭귄,penguin,penguin
+item_78,item_41,item_41,animals,하마,hippo,hippopotamus
+item_79,item_42,item_42,animals,호랑이,tiger,tiger
+item_80,item_63,item_63,clothing,가방,bag,bag
+item_81,,,clothing,구두,dress shoes,dress shoe
+item_82,item_64,item_64,clothing,기저귀,diaper,diaper
+item_83,item_65,item_65,clothing,단추,button,button
+item_84,item_66,item_66,clothing,모자,hat,hat
+item_85,,,clothing,목걸이,necklace,necklace
+item_86,item_67,item_67,clothing,바지,pants,pants
+item_87,,,clothing,목도리,scarf,scarf
+item_88,item_68,item_68,clothing,신/신발,shoe,shoe
+item_89,item_69,item_69,clothing,양말,sock,sock
+item_90,item_70,item_70,clothing,옷/꼬까,dress,dress (object)
+item_91,,,clothing,운동화,sneakers,sneaker
+item_92,,,clothing,잠바,jacket,jacket
+item_93,,,clothing,잠옷,pajamas,pajamas
+item_94,item_71,item_71,clothing,장갑,gloves,glove
+item_95,,,clothing,주머니,pocket,pocket
+item_96,,,clothing,치마,skirt,skirt
+item_97,,,clothing,코트/외투,coat,coat
+item_98,item_72,item_72,clothing,팬티,underpants,underpants
+item_99,,,clothing,허리띠,belt,belt
+item_100,,,furniture_rooms,계단,stairs,stairs
+item_101,item_134,item_134,furniture_rooms,냉장고,refrigerator,refrigerator
+item_102,,,furniture_rooms,목욕탕,bathtub,bathtub
+item_103,item_135,item_135,furniture_rooms,문,door,door
+item_104,item_136,item_136,furniture_rooms,방,room,room
+item_105,item_137,item_137,furniture_rooms,베개,pillow,pillow
+item_106,,,furniture_rooms,부엌,kitchen,kitchen
+item_107,,,furniture_rooms,서랍,drawer,drawer
+item_108,,,furniture_rooms,세탁기,washing machine,washing machine
+item_109,,,furniture_rooms,소파,sofa,couch
+item_110,,,furniture_rooms,옷장,closet,closet
+item_111,,,furniture_rooms,유리,glass,glass
+item_112,item_138,item_138,furniture_rooms,의자,chair,chair
+item_113,item_139,item_139,furniture_rooms,이불,blanket,blanket
+item_114,,,furniture_rooms,전자레인지,microwave,microwave
+item_115,,,furniture_rooms,지하실,basement,basement
+item_116,,,furniture_rooms,창문,window,window
+item_117,item_140,item_140,furniture_rooms,침대,bed,bed
+item_118,item_141,item_141,furniture_rooms,텔레비전,TV,TV
+item_119,item_142,item_142,furniture_rooms,피아노,piano,piano
+item_120,,,furniture_rooms,화장실,bathroom,bathroom
+item_121,item_83,item_83,food_drink,감,persimmon,persimmon
+item_122,,,food_drink,감자,potato,potato
+item_123,item_84,item_84,food_drink,계란/달걀,egg,egg
+item_124,item_85,item_85,food_drink,고구마,sweet potato,sweet potato
+item_125,item_86,item_86,food_drink,고기,meat,meat
+item_126,,,food_drink,과일,fruit,fruit
+item_127,item_87,item_87,food_drink,과자/까까,cracker,cracker
+item_128,item_88,item_88,food_drink,국,soup,soup
+item_129,,,food_drink,국수,noodles,pasta
+item_130,item_89,item_89,food_drink,귤,mandarin,tangerine
+item_131,item_90,item_90,food_drink,김,dried seaweed,dried seaweed
+item_132,item_91,item_91,food_drink,김치,kimchi,kimchi
+item_133,item_92,item_92,food_drink,껌,gum,gum
+item_134,,,food_drink,닭고기,chicken (food),chicken (food)
+item_135,,,food_drink,당근,carrot,carrot
+item_136,,,food_drink,도너츠,donut,donut
+item_137,item_94,item_94,food_drink,딸기,strawberry,strawberry
+item_138,,,food_drink,땅콩,peanuts,peanut
+item_139,item_95,item_95,food_drink,떡,rice cake,rice cake
+item_140,item_96,item_96,food_drink,라면,ramen,noodles
+item_141,,,food_drink,메론,melon,melon
+item_142,item_98,item_98,food_drink,무/무우,radish,radish
+item_143,item_99,item_99,food_drink,물,water,water (beverage)
+item_144,item_100,item_100,food_drink,바나나,banana,banana
+item_145,item_101,item_101,food_drink,밤,chestnut,nut
+item_146,,,food_drink,배추,cabbage,cabbage
+item_147,,,food_drink,복숭아,peach,peach
+item_148,item_104,item_104,food_drink,빵,bread,bread
+item_149,item_105,item_105,food_drink,사과,apple,apple
+item_150,,,food_drink,사이다,Lemon-lime soda,soda
+item_151,item_106,item_106,food_drink,사탕,candy,candy
+item_152,,,food_drink,생선,fish,fish (food)
+item_153,,,food_drink,설탕,sugar,sugar
+item_154,,,food_drink,소금,salt,salt
+item_155,item_107,item_107,food_drink,수박,watermelon,watermelon
+item_156,,,food_drink,스파게티,spaghetti,spaghetti
+item_157,item_108,item_108,food_drink,쌀,rice,rice
+item_158,item_109,item_109,food_drink,아이스크림,ice cream,ice cream
+item_159,,,food_drink,얼음,ice,ice
+item_160,item_110,item_110,food_drink,오렌지,orange (food),orange (food)
+item_161,,,food_drink,옥수수,corn,corn
+item_162,item_111,item_111,food_drink,요구르트,yogurt,yogurt
+item_163,item_112,item_112,food_drink,우유,milk,milk
+item_164,,,food_drink,음식,food,food
+item_165,item_113,item_113,food_drink,주스,juice,juice
+item_166,item_114,item_114,food_drink,초콜렛,chocolate,chocolate
+item_167,item_115,item_115,food_drink,치즈,cheese,cheese
+item_168,,,food_drink,커피,coffee,coffee
+item_169,,,food_drink,케이크,cake,cake
+item_170,,,food_drink,콜라,Coca Cola,coke
+item_171,item_116,item_116,food_drink,콩,beans,beans
+item_172,,,food_drink,토마토,tomato,tomato
+item_173,item_117,item_117,food_drink,포도,grapes,grapes
+item_174,,,food_drink,피자,pizza,pizza
+item_175,,,food_drink,핫도그,hot dog,hot dog
+item_176,,,food_drink,햄버거,hamburger,hamburger
+item_177,,,food_drink,호떡,rice pancake,pancake
+item_178,,,food_drink,호박,pumpkin,pumpkin
+item_179,item_43,item_43,body_parts,고추,penis,penis
+item_180,item_44,item_44,body_parts,귀,ear,ear
+item_181,item_45,item_45,body_parts,눈,eye,eye
+item_182,item_46,item_46,body_parts,다리,leg,leg
+item_183,item_47,item_47,body_parts,등,back (body part),back (body part)
+item_184,item_48,item_48,body_parts,똥꼬,anus,butt
+item_185,item_49,item_49,body_parts,머리,head,head
+item_186,,,body_parts,머리카락,hair,hair
+item_187,item_50,item_50,body_parts,목,neck,neck
+item_188,,,body_parts,몸,body,body
+item_189,,,body_parts,무릎,knee,knee
+item_190,item_51,item_51,body_parts,발,foot,foot
+item_191,,,body_parts,발목,ankle,ankle
+item_192,,,body_parts,발톱,toenail,fingernail
+item_193,item_52,item_52,body_parts,배,tummy,tummy
+item_194,item_53,item_53,body_parts,배꼽,belly button,belly button
+item_195,,,body_parts,뺨,cheek,cheek
+item_196,item_54,item_54,body_parts,손,hand,hand
+item_197,,,body_parts,손가락,finger,finger
+item_198,,,body_parts,어깨,shoulder,shoulder
+item_199,item_55,item_55,body_parts,얼굴,face,face
+item_200,item_56,item_56,body_parts,엉덩이,hip,hip
+item_201,item_57,item_57,body_parts,이/이빨,teeth,tooth
+item_202,item_58,item_58,body_parts,입,mouth,mouth
+item_203,,,body_parts,입술,lips,lip
+item_204,item_60,item_60,body_parts,코,nose,nose
+item_205,,,body_parts,턱,chin,chin
+item_206,item_61,item_61,body_parts,팔,arm,arm
+item_207,item_62,item_62,body_parts,피,blood,blood
+item_208,,,body_parts,허리,waist,waist
+item_209,,,body_parts,혀,tongue,tongue
+item_210,item_118,item_118,household,가위,scissors,scissors
+item_211,,,household,걸레,rag,rag
+item_212,,,household,그릇,bowl,bowl
+item_213,,,household,그림,picture,picture
+item_214,item_119,item_119,household,돈,money,money
+item_215,,,household,라디오,radio,radio
+item_216,,,household,망치,hammer,hammer
+item_217,,,household,못,nail (household),nail (object)
+item_218,,,household,병,bottle,bottle
+item_219,item_120,item_120,household,비누,soap,soap
+item_220,item_121,item_121,household,빗,comb,comb (object)
+item_221,,,household,빗자루,broom,broom
+item_222,,,household,상자,box,box
+item_223,item_122,item_122,household,수건,towel,towel
+item_224,item_123,item_123,household,숟가락,spoon,spoon
+item_225,item_124,item_124,household,시계,clock,clock
+item_226,,,household,쓰레기,trash,trash
+item_227,,,household,쓰레기통/휴지통,trash bin,trash can
+item_228,item_125,item_125,household,안경,glasses,glasses
+item_229,item_126,item_126,household,약,medicine,medicine
+item_230,item_127,item_127,household,열쇠,key,key
+item_231,,,household,옷걸이,hanger,hanger
+item_232,item_128,item_128,household,우산,umbrella,umbrella
+item_233,,,household,쟁반,tray,tray
+item_234,item_129,item_129,household,전화,telephone,telephone
+item_235,,,household,접시,dish,plate
+item_236,,,household,젓가락,chopsticks,chopstick
+item_237,,,household,지갑,purse,wallet
+item_238,,,household,청소기,vacuum,vacuum
+item_239,item_130,item_130,household,치약,toothpaste,toothpaste
+item_240,item_131,item_131,household,칫솔,toothbrush,toothbrush
+item_241,,,household,카메라,camera,camera
+item_242,item_132,item_132,household,칼,knife,knife
+item_243,item_133,item_133,household,컵,cup,cup
+item_244,,,household,포크,fork,fork
+item_245,,,household,휴지,toilet paper/paper towel,tissue
+item_246,,,outside,구름,cloud,cloud
+item_247,,,outside,그네,swing,swing (object)
+item_248,,,outside,길,street,street
+item_249,,,outside,깃발,flag,flag
+item_250,item_149,item_149,outside,꽃,flower,flower
+item_251,item_150,item_150,outside,나무,tree,tree
+item_252,item_151,item_151,outside,눈,snow,snow
+item_253,,,outside,눈사람,snowman,snowman
+item_254,item_152,item_152,outside,달,moon,moon
+item_255,item_153,item_153,outside,돌,stone,stone
+item_256,item_154,item_154,outside,땅,ground,ground
+item_257,,,outside,모래,sand,sand
+item_258,,,outside,미끄럼틀,slide,slide (object)
+item_259,,,outside,바람,wind,wind
+item_260,,,outside,바위,boulder,boulder
+item_261,item_155,item_155,outside,별,star,star
+item_262,item_156,item_156,outside,불,fire,fire
+item_263,item_157,item_157,outside,비,rain,rain
+item_264,,,outside,사다리,ladder,ladder
+item_265,item_158,item_158,outside,시소,seesaw,seesaw
+item_266,,,outside,잔디,lawn,lawn
+item_267,,,outside,지붕,roof,roof
+item_268,,,outside,풀,grass,grass
+item_269,item_159,item_159,outside,하늘,sky,sky
+item_270,,,outside,해/햇빛,sun,sun
+item_271,,,outside,흙,soil,soil
+item_272,,,games_routines,고마워,thank you,thank you
+item_273,item_183,item_183,games_routines,네/응,yes,yes
+item_274,,,games_routines,돼,yes (can do),NA
+item_275,item_184,item_184,games_routines,만세,yay,yay
+item_276,item_185,item_185,games_routines,목욕,bath,bath
+item_277,item_186,item_186,games_routines,빠이빠이,bye bye,bye
+item_278,item_189,item_189,games_routines,쉬,pee,pee
+item_279,item_190,item_190,games_routines,아니(야),no,no
+item_280,item_191,item_191,games_routines,안녕,hello,hello
+item_281,item_192,item_192,games_routines,안돼,no,no
+item_282,,,games_routines,양치,brush teeth,brush teeth
+item_283,item_194,item_194,games_routines,응가/똥,poo-poo,go potty
+item_284,,,games_routines,파이팅,give me five,give me five
+item_285,item_196,item_196,games_routines,하지마,don't,don't
+item_286,,,places,가게,store,store
+item_287,,,places,강,river,river
+item_288,,,places,공원,park,park
+item_289,,,places,교회,church,church
+item_290,item_143,item_143,places,놀이터,playground,playground
+item_291,,,places,동물원,zoo,zoo
+item_292,,,places,마당,yard,yard
+item_293,,,places,바깥,outside,outside
+item_294,,,places,바다,sea,sea
+item_295,item_145,item_145,places,병원,hospital,hospital
+item_296,,,places,산,mountain,mountain
+item_297,,,places,수영장,pool,pool
+item_298,,,places,숲,forest,forest
+item_299,,,places,슈퍼마켓,supermarket,grocery
+item_300,,,places,시골,country,country
+item_301,,,places,시장,market place,market
+item_302,,,places,아파트,apartment,apartment
+item_303,,,places,유치원,kindergarten,kindergarten
+item_304,,,places,은행,bank,bank
+item_305,,,places,일,work,work (place)
+item_306,,,places,절,temple,church
+item_307,,,places,주유소,gas station,gas station
+item_308,item_146,item_146,places,집,house,house
+item_309,item_147,item_147,places,학교,school,school
+item_310,,,places,회사,company,office
+item_311,,,quantifiers,너무,too,too
+item_312,item_204,item_204,quantifiers,다,all,all
+item_313,item_205,item_205,quantifiers,다시,again,again
+item_314,item_206,item_206,quantifiers,더,more,more
+item_315,item_207,item_207,quantifiers,또,another,again
+item_316,item_208,item_208,quantifiers,많이,many,many
+item_317,item_209,item_209,quantifiers,빨리,fast,fast
+item_318,,,quantifiers,아주,gas station,very
+item_319,,,quantifiers,자꾸,often,often
+item_320,,,quantifiers,잘,well,well (modifier)
+item_321,,,quantifiers,전부,entire,entire
+item_322,,,quantifiers,조금,a little,little (amount)
+item_323,,,quantifiers,진짜,real,real
+item_324,,,quantifiers,하나,one,one
+item_325,,,people,간호사,nurse,nurse
+item_326,,,people,경찰(관),police man,police
+item_327,item_161,item_161,people,고모,aunt (paternal),aunt
+item_328,,,people,공주,princess,princess
+item_329,,,people,군인,soldier,soldier
+item_330,,,people,귀신,ghost,ghost
+item_331,,,people,남자,man,man
+item_332,,,people,도둑,thief,thief
+item_333,,,people,동생,younger sibling,younger sibling
+item_334,,,people,딸,daughter,daughter
+item_335,,,people,사람,human,person
+item_336,item_163,item_163,people,삼촌,uncle (maternal),uncle
+item_337,item_164,item_164,people,선생님,teacher,teacher
+item_338,,,people,소방수,fireman,firefighter
+item_339,,,people,아기/아가,baby,baby
+item_340,,,people,아들,son,son
+item_341,item_166,item_166,people,아빠,daddy,daddy
+item_342,item_167,item_167,people,아저씨,man,man
+item_343,item_168,item_168,people,아줌마,woman,woman
+item_344,,,people,어른,adult,adult
+item_345,item_169,item_169,people,언니,older sister (from younger sister),sister
+item_346,item_170,item_170,people,엄마,mommy,mommy
+item_347,,,people,여자,woman,woman
+item_348,item_171,item_171,people,오빠,older brother (from younger sister),brother
+item_349,,,people,왕자,prince,prince
+item_350,,,people,우체부,mailman,mailman
+item_351,,,people,의사,doctor,doctor
+item_352,item_172,item_172,people,이모,aunt (maternal),aunt
+item_353,,,people,자기 이름,child's own name,child's own name
+item_354,item_174,item_174,people,친구,friend,friend
+item_355,item_175,item_175,people,할머니,grandma,grandma
+item_356,item_176,item_176,people,할아버지,grandpa,grandpa
+item_357,item_177,item_177,people,형,older brother (from younger brother),brother
+item_358,,,question_words,누구,who,who
+item_359,,,question_words,몇,how many,how many
+item_360,,,question_words,무슨,what kind,what kind
+item_361,,,question_words,무엇/뭐,what,what
+item_362,,,question_words,어느,which,which (question)
+item_363,,,question_words,어디,where,where (question)
+item_364,,,question_words,어디서,where from,where from
+item_365,,,question_words,어떤,which,which (question)
+item_366,,,question_words,어떻게,how,how
+item_367,,,question_words,언제,when,when (question)
+item_368,,,question_words,왜,why,why
+item_369,item_210,item_210,action_words,가,go,go
+item_370,,,action_words,가리켜,point,point
+item_371,,,action_words,가져,have/get/take,have
+item_372,,,action_words,간지럽혀,tickle,tickle
+item_373,,,action_words,건너,cross,cross
+item_374,,,action_words,걸어,walk,walk
+item_375,,,action_words,고쳐,fix,fix
+item_376,item_211,item_211,action_words,공부해,study,study
+item_377,item_212,item_212,action_words,그려,draw,draw
+item_378,,,action_words,기다려,wait,wait
+item_379,item_213,item_213,action_words,깎아,peel,peel
+item_380,,,action_words,(컵을)깨,break,break
+item_381,item_214,item_214,action_words,(불)꺼,turn off,turn off
+item_382,,,action_words,꺼내,take out,remove
+item_383,,,action_words,꽂아,put in/stick,insert
+item_384,,,action_words,끊어져,get cut,get cut
+item_385,,,action_words,끌어,pull,pull
+item_386,,,action_words,끝내,finish,finish
+item_387,,,action_words,끼워,put in,put in
+item_388,item_215,item_215,action_words,나가,go out,go out
+item_389,,,action_words,나눠가져,share,share
+item_390,,,action_words,나와,come out,come out
+item_391,,,action_words,(물건을)날라,carry,carry
+item_392,,,action_words,날라가,fly,fly (action)
+item_393,item_217,item_217,action_words,(차에서)내려,get out of car,get out
+item_394,,,action_words,내려가,go down,go down
+item_395,,,action_words,넘어져,fall,fall
+item_396,,,action_words,(통에)넣어,put in (the case),put in 
+item_397,,,action_words,노래 불러,sing,sing
+item_398,item_220,item_220,action_words,놀아,play,play
+item_399,,,action_words,(물건을)놓아,put down,put down
+item_400,item_221,item_221,action_words,누워,lie,lie down
+item_401,,,action_words,(무엇을)눌러,push,push
+item_402,,,action_words,(무엇에)눌려,be pushed,NA
+item_403,,,action_words,다녀,go around,go
+item_404,,,action_words,다쳐,get hurt,hurt (action)
+item_405,item_222,item_222,action_words,닦아,wipe,wipe
+item_406,item_223,item_223,action_words,닫아,close,close
+item_407,,,action_words,달려,run,run
+item_408,,,action_words,당겨,pull,pull
+item_409,,,action_words,던져,throw,throw
+item_410,,,action_words,덮어,cover,cover (action)
+item_411,,,action_words,도와,help,help
+item_412,,,action_words,돌려,spin,spin
+item_413,,,action_words,돌아,turn,turn
+item_414,,,action_words,두드려,knock,bang
+item_415,,,action_words,(여기에)둬,put in here,leave
+item_416,,,action_words,(물건을)들어,lift,lift (action)
+item_417,,,action_words,(소리를)들어,listen,listen
+item_418,,,action_words,들어가,go in,enter
+item_419,,,action_words,떄려,hit,hit
+item_420,,,action_words,(물에)떠,float,float
+item_421,,,action_words,떨어뜨려,drop,drop
+item_422,,,action_words,떨어져,drip,drip
+item_423,,,action_words,떼(어),get off,get off
+item_424,,,action_words,뛰어,run,run
+item_425,,,action_words,마셔,drink,drink (action)
+item_426,,,action_words,만들어,make,make
+item_427,,,action_words,(빨래/싸움)말려,dry,dry (action)
+item_428,,,action_words,말해,speak/talk,say
+item_429,,,action_words,맛봐,taste,taste
+item_430,,,action_words,(주사를)맞아,have an injection,NA
+item_431,,,action_words,(음식을)먹어,eat,eat
+item_432,,,action_words,(음식을)먹여,feed,feed
+item_433,,,action_words,멈춰,stop,stop
+item_434,,,action_words,몰라,I don't know,don't know
+item_435,,,action_words,물어,ask,ask
+item_436,,,action_words,미워해,hate,hate
+item_437,,,action_words,밀어,push,push
+item_438,,,action_words,(약)발라,put on (medicine),NA
+item_439,item_228,item_228,action_words,박수쳐,clap,clap
+item_440,,,action_words,버려,throw away,dump
+item_441,item_229,item_229,action_words,벗어,take off,remove
+item_442,,,action_words,보여,see,see
+item_443,item_230,item_230,action_words,봐,look,look
+item_444,,,action_words,부딪쳐,bump,bump
+item_445,,,action_words,부숴,smash,smash
+item_446,,,action_words,(물을)부어,pour,NA
+item_447,,,action_words,불러,call,sing
+item_448,,,action_words,(풍선을)불어,blow,blow
+item_449,,,action_words,붙여,paste,glue (action)
+item_450,,,action_words,비켜,step aside,move
+item_451,item_231,item_231,action_words,빗어,brush,comb (action)
+item_452,,,action_words,빠져,fall,fall
+item_453,,,action_words,빨아,wash,wash
+item_454,item_232,item_232,action_words,빼,take out,take out
+item_455,,,action_words,뺴앗아,take away,take away
+item_456,,,action_words,뽀뽀해,kiss,kiss
+item_457,,,action_words,뽑아,pull out (tight fit),pull out
+item_458,,,action_words,(물건을)사,buy,buy
+item_459,item_233,item_233,action_words,사랑해,love,love
+item_460,,,action_words,살아,live,live
+item_461,,,action_words,생각해,think,think
+item_462,,,action_words,(그 자리에)서,stay,stop
+item_463,,,action_words,서둘러,hurry,hurry
+item_464,,,action_words,손대,touch,touch
+item_465,,,action_words,수영해,swim,swim
+item_466,,,action_words,숨어,hide,hide
+item_467,,,action_words,시작해,start,begin
+item_468,item_234,item_234,action_words,신어,put on shoes,wear
+item_469,,,action_words,(물건을)실어,load,load
+item_470,,,action_words,싸워,fight,fight
+item_471,,,action_words,(글)써,write,write
+item_472,item_235,item_235,action_words,(모자)써,wear a hat,put on
+item_473,,,action_words,쏟아,spill,spill
+item_474,,,action_words,(총을)쏴,shoot,shoot
+item_475,,,action_words,쓰러져,fall down,fall
+item_476,item_236,item_236,action_words,씻어,wash,wash
+item_477,item_237,item_237,action_words,안아,hug,hug
+item_478,item_238,item_238,action_words,안해,I won't do it,NA
+item_479,item_239,item_239,action_words,앉아,sit,sit
+item_480,,,action_words,알아,know,know
+item_481,item_240,item_240,action_words,열어,open,open (action)
+item_482,item_242,item_242,action_words,올라가,go up,climb
+item_483,,,action_words,올려,raise,lift (action)
+item_484,item_241,item_241,action_words,와,come,come
+item_485,,,action_words,요리해,cook,cook
+item_486,,,action_words,운전해,drive,drive
+item_487,item_243,item_243,action_words,울어,cry,cry
+item_488,item_244,item_244,action_words,웃어,smile,smile
+item_489,,,action_words,원해,want,want
+item_490,,,action_words,(승부에)이겨,win,win
+item_491,,,action_words,이야기해,talk,talk
+item_492,,,action_words,일어나/일어서,wake up,get up
+item_493,,,action_words,일해,work,work (action)
+item_494,item_246,item_246,action_words,읽어,read,read
+item_495,item_247,item_247,action_words,입어,wear,wear
+item_496,item_248,item_248,action_words,(잠)자,sleep,sleep
+item_497,,,action_words,잘라,cut out,cut
+item_498,,,action_words,잡아,catch,catch
+item_499,,,action_words,좋아해,like,like
+item_500,,,action_words,죽어,die,die
+item_501,,,action_words,줘,give me,give me
+item_502,,,action_words,쫓아,chase,chase
+item_503,,,action_words,찍어,stamp/take picture,stamp (action)
+item_504,,,action_words,(공을)차,kick,kick
+item_505,,,action_words,찾아,find,find
+item_506,,,action_words,춤춰,dance,dance
+item_507,,,action_words,(차에)치여,be hit,hit
+item_508,,,action_words,치워,clean up,clean (action)
+item_509,,,action_words,칠해,color,paint (action)
+item_510,,,action_words,(차에)타,get in the car,enter
+item_511,,,action_words,(차에)태워,put in the car,put in
+item_512,,,action_words,터져,burst,burst
+item_513,,,action_words,튀겨,fry/bounce,fry
+item_514,,,action_words,틀어,turn on,turn on
+item_515,,,action_words,(코를)풀어,blow your nose,blow
+item_516,,,action_words,(꽃이)피어,bloom,bloom
+item_517,item_252,item_252,action_words,해,do,do
+item_518,,,action_words,혼나,scold,scold
+item_519,,,descriptive_words,가벼워,light,light (description)
+item_520,item_253,item_253,descriptive_words,간지러워,ticklish,ticklish
+item_521,item_254,item_254,descriptive_words,같아/똑같아,same,same
+item_522,,,descriptive_words,괜찮아,fine,fine
+item_523,,,descriptive_words,귀여워,cute,cute
+item_524,,,descriptive_words,길어,long,long
+item_525,,,descriptive_words,(색이)까매,dark (color),black
+item_526,item_256,item_256,descriptive_words,깜깜해,dark,dark
+item_527,,,descriptive_words,나빠,bad,bad
+item_528,,,descriptive_words,(색이)노래,yellow,yellow
+item_529,,,descriptive_words,높아,high,high
+item_530,,,descriptive_words,달라,different,different
+item_531,,,descriptive_words,더러워,dirty,dirty
+item_532,item_257,item_257,descriptive_words,더워,hot (weather),hot (weather)
+item_533,,,descriptive_words,동그래,round,round
+item_534,item_258,item_258,descriptive_words,뜨거워,hot (temperature),hot (temperature)
+item_535,item_259,item_259,descriptive_words,많아,many,many
+item_536,,,descriptive_words,맛없어,taste bad,yucky
+item_537,item_260,item_260,descriptive_words,맛있어,tasty,yummy
+item_538,item_261,item_261,descriptive_words,매워,spicy,spicy
+item_539,,,descriptive_words,멀어,far,far
+item_540,,,descriptive_words,멋있어,stylish/fashionable,nice
+item_541,,,descriptive_words,목말라,thirsty,thirsty
+item_542,,,descriptive_words,무거워,heavy,heavy
+item_543,item_262,item_262,descriptive_words,무서워,scary,scary
+item_544,item_263,item_263,descriptive_words,미워,dislike,hate
+item_545,,,descriptive_words,배고파,hungry,hungry
+item_546,,,descriptive_words,(색이)빨개,red,red
+item_547,,,descriptive_words,빨라,fast,fast
+item_548,,,descriptive_words,시끄러워,noisy,noisy
+item_549,item_264,item_264,descriptive_words,싫어,hate,dislike
+item_550,,,descriptive_words,심심해,bored,bored
+item_551,item_266,item_266,descriptive_words,아파,sick,sick
+item_552,,,descriptive_words,어두워,dim,dim
+item_553,,,descriptive_words,없어,nothing,nothing
+item_554,item_268,item_268,descriptive_words,예뻐,pretty,pretty
+item_555,,,descriptive_words,이상해,weird,strange
+item_556,item_269,item_269,descriptive_words,있어,be,there is
+item_557,,,descriptive_words,작아,small,small
+item_558,,,descriptive_words,재미있어,fun,fun
+item_559,,,descriptive_words,조그맣다,small,small
+item_560,,,descriptive_words,조용해,quiet,quiet
+item_561,,,descriptive_words,졸려,sleepy,sleepy
+item_562,item_270,item_270,descriptive_words,좋아,good,good
+item_563,,,descriptive_words,(맛이)짜,salty,salty
+item_564,,,descriptive_words,(촉감이)차,cool,cool (description)
+item_565,,,descriptive_words,착해,nice,nice
+item_566,item_272,item_272,descriptive_words,추워,cold,cold
+item_567,,,descriptive_words,커,big,big
+item_568,,,descriptive_words,(색이)파래,blue,blue
+item_569,,,descriptive_words,(색이)하얘,white,white
+item_570,,,descriptive_words,힘들어,tired,tired
+item_571,,,verb_endings,-구나,,NA
+item_572,,,verb_endings,-께,,NA
+item_573,,,verb_endings,-네,,NA
+item_574,,,verb_endings,-는다,,NA
+item_575,,,verb_endings,-니?,,NA
+item_576,,,verb_endings,-다,,NA
+item_577,,,verb_endings,-대,,NA
+item_578,,,verb_endings,-ㄹ거야/테야,,NA
+item_579,,,verb_endings,-ㄹ까?,,NA
+item_580,,,verb_endings,-ㄹ래,,NA
+item_581,,,verb_endings,-어(아),,NA
+item_582,,,verb_endings,-어야 돼,,NA
+item_583,,,verb_endings,-요,,NA
+item_584,,,verb_endings,-자,,NA
+item_585,,,verb_endings,-지,,NA
+item_586,,,other,-가(이),subject case marker,NA
+item_587,,,other,-는(은),topic case marker,NA
+item_588,,,other,-도,comitative,NA
+item_589,,,other,-랑,comitative,NA
+item_590,,,other,-로,instrumental,NA
+item_591,,,other,-를(을),accusative,NA
+item_592,,,other,-만,-,NA
+item_593,,,other,-야,verb ending,NA
+item_594,,,other,-에,dative,on
+item_595,,,other,-에서,dative,at
+item_596,,,other,-하고,verb ending,with
+item_597,,,other,-한테/에게,locative,NA
+item_598,,,connecting_words,그리고,and,NA
+item_599,,,connecting_words,그런데,but,NA
+item_600,,,connecting_words,그래서,so,NA
+item_601,,,connecting_words,-고,verb ending,and
+item_602,,,connecting_words,-는데,verb ending,but
+item_603,,,connecting_words,-서,verb ending,so
+item_604,,,locations,뒤,behind,back (location)
+item_605,,,locations,밑,underneath,under
+item_606,,,locations,밖,out,out
+item_607,,,locations,아래,under,below
+item_608,,,locations,안,inside,in
+item_609,,,locations,앞,in front,front
+item_610,,,locations,옆,beside,by
+item_611,,,locations,위,above,up
+item_612,,,time_words,금방,soon,soon
+item_613,,,time_words,나중에,later,later
+item_614,,,time_words,날,day,day
+item_615,,,time_words,낮,daytime,daytime
+item_616,,,time_words,내일,tomorrow,tomorrow
+item_617,,,time_words,매일/맨날,everyday,everyday
+item_618,,,time_words,밤,night,night
+item_619,,,time_words,시간,time,time
+item_620,,,time_words,아침,morning,morning
+item_621,,,time_words,어저께/어제,yesterday,yesterday
+item_622,,,time_words,오늘,today,today
+item_623,,,time_words,이따가,later/some other time,later
+item_624,,,time_words,저녁,evening,evening
+item_625,,,time_words,전,before,before
+item_626,,,time_words,점심,noon,lunchtime
+item_627,,,time_words,지금,now,now
+item_628,,,time_words,후,after,after
+item_629,,,pronouns,그거,that,that
+item_630,,,pronouns,나,I,I
+item_631,,,pronouns,너,you,you
+item_632,item_201,item_201,pronouns,여기,here,here
+item_633,,,pronouns,우리,we,we
+item_634,,,pronouns,이거,this,this
+item_635,,,pronouns,저기,over there,there
+item_636,,,helping_verbs,-고 있다,#NAME?,NA
+item_637,,,helping_verbs,-놓다,put,put
+item_638,,,helping_verbs,-말다,roll,roll (action)
+item_639,,,helping_verbs,-보다,see,see
+item_640,,,helping_verbs,-싶다,hope to,wanna
+item_641,,,helping_verbs,-주다,give,give
+,item_1,item_1,sounds,꼬끼오,cock-a-doodle-doo,cockadoodledoo
+,item_2,item_2,sounds,꽝꽝,bang bang,bang bang
+,item_7,item_7,sounds,붕(부릉부릉),vroom vroom,vroom
+,item_12,item_12,sounds,윙,buzz buzz,buzz
+,item_22,item_22,animals,개/멍멍이,dog,dog
+,item_35,item_35,animals,소/송아지,cow,cow
+,item_59,item_59,body_parts,젖,breast,breast
+,item_74,item_74,toys,반지,ring,ring (object)
+,item_76,item_76,toys,사진,photo,photo
+,item_81,item_81,toys,종,bell,bell
+,item_93,item_93,food_drink,꿀,honey,honey
+,item_97,item_97,food_drink,맘마,food (infant-directed),meal
+,item_102,item_102,food_drink,밥,meal,rice
+,item_103,item_103,food_drink,배,pear,pear
+,item_144,item_144,places,밖/바깥,outside,outside
+,item_148,item_148,places,안,inside,inside
+,item_160,item_160,outside,해,sun,sun
+,item_162,item_162,people,누나,older sister (from younger brother),sister
+,item_165,item_165,people,아가,baby,baby
+,item_173,item_173,people,아동 이름,child's own name,child's own name
+,item_178,item_178,games_routines,곤지곤지,gonji-gonji,NA
+,item_179,item_179,games_routines,까꿍,peekaboo,peekaboo
+,item_180,item_180,games_routines,도리도리,dori-dori,NA
+,item_181,item_181,games_routines,잼잼,jem-jem,NA
+,item_182,item_182,games_routines,짝짜꿍,clap-clap,clap
+,item_187,item_187,games_routines,뽀뽀,kiss,kiss
+,item_188,item_188,games_routines,세수,wash face,wash face
+,item_193,item_193,games_routines,치카/양치,brush teeth,brush teeth
+,item_195,item_195,games_routines,지지,dirty (infant-directed),NA
+,item_197,item_197,pronouns,거기,there,there
+,item_198,item_198,pronouns,나/내,I,I
+,item_199,item_199,pronouns,누구,who,who
+,item_200,item_200,pronouns,뭐/무엇,what,what
+,item_202,item_202,pronouns,이거/요거,this,this
+,item_203,item_203,pronouns,저거,that,that
+,item_216,item_216,action_words,(계단)내려가,go down,go down
+,item_218,item_218,action_words,넣어,put in,put in
+,item_219,item_219,action_words,노래해,sing,sing
+,item_224,item_224,action_words,(가방)들어,carry,carry
+,item_225,item_225,action_words,때려,hit,hit
+,item_226,item_226,action_words,(주사)맞아,have an injection,have an injection
+,item_227,item_227,action_words,먹어,eat,eat
+,item_245,item_245,action_words,일어나,wake up,get up
+,item_249,item_249,action_words,줘/주세요,give it to me,give me
+,item_250,item_250,action_words,(공)차,kick,kick
+,item_251,item_251,action_words,(차)타,get in the car,ride
+,item_255,item_255,descriptive_words,고마워,thank you,thank you
+,item_265,item_265,descriptive_words,아니야,it is not,no
+,item_267,item_267,descriptive_words,없어/없다,nothing,all gone
+,item_271,item_271,descriptive_words,차가워/차,cool,cool (description)
+,item_273,item_273,verb_endings,-가(엄마가),subject marker -ga,NA
+,item_274,item_274,verb_endings,-랑(엄마랑),with someone,with
+,item_275,item_275,verb_endings,-야(아기야),calling someone,NA
+,item_276,item_276,verb_endings,-말구(이거말구),not this,no
+,item_277,item_277,verb_endings,-줘(빼줘),please,please
+,item_278,item_278,verb_endings,-고(먹고),and,and
+,item_279,item_279,verb_endings,-네(가네),,NA
+,item_280,item_280,verb_endings,-다(있다),,NA
+,item_281,item_281,verb_endings,-ㄹ게(할게),will do,will do
+,item_282,item_282,verb_endings,-요(가요),honorification,NA
+,item_283,item_283,verb_endings,-자(가자),let's,let's
+,item_284,item_284,verb_endings,-지(먹지),,NA

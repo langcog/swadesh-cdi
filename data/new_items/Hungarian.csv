@@ -1,0 +1,803 @@
+WS,category,definition,gloss,uni_lemma
+item_1,sounds,beee,baa baa (sheep),baa baa
+item_2,sounds,brekeke,ribbit (frog),ribbit
+item_3,sounds,brumm,grrr (bear),grrr
+item_4,sounds,cin,squeak (mouse),squeak
+item_5,sounds,csihuhu,choo-choo (train),choo choo
+item_6,sounds,gá-gá,honk (goose),NA
+item_7,sounds,háp-háp,quack quack (duck),quack quack
+item_8,sounds,ham-ham,yum yum,yum yum
+item_9,sounds,hoppá,oops,uh oh
+item_10,sounds,hu-hu,whoo-whoo (owl),hoot
+item_11,sounds,jaj,ouch,ouch
+item_12,sounds,kukurikú,cockadoodledoo (rooster),cockadoodledoo
+item_13,sounds,mak,squeak (rabbit),squeak
+item_14,sounds,mek,naa (goat),NA
+item_15,sounds,miaú,meow (cat),meow
+item_16,sounds,mú,moo (cow),moo
+item_17,sounds,nyamm,yum yum,yum yum
+item_18,sounds,nyihaha,neigh (horse),neigh
+item_19,sounds,nínó,wee-woo (ambulance),NA
+item_20,sounds,pá-pá,bye-bye (goodbye),NA
+item_21,sounds,pi-pi,chirp (chicken),NA
+item_22,sounds,tü-tű,honk (car horn),NA
+item_23,sounds,röf-röf,oink (pig),oink
+item_24,sounds,vaú-vaú,woof woof,woof woof
+item_25,animals,állat,animal,animal
+item_26,animals,bagoly,owl,owl
+item_27,animals,bárány,sheep,sheep
+item_28,animals,béka,frog,frog
+item_29,animals,boci,calf,calf
+item_30,animals,bogár,bug,bug
+item_31,animals,cica,kitty,kitty
+item_32,animals,csacsi,neddy,donkey
+item_33,animals,csirke,chicken,chicken (animal)
+item_34,animals,egér,mouse,mouse
+item_35,animals,elefánt,elephant,elephant
+item_36,animals,farkas,wolf,wolf
+item_37,animals,hal,fish,fish (animal)
+item_38,animals,hangya,ant,ant
+item_39,animals,kacsa,duck,duck
+item_40,animals,kakas,rooster,rooster
+item_41,animals,kecske,goat,goat
+item_42,animals,krokodil,alligator,crocodile
+item_43,animals,kutya,dog,dog
+item_44,animals,lepke,butterfly,butterfly
+item_45,animals,liba,goose,goose
+item_46,animals,ló,horse,horse
+item_47,animals,macska,cat,cat
+item_48,animals,madár,bird,bird
+item_49,animals,majom,monkey,monkey
+item_50,animals,malac,pig,pig
+item_51,animals,medve,bear,bear
+item_52,animals,mókus,squirrel,squirrel
+item_53,animals,nyuszi,bunny,bunny
+item_54,animals,oroszlán,lion,lion
+item_55,animals,őzike,roe,deer
+item_56,animals,paci,foal,NA
+item_57,animals,pingvin,penguin,penguin
+item_58,animals,póni,pony,pony
+item_59,animals,pulyka,turkey,turkey
+item_60,animals,szamár,donkey,donkey
+item_61,animals,szarvas,deer,deer
+item_62,animals,tehén,cow,cow
+item_63,animals,teknős,turtle,turtle
+item_64,animals,tigris,tiger,tiger
+item_65,animals,tyúk,hen,hen
+item_66,animals,zebra,zebra,zebra
+item_67,animals,zsiráf,giraffe,giraffe
+item_68,vehicles,autó,car (automobile),car
+item_69,vehicles,bkocsi,stroller,stroller
+item_70,vehicles,bicikli,bicycle,bicycle
+item_71,vehicles,busz,bus,bus
+item_72,vehicles,hajó,boat,boat
+item_73,vehicles,helikopter,helicopter,helicopter
+item_74,vehicles,kocsi,car (in general),car
+item_75,vehicles,mentő,ambulance,ambulance
+item_76,vehicles,metró,subway,subway
+item_77,vehicles,motor,motorcycle,motorcycle
+item_78,vehicles,repülőgép,airplane,airplane
+item_79,vehicles,szánkó,sled,sled
+item_80,vehicles,teherautó,truck,truck
+item_81,vehicles,traktor,tractor,tractor
+item_82,vehicles,troli,trolleybus,trolley
+item_83,vehicles,tűzoltó,firetruck,firetruck
+item_84,vehicles,villamos,tram,tram
+item_85,vehicles,vonat,train,train
+item_86,toys,ajándék,present,present
+item_87,toys,baba,doll,doll
+item_88,toys,buborék,bubbles,bubbles
+item_89,toys,ceruza,pencil,pen/pencil
+item_90,toys,gereblye,rake,rake (object)
+item_91,toys,golyó,ball (hard like taws),ball
+item_92,toys,gyurma,play dough,play dough
+item_93,toys,játék,toy (or game in general),toy (object)
+item_94,toys,kártya,card,card
+item_95,toys,kirakós,puzzle,puzzle
+item_96,toys,kocka,block,blocks
+item_97,toys,könyv,book,book
+item_98,toys,kréta,chalk,chalk
+item_99,toys,labda,ball,ball
+item_100,toys,lapát,shovel,shovel
+item_101,toys,lego,Lego,blocks
+item_102,toys,lufi,balloon,balloon
+item_103,toys,mese,story,story
+item_104,toys,ragasztó,glue,glue (object)
+item_105,toys,toll,pen,pen
+item_106,toys,vödör,bucket,bucket
+item_107,toys,zsírkréta,crayon,crayon
+item_108,food_drink,alma,apple,apple
+item_109,food_drink,bab,beans,beans
+item_110,food_drink,banán,banana,banana
+item_111,food_drink,barack,peach (also apricot),peach
+item_112,food_drink,borsó,peas,peas
+item_113,food_drink,chips,potato chip,chips
+item_114,food_drink,cukor,candy/sugar,candy
+item_115,food_drink,csirke,chicken,chicken (food)
+item_116,food_drink,csoki,chocolate,chocolate
+item_117,food_drink,dinnye,melon,melon
+item_118,food_drink,dió,nuts,nut
+item_119,food_drink,eper,strawberry,strawberry
+item_120,food_drink,étel,food,food
+item_121,food_drink,fagyi,ice cream,ice cream
+item_122,food_drink,fánk,donut,pastry
+item_123,food_drink,felvágott,cold cuts,meat
+item_124,food_drink,főzelék,vegetable meal,vegetable
+item_125,food_drink,gyümölcslé,juice,juice
+item_126,food_drink,hal,fish,fish (food)
+item_127,food_drink,hamburger,hamburger,hamburger
+item_128,food_drink,hús,meat,meat
+item_129,food_drink,ital,drink,drink (object)
+item_130,food_drink,jégkrém,popsicle,popsicle
+item_131,food_drink,joghurt,yogurt,yogurt
+item_132,food_drink,kakaó,cacao (drink),cocoa
+item_133,food_drink,kaja,food (informal),food
+item_134,food_drink,kávé,coffee,coffee
+item_135,food_drink,keksz,cracker,cracker
+item_136,food_drink,kenyér,bread,bread
+item_137,food_drink,kifli,croissant,croissant
+item_138,food_drink,kóla,coke,soda
+item_139,food_drink,kolbász,sausage,sausage
+item_140,food_drink,konzerv,canned food,NA
+item_141,food_drink,körte,pear,pear
+item_142,food_drink,krumpli,potato,potato
+item_143,food_drink,kukorica,corn,corn
+item_144,food_drink,leves,soup,soup
+item_145,food_drink,lekvár,marmalade,jam
+item_146,food_drink,málna,raspberry,raspberry
+item_147,food_drink,mandarin,mandarin,tangerine
+item_148,food_drink,mazsola,raisin,raisin
+item_149,food_drink,mogyoró,hazelnut,hazelnut
+item_150,food_drink,müzli,muesli,granola
+item_151,food_drink,narancs,orange,orange (food)
+item_152,food_drink,nyalóka,lollipop,lollipop
+item_153,food_drink,palacsinta,pancake,pancake
+item_154,food_drink,paprika,paprika,paprika
+item_155,food_drink,paradicsom,tomato,tomato
+item_156,food_drink,pattogatott kukorica,popcorn,popcorn
+item_157,food_drink,perec,pretzel,pretzel
+item_158,food_drink,pirítós,toast,toast
+item_159,food_drink,pogi,scone,muffin
+item_160,food_drink,rágó,gum,gum
+item_161,food_drink,rizs,rice,rice
+item_162,food_drink,ropi,cracker stick,cracker
+item_163,food_drink,sajt,cheese,cheese
+item_164,food_drink,sárgarépa,carrots,carrot
+item_165,food_drink,só,salt,salt
+item_166,food_drink,sonka,ham,ham
+item_167,food_drink,spagetti,spaghetti,pasta
+item_168,food_drink,sült krumpli,french fries,french fries
+item_169,food_drink,süti,cookie,cookie
+item_170,food_drink,szalámi,salami,salami
+item_171,food_drink,szendvizs,sandwich,sandwich
+item_172,food_drink,szilva,plum,plum
+item_173,food_drink,szóda,soda water,soda
+item_174,food_drink,szósz,sauce,sauce
+item_175,food_drink,szőlő,grapes,grapes
+item_176,food_drink,tea,tea,tea
+item_177,food_drink,tej,milk,milk
+item_178,food_drink,tejberizs,milk rice,pudding
+item_179,food_drink,tejbegríz,milk drizzle,pudding
+item_180,food_drink,tészta,pasta,pasta
+item_181,food_drink,tojás,egg,egg
+item_182,food_drink,torta,cake,cake
+item_183,food_drink,túró,cottage cheese,cottage cheese
+item_184,food_drink,uborka,pickle,pickle
+item_185,food_drink,üdítő,soda/pop,soda
+item_186,food_drink,vaj,butter,butter
+item_187,food_drink,víz,water,water (beverage)
+item_188,food_drink,zsemle,buns,bun
+item_189,clothing,bugyi,underpants,underpants
+item_190,clothing,cipő,shoe,shoe
+item_191,clothing,cipőfűző,shoelace,shoelace
+item_192,clothing,csizma,boots,boot
+item_193,clothing,dzseki,jacket,jacket
+item_194,clothing,előke,bib,bib
+item_195,clothing,farmer,jeans,jeans
+item_196,clothing,gatya,pants,pants
+item_197,clothing,gomb,button,button
+item_198,clothing,harisnya,tights,tights
+item_199,clothing,ing,shirt,shirt
+item_200,clothing,kabát,coat,coat
+item_201,clothing,kalap,hat,hat
+item_202,clothing,kesztyű,gloves,glove
+item_203,clothing,nadrág,trousers,pants
+item_204,clothing,nyaklánc,necklace,necklace
+item_205,clothing,öv,belt,belt
+item_206,clothing,papucs,slipper,slipper
+item_207,clothing,pelenka,diaper,diaper
+item_208,clothing,pizsama,pajamas,pajamas
+item_209,clothing,póló,t-shirt,shirt
+item_210,clothing,pulóver,sweater,sweater
+item_211,clothing,rövidnadrag,shorts,shorts
+item_212,clothing,ruha,dress,dress (object)
+item_213,clothing,sál,scarf,scarf
+item_214,clothing,sapka,cap,hat
+item_215,clothing,szandál,sandal,sandal
+item_216,clothing,szoknya,skirt,skirt
+item_217,clothing,trikó,tricot,undershirt
+item_218,clothing,tornacipő,sneaker,shoe
+item_219,clothing,zsepi,handkerchief,tissue
+item_220,clothing,zipzár,zipper,zipper
+item_221,clothing,zokni,sock,sock
+item_222,body_parts,ajak,lips,lip
+item_223,body_parts,áll,chin,chin
+item_224,body_parts,arc,face,face
+item_225,body_parts,boka,ankle,ankle
+item_226,body_parts,fej,head,head
+item_227,body_parts,fenék,buttocks/bottom,butt
+item_228,body_parts,fog,tooth,tooth
+item_229,body_parts,fül,ear,ear
+item_230,body_parts,haj,hair,hair
+item_231,body_parts,has,tummy,tummy
+item_232,body_parts,hát,back,back (body part)
+item_233,body_parts,kaki,poop (feces),poop
+item_234,body_parts,kar,arm,arm
+item_235,body_parts,kéz,hand,hand
+item_236,body_parts,köldök,belly button,belly button
+item_237,body_parts,köröm,nails,nail (body part)
+item_238,body_parts,kuki,penis,penis
+item_239,body_parts,láb,leg,leg
+item_240,body_parts,lábfej,feet,foot
+item_241,body_parts,lábujj,toe,toe
+item_242,body_parts,mell,chest,breast
+item_243,body_parts,nuni,vagina,vagina
+item_244,body_parts,nyak,neck,neck
+item_245,body_parts,nyelv,tongue,tongue
+item_246,body_parts,orr,nose,nose
+item_247,body_parts,pisi,pee,pee
+item_248,body_parts,seb,wound,owie
+item_249,body_parts,száj,mouth,mouth
+item_250,body_parts,szem,eye,eye
+item_251,body_parts,talp,sole,foot
+item_252,body_parts,térd,knee,knee
+item_253,body_parts,ujj,finger,finger
+item_254,body_parts,váll,shoulder,shoulder
+item_255,household,apró,penny,penny
+item_256,household,bögre,mug,cup
+item_257,household,cd,CD,CD
+item_258,household,cellux,tape,tape (object)
+item_259,household,csésze,cup,cup
+item_260,household,edény,dish,dish
+item_261,household,doboz,box,box
+item_262,household,felmosó,mop,mop (object)
+item_263,household,fotó,picture,picture
+item_264,household,fényképezőgép,camera,camera
+item_265,household,fésű,comb,comb (object)
+item_266,household,fogkefe,toothbrush,toothbrush
+item_267,household,fogó,pliers,pliers
+item_268,household,gyógyszer,medicine,medicine
+item_269,household,járóka,playpen,playpen
+item_270,household,kanál,spoon,spoon
+item_271,household,kalapács,hammer,hammer
+item_272,household,kefe,brush,brush (object)
+item_273,household,kés,knife,knife
+item_274,household,konzerv,can,can (object)
+item_275,household,kosár,basket,basket
+item_276,household,kulcs,keys,key
+item_277,household,lámpa,lamp,lamp
+item_278,household,magnó,stereo,stereo
+item_279,household,mikró,microwave,microwave
+item_280,household,olló,scissors,scissors
+item_281,household,óra,clock,clock
+item_282,household,papír,paper,paper
+item_283,household,pzs,tissue/kleenex,tissue
+item_284,household,párna,pillow,pillow
+item_285,household,pénz,money,money
+item_286,household,tárca,purse,purse
+item_287,household,pohár,glass,glass
+item_288,household,porszívó,vacuum,vacuum
+item_289,household,rádió,radio,radio
+item_290,household,seprű,broom,broom
+item_291,household,szalvéta,napkin,napkin
+item_292,household,szappan,soap,soap
+item_293,household,szemét,garbage/trash,trash
+item_294,household,szemüveg,glasses,glasses
+item_295,household,szög,nail,nail (object)
+item_296,household,takaró,blanket,blanket
+item_297,household,tál,bowl,bowl
+item_298,household,tálca,tray,tray
+item_299,household,tányér,plate,plate
+item_300,household,telefon,telephone,telephone
+item_301,household,tv,TV,TV
+item_302,household,törülköző,towel,towel
+item_303,household,üveg,bottle,bottle
+item_304,household,videó,video,video
+item_305,household,villa,fork,fork
+item_306,household,villanykörte,light bulb,light (object)
+item_307,household,vödör,bucket,bucket
+item_308,furniture_rooms,ablak,window,window
+item_309,furniture_rooms,ágy,bed,bed
+item_310,furniture_rooms,ajtó,door,door
+item_311,furniture_rooms,asztal,table,table
+item_312,furniture_rooms,bölcső,crib,crib
+item_313,furniture_rooms,erkély,balcony,balcony
+item_314,furniture_rooms,etetőszék,high chair,high chair
+item_315,furniture_rooms,fiók,drawer,drawer
+item_316,furniture_rooms,fotel,armchair,armchair
+item_317,furniture_rooms,fürdőkád,bathtub,bathtub
+item_318,furniture_rooms,fürdőszoba,bathroom,bathroom
+item_319,furniture_rooms,garázs,garage,garage
+item_320,furniture_rooms,gyerekágy,cot,crib
+item_321,furniture_rooms,hálószoba,bedroom,bedroom
+item_322,furniture_rooms,hintaszék,rocking chair,rocking chair
+item_323,furniture_rooms,hűtő,refrigerator,refrigerator
+item_324,furniture_rooms,kanapé,sofa,couch
+item_325,furniture_rooms,konyha,kitchen,kitchen
+item_326,furniture_rooms,lépcső,stairs,stairs
+item_327,furniture_rooms,mosdó,washbasin,sink
+item_328,furniture_rooms,mosogató,sink,sink
+item_329,furniture_rooms,mosógép,washing machine,washing machine
+item_330,furniture_rooms,nappali,living room,living room
+item_331,furniture_rooms,pad,bench,bench
+item_332,furniture_rooms,padlás,attic,attic
+item_333,furniture_rooms,pince,basement,basement
+item_334,furniture_rooms,polc,shelf,shelf
+item_335,furniture_rooms,porszívó,vacuum cleaner,vacuum
+item_336,furniture_rooms,sütő,oven,oven
+item_337,furniture_rooms,hajszárító,dryer,dryer
+item_338,furniture_rooms,szék,chair,chair
+item_339,furniture_rooms,szekrény,closet,closet
+item_340,furniture_rooms,szoba,room,room
+item_341,furniture_rooms,szőnyeg,mat,mat
+item_342,furniture_rooms,tűzhely,stove,stove
+item_343,furniture_rooms,wc,toilet,potty
+item_344,furniture_rooms,zuhany,shower,shower
+item_345,outside,állatkert,zoo,zoo
+item_346,outside,áruház,supermarket,grocery
+item_347,outside,bent,inside,inside
+item_348,outside,benzinkút,gas station,gas station
+item_349,outside,bolt,store,store
+item_350,outside,bot,stick,stick
+item_351,outside,cirkusz,circus,circus
+item_352,outside,csillag,star,star
+item_353,outside,csúszda,slide,slide (object)
+item_354,outside,dolgozó,workplace,work (place)
+item_355,outside,ég,sky,sky
+item_356,outside,erdő,woods,forest
+item_357,outside,eső,rain,rain
+item_358,outside,fa,tree,tree
+item_359,outside,falu,village,town
+item_360,outside,felhő,cloud,cloud
+item_361,outside,fű,grass,grass
+item_362,outside,fűnyírógép,lawn mower,lawn mower
+item_363,outside,ház,house,house
+item_364,outside,hinta,swing,swing (object)
+item_365,outside,hó,snow,snow
+item_366,outside,hóember,snowman,snowman
+item_367,outside,hold,moon,moon
+item_368,outside,iskola,school,school
+item_369,outside,járda,sidewalk,sidewalk
+item_370,outside,játszótér,playground,playground
+item_371,outside,kemping,camping,camping
+item_372,outside,kert,garden,garden
+item_373,outside,kint,outside,outside
+item_374,outside,kirándulás,excursion,picnic
+item_375,outside,központ,downtown,downtown
+item_376,outside,kő,stone,stone
+item_377,outside,létra,ladder,ladder
+item_378,outside,locsoló,hose/sprinkler,hose
+item_379,outside,mászóka,playground climber,NA
+item_380,outside,mozi,movie,movie
+item_381,outside,nap,sun,sun
+item_382,outside,otthon,home,home
+item_383,outside,park,park,park
+item_384,outside,piac,market,market
+item_385,outside,pláza,plaza,plaza
+item_386,outside,strand,beach,beach
+item_387,outside,szél,wind,wind
+item_388,outside,szikla,rock,stone
+item_389,outside,templom,church,church
+item_390,outside,tető,roof,roof
+item_391,outside,udvar,yard/backyard,yard
+item_392,outside,uszoda,swimming pool,pool
+item_393,outside,utca,street,street
+item_394,outside,vidék,country,country
+item_395,outside,virág,flower,flower
+item_396,outside,víz,water,water (not beverage)
+item_397,outside,zászló,flag,flag
+item_398,people,*anya,mommy,mommy
+item_399,people,*apu,daddy,daddy
+item_400,people,baba,baby,baby
+item_401,people,bácsi,uncle (also used as 'mr' with first names e.g. Péter bácsi),uncle
+item_402,people,barát,friend,friend
+item_403,people,bohóc,clown,clown
+item_404,people,gyerek,child,child
+item_405,people,ember,person,person
+item_406,people,férfi,man,man
+item_407,people,fiú,boy,boy
+item_408,people,a gyerek neve,child's own name,child's own name
+item_409,people,a háziállat neve,pet's name,pet's name
+item_410,people,húg/nővér,sister,sister
+item_411,people,lány,girl,girl
+item_412,people,*nagymama,grandma,grandma
+item_413,people,*nagybácsi,uncle,uncle
+item_414,people,*nagynéni,aunt,aunt
+item_415,people,*nagypapa,grandpa,grandpa
+item_416,people,néni,lady,lady
+item_417,people,öcs/báty,brother,brother
+item_418,people,orvos / doktor,doctor,doctor
+item_419,people,**óvónéni,kindergarten teacher,teacher
+item_420,people,** az óvónéni neve,name of the child's kindergarten teacher,teacher's name
+item_421,people,postás,mailman,mailman
+item_422,people,rendőr,police,police
+item_423,people,tanár,teacher,teacher
+item_424,people,tűzoltó,fireman,firefighter
+item_425,games_routines,*bújócska / kukucs,peekaboo,peekaboo
+item_426,games_routines,*csapj bele! / pacsi,give me five!,give me five
+item_427,games_routines,csókolom,handkiss (as a greeting toward adults),hello
+item_428,games_routines,ebéd,lunch,lunch
+item_429,games_routines,*ez elment vadászni,this little piggy,this little piggy
+item_430,games_routines,fogócska,tag (game),tag
+item_431,games_routines,fürdés,bath,bath
+item_432,games_routines,halló,hallo (answering the telephone),hello
+item_433,games_routines,helló,hello,hello
+item_434,games_routines,igen,yes,yes
+item_435,games_routines,jó éjt!,night night,good night
+item_436,games_routines,jó estét!,good night,good night
+item_437,games_routines,jó étvágyat!,good appetite,NA
+item_438,games_routines,jó napot!,good morning (during the day),good morning
+item_439,games_routines,jó reggelt!,good morning (during the morning),good morning
+item_440,games_routines,kérem,please,please
+item_441,games_routines,kész,ready (done),all done
+item_442,games_routines,köszönöm / kösz(i),thank you,thank you
+item_443,games_routines,nem,no,no
+item_444,games_routines,pisilni kell,go potty,go potty
+item_445,games_routines,psszt,shh/shush/hush,shh
+item_446,games_routines,reggeli,breakfast,breakfast
+item_447,games_routines,szia,hi,hi
+item_448,games_routines,szívesen,you're welcome,NA
+item_449,games_routines,*szundi,nap,nap
+item_450,games_routines,telefon!,call (on phone),call
+item_451,games_routines,tízórai,mid-morning snack,snack
+item_452,games_routines,vacsora,dinner,dinner
+item_453,games_routines,vásárlás,shopping,shopping
+item_454,games_routines,viszlát,bye,bye
+item_455,action_words,abbahagy,stop (doing sg),stop
+item_456,action_words,ad,give,give
+item_457,action_words,akar,want,want
+item_458,action_words,áll,stand,stand
+item_459,action_words,alszik,sleep,sleep
+item_460,action_words,bánt,hurt (active),hurt (action)
+item_461,action_words,befejez,finish,finish
+item_462,action_words,beszél,talk,talk
+item_463,action_words,bezár,close,close
+item_464,action_words,biciklizik,ride bicycle,ride
+item_465,action_words,csepeg,drip,drip
+item_466,action_words,cseppent,drop (liquid),drop
+item_467,action_words,csiklandoz / csikiz,tickle,tickle
+item_468,action_words,csinál,make/do,do
+item_469,action_words,csuk,close,close
+item_470,action_words,csúszik,slide,slide (action)
+item_471,action_words,csücsül,sit (IDS word),sit
+item_472,action_words,dob/eldob,throw,throw
+item_473,action_words,dolgozik,work,work (action)
+item_474,action_words,eldug,hide,hide
+item_475,action_words,elesik,fall,fall
+item_476,action_words,elfelejt,forget,forget
+item_477,action_words,eloszt,share,share
+item_478,action_words,eltép,tear,tear
+item_479,action_words,eltör,break,break
+item_480,action_words,elvesz,take,take
+item_481,action_words,enged,allow,allow
+item_482,action_words,esik,drop,drop
+item_483,action_words,énekel,sing,sing
+item_484,action_words,épít,build,build
+item_485,action_words,eszik,eat,eat
+item_486,action_words,etet,feed,feed
+item_487,action_words,fáj,hurt (as a feeling),hurt (action)
+item_488,action_words,fázik,feel cold,NA
+item_489,action_words,fél,feel scared,NA
+item_490,action_words,felébred,wake,wake
+item_491,action_words,felkel,get up,get up
+item_492,action_words,figyel,pay attention / listen,NA
+item_493,action_words,főz,cook,cook
+item_494,action_words,fröcsköl,splash,splash
+item_495,action_words,fúj,blow,blow
+item_496,action_words,fut,run,run
+item_497,action_words,fürdik,take bath,bathe
+item_498,action_words,gondol,think,think
+item_499,action_words,hagy,let,let
+item_500,action_words,hall,hear,hear
+item_501,action_words,hallgat,listen,listen
+item_502,action_words,harap,bite,bite
+item_503,action_words,hív,call,call
+item_504,action_words,hintázik,swing,swing (action)
+item_505,action_words,hoz,bring,bring
+item_506,action_words,hozzányúl/ér,touch,touch
+item_507,action_words,húz,pull,pull
+item_508,action_words,ír,write,write
+item_509,action_words,itat,water (= give drink),NA
+item_510,action_words,jár,walk,walk
+item_511,action_words,iszik,drink,drink (action)
+item_512,action_words,játszik,play,play
+item_513,action_words,jön,come,come
+item_514,action_words,kakil,poop,poop
+item_515,action_words,kap,get,get
+item_516,action_words,kapcsol,switch,switch
+item_517,action_words,kér,ask (to do sg),NA
+item_518,action_words,kerget,chase,NA
+item_519,action_words,kinyit,open,open (action)
+item_520,action_words,kopog,knock,NA
+item_521,action_words,kóstol,taste,NA
+item_522,action_words,labdázik,play ball,NA
+item_523,action_words,lát,see,see
+item_524,action_words,lesz,will' (future tense of verb 'be'),NA
+item_525,action_words,lép,step,NA
+item_526,action_words,lovagol,ride,ride
+item_527,action_words,lök,bump,bump
+item_528,action_words,marad,stay,NA
+item_529,action_words,mászik,climb,climb
+item_530,action_words,megáll,stop (moving),stop
+item_531,action_words,megcsinál,make/do (perfective),NA
+item_532,action_words,megfog,catch,catch
+item_533,action_words,megnő,grow,NA
+item_534,action_words,megölel,hug,hug
+item_535,action_words,megüt,hit,hit
+item_536,action_words,megy,go,go
+item_537,action_words,mos,wash,wash
+item_538,action_words,mosogat,wash (dishes),wash
+item_539,action_words,mesél,tell a story,NA
+item_540,action_words,mond,say,say
+item_541,action_words,mosolyog,smile,smile
+item_542,action_words,mutat,show,show
+item_543,action_words,nevet,laugh,laugh
+item_544,action_words,néz,look/watch,NA
+item_545,action_words,nyal,lick,lick
+item_546,action_words,olvas,read,read
+item_547,action_words,önt,pour,NA
+item_548,action_words,nincs,not exist (negative of verb 'be'),NA
+item_549,action_words,pisil,pee,pee
+item_550,action_words,puszil,kiss,kiss
+item_551,action_words,rajzol,draw,draw
+item_552,action_words,rak,put,put
+item_553,action_words,ráz,shake,shake
+item_554,action_words,rúg,kick,kick
+item_555,action_words,segít,help,help
+item_556,action_words,sétál,walk,walk
+item_557,action_words,siet,hurry,hurry
+item_558,action_words,sikerül,succeed,NA
+item_559,action_words,sír,cry,cry
+item_560,action_words,söpör,sweep,sweep
+item_561,action_words,szakít,rip,NA
+item_562,action_words,szalad,run,run
+item_563,action_words,szárít,dry,NA
+item_564,action_words,takar,cover,cover (action)
+item_565,action_words,takarít,clean,NA
+item_566,action_words,szeret,love,love
+item_567,action_words,talál,find,find
+item_568,action_words,táncol,dance,dance
+item_569,action_words,tapsol,clap,clap
+item_570,action_words,tart,hold,hold
+item_571,action_words,tesz,put,put
+item_572,action_words,tetszik,like,NA
+item_573,action_words,tisztít,clean,NA
+item_574,action_words,tol,push,push
+item_575,action_words,tör,break,break
+item_576,action_words,töröl,wipe,wipe
+item_577,action_words,ugrik,jump,jump
+item_578,action_words,ül,sit,sit
+item_579,action_words,üldöz,chase,NA
+item_580,action_words,úszik,swim,swim
+item_581,action_words,üt,hit,hit
+item_582,action_words,vág,cut,NA
+item_583,action_words,válaszol,answer,NA
+item_584,action_words,választ,choose,NA
+item_585,action_words,van,be (present tense),be
+item_586,action_words,vár,wait,wait
+item_587,action_words,vásárol,buy,buy
+item_588,action_words,vesz,buy/take,NA
+item_589,action_words,vezet,drive,drive
+item_590,action_words,visz,carry,carry
+item_591,action_words,zúg,roar,NA
+item_592,verb_modifiers,át-,through,NA
+item_593,verb_modifiers,be-,in,in
+item_594,verb_modifiers,bele-,into,NA
+item_595,verb_modifiers,el-,away,away
+item_596,verb_modifiers,fel-,up,up
+item_597,verb_modifiers,haza-,home,home
+item_598,verb_modifiers,ide-,here,here
+item_599,verb_modifiers,ki-,out,out
+item_600,verb_modifiers,le-,down,down
+item_601,verb_modifiers,neki-,to,to
+item_602,verb_modifiers,meg-,(perfective),NA
+item_603,verb_modifiers,oda-,there,there
+item_604,verb_modifiers,össze-,together,NA
+item_605,verb_modifiers,rá-,onto,NA
+item_606,verb_modifiers,szét-,apart,NA
+item_607,verb_modifiers,vissza-,back,back
+item_608,descriptive_words,álmos,sleepy,sleepy
+item_609,descriptive_words,aranyos,cute,cute
+item_610,descriptive_words,barna,brown,NA
+item_611,descriptive_words,beteg,sick,sick
+item_612,descriptive_words,boldog,happy,happy
+item_613,descriptive_words,büdös,smelly,smelly
+item_614,descriptive_words,buta,stupid,stupid
+item_615,descriptive_words,csendes,quiet,quiet
+item_616,descriptive_words,dühös,mad,mad
+item_617,descriptive_words,ébren,awake,awake
+item_618,descriptive_words,egyedül,alone,alone
+item_619,descriptive_words,együtt,together,together
+item_620,descriptive_words,éhes,hungry,hungry
+item_621,descriptive_words,első,first,first
+item_622,descriptive_words,erős,strong,strong
+item_623,descriptive_words,fájdalmas,painful,painful
+item_624,descriptive_words,fáradt,tired,tired
+item_625,descriptive_words,fehér,white,white
+item_626,descriptive_words,fekete,black,black
+item_627,descriptive_words,forró,hot,hot
+item_628,descriptive_words,gyenge,weak,weak
+item_629,descriptive_words,gyors,fast,fast
+item_630,descriptive_words,hangos,loud,loud
+item_631,descriptive_words,hideg,cold,cold
+item_632,descriptive_words,hosszú,long,long
+item_633,descriptive_words,huncut,naughty,naughty
+item_634,descriptive_words,hülye,stupid,stupid
+item_635,descriptive_words,ijedt,scared,scared
+item_636,descriptive_words,jó,good,good
+item_637,descriptive_words,jobb,better,better
+item_638,descriptive_words,kedves,nice/gentle,nice
+item_639,descriptive_words,kék,blue,blue
+item_640,descriptive_words,kemény,hard,hard
+item_641,descriptive_words,kicsi,little,little (description)
+item_642,descriptive_words,kövér / dagi,fat,fat
+item_643,descriptive_words,lassú,slow,slow
+item_644,descriptive_words,lila,purple,purple
+item_645,descriptive_words,magas,high,high
+item_646,descriptive_words,maszatos,smudgy,smeared
+item_647,descriptive_words,meleg,warm,warm
+item_648,descriptive_words,mérges,angry,angry
+item_649,descriptive_words,nagy,big,big
+item_650,descriptive_words,narancssárga,orange,orange (description)
+item_651,descriptive_words,nehéz,heavy,heavy
+item_652,descriptive_words,okos,clever,clever
+item_653,descriptive_words,öreg,old,old
+item_654,descriptive_words,pici,tiny,small
+item_655,descriptive_words,piros,red,red
+item_656,descriptive_words,piszkos,dirty,dirty
+item_657,descriptive_words,puha,soft,soft
+item_658,descriptive_words,ragadós,sticky,sticky
+item_659,descriptive_words,rendes,neat,neat
+item_660,descriptive_words,rossz,bad,bad
+item_661,descriptive_words,sárga,yellow,yellow
+item_662,descriptive_words,sáros,muddy,muddy
+item_663,descriptive_words,sötét,dark,dark
+item_664,descriptive_words,száraz,dry,dry (description)
+item_665,descriptive_words,szegény,poor,poor
+item_666,descriptive_words,szeles,windy,windy
+item_667,descriptive_words,szép,pretty,pretty
+item_668,descriptive_words,szomjas,thirsty,thirsty
+item_669,descriptive_words,szomorú,sad,sad
+item_670,descriptive_words,teli,full,full
+item_671,descriptive_words,tiszta,clean,clean (description)
+item_672,descriptive_words,törött,broken,broken
+item_673,descriptive_words,új,new,new
+item_674,descriptive_words,undorító,yucky,yucky
+item_675,descriptive_words,ügyes,smart (skillful),smart
+item_676,descriptive_words,üres,empty,empty
+item_677,descriptive_words,utolsó,last,last
+item_678,descriptive_words,vizes,wet,wet (description)
+item_679,descriptive_words,zajos,noisy,noisy
+item_680,descriptive_words,zöld,green,green
+item_681,quantifiers,egy,one,one
+item_682,quantifiers,három,three,three
+item_683,quantifiers,kettő,two,two
+item_684,quantifiers,négy,four,four
+item_685,quantifiers,két,two,two
+item_686,quantifiers,öt,five,five
+item_687,time_words,délelőtt,mid-morning,midmorning
+item_688,time_words,délután,afternoon,afternoon
+item_689,time_words,éjszaka / éjjel,night,night
+item_690,time_words,előbb,just,just
+item_691,time_words,előtt,before,before
+item_692,time_words,este,evening,evening
+item_693,time_words,hamar,soon,soon
+item_694,time_words,holnap,tomorrow,tomorrow
+item_695,time_words,idő,time,time
+item_696,time_words,később,later,later
+item_697,time_words,ma,today,today
+item_698,time_words,majd,later,later
+item_699,time_words,mindjárt,in a minute,NA
+item_700,time_words,most,now,now
+item_701,time_words,nap,day,day
+item_702,time_words,reggel,morning,morning
+item_703,time_words,rögtön,right away,now
+item_704,time_words,tegnap,yesterday,yesterday
+item_705,time_words,után,after,after
+item_706,pronouns,az,that,that
+item_707,pronouns,azok,those,those
+item_708,pronouns,én,I,I
+item_709,pronouns,engem,me,me
+item_710,pronouns,enyém,mine,mine
+item_711,pronouns,ez,this,this
+item_712,pronouns,ezek,these,these
+item_713,pronouns,mi,we,we
+item_714,pronouns,mienk,our,our
+item_715,pronouns,minket,us,us
+item_716,pronouns,nála,at her/him,NA
+item_717,pronouns,neki,to her/him,NA
+item_718,pronouns,övé,his/hers,his
+item_719,pronouns,ő,he/she,he
+item_720,pronouns,ők,they,they
+item_721,pronouns,őket,them,them
+item_722,pronouns,őt,him/her,him
+item_723,pronouns,rajta,on him/her,NA
+item_724,pronouns,te,you,you
+item_725,pronouns,téged,you (accusative),you
+item_726,pronouns,tiéd,your,your
+item_727,pronouns,ti,you (plural),you
+item_728,pronouns,titeket,you (plural & accusative),you
+item_729,pronouns,vele,with her/him,NA
+item_730,question_words,hogy,how/that,how
+item_731,question_words,hogyan,how,how
+item_732,question_words,hol,where,where (question)
+item_733,question_words,honnan,from where,NA
+item_734,question_words,hova,where to,where (question)
+item_735,question_words,ki,who,who
+item_736,question_words,kié,whose,whose
+item_737,question_words,kik,who (plural),who
+item_738,question_words,kinek,to whom,NA
+item_739,question_words,kiről,about who,NA
+item_740,question_words,kit,who (accusative),who
+item_741,question_words,kivel,with whom,NA
+item_742,question_words,melyik,which,which (question)
+item_743,question_words,merre,which way,NA
+item_744,question_words,mi,what,what
+item_745,question_words,miért,why,why
+item_746,question_words,mik,what (plural),what
+item_747,question_words,mikor,when,when (question)
+item_748,question_words,miről,about what,NA
+item_749,question_words,mit,what (accusative),what
+item_750,question_words,mivel,with what,NA
+item_751,question_words,ugye,right?,right (question)
+item_752,locations,alá,under (as goal),under
+item_753,locations,alatt,under (as place),under
+item_754,locations,bent,inside/in,in
+item_755,locations,fent,upstairs,above
+item_756,locations,fölé,above (as goal),above
+item_757,locations,fölött,above (as place),above
+item_758,locations,itt,here,here
+item_759,locations,kint,outside,outside
+item_760,locations,körül,around,around
+item_761,locations,lent,downstairs,below
+item_762,locations,mellé,next to (as goal),next to
+item_763,locations,mellett,next to (as place),next to
+item_764,locations,miatt,because of,for
+item_765,locations,mögött,behind (as place),behind
+item_766,locations,mögé,behind (as goal),behind
+item_767,locations,ott,there,there
+item_768,quantifiers,a,the (definite article 1),the
+item_769,quantifiers,az,the (definite article 2),the
+item_770,quantifiers,egész,whole,all
+item_771,quantifiers,egyforma,same,same
+item_772,quantifiers,egyik,one,one
+item_773,quantifiers,kevés,few,few
+item_774,quantifiers,kevesebb,less,less
+item_775,quantifiers,más,other,other
+item_776,quantifiers,másik,another,another
+item_777,quantifiers,mind,all/every,all
+item_778,quantifiers,semmi,none,none
+item_779,quantifiers,sok,a lot / much /many,many
+item_780,quantifiers,több,more,more
+item_781,quantifiers,túl,too,too
+item_782,quantifiers,valami,something,something
+item_783,quantifiers,valamilyen,some kind of,NA
+item_784,helping_verbs,fog (valamit csinálni),will,will
+item_785,helping_verbs,kell,must/have to,need
+item_786,helping_verbs,lehet,might,might
+item_787,helping_verbs,lenne,would,would
+item_788,helping_verbs,próbál,try,try
+item_789,helping_verbs,szabad (valamit csinálni),can,can (auxiliary)
+item_790,helping_verbs,szokott,used to,used to
+item_791,helping_verbs,tilos,must not,cannot
+item_792,helping_verbs,tud (valamit csinálni),able to,be able
+item_793,helping_verbs,volna,would,would
+item_794,connecting_words,aztán,then,then
+item_795,connecting_words,de,but,but
+item_796,connecting_words,és,and,and
+item_797,connecting_words,ha,if,if
+item_798,connecting_words,hanem,but,but
+item_799,connecting_words,hogy,that,that
+item_800,connecting_words,inkább,rather,rather
+item_801,connecting_words,mert,because,because
+item_802,connecting_words,pedig,even though,NA

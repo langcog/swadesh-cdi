@@ -1,0 +1,697 @@
+WS,WG,category,definition,gloss,uni_lemma
+item_1,item_1,animals,小狗(汪汪),dog,dog
+item_2,item_2,animals,小貓(喵喵),cat,cat
+item_3,item_3,animals,魚,fish,fish (animal)
+item_4,item_4,animals,小鳥,bird,bird
+item_5,item_5,animals,鴨子(呱呱),duck,duck
+item_6,item_6,animals,小熊(泰迪熊),teddybear,teddybear
+item_7,item_7,animals,馬,horse,horse
+item_8,item_8,animals,雞(咕咕咕),chicken,chicken (animal)
+item_9,item_9,animals,牛(哞),cow,cow
+item_10,item_10,animals,兔子,rabbit,bunny
+item_11,item_11,animals,大象,elephant,elephant
+item_12,item_12,animals,豬,pig,pig
+item_13,item_13,animals,螞蟻,ant,ant
+item_14,item_14,animals,小羊(咩咩),sheep,sheep
+item_15,item_15,animals,企鵝,penguin,penguin
+item_16,item_16,animals,蝴蝶,butterfly,butterfly
+item_17,item_17,animals,猴子,monkey,monkey
+item_18,item_18,animals,老虎,tiger,tiger
+item_19,item_19,animals,蟲蟲,bug,bug
+item_20,item_20,animals,獅子,lion,lion
+item_21,item_21,animals,烏龜,turtle,turtle
+item_22,item_22,animals,青蛙,frog,frog
+item_23,item_23,animals,長頸鹿,giraffe,giraffe
+item_24,item_24,animals,蚊子,mosquito,mosquito
+item_25,item_25,animals,老鼠,mouse,mouse
+item_26,item_26,animals,蜜蜂(ㄨㄥㄨㄥ),bee,bee
+item_27,item_27,animals,螃蟹,crab,crab
+item_28,item_28,animals,動物,animal,animal
+item_29,item_29,animals,斑馬,zebra,zebra
+item_30,item_30,animals,鹿,deer,deer
+item_31,,animals,小雞,chicken,chicken (animal)
+item_32,,animals,蟑螂,cockroach,cockroach
+item_33,,animals,鱷魚,alligator,alligator
+item_34,,animals,毛毛蟲,caterpillar,caterpillar
+item_35,,animals,蝦子,shrimp,shrimp
+item_36,,animals,公雞,rooster,rooster
+item_37,,animals,河馬,hippo,hippopotamus
+item_38,,animals,蒼蠅,fly,fly (animal)
+item_39,,animals,蛇,snake,snake
+item_40,,animals,蝸牛,snail,snail
+item_41,,animals,綿羊,sheep,sheep
+item_42,,animals,狼(大野狼),wolf,wolf
+item_43,,animals,海豚,dolphin,dolphin
+item_44,,animals,蜘蛛,spider,spider
+item_45,,animals,鵝,goose,goose
+item_46,,animals,貓頭鷹,owl,owl
+item_47,,animals,松鼠,squirrel,squirrel
+item_48,,animals,鯊魚,shark,shark
+item_49,,animals,鴿子,dove/pigeon,pigeon
+item_50,,animals,母雞,hen,hen
+item_51,,animals,老鷹,eagle,eagle
+item_52,,animals,孔雀,peacock,peacock
+item_53,,animals,鸚鵡,parrot,parrot
+item_54,,animals,蛤蠣(貝殼),clam,clam
+item_55,,animals,蚯蚓,earthworm,worm
+item_56,item_31,body_parts,手,hand,hand
+item_57,item_32,body_parts,眼睛,eye,eye
+item_58,item_33,body_parts,耳朵,ear,ear
+item_59,item_34,body_parts,嘴巴,mouth,mouth
+item_60,item_35,body_parts,肚子,tummy,tummy
+item_61,item_36,body_parts,腳,feet,foot
+item_62,item_37,body_parts,頭,head,head
+item_63,item_38,body_parts,鼻子,nose,nose
+item_64,item_39,body_parts,頭髮,hair,hair
+item_65,item_40,body_parts,屁股,buttocks/bottom,butt
+item_66,item_41,body_parts,肚臍,belly button,belly button
+item_67,item_42,body_parts,小ㄐㄐ/小鳥(生殖器),penis,penis
+item_68,item_43,body_parts,牙齒,teeth,tooth
+item_69,item_44,body_parts,臉,face,face
+item_70,item_45,body_parts,眉毛,eyebrow,eyebrow
+item_71,item_46,body_parts,手指(手指頭),finger,finger
+item_72,item_47,body_parts,舌頭,tongue,tongue
+item_73,item_48,body_parts,脖子,neck,neck
+item_74,item_49,body_parts,腳趾頭,toe,toe
+item_75,item_50,body_parts,胸部(ㄋㄟㄋㄟ),vagina,breast
+item_76,,body_parts,指甲,nail,nail (body part)
+item_77,,body_parts,嘴唇,lip,lip
+item_78,,body_parts,背,back,back (body part)
+item_79,,body_parts,下巴,chin,chin
+item_80,,body_parts,膝蓋,knee,knee
+item_81,,body_parts,肩膀,shoulder,shoulder
+item_82,,body_parts,大腿,thigh,leg
+item_83,,body_parts,手臂,arm,arm
+item_84,,body_parts,小腿,leg,leg
+item_85,item_51,vehicles,汽車(車車、ㄅㄨㄅㄨ),car,car
+item_86,item_52,vehicles,飛機,airplane,airplane
+item_87,item_53,vehicles,垃圾車,garbage truck,truck
+item_88,item_54,vehicles,機車(摩托車),motorcycle,motorcycle
+item_89,item_55,vehicles,火車,train,train
+item_90,item_56,vehicles,船,boat,boat
+item_91,item_57,vehicles,腳踏車,bicycle,bicycle
+item_92,item_58,vehicles,公車(巴士),bus,bus
+item_93,item_59,vehicles,娃娃車(手推車),stroller,stroller
+item_94,item_60,vehicles,三輪車,tricycle,tricycle
+item_95,,vehicles,計程車,taxi,taxi
+item_96,,vehicles,怪手(挖土機),excavator,digger
+item_97,,vehicles,救護車,ambulance,ambulance
+item_98,,vehicles,消防車,firetruck,firetruck
+item_99,,vehicles,卡車,truck,truck
+item_100,,vehicles,直昇機,helicopter,helicopter
+item_101,,vehicles,吊車,crane,crane
+item_102,item_61,food_drink,牛奶(ㄋㄟㄋㄟ),milk,milk
+item_103,item_62,food_drink,水(茶茶),water,water (beverage)
+item_104,item_63,food_drink,麵,noodles,noodles
+item_105,item_64,food_drink,飯,rice,rice
+item_106,item_65,food_drink,餅乾,cookies,cookie
+item_107,item_66,food_drink,香蕉,banana,banana
+item_108,item_67,food_drink,肉,meat,meat
+item_109,item_68,food_drink,蛋,egg,egg
+item_110,item_69,food_drink,麵包,bread,bread
+item_111,item_70,food_drink,蘋果,apple,apple
+item_112,item_71,food_drink,葡萄,grap,grapes
+item_113,item_72,food_drink,糖果,candy,candy
+item_114,item_73,food_drink,蔬菜,vegetable,vegetable
+item_115,item_74,food_drink,草莓,strawberry,strawberry
+item_116,item_75,food_drink,紅(白)蘿蔔,carrots,carrot
+item_117,item_76,food_drink,布丁,pudding,pudding
+item_118,item_77,food_drink,蛋糕,cake,cake
+item_119,item_78,food_drink,西瓜,watermelon,melon
+item_120,item_79,food_drink,稀飯,congee,porridge
+item_121,item_80,food_drink,芭樂,guava,guava
+item_122,item_81,food_drink,水果,fruit,fruit
+item_123,item_82,food_drink,蕃茄,tomato,tomato
+item_124,item_83,food_drink,冰淇淋,ice cream,ice cream
+item_125,item_84,food_drink,果汁,juice,juice
+item_126,item_85,food_drink,柳丁,orange,orange (food)
+item_127,item_86,food_drink,櫻桃,cherry,cherry
+item_128,item_87,food_drink,葡萄乾,raisin,raisin
+item_129,item_88,food_drink,豆漿,soy milk,soy milk
+item_130,item_89,food_drink,汽水,soda,soda
+item_131,item_90,food_drink,飲料,drink,drink (beverage)
+item_132,item_91,food_drink,梨子,pear,pear
+item_133,item_92,food_drink,饅頭,steamed bread,bun
+item_134,item_93,food_drink,土司,toast,toast
+item_135,item_94,food_drink,食物,food,food
+item_136,item_95,food_drink,湯,soup,soup
+item_137,,food_drink,養樂多,Yakult,kefir
+item_138,,food_drink,玉米,corn,corn
+item_139,,food_drink,木瓜,papaya,papaya
+item_140,,food_drink,糖,sugar,sugar
+item_141,,food_drink,巧克力,chocolate,chocolate
+item_142,,food_drink,棒棒糖,lollipop,lollipop
+item_143,,food_drink,薯條,french fries,french fries
+item_144,,food_drink,水餃,dumpling,dumpling
+item_145,,food_drink,甜甜圈,donut,donut
+item_146,,food_drink,茶,tea,tea
+item_147,,food_drink,花生,peanut,peanut
+item_148,,food_drink,包子,steamed bun,bun
+item_149,,food_drink,漢堡,hamburger,hamburger
+item_150,,food_drink,披薩,pizza,pizza
+item_151,,food_drink,香腸,sausage,sausage
+item_152,,food_drink,咖啡,coffee,coffee
+item_153,,food_drink,雞肉,chicken,chicken (food)
+item_154,,food_drink,果凍,jelly,jelly
+item_155,,food_drink,爆米花,popcorn,popcorn
+item_156,,food_drink,口香糖,chewing gum,gum
+item_157,,food_drink,雞塊,chicken nuggets,nugget
+item_158,,food_drink,點心,snack,snack
+item_159,,food_drink,檸檬,lemon,lemon
+item_160,,food_drink,三明治,sandwich,sandwich
+item_161,,food_drink,蛋餅,Chinese omelet,NA
+item_162,,food_drink,奶茶,milk tea,tea
+item_163,,food_drink,馬鈴薯,potato,potato
+item_164,,food_drink,奇異果,kiwi fruit,kiwi
+item_165,,food_drink,洋芋片,potato chip,chips
+item_166,,food_drink,可樂,coke,coke
+item_167,,food_drink,蕃茄醬,ketchup,ketchup
+item_168,,food_drink,豆子,peas,peas
+item_169,,food_drink,醬油,soy sauce,soy sauce
+item_170,,food_drink,起司(乳酪),cheese,cheese
+item_171,,food_drink,果醬,jam,jam
+item_172,,food_drink,香瓜(哈密瓜),melon,melon
+item_173,,food_drink,冰棒,popsicle,popsicle
+item_174,,food_drink,菠菜,spinach,spinach
+item_175,,food_drink,南瓜,pumpkin,pumpkin
+item_176,,food_drink,火腿,ham,ham
+item_177,,food_drink,餛飩,wonton,dumpling
+item_178,,food_drink,橘子,tangerine,tangerine
+item_179,item_96,clothing,鞋子,shoes,shoe
+item_180,item_97,clothing,尿布,diaper,diaper
+item_181,item_98,clothing,褲子,pants,pants
+item_182,item_99,clothing,衣物,clothes,shirt
+item_183,item_100,clothing,襪子,socks,sock
+item_184,item_101,clothing,帽子,hat,hat
+item_185,item_102,clothing,圍兜(兜),bib,bib
+item_186,item_103,clothing,夾克(外套),jacket,jacket
+item_187,item_104,clothing,拉鍊,zipper,zipper
+item_188,item_105,clothing,扣子,button,button
+item_189,item_106,clothing,拖鞋,slippers,slipper
+item_190,item_107,clothing,背心,vest,vest
+item_191,item_108,clothing,手套,gloves,mitten
+item_192,item_109,clothing,長褲,trousers,pants
+item_193,item_110,clothing,短褲,shorts,shorts
+item_194,item_111,clothing,裙子,dress,dress (object)
+item_195,,clothing,安全帽,helmet,helmet
+item_196,,clothing,內褲(三角褲),briefs,underpants
+item_197,,clothing,口罩,mask,mask
+item_198,,clothing,雨衣,raincoat,raincoat
+item_199,,clothing,涼鞋,sandals,sandal
+item_200,,clothing,布鞋(運動鞋),sneakers,sneaker
+item_201,,clothing,項鍊,necklace,necklace
+item_202,,clothing,圍巾,scarf,scarf
+item_203,,clothing,泳衣,swimsuit,swimsuit
+item_204,,clothing,珠珠,bead,beads
+item_205,,clothing,皮帶,belt,belt
+item_206,,clothing,皮鞋,leather shoes,shoe
+item_207,,clothing,毛衣,sweater,sweater
+item_208,,clothing,睡衣(褲),pajamas,pajamas
+item_209,item_112,toys,球,ball,ball
+item_210,item_113,toys,氣球,balloon,balloon
+item_211,item_114,toys,筆,pen,pen
+item_212,item_115,toys,書,book,book
+item_213,item_116,toys,娃娃(洋娃娃),doll,doll
+item_214,item_117,toys,玩具,toy,toy (object)
+item_215,item_118,toys,泡泡,bubbles,bubbles
+item_216,item_119,toys,貼紙,stickers,sticker
+item_217,item_120,toys,積木,block,blocks
+item_218,item_121,toys,鉛筆,pencil,pencil
+item_219,item_122,toys,彩色筆,crayon,crayon
+item_220,,toys,拼圖,jigsaw puzzle,puzzle
+item_221,,toys,禮物,present,present
+item_222,,toys,機器人,robot,robot
+item_223,,toys,蠟筆,crayon,crayon
+item_224,,toys,鼓,drum,drum (object)
+item_225,,toys,黏土,clay,play dough
+item_226,,toys,膠水,glue,glue (object)
+item_227,,toys,手槍,handgun,gun
+item_228,,toys,球棒,bat,bat (object)
+item_229,item_123,household,電話,telephone,telephone
+item_230,item_124,household,杯子,cup,cup
+item_231,item_125,household,牙刷,toothbrush,toothbrush
+item_232,item_126,household,電視,television,TV
+item_233,item_127,household,湯匙,spoon,spoon
+item_234,item_128,household,鑰匙,key,key
+item_235,item_129,household,毯子(被子),blanket,blanket
+item_236,item_130,household,藥,medicine,medicine
+item_237,item_131,household,碗,bowl,bowl
+item_238,item_132,household,吸管,straw,straw
+item_239,item_133,household,錢,money,money
+item_240,item_134,household,枕頭,pillow,pillow
+item_241,item_135,household,眼鏡,glasses,glasses
+item_242,item_136,household,垃圾桶,trash can,trash
+item_243,item_137,household,筷子,chopsticks,chopstick
+item_244,item_138,household,垃圾,garbage,garbage
+item_245,item_139,household,毛巾,towel,towel
+item_246,item_140,household,鏡子,mirror,mirror
+item_247,item_141,household,梳子,comb,comb (object)
+item_248,item_142,household,掃把,broom,broom
+item_249,item_143,household,肥皂,soap,soap
+item_250,item_144,household,紙,paper,paper
+item_251,item_145,household,盤子,plate,plate
+item_252,item_146,household,時鐘(鬧鐘),clock,clock
+item_253,item_147,household,瓶子,bottle,bottle
+item_254,item_148,household,收音機/音響,radio,radio
+item_255,item_149,household,鍋子,pot,pot
+item_256,item_150,household,盒子,box,box
+item_257,item_151,household,電鍋,electric pot,pot
+item_258,item_152,household,銅板(零錢),penny,coin
+item_259,item_153,household,皮包,purse,purse
+item_260,item_154,household,圖片,picture,picture
+item_261,,household,手機,cell-phone,telephone
+item_262,,household,電燈,lamp,lamp
+item_263,,household,衛生紙(面紙),tissue paper,tissue
+item_264,item_159,household,冰箱,refrigerator,refrigerator
+item_265,,household,牙膏,toothpaste,toothpaste
+item_266,,household,吹風機,dryer,dryer
+item_267,,household,剪刀,scissors,scissors
+item_268,,household,冷氣,air conditioning,air conditioner
+item_269,,household,電風扇,fan,fan
+item_270,,household,相機,camera,camera
+item_271,,household,遙控器,remote control,remote control
+item_272,,household,書包,bag,bag
+item_273,,household,袋子,sack,bag
+item_274,,household,刀子,knife,knife
+item_275,,household,叉子,fork,fork
+item_276,,household,照片,photo,photo
+item_277,,household,插頭,plug,plug
+item_278,,household,籃子,basket,basket
+item_279,,household,拖把,mop,mop (object)
+item_280,,household,光碟(CD或DVD),disk,CD
+item_281,,household,刷子,brush,brush (object)
+item_282,,household,水桶,bucket,bucket
+item_283,,household,玻璃(玻璃杯),glasses,glasses
+item_284,,household,罐子,jar,jar
+item_285,,household,水壺,water bottle,bottle
+item_286,,household,釘子,nail,nail (object)
+item_287,item_155,furniture_rooms,椅子,chair,chair
+item_288,item_156,furniture_rooms,門,door,door
+item_289,item_157,furniture_rooms,桌子,table,table
+item_290,item_158,furniture_rooms,床,bed,bed
+item_291,item_160,furniture_rooms,廁所,water closet,toilet
+item_292,,furniture_rooms,樓梯,stair,stairs
+item_293,item_161,furniture_rooms,窗戶,window,window
+item_294,item_162,furniture_rooms,客廳,living room,living room
+item_295,item_163,furniture_rooms,廚房,kitchen,kitchen
+item_296,item_164,furniture_rooms,抽屜,drawer,drawer
+item_297,item_165,furniture_rooms,電梯,elevator,elevator
+item_298,item_166,furniture_rooms,沙發,sofa,couch
+item_299,item_167,furniture_rooms,臥(房)室,bedroom,bedroom
+item_300,item_168,furniture_rooms,浴室,bathroom,bathroom
+item_301,item_169,furniture_rooms,水槽(洗手檯),sink,sink
+item_302,item_170,furniture_rooms,嬰兒床,crib,crib
+item_303,,furniture_rooms,馬桶,potty,potty
+item_304,,furniture_rooms,電腦,computer,computer
+item_305,,furniture_rooms,房間,room,room
+item_306,,furniture_rooms,洗衣機,washing machine,washing machine
+item_307,,furniture_rooms,地板,floor,floor
+item_308,,furniture_rooms,櫃子,cupboard,cupboard
+item_309,,furniture_rooms,浴缸,bathtub,bathtub
+item_310,,furniture_rooms,衣櫥,wardrobe,closet
+item_311,,furniture_rooms,餐桌,dining table,table
+item_312,,furniture_rooms,微波爐,oven,oven
+item_313,,furniture_rooms,陽台,balcony,balcony
+item_314,item_171,outside,花,flower,flower
+item_315,item_172,outside,下雨,rain,rain
+item_316,item_173,outside,溜滑梯,slide,slide (object)
+item_317,item_174,outside,樹,tree,tree
+item_318,item_175,outside,石頭,stone,rock (object)
+item_319,item_176,outside,雨傘,umbrella,umbrella
+item_320,item_178,outside,太陽,sun,sun
+item_321,item_179,outside,月亮,moon,moon
+item_322,item_180,outside,星星,star,star
+item_323,item_183,outside,紅綠燈,traffic light,traffic light
+item_324,,outside,葉子,leaf,leaf
+item_325,item_186,outside,草,grass,grass
+item_326,item_187,outside,鞦韆,swing,swing (object)
+item_327,,outside,雲,cloud,cloud
+item_328,,outside,風,wind,wind
+item_329,item_188,outside,翹翹板,seesaw,seesaw
+item_330,,outside,馬路,road,road
+item_331,,outside,土/泥土,mud,mud
+item_332,,outside,打雷,thunder,thunder
+item_333,,outside,風箏,kite,kite
+item_334,,outside,天空,sky,sky
+item_335,,outside,沙子,sand,sand
+item_336,,outside,花園,garden,garden
+item_337,,outside,彩虹,rainbow,rainbow
+item_338,,outside,棍子,stick,stick
+item_339,,outside,斑馬線,crosswalk,NA
+item_340,,outside,水管,water pipe,pipe
+item_341,,outside,旗子,flag,flag
+item_342,,outside,梯子,ladder,ladder
+item_343,,outside,鏟子,shovel,shovel
+item_344,item_177,places,家,home,home
+item_345,item_181,places,房子,house,house
+item_346,,places,學校/幼稚園,school/ kindergarten,school
+item_347,item_182,places,7-11(任何便利商店),convenience store,store
+item_348,,places,**的家,one's home,home
+item_349,item_184,places,公園,park,park
+item_350,,places,菜市場,market,market
+item_351,,places,XX園(某遊戲樂園名稱),specific name of a playground,NA
+item_352,,places,動物園,zoo,zoo
+item_353,item_189,places,醫院(或診所),clinic,hospital
+item_354,,places,火車站(車站),train station,station
+item_355,,places,商店/百貨公司,store,store
+item_356,,places,加油站,gas station,gas station
+item_357,,places,游泳池,swimming pool,pool
+item_358,,places,海,sea,sea
+item_359,,places,停車場,parking lot,parking lot
+item_360,,places,餐廳,restaurant,restaurant
+item_361,item_185,places,運動場/操場,playground,playground
+item_362,,places,郵局,post office,post office
+item_363,,places,圖書館,library,library
+item_364,,places,河,river,river
+item_365,,places,山上,mountain,mountain
+item_366,,places,遊樂園,amusement park,amusement park
+item_367,,places,教堂/廟,church,church
+item_368,,places,大樓,building,building
+item_369,item_190,games_routines,再見(byebye),bye or bye bye,bye
+item_370,item_191,games_routines,謝謝,thank you,thank you
+item_371,item_192,games_routines,睡覺,nap,nap
+item_372,item_193,games_routines,晚安,night night,good night
+item_373,item_194,games_routines,吃飯,eat,eat
+item_374,item_195,games_routines,洗澡,bath,bath
+item_375,item_196,games_routines,刷牙,brush,brush (action)
+item_376,item_197,games_routines,哈囉(嗨),hello(hi),hello
+item_377,item_198,games_routines,讀書(看書),read,read
+item_378,item_199,games_routines,噓/噓噓(安靜),shh/shush/hush,shh
+item_379,item_200,games_routines,換尿布,change diaper,change diaper
+item_380,item_201,games_routines,跳舞,dance,dance
+item_381,item_202,games_routines,唱歌,sing,sing
+item_382,item_203,games_routines,看電視,watch TV,NA
+item_383,item_204,games_routines,對不起,sorry,sorry
+item_384,item_205,games_routines,打電話,call (on phone),call
+item_385,item_206,games_routines,躲貓貓,peekaboo,peekaboo
+item_386,item_207,games_routines,逛街/買東西,shopping,shopping
+item_387,item_208,games_routines,玩遊戲,patty cake,pattycake
+item_388,item_209,games_routines,上廁所(尿尿、便便),go potty,potty
+item_389,item_210,games_routines,拍拍手,clap,clap
+item_390,item_211,games_routines,開車,drive,drive
+item_391,,games_routines,轉圈圈,turn around,turn around
+item_392,,games_routines,聽音樂,listen to music,NA
+item_393,,games_routines,游泳,swim,swim
+item_394,,games_routines,堆積木,stack blocks,play with blocks
+item_395,,games_routines,請,to ask,ask
+item_396,,games_routines,早餐,breakfast,breakfast
+item_397,,games_routines,午餐,lunch,lunch
+item_398,,games_routines,晚餐,dinner,dinner
+item_399,item_212,people,爸爸/爹地,daddy,daddy
+item_400,item_213,people,媽媽/媽咪,mommy,mommy
+item_401,item_214,people,姊姊,elder sister,sister
+item_402,item_215,people,奶奶,grandma,grandma
+item_403,item_216,people,哥哥,elder brother,brother
+item_404,item_217,people,爺爺,grandpa,grandpa
+item_405,item_218,people,叔叔,uncle,uncle
+item_406,item_219,people,姑姑,paternal aunt,aunt
+item_407,item_220,people,舅舅,maternal uncle,uncle
+item_408,item_221,people,阿姨(姨媽),aunt,aunt
+item_409,item_222,people,小寶寶(小貝比),baby,baby
+item_410,item_223,people,自己的名字,child's own name,child's own name
+item_411,item_224,people,妹妹,younger sister,sister
+item_412,item_225,people,弟弟,younger brother,brother
+item_413,item_226,people,外婆,maternal grandmother,grandma
+item_414,item_227,people,外公,maternal grandfather,grandpa
+item_415,item_228,people,伯伯,paternal uncle,uncle
+item_416,item_229,people,醫生,doctor,doctor
+item_417,item_230,people,小朋友,child,child
+item_418,item_231,people,褓母(奶媽),babysitter,babysitter
+item_419,item_232,people,我,I,I
+item_420,item_233,people,你,you,you
+item_421,item_234,people,我的,my,my
+item_422,item_235,people,你的,your,your
+item_423,item_236,people,他,he,he
+item_424,item_237,people,他的,his,his
+item_425,item_238,people,家人的名字,family's name,family name
+item_426,item_239,people,寵物的名字,pet's name,pet's name
+item_427,,people,**人的,someone's,NA
+item_428,,people,老師,teacher,teacher
+item_429,,people,舅媽,maternal aunt,aunt
+item_430,,people,警察,police officer,police
+item_431,,people,姑丈,husband of paternal aunt,uncle
+item_432,,people,嬸嬸,wife of paternal uncle,aunt
+item_433,,people,大家,everyone,everyone
+item_434,,people,老闆,boss,boss
+item_435,,people,男生,boy,boy
+item_436,,people,女生,girl,girl
+item_437,,people,別人,others,other people
+item_438,,people,朋友,friend,friend
+item_439,,people,我們,we,we
+item_440,,people,護士,nurse,nurse
+item_441,,people,你們,you,you
+item_442,,people,我們的,our,our
+item_443,,people,小姐,Miss,miss (address)
+item_444,,people,司機,driver,driver
+item_445,,people,你們的,your,your
+item_446,,people,他們,they,they
+item_447,,people,他們的,their,their
+item_448,,people,郵差,mailman,mailman
+item_449,,people,先生,Mister,sir
+item_450,item_240,time_words,等一下,wait,wait
+item_451,item_241,time_words,開始,start,start
+item_452,item_242,time_words,晚上,night,night
+item_453,item_243,time_words,完了(結束的意思),end,end
+item_454,,time_words,早上,morning,morning
+item_455,,time_words,白天,day,day
+item_456,,time_words,現在,now,now
+item_457,,time_words,先,first,first
+item_458,,time_words,今天,today,today
+item_459,,time_words,已經,already,already
+item_460,,time_words,中午,noon,noon
+item_461,,time_words,昨天,yesterday,yesterday
+item_462,,time_words,明天,tomorrow,tomorrow
+item_463,,time_words,星期…,week,NA
+item_464,,time_words,這次,this time,NA
+item_465,,time_words,下次,next time,NA
+item_466,,time_words,早(一點),earlier,earlier
+item_467,,time_words,晚(一點),later,later
+item_468,,time_words,時間,time,time
+item_469,,time_words,上次,last time,NA
+item_470,,time_words,以前,before,before
+item_471,,time_words,以後,after,after
+item_472,item_244,locations,在這裡,here,here
+item_473,item_245,locations,走開,away,away
+item_474,item_246,locations,過來,come here,come
+item_475,item_247,locations,在那裡,there,there
+item_476,item_248,locations,後面,back,back (location)
+item_477,item_249,locations,前面,front,front
+item_478,item_250,locations,外面,out,out
+item_479,item_251,locations,裡面,inside/in,in
+item_480,item_252,locations,到…某個地方,to somewhere,to
+item_481,item_253,locations,在…前面,in front of,in front
+item_482,item_254,locations,在…外面,outside,outside
+item_483,,locations,上面,above,above
+item_484,,locations,下面,below,below
+item_485,,locations,在…上面,on top of,on top of
+item_486,,locations,在…下面,under,under
+item_487,,locations,在…後面,behind,behind
+item_488,,locations,在…裡面,into,into
+item_489,,locations,旁邊,by,by
+item_490,,locations,…的…,of,of
+item_491,,locations,到…裡,to,to
+item_492,,locations,在…旁邊,beside,beside
+item_493,,locations,向(往)上,up,up
+item_494,,locations,向(往)下,down,down
+item_495,,locations,在…中間,in the middle,middle
+item_496,item_255,action_words,抱(抱),hug,hug
+item_497,item_256,action_words,吃,eat,eat
+item_498,item_257,action_words,不要,do not,don't
+item_499,item_258,action_words,要,wanna/ want to,want
+item_500,item_259,action_words,是/對/好,yes,yes
+item_501,item_260,action_words,打,hit,hit
+item_502,item_261,action_words,走/散步,walk,walk
+item_503,item_262,action_words,洗,wash,wash
+item_504,item_263,action_words,坐,sit,sit
+item_505,item_264,action_words,喝,drink,drink (action)
+item_506,item_265,action_words,哭,cry,cry
+item_507,item_266,action_words,拍(手),clap,clap
+item_508,item_267,action_words,看,look,look
+item_509,item_268,action_words,咬,bite,bite
+item_510,item_269,action_words,拿,take,take
+item_511,item_270,action_words,穿,wear,wear
+item_512,item_271,action_words,打開,open,open (action)
+item_513,item_272,action_words,跑,run,run
+item_514,item_273,action_words,玩,play,play
+item_515,item_274,action_words,去,go,go
+item_516,item_275,action_words,來,come,come
+item_517,item_276,action_words,親,kiss,kiss
+item_518,item_277,action_words,關,close,close
+item_519,item_278,action_words,跳,jump,jump
+item_520,item_279,action_words,騎,ride,ride
+item_521,item_280,action_words,掉,drop,drop
+item_522,item_281,action_words,不是/不對/不好,not,no
+item_523,item_282,action_words,跌倒,fall,fall
+item_524,item_283,action_words,吹,blow,blow
+item_525,item_284,action_words,擦,wipe,wipe
+item_526,item_285,action_words,好了,finish,finish
+item_527,item_286,action_words,給,give,give
+item_528,item_287,action_words,不可以/不行,don't/can't,not
+item_529,item_288,action_words,笑,smile,smile
+item_530,item_289,action_words,快點/快一點,hurry,hurry
+item_531,item_290,action_words,撿,pick up,pick up
+item_532,item_291,action_words,摸,touch,touch
+item_533,item_292,action_words,爬,climb,climb
+item_534,item_293,action_words,說話,say,say
+item_535,,action_words,寫,write,write
+item_536,item_294,action_words,握手,hold,hold
+item_537,item_295,action_words,餵,feed,feed
+item_538,item_296,action_words,聽,listen,listen
+item_539,item_297,action_words,敲,knock,knock
+item_540,item_298,action_words,搖,shake,shake
+item_541,item_299,action_words,放,put,put
+item_542,item_300,action_words,拉,pull,pull
+item_543,item_301,action_words,踢,kick,kick
+item_544,item_302,action_words,碰/撞,hit,hit
+item_545,item_303,action_words,抓,catch,catch
+item_546,item_304,action_words,叫,to shout,call
+item_547,item_305,action_words,停,stop,stop
+item_548,item_306,action_words,排(東西),to put in order,stand
+item_549,item_307,action_words,按,press,press
+item_550,item_308,action_words,搔癢,tickle,tickle
+item_551,item_309,action_words,壓,push,push
+item_552,item_310,action_words,丟,throw,throw
+item_553,item_311,action_words,畫畫,draw,draw
+item_554,item_312,action_words,脫,take off,take
+item_555,item_313,action_words,牽(手),hand,hand
+item_556,,action_words,工作/上班,work,work (action)
+item_557,,action_words,掃地,sweep,sweep
+item_558,,action_words,站,stand,stand
+item_559,,action_words,幫忙,help,help
+item_560,,action_words,煮,cook,cook
+item_561,,action_words,切,cut,cut
+item_562,,action_words,帶,bring,bring
+item_563,,action_words,打破,break,break
+item_564,,action_words,罵,to scold,scold
+item_565,,action_words,喜歡,love,love
+item_566,,action_words,忘記,forget,forget
+item_567,,action_words,倒,pour,pour
+item_568,,action_words,綁,tie,tie (action)
+item_569,,action_words,推,push,push
+item_570,,action_words,蹲,squat,squat
+item_571,,action_words,想,miss,think
+item_572,,action_words,教我,teach me,teach
+item_573,,action_words,捏,pinch,pinch
+item_574,,action_words,撕,tear,tear
+item_575,,action_words,流(鼻涕),run,run
+item_576,,action_words,滑,slip,slide (action)
+item_577,,action_words,討厭,hate,hate
+item_578,,action_words,數數,count,count
+item_579,,action_words,裝,pack,fill
+item_580,,action_words,藏,hide,hide
+item_581,,action_words,拔,pull,pull
+item_582,,action_words,投,throw,throw
+item_583,,action_words,告訴,tell,tell
+item_584,,action_words,夾,pinch,pinch
+item_585,,action_words,曬,hang,hang
+item_586,,action_words,拆,to take apart,dismantle
+item_587,,action_words,吞,swallow,swallow
+item_588,,action_words,聞,smell,smell
+item_589,,action_words,假裝,pretend,pretend
+item_590,,action_words,記,note,remember
+item_591,,action_words,以為,think,think
+item_592,,connecting_words,和,and,and
+item_593,,connecting_words,因為,because,because
+item_594,,connecting_words,可是,but,but
+item_595,,connecting_words,…就…,as soon as ‚Ä¶.,then
+item_596,,connecting_words,如果,if,if
+item_597,,connecting_words,所以,so,so
+item_598,,connecting_words,先…然後…,‚Ä¶and then,then
+item_599,,connecting_words,後來,then,then
+item_600,item_314,descriptive_words,好熱/熱熱的,hot,hot
+item_601,item_315,descriptive_words,好燙/燙燙的,very hot,hot
+item_602,item_316,descriptive_words,好棒,good,good
+item_603,item_317,descriptive_words,好痛/痛痛的,hurt,hurt (description)
+item_604,item_318,descriptive_words,好臭/臭臭的,smelly,sticky
+item_605,item_319,descriptive_words,髒髒的/骯髒的,dirty,dirty
+item_606,item_320,descriptive_words,害怕的(好恐怖),scared,scared
+item_607,item_321,descriptive_words,暗暗的,dark,dark
+item_608,item_322,descriptive_words,亮亮的,bright,bright
+item_609,item_323,descriptive_words,濕濕的,wet,wet (description)
+item_610,item_324,descriptive_words,破了/破掉了,broken,broken
+item_611,item_325,descriptive_words,好可愛/可愛的,cute,cute
+item_612,item_326,descriptive_words,想睡覺,awake,awake
+item_613,item_327,descriptive_words,好漂亮/漂亮的,pretty,pretty
+item_614,item_328,descriptive_words,好高/高高的,high,high
+item_615,item_329,descriptive_words,口渴了/好渴,thirsty,thirsty
+item_616,item_330,descriptive_words,好冷/冷冷的,cold,cold
+item_617,item_331,descriptive_words,好香/香香的,smell good,fragrant
+item_618,item_332,descriptive_words,很好吃/好吃的,yummy,yum yum
+item_619,item_333,descriptive_words,餓了/好餓,hungry,hungry
+item_620,item_334,descriptive_words,飽了/好飽,full,full
+item_621,item_335,descriptive_words,小心,careful,careful
+item_622,item_336,descriptive_words,壞的,bad,bad
+item_623,item_337,descriptive_words,甜甜的,sweet,sweet
+item_624,item_338,descriptive_words,睡著了,sleepy,sleepy
+item_625,item_339,descriptive_words,快樂的/高興的,happy,happy
+item_626,item_340,descriptive_words,乾淨的,clean,clean (description)
+item_627,item_341,descriptive_words,空空的,empty,empty
+item_628,item_342,descriptive_words,不乖,naughty,naughty
+item_629,,descriptive_words,好重/重重的,heavy,heavy
+item_630,,descriptive_words,好辣/辣辣的,spicy,spicy
+item_631,,descriptive_words,紅紅的/紅色的,red,red
+item_632,,descriptive_words,大的,big,big
+item_633,,descriptive_words,小的,little,small
+item_634,,descriptive_words,圓的/圓形的,circular,round
+item_635,,descriptive_words,生氣的,angry,angry
+item_636,,descriptive_words,三角形的,triangular,NA
+item_637,,descriptive_words,生病了,sick,sick
+item_638,,descriptive_words,好硬/硬硬的,hard,hard
+item_639,,descriptive_words,一樣的,same,same
+item_640,,descriptive_words,好酸/酸酸的,sour,sour
+item_641,,descriptive_words,黃色的,yellow,yellow
+item_642,,descriptive_words,好快/快的,fast,fast
+item_643,,descriptive_words,好累/累了,tired,tired
+item_644,,descriptive_words,綠色的,green,green
+item_645,,descriptive_words,大聲,loud,loud
+item_646,,descriptive_words,藍藍的/藍色的,blue,blue
+item_647,,descriptive_words,黑色的/黑黑的,black,black
+item_648,,descriptive_words,白色的,white,white
+item_649,,descriptive_words,好的,fine,fine
+item_650,,descriptive_words,長長的,long,long
+item_651,,descriptive_words,醒了/醒著,awake,awake
+item_652,,descriptive_words,好軟/軟軟的,soft,soft
+item_653,,descriptive_words,黏黏的,sticky,sticky
+item_654,,descriptive_words,好慢/慢慢的,slow,slow
+item_655,,descriptive_words,新的,new,new
+item_656,,descriptive_words,第一/第一名,first,first
+item_657,,descriptive_words,可憐的,poor,poor
+item_658,,descriptive_words,討厭的,yucky,yucky
+item_659,,descriptive_words,好苦/苦苦的,bitter,bitter
+item_660,,descriptive_words,長方形的,rectangle,NA
+item_661,,descriptive_words,乾乾的,dry,dry (description)
+item_662,,descriptive_words,夠了,enough,enough
+item_663,,descriptive_words,傷心的/難過的,sad,sad
+item_664,,descriptive_words,安靜的,quiet,quiet
+item_665,,descriptive_words,滿滿的,"full, filled",full
+item_666,,descriptive_words,好吵/吵鬧的,noise,noisy
+item_667,,descriptive_words,冰冰的,cold,cold
+item_668,,descriptive_words,快一點,quickly,quickly
+item_669,,descriptive_words,太多了,over,over
+item_670,item_343,quantifiers,這個,this,this
+item_671,item_344,quantifiers,一個(二、三個…),"one (two, three...)",one two three
+item_672,item_345,quantifiers,好多,much,much
+item_673,item_346,quantifiers,沒半個/沒有,none,none
+item_674,item_347,quantifiers,還有,furthermore,also
+item_675,item_348,quantifiers,那個,that,that
+item_676,,quantifiers,一樣多,as many as,NA
+item_677,,quantifiers,全部(通通),all,all
+item_678,,quantifiers,也有、也是,also,also
+item_679,,quantifiers,一半(半個),half,half
+item_680,,quantifiers,這些,these,these
+item_681,,quantifiers,那些,those,those
+item_682,,quantifiers,很多,much,much
+item_683,,quantifiers,更多,more,more
+item_684,item_349,question_words,什麼？,what,what
+item_685,item_350,question_words,哪裡？,where,where (question)
+item_686,item_351,question_words,哪一個？,which,which (question)
+item_687,item_352,question_words,誰？,who,who
+item_688,item_353,question_words,怎麼(辦)？,how,how
+item_689,item_354,question_words,咦？,why,why
+item_690,,question_words,嗎(對嗎/好嗎/是嗎),Right?,NA
+item_691,,question_words,(還有)呢？,Anything else?,NA
+item_692,,question_words,好不好？,All right? OK?,is that okay?
+item_693,,question_words,為什麼？,What for?,why
+item_694,,question_words,幾個？,How many?,how many
+item_695,,question_words,幾點？,What time?,what time
+item_696,,question_words,多少？,How much?,how much

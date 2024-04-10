@@ -1,0 +1,677 @@
+WS,category,definition,gloss,uni_lemma
+item_1,sounds,ai,ow,ouch
+item_2,sounds,auh,woof-woof,woof woof
+item_3,sounds,kikerikii,cock-a-doodle-doo,cockadoodledoo
+item_4,sounds,krooks,ribbit-ribbit,ribbit
+item_5,sounds,mää,baa,baa baa
+item_6,sounds,miau,meow,meow
+item_7,sounds,mõmm,bear sound,
+item_8,sounds,nämm,yummy,yummy
+item_9,sounds,oi_oi,oh-oh,uh oh
+item_10,sounds,põrr,vroom-vroom,vroom
+item_11,sounds,potsti,whoopsy-daisy,oops
+item_12,sounds,röh,oink-oink,oink
+item_13,sounds,summ,buzz,buzz
+item_14,sounds,tsuhh,choo-choo,choo choo
+item_15,sounds,tuut,toot-toot,honk honk
+item_16,animals,ahv,monkey,monkey
+item_17,animals,eesel,donkey,donkey
+item_18,animals,elevant,elephant,elephant
+item_19,animals,hamster,hamster,
+item_20,animals,hani,goose,goose
+item_21,animals,hiir,mouse,mouse
+item_22,animals,hobune,horse,horse
+item_23,animals,hüjes,seal,seal
+item_24,animals,hunt,wolf,wolf
+item_25,animals,ilves,lynx,
+item_26,animals,jänes,rabbit,bunny
+item_27,animals,kaelkirjak,giraffe,giraffe
+item_28,animals,kala,fish (animal),fish (animal)
+item_29,animals,kana,chicken (animal),chicken (animal)
+item_30,animals,kärbes,fly (animal),fly (animal)
+item_31,animals,karu,bear,bear
+item_32,animals,kass,kitty,kitty
+item_33,animals,kilpkonn,turtle,turtle
+item_34,animals,kits,goat,goat
+item_35,animals,koer,dog,dog
+item_36,animals,konn,frog,frog
+item_37,animals,krokodill,crocodile,crocodile
+item_38,animals,kukk,rooster,rooster
+item_39,animals,lammas,sheep,sheep
+item_40,animals,lehm,cow,cow
+item_41,animals,lepatriinu,ladybug,ladybug
+item_42,animals,liblikas,butterfly,butterfly
+item_43,animals,lind,bird,bird
+item_44,animals,loom,animal,animal
+item_45,animals,lõvi,lion,lion
+item_46,animals,mesilane,bee,bee
+item_47,animals,orav,squirrel,squirrel
+item_48,animals,part,duck,duck
+item_49,animals,pingviin,penguin,penguin
+item_50,animals,põder,elk,moose
+item_51,animals,putukas,bug,bug
+item_52,animals,rebane,fox,fox
+item_53,animals,sebra,zebra,zebra
+item_54,animals,siga,pig,pig
+item_55,animals,sipelgas,ant,ant
+item_56,animals,tibu,chick,chick
+item_57,animals,tigu,snail,snail
+item_58,animals,tiiger,tiger,tiger
+item_59,animals,toonekurg,stork,stork
+item_60,animals,tuvi,pigeon,pigeon
+item_61,animals,uss,worm,worm
+item_62,animals,öökull,owl,owl
+item_63,vehicles,auto,car,car
+item_64,vehicles,buss,bus,bus
+item_65,vehicles,helikopter,helicopter,helicopter
+item_66,vehicles,jalgratas,bike,bicycle
+item_67,vehicles,kelk,sledge,sled
+item_68,vehicles,käru,cart,cart
+item_69,vehicles,laev,ship,ship
+item_70,vehicles,lennuk,plane,airplane
+item_71,vehicles,mootorratas,motorbike,motorcycle
+item_72,vehicles,paat,boat,boat
+item_73,vehicles,rong,train,train
+item_74,vehicles,traktor,tractor,tractor
+item_75,vehicles,tuletõrjeauto,firetruck,firetruck
+item_76,vehicles,veoauto,truck,truck
+item_77,toys,jutt,story,story
+item_78,toys,kingitus,gift,present
+item_79,toys,klots,block,block
+item_80,toys,kriit,chalk,chalk
+item_81,toys,kõrra,rattle,
+item_82,toys,liim,glue,glue
+item_83,toys,mäng,game,game
+item_84,toys,lelu,toy (object),toy (object)
+item_85,toys,nukk,doll,doll
+item_86,toys,pall,ball,ball
+item_87,toys,pastakas,penguin,penguin
+item_88,toys,plastiliin,plasticine,play dough
+item_89,toys,pliiats,pencil,pencil
+item_90,toys,pusle,puzzle,puzzle
+item_91,toys,raamat,book,book
+item_92,toys,seebimull,bubble,bubbles
+item_93,toys,tops,cup,cup
+item_94,toys,vildikas,felt-tip pen,pen
+item_95,toys,õhupall,balloon,balloon
+item_96,clothing,aluspesu,underwear,underpants
+item_97,clothing,jakk,jacket,jacket
+item_98,clothing,jope,coat,coat
+item_99,clothing,kaelakee,necklace,necklace
+item_100,clothing,kampsun,sweater,sweater
+item_101,clothing,kindad,gloves,gloves
+item_102,clothing,kingad,shoes,shoe
+item_103,clothing,kleit,dress (object),dress (object)
+item_104,clothing,kombekas,coveralls,overalls
+item_105,clothing,lukk,zipper,zipper
+item_106,clothing,mantel,overcoat,coat
+item_107,clothing,mähe,diaper,diaper
+item_108,clothing,müts,hat,hat
+item_109,clothing,nööp,button,button
+item_110,clothing,paelad,laces,shoelace
+item_111,clothing,pidzaama,pyjamas,pajamas
+item_112,clothing,pluus,blouse,blouse
+item_113,clothing,pudipõll,bib,bib
+item_114,clothing,püksid,trousers,pants
+item_115,clothing,saapad,boot,boot
+item_116,clothing,sall,scarf,scarf
+item_117,clothing,seelik,skirt,skirt
+item_118,clothing,sokid,socks,sock
+item_119,clothing,sukad,hose,hose
+item_120,clothing,sussid,slippers,slipper
+item_121,clothing,särk,shirt,shirt
+item_122,clothing,teksad,jeans,jeans
+item_123,clothing,tossud,sneakers,sneakers
+item_124,clothing,vöö,belt,belt
+item_125,clothing,öösärk,t-shirt,t-shirt
+item_126,people,arst,doctor,doctor
+item_127,people,ema,mommy,mommy
+item_128,people,hoidja,carer,
+item_129,people,inimene,person,person
+item_130,people,isa,daddy,daddy
+item_131,people,kasvataja,educator,
+item_132,people,kloun,clown,clown
+item_133,people,laps,child,child
+item_134,people,lapse_enda_nimi,child's own name,child's own name
+item_135,people,mees,man,man
+item_136,people,naine,woman,woman
+item_137,people,onu,uncle,uncle
+item_138,people,poiss,boy,boy
+item_139,people,politseinik,police officer,police
+item_140,people,sõber,friend,friend
+item_141,people,tita,baby,baby
+item_142,people,tädi,aunt,aunt
+item_143,people,tüdruk,girl,girl
+item_144,people,vanaema,grandmother,grandma
+item_145,people,vanaisa,grandfather,grandpa
+item_146,people,vend,brother,brother
+item_147,people,õde,sister,sister
+item_148,people,õpetaja,teacher,teacher
+item_149,food_drink,apelsin,orange,orange
+item_150,food_drink,arbuus,watermelon,watermelon
+item_151,food_drink,banaan,banana,banana
+item_152,food_drink,hamburger,hamburger,hamburger
+item_153,food_drink,herned,peas,peas
+item_154,food_drink,jogurt,yogurt,yogurt
+item_155,food_drink,jook,drink (beverage),drink (beverage)
+item_156,food_drink,juust,cheese,cheese
+item_157,food_drink,jäätis,ice cream,ice cream
+item_158,food_drink,kala0,fish (food),fish (food)
+item_159,food_drink,kana0,chicken (food),chicken (food)
+item_160,food_drink,kartul,potato,potato
+item_161,food_drink,kaste,sauce,sauce
+item_162,food_drink,kissel,dessert cream,
+item_163,food_drink,kirss,cherry,cherry
+item_164,food_drink,kohuke,curd dessert,
+item_165,food_drink,kohv,coffee,coffee
+item_166,food_drink,komm,candy,candy
+item_167,food_drink,kook,pie,pie
+item_168,food_drink,kotlet,cutlet,cutlet
+item_169,food_drink,kreem,cream,cream
+item_170,food_drink,krõpsud,chips,chips
+item_171,food_drink,kurk,cucumber,cucumber
+item_172,food_drink,küpsis,cookie,cookie
+item_173,food_drink,leib,black bread,bread
+item_174,food_drink,liha,meat,meat
+item_175,food_drink,limonaad,lemonade,lemonade
+item_176,food_drink,lutipudel,bottle,bottle
+item_177,food_drink,maasikad,strawberries,strawberry
+item_178,food_drink,mahl,juice,juice
+item_179,food_drink,maisihelbed,cornflakes,cereal
+item_180,food_drink,makaronid,pasta,pasta
+item_181,food_drink,marjad,berries,berry
+item_182,food_drink,moos,jam,jam
+item_183,food_drink,morss,berry juice,juice
+item_184,food_drink,muna,egg,egg
+item_185,food_drink,mustikad,blueberries,blueberry
+item_186,food_drink,müsli,muesli,cereal
+item_187,food_drink,näts,chewing gum,chewing gum
+item_188,food_drink,oad,beans,beans
+item_189,food_drink,pannkook,pancake,pancake
+item_190,food_drink,piim,milk,milk
+item_191,food_drink,pirukas,pastry,pastry
+item_192,food_drink,pitsa,pizza,pizza
+item_193,food_drink,porgand,carrot,carrot
+item_194,food_drink,puder,porridge,porridge
+item_195,food_drink,puding,pudding,pudding
+item_196,food_drink,pähklid,nuts,nut
+item_197,food_drink,püree,puree,puree
+item_198,food_drink,rinnapiim,breast milk,milk
+item_199,food_drink,riis,rice,rice
+item_200,food_drink,rosin,raisin,raisin
+item_201,food_drink,sai,bread,bread
+item_202,food_drink,salat,salad,salad
+item_203,food_drink,sepik,whole wheat bread,bread
+item_204,food_drink,sool,salt,salt
+item_205,food_drink,suhkur,sugar,sugar
+item_206,food_drink,supp,soup,soup
+item_207,food_drink,söök,food,food
+item_208,food_drink,sokolaad,chocolate,chocolate
+item_209,food_drink,tee,teacher,teacher
+item_210,food_drink,tomat,tomato,tomato
+item_211,food_drink,tort,cake,cake
+item_212,food_drink,vesi,water (beverage),water (beverage)
+item_213,food_drink,viinamarjad,grapes,grapes
+item_214,food_drink,vorst,sausage,sausage
+item_215,food_drink,või,butter,butter
+item_216,food_drink,võileib,sandwich,sandwich
+item_217,food_drink,õun,apple,apple
+item_218,body_parts,hammas,tooth,tooth
+item_219,body_parts,häbe,vagina,vagina
+item_220,body_parts,istmik,buttocks,butt
+item_221,body_parts,jalg,leg,leg
+item_222,body_parts,juuksed,hair,hair
+item_223,body_parts,kael,neck,neck
+item_224,body_parts,keel,tongue,tongue
+item_225,body_parts,kõht,stomach,stomach
+item_226,body_parts,kõrv,ear,ear
+item_227,body_parts,käsi,hand,hand
+item_228,body_parts,lõug,chin,chin
+item_229,body_parts,naba,belly button,belly button
+item_230,body_parts,nina,nose,nose
+item_231,body_parts,nägu,face,face
+item_232,body_parts,pea,head,head
+item_233,body_parts,peenis,penis,penis
+item_234,body_parts,põlv,knee,knee
+item_235,body_parts,põsk,cheek,cheek
+item_236,body_parts,pöial,thumb,thumb
+item_237,body_parts,rind,breast,breast
+item_238,body_parts,selg,back,back
+item_239,body_parts,silm,eye,eye
+item_240,body_parts,suu,mouth,mouth
+item_241,body_parts,sõrm,finger,finger
+item_242,body_parts,varvas,toe,toe
+item_243,body_parts,õlg,shoulder,shoulder
+item_244,furniture_rooms,ahi,stove,stove
+item_245,furniture_rooms,aken,window,window
+item_246,furniture_rooms,arvuti,computer,computer
+item_247,furniture_rooms,diivan,couch,couch
+item_248,furniture_rooms,duss,shower,shower
+item_249,furniture_rooms,elutuba,living room,living room
+item_250,furniture_rooms,esik,entryway,
+item_251,furniture_rooms,garaaz,garage,garage
+item_252,furniture_rooms,kapp,cupboard,cupboard
+item_253,furniture_rooms,kelder,cellar,cellar
+item_254,furniture_rooms,koridor,corridor,corridor
+item_255,furniture_rooms,köök,kitchen,kitchen
+item_256,furniture_rooms,külmkapp,fridge,refrigerator
+item_257,furniture_rooms,laud,table,table
+item_258,furniture_rooms,magamistuba,bedroom,bedroom
+item_259,furniture_rooms,peegel,mirror,mirror
+item_260,furniture_rooms,pesumasin,washing machine,washing machine
+item_261,furniture_rooms,pink,stool,stool
+item_262,furniture_rooms,pliit,cooker,cooker
+item_263,furniture_rooms,raadio,radio,radio
+item_264,furniture_rooms,riiul,shelf,shelf
+item_265,furniture_rooms,sahtel,drawer,drawer
+item_266,furniture_rooms,saun,sauna,sauna
+item_267,furniture_rooms,söögitool,dining chair,baby chair
+item_268,furniture_rooms,televiisor,TV,TV
+item_269,furniture_rooms,tool,chair,chair
+item_270,furniture_rooms,trepp,staircase,stairs
+item_271,furniture_rooms,tualett,toilet,toilet
+item_272,furniture_rooms,uks,door,door
+item_273,furniture_rooms,kraanikauss,sink,sink
+item_274,furniture_rooms,vann,bath,bath
+item_275,furniture_rooms,vannituba,bathroom,bathroom
+item_276,furniture_rooms,voodi,bedroom,bedroom
+item_277,furniture_rooms,võrevoodi,cot,cot
+item_278,time_words,eile,yesterday,yesterday
+item_279,time_words,enne,before,before
+item_280,time_words,hilja,late,late
+item_281,time_words,homme,tomorrow,tomorrow
+item_282,time_words,hommik,morning,morning
+item_283,time_words,juba,already,already
+item_284,time_words,kohe,immediately,immediately
+item_285,time_words,nüüd,now,now
+item_286,time_words,praegu,currently,
+item_287,time_words,päev,day,day
+item_288,time_words,pärast,later,later
+item_289,time_words,täna,today,today
+item_290,time_words,vara,early,early
+item_291,time_words,õhtu,evening,evening
+item_292,time_words,öö,night,night
+item_293,household,fotokas,camera,camera
+item_294,household,haamer,hammer,hammer
+item_295,household,hambahari,toothbrush,toothbrush
+item_296,household,hari,brush,brush (object)
+item_297,household,kahvel,fork,fork
+item_298,household,kamm,hairbrush,brush (object)
+item_299,household,karp,case,
+item_300,household,kast,box,box
+item_301,household,kauss,bowl,bowl
+item_302,household,kell,clock,clock
+item_303,household,klaas,glass,glass
+item_304,household,korv,basket,basket
+item_305,household,kott,bag,bag
+item_306,household,käekell,wristwatch,watch
+item_307,household,käärid,scissors,scissors
+item_308,household,lamp,lamp,lamp
+item_309,household,lill,plant,plant
+item_310,household,lina,bedsheet,sheet
+item_311,household,lusikas,spoon,spoon
+item_312,household,nael,nail,nail
+item_313,household,nuga,knife,knife
+item_314,household,nõud,dishes,dish
+item_315,household,paber,paper,paper
+item_316,household,padi,pillow,pillow
+item_317,household,pilt,picture,picture
+item_318,household,pissipott,pee pot,
+item_319,household,keedupott,pot,pot
+item_320,household,prillid,glasses,glasses
+item_321,household,prügi,trash,trash
+item_322,household,pudel,bottle,bottle
+item_323,household,purk,jar,jar
+item_324,household,raha,money,money
+item_325,household,rahakott,wallet,wallet
+item_326,household,ravim,medicine,medicine
+item_327,household,rätik,towel,towel
+item_328,household,seep,soap,soap
+item_329,household,sent,coin,coin
+item_330,household,taldrik,plate,plate
+item_331,household,taskurätt,handkerchief,handkerchief
+item_332,household,tass,mug,mug
+item_333,household,teip,tape,tape
+item_334,household,tekk,blanket,blanket
+item_335,household,tolmuimeja,vacuum,vacuum
+item_336,household,tolmulapp,dust cloth,cloth
+item_337,household,tuli,fire,fire
+item_338,household,vaip,carpet,carpet
+item_339,household,vitamiin,vitamin,vitamin
+item_340,household,võtmed,keys,keys
+item_341,household,pang,bucket,bucket
+item_342,outside,aed,garden,garden
+item_343,outside,auk,hole,hole
+item_344,outside,bassein,pool,pool
+item_345,outside,jõgi,river,river
+item_346,outside,katus,roof,roof
+item_347,outside,kepp,stick,stick
+item_348,outside,kiik,swing,swing
+item_349,outside,kivi,stone,stone
+item_350,outside,kraav,ditch,ditch
+item_351,outside,kuu,moon,moon
+item_352,outside,kõnnitee,path,path
+item_353,outside,kühvel,shovel,shovel
+item_354,outside,labidas,spade,spade
+item_355,outside,liivakast,sandbox,sandbox
+item_356,outside,lill0,flower,flower
+item_357,outside,lipp,flag,flag
+item_358,outside,lomp,puddle,puddle
+item_359,outside,lumememm,snowman,snowman
+item_360,outside,lumi,snow,snow
+item_361,outside,maja,house,house
+item_362,outside,muru,grass,grass
+item_363,outside,muruniiduk,lawn mower,lawn mower
+item_364,outside,pilv,cloud,cloud
+item_365,outside,puu,tree,tree
+item_366,outside,päike,sun,sun
+item_367,outside,redel,ladder,ladder
+item_368,outside,taevas,sky,sky
+item_369,outside,tuul,wind,wind
+item_370,outside,täht,star,star
+item_371,outside,tänav,street,street
+item_372,outside,vesi0,water (not beverage),water (not beverage)
+item_373,outside,vihm,rain,rain
+item_374,places,bensiinijaam,gas station,gas station
+item_375,places,hoov,yard,yard
+item_376,places,kino,cinema,movie
+item_377,places,kirik,church,church
+item_378,places,kodu,home,home
+item_379,places,kool,school,school
+item_380,places,külaskäik,visit,
+item_381,places,lasteaed,kindergarten,kindergarten
+item_382,places,linn,town,town
+item_383,places,loomaaed,zoo,zoo
+item_384,places,maa,countryside,country
+item_385,places,matk,hike,
+item_386,places,mets,forest,forest
+item_387,places,mänguväljak,playground,playground
+item_388,places,park,park,park
+item_389,places,pidu,party,party
+item_390,places,piknik,picnic,picnic
+item_391,places,pood,shop,shop
+item_392,places,rand,beach,beach
+item_393,places,talu,farm,farm
+item_394,places,töö,work (place),work (place)
+item_395,places,õu,courtyard,yard
+item_396,games_routines,aitäh,thank you,thank you
+item_397,games_routines,anna,give (me),give me
+item_398,games_routines,dadaa,bye-bye,bye
+item_399,games_routines,ei,no,no
+item_400,games_routines,halloo,hello (phone),hello
+item_401,games_routines,head_ööd,good night,good night
+item_402,games_routines,jah,yes,yes
+item_403,games_routines,kuss,shh,shh
+item_404,games_routines,kuts_läks_karja,doggy went to field,
+item_405,games_routines,lõunauinak,nap,nap
+item_406,games_routines,lähme_poodi,let's go to the shop,
+item_407,games_routines,lähme_sööma,let's eat,
+item_408,games_routines,löö_patsi,high five,high five
+item_409,games_routines,nii_suur,so big,so big
+item_410,games_routines,oota,wait,wait
+item_411,games_routines,palun,please,please
+item_412,games_routines,patsu_patsu_kooki,patty cake,pattycake
+item_413,games_routines,peitus,hide and seek,hide and seek
+item_414,games_routines,potile,on the potty,
+item_415,games_routines,tahan_juua,I want to drink,
+item_416,games_routines,tahan_süüa,I want to eat,
+item_417,games_routines,tahan_sülle,I want to be carried,
+item_418,games_routines,kull,play a game,
+item_419,games_routines,tere,hello (greeting),hello
+item_420,games_routines,vannisk_ik,bathtime,
+item_421,games_routines,võimlemine,exercising,
+item_422,games_routines,ära_tee,do not,don't
+item_423,action_words,aitama,help,help
+item_424,action_words,andma,give,give
+item_425,action_words,ehitama,build,build
+item_426,action_words,hakkama,begin,begin
+item_427,action_words,hammustama,bite,bite
+item_428,action_words,hoidma,hold,hold
+item_429,action_words,hüppama,jump,jump
+item_430,action_words,istuma,sit,sit
+item_431,action_words,jalutama,stroll,
+item_432,action_words,jooksma,run,run
+item_433,action_words,jooma,drink (action),drink (action)
+item_434,action_words,joonistama,draw,draw
+item_435,action_words,juhtima,drive,drive
+item_436,action_words,jääma,stay,stay
+item_437,action_words,kallistama,hug,hug
+item_438,action_words,kartma,fear,fear
+item_439,action_words,katsuma,touch,touch
+item_440,action_words,keetma,boil,boil
+item_441,action_words,kiikuma,swing (action),swing (action)
+item_442,action_words,kiirustama,hurry,hurry
+item_443,action_words,kirjutama,write,write
+item_444,action_words,koputama,knock,knock
+item_445,action_words,koristama,clean (action),clean (action)
+item_446,action_words,kuivatama,dry (action),dry (action)
+item_447,action_words,kukkuma,fall,fall
+item_448,action_words,kuulma,hear,hear
+item_449,action_words,kõdistama,tickle,tickle
+item_450,action_words,käima,walk,walk
+item_451,action_words,laulma,sing,sing
+item_452,action_words,leidma,find,find
+item_453,action_words,limpsima,lick,lick
+item_454,action_words,lubama,promise,promise
+item_455,action_words,lugema,read,read
+item_456,action_words,lõhkuma,break,break
+item_457,action_words,lõikama,cut (action),cut (action)
+item_458,action_words,lõpetama,finish,finish
+item_459,action_words,lööma,hit,hit
+item_460,action_words,lükkama,push,push
+item_461,action_words,magama,sleep,sleep
+item_462,action_words,maitsema,taste,taste
+item_463,action_words,meeldima,like,like
+item_464,action_words,minema,go,go
+item_465,action_words,musitama,kiss,kiss
+item_466,action_words,mängima,play,play
+item_467,action_words,nutma,cry,cry
+item_468,action_words,nägema,see,see
+item_469,action_words,näitama,show,show
+item_470,action_words,olema,begin,begin
+item_471,action_words,ostma,buy,buy
+item_472,action_words,pai_tegema,caress,caress
+item_473,action_words,panema,put,put
+item_474,action_words,parandama,fix,fix
+item_475,action_words,pesema,wash,wash
+item_476,action_words,pidama,keep,keep
+item_477,action_words,plaksutama,clap,clap
+item_478,action_words,pritsima,spray,spray
+item_479,action_words,puhastama,clean (action),clean (action)
+item_480,action_words,puhuma,blow,blow
+item_481,action_words,pühkima,wipe,wipe
+item_482,action_words,püüdma,catch,catch
+item_483,action_words,ronima,climb,climb
+item_484,action_words,rääkima,talk,talk
+item_485,action_words,saama,get,get
+item_486,action_words,kinni_panema,shut down,
+item_487,action_words,sõitma,drive,drive
+item_488,action_words,sööma,eat,eat
+item_489,action_words,tahtma,want,want
+item_490,action_words,tantsima,dance,dance
+item_491,action_words,tegema,make,make
+item_492,action_words,tohtima,be allowed to,
+item_493,action_words,toitma,feed,feed
+item_494,action_words,tooma,bring,bring
+item_495,action_words,tulema,come,come
+item_496,action_words,töötama,work (action),work (action)
+item_497,action_words,tõmbama,pull,pull
+item_498,action_words,ujuma,swim,swim
+item_499,action_words,vaatama,watch (action),watch (action)
+item_500,action_words,valama,pour,pour
+item_501,action_words,võima,be able to,
+item_502,action_words,võtma,take,take
+item_503,action_words,värvima,color (action),color (action)
+item_504,action_words,ütlema,say,say
+item_505,locations,all_v,below,below
+item_506,locations,alla,under,under
+item_507,locations,juures,by,by
+item_508,locations,koos,with,with
+item_509,locations,kõrval,next to,next to
+item_510,locations,maas,on the ground,
+item_511,locations,maha,to the ground,
+item_512,locations,peal,on top,on top
+item_513,locations,peale,onto,
+item_514,locations,seal,there,there
+item_515,locations,sees,inside,inside
+item_516,locations,siin,here,here
+item_517,locations,sinna,there,there
+item_518,locations,sisse,in there,
+item_519,locations,taga,behind,behind
+item_520,locations,tagasi,back,back
+item_521,locations,välja,out,out
+item_522,locations,väljas,outside,outside
+item_523,locations,ära,away,away
+item_524,locations,ääres,beside,beside
+item_525,locations,üle,over,over
+item_526,locations,üles,up,up
+item_527,locations,üleval,above,above
+item_528,locations,ümber,around,around
+item_529,question_words,kes,who,who
+item_530,question_words,kuidas,how,how
+item_531,question_words,kus,where (question),where (question)
+item_532,question_words,mida,what,what
+item_533,question_words,miks,why,why
+item_534,question_words,millal,when (question),when (question)
+item_535,question_words,mis,what,what
+item_536,connecting_words,ja,and,and
+item_537,connecting_words,sest,because,because
+item_538,connecting_words,aga,but,but
+item_539,connecting_words,kui,when (conjunction),when (conjunction)
+item_540,connecting_words,siis,then,then
+item_541,connecting_words,nii,so,so
+item_542,connecting_words,et,so as to,so
+item_543,connecting_words,või0,or,or
+item_544,quantifiers,iga,each,each
+item_545,quantifiers,kõik,all,all
+item_546,quantifiers,mitte_ühtegi,none,none
+item_547,quantifiers,mõned,some,some
+item_548,quantifiers,sama,same,same
+item_549,quantifiers,palju,many,many
+item_550,quantifiers,teine,second (quantifier),
+item_551,quantifiers,veel,more,more
+item_552,quantifiers,vks,one,one
+item_553,descriptive_words,armas,darling,
+item_554,descriptive_words,esimene,first,first
+item_555,descriptive_words,ettevaatlikult,careful,careful
+item_556,descriptive_words,haige,ill,sick
+item_557,descriptive_words,hapu,sour,sour
+item_558,descriptive_words,halb,bad,bad
+item_559,descriptive_words,hea,good,good
+item_560,descriptive_words,hirmus,scary,scary
+item_561,descriptive_words,hästi,good,good
+item_562,descriptive_words,ilus,beautiful,beautiful
+item_563,descriptive_words,janune,thirsty,thirsty
+item_564,descriptive_words,kadunud,lost,lost
+item_565,descriptive_words,katki,broken,broken
+item_566,descriptive_words,kena,nice,nice
+item_567,descriptive_words,kibe,bitter,bitter
+item_568,descriptive_words,kiire,fast,fast
+item_569,descriptive_words,kinni,closed,closed
+item_570,descriptive_words,kleepuv,sticky,sticky
+item_571,descriptive_words,kollane,yellow,yellow
+item_572,descriptive_words,kuiv,dry (description),dry (description)
+item_573,descriptive_words,kurb,sad,sad
+item_574,descriptive_words,kuri,mad,mad
+item_575,descriptive_words,kuum,hot,hot
+item_576,descriptive_words,kõrge,high,high
+item_577,descriptive_words,kõva,hard,hard
+item_578,descriptive_words,külm,cold,cold
+item_579,descriptive_words,lahti,open (description),open (description)
+item_580,descriptive_words,maitsev,tasty,tasty
+item_581,descriptive_words,räpane,dirty,dirty
+item_582,descriptive_words,must,black,black
+item_583,descriptive_words,märg,wet (description),wet (description)
+item_584,descriptive_words,näljane,hungry,hungry
+item_585,descriptive_words,oranz,orange (description),orange (description)
+item_586,descriptive_words,otsas,finished,finished
+item_587,descriptive_words,paha,bad,bad
+item_588,descriptive_words,pahane,displeased,
+item_589,descriptive_words,palav,hot,hot
+item_590,descriptive_words,parem,right (description),
+item_591,descriptive_words,pehme,soft,soft
+item_592,descriptive_words,pikk,tall,tall
+item_593,descriptive_words,pime,dark,dark
+item_594,descriptive_words,pruun,brown,brown
+item_595,descriptive_words,puhas,clean (description),clean (description)
+item_596,descriptive_words,punane,red,red
+item_597,descriptive_words,raske,heavy,heavy
+item_598,descriptive_words,roheline,green,green
+item_599,descriptive_words,rõõmus,happy,happy
+item_600,descriptive_words,sinine,blue,blue
+item_601,descriptive_words,soe,warm,warm
+item_602,descriptive_words,suur,big,big
+item_603,descriptive_words,tilluke,tiny,tiny
+item_604,descriptive_words,tore,fun,fun
+item_605,descriptive_words,tubli,fine,fine
+item_606,descriptive_words,tuuline,windy,windy
+item_607,descriptive_words,täis,full,full
+item_608,descriptive_words,tühi,empty (description),empty
+item_609,descriptive_words,unine,sleepy,sleepy
+item_610,descriptive_words,uus,new,new
+item_611,descriptive_words,vaikne,quiet,quiet
+item_612,descriptive_words,valge,white,white
+item_613,descriptive_words,valjusti,loud,loud
+item_614,descriptive_words,valus,painful,painful
+item_615,descriptive_words,vana,old,old
+item_616,descriptive_words,viimane,last,last
+item_617,descriptive_words,väike,small,small
+item_618,descriptive_words,väsinud,tired,tired
+item_619,descriptive_words,ärkvel,awake,awake
+item_620,pronouns,ise,self,self
+item_621,pronouns,meie,we,1PL
+item_622,pronouns,mina,me,1SG
+item_623,pronouns,minu,mine,1SG
+item_624,pronouns,mulle,to me,1SG
+item_625,pronouns,nemad,they,3PL
+item_626,pronouns,oma,mine,1SG.POSS
+item_627,pronouns,see,this,this
+item_628,pronouns,sina,you,2SG
+item_629,pronouns,sinu,your,2SG.POSS
+item_630,pronouns,teie,you,2PL
+item_631,pronouns,tema,her/him,3SG
+item_632,,usepast,,
+item_633,,usefuture,,
+item_634,,miss_produce,,
+item_635,,miss_comp,,
+item_636,,usepossessive,,
+item_637,,morph_plural,,
+item_638,,morph_loc,,
+item_639,,morph_past,,
+item_640,,morph_com,,
+item_641,,kas_teeb_lauseid,,
+item_642,,Kaks käsi / Kaks kätt,,
+item_643,,_Õde nukk / Õe nukk,,
+item_644,,Mina torni / Mina teen torni,,
+item_645,,Tita kurb / Tita on kurb,,
+item_646,,Minu auto / See on minu auto,,
+item_647,,Kutsa seal / Kutsa on laua peal,,
+item_648,,Tita süüa / Tita tahab süüa,,
+item_649,,Kus emme? / Kuhu emme läks?,,
+item_650,,Ei oska / Ma ei oska seda teha,,
+item_651,,Kohv kuum / See kohv on kuum,,
+item_652,,Ei taha vanni / Ma ei taha vanni minna,,
+item_653,,Kutsa musi / Kutsa tegi mulle musi,,
+item_654,,Tee terveks? Kas sa teed terveks?,,
+item_655,,(Teie lapse nimi) ka tahab piima / Mina ka tahan piima,,
+item_656,,Ära loe juttu! / Ära loe mulle seda juttu!,,
+item_657,,"Kassile süüa, juua! / Mina annan kassile süüa ja juua",,
+item_658,,Tahan veel vaadata / Tahan veel seda raamatut vaadata,,
+item_659,,Kus mu auto on? / Kus mu punane veoauto on?,,
+item_660,,See on tibu ja teine tibu / Need on kaks tibu,,
+item_661,,Tahan veel mängida / Tahan veel oma nukuga mängida,,
+item_662,,Pane tuli põlema / Pane tuli põlema et ma näeksin,,
+item_663,,Me tegime selle / Mina ja Paul tegime selle,,
+item_664,,Tädi tuleb punasega autoga / Tädi tuleb punase autoga,,
+item_665,,"Vaata, minu kiisu see! / Vaata, milline kiisu mul on!",,
+item_666,,Ma võtan selle raamatu ja siis selle / Ma võtan need raamatud,,
+item_667,,Mina loen ja emme loeb / Meie emmega loeme,,
+item_668,,"Tita nutab, tita on kurb / Tita nurab, sest ta on kurb",,
+item_669,,"Emme, vaata, ma sõidan / Emme, vaata, kuidas ma rattaga sõidan",,
+item_670,,"Tädi kallab mahla, ta kallab tassi / Tädi kallab mahla, tassi",,
+item_671,,Voodi alt otsin mina palli / Ma otsin palli voodi alt,,
+item_672,,Kas ei lähe tüdruk õue? / Kas tüdruk ei lähe õue?,,
+item_673,,Need on minu püksid / Need on minu uued sinised püksid,,
+item_674,,Kass hüppas kapi peale / Kass hüppas laua pealt kapi peale,,
+item_675,,"Emme on köögis, emme peseb nõusid / Emme peseb köögis nõusid",,
+item_676,,"Auto on katki, tuleb parandada / Kui auto on katki, siis tuleb parandada",,

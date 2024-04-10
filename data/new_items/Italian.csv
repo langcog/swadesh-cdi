@@ -1,0 +1,716 @@
+WS,WG,category,definition,gloss,uni_lemma
+item_1,item_161,body_parts,organo genitale femminile,vagina,vagina
+item_2,item_160,body_parts,orecchio,ear,ear
+item_3,item_159,body_parts,ombelico,bellybutton,belly button
+item_4,item_158,body_parts,occhio,eye,eye
+item_5,item_157,body_parts,naso,nose,nose
+item_6,item_156,body_parts,mano,hand,hand
+item_7,item_155,body_parts,lingua,tongue,tongue
+item_8,,body_parts,labbra,lips,lip
+item_9,,body_parts,guance,cheek,cheek
+item_10,,body_parts,gola,throat,throat
+item_11,,body_parts,ginocchi,knee,knee
+item_12,item_154,body_parts,gambe,leg,leg
+item_13,item_153,body_parts,faccia,face,face
+item_14,item_152,body_parts,dito,finger,finger
+item_15,item_151,body_parts,denti,tooth,tooth
+item_16,,body_parts,caviglia,ankle,ankle
+item_17,item_150,body_parts,capelli,hair,hair
+item_18,item_149,body_parts,braccio,arm,arm
+item_19,item_148,body_parts,bocca,mouth,mouth
+item_20,item_147,clothing,vestito,dress,dress (object)
+item_21,item_146,clothing,tuta,tracksuit,tracksuit
+item_22,,clothing,stivali,boots,boot
+item_23,item_145,clothing,sciarpa,scarf,scarf
+item_24,item_144,clothing,scarpe,shoe,shoe
+item_25,item_143,clothing,pigiama,pajamas,pajamas
+item_26,,clothing,pantofole,slipper,slipper
+item_27,item_142,clothing,pantaloni,pants,pants
+item_28,item_141,clothing,pannolino,diaper,diaper
+item_29,item_140,clothing,occhiali,glasses,glasses
+item_30,item_139,clothing,mutande,underpants,underpants
+item_31,item_138,clothing,maglione,sweater,sweater
+item_32,,clothing,jeans,jeans,jeans
+item_33,item_137,clothing,guanti,gloves,glove
+item_34,,clothing,grembiule,pinafore,apron
+item_35,item_136,clothing,gonna,skirt,skirt
+item_36,item_135,clothing,giacca,jacket,jacket
+item_37,item_134,clothing,collana,necklace,necklace
+item_38,,clothing,cinta,belt,belt
+item_39,item_133,clothing,cappotto,coat,coat
+item_40,item_132,clothing,cappello,hat,hat
+item_41,,clothing,camicia,shirt,shirt
+item_42,,clothing,calzettoni,sock,sock
+item_43,item_131,clothing,calze,tights,tights
+item_44,,clothing,bretelle,suspenders,suspenders
+item_45,item_130,clothing,bottone,button,button
+item_46,,clothing,borsa,purse,purse
+item_47,,clothing,bavaglino,bib,bib
+item_48,,food_drink,zucchine,courgette,zucchini
+item_49,item_128,food_drink,zucchero,sugar,sugar
+item_50,item_127,food_drink,yogurt,yogurt,yogurt
+item_51,,food_drink,vino,wine,wine
+item_52,,food_drink,verdura,vegetable,vegetable
+item_53,item_126,food_drink,uva,grapes,grapes
+item_54,item_125,food_drink,uovo,egg,egg
+item_55,,food_drink,tortellini,tortellini,tortellini
+item_56,item_124,food_drink,torta,cake,cake
+item_57,,food_drink,tonno,tuna,tuna
+item_58,,food_drink,the,tea,tea
+item_59,item_123,food_drink,sugo,sauce,sauce
+item_60,,food_drink,succo di frutta,juice,juice
+item_61,,food_drink,spinaci,spinach,spinach
+item_62,,food_drink,spaghetti,spaghetti,spaghetti
+item_63,,food_drink,sale,salt,salt
+item_64,item_122,food_drink,riso,rice,rice
+item_65,,food_drink,pomodori,tomato,tomato
+item_66,item_121,food_drink,polpette,meat balls,meatball
+item_67,item_120,food_drink,pollo,chicken,chicken (food)
+item_68,,food_drink,pizza,pizza,pizza
+item_69,item_119,food_drink,piselli,peas,peas
+item_70,item_118,food_drink,pesca,peach,peach
+item_71,item_117,food_drink,pera,pear,pear
+item_72,,food_drink,patatine,potato chip,chips
+item_73,item_116,food_drink,patate,potato,potato
+item_74,item_115,food_drink,pasta,pasta,pasta
+item_75,item_114,food_drink,pappa,pap,baby food
+item_76,,food_drink,panna,cream,cream
+item_77,,food_drink,panino,sandwich,sandwich
+item_78,item_113,food_drink,pane,bread,bread
+item_79,,food_drink,olio,olive oil,oil
+item_80,,food_drink,noccioline,nuts,nut
+item_81,,food_drink,minestrone/brodo,soup,soup
+item_82,item_112,food_drink,miele,honey,honey
+item_83,,food_drink,melone,melon,melon
+item_84,item_111,food_drink,mela,apple,apple
+item_85,,food_drink,marmellata,jelly,jam
+item_86,,food_drink,mandarino,tangerine,tangerine
+item_87,,food_drink,leccalecca,lollipop,lollipop
+item_88,item_110,food_drink,latte,milk,milk
+item_89,,food_drink,kiwi,kiwi fruit,kiwi
+item_90,,food_drink,gomma da masticare,gum,gum
+item_91,,food_drink,ghiaccio,ice,ice
+item_92,item_109,food_drink,gelato,icecream,ice cream
+item_93,,food_drink,fragola,strawberry,strawberry
+item_94,item_108,food_drink,formaggio,cheese,cheese
+item_95,,food_drink,fagiolini,green beans,green beans
+item_96,,food_drink,fagioli,beans,beans
+item_97,,food_drink,crema,cream,cream
+item_98,item_107,food_drink,cracker,cracker,cracker
+item_99,,food_drink,cocomero/anguria,watermelon,watermelon
+item_100,,food_drink,coca cola,coke,soda
+item_101,item_106,food_drink,cioccolata,chocolate,chocolate
+item_102,,food_drink,ciliegie,cherry,cherry
+item_103,item_105,food_drink,carote,carrots,carrot
+item_104,item_104,food_drink,carne,meat,meat
+item_105,item_103,food_drink,caramella,candy,candy
+item_106,,food_drink,camomilla,chamomile tea,NA
+item_107,,food_drink,caffe,coffee,coffee
+item_108,,food_drink,cacao,cocoa,cocoa
+item_109,,food_drink,burro,butter,butter
+item_110,,food_drink,budino,pudding,pudding
+item_111,item_102,food_drink,biscotti,cookie,cookie
+item_112,item_101,food_drink,banana,banana,banana
+item_113,,food_drink,aranciata,orange juice,orange juice
+item_114,item_100,food_drink,arancia,orange,orange (food)
+item_115,item_99,food_drink,acqua,water,water (beverage)
+item_116,item_98,toys,trottola,spinning top,top
+item_117,,toys,pongo/Didò,play dogh,play dough
+item_118,,toys,tromba,trumpet,trumpet
+item_119,,toys,tamburo,drum,drum (object)
+item_120,,toys,soldatini,toy soldier,NA
+item_121,item_97,toys,secchiello,bucket,bucket
+item_122,,toys,pupazzi,puppet,puppet
+item_123,,toys,pistola,gun,gun
+item_124,,toys,palloncino,balloon,balloon
+item_125,item_95,toys,palla,ball,ball
+item_126,item_96,toys,paletta,spade,spade
+item_127,item_94,toys,giocattolo,toy,toy (object)
+item_128,item_93,toys,favola/storia,book/story,book
+item_129,item_92,toys,cubi,block,blocks
+item_130,,toys,costruzioni,building blocks,blocks
+item_131,,toys,casetta,playhouse,playhouse
+item_132,,toys,birilli,pin,NA
+item_133,item_91,toys,bambola,doll,doll
+item_134,item_90,vehicles,treno,train,train
+item_135,,vehicles,trattore,tractor,tractor
+item_136,,vehicles,slitta,sled,sled
+item_137,item_89,vehicles,passeggino,stroller,stroller
+item_138,item_88,vehicles,motocicletta,motorcycle,motorcycle
+item_139,,vehicles,jeep,jeep,jeep
+item_140,,vehicles,gru,crane,crane
+item_141,,vehicles,elicottero,helicopter,helicopter
+item_142,item_87,vehicles,camion,truck,truck
+item_143,item_86,vehicles,bicicletta,bicycle,bicycle
+item_144,item_85,vehicles,barca,boat,boat
+item_145,item_84,vehicles,automobile,car,car
+item_146,item_83,vehicles,autobus,bus,bus
+item_147,item_82,vehicles,aereo,airplane,airplane
+item_148,,animals,zebra,zebra,zebra
+item_149,item_81,animals,zanzara,mosquito,mosquito
+item_150,item_80,animals,uccellino,bird,bird
+item_151,item_79,animals,topo,mouse,mouse
+item_152,item_78,animals,tigre,tiger,tiger
+item_153,item_77,animals,tartaruga,turtle,turtle
+item_154,,animals,tacchino,turkey,turkey
+item_155,,animals,scoiattolo,squirrel,squirrel
+item_156,item_76,animals,scimmia,monkey,monkey
+item_157,item_75,animals,rana,frog,frog
+item_158,item_74,animals,pulcino,chick,chick
+item_159,item_73,animals,pinguino,penguin,penguin
+item_160,item_72,animals,pesciolino,fish,fish (animal)
+item_161,item_71,animals,pecora,sheep,sheep
+item_162,item_70,animals,papera,duck,duck
+item_163,item_69,animals,orso,bear,bear
+item_164,item_68,animals,oca,goose,goose
+item_165,item_67,animals,mucca,cow,cow
+item_166,item_66,animals,mosca,fly,fly (animal)
+item_167,item_65,animals,maiale,pig,pig
+item_168,item_64,animals,lupo,wolf,wolf
+item_169,item_63,animals,leone,lion,lion
+item_170,item_62,animals,ippopotamo,hippopotamus,hippopotamus
+item_171,,animals,gufo,owl,owl
+item_172,item_61,animals,giraffa,giraffe,giraffe
+item_173,item_60,animals,gatto,cat,cat
+item_174,item_59,animals,gallo,rooster,rooster
+item_175,item_58,animals,gallina,hen,hen
+item_176,item_57,animals,formica,ant,ant
+item_177,,animals,foca,seal,seal (animal)
+item_178,item_56,animals,farfalla,butterfly,butterfly
+item_179,item_55,animals,elefante,elephant,elephant
+item_180,,animals,cucciolo,puppy/kitty,NA
+item_181,item_54,animals,coniglio,bunny,bunny
+item_182,item_53,animals,coccodrillo,crocodile,crocodile
+item_183,item_52,animals,cerbiatto,fawn,fawn
+item_184,item_51,animals,cavallo,horse,horse
+item_185,item_50,animals,capra,goat,goat
+item_186,item_49,animals,cane,dog,dog
+item_187,item_48,animals,asino,donkey,donkey
+item_188,,animals,ape,bee,bee
+item_189,item_47,animals,animale,animal,animal
+item_190,item_46,animals,agnello,lamb,lamb
+item_191,item_45,sounds,tuttù,choo choo,choo choo
+item_192,item_43,sounds,muh,moo,moo
+item_193,item_41,sounds,grr,grr,grrr
+item_194,item_39,sounds,coccodè,cockadoodledoo,cockadoodledoo
+item_195,item_44,sounds,qua qua,quack quack,quack quack
+item_196,item_42,sounds,miao,meow,meow
+item_197,item_40,sounds,oh oh,uh oh,uh oh
+item_198,item_38,sounds,clop clop,,clip clop
+item_199,item_37,sounds,cip cip,tweet tweet,tweet tweet
+item_200,item_36,sounds,brum brum,vroom,vroom
+item_201,item_35,sounds,beh beh,baa baa,baa baa
+item_202,item_34,sounds,bau bau,woof woof,woof woof
+item_203,item_162,body_parts,organo genitale maschile,penis,penis
+item_204,item_163,body_parts,pancia,tummy,tummy
+item_205,item_164,body_parts,piede,feet,foot
+item_206,item_165,body_parts,sederino,buttocks,butt
+item_207,item_166,body_parts,seno,breast,breast
+item_208,,body_parts,spalla,shoulder,should
+item_209,item_167,body_parts,testa,head,head
+item_210,,body_parts,unghie,nail,nail (body part)
+item_211,,household,asciugamano,towel,towel
+item_212,,household,aspirapolvere,vacuum,vacuum
+item_213,item_192,household,biberon,baby,bottle
+item_214,item_193,household,bicchiere,glass,glass
+item_215,item_194,household,bottiglia,bottle,bottle
+item_216,,household,candeline,birthday candle,NA
+item_217,,household,cestino,basket,basket
+item_218,item_195,household,chiave,keys,key
+item_219,item_196,household,ciuccio,pacifier,pacifier
+item_220,,household,colori,crayons,crayon
+item_221,item_197,household,coltello,knife,knife
+item_222,item_198,household,coperchio,cover,cover (object)
+item_223,item_199,household,coperta,blanket,blanket
+item_224,item_200,household,cucchiaio,spoon,spoon
+item_225,item_201,household,cuscino,pillow,pillow
+item_226,,household,dentifricio,toothpaste,toothpaste
+item_227,,household,disegno,drawing,drawing
+item_228,item_202,household,fazzoletto,tissue/kleenex,tissue
+item_229,item_204,household,forbici,scissors,scissors
+item_230,item_205,household,forchetta,fork,fork
+item_231,,household,fotografia,picture,photo
+item_232,item_206,household,giornale,paper,paper
+item_233,item_207,household,luce,light,light (object)
+item_234,item_208,household,libro,book,book
+item_235,item_209,household,martello,hammer,hammer
+item_236,item_210,household,matita/penna,pencil/pen,pen/pencil
+item_237,,household,medicina,medicine,medicine
+item_238,item_211,household,musica,music,music
+item_239,item_212,household,ombrello,umbrella,umbrella
+item_240,item_213,household,orologio,clock,clock
+item_241,item_214,household,pentola,pot,pot
+item_242,item_215,household,pettine,comb,comb (object)
+item_243,item_216,household,pianta,plant,plant
+item_244,item_217,household,piatto,dish,dish
+item_245,,household,sacchetto,bag,bag
+item_246,item_218,household,sapone,soap,soap
+item_247,item_219,household,scatola,box,box
+item_248,item_220,household,scopa,broom,broom
+item_249,,household,secchio,bucket,bucket
+item_250,,household,shampoo,shampoo,shampoo
+item_251,item_221,household,soldi,money,money
+item_252,item_222,household,spazzolino da denti,toothbrush,toothbrush
+item_253,item_223,household,specchio,mirror,mirror
+item_254,,household,straccio,mop,mop (object)
+item_255,item_224,household,tappo,cap,cap
+item_256,item_225,household,tazza,cup,cup
+item_257,item_226,household,telefono,telephone,telephone
+item_258,,household,termometro,thermometer,thermometer
+item_259,,household,termosifone,radiator,radiator
+item_260,item_227,household,vasino,potty,potty
+item_261,item_168,furniture_rooms,armadio,closet,closet
+item_262,item_169,furniture_rooms,bagno,bathroom,bathroom
+item_263,item_170,furniture_rooms,bidè,bidet,bidet
+item_264,item_171,furniture_rooms,camera,room,room
+item_265,,furniture_rooms,cantina,basement,basement
+item_266,item_172,furniture_rooms,cassetto,drawer,drawer
+item_267,item_173,furniture_rooms,cucina,kitchen,kitchen
+item_268,item_174,furniture_rooms,culla,crib,crib
+item_269,item_175,furniture_rooms,divano,couch,couch
+item_270,item_176,furniture_rooms,doccia,shower,shower
+item_271,,furniture_rooms,ferro da stiro,iron,iron (object)
+item_272,item_177,furniture_rooms,finestra,window,window
+item_273,,furniture_rooms,fon,dryer,dryer
+item_274,,furniture_rooms,forno,oven,oven
+item_275,item_178,furniture_rooms,frigorifero,refrigerator,refrigerator
+item_276,item_179,furniture_rooms,lavandino,sink,sink
+item_277,item_180,furniture_rooms,lavatrice,washingmachine,washing machine
+item_278,item_181,furniture_rooms,letto,bed,bed
+item_279,,furniture_rooms,muro,wall,wall
+item_280,,furniture_rooms,poltrona,armchair,armchair
+item_281,item_182,furniture_rooms,porta,door,door
+item_282,,furniture_rooms,quadro,picture,painting
+item_283,,furniture_rooms,radio,radio,radio
+item_284,,furniture_rooms,registratore,tape recorder,NA
+item_285,item_183,furniture_rooms,salotto,livingroom,living room
+item_286,item_184,furniture_rooms,scala,stairs,stairs
+item_287,item_185,furniture_rooms,sedia,chair,chair
+item_288,item_186,furniture_rooms,seggiolone,highchair,high chair
+item_289,item_187,furniture_rooms,tappeto,carpet,carpet
+item_290,item_188,furniture_rooms,tavolo,table,table
+item_291,item_189,furniture_rooms,televisione/TV,TV,TV
+item_292,item_190,furniture_rooms,terrazza,porch,porch
+item_293,item_191,furniture_rooms,vasca da bagno,bathtub,bathtub
+item_294,item_228,outside,albero,tree,tree
+item_295,item_229,outside,altalena,swing,swing (object)
+item_296,item_230,outside,ascensore,elevator,elevator
+item_297,,outside,bandiera,flag,flag
+item_298,,outside,benzina,gasoline,gas
+item_299,,outside,campana,bell,bell
+item_300,item_234,outside,cielo,sky,sky
+item_301,,outside,erba,grass,grass
+item_302,item_235,outside,fiore,flower,flower
+item_303,,outside,foglia,leaf,leaf
+item_304,,outside,fontana,fountain,fountain
+item_305,,outside,fumo,smog,smoke
+item_306,item_236,outside,garage,garage,garage
+item_307,item_238,outside,luna,moon,moon
+item_308,,outside,nebbia,fog,fog
+item_309,item_242,outside,neve,snow,snow
+item_310,,outside,nuvola,cloud,cloud
+item_311,item_245,outside,pioggia,rain,rain
+item_312,,outside,piscina,pool,pool
+item_313,,outside,pompa,pump,pump (object)
+item_314,item_246,outside,prato,lawn,lawn
+item_315,item_247,outside,sasso,stone,stone
+item_316,item_248,outside,scivolo,slide,slide (object)
+item_317,item_249,outside,sole,sun,sun
+item_318,item_250,outside,stella,star,star
+item_319,item_251,outside,strada,street,street
+item_320,item_252,outside,terra,earth,soil
+item_321,,outside,tetto,roof,roof
+item_322,,outside,torre,tower,tower
+item_323,,outside,tubo,hose,hose
+item_324,item_253,outside,vento,wind,wind
+item_325,,places,asilo,kindergarten,kindergarten
+item_326,,places,bar,bar,bar
+item_327,,places,bosco,woods,forest
+item_328,,places,campagna,country,country
+item_329,,places,casa,house/home,house
+item_330,,places,chiesa,church,church
+item_331,,places,circo,circus,circus
+item_332,,places,città,downtown,city
+item_333,,places,festa,party,party
+item_334,,places,giardino,garden,garden
+item_335,,places,giostra,merry-go-round,carousel
+item_336,,places,lavoro,work,work (place)
+item_337,,places,mare,sea,sea
+item_338,,places,mercato,market,market
+item_339,,places,montagna,rock,mountain
+item_340,,places,negozio,store,store
+item_341,,places,ospedale,hospital,hospital
+item_342,,places,parco giochi,playground,playground
+item_343,,places,scuola,school,school
+item_344,,places,spiaggia,beach,beach
+item_345,,places,supermercato,supermarket,grocery
+item_346,,places,zoo,zoo,zoo
+item_347,,people,amico/a,friend,friend
+item_348,item_255,people,babysitter/tata,babysitter,babysitter
+item_349,,people,bambino/a,baby,baby
+item_350,item_256,people,barbiere,barber,barber
+item_351,,people,bimbi,children,child
+item_352,item_258,people,cugino/a,cousin,cousin
+item_353,,people,donna,woman,woman
+item_354,item_259,people,dottore,doctor,doctor
+item_355,item_260,people,fratello,brother,brother
+item_356,item_261,people,il suo nome,child,child's own name
+item_357,item_262,people,maestro/a,teacher,teacher
+item_358,item_263,people,mamma,mommy,mommy
+item_359,item_264,people,nonna,grandma,grandma
+item_360,item_265,people,nonno,grandpa,grandpa
+item_361,,people,panettiere,baker,baker
+item_362,item_266,people,papà,daddy,daddy
+item_363,item_267,people,parrucchiere,hairdresser,hairdresser
+item_364,,people,pediatra,pediatrician,NA
+item_365,item_268,people,persone,people,people
+item_366,,people,poliziotto,police,police
+item_367,,people,portiere,door keeper,doorman
+item_368,item_269,people,ragazzo/a,boy/girl,boy
+item_369,item_270,people,signore/a,sir/lady,sir
+item_370,,people,soldato,soldier,soldier
+item_371,item_271,people,sorella,sister,sister
+item_372,,people,uomo,man,man
+item_373,item_272,people,vigile,traffic officer,police
+item_374,item_273,people,zia,aunt,aunt
+item_375,item_274,people,zio,uncle,uncle
+item_376,,games_routines,auguri,wishes,NA
+item_377,item_275,games_routines,basta,cut it out,don't
+item_378,item_276,games_routines,bravo,good boy/girl,bravo
+item_379,item_277,games_routines,bua,,owie
+item_380,item_278,games_routines,bum (cade),,boom
+item_381,item_279,games_routines,buonanotte/buongiorno,nightnight/good morning,good night
+item_382,item_280,games_routines,ciao,hi,hi
+item_383,,games_routines,che rumore/chiasso,noise,NA
+item_384,,games_routines,cuccù settete,peekaboo,peekaboo
+item_385,item_282,games_routines,dare le tottò,to slap,NA
+item_386,item_283,games_routines,fare il bagno,bath,bath
+item_387,,games_routines,fare la pipì,go potty,go potty
+item_388,,games_routines,fare la popò,to poop,go potty
+item_389,,games_routines,giro-girotondo,turnaround,ring around the rosie
+item_390,item_285,games_routines,grazie/prego,thankyou,thank you
+item_391,item_286,games_routines,nanna,nap,nap
+item_392,item_287,games_routines,no,no,no
+item_393,,games_routines,non c'è più,no more,no more
+item_394,,games_routines,per favore/per piacere,please,please
+item_395,,games_routines,pronto/chi è?,hello,hello
+item_396,item_290,games_routines,sì,yes,yes
+item_397,,games_routines,un/due/tre,one two three,one two three
+item_398,item_292,games_routines,via,go,go-ahead
+item_399,,games_routines,voler bene,to love,NA
+item_400,item_293,games_routines,zitto/sch,shh/shush/hush,shh
+item_401,item_294,action_words,abbracciare,hug,hug
+item_402,item_295,action_words,accendere,light/switch on,turn on
+item_403,,action_words,acchiappare,catch,catch
+item_404,,action_words,aggiustare,fix,fix
+item_405,,action_words,aiutare,help,help
+item_406,item_296,action_words,alzarsi,stand,stand
+item_407,item_297,action_words,andare,go,go
+item_408,item_298,action_words,aprire,open,open (action)
+item_409,,action_words,arrampicarsi,climb,climb
+item_410,,action_words,asciugare,dry,dry (action)
+item_411,item_299,action_words,aspettare,wait,wait
+item_412,,action_words,aver fame,hungry,hungry
+item_413,,action_words,aver sete,thirsty,thirsty
+item_414,,action_words,aver sonno,sleepy,sleepy
+item_415,item_300,action_words,baciare,kiss,kiss
+item_416,item_301,action_words,ballare,dance,dance
+item_417,item_302,action_words,bere,drink,drink (action)
+item_418,,action_words,bussare,knock,knock
+item_419,item_303,action_words,buttare,dump,dump
+item_420,item_304,action_words,cadere,fall,fall
+item_421,item_305,action_words,camminare,walk,walk
+item_422,item_306,action_words,cantare,sing,sing
+item_423,item_307,action_words,cercare,seek,search
+item_424,item_308,action_words,chiudere,close,close
+item_425,,action_words,colorare,paint,paint (action)
+item_426,,action_words,comprare,buy,buy
+item_427,,action_words,conoscere,know,know
+item_428,,action_words,coprire,cover,cover (action)
+item_429,item_309,action_words,correre,run,run
+item_430,,action_words,costruire,build,build
+item_431,,action_words,cucinare,cook,cook
+item_432,item_310,action_words,cullare,rock,rock (action)
+item_433,item_311,action_words,dare,give,give
+item_434,,action_words,dare un calcio,kick,kick
+item_435,item_312,action_words,dire,say,say
+item_436,,action_words,disegnare,draw,draw
+item_437,item_313,action_words,dondolare,swing,swing (action)
+item_438,item_314,action_words,dormire,sleep,sleep
+item_439,,action_words,entrare,enter,enter
+item_440,item_315,action_words,fare,make,make
+item_441,item_316,action_words,fermarsi,stop,stop
+item_442,item_317,action_words,finire,finish,finish
+item_443,item_318,action_words,giocare,play,play
+item_444,item_319,action_words,girare,turn,turn
+item_445,,action_words,gridare/urlare,shout,shout
+item_446,,action_words,guardare,look,look
+item_447,,action_words,guidare,drive,drive
+item_448,,action_words,lanciare,throw,throw
+item_449,item_320,action_words,lavare,wash,wash
+item_450,,action_words,lavorare,work,work (action)
+item_451,item_321,action_words,leccare,lick,lick
+item_452,item_322,action_words,leggere,read,read
+item_453,item_323,action_words,levare/togliere,take off/remove,remove
+item_454,,action_words,litigare,fight,fight
+item_455,item_324,action_words,mangiare,eat,eat
+item_456,item_325,action_words,mettere,put,put
+item_457,item_326,action_words,mordere,bite,bite
+item_458,,action_words,nascondere/si,hide,hide
+item_459,,action_words,nuotare,swim,swim
+item_460,item_327,action_words,parlare,talk,talk
+item_461,,action_words,passeggiare,walk,walk
+item_462,item_328,action_words,pettinare,comb/brush,comb (action)
+item_463,,action_words,piacere,like,like
+item_464,item_329,action_words,piangere,cry,cry
+item_465,,action_words,portare,bring/carry,bring
+item_466,item_330,action_words,prendere,take,take
+item_467,,action_words,provare,taste,taste
+item_468,item_331,action_words,pulire,clean,clean (action)
+item_469,,action_words,raccontare,tell,tell
+item_470,,action_words,regalare,give present,give
+item_471,,action_words,restare,remain,stay
+item_472,item_332,action_words,ridere,smile,laugh
+item_473,,action_words,rispondere,answer,answer
+item_474,item_333,action_words,rompere,break,break
+item_475,,action_words,rovesciare,spill,spill
+item_476,item_334,action_words,saltare,jump,jump
+item_477,item_335,action_words,salutare,greet,greet
+item_478,,action_words,sbrigarsi,hurry,hurry
+item_479,,action_words,scappare,bolt,escape
+item_480,,action_words,scendere,go down,descend
+item_481,item_336,action_words,scrivere,write,write
+item_482,item_337,action_words,sedersi,sit,sit
+item_483,item_338,action_words,sentire,hear/listen,hear
+item_484,item_339,action_words,soffiare,blow,blow
+item_485,,action_words,spazzare,sweep,sweep
+item_486,item_340,action_words,spegnere,put out,turn off
+item_487,item_341,action_words,spingere,push,push
+item_488,,action_words,sporcarsi,get dirty,dirty (action)
+item_489,item_342,action_words,sputare,spit,spit
+item_490,,action_words,stare,stay,stay
+item_491,,action_words,strappare,rip,rip
+item_492,,action_words,svegliarsi,wake,wake
+item_493,,action_words,tagliare,cut,cut
+item_494,,action_words,telefonare,phone,call
+item_495,,action_words,tenere,hold,hold
+item_496,item_343,action_words,tirare,pull,pull
+item_497,item_344,action_words,toccare,touch,touch
+item_498,,action_words,trovare,find,find
+item_499,item_345,action_words,uscire,go out,go out
+item_500,item_346,action_words,vedere,see/watch,see
+item_501,item_347,action_words,venire,come,come
+item_502,,action_words,versare,pour,pour
+item_503,item_348,action_words,volare,fly,fly (action)
+item_504,,descriptive_words,addormentato,asleep,asleep
+item_505,item_349,descriptive_words,alto,high,high
+item_506,,descriptive_words,amaro,bitter,bitter
+item_507,,descriptive_words,arancione,orange,orange (description)
+item_508,item_350,descriptive_words,arrabbiato,angry,angry
+item_509,item_351,descriptive_words,asciutto,dry,dry (description)
+item_510,item_352,descriptive_words,attento,carefull,careful
+item_511,item_353,descriptive_words,bagnato,wet,wet (description)
+item_512,item_354,descriptive_words,bello,nice,nice
+item_513,,descriptive_words,bianco,white,white
+item_514,,descriptive_words,blu,blue,blue
+item_515,item_355,descriptive_words,brutto,ugly/bad,ugly
+item_516,item_356,descriptive_words,buio,dark,dark
+item_517,item_357,descriptive_words,buono,good,good
+item_518,item_358,descriptive_words,caldo,hot,hot
+item_519,,descriptive_words,calmo/tranquillo,quiet,quiet
+item_520,item_359,descriptive_words,carino,cute/pretty,cute
+item_521,item_360,descriptive_words,cattivo,bad,bad
+item_522,item_361,descriptive_words,contento,happy,happy
+item_523,,descriptive_words,corto,short,short
+item_524,item_362,descriptive_words,disubbidiente,naughty,naughty
+item_525,item_363,descriptive_words,dolce,sweet,sweet
+item_526,item_364,descriptive_words,duro,hard,hard
+item_527,item_365,descriptive_words,felice,happy,happy
+item_528,,descriptive_words,ferito,hurt,hurt (description)
+item_529,item_366,descriptive_words,finito,finished,finished
+item_530,item_367,descriptive_words,forte,loud,loud
+item_531,item_368,descriptive_words,freddo,cold,cold
+item_532,,descriptive_words,gentile,gentle,gentle
+item_533,item_369,descriptive_words,giallo,yellow,yellow
+item_534,item_370,descriptive_words,grande/grosso,big,big
+item_535,,descriptive_words,leggero,light,light (description)
+item_536,,descriptive_words,lento,slow,slow
+item_537,,descriptive_words,lungo,long,long
+item_538,item_371,descriptive_words,malato,sick,sick
+item_539,,descriptive_words,marrone,brown,brown
+item_540,item_372,descriptive_words,morbido,soft,soft
+item_541,item_373,descriptive_words,nero,black,black
+item_542,item_375,descriptive_words,nuovo,new,new
+item_543,,descriptive_words,pazzo/matto,mad,crazy
+item_544,item_374,descriptive_words,pesante,heavy,heavy
+item_545,item_376,descriptive_words,piano,slow,slow
+item_546,item_377,descriptive_words,piccolo,little,little (description)
+item_547,item_378,descriptive_words,pieno,full,full
+item_548,,descriptive_words,povero,poor,poor
+item_549,item_379,descriptive_words,pulito,clean,clean (description)
+item_550,item_380,descriptive_words,rosso,red,red
+item_551,item_381,descriptive_words,rotto,broken,broken
+item_552,,descriptive_words,salato,salted/salty,salty
+item_553,,descriptive_words,sbagliato,wrong,wrong
+item_554,,descriptive_words,schifoso,sticky,sticky
+item_555,,descriptive_words,sciocco/stupido,silly,silly
+item_556,,descriptive_words,spaventato,scared,scared
+item_557,item_382,descriptive_words,sporco,dirty,dirty
+item_558,item_383,descriptive_words,stanco,tired,tired
+item_559,,descriptive_words,stretto,tight,tight
+item_560,,descriptive_words,sveglio,awake,awake
+item_561,item_384,descriptive_words,triste,sad,sad
+item_562,,descriptive_words,ultimo,last,last
+item_563,,descriptive_words,vecchio,old,old
+item_564,,descriptive_words,veloce/svelto,fast,fast
+item_565,,descriptive_words,verde,green,green
+item_566,item_385,descriptive_words,vuoto,empty,empty
+item_567,item_386,time_words,adesso/ora,now,now
+item_568,item_389,time_words,domani,tomorrow,tomorrow
+item_569,item_390,time_words,dopo/poi,after,after
+item_570,,time_words,giorno,day,day
+item_571,item_391,time_words,ieri,yesterday,yesterday
+item_572,item_392,time_words,mattina,morning,morning
+item_573,item_396,time_words,notte,night,night
+item_574,item_397,time_words,oggi,today,today
+item_575,,time_words,pomeriggio,afternoon,afternoon
+item_576,,time_words,presto,early,early
+item_577,,time_words,sera,tonight,tonight
+item_578,item_400,time_words,tardi,late,late
+item_579,item_403,pronouns,io,I,I
+item_580,item_404,pronouns,tu,you,you
+item_581,item_405,pronouns,lui,he,he
+item_582,item_406,pronouns,lei,she,she
+item_583,item_407,pronouns,noi,we/us,we
+item_584,item_408,pronouns,voi,you,you
+item_585,item_409,pronouns,loro,they/their/them,they
+item_586,item_410,pronouns,mio/a,mine/my,my
+item_587,item_411,pronouns,tuo/a,your,your
+item_588,item_412,pronouns,suo/a,his/hers,his
+item_589,,pronouns,nostro/a,our,our
+item_590,,pronouns,vostro/a,your,your
+item_591,item_413,pronouns,me/mi,me/myself,me
+item_592,,pronouns,te/ti,yourself,yourself
+item_593,,pronouns,ci,us,us
+item_594,,pronouns,vi,you,you
+item_595,,pronouns,si,himself/herself/itself/oneself,NA
+item_596,,pronouns,che,who/that,who
+item_597,item_414,pronouns,quello/a,that,that
+item_598,item_415,pronouns,questo/a,this,this
+item_599,,pronouns,gli,him,him
+item_600,,pronouns,lo/a,it,it
+item_601,,pronouns,li/e,it,it
+item_602,,question_words,che/che cosa,what,what
+item_603,,question_words,chi,who,who
+item_604,,question_words,come,how,how
+item_605,,question_words,dove,where,where (question)
+item_606,,question_words,perchè,why,why
+item_607,,question_words,quale,which,which (question)
+item_608,,question_words,quando,when,when (question)
+item_609,,prepositions,di,of,of
+item_610,,prepositions,a,at,at
+item_611,,prepositions,da,by,by
+item_612,,prepositions,in,in,in
+item_613,,prepositions,con,with,with
+item_614,,prepositions,su,up,up
+item_615,,prepositions,giù,down,down
+item_616,,prepositions,per,for,for
+item_617,,prepositions,fra/tra,between/among,for
+item_618,,prepositions,sopra,above,between
+item_619,,prepositions,sotto,under,under
+item_620,,prepositions,dentro,inside/into,inside
+item_621,,prepositions,fuori,out,out
+item_622,,prepositions,lontano,away,away
+item_623,,prepositions,vicino,beside,beside
+item_624,,prepositions,davanti,ahead,front
+item_625,,prepositions,dietro,back/behind,behind
+item_626,item_434,quantifiers,il,the,the
+item_627,item_435,quantifiers,lo,the,the
+item_628,item_436,quantifiers,la,the,the
+item_629,item_437,quantifiers,i,the,the
+item_630,item_438,quantifiers,gli,the,the
+item_631,item_439,quantifiers,le,the,the
+item_632,item_440,quantifiers,un/uno/una,a/an,a
+item_633,,quantifiers,del/della,some,some
+item_634,,quantifiers,dei/delle,some,some
+item_635,item_441,quantifiers,altro/un altro,another,another
+item_636,,helping_verbs,sono,am,NA
+item_637,,helping_verbs,sei,are,NA
+item_638,,helping_verbs,e,is,is
+item_639,,helping_verbs,ho,have,have
+item_640,,helping_verbs,hai,have,have
+item_641,,helping_verbs,ha,has,has
+item_642,,helping_verbs,posso,can,can (auxiliary)
+item_643,,helping_verbs,puoi,can,can (auxiliary)
+item_644,,helping_verbs,può,can,can (auxiliary)
+item_645,,helping_verbs,voglio,want,want
+item_646,,helping_verbs,vuoi,want,want
+item_647,,helping_verbs,vuole,wants,want
+item_648,,helping_verbs,devo,have to,have to
+item_649,,helping_verbs,devi,have to,have to
+item_650,,helping_verbs,deve,has to,has to
+item_651,,connecting_words,così,so,so
+item_652,,connecting_words,e,and,and
+item_653,,connecting_words,ma,but,but
+item_654,,connecting_words,perchè,because,because
+item_655,,connecting_words,quindi/allora,then,then
+item_656,,connecting_words,se,if,if
+item_657,,locations,anche/pure,too,too
+item_658,,locations,ancora,more,more
+item_659,,locations,di più,much,more
+item_660,,locations,ecco,that is,here
+item_661,,locations,li/l,there,there
+item_662,,locations,molto,much,much
+item_663,,locations,nessuno,none,none
+item_664,,locations,niente,any,nothing
+item_665,,locations,poco,little/few,little (description)
+item_666,,locations,qui/qua,here,here
+item_667,,locations,tanto,a lot,a lot
+item_668,,locations,troppo,too,too
+item_669,,locations,tutto,all,all
+item_670,,locations,un pò,any,any
+,item_129,food_drink,bavaglino,bib,bib
+,item_203,household,fon,phon,telephone
+,item_231,outside,asilo,kindergarten,kindergarten
+,item_232,outside,campagna,country,country
+,item_233,outside,casa,house/home,home
+,item_237,outside,giardino,garden,garden
+,item_239,outside,mare,sea,sea
+,item_240,outside,montagna,rock,mountain
+,item_241,outside,negozio,store,store
+,item_243,outside,nuvole,clouds,cloud
+,item_244,outside,parco giochi,playground,playground
+,item_254,outside,zoo,zoo,zoo
+,item_257,people,bimbo/a,child,child
+,item_281,games_routines,cuccù-settete,peekaboo,peekaboo
+,item_284,games_routines,fare la popò/pipì,to poop/go potty,go potty
+,item_288,games_routines,non c'èpiù/più,no more,no more
+,item_289,games_routines,pronto chi è? (al tel),hello,hello
+,item_291,games_routines,un due tre,one two three,one two three
+,item_387,time_words,ancora,more,again
+,item_388,time_words,di più,much,much
+,item_393,time_words,molto,much,much
+,item_394,time_words,nessuno,none,none
+,item_395,time_words,niente,any,any
+,item_398,time_words,poco,little/few,little (amount)
+,item_399,time_words,tanto,a lot,a lot
+,item_401,time_words,tutto,all,all
+,item_402,time_words,un po',any,any
+,item_416,question_words,che/che cosa?,what,what
+,item_417,question_words,chi?,who,who
+,item_418,question_words,come?,how,how
+,item_419,question_words,dove?,where,where (question)
+,item_420,question_words,perché?,why,why
+,item_421,question_words,quando?,when,when (question)
+,item_422,locations,di,of,of
+,item_423,locations,a,at,at
+,item_424,locations,da,by,by
+,item_425,locations,in,in,in
+,item_426,locations,con,with,with
+,item_427,locations,su,up,up
+,item_428,locations,giù,down,down
+,item_429,locations,per,for,for
+,item_430,locations,sopra,above,above
+,item_431,locations,sotto,under,under
+,item_432,locations,dentro,inside/into,inside
+,item_433,locations,lontano,away,away

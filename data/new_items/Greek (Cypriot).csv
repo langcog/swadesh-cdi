@@ -1,0 +1,819 @@
+WS,category,definition,gloss,uni_lemma
+item_1,sounds,άου,ouch,awoo
+item_2,sounds,βρεκεκέξ κουάξ κουάξ,frog sound,ribbit
+item_3,sounds,γαβ γαβ,woof woof,woof woof
+item_4,sounds,γιάμι,yummy,yum yum
+item_5,sounds,κοκοκό,chicken sound,NA
+item_6,sounds,κικιρίκου,coockadoodledoo,cockadoodledoo
+item_7,sounds,κουκουβά,owl sound,hoot
+item_8,sounds,μιαμ μιαμ,yum yum,yum yum
+item_9,sounds,μιάου,meow,meow
+item_10,sounds,μουουου,moo,moo
+item_11,sounds,μπεεε,sheep sound,baa baa
+item_12,sounds,μπουά,water CG,NA
+item_13,sounds,μπλουμ,bloom,NA
+item_14,sounds,ουφ(φου),sound when getting tired/bored CG,NA
+item_15,sounds,παπαπά,quack quack,quack quack
+item_16,sounds,πουφ(φου),sound indicating bad smell CG,NA
+item_17,sounds,τσίου,bird sound,tweet tweet
+item_18,animals,αγελάδα,cow,cow
+item_19,animals,άλογο,horse,horse
+item_20,animals,αράχνη,spider,spider
+item_21,animals,αρκούδα,bear,bear
+item_22,animals,αρνί,lamb,lamb
+item_23,animals,βάτραχος,frog,frog
+item_24,animals,γάιδαρος,donkey,donkey
+item_25,animals,γάτα,cat,cat
+item_26,animals,γουρούνι,pig,pig
+item_27,animals,δελφίνι,dolphin,dolphin
+item_28,animals,ελάφι,deer,deer
+item_29,animals,ελέφαντας,elephant,elephant
+item_30,animals,έντομο,insect,bug
+item_31,animals,ζώο,animal,animal
+item_32,animals,καμήλα,camel,camel
+item_33,animals,καμηλοπάρδαλη,giraffe,giraffe
+item_34,animals,καράολος,snail CG,snail
+item_35,animals,κατσαρίδα,cockroach,cockroach
+item_36,animals,κατσίκα,goat,goat
+item_37,animals,κόκορας,rooster,rooster
+item_38,animals,κότα,chicken,chicken (animal)
+item_39,animals,κουκουβάγια,owl,owl
+item_40,animals,κουνέλι,rabbit,bunny
+item_41,animals,κουνούπι,mosquito,mosquito
+item_42,animals,κουρκουτάς,type of lizard CG,lizard
+item_43,animals,κουτάβι,puppy,puppy
+item_44,animals,κουφή,snake CG,snake
+item_45,animals,κροκόδειλος,crocodile,crocodile
+item_46,animals,λαγός,hare,hare
+item_47,animals,λιοντάρι,lion,lion
+item_48,animals,μαϊμού,monkey,monkey
+item_49,animals,μέλισσα,bee,bee
+item_50,animals,μύγα,fly,fly (animal)
+item_51,animals,μυρμήγκι,ant,ant
+item_52,animals,νυχτερίδα,bat,bat (animal)
+item_53,animals,παπαρούνα,ladybug CG,ladybug
+item_54,animals,πάπια,duck,duck
+item_55,animals,πασχαλίτσα,ladybug,ladybug
+item_56,animals,πεταλούδα,butterfly,butterfly
+item_57,animals,πετεινός,rooster CG,rooster
+item_58,animals,πιγκουίνος,penguin,penguin
+item_59,animals,πίθηκος,monkey,monkey
+item_60,animals,ποντίκι,mouse,mouse
+item_61,animals,πουλί,bird,bird
+item_62,animals,πρόβατο,sheep,sheep
+item_63,animals,σαλιγκάρι,snail,snail
+item_64,animals,σαύρα,lizard,lizard
+item_65,animals,σκίουρος,squirrel,squirrel
+item_66,animals,σκύλος,dog,dog
+item_67,animals,σφήκα,wasp,wasp
+item_68,animals,τίγρη,tiger,tiger
+item_69,animals,φάλαινα,whale,whale
+item_70,animals,φίδι,snake,snake
+item_71,animals,χελώνα,turtle,turtle
+item_72,animals,χήνα,goose,goose
+item_73,animals,ψάρι,fish,fish (animal)
+item_74,toys,αρκουδάκι,teddy bear,teddybear
+item_75,toys,αυτοκινητάκι,car,car
+item_76,toys,βιβλίο,book,book
+item_77,toys,γόμμα,glue CG,glue (object)
+item_78,toys,δώρο,gift,present
+item_79,toys,κόλλα,glue,glue (object)
+item_80,toys,κούκλα,doll,doll
+item_81,toys,κύβος,cube,blocks
+item_82,toys,μάππα,ball CG,ball
+item_83,toys,μαρκαδόρος,marker,crayon
+item_84,toys,μπάλα,ball,ball
+item_85,toys,μπαλόνι,balloon,balloon
+item_86,toys,μπούλουκκος,teddy bear CG,teddybear
+item_87,toys,μολύβι,pencil,pencil
+item_88,toys,παζλ,puzzle,puzzle
+item_89,toys,παιχνίδι,toy/game,toy (object)
+item_90,toys,παραμύθι,story/fairytale,story
+item_91,toys,πέννα,pen CG,pen/pencil
+item_92,toys,πλαστελίνη,play doh,play dough
+item_93,toys,πλαστισίνη,play doh CG,play dough
+item_94,toys,στρατιωτάκι,toy soldier,NA
+item_95,toys,στυλό,pen,pen
+item_96,toys,τούβλο,block,blocks
+item_97,toys,φούσκα,balloon CG,balloon
+item_98,food_drink,αλάτι,salt,salt
+item_99,food_drink,αυγό,egg,egg
+item_100,food_drink,βαζάνι,aubergine CG,eggplant
+item_101,food_drink,βούτυρος,butter,butter
+item_102,food_drink,γάλα,milk,milk
+item_103,food_drink,γιαούρτι,yogurt,yogurt
+item_104,food_drink,γλυκό/γλύκισμα,sweet,sweets
+item_105,food_drink,γλειφιτζούρι,lollipop,lollipop
+item_106,food_drink,δημητριακά*,cereal,cereal
+item_107,food_drink,ζαμπόν,ham,ham
+item_108,food_drink,ζάχαρη,sugar,sugar
+item_109,food_drink,ζαχαρωτά,confectionery,candy
+item_110,food_drink,ζελέ,jello,NA
+item_111,food_drink,ζελεδάκια,jelly beans,NA
+item_112,food_drink,καλαμπόκι,corn,corn
+item_113,food_drink,καπίρα,toasted bread CG,toast
+item_114,food_drink,καραμέλα,candy,candy
+item_115,food_drink,καρότο,carrot,carrot
+item_116,food_drink,καρπούζι,watermelon,watermelon
+item_117,food_drink,καφές,coffee,coffee
+item_118,food_drink,κέϊκ,cake,cake
+item_119,food_drink,κέτσαπ,ketchup,ketchup
+item_120,food_drink,κοτόπουλο,chicken,chicken (food)
+item_121,food_drink,κουπέπι,stuffed grape leaves CG,NA
+item_122,food_drink,κουφέττα,candy CG,candy
+item_123,food_drink,κρέας,meat CG,meat
+item_124,food_drink,κρέμα,cream,cream
+item_125,food_drink,κούννες,nuts CG,nut
+item_126,food_drink,λουκουμάδες,greek donuts,pastry
+item_127,food_drink,μαγιονέζα,mayonaise,NA
+item_128,food_drink,μακαρόνια,pasta,pasta
+item_129,food_drink,μαρμελάδα,jam,jam
+item_130,food_drink,μελιτζάνα,aubergine,eggplant
+item_131,food_drink,μήλο,apple,apple
+item_132,food_drink,μηλούιν,lollipop CG,lollipop
+item_133,food_drink,μπανάνα,banana,banana
+item_134,food_drink,μπιζέλι,peas,peas
+item_135,food_drink,μπισκότο,biscuit,biscuit
+item_136,food_drink,μπιφτέκι,burger,hamburger
+item_137,food_drink,νάγκετς,nuggets,NA
+item_138,food_drink,νερό,water,water (beverage)
+item_139,food_drink,ξηροί καρποί,nuts,nut
+item_140,food_drink,παγάκι,ice cube,ice
+item_141,food_drink,παγωτό,ice cream,ice cream
+item_142,food_drink,πατατάκια,crisps,chips
+item_143,food_drink,πατάτα,potato,potato
+item_144,food_drink,πεπόνι,melon,melon
+item_145,food_drink,πίσσα,gum CG,gum
+item_146,food_drink,πίτσα,pizza,pizza
+item_147,food_drink,ποπ κορν,pop corn,NA
+item_148,food_drink,πορτοκάλι,orange,orange (food)
+item_149,food_drink,ρύζι,rice,rice
+item_150,food_drink,σάντουιτς,sandwich,sandwich
+item_151,food_drink,σιάμισι,cypriot sweet,NA
+item_152,food_drink,σιεφταλιά,cypriot crépinette,NA
+item_153,food_drink,σιρόπι,syrup,syrup
+item_154,food_drink,σιταροπούλα,corn CG,corn
+item_155,food_drink,σίταρος,corn CG,corn
+item_156,food_drink,σοκολάτα,chocolate,chocolate
+item_157,food_drink,σούβλα,greek skewer,spit
+item_158,food_drink,σουβλάκι,greek skewer,NA
+item_159,food_drink,σούπα,soup,soup
+item_160,food_drink,σταφύδα,raisin,raisin
+item_161,food_drink,σταφύλι,grape,grapes
+item_162,food_drink,τζέλλι,jello CG,NA
+item_163,food_drink,τοστ,toast,toast
+item_164,food_drink,τσάι,tea,tea
+item_165,food_drink,τσιπς,crisps CG,chips
+item_166,food_drink,τσίχλα,gum,gum
+item_167,food_drink,τυρί,cheese,cheese
+item_168,food_drink,φαγητό/φαΐ,food,food
+item_169,food_drink,φακές,lentils,beans
+item_170,food_drink,φασολάκι,green beans,green beans
+item_171,food_drink,φασόλια,beans,beans
+item_172,food_drink,φίσφιγκερς,fish fingers,NA
+item_173,food_drink,φράουλα,strawberry,strawberry
+item_174,food_drink,φρουτάκια,jelly beans CG,NA
+item_175,food_drink,φρυγανιά,toasted bread,cracker
+item_176,food_drink,χαμ,ham CG,ham
+item_177,food_drink,χάμπουργκερ,hamburger,hamburger
+item_178,food_drink,χυμός,juice,juice
+item_179,food_drink,χωνάκι,cone (ice cream),ice cream
+item_180,food_drink,ψάρι,fish,fish (food)
+item_181,food_drink,ψωμί,bread,bread
+item_182,vehicles,αεροπλάνο,airplane,airplane
+item_183,vehicles,αμάξι,car,car
+item_184,vehicles,αμαξούα,pushchair CG,stroller
+item_185,vehicles,αυτοκίνητο,car CG,car
+item_186,vehicles,βάρκα,boat,boat
+item_187,vehicles,καράβι,ship,ship
+item_188,vehicles,καροτσάκι,pushchair,stroller
+item_189,vehicles,λεωφορείο,bus,bus
+item_190,vehicles,μοτοσικλέτα,motorcycle,motorcycle
+item_191,vehicles,μοτόρα,motorcycle CG,motorcycle
+item_192,vehicles,μπουλντόζα,bulldozer,digger
+item_193,vehicles,πλοίο,ship,ship
+item_194,vehicles,ποδήλατο,bicycle,bicycle
+item_195,vehicles,πυροσβεστική,fireengine,firetruck
+item_196,vehicles,σιοίρος,bulldozer CG,digger
+item_197,vehicles,τρακτέρ,tractor,tractor
+item_198,vehicles,τρένο,train,train
+item_199,vehicles,φορτηγό,lorry,truck
+item_200,household,άχρηστα,rubbish,rag
+item_201,household,βούρτσα,brush,brush (object)
+item_202,household,γλάστρα,(flower) pot,flower pot
+item_203,household,δίσκος,tray,tray
+item_204,household,ηλεκτρική σκούπα*,vacuum cleaner,vacuum
+item_205,household,κάδρο,painting CG,painting
+item_206,household,κάλαθος,rubbish bin CG,trash
+item_207,household,κάμερα,camera,camera
+item_208,household,κέρμα,coin,money
+item_209,household,κινητό,mobile,cell phone
+item_210,household,κλειδιά,keys,key
+item_211,household,κολλητική ταινία*,adhesive tape,tape (object)
+item_212,household,κουβάς,bucket,bucket
+item_213,household,κουβέρτα,blanket,blanket
+item_214,household,κούπα,bowl,cup
+item_215,household,κουτάλι,spoon,spoon
+item_216,household,κουτί,box,box
+item_217,household,λάμπα,lamp,lamp
+item_218,household,λεφτά,money,money
+item_219,household,μαντηλιά,kitchen towel CG,towel
+item_220,household,μαξιλάρι,pillow,pillow
+item_221,household,μαχαίρι,knife,knife
+item_222,household,μόμπαϊλ,mobile CG,cell phone
+item_223,household,μπιμπερό,feeding bottle CG,bottle
+item_224,household,μπολ,bowl CG,bowl
+item_225,household,μπουκάλι,bottle,bottle
+item_226,household,νόμισμα,coin,money
+item_227,household,οδοντόβουρτσα,toothbrush,toothbrush
+item_228,household,οδοντόκρεμα,toothpaste,toothpaste
+item_229,household,περπατούσα,baby walker CG,NA
+item_230,household,πετσέτα,towl,towel
+item_231,household,πιάτο,plate,plate
+item_232,household,πίνακας,painting,painting
+item_233,household,πιρούνι,fork,fork
+item_234,household,πιστολάκι,hair dryer CG,hair dryer
+item_235,household,πορτοφόλι,wallet,purse
+item_236,household,ραδιόφωνο,radio,radio
+item_237,household,ρολόι,watch,clock
+item_238,household,σαπούνι,soap,soap
+item_239,household,σεσουάρ,hair dryer,hair dryer
+item_240,household,σίκλα,bucket CG,bucket
+item_241,household,σκούπα,broom,broom
+item_242,household,σκουπίδια,rubbish,trash
+item_243,household,στεγνωτήρας,hair dryer,dryer
+item_244,household,σφουγγαρίστρα,mop,NA
+item_245,household,σφυρί,hammer,hammer
+item_246,household,τάμπλετ,tablet,NA
+item_247,household,τόρος,towel CG,towel
+item_248,household,φάρμακο,medicine,medicine
+item_249,household,τέλλα,adhesive tape CG,tape (object)
+item_250,household,τενεκεδάκι,tin,NA
+item_251,household,τηλέφωνο,phone,telephone
+item_252,household,τσάντα,bag,bag
+item_253,household,φλόκκος,mop CG,mop (object)
+item_254,household,φλιτζάνι,cup CG,cup
+item_255,household,φως,light,light (object)
+item_256,household,φωτογραφία,photograph,picture
+item_257,household,φωτογραφική,photo camera,camera
+item_258,household,φωτογραφοθήκη,photo frame,NA
+item_259,household,χαρτί,paper,paper
+item_260,household,χαρτομάντηλο,tissue,tissue
+item_261,household,χτενιά,comb,comb (object)
+item_262,household,ψαλίδι,scissors,scissors
+item_263,household,βούρνα,3 sink CG,sink
+item_264,furniture_rooms,ερμάρι,wardrobe CG,closet
+item_265,furniture_rooms,ερμαράκι,cupboard CG,cupboard
+item_266,furniture_rooms,γιογιό,potty,potty
+item_267,furniture_rooms,γκαράζ,garage,garage
+item_268,furniture_rooms,δωμάτιο,room,room
+item_269,furniture_rooms,θερμάστρα,heater,stove
+item_270,furniture_rooms,καθικούιν,potty CG,potty
+item_271,furniture_rooms,καθισματάκι,car seat,chair
+item_272,furniture_rooms,καθιστικό,living room,living room
+item_273,furniture_rooms,καναπές,sofa,couch
+item_274,furniture_rooms,καρ σιτ,car seat CG,car seat
+item_275,furniture_rooms,καρέκλα,chair,chair
+item_276,furniture_rooms,καρεκλίν,high chair CG,high chair
+item_277,furniture_rooms,καρκόλα,bed CG,bed
+item_278,furniture_rooms,κουζίνα,kitchen,kitchen
+item_279,furniture_rooms,κρεβάτι,bed,bed
+item_280,furniture_rooms,μπανιέρα,bathtub,bathtub
+item_281,furniture_rooms,μπάνιο,bathroom,bathroom
+item_282,furniture_rooms,νεροχύτης,sink,sink
+item_283,furniture_rooms,νιπτήρας,washbasin,sink
+item_284,furniture_rooms,ντουζ,shower,shower
+item_285,furniture_rooms,ντουλάπα,wardrobe,closet
+item_286,furniture_rooms,ντουλάπι,cupboard,cupboard
+item_287,furniture_rooms,πάγκος,kitchen board,stand
+item_288,furniture_rooms,παράθυρο,window,window
+item_289,furniture_rooms,πάρκινγκ,parking,NA
+item_290,furniture_rooms,πλυντήριο,washing machine,washing machine
+item_291,furniture_rooms,πολυθρόνα,armchair,armchair
+item_292,furniture_rooms,πόρτα,door,door
+item_293,furniture_rooms,ριλάξ,bouncer CG,NA
+item_294,furniture_rooms,σαλόνι,seating room,living room
+item_295,furniture_rooms,σκάλα,staircase,stairs
+item_296,furniture_rooms,σόμπα,heater,radiator
+item_297,furniture_rooms,συρτάρι,drawer,drawer
+item_298,furniture_rooms,ταράτσα,rooftop,roof
+item_299,furniture_rooms,τηλεόραση,television,TV
+item_300,furniture_rooms,τραπέζι,table,table
+item_301,furniture_rooms,υπόγειο,basement,basement
+item_302,furniture_rooms,φούρνος,oven,oven
+item_303,clothing,βρακί,panties,underpants
+item_304,clothing,γάντια,gloves,glove
+item_305,clothing,γυαλιά,glasses,glasses
+item_306,clothing,ζακέτα,cardigan,sweater
+item_307,clothing,ζώνη,belt,belt
+item_308,clothing,καλσόν,stockings,tights
+item_309,clothing,κάλτσες,socks,sock
+item_310,clothing,καπέλο,hat,hat
+item_311,clothing,κολιέ,neklace,necklace
+item_312,clothing,κορμάκι,bodysuit CG,NA
+item_313,clothing,κουμπί,button,button
+item_314,clothing,μαγιό,swimsuit,swimsuit
+item_315,clothing,μπικίνι,bikini,bikini
+item_316,clothing,μπλούζα,t-shirt/blouse,t-shirt
+item_317,clothing,μπότα,boot,boots
+item_318,clothing,μπουφάν,jacket,jacket
+item_319,clothing,παντόφλα,slipper,slipper
+item_320,clothing,παπούτσι,shoe,shoe
+item_321,clothing,ποθκιά,bib CG,bib
+item_322,clothing,πουκάμισο,shirt,shirt
+item_323,clothing,πουλόβερ,pullover,sweater
+item_324,clothing,πυτζάμες,pyjamas,pajamas
+item_325,clothing,σαγιονάρες,flip flops,sandal
+item_326,clothing,σακάκι,jacket CG,jacket
+item_327,clothing,σαλιαρίτσα,bib,bib
+item_328,clothing,σκούφος,syrup,cap
+item_329,clothing,τζην,jeans,jeans
+item_330,clothing,τρικό,pullover CG,sweater
+item_331,clothing,φανέλα,t-shirt,t-shirt
+item_332,clothing,φερμουάρ,zip,zipper
+item_333,clothing,φλι φλο,flip flops CG,sandal
+item_334,clothing,φόρεμα,dress,dress (object)
+item_335,clothing,φορμάκι,bodysuit,NA
+item_336,clothing,φόρμα,training trousers,tracksuit
+item_337,outside,αέρας,wind,wind
+item_338,outside,άμμος,sand,sand
+item_339,outside,αστέρι,star,star
+item_340,outside,βράχος,rock,rock (object)
+item_341,outside,βροχή,rain,rain
+item_342,outside,γρασίδι,grass,grass
+item_343,outside,δέντρο,tree,tree
+item_344,outside,δρόμος,road,street
+item_345,outside,ήλιος,sun,sun
+item_346,outside,κατρατζύλι,slide CG,slide (object)
+item_347,outside,κουβαδάκια,beach toys,NA
+item_348,outside,κούνια,swing,swing (object)
+item_349,outside,λάστιχο,hose,hose
+item_350,outside,λουλούδι,flower,flower
+item_351,outside,νερό,water,water (not beverage)
+item_352,outside,ομπρέλα,umbrella,umbrella
+item_353,outside,ουρανός,sky,sky
+item_354,outside,ουράνιο τόξο,rainbow,rainbow
+item_355,outside,πεζοδρόμιο,pavement,NA
+item_356,outside,πέτρα,stone,stone
+item_357,outside,ποτιστήρι,watering can,pot
+item_358,outside,σημαία,flag,flag
+item_359,outside,σούσα,swing CG,swing (object)
+item_360,outside,σπίτι,house,house
+item_361,outside,σύννεφο,cloud,cloud
+item_362,outside,σωσίβιο,life vest,NA
+item_363,outside,τοίχος,wall,wall
+item_364,outside,τραμπάλα,seesaw,seesaw
+item_365,outside,τροχός,wheel,wheel
+item_366,outside,τσουλήθρα,slide,slide (object)
+item_367,outside,φεγγάρι,moon,moon
+item_368,outside,φτυάρι,shovel,shovel
+item_369,outside,χιονάνθρωπος,snowman,snowman
+item_370,outside,χιόνι,snow,snow
+item_371,people,αγόρι,boy,boy
+item_372,people,αδελφή/ός,sister/brother,sibling
+item_373,people,άνθρωπος,person/human,man
+item_374,people,άντρας,man,man
+item_375,people,αστυνομικός,police officer,police
+item_376,people,γέρος,old man,old
+item_377,people,γιαγιά,grandmother,grandma
+item_378,people,γιατρός,doctor,doctor
+item_379,people,γοργόνα,mermaid,mermaid
+item_380,people,γριά,old woman,old
+item_381,people,γυναίκα,woman,woman
+item_382,people,δασκάλα/ος,teacher,teacher
+item_383,people,θεία/ος,aunt/uncle,uncle
+item_384,people,καουμπόυ,cowboy,cowboy
+item_385,people,κλόουν,clown,clown
+item_386,people,κορίτσι,girl,girl
+item_387,people,κόσμος,people,people
+item_388,people,κοτζιάκαρη,old woman CG,NA
+item_389,people,κυρία/ος,sir/madame,lady
+item_390,people,μαμά*,mother,mommy
+item_391,people,μπαμπάς,father,daddy
+item_392,people,μωρό,baby,baby
+item_393,people,νονά*,godmother,godmother
+item_394,people,νονός*,godfather,godfather
+item_395,people,νοσοκόμα,nurse,nurse
+item_396,people,οικιακή βοηθός*,house maid,maid
+item_397,people,όνομα παιδιού,child's name,child's own name
+item_398,people,όνομα κατοικίδιου,pet's name,pet's name
+item_399,people,παιδί,child,child
+item_400,people,παλιάτσος,clown,clown
+item_401,people,παππούς,grandfather,grandpa
+item_402,people,πειρατής,pirate,pirate
+item_403,people,πρίγκηπας,prince,prince
+item_404,people,πριγκήπισσα,princess,princess
+item_405,people,πυροσβέστης,fireperson,firefighter
+item_406,people,στρατιώτης,soldier,soldier
+item_407,people,ταχυδρόμος,postperson,mailman
+item_408,people,τραγουδιστής,singer,singer
+item_409,people,φίλη/ος,friend,friend
+item_410,body_parts,αστράγαλος,ankle,ankle
+item_411,body_parts,αυτιά,ears,ear
+item_412,body_parts,βούκκα,cheek CG,cheek
+item_413,body_parts,γλώσσα,tongue,tongue
+item_414,body_parts,γόνατο,knee,knee
+item_415,body_parts,δάχτυλο,finger,finger
+item_416,body_parts,δόντι,tooth,tooth
+item_417,body_parts,ζάμπα,thigh CG,thigh
+item_418,body_parts,κεφάλι,head,head
+item_419,body_parts,κελλέ,head CG,head
+item_420,body_parts,κοιλιά,tummy,tummy
+item_421,body_parts,κολί*,buttocks,butt
+item_422,body_parts,μάγουλο,cheek,cheek
+item_423,body_parts,μαλλιά,hair,hair
+item_424,body_parts,μάτι,eye,eye
+item_425,body_parts,μπούτι,thigh,thigh
+item_426,body_parts,μύτη,nose,nose
+item_427,body_parts,νύχι,nail,nail (body part)
+item_428,body_parts,ομφαλός*,belly button,belly button
+item_429,body_parts,ουββά,owie/boo boo,NA
+item_430,body_parts,παλάμη,palm,hand
+item_431,body_parts,πατούσα,Sole/foot,foot
+item_432,body_parts,πηγούνι,chin,chin
+item_433,body_parts,πόδι,leg,leg
+item_434,body_parts,πουλλί/πουλλού*,vagina/penis,penis
+item_435,body_parts,πρόσωπο,face,face
+item_436,body_parts,στόμα,mouth,mouth
+item_437,body_parts,χείλη,lips,lip
+item_438,body_parts,χέρι,hand,arm
+item_439,body_parts,ώμος,shoulder,shoulder
+item_440,games_routines,άλλαϊλι,babies' singing game CG,NA
+item_441,games_routines,αμέ,yeah/sure (informal),yes
+item_442,games_routines,άμμου,mealtime - baby word CG,NA
+item_443,games_routines,αχ κουνελλάκι,babies' singing game,NA
+item_444,games_routines,γεια,hello,hi
+item_445,games_routines,γύρω γύρω όλοι,child's singing game,NA
+item_446,games_routines,έλα,come,come on
+item_447,games_routines,ευχαριστώ,thank you,thank you
+item_448,games_routines,ιτά,peekaboo CG,peekaboo
+item_449,games_routines,κακά,poo poo,bad
+item_450,games_routines,καλημέρα,good morning,good morning
+item_451,games_routines,καληνύχτα,good night,good night
+item_452,games_routines,καλό,yeah/sure (informal) CG,NA
+item_453,games_routines,κόλλα το,high five,high five
+item_454,games_routines,κούτουλλο,banging heads as a game CG,NA
+item_455,games_routines,μάκια,kiss CG,NA
+item_456,games_routines,μαμ,mealtime - baby word,NA
+item_457,games_routines,μη,don't,don't
+item_458,games_routines,μπάνιο,bath,bathroom
+item_459,games_routines,ναι,yes,yes
+item_460,games_routines,νάνι,baby word for sleep,NA
+item_461,games_routines,ντα,baby word for naughty,naughty
+item_462,games_routines,όπα,hold me/up CG,NA
+item_463,games_routines,όχι,no,no
+item_464,games_routines,παλαμάκια,clap,clap
+item_465,games_routines,πά παι,bye bye,bye
+item_466,games_routines,πάππαλλα,all gone CG,all gone
+item_467,games_routines,παρακαλώ,please,please
+item_468,games_routines,πιάσε με,hold me/up,NA
+item_469,games_routines,πιπί,wee wee,pee
+item_470,games_routines,πίσκαλα,clap CG,NA
+item_471,games_routines,πισσιά,wee wee CG,NA
+item_472,games_routines,πρόσεχε,watch it,watch out
+item_473,games_routines,πρωινό,breakfast,breakfast
+item_474,games_routines,σνακ,snack,snack
+item_475,games_routines,σσσ!,shhh,shh
+item_476,games_routines,τέλειωσε,all gone,finished
+item_477,games_routines,τέττε,baby word for naughty CG,NA
+item_478,games_routines,τηλέφωνο,(telephone) call,telephone
+item_479,games_routines,τσα,peekaboo,peekaboo
+item_480,games_routines,φαγητό,food/meal,food
+item_481,games_routines,φιλάκι,kiss,kiss
+item_482,games_routines,χαλόου,hello,hello
+item_483,games_routines,ψηλά,up,high
+item_484,games_routines,ψώνια,shopping,shopping
+item_485,action_words,αγαπώ,love,love
+item_486,action_words,αγκαλιάζω,hug,hug
+item_487,action_words,ακούω,hear/listen,hear
+item_488,action_words,ανοίγω,open,open (action)
+item_489,action_words,αρέσω,like,like
+item_490,action_words,αρπάζω,catch,catch
+item_491,action_words,βάζω,put,put
+item_492,action_words,βιάζομαι,hurry,hurry
+item_493,action_words,βλέπω,see,see
+item_494,action_words,βοηθώ,help,help
+item_495,action_words,βουρώ,run CG,run
+item_496,action_words,βρίσκω,find,find
+item_497,action_words,βρωμώ,stink,NA
+item_498,action_words,γαργαλιέμαι,tickle-PASSIVE,tickle
+item_499,action_words,γδέρνω,scratch,scratch
+item_500,action_words,γρατσουνώ,scratch,scratch
+item_501,action_words,γράφω,write,write
+item_502,action_words,δαγκώνω,bite,bite
+item_503,action_words,δείχνω,show,show
+item_504,action_words,διαβάζω,read,read
+item_505,action_words,δίνω,give,give
+item_506,action_words,διψώ,feel thirsty,thirsty
+item_507,action_words,ζεσταίνομαι,feel hot,NA
+item_508,action_words,ζωγραφίζω,paint,draw
+item_509,action_words,θέλω,want,want
+item_510,action_words,θορώ,see CG,see
+item_511,action_words,κάνω,do/make,do
+item_512,action_words,καθαρίζω,clean,clean (action)
+item_513,action_words,καίω,burn,burn
+item_514,action_words,κλαίω,cry,cry
+item_515,action_words,κλείνω,close,close
+item_516,action_words,κλωτσώ,kick,kick
+item_517,action_words,κόβω,cut,cut
+item_518,action_words,κοιμάμαι,sleep,sleep
+item_519,action_words,κοιμίζω,put someone to sleep,NA
+item_520,action_words,κολυμπώ,swim,swim
+item_521,action_words,κουνιέμαι,move-PASSIVE,shake
+item_522,action_words,κουντώ,push CG,push
+item_523,action_words,κουνώ,move,swing (action)
+item_524,action_words,κουράζομαι,feel tired,tired
+item_525,action_words,κουτουλλώ,bang head,NA
+item_526,action_words,κρούζω,burn CG,burn
+item_527,action_words,κρύβομαι,hide,hide
+item_528,action_words,κυνηγώ,chase,chase
+item_529,action_words,λαλώ,say CG,say
+item_530,action_words,λέω,say,say
+item_531,action_words,λυπάμαι,feel sorry,commiserate
+item_532,action_words,μυρίζομαι,smell something,smell
+item_533,action_words,μυρίζω,smell/give out odour,smell
+item_534,action_words,νυστάζω,feel sleepy,sleepy
+item_535,action_words,ξέρω,know,know
+item_536,action_words,ξεχνώ,forget,forget
+item_537,action_words,ξυπνώ,wake,wake
+item_538,action_words,οδηγώ,drive,drive
+item_539,action_words,παίζω,play,play
+item_540,action_words,παίρνω,get,take
+item_541,action_words,πάω,go,go
+item_542,action_words,πεινώ,feel hungry,hungry
+item_543,action_words,περπατώ,walk,walk
+item_544,action_words,πετώ,fly,fly (action)
+item_545,action_words,πέφτω,fall,fall
+item_546,action_words,πηδώ,jump,jump
+item_547,action_words,πίνω,drink,drink (action)
+item_548,action_words,πλένομαι,wash-PASSIVE,wash
+item_549,action_words,πλένω,wash,wash
+item_550,action_words,πλυνίσκουμαι,wash-PASSIVE CG,NA
+item_551,action_words,πλυνίσκω,wash CG,wash
+item_552,action_words,πονώ,feel pain/hurt,hurt (action)
+item_553,action_words,πυρώννω,feel hot CG,NA
+item_554,action_words,ρίχνω,throw,throw
+item_555,action_words,σκουπίζομαι,wipe-PASSIVE,wipe
+item_556,action_words,σκουπίζω,wipe,wipe
+item_557,action_words,σούζομαι,swing-PASSIVE,swing (action)
+item_558,action_words,σούζω,swing,swing (action)
+item_559,action_words,σπάζω,break,break
+item_560,action_words,σπρώχνω,push,push
+item_561,action_words,σταματώ,stop,stop
+item_562,action_words,σύρνω,throw CG,throw
+item_563,action_words,ταΐζω,feed,feed
+item_564,action_words,τελειώνω,finish,finish
+item_565,action_words,τηλεφωνώ,call (phone),call
+item_566,action_words,τραβώ,pull,pull
+item_567,action_words,τραγουδώ,sing,sing
+item_568,action_words,τρέχω,run,run
+item_569,action_words,τρώω,eat,eat
+item_570,action_words,τσανιάζω,scratch CG,scratch
+item_571,action_words,φακκώ,hit CG,hit
+item_572,action_words,φιλώ,kiss,kiss
+item_573,action_words,φέρνω,bring,bring
+item_574,action_words,φεύγω,leave,leave
+item_575,action_words,φοβάμαι,feel afraid,be scared
+item_576,action_words,φωνάζω,shout,shout
+item_577,action_words,χορεύω,dance,dance
+item_578,action_words,χτυπώ,hit,hit
+item_579,action_words,χώνουμαι,hide-PASSIVE CG,hide
+item_580,action_words,χώνω,hide CG,hide
+item_581,descriptive_words,άδειο,empty,empty
+item_582,descriptive_words,αργό,slow,slow
+item_583,descriptive_words,απαίσιο,horrible,horrible
+item_584,descriptive_words,άρρωστο,sick,sick
+item_585,descriptive_words,άταχτο,naughty,naughty
+item_586,descriptive_words,βαρύ,heavy,heavy
+item_587,descriptive_words,βαρετό,heavy CG,heavy
+item_588,descriptive_words,βραστό,hot CG,hot
+item_589,descriptive_words,βρεγμένο,wet,wet (description)
+item_590,descriptive_words,βρώμικο,dirty,dirty
+item_591,descriptive_words,γεμάτο,full,full
+item_592,descriptive_words,γλυκό,sweet,sweet
+item_593,descriptive_words,γρήγορο,quick/fast,fast
+item_594,descriptive_words,δύσκολο,hard,hard
+item_595,descriptive_words,δυνατό,strong,hard
+item_596,descriptive_words,ευγενικό,kind,gentle
+item_597,descriptive_words,ζεστό,hot,hot
+item_598,descriptive_words,ήσυχο,quiet,quiet
+item_599,descriptive_words,καθαρό,clean,clean (description)
+item_600,descriptive_words,καινούριο,new,new
+item_601,descriptive_words,κακό,bad,bad
+item_602,descriptive_words,καλό,good,good
+item_603,descriptive_words,κουρασμένο,tired,tired
+item_604,descriptive_words,κρύο,cold,cold
+item_605,descriptive_words,λεπτό,thin,thin
+item_606,descriptive_words,λερωμένο,dirty,dirty
+item_607,descriptive_words,λυπημένο,sad,sad
+item_608,descriptive_words,μαλακό,soft,soft
+item_609,descriptive_words,μεγάλο,big,big
+item_610,descriptive_words,μικρό,small,small
+item_611,descriptive_words,μιτσί,small CG,small
+item_612,descriptive_words,νέο,new,new
+item_613,descriptive_words,νόστιμο,delicious,yummy
+item_614,descriptive_words,ξιμαρισμένο,dirty CG,dirty
+item_615,descriptive_words,όμορφο,beautiful,nice
+item_616,descriptive_words,όφκερο,empty CG,empty
+item_617,descriptive_words,παγωμένο,frozen,frozen
+item_618,descriptive_words,παλιό,old,old
+item_619,descriptive_words,παχύ,fat,fat
+item_620,descriptive_words,πελλό,crazy CG,crazy
+item_621,descriptive_words,πρώτο,first,hard
+item_622,descriptive_words,σκληρό,hard,hard
+item_623,descriptive_words,σκοτεινό,dark,dark
+item_624,descriptive_words,σπασμένο,broken,broken
+item_625,descriptive_words,στεγνό,dry,dry (description)
+item_626,descriptive_words,τελευταίο,last,last
+item_627,descriptive_words,τρελό,crazy,crazy
+item_628,descriptive_words,χαρούμενο,happy,happy
+item_629,descriptive_words,ψηλό,tall,tall
+item_630,descriptive_words,ωραίο,nice,beautiful
+item_631,places,αυλή,yard,garden
+item_632,places,βενζινάδικο,gaz station,gas station
+item_633,places,βουνό,mountain,mountain
+item_634,places,γενέθλια,birthday (party),party
+item_635,places,δουλειά,work,work (place)
+item_636,places,εκκλησία,church,church
+item_637,places,εστιατόριο,restaurant,restaurant
+item_638,places,ζωολογικός κήπος,zoo,zoo
+item_639,places,θάλασσα,sea,sea
+item_640,places,κατάστημα,shop,store
+item_641,places,κέντρο,restaurant CG,restaurant
+item_642,places,κήπος,garden,garden
+item_643,places,λούνα παρκ,fun park,NA
+item_644,places,μαγαζί,shop CG,store
+item_645,places,παραλία,beach,beach
+item_646,places,πάρκο,park,park
+item_647,places,πάρτυ,party,party
+item_648,places,πεζίνα,gaz station CG,gas station
+item_649,places,πισίνα,pool,pool
+item_650,places,σινεμά,cinema,movie
+item_651,places,σπίτι,house,house
+item_652,places,σχολείο,school,school
+item_653,places,τσίρκο,circus,circus
+item_654,places,χωριό,village,town
+item_655,articles,άλλη,other (female singular),another
+item_656,articles,άλλο,other (neutral singular),another
+item_657,articles,άλλος,other (male singular),another
+item_658,articles,η,the (female singular - definite article),the
+item_659,articles,ένα,a (neutral singular - indefinite article),a
+item_660,articles,ένας,a (male singular - indefinite article),a
+item_661,articles,κάθε,every,every
+item_662,articles,κι άλλο,more,more
+item_663,articles,λίγο,a little,little (amount)
+item_664,articles,μια,a (female singular - indefinite article),a
+item_665,articles,ο,the (male singular - definite article),the
+item_666,articles,όλη,whole (female singular),all
+item_667,articles,όλο,whole (neutral singular),all
+item_668,articles,όλος,whole (male singular),all
+item_669,articles,πάλι,again,again
+item_670,articles,πολλά,many (neutral plural),many
+item_671,articles,πολλές,many (female singular),many
+item_672,articles,πολλοί,many (male singular),many
+item_673,articles,πολύ,a lot/very,a lot
+item_674,articles,το,the (neutral singular - definite article),the
+item_675,articles,τα,the (neutral plural - definite article),the
+item_676,pronouns,αυτή,this (female singular),this
+item_677,pronouns,αυτό,this (neutral singular),this
+item_678,pronouns,αυτός,this (male singular),this
+item_679,pronouns,δικό μου,mine,mine
+item_680,pronouns,δικό σου,yours,mine
+item_681,pronouns,δικό του,his,mine
+item_682,pronouns,εγώ,I,I
+item_683,pronouns,εκείνη,that (female singular),that
+item_684,pronouns,εκείνο,that (neutral singular),that
+item_685,pronouns,εκείνος,that (male singular),that
+item_686,pronouns,εμείς,we,we
+item_687,pronouns,εσείς,you (plural),NA
+item_688,pronouns,εσύ,you (singular),you
+item_689,pronouns,με (αγαπά),me (accusative),me
+item_690,pronouns,μου (λέει),me (genitive),me
+item_691,pronouns,σε (αγαπώ),you (accusative),you
+item_692,pronouns,σου (μιλώ),you (genitive),you
+item_693,pronouns,την (αγαπώ),her (accusative),her
+item_694,pronouns,το (αγαπώ),it (accusative),it
+item_695,pronouns,τον (αγαπώ),him (accusative),him
+item_696,pronouns,του (μιλώ),him/it (genitive),him
+item_697,pronouns,τζείνη,that CG (female singular),NA
+item_698,pronouns,τζείνο,that CG (neutral singular),NA
+item_699,pronouns,τζείνος,that CG (male singular),NA
+item_700,pronouns,τούτη,this CG (female singular),that
+item_701,pronouns,τούτο,this CG (neutral singular),that
+item_702,pronouns,τούτος,this CG (male singular),that
+item_703,locations,απ'εκεί,over here,here
+item_704,locations,απο'δώ,over there,there
+item_705,locations,για,for,for
+item_706,locations,γύρω,around,around
+item_707,locations,γύρω από/που,around (of),around
+item_708,locations,δαμέ,here CG,here
+item_709,locations,δίπλα,next,next
+item_710,locations,δίπλα από/που,next to,next to
+item_711,locations,εδώ,here,here
+item_712,locations,εκεί,there,there
+item_713,locations,έξω,outside,out
+item_714,locations,έξω από/που,out of,outside
+item_715,locations,κάτω,under,down
+item_716,locations,κάτω από/που,under (of),under
+item_717,locations,μαζί,together,together
+item_718,locations,μαζί με,together with,together
+item_719,locations,μακρυά,far,away
+item_720,locations,μακρυά από/που,far from,far
+item_721,locations,με,with,with
+item_722,locations,μέσα,inside,in
+item_723,locations,μέσα σε,inside of,inside
+item_724,locations,πάνω,above,above
+item_725,locations,πάνω από,above (of),above
+item_726,locations,πάνω σε,on top of,on top
+item_727,locations,πίσω,behind,back (location)
+item_728,locations,πίσω από/που,behind (of),behind
+item_729,locations,ποδά,over here CG,here
+item_730,locations,ποτζεί,over there CG,there
+item_731,locations,σε,in/at,at
+item_732,locations,τζιαμέ,there CG,there
+item_733,descriptive_words,άσπρο,white,white
+item_734,descriptive_words,γαλάζιο,light blue,light blue
+item_735,descriptive_words,καφέ,brown,brown
+item_736,descriptive_words,κίτρινο,yellow,yellow
+item_737,descriptive_words,κόκκινο,red,red
+item_738,descriptive_words,κύκλος,circle,circle
+item_739,descriptive_words,μαύρο,black,black
+item_740,descriptive_words,μπλε,blue,blue
+item_741,descriptive_words,μωβ,purple,purple
+item_742,descriptive_words,πορτοκαλί,orange,orange (description)
+item_743,descriptive_words,πράσινο,green,green
+item_744,descriptive_words,ροζ,pink,pink
+item_745,descriptive_words,τετράγωνο,square,square
+item_746,descriptive_words,τρίγωνο,triangle,triangle
+item_747,quantifiers,δέκα,ten,NA
+item_748,quantifiers,δέκατος,tenth,NA
+item_749,quantifiers,δεύτερος,second,NA
+item_750,quantifiers,δύο,two,two
+item_751,quantifiers,έβδομος,seventh,NA
+item_752,quantifiers,έκτος,sixth,NA
+item_753,quantifiers,ένα,one,one
+item_754,quantifiers,ένατος,ninth,NA
+item_755,quantifiers,εννιά,nine,NA
+item_756,quantifiers,έξι,six,NA
+item_757,quantifiers,εφτά,seven,NA
+item_758,quantifiers,μηδέν,zero,NA
+item_759,quantifiers,όγδοος,eighth,NA
+item_760,quantifiers,οχτώ,eight,NA
+item_761,quantifiers,πέμπτος,fifth,NA
+item_762,quantifiers,πέντε,five,NA
+item_763,quantifiers,πρώτος,first,first
+item_764,quantifiers,τέταρτος,fourth,NA
+item_765,quantifiers,τέσσερα,four,NA
+item_766,quantifiers,τρία,three,three
+item_767,quantifiers,τρίτος,third,NA
+item_768,helping_verbs,είμαι,(I) am,be
+item_769,helping_verbs,είμαστε,(We) are,be
+item_770,helping_verbs,είναι,(he/she/it) is/ (they) are,be
+item_771,helping_verbs,είσαι,(You) are (singular),be
+item_772,helping_verbs,είσαστε,(You) are (plural),NA
+item_773,helping_verbs,είχα,(I) had,have
+item_774,helping_verbs,είχαμε,(We) had,have
+item_775,helping_verbs,είχατε,(You) had (plural),have
+item_776,helping_verbs,είχε,(he/she/it) had,have
+item_777,helping_verbs,είχες,(You) had (singular),have
+item_778,helping_verbs,εν/ένι,(he/she/it) is/ (they) are CG,NA
+item_779,helping_verbs,έχω,(I) have,have
+item_780,helping_verbs,έκανα,(I) did,make
+item_781,helping_verbs,ήμουν,(I) was,NA
+item_782,helping_verbs,ήσουν,(You) were (singular),NA
+item_783,helping_verbs,ήταν,(he/she/it) was/ (they) were,NA
+item_784,helping_verbs,μπορώ,(I) can,can (auxiliary)
+item_785,helping_verbs,πρέπει,must/should,should
+item_786,connecting_words,αλλά,but,but
+item_787,connecting_words,αν,if,if
+item_788,connecting_words,εννά,will CG,will
+item_789,connecting_words,ή,or,or
+item_790,connecting_words,θα,will,wanna
+item_791,connecting_words,και,and,and
+item_792,connecting_words,να,subjective particle,NA
+item_793,connecting_words,όμως,but,but
+item_794,connecting_words,όξα,or CG,or
+item_795,time_words,απόψε,tonight,tonight
+item_796,time_words,αύριο,tomorrow,tomorrow
+item_797,time_words,μέρα,day,day
+item_798,time_words,μεσημέρι,noon,noon
+item_799,time_words,νύχτα,night,night
+item_800,time_words,πριν,before,before
+item_801,time_words,πρωί,morning,morning
+item_802,time_words,σήμερα,today,today
+item_803,time_words,τώρα,now,now
+item_804,time_words,χθες,yesterday,yesterday
+item_805,time_words,ύστερα,later,later
+item_806,time_words,ώρα,time,time
+item_807,question_words,γιατί,why,why
+item_808,question_words,είντα,what CG,what
+item_809,question_words,είνταλος,how CG,how
+item_810,question_words,είνταμπου,what CG,what
+item_811,question_words,ποια,who (female singular),who
+item_812,question_words,ποιο,what (singular),who
+item_813,question_words,ποιος,who (male singular),who
+item_814,question_words,πόθεν,where from CG,where (question)
+item_815,question_words,πότε,when,when (question)
+item_816,question_words,πού,where,where (question)
+item_817,question_words,πώς,how,how
+item_818,question_words,τι,what,what

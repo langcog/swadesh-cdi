@@ -1,0 +1,1075 @@
+WS,WG,FormOne,FormTwoA,FormTwoB,FormThree,Swingley,category,definition,gloss,uni_lemma
+item_1,item_1,item_1,,,,,sounds,au/ai(pijn),ouch,ouch
+item_2,item_2,item_2,item_1,,,,sounds,behbeh(schaap),baa baa,baa baa
+item_3,item_3,item_3,item_2,,,,sounds,beu/boe/meu/moeh(koe),moo,moo
+item_4,,,,item_1,,,sounds,blubblub(vis),,NA
+item_5,item_4,item_4,,,,,sounds,grrr(grommen),rawr,roar
+item_6,,,,item_2,,,sounds,hallo(telefoon),hello,hello
+item_7,,,item_3,,,,sounds,ie-aaie-aa(ezel),hee-haw,hee haw
+item_8,,,,item_3,,,sounds,juujuu/huuhuu(paard),neigh,neigh
+item_9,,,,item_4,,,sounds,knorknor/ngrngr(varken),oink,oink
+item_10,item_5,item_5,,,,,sounds,kukelukuu(haan),cock-a-doodle-doo,cock-a-doodle-doo
+item_11,item_6,item_6,,item_5,,,sounds,kwakkwak(eend),quack quack,quack quack
+item_12,item_7,item_7,,item_6,,,sounds,miauw/mauw(poes),meow,meow
+item_13,item_8,item_8,,item_7,,,sounds,mjammjam(lekker),yum yum,yum yum
+item_14,item_9,item_9,item_4,,,,sounds,ohooh(verbazing),,wow
+item_15,,,,item_8,,,sounds,pieppiep(muis),squeak,squeak
+item_16,item_10,item_10,,,,,sounds,ssss(slang),hiss,hiss
+item_17,item_11,item_11,,item_9,,,sounds,tiktak(klok),tick-tock,tick tock
+item_18,item_12,item_12,item_5,,,,sounds,tjoek(e)tjoek(trein),choo choo,choo choo
+item_19,,,,,,,sounds,tuutatuuta(ziekenwagen/ziekenauto/brandweer/politieauto),nee-naw,wee woo
+item_20,item_13,item_13,item_6,,,,sounds,vroem/broem(auto),vroom,vroom
+item_21,item_14,item_14,,item_10,,,sounds,wafwaf(hond),woof woof,woof woof
+item_22,item_15,,,,,item_49,animals,aap,monkey,monkey
+item_23,item_16,item_15,,,,item_47,animals,beer,bear,bear
+item_24,item_17,item_16,,,,,animals,bij(dier),bee,bee
+item_25,item_18,,,item_11,,,animals,dier/beest,animal/beast,animal
+item_26,item_19,,,,,item_42,animals,eend,duck,duck
+item_27,,,item_7,,,item_39,animals,egel,hedgehog,hedgehog
+item_28,item_20,,item_8,,item_1,item_38,animals,ezel,donkey,donkey
+item_29,item_21,,,,,,animals,geit,goat,goat
+item_30,item_22,,,,,,animals,giraf,giraffe,giraffe
+item_31,,,item_9,,,,animals,haan,chicken (animal),chicken (animal)
+item_32,,,,,,,animals,hamster/cavia,hamster/cavia,rat
+item_33,item_23,,,,,,animals,hert/Bambi,deer,deer
+item_34,item_24,item_17,item_10,,,,animals,hond(je),(little) dog,dog
+item_35,item_25,item_18,,item_12,,,animals,kat/poes(je),(little) cat,cat
+item_36,item_26,,,,,item_29,animals,kikker,frog,frog
+item_37,item_27,item_19,,item_13,,,animals,kip(dier),chicken (animal),chicken (animal)
+item_38,item_28,item_20,item_11,,,item_51,animals,koe,cow,cow
+item_39,item_29,,,,,,animals,konijn(tje),(little) bunny,bunny
+item_40,item_30,,,,,item_61,animals,krokodil,crocodile,crocodile
+item_41,item_31,,,,,,animals,lam(metje),(little) lamb,lamb
+item_42,item_32,,item_12,,,item_45,animals,leeuw,lion,lion
+item_43,,,,,,,animals,luipaard,leopard,leopard
+item_44,,,,,,item_44,animals,mier,ant,ant
+item_45,,,,,,,animals,mug/vlieg,mosquito/fly,mosquito
+item_46,item_33,,,,,item_41,animals,muis,mouse,mouse
+item_47,item_34,,item_13,,,item_60,animals,olifant,elephant,elephant
+item_48,item_35,item_21,,item_14,,item_46,animals,paard,horse,horse
+item_49,,,,,,,animals,panter,panther,panther
+item_50,,,item_14,,,,animals,papegaai,parrot,parrot
+item_51,,,item_15,,,,animals,pinguin/Pingu,penguin,penguin
+item_52,,,,,,,animals,pony,pony,pony
+item_53,,,,,,,animals,rups,caterpillar,caterpillar
+item_54,item_36,,,,,item_55,animals,schaap,sheep,sheep
+item_55,item_37,,,,,item_36,animals,schildpad,turtle,turtle
+item_56,item_38,,item_16,,,item_52,animals,slang,snake,snake
+item_57,item_39,,,,,item_34,animals,spin,spider,spider
+item_58,item_40,,,,,item_48,toys,teddybeer,teddybear,teddybear
+item_59,item_41,,,,,item_56,animals,tijger,tiger,tiger
+item_60,item_42,,,,,item_28,animals,uil,owl,owl
+item_61,item_43,,,,,item_62,animals,varken,pig,pig
+item_62,item_44,item_22,,item_15,,,animals,vis(dier),fish,fish (animal)
+item_63,item_45,,item_17,,,item_50,animals,vlinder,butterfly,butterfly
+item_64,item_46,,,,,item_58,animals,vogel,bird,bird
+item_65,,,,,,item_53,animals,vos,fox,fox
+item_66,item_47,,,,,item_63,animals,wolf,wolf,wolf
+item_67,,,item_18,,,,animals,zebra,zebra,zebra
+item_68,item_48,item_23,item_19,,,item_70,vehicles,auto,car,car
+item_69,,,,,,item_78,vehicles,boot,boat,boat
+item_70,item_49,,,item_16,,,vehicles,brandweerwagen/brandweerauto,fire truck,firetruck
+item_71,item_50,item_24,,,,,vehicles,brommer/bromfiets/moto(r)/motorfiets,motorcycle,motorcycle
+item_72,,,,item_17,,,vehicles,buggy/koets/kinderwagen,pram,stroller
+item_73,,,,,,,vehicles,bulldozer,bulldozer,digger
+item_74,item_51,,,,,item_74,vehicles,bus,bus,bus
+item_75,item_52,,item_20,,,item_66,vehicles,fiets,bike,bicycle
+item_76,,,,item_18,,,vehicles,helicopter,helicopter,helicopter
+item_77,,,,item_19,,,vehicles,kraan(opbouwwerf)/hijskraan,crane,crane
+item_78,,,,,,,vehicles,slee,sled,sled
+item_79,item_53,,,,,item_67,vehicles,tractor,tractor,tractor
+item_80,,,,,,,vehicles,tram,tram,tram
+item_81,item_54,,,item_20,,item_75,vehicles,trein,train,train
+item_82,item_55,,,,,item_69,vehicles,vliegtuig,airplane,airplane
+item_83,item_56,item_25,item_21,,,,vehicles,vrachtwagen/camion/vrachtauto,truck,truck
+item_84,item_57,,,item_21,,,vehicles,ziekenwagen/ambulance/ziekenauto,ambulance,ambulance
+item_85,item_58,item_26,,item_22,,item_89,toys,bal,bal,ball
+item_86,item_59,item_27,item_22,,,item_85,toys,ballon,balloon,balloon
+item_87,item_60,,,,,item_86,toys,blokken,blocks,blocks
+item_88,item_61,item_28,,item_23,,item_82,toys,boek,book,book
+item_89,,,,,,,toys,cadeau(tje),present,present
+item_90,,,,,,,toys,klei/plasticine,clay,play dough
+item_91,,,item_23,,,,toys,kleurpotloden,colored pencils,pencil
+item_92,item_62,,,,item_2,,toys,kralen/parels,beads,bead
+item_93,,,,,,,toys,krijt,crayon,crayon
+item_94,,,,item_24,,,toys,lijm,glue,glue (object)
+item_95,item_63,,,,,,toys,pen/stylo,pen,pen
+item_96,item_64,item_29,,,,item_88,toys,pop,doll,doll
+item_97,,,,,,,toys,potlood,pencil,pencil
+item_98,,,,,,,toys,puzzel,puzzle,puzzle
+item_99,,,,item_25,,,toys,schuim/zeepbellen/bellenblaas,foam/bubble,foam
+item_100,item_65,,,,,,toys,speelgoed(je),(little) toy,toy (object)
+item_101,,,,item_26,,,toys,spel(letje),(little) game,game
+item_102,,,,,,,toys,verhaal,story,story
+item_103,,,,,,,toys,vingerverf,finger paint,paint (object)
+item_104,item_66,,,,,,food_drink,aardappel/patatjes,potato,potato
+item_105,,,,,,,food_drink,aardbei(en),strawberry,strawberry
+item_106,item_67,,,item_27,,item_108,food_drink,appel,apple,apple
+item_107,,,,,,,food_drink,appelmoes,applesauce,applesauce
+item_108,item_68,,,,,,food_drink,appelsien/sinaasappel,orange (food),orange (food)
+item_109,item_69,item_30,,item_28,,item_127,food_drink,banaan,banana,banana
+item_110,,,,,,,food_drink,beschuit(je)/cracotje/crackertje,biscuit,biscuit
+item_111,,,,,,,food_drink,boontjes,beans,beans
+item_112,item_70,,item_24,,,item_101,food_drink,boter,butter,butter
+item_113,item_71,item_31,,,,item_122,food_drink,boterham,sandwich,sandwich
+item_114,item_72,,,,,item_97,food_drink,brood,bread,bread
+item_115,item_73,,item_25,,,item_116,food_drink,cake,cake,cake
+item_116,item_74,,,item_29,,item_105,food_drink,chips,chips,chips
+item_117,,,,,,,food_drink,choco,chocolate milk?,cocoa
+item_118,item_75,,,,,item_92,food_drink,chocolade,chocolate,chocolate
+item_119,,,,,,,food_drink,chocomousse,chocolate mousse,chocolate mousse
+item_120,,,,,,,food_drink,cola/limonade,cola/coke/lemonade,lemonade
+item_121,item_76,,,,,,food_drink,cornflakes/muesli,cornflakes/granola,cereal
+item_122,item_77,,,,,,food_drink,drankje/drinken/blikje,drink,beverage
+item_123,item_78,,,,,item_119,food_drink,druif,grape,grapes
+item_124,item_79,,,,,item_98,food_drink,ei,egg,egg
+item_125,item_80,,,item_30,,item_91,food_drink,erwtjes,peas,peas
+item_126,item_81,item_32,,,,,food_drink,(het)eten,food,food
+item_127,,,item_26,,,,food_drink,frieten/frietjes,fries,french fries
+item_128,item_82,,,,,,food_drink,Fristi/Jogidrink,,beverage
+item_129,item_83,,,,,,food_drink,fruitsap/sap,juice,juice
+item_130,,,,,,,food_drink,gelei/confituur/jam,jelly,jelly
+item_131,,,,,,,food_drink,hagelslag/muisjes,sprinkles,sprinkles
+item_132,,,,,,,food_drink,hamburger,hamburger,hamburger
+item_133,item_84,,,,,,food_drink,ijs/crème/ijsje,ice cream,ice cream
+item_134,,,,item_31,,,food_drink,ijslolly/frisco,ice cream lollipop,popsicle
+item_135,item_85,,item_27,,,item_115,food_drink,kaas,cheese,cheese
+item_136,,,,,item_3,,food_drink,kauwgom,chewing gum,gum
+item_137,item_86,,,,,,food_drink,kip(eten),chicken (food),chicken (food)
+item_138,item_87,item_33,,item_32,,item_94,food_drink,koekje,biscuit/cookie,cookie
+item_139,item_88,,,,,,food_drink,koffie/thee,coffee/tea,coffee
+item_140,,,,,,,food_drink,komkommer,cucumber,cucumber
+item_141,,,item_28,,,,food_drink,kroketjes/gebakkenaardappeltjes,,croquette
+item_142,,,,,,,food_drink,lolly/lekstok,lollipop,lollipop
+item_143,item_89,,,item_33,,item_110,food_drink,melk,milk,milk
+item_144,,,,,,,food_drink,meloen,melon,melon
+item_145,,,,,,,food_drink,nootjes,nuts,nut
+item_146,,,,item_34,,,food_drink,pannenkoek,pancake,pancake
+item_147,item_90,item_34,,,,item_113,food_drink,pap,porridge/dad:pops,porridge
+item_148,item_91,,,,,item_102,food_drink,peer,pear,pear
+item_149,,,,,,,food_drink,PetitGervais(plattekaas)/Danoontje,,yogurt
+item_150,,,,,,,food_drink,pizza,pizza,pizza
+item_151,,,,,,,food_drink,popcorn,popcorn,popcorn
+item_152,,,,item_35,,,food_drink,pudding,pudding,pudding
+item_153,,,,,,,food_drink,puree,puree,puree
+item_154,item_92,,item_29,,,item_125,food_drink,rijst,rice,rice
+item_155,item_93,,,item_36,,,food_drink,rozijntjes,raisins,raisin
+item_156,,,,item_37,,,food_drink,sandwich/pistolet/broodje/kadetje,sandwich,sandwich
+item_157,,,,,item_4,,food_drink,saus,sauce,sauce
+item_158,item_94,,,,,,food_drink,snoep(je),sweet,sweets
+item_159,,,,,,,food_drink,soep,soup,soup
+item_160,item_95,,item_30,,,item_106,food_drink,spaghetti,spaghetti,spaghetti
+item_161,,,,,,,food_drink,stokbrood,baguette,bread
+item_162,,,,,,,food_drink,suiker,sugar,sugar
+item_163,item_96,,,item_38,,item_100,food_drink,taart,cake/pie,pie
+item_164,item_97,,,,item_5,,food_drink,toast/geroosterdbrood,toast,toast
+item_165,item_98,,,,,,food_drink,vis(eten),fish (food),fish (food)
+item_166,,,,,,,food_drink,vitamientjes,vitamins,vitamin
+item_167,item_99,,item_31,,,item_93,food_drink,vlees,meat/flesh,meat
+item_168,item_100,,,,,,food_drink,water(eten),water (drink),water (beverage)
+item_169,,,,,,,food_drink,worst,sausage,sausage
+item_170,item_101,,,,,,food_drink,wortel(tjes),carrot(s),carrot
+item_171,,,,,,,food_drink,yoghurt/plattekaas/kaas,yogurt,yogurt
+item_172,,,,,item_6,,food_drink,zout,salt,salt
+item_173,item_102,,,item_39,,,clothing,(hals)ketting,chain,necklace
+item_174,,,,,,,clothing,handschoenen/wanten,gloves,glove
+item_175,item_103,,,,,,clothing,hemd/bloes,shirt,shirt
+item_176,item_104,,,,,item_142,clothing,hoed,hat,hat
+item_177,item_105,,,item_40,,,clothing,jas,jacket,jacket
+item_178,item_106,,,,,,clothing,jeans(broek)/spijkerbroek,jeans,jeans
+item_179,item_107,,,,,,clothing,kleedje/jurkje,dress,dress (object)
+item_180,item_108,,,item_41,,item_157,clothing,knoop,button,button
+item_181,item_109,item_35,item_32,,,,clothing,kous/sok,sock,sock 
+item_182,,,,,,,clothing,kousebroek/collants/maillot,pantyhose,pantyhose
+item_183,item_110,,,,,,clothing,laarsjes/botjes,boots,boot
+item_184,item_111,,,,,,clothing,(lange)broek,pants,pants
+item_185,item_112,item_36,item_33,,,,clothing,luier/pamper,diaper,diaper
+item_186,item_113,,item_34,,,item_145,clothing,muts,hat/cap (material=wool),hat
+item_187,item_114,,,item_42,,,clothing,onderbroek(je)/slipje/broekje,underpants,underpants
+item_188,item_115,,,,,,clothing,onderhemd(je),undershirt,undershirt
+item_189,,,,,,,clothing,pantoffels/slofjes,slippers,slipper
+item_190,,,,,,,clothing,pet,cap,cap
+item_191,item_116,,,,,,clothing,pyjama/slaapkleed/nachtjapon,pyjama,pajamas
+item_192,,,,,,,clothing,riem,belt,belt
+item_193,item_117,,item_35,,,item_153,clothing,rits,zipper,zipper
+item_194,item_118,item_37,,,,item_155,clothing,schoen,shoe,shoe
+item_195,item_119,,,,,,clothing,short/kortebroek,shorts,shorts
+item_196,,,,item_43,,,clothing,sjaal/das,shawl ,shawl
+item_197,item_120,,,item_44,,,clothing,slabbetje/bavet,bib,bib
+item_198,item_121,,,,,,clothing,trui/sweater/pull,sweater,sweater
+item_199,item_122,,item_36,,,item_138,clothing,T-shirt,T-shirt,t-shirt
+item_200,item_123,item_38,,item_45,,,clothing,tut(je)/(fop)speen,dummy,dummy
+item_201,,,item_37,,,,clothing,zwembroek/zwempak/badpak,swimming pants/swimming suit,swimsuit
+item_202,item_124,,,,,item_177,body_parts,arm,arm,arm
+item_203,item_125,,,,,item_168,body_parts,been,leg,leg
+item_204,item_126,,,item_46,,,body_parts,billen/poep,buttock/poo,butt
+item_205,,,item_38,,,,body_parts,borst,breast,breast
+item_206,item_127,,,,,item_180,body_parts,buik,belly,tummy
+item_207,,,,,item_7,,body_parts,duim,thumb,thumb
+item_208,,,,,,,body_parts,enkel,ankle,ankle
+item_209,item_128,,,,item_8,item_176,body_parts,gezicht,face,face
+item_210,item_129,,,,,,body_parts,haar(lichaam),hair,hair
+item_211,item_130,,item_39,,,item_160,body_parts,hand,hand,hand
+item_212,item_131,,,,,item_173,body_parts,hoofd,head,head
+item_213,,,,,,,body_parts,kin,chin,chin
+item_214,item_132,,,,,item_174,body_parts,knie,knee,knee
+item_215,,,item_40,,,,body_parts,lippen,lips,lip
+item_216,item_133,,,,,item_175,body_parts,mond,mouth,mouth
+item_217,,,,,,,body_parts,nagel(lichaam),nail,nail (body part)
+item_218,item_134,,,item_47,,item_178,body_parts,navel,navel,belly button
+item_219,,,,,,,body_parts,nek/hals,neck,neck
+item_220,item_135,,item_41,,,item_165,body_parts,neus,nose,nose
+item_221,item_136,,,,,item_179,body_parts,oog,eye,eye
+item_222,item_137,,,,,item_159,body_parts,oor,ear,ear
+item_223,,,,,,,body_parts,piemel/plasser,willy,penis
+item_224,item_138,,,,,item_167,body_parts,rug,back,back (body part)
+item_225,,,,,,,body_parts,schouder,shoulder,shoulder
+item_226,,,,,,,body_parts,tanden,teeth,tooth
+item_227,item_139,,,item_48,,item_161,body_parts,teen,toe,toe
+item_228,item_140,,,,,item_166,body_parts,tong,tongue,tongue
+item_229,,,,,,,body_parts,vagina/spleetje,vagina,vagina
+item_230,item_141,,,,,item_170,body_parts,vinger,finger,finger
+item_231,,,,,,,body_parts,voeten,feet,foot
+item_232,item_142,,,,,,body_parts,wang/kaak,cheek/jaw,cheek
+item_233,item_143,,item_42,,,item_244,hold,bord,plate,plate
+item_234,,,,,,,household,borstel/bezem/veger,brush/broom,broom
+item_235,item_144,,,,,item_242,household,bril,glasses,glasses
+item_236,,,item_43,,,,household,camera/fototoestel,camera,camera
+item_237,,,,item_49,item_9,,household,computer,computer,computer
+item_238,item_145,,item_44,,,,household,deken/dekbed,blanket,blanket
+item_239,item_146,,,,,item_254,household,doos,box,box
+item_240,,,,,,,household,dweil,mop,mop (object)
+item_241,,,,,,,household,emmer,bucket,bucket
+item_242,item_147,item_39,,,,item_230,household,fles,bottle,bottle
+item_243,item_148,,,,,item_238,household,foto,foto,picture
+item_244,item_149,,,,,,household,geld/centen/centjes,money/cents,money
+item_245,item_150,,,,item_10,item_245,household,glas,glass,glass
+item_246,item_151,,,,,item_263,household,hamer,hammer,hammer
+item_247,item_152,,,item_50,,item_250,household,handdoek,towel,towel
+item_248,,,,,,,household,kam/borstel,(hair)brush,brush (object)
+item_249,,,,,,,household,kan,jug,jug
+item_250,item_153,,,item_51,,,household,kom/schaal,bowl,bowl
+item_251,item_154,,,,,item_240,household,krant,newspaper,newspaper
+item_252,item_155,,,,,item_251,household,kussen,pillow,pillow
+item_253,item_156,item_40,,,,,household,lamp/licht,lamp/light,lamp
+item_254,item_157,,,item_52,,item_249,household,lepel,spoon,spoon
+item_255,,,,,,,household,mand(je)/korf,basket,basket
+item_256,item_158,,,,,,household,medicijn(en)(sirooppilletjedrankje)/medicament,medicines,medicine
+item_257,item_159,,,,,item_256,household,mes,knife,knife
+item_258,,,,,,,household,nagel(voorwerp),nail ,nail (object)
+item_259,,,,,,,household,plakband/tape,tape,tape (object)
+item_260,item_160,,,,,item_226,household,plant,plant,plant
+item_261,,,,item_53,,,household,portemonnee/portefeuille,wallet,wallet
+item_262,,,item_45,,,,household,pot,jar,jar
+item_263,item_161,,,item_54,,item_205,household,radio,radio,radio
+item_264,,,item_46,,,item_236,household,rommel,mess,mess
+item_265,item_162,,,,,item_239,household,schaar,scissors,scissors
+item_266,,,,,,,household,schilderij,painting,painting
+item_267,,,,,,,household,servet,napkin,napkin
+item_268,,,,,,,household,shampoo,shampoo,shampoo
+item_269,item_163,,,,,,household,sleutel(s),key(s),key
+item_270,,,,,,,household,spaarpot/spaarvarken,piggy bank,piggy bank
+item_271,item_164,,,,,item_261,household,stofzuiger,vacuum cleaner,vacuum
+item_272,item_165,,item_47,,,item_262,household,tandenborstel,toothbrush,toothbrush
+item_273,item_166,,,,,,household,tas/kop(je)/beker,cup,cup
+item_274,,,,item_55,,,household,tekening/prent,drawing,drawing
+item_275,item_167,item_41,,,,item_248,household,telefoon,telephone,telephone
+item_276,item_168,item_42,,,,,household,uurwerk/klok/horloge,watch,watch (object)
+item_277,item_169,,,,,item_257,household,vork,fork,fork
+item_278,,,,,,,household,vuilbak/vuilnisemmer,bin,bin
+item_279,,,,,,,household,vuilnis/afval,garbage,trash
+item_280,,,,item_56,,item_188,household,vuur,cooker/stove,stove
+item_281,item_170,,item_48,,,item_224,household,washandje,washcloth,washcloth
+item_282,,,item_49,,,,household,zakdoek(papier),tissue,tissue
+item_283,item_171,,,,,item_255,household,zeep,soap,soap
+item_284,item_172,,,,,,furniture_rooms,(baby)box/park,playpen,playpen
+item_285,item_173,item_43,,,,item_193,furniture_rooms,bad,bath,bath
+item_286,item_174,,,,,item_214,furniture_rooms,badkamer,bathroom,bathroom
+item_287,item_175,,,,,item_217,furniture_rooms,bed,bed,bed
+item_288,item_176,item_44,,,,item_215,furniture_rooms,deur,door,door
+item_289,,,,,,item_192,furniture_rooms,douche,shower,shower
+item_290,,,,,,,furniture_rooms,droogkast/droogtrommel,tumble dryer,dryer
+item_291,item_177,,,,,item_218,furniture_rooms,garage,garage,garage
+item_292,item_178,,,item_57,,,furniture_rooms,gootsteen/afwasbak,sink,sink
+item_293,item_179,,item_50,,,,furniture_rooms,kachel/openhaard,heater/fireplace,heater/fireplace
+item_294,,,,,,item_186,furniture_rooms,kamer,room,room
+item_295,item_180,,,,,item_194,furniture_rooms,kast,cupboard,cupboard
+item_296,item_181,,,,,item_219,furniture_rooms,kelder,cellar,basement
+item_297,item_182,,,,item_11,item_200,furniture_rooms,keuken,kitchen,kitchen
+item_298,item_183,,,,,item_209,furniture_rooms,kinderstoel,baby chair,high chair
+item_299,item_184,,item_51,,,,furniture_rooms,koelkast/frigo/ijskast/diepvries,fridge/freezer,fridge/freezer
+item_300,item_185,,,item_58,,,furniture_rooms,lade/schuif,drawer,drawer
+item_301,item_186,,,,,item_210,furniture_rooms,oven,oven,oven
+item_302,item_187,,,item_59,,item_220,furniture_rooms,potje,pot (little),pot
+item_303,item_188,,,,,item_189,furniture_rooms,schommelstoel,rocking chair,rocking chair
+item_304,item_189,,item_52,,,item_196,furniture_rooms,slaapkamer,bedroom,bedroom
+item_305,,,,,,item_227,furniture_rooms,spiegel,mirror,mirror
+item_306,item_190,,,,,item_208,furniture_rooms,stoel,chair,chair
+item_307,item_191,,item_53,,,item_195,furniture_rooms,tafel,table,table
+item_308,,,,,item_12,,furniture_rooms,terras,terrace,terrace
+item_309,item_192,,,,,,furniture_rooms,trap(pen),stairs,stairs
+item_310,item_193,,,,,,furniture_rooms,TV/televisie,TV/television,TV
+item_311,item_194,,,,,,furniture_rooms,venster/raam,window,window
+item_312,,,,,,,furniture_rooms,veranda/balkon,porch/balcony,balcony
+item_313,item_195,,,,,,furniture_rooms,WC/toilet,toilet,toilet
+item_314,,,item_54,,,item_204,furniture_rooms,wasmachine,washing machine,washing machine
+item_315,item_196,,,item_60,,item_184,furniture_rooms,wieg,carriage,cradle
+item_316,item_197,,,,,,furniture_rooms,woonkamer/living/huiskamer,living room,living room
+item_317,item_198,,,,,,furniture_rooms,zetel/divan/sofa/bank,sofa/couch,couch
+item_318,item_199,item_45,,,,item_267,outside,bloem,flower,flower
+item_319,item_200,item_46,,,,item_268,outside,boom,tree,tree
+item_320,,,,,,,outside,dak,roof,roof
+item_321,,,,,,,outside,gieter,watering can,watering can
+item_322,,,,,,,outside,glijbaan/schuifaf,slide,slide (object)
+item_323,,,,item_61,,item_281,outside,gras,grass,grass
+item_324,,,,,,,outside,grasmachine/grasmaaier,lawnmower,lawn mower
+item_325,,,item_55,,item_13,,outside,ladder,ladder,ladder
+item_326,item_201,,,,,,outside,lucht/hemel,sky/heaven,sky
+,,,,,,,outside,maand,month,month
+item_327,item_202,,,,,item_273,outside,regen,rain,rain
+item_328,item_203,,,,,item_278,outside,schommel,swing,swing (object)
+item_329,,,,,,,outside,schop/schup/schepje,shovel,shovel
+item_330,item_204,,,,,item_276,outside,sneeuw,snow,snow
+item_331,,,,,,,outside,sneeuwman/sneeuwpop,snowman,snowman
+item_332,,,,,,,outside,steen/kei/kiezelsteen,stone/rock,stone
+item_333,,,,,,,outside,stoep/trottoir,sidewalk,sidewalk
+item_334,,,item_56,,,,outside,stok,stick,stick
+item_335,item_205,,,,,item_285,outside,straat,street,street
+item_336,,,,,,,outside,tuinslang/waterslang,garden hose,hose
+item_337,,,,,,,outside,vlag,flag,flag
+item_338,item_206,,,,,,outside,water(plaats),lake,lake
+item_339,item_207,,,,,item_266,outside,wind,wind,wind
+item_340,item_208,,item_57,,item_14,item_279,outside,wolk,cloud,cloud
+item_341,item_209,,,,,item_280,outside,zandbak,sandbox,sandbox
+item_342,item_210,item_47,,,,item_275,outside,zon,sun,sun
+item_343,item_211,,,item_62,,item_274,outside,zwembad,swimming-pool,swimming pool
+item_344,,,item_58,,,,places,bakker,baker,baker
+item_345,item_212,,,,,item_291,places,boerderij,farm,farm
+item_346,item_213,,,,,item_288,places,bos,forest,forest
+item_347,item_214,item_48,item_59,,,item_298,places,buiten,outdoor,outside
+item_348,,,,,item_15,,places,camping,camping,camping
+item_349,,,,,,,places,circus,circus,circus
+item_350,item_215,,item_60,,,,places,crèche/kinderdagverblijf,daycare,daycare
+item_351,item_216,,,,item_16,,places,dierentuin/zoo,zoo,zoo
+item_352,item_217,,,item_63,,,places,feest(je),party,party
+item_353,,,,,,,places,film,movie,movie
+item_354,,,,,,,places,hetwerkvan,work (place),work (place)
+item_355,item_218,,,,,item_287,places,huis,house,house
+item_356,item_219,,,item_64,,item_292,places,kerk,church,church
+item_357,item_220,,,,,item_294,places,park,park,park
+item_358,,,,,,,places,picknick,picknick,picnic
+item_359,item_221,,,,,item_296,places,school,school,school
+item_360,,,,,,,places,slager,butcher,butcher
+item_361,item_222,,,,,item_297,places,speeltuin,playground,playground
+item_362,,,,,,,places,tankstation/pompstation,gas station,gas station
+item_363,item_223,,,item_65,,item_290,places,thuis,home,home
+item_364,item_224,,,,,item_293,places,tuin,garden,garden
+item_365,item_225,,,item_66,,item_282,places,winkel,shop,store
+item_366,,,,item_67,,,places,zee/strand,beach,beach
+item_367,item_226,item_49,,,,item_311,people,baby,baby,baby
+item_368,item_227,,,,,,people,babysitter,nanny/babysitter,babysitter
+item_369,,,,,,,people,brandweerman,fireman,firefighter
+item_370,item_228,item_50,,,,,people,broer(tje),(little) brother,brother
+item_371,,,,item_68,,,people,clown/Pippo,clown,clown
+item_372,,,,,item_17,,people,cowboy,cowboy,cowboy
+item_373,,,,,,,people,dokter,doctor,doctor
+item_374,,,,,,,people,eenpersoon,a person,person
+item_375,item_229,,,item_69,,item_304,people,jongen,boy,boy
+item_376,,,,,,,people,juf(frouw)/meester,teacher,teacher
+item_377,item_230,item_51,,item_70,item_18,,people,kind(je),child,child
+item_378,item_231,item_52,,,,item_308,people,mama,Mom(my),mommy
+item_379,item_232,,,,,item_305,people,meisje,girl,girl
+item_380,item_233,,,,,item_315,people,meneer,Sir,man
+item_381,item_234,,,,,item_307,people,mensen,people,people
+item_382,item_235,,item_61,,,item_313,people,mevrouw,Mrs,woman
+item_383,item_236,,,item_71,,,people,naamvanbabysitter,,babysitter's name
+item_384,,,,item_72,,,people,naamvanhuisdier,,pet's name
+item_385,item_237,item_53,,,,,people,naamvankind,,child's name
+item_386,item_238,item_54,,item_73,,item_316,people,oma,grandma,grandma
+item_387,item_239,,,,,,people,oom/nonkel,uncle,uncle
+item_388,item_240,item_55,item_62,,,item_310,people,opa,granddad,grandpa
+item_389,item_241,item_56,,,,item_317,people,papa,papa,daddy
+item_390,,,,item_74,,,people,politie/agent,policeman,police
+item_391,,,,,,,people,postbode,postman,postman
+item_392,item_242,,,item_75,,item_309,people,tante,aunt,aunt
+item_393,,,,,,,people,verpleegster/zuster,(female) nurse,nurse
+item_394,,,item_63,,,,people,vriend/vriendin,friend,friend
+item_395,item_243,item_57,,,,,people,zus(je),(little) sister,sister
+item_396,,,,,,,games_routines,bellen/telefoneren,call,call
+item_397,item_244,item_58,item_64,,,,games_routines,dadadoen/daaag,say bye,bye
+item_398,item_245,item_59,item_65,,,,games_routines,danku/dankuwel,thank you,thank you
+item_399,,,,item_76,,,games_routines,dododoen/gaanslapen/slapieslapiedoen,going to bed,go to bed
+item_400,,,,,,,games_routines,etensavonds,having dinner,dinner
+item_401,item_246,item_60,,,,,games_routines,hallo/hoi,hello/hi,hello
+item_402,,,,,,,games_routines,handjegeven,shake hands,shake hands
+item_403,,,item_66,,,,games_routines,handjesdraaien/klappenindehandjes/stampenmetdevoetjes,turning hands/clapping hands/stamping feet,clapping hands
+item_404,,,,item_77,,,games_routines,hoor(t)!,hear,hear
+item_405,,,item_67,,,,games_routines,inbadgaan,take a bath,take a bath
+item_406,item_247,item_61,item_68,,,item_500,games_routines,ja,yes,yes
+item_407,,,item_69,,,,games_routines,kiekeboe/piep!,peek a boo,peekaboo
+item_408,,,item_70,,,,games_routines,middageten,lunch,lunch
+item_409,,,,,,,games_routines,(middag)slaapje/dutjedoen,(take a) nap,sleep
+item_410,item_248,item_62,item_71,,,item_507,games_routines,nee,no,no
+item_411,,,,,,,games_routines,ontbijt/ontbijten,(to have) breakfast,breakfast
+item_412,,,,,,,games_routines,ophetpotjegaanofzitten,go potty,go potty
+item_413,,,item_72,,,,games_routines,ronddraaien,turn around,turn around
+item_414,item_249,,item_73,,,,games_routines,slaapwel/goedenacht/welterusten/slaaplekker,goodnight/sleep well,good night
+item_415,,,item_74,,,,games_routines,sst(zwijgen)/stilzijn,shh,shh
+item_416,item_250,,,,,,games_routines,tandjespoetsen,brush teeth,brush teeth
+item_417,,,,,,,games_routines,totmorgen!(routine),see you tomorrow!,bye
+item_418,,,,,,,games_routines,winkelen,to go shopping,shopping
+item_419,,,,,,,games_routines,zogroot!,so big!,so big
+item_420,item_251,item_63,,,,,descriptive_words,allesweg/op,all done,all done 
+item_421,,,,,,,descriptive_words,arm(tgstrijk),poor,poor
+item_422,,,,,,,descriptive_words,bang/schrik,afraid/scared,scared
+item_423,,,,,,,descriptive_words,beter,better,better
+item_424,item_252,,,,,item_419,descriptive_words,blauw,blue,blue
+item_425,item_253,,,item_78,,item_420,descriptive_words,blij,happy,happy
+item_426,,,,,,,descriptive_words,bruin,brown,brown
+item_427,item_254,,,,,item_404,descriptive_words,donker,dark,dark
+item_428,item_255,,,,,,descriptive_words,dorst(hebben),(to be) thirsty,thirsty
+item_429,item_256,,item_75,,,item_410,descriptive_words,droog,dry,dry (description)
+item_430,,,,,,,descriptive_words,eerst,first,first
+item_431,,,,,,,descriptive_words,gebroken/kapot/stuk,broken,broken
+item_432,,,,,,,descriptive_words,geel,yellow,yellow
+item_433,,,,,,,descriptive_words,gek(raar),weird (strange),strange
+item_434,item_257,,,,,,descriptive_words,goed/OK,good/OK,good
+item_435,,,,,,,descriptive_words,groen,green,green
+item_436,item_258,,,,,item_424,descriptive_words,groot,large,large
+item_437,item_259,,,,,,descriptive_words,honger(hebben),(to be) hungry,hungry
+item_438,,,,,,,descriptive_words,hoog,high,high
+item_439,item_260,,,,,,descriptive_words,isaanhetslapen,is sleeping,is sleeping
+item_440,item_261,,,,,item_433,descriptive_words,klein,small,small
+item_441,item_262,,item_76,,,item_430,descriptive_words,koud,cold,cold
+item_442,,,,item_79,item_19,,descriptive_words,kwaad/boos,angry/mad,angry
+item_443,,,,,,,descriptive_words,laatste,last,last
+item_444,,,,,item_20,,descriptive_words,lang,long/tall,long
+item_445,,,,,,,descriptive_words,lawaai,noise,noise
+item_446,item_263,,,item_80,item_21,item_432,descriptive_words,leeg,empty,empty
+item_447,item_264,,,,,,descriptive_words,lief/schattig,cute,cute
+item_448,,,,item_81,,,descriptive_words,luid,loud,loud
+item_449,,,,,,,descriptive_words,mals,tender,tender
+item_450,item_265,,,,,item_440,descriptive_words,moe,tired,tired
+item_451,,,item_77,,,,descriptive_words,moeilijk,difficult,difficult
+item_452,item_266,,,,,item_422,descriptive_words,mooi,beautifull,beautiful
+item_453,item_267,,,,,item_408,descriptive_words,nat,wet,wet (description)
+item_454,,,item_78,,,,descriptive_words,nieuw,new,new
+item_455,,,,,item_22,,descriptive_words,oranje,orange,orange (description)
+item_456,,,,,,,descriptive_words,oud,old,old
+item_457,item_268,,,,,,descriptive_words,pijn(hebben),(to be in) pain,hurt (description)
+item_458,,,,item_82,,,descriptive_words,plakkerig,sticky,sticky
+item_459,,,,,,,descriptive_words,proper/schoon/netjes,clean,clean (description)
+item_460,,,,,,,descriptive_words,rijk(tgstarm),rich,rich
+item_461,item_269,,,,,item_415,descriptive_words,rood,red,red
+item_462,,,,,,,descriptive_words,rustig/stil,calm/silent,quiet
+item_463,item_270,,item_79,,,item_435,descriptive_words,slecht,bad,bad
+item_464,item_271,,item_80,,,item_402,descriptive_words,stout,naughty,naughty
+item_465,,,,,,,descriptive_words,traag/langzaam,slow,slow
+item_466,,,,,,,descriptive_words,vast,fixed,fixed
+item_467,,,,,,,descriptive_words,verdrietig,sad,sad
+item_468,item_272,,item_81,,,,descriptive_words,vlug/snel,quick,quick
+item_469,,,,,,,descriptive_words,vol,full,full
+item_470,item_273,,,,,item_400,descriptive_words,voorzichtig,carefull,careful
+item_471,,,,,,,descriptive_words,vriendelijk,friendly,friendly
+item_472,item_274,,,,,,descriptive_words,vuil/vies/bah!,dirty/yuk!,dirty
+item_473,,,,,,,descriptive_words,wakker,awake,awake
+item_474,item_275,item_64,item_82,,,,descriptive_words,warm/heet,warm/hot,warm
+item_475,,,,item_83,,,descriptive_words,wit,white,white
+item_476,item_276,,,,,item_403,descriptive_words,zacht,soft,soft
+item_477,item_277,,,,,item_439,descriptive_words,ziek,sick,sick
+item_478,,,,,,,descriptive_words,zwaar,heavy,heavy
+item_479,,,item_83,,,,descriptive_words,zwart,black,black
+item_480,item_278,item_65,,item_84,,,action_words,aanraken/aankomen,touch,touch
+item_481,item_279,,,,,,action_words,afdrogen,dry,dry (action)
+item_482,,,,,,,action_words,afwassen,do the dishes,wash
+item_483,,,,,,,action_words,bedekken,cover up,cover (action)
+item_484,item_280,,,item_85,,item_333,action_words,bijten,to bite,bite
+item_485,item_281,item_66,,,,item_385,action_words,blazen,to blow,blow
+item_486,,,,,,,action_words,blijven,to stay,stay
+item_487,,,,,,,action_words,boetseren/kleien,clay modeling,play dough
+item_488,item_282,item_67,item_84,,,item_367,action_words,botsen,to bump,bump 
+item_489,,,,item_86,,,action_words,bouwen,to build,build
+item_490,item_283,,,,,,action_words,breken/kapotmaken,to break,break
+item_491,item_284,,,,,item_339,action_words,brengen,to bring,bring
+item_492,item_285,item_68,,,,item_334,action_words,dansen,to dance,dance
+item_493,,,,item_87,,,action_words,delen/verdelen,to divide,divide
+item_494,,,,,item_23,,action_words,denken,to think,think
+item_495,,,,,,,action_words,doenalsof,to act like,act like
+item_496,,,,,,,action_words,dragen,to wear,wear 
+item_497,item_286,item_69,,,,item_324,action_words,drinken,to drink,drink (action)
+item_498,,,,item_88,,,action_words,drogen,dry,dry (action)
+item_499,item_287,,,item_89,,item_386,action_words,duwen,to push,push
+item_500,,,,,,,action_words,eindigen/stoppen,to finish,finish
+item_501,item_288,item_70,,,,,action_words,eten(ww),to eat,eat
+item_502,,,,,,,action_words,etengeven/voeren,to feed,feed
+item_503,,,,,,,action_words,gaan/stappen/lopen,to go/walk,go
+item_504,item_289,,,,,,action_words,geefaan,indicate,indicate
+item_505,item_290,item_71,,,,item_326,action_words,geven,to give,give
+item_506,,,,,,,action_words,glijden/schuiven,glide/shove,slide (action)
+item_507,item_291,,,,,,action_words,gooien/werpen,to throw,to throw
+item_508,,,item_85,,,,action_words,haasten/zichspoeden,to hurry up,to hurry up
+item_509,,,,,item_24,,action_words,haten,to hate,hate
+item_510,item_292,,,,,,action_words,hebben,to have,have
+item_511,item_293,,,item_90,,item_370,action_words,helpen,to help,help
+item_512,,,,,,,action_words,herstellen/maken/repareren,to repair,fix
+item_513,,,,,,,action_words,horen,to hear,hear
+item_514,,,,item_91,,item_320,action_words,houden,to keep,keep
+item_515,item_294,,item_86,,,,action_words,houdenvan/graagzien/liefvinden,to love,love
+item_516,,,item_87,,,,action_words,inschenken/gieten,to pour,pour
+item_517,,,,,,,action_words,jagen,to hunt,hunt
+item_518,,,item_88,,,,action_words,kietelen,to tickle,tickle
+item_519,,,,,,,action_words,kiezen,to choose,choose
+item_520,item_295,item_72,,,,item_319,action_words,kijken,to look,look
+item_521,,,,item_92,,,action_words,klappen(inhanden),to clap (hands),clap
+item_522,,,,item_93,,,action_words,klimmen,to climb,climb
+item_523,,,,,,,action_words,kloppen,to knock,knock
+item_524,,,,,,,action_words,knippen,to cut,cut
+item_525,item_296,item_73,,,,,action_words,knuffelen/goedvastpakken/stevigvastpakken,to hug,hug
+item_526,,,,,,,action_words,koken/etenmaken,to cook,cook
+item_527,,,,,,,action_words,kopen,to buy,buy
+item_528,item_297,,,,,item_342,action_words,krijgen,to get,get
+item_529,item_298,,,,,,action_words,kuisen/poetsen/schoonmaken,to clean,clean (action)
+item_530,item_299,,,item_94,,,action_words,kussen/kusjegeven/zoenen,to kiss,kiss
+item_531,item_300,,,,,item_379,action_words,lachen,to smile,smile
+item_532,,,item_89,,item_25,,action_words,latenvallen,to drop,drop
+item_533,item_301,,,,,item_361,action_words,lezen,to read,read
+item_534,,,item_90,,,,action_words,likken,to lick,lick
+item_535,item_302,,,,,,action_words,lopen/rennen,to walk/run,run
+item_536,,,item_91,,,,action_words,luisteren,to listen,listen
+item_537,,,item_92,,,,action_words,maken,to make,make
+item_538,,,,item_95,,,action_words,morsen/knoeien,to spill,spill
+item_539,,,,,,,action_words,neergooien/opdegrondgooien/weggooien,to throw away,throw
+item_540,,,,,,,action_words,nemen/pakken,to take,take
+item_541,,,,,,,action_words,opslotdoen/toedoen/dichtdoen/vastdoen/vastmaken,to lock/close/fix,lock (action)
+item_542,item_303,,,,,,action_words,openen/opendoen/openmaken,to open,open (action)
+item_543,,,item_93,,,,action_words,passen,to try on (clothes,try on
+item_544,,,,,,,action_words,praten,to talk,talk
+item_545,,,,,,,action_words,proeven,to taste,taste
+item_546,,,,,,,action_words,puzzelen,to puzzle,puzzle (action)
+item_547,item_304,,,,,item_346,action_words,rijden,to ride,ride
+item_548,,,,,,,action_words,schaatsen/skeelen,to ice skate,skate (action)
+item_549,,,,,,,action_words,scheuren,to tear up,tear
+item_550,,,item_94,,,,action_words,schilderen/verven,to paint,paint (action)
+item_551,item_305,,,,,,action_words,schoppen/stampen,to kick ,kick
+item_552,item_306,,,,,item_384,action_words,schrijven,to write,write
+item_553,,,,item_96,,,action_words,schudden,to shake,shake
+item_554,item_307,,,,,item_364,action_words,slaan,to hit,hit
+item_555,item_308,item_74,,,,item_383,action_words,slapen,to sleep,sleep
+item_556,item_309,,,item_97,,,action_words,spatten/pletsen/spetteren,to splash,splash
+item_557,item_310,,,,,item_356,action_words,spelen,to play,play
+item_558,item_311,item_75,,,,item_357,action_words,springen,to jump,jump
+item_559,,,,item_98,,item_340,action_words,staan,to stand,stand
+item_560,,,,,,item_335,action_words,stoppen,to stop,stop
+item_561,,,,,,,action_words,strijken,to iron,iron (action)
+item_562,,,,,,,action_words,tekenen/kleuren,to draw/colour in,draw
+item_563,item_312,,,,,,action_words,tonen/wijzen/latenzien,to show/point to,show
+item_564,item_313,,,item_99,,item_362,action_words,trekken,to draw/drag,pull
+item_565,item_314,,,,,item_377,action_words,vallen,to fall,fall
+item_566,,,,item_100,,,action_words,vangen,to catch,catch
+item_567,,,,,item_26,,action_words,vastmaken,to fix,fix
+item_568,item_315,,,,,item_336,action_words,vegen,to sweep,sweep
+item_569,,,item_95,,,,action_words,verstoppen,to hide,hide
+item_570,,,,,,,action_words,vinden,to find,find
+item_571,,,,,,item_355,action_words,wachten,to wait,wait
+item_572,,,,item_101,,,action_words,wakkerworden/opstaan,to wake up/get up,wake
+item_573,item_316,,,,,item_365,action_words,wandelen,to walk,walk
+item_574,item_317,,,,,item_351,action_words,wassen,to wash,wash
+item_575,,,,item_102,,,action_words,weggooien,to throw away,throw
+item_576,item_318,,,,,,action_words,wenen/huilen,to cry,cry
+item_577,,,,,,,action_words,wensen/willen,to wish/want,want
+item_578,,,,,,,action_words,werken,to work,work (action)
+item_579,item_319,,,,,item_374,action_words,zeggen,to say,say
+item_580,,,,,,item_376,action_words,zetten,to put,put
+item_581,item_320,,,,,item_358,action_words,zien,to see,see
+item_582,item_321,item_76,,item_103,,item_352,action_words,zingen,to sing,sing
+item_583,,,item_96,,,item_344,action_words,zitten,to sit,sit
+item_584,,,item_97,,,,action_words,zwaaien/wuiven,to wave,wave
+item_585,item_322,,,,,item_348,action_words,zwemmen,to swim,swim
+item_586,,,,,,,time_words,dadelijk/seffens,immediately,immediately
+item_587,item_323,,,,,item_497,time_words,dag,day,day
+item_588,,,,,item_27,item_393,time_words,gisteren,yesterday,yesterday
+item_589,item_324,,item_98,,,,time_words,later/straks,later/soon,soon
+item_590,,,,,,item_389,time_words,morgen,tomorrow,tomorrow
+item_591,,,,,,,time_words,na/achter,after/behind,after
+item_592,,,,,,,time_words,nacht/vannacht,night/tonight,night
+item_593,item_325,,,,,item_395,time_words,nu,now,now
+item_594,,,,,,,time_words,tijd,time,time
+item_595,,,,,,,time_words,totmorgen(tijd),see you tomorrow!,see you tomorrow
+item_596,,,,,,,time_words,totstraks,see you later,see you later
+item_597,,,,,,item_392,time_words,vanavond,this evening,tonight
+item_598,,,,,item_28,item_397,time_words,vandaag,today,today
+item_599,,,item_99,,,,time_words,voor(tijd),before ,before
+item_600,item_326,item_77,,,,item_459,pronouns,dat,that,that
+item_601,item_327,,,,item_29,item_453,pronouns,deze,this,this
+item_602,,,,,,item_448,pronouns,die,that,that
+item_603,,,,,,item_457,pronouns,dit,this,this
+item_604,,,,,,,pronouns,haar(vnw),her,her (accusative)
+item_605,,,,,,item_458,pronouns,hem,him,him
+item_606,,,,,,,pronouns,hen,them,them
+item_607,item_328,,,,,,pronouns,het(vnw),it,it
+item_608,,,,,,,pronouns,hethare/haar,her,her (possessive)
+item_609,,,,,,,pronouns,hetzijne/zijn,his,his
+item_610,,,,,,,pronouns,hij,he,he
+item_611,,,,,item_30,,pronouns,hun,them,them
+item_612,item_329,,item_100,,,item_445,pronouns,ik,I,I
+item_613,,,,,item_31,,pronouns,jezelf,yourself,yourself
+item_614,item_330,,,,,item_446,pronouns,jij,you,you
+item_615,item_331,,,,,,pronouns,jouw(e)/vanjou/dejou(we),your,your
+item_616,,,,,,,pronouns,mezelf,myself,myself
+item_617,item_332,,,,,item_455,pronouns,mij,me,me
+item_618,item_333,,,,,,pronouns,mijn(e)/vanmij,my,my
+item_619,,,,,,,pronouns,ons,our,our
+item_620,item_334,,,,,item_450,pronouns,wij,we,we
+item_621,,,,,,,pronouns,zij(meervoud),they,they
+item_622,,,,,,,pronouns,zij(meisje),she,she
+item_623,item_335,,,,,item_462,question_words,hoe,how,how
+item_624,item_336,item_78,,,,item_460,question_words,waar,where,where (question)
+item_625,,,,,item_32,,question_words,waarom,why,why
+item_626,,,,,,,question_words,wanneer,when,when (question)
+item_627,item_337,item_79,item_101,,,item_461,question_words,wat,what,what
+item_628,,,,,,item_463,question_words,welke,which,which (question)
+item_629,item_338,item_80,,,,item_464,question_words,wie,who,who
+item_630,item_339,,item_102,,,item_483,locations,aan,to,to
+item_631,item_340,,,,,item_465,locations,achter,behind,behind
+item_632,item_341,,,,,item_477,locations,af,off,off
+item_633,item_342,,item_103,,,item_479,locations,beneden,beneath,under
+item_634,,,,item_104,,,locations,bij(vz),by,by
+item_635,item_343,,,,,,locations,boven(op),above/on,above
+item_636,item_344,item_81,,item_105,,item_471,locations,daar,there,there
+item_637,,,,,,,locations,gedaan/over/af,over,over
+item_638,,,,,,,locations,hier,here,here
+item_639,,,item_104,,,,locations,in/binnen(in),in(side),in
+item_640,,,,,,,locations,in/naar,in(to),in
+item_641,,,,,,,locations,kortbij/dichtbij,near,near
+item_642,,,,,,item_469,locations,met,with,with
+item_643,,,,,,item_468,locations,naar,to,to
+item_644,,,,,,item_476,locations,naast,next to,next to
+item_645,,,,,,,locations,om,around,around
+item_646,item_345,,,,,item_478,locations,onder,under,under
+item_647,,,,,,item_482,locations,op,on,on
+item_648,,,,,item_33,,locations,over,over,over
+item_649,,,,,,,locations,rond,round,round
+item_650,item_346,,,,,item_470,locations,terug,back,back (location)
+item_651,item_347,item_82,item_105,,,item_480,locations,uit,out,out
+item_652,,,,item_106,,,locations,van,from,from
+item_653,item_348,,,,,,locations,voor(vz),in front of,in front of
+item_654,,,,,,,locations,wegvan,away from,away
+item_655,item_349,,,,,,quantifiers,alles/allemaal,everything/all of it,all
+item_656,item_350,,item_106,,,,quantifiers,ander(e),other,other
+item_657,,,,,,,quantifiers,anders,different,different
+item_658,,,,,,,quantifiers,de,the,the
+item_659,,,item_107,,,,quantifiers,een,a/an,a
+item_660,item_351,,,,,,quantifiers,eenbeetje,a little bit,a little
+item_661,,,,,,,quantifiers,ééntweedrie,one two three,one two three
+item_662,,,,,,,quantifiers,elk(e)/ieder,each/every,all
+item_663,,,,,,,quantifiers,enkele/sommige,some/several,some
+item_664,,,,,item_34,,quantifiers,geenenkele,not any,none
+item_665,,,,,,,quantifiers,het(lw),the,the
+item_666,item_352,item_83,,item_107,,,quantifiers,meer/nog,more/still,more
+item_667,item_353,,,,,item_492,quantifiers,niet,not,not
+item_668,,,item_108,,,item_495,quantifiers,ook,too,too
+item_669,,,,,,item_496,quantifiers,veel,a lot,a lot
+item_670,,,,,,,quantifiers,zelfde,same,same
+item_671,,,,,,,helping_verbs,ben(bvbikben),am,be
+item_672,,,,,,,helping_verbs,bent(bvbjijbent),(you) are,be
+item_673,,,,,,,helping_verbs,deed/deedje,did,do
+item_674,,,,,,item_366,helping_verbs,doen,to do,do
+item_675,,,,,,,helping_verbs,ga+ww(bvbikgaspelen),to go,go
+item_676,,,,,,,helping_verbs,hijdoet,he does,do
+item_677,,,,,,,helping_verbs,is,is,be
+item_678,,,,item_108,,,helping_verbs,kunnen,can/be able to,be able
+item_679,,,,,,,helping_verbs,laatme,let me,let
+item_680,,,item_109,,,,helping_verbs,moet(bvbikmoet),have to/must,have to
+item_681,item_354,,item_110,,,,helping_verbs,nietdoen,don't do,not do
+item_682,,,,,,,helping_verbs,proberen,to try,try
+item_683,,,,,,,helping_verbs,waren(bvbwijwaren),were,be
+item_684,,,,,,,helping_verbs,was(bvbhijwas),was,be
+item_685,,,,,,,helping_verbs,zijn(bvbwijzijn),are,be
+item_686,,,,,,,helping_verbs,zoujekunnen,would you be able to,could
+item_687,,,,,,,helping_verbs,zou/zouden,would,would
+item_688,,,,,,,helping_verbs,zullen,will,will
+item_689,,,,,,,connecting_words,als,if/when,if
+item_690,,,,,,,connecting_words,daarom,therefore,therefore
+item_691,,,,,item_35,,connecting_words,dan,then,then
+item_692,,,,,,,connecting_words,en,and,and
+item_693,,,,,,,connecting_words,maar,but,but
+item_694,,,,,item_36,,connecting_words,omdat,because,because
+,item_355,item_84,,,,,sounds,bah(vies/vuil),yuk,yucky
+,item_356,item_85,,,,,sounds,boem(ietsdatvaltofbotst),boom,boom
+,item_357,item_86,,,,,sounds,toktok(kip),cluck-cluck,cluck
+item_695,item_358,,,,,item_37,animals,eekhoorn,squirrel,squirrel
+,item_359,,,,,,animals,kuiken,chick,chick
+,item_360,,,,,,animals,mug,mosquito,mosquito
+,item_361,,,,,item_35,animals,pinguin,pinguin,penguin
+,item_362,,,,,item_64,animals,vlieg,fly,fly (animal)
+,item_363,item_87,,,,item_73,vehicles,buggy,buggy,stroller
+,item_364,item_88,,,,,vehicles,kinderwagen/koets,pram/stroller,stroller
+,item_365,,,,,,toys,bubbels/zeepbellen/bellen/bellenblaas,foam/bubbles,bubbles
+,item_366,item_89,,,,,toys,naamvanknuffel/doekje/lappenpopvanhetkind,,NA
+,item_367,,,,,,toys,schommelpaard/hobbelpaard,rocking horse,rocking horse
+,item_368,,,,,item_131,food_drink,beschuit,Dutch rusk/biscuit rusk,cookie
+,item_369,,,,,item_96,food_drink,cola,coke,soda
+,item_370,,,,,,food_drink,fruitpap/fruithapje,fruit puree,smoothie
+,item_371,,,,,item_117,food_drink,limonade,lemonade,lemonade
+,item_372,,,,,item_114,food_drink,yoghurt,yoghurt,yogurt
+item_696,item_373,,,,,,games_routines,a.u.b./alsjeblieft,please,please
+,item_374,item_90,,,,item_512,games_routines,bravo!,bravo!/well done,bravo
+,item_375,item_91,,,,,games_routines,eenbadnemen,to take a bath,take a bath
+,item_376,item_92,,,,,games_routines,eendutje/tukjedoen,to take a nap ,take a nap
+,item_377,,,,,,games_routines,eten(routine),to eat,eat
+,item_378,item_93,,,,,games_routines,handjesdraaien,to turn hands,turn hands
+,item_379,item_94,,,,,games_routines,hebben/willen,have/want,have/want
+,item_380,,,,,,games_routines,hokuspokus'(ofanderegoocheltermen),hocus pocus,NA
+,item_381,item_95,,,,item_511,games_routines,kiekeboe,on top?,peekaboo
+,item_382,item_96,,,,,games_routines,sst,shush,shh
+,item_383,,,,,item_503,games_routines,wacht!,wait!,wait
+,item_384,item_97,,,,,clothing,jas(je)/mantel,jacket/coat,jacket
+,item_385,,,,,item_169,body_parts,tand,tooth,tooth
+,item_386,,,,,item_171,body_parts,voet,foot,foot
+,item_387,,,,,,household,aquarium/visbak/vissenkom,fish tank,fish tank
+,item_388,,,,,item_216,furniture_rooms,bureau,desk,table
+,item_389,,,,,,household,fornuis/vuur/kookplaat,stove,stove
+item_697,item_390,,,item_109,,,household,video(recorder),video recorder,video recorder
+,item_391,,,,,item_211,furniture_rooms,zolder,attic,attic
+,item_392,,,,,,furniture_rooms,afval/rommel,trash,trash
+item_698,item_393,,,,,item_228,furniture_rooms,bezem,broom,broom
+,item_394,,,,,,furniture_rooms,borstel/veger,brush/broom,broom
+,item_395,,,,,,furniture_rooms,handtas/tas,handbag,bag
+,item_396,,,,,item_260,household,kam,comb,comb (object)
+,item_397,,,,,item_234,furniture_rooms,klok,clock,clock
+,item_398,,,,,item_231,furniture_rooms,portemonnee,wallet,wallet
+,item_399,,,,,item_271,outside,glijbaan,"slide, shute",slide (object)
+,item_400,,,,,item_299,places,kermis,"fair, fancy fair",fair
+item_699,item_401,,,item_110,,item_265,outside,maan,moon,moon
+,item_402,,,,,item_269,outside,steen,stone,stone
+item_700,item_403,,,,,,outside,ster(ren),star(s),star
+,item_404,,,,,item_289,places,strand,beach,beach
+,item_405,,,,,item_295,places,vijver,pond,pond
+,item_406,,,,,item_277,outside,zee,sea,sea
+,item_407,item_98,,,,,people,naamvanzusjeofbroertje,name of brother or sister,NA
+,item_408,,,,,,action_words,dichtdoen/dichtmaken,to close,close
+,item_409,,,,,item_321,action_words,draaien,to turn,turn
+,item_410,item_99,,,,,action_words,etengeven,to feed,feed
+,item_411,,,,,item_381,action_words,fietsen,"to cycle, bike",cycle (action)
+,item_412,item_100,,,,,action_words,gaan/weggaan,to go (away)/leave,go 
+,item_413,,,,,,action_words,leggen/zetten/neerzetten,to put down,put down
+,item_414,,,,,item_343,action_words,nemen,to take,take
+,item_415,,,,,item_380,action_words,oppassen,to take care of/nurse,watch (action)
+,item_416,,,,,,action_words,roepen/schreeuwen,to scream,scream
+,item_417,,,,,item_338,action_words,schommelen,to swing,swing (action)
+,item_418,,,,,,action_words,stoppen/ophouden,to stop,stop
+,item_419,,,,,item_328,action_words,tekenen,to draw,draw
+,item_420,,,,,item_325,action_words,trommelen,to drum,drum (action)
+,item_421,,,,,item_350,action_words,vliegen,to fly,fly (action)
+,item_422,,,,,,action_words,zichhaasten/zichspoeden/opschieten,to hurry up,hurry
+,item_423,,,,,,time_words,savonds,in the evenings,in the evenings
+,item_424,,,,,,time_words,smiddags,in the afternoons,afternoon
+item_701,item_425,,,,,,time_words,smorgens/sochtends,in the mornings,in the mornings
+,item_426,,,,,,time_words,nacht,night,night
+,item_427,,,,,item_434,descriptive_words,bang,afraid,afraid
+,item_428,,,,,item_443,descriptive_words,braaf,decent,well-behaved
+,item_429,,,,,item_405,descriptive_words,hard,hard,hard
+,item_430,,,,,,descriptive_words,kapot/stuk,broken,broken
+,item_431,item_101,,,,item_441,descriptive_words,lekker,nice/tasty,yummy
+,item_432,,,,,,descriptive_words,leuk/fijn,nice,nice
+,item_433,,,,,,descriptive_words,schoon/proper,clean,clean (description)
+,item_434,,,,,,pronouns,dit/deze/dees,this,this
+,item_435,,,,,,pronouns,zijn/haar,his/her,his/her
+,item_436,,,,,,locations,binnen(in),in(side),inside
+,item_437,,,,,item_467,locations,erop,on it (on them),on
+,item_438,,,,,item_474,locations,in,in/into,in
+,item_439,item_102,,,item_37,item_472,locations,weg,away,away
+,item_440,,,,,,quantifiers,geen/niemand/niets,no/nobody/nothing,no
+,item_441,,,,,item_493,quantifiers,hetzelfde,the same,same
+,,item_103,,,,,action_words,drankje/drinken,drink/to drink,drink (action)
+,,item_104,,,,,action_words,eendutjedoen/tukjedoen,take a nap,take a nap
+,,,item_111,,,item_373,action_words,knuffelen,to hug,hug
+item_702,,,item_112,,,,helping_verbs,ikwil,I want,want
+,,,,item_111,,item_81,toys,pen,pen,pen
+item_703,,,,item_112,,,games_routines,kgajepakken,I'm gonna get you,NA
+,,,,,item_38,,animals,dino(saurus),dinosaur,dinosaur
+,,,,,item_39,item_30,animals,hert,deer,deer
+,,,,,item_40,,places,kasteel,castle,castle
+,,,,,item_41,,toys,trom(mel),drum,drum (object)
+,,,,,item_42,,toys,voetbal,football,football
+,,,,,item_43,,toys,microscoop,microscope,microscope
+,,,,,item_44,,toys,driewieler,tricycle,bicycle
+,,,,,item_45,,toys,(wind)vlieger,kite,kite
+,,,,,item_46,,toys,wagon,wagon,wagon
+,,,,,item_47,,food_drink,citroen,lemon,lemon
+,,,,,item_48,,food_drink,pindanoot,peanut,peanut
+,,,,,item_49,,food_drink,groente,vegetable,vegetable
+,,,,,item_50,,clothing,jeans(broek),jeans,jeans
+,,,,,item_51,,body_parts,elleboog,elbow,elbow
+,,,,,item_52,,body_parts,(vinger)nagel,nail,nail (finger)
+,,,,,item_53,,household,blinddoek,blindfold,blindfold
+,,,,,item_54,,household,beker/tas,cup/bag,cup/bag
+,,,,,item_55,,household,materiaal,material,material
+,,,,,item_56,,household,postzegel,stamp,postage stamp
+,,,,,item_57,,furniture_rooms,band(vanwiel),tire,tire
+,,,,,item_58,,furniture_rooms,meubels,furniture,furniture
+,,,,,item_59,,furniture_rooms,zetel/sofa,sofa,couch
+,,,,,item_60,,furniture_rooms,hek/omheining,fence,fence
+,,,,,item_61,,furniture_rooms,tuinslang,garden hose,hose
+,,,,,item_62,,outside,trottoir/stoep/voetpad,sidewalk,sidewalk
+,,,,,item_63,,people,familie,family,family
+,,,,,item_64,,people,boer,farmer,farmer
+,,,,,item_65,item_489,quantifiers,niemand,no-one,nobody
+,,,,,item_66,,people,verpleegster,nurse,nurse
+,,,,,item_67,,other,ongeval,accident,accident
+,,,,,item_68,,other,cirkel,circle,circle
+,,,,,item_69,,other,idee,idea,idea
+,,,,,item_70,,action_words,(op)vangen,to catch,catch
+,,,,,item_71,,action_words,vergeten,to forget,forger
+,,,,,item_72,,action_words,haasten,to hurry up,hurry
+,,,,,item_73,,action_words,verlaten,to leave (behind),leave (behind)
+,,,,,item_74,,action_words,meten,to measure,measure
+,,,,,item_75,,action_words,schillen,to peel,peel
+,,,,,item_76,,action_words,beloven,to promise,promise
+,,,,,item_77,,action_words,rolschaatsen,to ice skate,skate (action)
+,,,,,item_78,,action_words,niezen,to sneeze,sneeze
+,,,,,item_79,,action_words,tuimelen/koprollen,to tumble,"tu,ble"
+,,,,,item_80,,action_words,poetsen/kuisen,to polish,polish
+,,,,,item_81,,action_words,vervelen,to get/be bored,be bored
+,,,,,item_82,,descriptive_words,diep,deep,deep
+,,,,,item_83,,descriptive_words,verschillend,different/differing,different
+,,,,,item_84,,descriptive_words,duur,expensive,expensive
+,,,,,item_85,item_417,descriptive_words,fijn,nice,nice
+,,,,,item_86,,descriptive_words,half,half,half
+item_704,,,,,item_87,,descriptive_words,verloren,lost,lost
+,,,,,item_88,,descriptive_words,bijzonder,special,special
+,,,,,item_89,,locations,ervoor(plaats),in front of,in front of
+,,,,,item_90,,time_words,week,week,weel
+,,,,,item_91,,pronouns,zij/ze,she,she
+,,,,,item_92,,locations,erboven,above,above
+,,,,,item_93,,locations,tussen,between ,between
+,,,,,item_94,,locations,bovenin,above,above
+,,,,,item_95,,quantifiers,elk,each,each
+,,,,,item_96,,helping_verbs,mogen,may/can,may
+,,,,,item_97,,helping_verbs,nodigzijn,to be needed/necessary,to be needed
+,,,,,item_98,,other,waren,were,be
+,,,,,item_99,,connecting_words,hoewel,although,although
+,,,,,item_100,,connecting_words,eigenlijk,actually,actually
+,,,,,,item_1,sounds,broem,vroom?,vroom
+,,,,,,item_2,sounds,vroem,vroom?,vroom
+,,,,,,item_3,sounds,bah,poo,NA
+,,,,,,item_4,sounds,grr,grr,grrr
+,,,,,,item_5,sounds,au,ouch,ouch
+,,,,,,item_6,sounds,knor,grunt,oink
+,,,,,,item_7,sounds,tok,cluck,cluck
+,,,,,,item_8,sounds,beh,(sheep),baa baa
+,,,,,,item_9,sounds,boe,moo,moo
+,,,,,,item_10,sounds,ai,ouch,ouch
+,,,,,,item_11,sounds,kukelekuu,cock-a-doodle-doo,cockadoodledoo
+,,,,,,item_12,sounds,tjoek,choo-choo,choo choo
+,,,,,,item_13,sounds,waf,bark,woof woof
+,,,,,,item_14,sounds,woef,woof,woof woof
+,,,,,,item_15,sounds,tik,tik,NA
+,,,,,,item_16,sounds,sssss,sssss,shh
+,,,,,,item_17,sounds,tak,tac,NA
+,,,,,,item_18,sounds,boem,boom,boom
+,,,,,,item_19,sounds,kwak,quack,quack quack
+,,,,,,item_20,sounds,ooh,oh,oh
+,,,,,,item_21,sounds,miauw,miaow,meow
+,,,,,,item_22,sounds,blub,,NA
+,,,,,,item_23,sounds,mjam,jummy,yummy
+,,,,,,item_24,animals,poes,puss,cat
+,,,,,,item_25,animals,kat,cat,cat
+,,,,,,item_26,animals,dier,animal,animal
+,,,,,,item_27,animals,beest,beast,beast
+,,,,,,item_31,animals,vis,fish,fish (animal)
+,,,,,,item_32,animals,hond,dog,dog
+,,,,,,item_33,animals,Bambi,Bambi,deer
+,,,,,,item_40,animals,bij,bee,near
+,,,,,,item_43,animals,cavia,guinea pig/cavia,guinea pig
+,,,,,,item_54,animals,kip,chicken,chicken (animal)
+,,,,,,item_57,animals,lam,lamb,lamb
+,,,,,,item_59,animals,konijn,rabbit,bunny
+,,,,,,item_65,vehicles,vrachtwagen,truck,truck
+,,,,,,item_68,vehicles,brandweerwagen,firetruck,firetruck
+,,,,,,item_71,vehicles,ziekenwagen,ambulance,ambulance
+,,,,,,item_72,vehicles,ambulance,ambulance,ambulance
+,,,,,,item_76,vehicles,kinderwagen,buggy,stroller
+,,,,,,item_77,vehicles,brommer,moped,motorcycle
+,,,,,,item_79,toys,kralen,beads,beads
+,,,,,,item_80,toys,hobbelpaard,rocking horse,rocking horse
+,,,,,,item_83,toys,bubbels,bubbles,bubbles
+,,,,,,item_84,toys,zeepbellen,soapbubbles,bubbles
+,,,,,,item_87,toys,speelgoed,toys,toy (object)
+,,,,,,item_90,food_drink,wortel,carrot,carrots
+,,,,,,item_95,food_drink,thee,tea,tea
+,,,,,,item_99,food_drink,toast,toast,toast
+,,,,,,item_103,food_drink,snoepje,candy (piece of --),candy
+,,,,,,item_104,food_drink,fruit,fruit,fruit
+,,,,,,item_107,food_drink,sap,juice,juice
+,,,,,,item_109,food_drink,aardappelen,potatoes,potato
+,,,,,,item_111,food_drink,ijsje,icecream,ice cream
+,,,,,,item_112,food_drink,eten,,food
+,,,,,,item_118,food_drink,koffie,coffee,coffee
+,,,,,,item_120,food_drink,appelsien,applejuice,juice
+,,,,,,item_121,food_drink,rozijn,raisin,raisin
+,,,,,,item_123,food_drink,cornflakes,cornflakes,cereal
+,,,,,,item_124,food_drink,drankje,drink,drink (beverage)
+,,,,,,item_126,food_drink,fruitpap,fruitporrage?,smoothie
+,,,,,,item_128,food_drink,sinaasappel,orange,orange (food)
+,,,,,,item_129,food_drink,krenten,currants,raisin
+,,,,,,item_130,food_drink,drinken,drink (beverage),drink (beverage)
+,,,,,,item_132,food_drink,muesli,muesli,granola
+,,,,,,item_133,food_drink,water,water,water
+,,,,,,item_134,food_drink,macaroni,macaroni,pasta
+,,,,,,item_135,clothing,laarsjes,boots (small --),boots
+,,,,,,item_136,clothing,bloes,blouse,shirt
+,,,,,,item_137,clothing,jasje,coat,coat
+,,,,,,item_139,clothing,slabbetje,napkin (for children),napkin
+,,,,,,item_140,clothing,sok,sock,sock
+,,,,,,item_141,clothing,kous,stocking,stocking
+,,,,,,item_143,clothing,luier,diaper,diaper
+,,,,,,item_144,clothing,Pamper,Pamper,diaper
+,,,,,,item_146,clothing,ketting,chain,necklace
+,,,,,,item_147,clothing,speen,pacifier,pacifier
+,,,,,,item_148,clothing,broek,pants,pants
+,,,,,,item_149,clothing,korte-broek,short --,shorts
+,,,,,,item_150,clothing,lange-broek,long --,pants
+,,,,,,item_151,clothing,onderbroek,underpants,underpants
+,,,,,,item_152,clothing,sjaal,scarf,scarf
+,,,,,,item_154,clothing,hemd,undershirt,undershirt
+,,,,,,item_156,clothing,pyjama,pyjamas,pyjamas
+,,,,,,item_158,clothing,trui,sweater,sweater
+,,,,,,item_162,body_parts,billen,buttocks,buttocks
+,,,,,,item_163,body_parts,poep,poop,poop
+,,,,,,item_164,body_parts,haar,hair,hair
+,,,,,,item_172,body_parts,wang,cheek,cheek
+,,,,,,item_181,furniture_rooms,woonkamer,livingroom,living room
+,,,,,,item_182,furniture_rooms,lade,drawer,drawer
+,,,,,,item_183,furniture_rooms,la,drawer,drawer
+,,,,,,item_185,furniture_rooms,box,(play)pen,playpen
+,,,,,,item_187,furniture_rooms,koelkast,fridge,fridge
+,,,,,,item_190,furniture_rooms,vissenkom,fishbowl,fishtank
+,,,,,,item_191,furniture_rooms,bank,couch/davenport,couch
+,,,,,,item_197,furniture_rooms,fornuis,cooker/stove/range/furnace,stove
+,,,,,,item_198,furniture_rooms,kookplaat,cooking ring,stove
+,,,,,,item_199,furniture_rooms,video,video,video
+,,,,,,item_201,furniture_rooms,gootsteen,sink,sink
+,,,,,,item_202,furniture_rooms,raam,window,window
+,,,,,,item_203,furniture_rooms,trap,stairs,stairs
+,,,,,,item_206,furniture_rooms,T.V.,T.V.,tv
+,,,,,,item_207,furniture_rooms,televisie,television,tv
+,,,,,,item_212,furniture_rooms,W.C.,toilet,toilet
+,,,,,,item_213,furniture_rooms,toilet,toilet,toilet
+,,,,,,item_221,furniture_rooms,kachel,stove,stove
+,,,,,,item_222,furniture_rooms,licht,licht,light
+,,,,,,item_223,household,tas,bag,bag
+,,,,,,item_225,household,geld,money,money
+,,,,,,item_229,household,afval,garbage,trash
+,,,,,,item_232,household,kopje,cup,cup
+,,,,,,item_233,household,sleutel,key,key
+,,,,,,item_235,household,deken,blanket,blanket
+,,,,,,item_237,household,tekening,drawing,drawing
+,,,,,,item_241,household,pil,pill,pill
+,,,,,,item_243,household,siroop,sirup,syrup
+,,,,,,item_246,household,schaal,dish,dish
+,,,,,,item_247,household,medicijn,medicine,medicine
+,,,,,,item_252,household,horloge,watch,watch (object)
+,,,,,,item_253,household,lamp,lamp,lamp
+,,,,,,item_258,household,beker,cup,cup
+,,,,,,item_259,household,borstel,brush,brush
+,,,,,,item_264,outside,lucht,air,air
+,,,,,,item_270,outside,hemel,sky,sky
+,,,,,,item_272,outside,ster,star,star
+,,,,,,item_283,places,crèche,day nursery,daycare
+,,,,,,item_284,places,kinderdagverblijf,day-care (centre),daycare
+,,,,,,item_286,places,dierentuin,zoo,zoo
+,,,,,,item_300,places,feest,party,party
+,,,,,,item_301,places,stoep,pavement,sidewalk
+,,,,,,item_302,places,balkon,balkony,balcony
+,,,,,,item_303,people,broer,brother,brother
+,,,,,,item_306,people,oom,uncle,uncle
+,,,,,,item_312,people,oppas,baby-sitter,babysitter
+,,,,,,item_314,people,kind,child,child
+,,,,,,item_318,people,zus,sister,sister
+,,,,,,item_322,action_words,pletsen,[to splash in the water?],splash
+,,,,,,item_323,action_words,zoenen,to kiss,kiss
+,,,,,,item_327,action_words,roepen,to shout,shout
+,,,,,,item_329,action_words,aankomen,to arrive,arrive
+,,,,,,item_330,action_words,gaan,to go,go
+,,,,,,item_331,action_words,opschieten,to hurry,hurry
+,,,,,,item_332,action_words,stampen,to stamp,stamp
+,,,,,,item_337,action_words,eten geven,to feed,feed
+,,,,,,item_341,action_words,aanraken,to touch,touch
+,,,,,,item_345,action_words,eten,to eat,eat
+,,,,,,item_347,action_words,ophouden,to stop,stop
+,,,,,,item_349,action_words,huilen,to cry,cry
+,,,,,,item_353,action_words,pakken,to grab,grab
+,,,,,,item_354,action_words,schreeuwen,to shout,shout
+,,,,,,item_359,action_words,wijzen,to point,point
+,,,,,,item_360,action_words,breken,to break,break
+,,,,,,item_363,action_words,leggen,to lay,lay
+,,,,,,item_368,action_words,weggaan,to leave,leave
+,,,,,,item_369,action_words,gooien,to throw,throw
+,,,,,,item_371,action_words,schoppen,to kick,kick
+,,,,,,item_372,action_words,vastpakken,to grip,hold
+,,,,,,item_375,action_words,lopen,to walk,walk
+,,,,,,item_378,action_words,rennen,to run,run
+,,,,,,item_382,action_words,poetsen,to clean/brush (teeth),clean (description)
+,,,,,,item_387,action_words,spatten,to splash,splash
+,,,,,,item_388,time_words,vanmiddag,this afternoon,afternoon
+,,,,,,item_390,time_words,vannacht,last/this night,tonight
+,,,,,,item_391,time_words,vanmorgen,this mornong,morning
+,,,,,,item_394,time_words,straks,later,later
+,,,,,,item_396,time_words,later,later,later
+,,,,,,item_398,time_words,dadelijk,immediately,immediately
+,,,,,,item_399,time_words,vanochtend,this morning,morning
+,,,,,,item_401,descriptive_words,klaar,ready,ready
+,,,,,,item_406,descriptive_words,vlug,quick,quick
+,,,,,,item_407,descriptive_words,beetje,a little,a little
+,,,,,,item_409,descriptive_words,lief,sweet/lovable,kind
+,,,,,,item_411,descriptive_words,pijn,pain,pain
+,,,,,,item_412,descriptive_words,boos,angry,angry
+,,,,,,item_413,descriptive_words,snel,quick,quick
+,,,,,,item_414,descriptive_words,warm,warm,warm
+,,,,,,item_416,descriptive_words,vuil,filthy,dirty
+,,,,,,item_418,descriptive_words,goed,good,good
+,,,,,,item_421,descriptive_words,vies,dirty,dirty
+,,,,,,item_423,descriptive_words,schoon,clean,clean (description)
+,,,,,,item_425,descriptive_words,leuk,funny,funny
+,,,,,,item_426,descriptive_words,schattig,sweet/cute,cute
+,,,,,,item_427,descriptive_words,open,open,open (description)
+,,,,,,item_428,descriptive_words,dorst,thirst,thirsty
+,,,,,,item_429,descriptive_words,honger,hunger,hungry
+,,,,,,item_431,descriptive_words,kapot,broken,broken
+,,,,,,item_436,descriptive_words,heet,hot,hot
+,,,,,,item_437,descriptive_words,stuk,broken,broken
+,,,,,,item_438,descriptive_words,oké,O.K.,ok
+,,,,,,item_442,descriptive_words,dicht,shut,closed
+,,,,,,item_444,descriptive_words,op,finished,finished
+,,,,,,item_447,pronouns,je,you,you
+,,,,,,item_449,pronouns,het,it,it
+,,,,,,item_451,pronouns,zijn,his,his
+,,,,,,item_452,pronouns,haar,her,her
+,,,,,,item_454,pronouns,jouw,yourself,yourself
+,,,,,,item_456,pronouns,mijn,my,my
+,,,,,,item_466,locations,boven,above,above
+,,,,,,item_473,locations,voor,in front of,in front
+,,,,,,item_475,locations,bij,near,near
+,,,,,,item_481,locations,binnenin,inside,inside
+,,,,,,item_484,locations,binnen,inside,inside
+,,,,,,item_485,quantifiers,niets,nothing,nothing
+,,,,,,item_486,quantifiers,andere,another,another
+,,,,,,item_487,quantifiers,allemaal,all,all
+,,,,,,item_488,quantifiers,alles,all,all
+,,,,,,item_490,quantifiers,geen,no,no
+,,,,,,item_491,quantifiers,meer,more,more
+,,,,,,item_494,quantifiers,nog,yet,yet
+,,,,,,item_498,games_routines,hallo,hello,hello
+,,,,,,item_499,games_routines,hoi,hi,hello
+,,,,,,item_501,games_routines,welterusten,good night,good night
+,,,,,,item_502,games_routines,kijk uit!,look out,watch out
+,,,,,,item_504,games_routines,daag,bye!,bye
+,,,,,,item_505,games_routines,slaap lekker,sleep well,good night
+,,,,,,item_506,games_routines,hokus pokus,hocus pocus?,NA
+,,,,,,item_508,games_routines,niet doen,don't do that,NA
+,,,,,,item_509,games_routines,alsjeblieft,here you are,you're welcome
+,,,,,,item_510,games_routines,dank je wel,thanks,thank you
+,,,,,,item_513,games_routines,a.u.b.,please,please
+,,,,,,item_514,games_routines,goed zo,well done,bravo
+,,,,,,item_515,games_routines,laat eens zien,let me see,NA

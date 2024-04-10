@@ -1,0 +1,275 @@
+---
+title: "Appendix to _Measuring Children's Early Vocabulary in Low-Resource Languages Using a Swadesh-style Word List_"
+author: "[redacted for anonymous review]"
+date: "February 1, 2023"
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=F, message=F)
+
+library(png)
+library(grid)
+#library(xtable)
+require(mirt)
+require(tidyverse)
+require(ggpubr)
+require(tidyboot)
+require(here)
+library(RColorBrewer)
+library(gplots)
+library(kableExtra)
+
+html_table_width <- function(kable_output, width){
+  width_html <- paste0(paste0('<col width="', width, '">'), collapse = "\n")
+  sub("<table>", paste0("<table>\n", width_html), kable_output)
+} 
+
+source(here("cross-ling-comparison-helpers.R"))
+
+# long data-frame of all WS production parameters
+load(here("data/xling-WSprod-IRTparms.Rdata"))
+
+low_data_langs = c("Persian","Finnish","Kiswahili","Irish",
+                   "English (Irish)","Kigiriama","Spanish (Peruvian)","Greek (Cypriot)")
+
+xldf <- xldf %>% mutate(uni_lemma = ifelse(uni_lemma=="NA", NA, uni_lemma))
+xldf <- xldf %>% filter(!is.na(uni_lemma)) # only want the words with defined uni-lemmas
+xldf_lowd <- xldf %>% filter(is.element(language, low_data_langs)) # 5464
+xldf <- xldf %>% filter(!is.element(language, low_data_langs)) # 17715
+
+# align some categories: Russian has descriptive adjectives and adverbs
+xldf[which(xldf$category=="descriptive_words (adjectives)"),]$category = "descriptive_words"
+xldf[which(xldf$category=="outside_places"),]$category = "outside"
+
+
+olap <- get_uni_lemma_overlap(xldf)
+```
+
+## Uni-lemma Overlap on CDI:WS Forms
+
+Number of overlapping concepts on each pair of CDI:WS forms.
+American English has the highest average degree of overlap (468 uni-lemmas), which may be driven in large part by it being the oldest form, from which many others were adapted.
+The form with the lowest average degree of overlap is European Spanish, with only 325 uni-lemmas shared with other forms, on average.
+
+```{r, fig.width=10, fig.height=10}
+# show heatmap of overlap between each CDI:WS
+heatmap.2(olap, dendrogram = "none", margins=c(10,10))
+```
+
+
+## Word Difficulty by Semantic Category and Language
+
+```{r semantic-cats-by-lang, fig.width=10, fig.height=18, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Mean difficulty of CDI words by semantic category and language. Bars represent bootstrapped 95\\% confidence intervals."}
+prod_cat <- xldf %>% group_by(language, category) %>%
+  filter(!is.na(d), !is.na(category),
+         !is.element(category, c("final_particles", "directions", "numbers", "articles", "other",
+                                 "descriptive_words (adverbs)", "states", "unknown",
+                                 "verb_endings", "verb_modifiers",
+                                 "classifiers", "locations_quantities_adverbs"))) %>%
+  tidyboot::tidyboot_mean(d, na.rm=T)
+
+prod_cat %>% ggplot(aes(x=reorder(language, mean), y=mean)) + geom_point(alpha=.7) +
+  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7) +
+  facet_wrap(. ~ category) + coord_flip() + 
+  theme_classic() + ylab("Mean item easiness") + xlab("Language")
+#ggsave("xling_diff_by_category_WSprod.pdf", width=10, height=16)
+```
+
+
+## Cross-linguistic similarities 
+
+We look at the Spearman correlation between the item difficulty of each language compared to each other language. 
+We might expect this to recapitulate the historical relationship between languages, with more similar languages having more similar item difficulties (e.g., Quebecois and European French).
+
+```{r xling-sim, fig.width=10, fig.height=10, set.cap.width=T, num.cols.cap=2, fig.cap = "Cross-linguistic similarity (Spearman correlation) of IRT item difficulty from the CDI:WS."}
+# parm diffs in low- vs. high-data langs
+#t.test(xldf$d, xldf_lowd$d) # -.45 vs. -.02 (closer to prior of 0 in low-data langs)
+#t.test(xldf$a1, xldf_lowd$a1) # higher discrim in high-data langs
+
+tmp <- get_cross_ling_difficulty_cors(xldf)
+prod_cors = tmp$prod_cors
+prod_sims = tmp$prod_sims
+
+Colors = brewer.pal(11,"Spectral")
+diag(prod_cors) = NA
+
+#pdf(file="xling_difficulty_similarity_WSprod.pdf", width=13, height=13)
+heatmap.2(prod_cors, col=Colors, margins=c(10,10))
+#dev.off()
+
+# compare to one of these?
+# http://www.elinguistics.net/
+# https://www.ezglot.com/most-similar-languages.php
+# 28 x 28 = 784 values...scrape?
+
+```
+
+
+## Evaluating Thresholds for Inclusion on Swadesh CDI
+
+It is unclear how many existing forms a uni-lemma should be included on in order for it to be considered for inclusion on a Swadesh CDI. 
+Instead of setting an arbitrary threshold, we chose to try all possible values of $k$ (i.e., number of forms on which a uni-lemma is included, $k \in \{2,..,26\}$), and chose the $k$ which yields the set of Swadesh CDI (S-CDI) items with the highest total test information.
+The table below shows test information for each threshold, with the highest S-CDI test information achieved by $k=9$ (66085).
+
+
+```{r, echo=F}
+load(here("data/Swadesh_grid_search_final.Rdata")) # mean-.5sd threshold
+
+swad_tab <- swad_agg %>% filter(sublist=="Swadesh") %>%
+  mutate(k = as.factor(k)) %>%
+  group_by(k, N, mean_diff, mean_sd, sd_sd, sd_thresh, swad_n, swad_mean_diff, swad_diff_sd) %>%
+    summarise(N_avail = mean(N_avail),
+              `S-CDI vs CDI:WS` = mean(sumscore_cor), # want sd(sumscore_cor) and sd(test_info) ?
+              `S-CDI Info` = round(mean(test_info),0))
+
+rand_tab <- swad_agg %>% filter(sublist=="random") %>%
+  mutate(k = as.factor(k)) %>%
+  group_by(k) %>%
+    summarise(`Rand vs CDI:WS` = mean(sumscore_cor), # want sd(sumscore_cor) and sd(test_info) ?
+              `Rand Info` = round(mean(test_info),0))
+
+grid_tab <- left_join(swad_tab, rand_tab) %>%
+  relocate(`Rand vs CDI:WS`, .after=`S-CDI vs CDI:WS`) %>%
+  relocate(`Rand Info`, .after=`S-CDI Info`)
+
+grid_tab %>% select(-swad_diff_sd) %>%
+  #mutate(d_diff = mean_diff - swad_mean_diff,
+  #       info_diff = round(`S-CDI Info` - `Rand Info`,0)) %>%
+  rename(`Mean d` = mean_diff, 
+         `S-CDI pool` = swad_n,
+         `S-CDI Mean d` = swad_mean_diff,
+         `S-CDI per form` = N_avail) %>%
+  kableExtra::kable(digits=3) %>%
+    html_table_width(rep(72, ncol(swad_agg)+2))
+```
+
+
+## Swadesh CDI vs. Full CDI:WS
+
+For the 26 languages that the IRT models were trained on:
+
+```{r, results='asis'}
+load(here("data/Swadesh_comparisons.Rdata"))
+
+#xx_tab <- xtable::xtable(xx, digits=c(3), 
+#                       caption = "Swadesh CDI vs. Full CDI:WS scores for 26 training languages.")
+#print(xx_tab, type="html", comment = F, table.placement = "H", include.rownames=FALSE)
+
+xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 26 training languages.") %>%
+  html_table_width(rep(70, ncol(xx)))
+```
+
+### Generalization Test
+
+Comparison to the eight low-data languages. <!--, with the 10 additional difficult words added. -->
+Note that many proposed Swadesh items are not actually on the CDI:WS forms available to test generalization. 
+
+```{r, results='asis'}
+#gen_tab <- xtable::xtable(gen_xx_ext, digits=c(3), 
+#                       caption = "Swadesh CDI with difficult words vs. Full CDI:WS scores for 8 generalization languages.")
+#print(gen_ext_tab, type="html", comment = F, table.placement = "H",
+#      include.rownames=FALSE)
+
+gen_xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 8 generalization languages.") %>%
+  html_table_width(rep(70, ncol(gen_xx)))
+```
+
+
+## Swadesh-CDI Items
+
+Below we show the full list of 229 Swadesh CDI uni-lemmas, along with their average cross-linguistic difficulty (d_m), variability in difficulty (d_sd), number of CDI:WS forms they appear on (n, out of 26), semantic category, and lexical category. The semantic and lexical categories are based on American English, as uni-lemmas sometimes appear in different categories on different forms, as appropriate.
+
+```{r}
+#swad_freq[1:50] # appearing on 22-25 Swadesh lists
+#swad_freq[51:100] # 18-22 lists
+#swad_freq[101:153] # 14-18
+
+# 8 words appeared on all 25 lists: airplane, cold, dirty, door, key, sing, TV, wait 
+# 18 words appeared on 24 of the 25 lists: ant, banana, cat, dance, doctor, dog, eat, finger, lion, milk, mommy, moon, nose, paper, telephone, tongue, tooth, yes -- all of which on k=9 list
+# 19 appeared on 23/25 lists: -- all on k=9 list
+# 18 appeared on 22/25 lists: -- all on k=9 list
+# 15 appeared on 21/25:  -- all on k=9 list
+# 7 appeared on 20/25: -- all on k=9 list
+# 10 appeared on 19/25: -- all on k=9 list
+# 16 appeared on 18/25: -- al on k=9 list
+# 9 on 17/25 -- all on k=9 list
+
+
+#names(swad_freq[which(swad_freq==22)])
+#length(intersect(names(swad_freq[which(swad_freq==21)]), good_prod$uni_lemma))
+
+# length(intersect(names(swad_freq[which(swad_freq>17)]), good_prod$uni_lemma)) # 111 
+
+good_prod <- swad_lists[[9]]
+
+en_good_prod <- good_prod %>% 
+  left_join(xldf %>% 
+              filter(language=="English (American)") %>% 
+              select(uni_lemma, category, lexical_category)) %>%
+  arrange(category, desc(d_m))
+#kableExtra::kable(en_good_prod, digits=2)
+en_good_prod %>% DT::datatable() %>%
+  DT::formatRound(columns=2:3, digits=3)
+```
+
+## Guide to Developing a Swadesh-based CDI
+
+Developing a CDI for a new language is a substantial task requiring specific linguistic and cultural knowledge -- even with the new Swadesh-CDI recommendations in hand.
+Many recommendations and caveats have been enumerated by the CDI Advisory Board, here: [https://mb-cdi.stanford.edu/adaptations.html](https://mb-cdi.stanford.edu/adaptations.html)
+Rather than recapitulate the process and caveats already itemized there, we suggest how the Swadesh CDI can be used to jump-start the process.
+
+1. As a starting point, take the above 229 uni-lemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
+2. Consider adding uni-lemmas that are frequently included on other CDIs, and especially focus on categories that are less well-represented on the Swadesh CDI, including question words, quantifiers, helping verbs, and pronouns. We recommending adding 10-20 items across these categories, including the 10-item extension chosen from the original Swadesh list that we tested, which are present on nearly all existing CDI:WS forms ("I", "you", "we", "this", "that", "who", "what", "not", "all").
+3. Do a pilot study, including several children at the upper and lower intended ages, and revise if there are many children at floor or ceiling.
+
+<!--
+## Comparison of Swadesh CDI Concepts to Other Lists
+
+
+28 of the Swadesh CDI candidates are on the 100-item CDI:WS short (form A), and 26 of the Swadesh candidates are on the WS short (form B).
+(Actually lower than expected by chance? 27%, and we have selected 34% of the length of the EN CDI:WS)
+26 Swadesh CDI concepts are also on the original Swadesh-100 list---and 12 are overlapping with the ASJP (a subset of the Swadesh-100 that performs as well as the Swadesh-100 for purposes of glottochronology).
+-->
+
+```{r swadesh-comparison, echo=F}
+# https://en.wikipedia.org/wiki/Swadesh_list
+swadesh100 = c("I","you","we","this","that","who","what","not","all","many","one","two","big","long","small",
+               "woman","man","person","fish","bird","dog","louse","tree","seed","leaf","root","bark","skin","flesh","blood",
+               "bone","grease","egg","horn","tail","feather","hair","head","ear","eye","nose","mouth","tooth","tongue","claw",
+               "foot","knee","hand","belly","neck","breasts","heart","liver","drink (action)","eat","bite","see","hear","know","sleep",
+               "die","kill","swim","fly","walk","come","lie","sit","stand","give","say","sun","moon","star","water",
+               "rain","stone","sand","earth","cloud","smoke","fire","ash","burn","path","mountain","red","green","yellow","white",
+               "black","night","hot","cold","full","new","good","round","dry","name")
+
+# https://en.wikipedia.org/wiki/Automated_Similarity_Judgment_Program#Word_list
+# ASJP subset of 40 Swadesh items that perform as well as full list
+# categories: Body parts, Animals and plants, People, Nature, Verbs and adjectives, Numerals and pronouns
+asjp = c("eye","ear","nose","tongue","tooth","hand","knee","blood","bone","breast","liver","skin",
+         "louse", # "bug" ?
+         "dog","fish (animal)","horn","tree","leaf",
+         "person","name", # People; match "name" to "child's own name" / "babysitter's name" / "pet's name" ?
+         "sun","star","water (not beverage)","fire","stone","path","mountain","night", # Nature
+         "drink (action)","die","see","hear","come", # Verbs and adjectives
+         "new","full","one","two","I","you","we")
+
+#intersect(asjp, good_prod$uni_lemma) 
+# "eye"            "nose"           "tongue"         "tooth"          "hand"           "knee"           "dog"           
+# "sun"            "star"           "drink (action)" "see"            "hear"  
+# 12 out of 40 -- wow!
+
+# intersect(swadesh100, good_prod$uni_lemma) 
+# "dog"            "head"           "eye"            "nose"           "mouth"          "tooth"          "tongue"        
+# "knee"           "hand"           "drink (action)" "eat"            "bite"           "see"            "hear"          
+# "sleep"          "swim"           "sun"            "moon"           "star"           "cloud"          "red"           
+# "green"          "yellow"         "white"          "black"          "cold"  
+# 26 out of 100 !
+# intersect(swadesh100, subset(xldf, language=="English (American)")$uni_lemma) 
+# 55 Swadesh words on English CDI (with "I")
+# intersect(swadesh100, xldf$uni_lemma) 
+# 83 Swadesh words on full list of uni-lemmas
+#setdiff(swadesh100, unique(xldf$uni_lemma))
+# "I" "fly" "fish" - "belly" (belly button?) "louse" "seed" "root" "skin" "flesh" "grease"  "horn"   
+# "feather" "claw" "breasts" "liver" "kill" "lie" "water" "ash" "dry" 
+```

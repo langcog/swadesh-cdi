@@ -1,0 +1,707 @@
+WS,WG,category,definition,gloss,uni_lemma,sho
+item_1,item_36,sounds,aïe,ouch,ouch,aïe
+item_2,item_37,sounds,allo,hello,hello,allô
+item_3,item_38,sounds,bêê bêê,baa baa,baa baa,bêe bêe
+item_4,item_39,sounds,cocorico,cockadoodledoo,cockadoodledoo,cocorico
+item_5,item_40,sounds,coin coin,quack quack,quack quack,coin-coin
+item_6,item_41,sounds,grrrr,grrr,grrr,grrrr
+item_7,item_42,sounds,meuh,moo,moo,meuh
+item_8,item_43,sounds,miam miam,yum yum,yum yum,miam-miam
+item_9,item_44,sounds,miaou,meow,meow,miaou
+item_10,item_45,sounds,oh oh,uh oh,uh oh,ohoh
+item_11,item_46,sounds,ouaf ouaf,woof woof,woof woof,ouaf-ouaf
+item_12,item_47,sounds,tchou tchou,choo choo,choo choo,tchou tchou
+item_13,item_48,sounds,vroum,vroom,vroom,vroum
+item_14,item_49,games_routines,ainsi font font,??,,ainsi font font
+item_15,item_51,games_routines,au revoir,bye,bye,au revoir
+item_16,item_52,games_routines,bain,bath,bath,bain
+item_17,item_53,games_routines,bonjour,hi,hi,bonjour
+item_18,item_54,games_routines,bonne nuit,good night,good night,bonne nuit
+item_19,item_55,games_routines,bravo,bravo,bravo,bravo
+item_20,item_605,games_routines,ce petit cochon,??,this little piggy,ce petit cochon
+item_21,item_56,games_routines,chut,shh,shh,chut
+item_22,item_57,games_routines,coucou,peekaboo,peekaboo,coucou
+item_23,item_600,games_routines,coup de fil,phone call,,coup de fil
+item_24,item_58,games_routines,déjeuner,lunch,lunch,déjeuner
+item_25,item_59,games_routines,dîner,dinner,dinner,dîner
+item_26,,games_routines,faire les courses,go shopping,shopping,
+item_27,item_599,games_routines,goûter,taste,taste,goûter
+item_28,item_602,games_routines,je vais t'attraper,I will catch you,,je vais t'attraper
+item_29,item_60,games_routines,merci,thank you,thank you,merci
+item_30,item_61,games_routines,ne fais pas,don’t do,don't,ne fais pas
+item_31,item_62,games_routines,non,no,no,non
+item_32,item_63,games_routines,oui,yes,yes,oui
+item_33,item_64,games_routines,petit déjeuner,breakfast,breakfast,petit déjeuner
+item_34,item_65,games_routines,s'il te plait,please,please,s'il te plaît
+item_35,item_66,games_routines,salut,hi,hi,salut
+item_36,item_67,games_routines,sieste,nap,nap,sieste
+item_37,item_601,games_routines,top là,,,top là
+item_38,item_604,games_routines,tourne-toi,turn around,,tourne-toi
+item_39,item_603,games_routines,va sur le pot,,,va sur le pot
+item_40,item_315,vehicles,avion,airplane,airplane,avion
+item_41,item_519,vehicles,bateau,boat,boat,bateau
+item_42,item_316,vehicles,bus,bus,bus,bus
+item_43,item_317,vehicles,camion,truck,truck,camion
+item_44,item_318,vehicles,camion de pompier,firetruck,firetruck,camion de pompier
+item_45,item_520,vehicles,hélicoptère,helicopter,helicopter,hélicoptère
+item_46,item_319,vehicles,moto,motorcycle,motorcycle,moto
+item_47,item_320,vehicles,poussette,stroller,stroller,poussette
+item_48,item_522,vehicles,tracteur,tractor,tractor,tracteur
+item_49,item_321,vehicles,train,train,train,train
+item_50,,vehicles,traineau,sled,sled,
+item_51,item_523,vehicles,tricycle,tricycle,tricycle,tricycle
+item_52,item_322,vehicles,vélo,bicycle,bicycle,vélo
+item_53,item_323,vehicles,voiture,car,car,voiture
+item_54,item_69,animals,abeille,bee,bee,abeille
+item_55,item_70,animals,agneau,lamb,lamb,agneau
+item_56,item_71,animals,âne,donkey,donkey,âne
+item_57,item_72,animals,animal,animal,animal,animal
+item_58,item_73,animals,bébé chat,kitty,kitty,bébé chat
+item_59,item_74,animals,bébé chien,puppy,puppy,bébé chien
+item_60,item_75,animals,biche,deer,deer,biche
+item_61,item_76,animals,canard,duck,duck,canard
+item_62,item_77,animals,chat,cat,cat,chat
+item_63,item_78,animals,cheval,horse,horse,cheval
+item_64,item_79,animals,chèvre,goat,goat,chèvre
+item_65,item_80,animals,chien,dog,dog,chien
+item_66,item_81,animals,cochon,pig,pig,cochon
+item_67,item_538,animals,coq,rooster,rooster,coq
+item_68,item_535,animals,crocodile,crocodile,crocodile,crocodile
+item_69,item_82,animals,dindon,turkey,turkey,dindon
+item_70,item_83,animals,écureuil,squirrel,squirrel,écureuil
+item_71,item_84,animals,éléphant,elephant,elephant,éléphant
+item_72,item_536,animals,fourmi,ant,ant,fourmi
+item_73,item_85,animals,girafe,giraffe,giraffe,girafe
+item_74,item_86,animals,grenouille,frog,frog,grenouille
+item_75,item_87,animals,hibou,owl,owl,hibou
+item_76,item_88,animals,lapin,bunny,bunny,lapin
+item_77,item_89,animals,lion,lion,lion,lion
+item_78,item_539,animals,loup,wolf,wolf,loup
+item_79,item_90,animals,mouton,sheep,sheep,mouton
+item_80,item_91,animals,nounours,teddybear,teddybear,nounours
+item_81,item_92,animals,oie,goose,goose,oie
+item_82,item_93,animals,oiseau,bird,bird,oiseau
+item_83,item_94,animals,ours,bear,bear,ours
+item_84,item_95,animals,papillon,butterfly,butterfly,papillon
+item_85,item_96,animals,petite bête,(??),,petite bête
+item_86,item_97,animals,pingouin,penguin,penguin,pingouin
+item_87,item_98,animals,poisson,fish (animal),fish (animal),poisson
+item_88,item_99,animals,poney,pony,pony,poney
+item_89,item_100,animals,poule,chicken (animal),chicken (animal),poule
+item_90,item_537,animals,renne,reindeer,reindeer,renne
+item_91,item_101,animals,singe,monkey,monkey,singe
+item_92,item_102,animals,souris,mouse,mouse,souris
+item_93,item_103,animals,tigre,tiger,tiger,tigre
+item_94,item_104,animals,tortue,turtle,turtle,tortue
+item_95,item_105,animals,vache,cow,cow,vache
+item_96,item_540,animals,zèbre,zebra,zebra,zèbre
+item_97,item_140,toys,balle,ball,ball,balle
+item_98,item_141,toys,ballon,ball,ball,ballon
+item_99,item_142,toys,bulles,bubbles,bubbles,bulles
+item_100,item_531,toys,cadeau,present,present,cadeau
+item_101,item_529,toys,colle,glue,glue (object),colle
+item_102,item_527,toys,craie,chalk,chalk,craie
+item_103,item_143,toys,crayon,pen/pencil,pen/pencil,crayon
+item_104,item_144,toys,cube,cube,blocks,cube
+item_105,item_534,toys,feutre,felt,,feutre
+item_106,item_533,toys,histoire,story,story,histoire
+item_107,item_528,toys,jeu,game,game,jeu
+item_108,item_525,toys,jouet,toy (object),toy (object),jouet
+item_109,item_145,toys,livre,book,book,livre
+item_110,item_530,toys,pâte à modeler,modeling clay,clay,pâte à modeler
+item_111,item_146,toys,poupée,doll,doll,poupée
+item_112,item_532,toys,puzzle,puzzle,puzzle,puzzle
+item_113,item_526,toys,raquette,racket,bat (object),raquette
+item_114,item_524,toys,stylo,pen/pencil,pen/pencil,stylo
+item_115,item_188,clothing,basket,trainers,sneaker,basket
+item_116,item_189,clothing,bavoir/bavette,bib,bib,bavoir/bavette
+item_117,item_190,clothing,body,(??),,body
+item_118,item_191,clothing,bottes,boots,boots,bottes
+item_119,item_192,clothing,boutons,button,button,boutons
+item_120,item_193,clothing,ceinture,belt,belt,ceinture
+item_121,item_194,clothing,chapeau,hat,hat,chapeau
+item_122,item_195,clothing,chaussettes,sock,sock,chaussettes
+item_123,item_196,clothing,chausson/pantoufle,slipper,slipper,chausson/pantoufle
+item_124,item_197,clothing,chaussure,shoe,shoe,chaussure
+item_125,item_198,clothing,chemise,shirt,shirt,chemise
+item_126,item_199,clothing,collants,tights,tights,collants
+item_127,item_200,clothing,collier,necklace,necklace,collier
+item_128,item_201,clothing,combinaison de ski,ski suit,snowsuit,combinaison de ski
+item_129,item_202,clothing,couche,diaper,diaper,couche
+item_130,item_203,clothing,culotte/slip,underpants,underpants,culotte/slip
+item_131,item_204,clothing,écharpe,scarf,scarf,écharpe
+item_132,item_205,clothing,gants,gloves,glove,gants
+item_133,item_206,clothing,grenouillère,,,grenouillère
+item_134,item_207,clothing,jeans,jeans,jeans,jeans
+item_135,item_208,clothing,manteau,coat,coat,manteau
+item_136,item_209,clothing,moufles,mittens,mitten,moufles
+item_137,item_210,clothing,pantalon,pants,pants,pantalon
+item_138,item_211,clothing,perles,beads,beads,perles
+item_139,item_212,clothing,pull,sweater,sweater,pull
+item_140,item_213,clothing,pyjama,pajamas,pajamas,pyjama
+item_141,item_214,clothing,robe,dress (object),dress (object),robe
+item_142,item_215,clothing,salopette,overalls,overalls,salopette
+item_143,item_216,clothing,short,shorts,shorts,short
+item_144,item_217,clothing,sweat,sweater,sweater,sweat
+item_145,item_218,clothing,tee-shirt,t-shirt,t-shirt,tee-shirt
+item_146,item_219,clothing,veste,jacket,jacket,veste
+item_147,item_287,outside,arbre,tree,tree,arbre
+item_148,item_675,outside,arrosoir,watering can,watering can,arrosoir
+item_149,item_672,outside,bac à sable,sandbox,sandbox,bac à sable
+item_150,item_288,outside,balançoire,swing (object),swing (object),balançoire
+item_151,,outside,baton,stick,stick,
+item_152,item_674,outside,bonhomme de neige,snowman,snowman,bonhomme de neige
+item_153,item_289,outside,caillou,stone,stone,caillou
+item_154,item_290,outside,ciel,sky,sky,ciel
+item_155,item_666,outside,drapeau,flag,flag,drapeau
+item_156,item_294,outside,eau,water (not beverage),water (not beverage),eau
+item_157,item_669,outside,échelle,ladder,ladder,échelle
+item_158,item_297,outside,étoile,star,star,étoile
+item_159,item_299,outside,fleur,flower,flower,fleur
+item_160,item_667,outside,herbe,grass,grass,herbe
+item_161,item_301,outside,jardin,garden,garden,jardin
+item_162,item_302,outside,lune,moon,moon,lune
+item_163,item_305,outside,neige,snow,snow,neige
+item_164,item_665,outside,nuage,cloud,cloud,nuage
+item_165,item_307,outside,pelle,shovel,shovel,pelle
+item_166,item_677,outside,pierre,stone,stone,pierre
+item_167,item_308,outside,piscine,pool,pool,piscine
+item_168,item_310,outside,pluie,rain,rain,pluie
+item_169,item_664,outside,rocher,rock (object),rock (object),rocher
+item_170,item_678,outside,rue/route,road,road,rue/route
+item_171,item_311,outside,soleil,sun,sun,soleil
+item_172,item_312,outside,toboggan,slide (object),slide (object),toboggan
+item_173,item_671,outside,toit,roof,roof,toit
+item_174,item_670,outside,tondeuse à gazon,lawn mower,lawn mower,tondeuse à gazon
+item_175,item_673,outside,trottoir,sidewalk,sidewalk,trottoir
+item_176,item_668,outside,tuyau,pipe,hose,tuyau
+item_177,item_679,outside,vent,wind,wind,vent
+item_178,item_608,places,campagne,country,country,campagne
+item_179,item_606,places,camping,camping,camping,camping
+item_180,item_609,places,centre-ville,downtown,downtown,Centre-ville
+item_181,item_612,places,cinéma,cinema,movie,cinéma
+item_182,item_607,places,cirque,circus,circus,cirque
+item_183,item_291,places,cour,yard,yard,cour
+item_184,item_292,places,crèche,nursery,nursery,crèche
+item_185,item_293,places,dehors,outside,outside,dehors (place)
+item_186,item_295,places,école,school,school,école
+item_187,item_296,places,église,church,church,église
+item_188,item_610,places,ferme,farm,farm,ferme
+item_189,item_298,places,fête,party,party,fête
+item_190,item_615,places,forêt,forest,forest,forêt
+item_191,item_300,places,garderie,nursery,nursery,garderie
+item_192,item_303,places,magasin,store,store,magasin
+item_193,item_304,places,maison,house,house,maison
+item_194,item_306,places,parc,park,park,parc (place)
+item_195,item_613,places,pique-nique,picnic,picnic,pique-nique
+item_196,item_309,places,plage,beach,beach,plage
+item_197,item_611,places,station-service,gas station,gas station,station service
+item_198,item_614,places,terrain de jeux,playground,playground,terrain de jeux
+item_199,item_313,places,travail,work (place),work (place),travail
+item_200,item_314,places,zoo,zoo,zoo,zoo
+item_201,,household,appareil photo,camera,camera,appareil photo
+item_202,item_220,household,argent,money,money,argent
+item_203,item_221,household,aspirateur,vacuum,vacuum,aspirateur
+item_204,item_222,household,assiette,plate,plate,assiette
+item_205,item_223,household,balai,broom,broom,balai
+item_206,item_224,household,biberon,bottle,bottle,biberon
+item_207,item_225,household,boîte,box,box,boîte
+item_208,item_226,household,bol,bowl,bowl,bol
+item_209,item_227,household,bouteille,bottle,bottle,bouteille
+item_210,item_228,household,brosse,brush (object),brush (object),brosse
+item_211,item_229,household,brosse à dent,toothbrush,toothbrush,brosse à dent
+item_212,item_714,household,cassette,cassette,tape (object),cassette
+item_213,item_230,household,ciseaux,scissors,scissors,ciseaux
+item_214,item_231,household,clefs,keys,key,clefs
+item_215,item_712,household,clou,nail (object),nail (object),clou
+item_216,item_718,household,coussins,cushion,pillow,coussins
+item_217,item_710,household,couteau,knife,knife,couteau
+item_218,item_232,household,couverture,blanket,blanket,couverture
+item_219,item_233,household,cuillère,spoon,spoon,cuillère
+item_220,item_235,household,feuille,paper,paper,feuille
+item_221,item_236,household,fourchette,fork,fork,fourchette
+item_222,item_237,household,horloge,clock,clock,horloge
+item_223,item_238,household,lampe,lamp,lamp,lampe
+item_224,item_239,household,lumière,light,light (object),lumière
+item_225,item_240,household,lunettes,glasses,glasses,lunettes
+item_226,item_241,household,marteau,hammer,hammer,marteau
+item_227,item_242,household,médicaments,medicine,medicine,médicaments
+item_228,item_243,household,montre,watch (object),watch (object),montre
+item_229,item_715,household,mouchoir,tissue,tissue,mouchoir
+item_230,item_244,household,musique,music,music,musique
+item_231,item_708,household,ordures,trash,trash,ordures
+item_232,item_245,household,oreiller,pillow,pillow,oreiller
+item_233,item_706,household,panier,basket,basket,panier
+item_234,item_246,household,papier,paper,paper,papier
+item_235,item_247,household,peigne,comb (object),comb (object),peigne
+item_236,item_248,household,photo,photos,photo,photo
+item_237,item_249,household,plante,plant,plant,plante
+item_238,item_250,household,plat,dish,dish,plat
+item_239,item_716,household,plateau,tray,tray,plateau
+item_240,item_251,household,porte-monnaie,coat hanger,coat hanger,porte-monnaie
+item_241,item_709,household,pot,,jar,pot
+item_242,item_252,household,poubelle,trash can,trash,poubelle
+item_243,item_253,household,radio,radio,radio,radio
+item_244,item_254,household,savon,soap,soap,savon
+item_245,item_707,household,seau,bucket,bucket,seau
+item_246,item_711,household,serpillière,swab,mop (object),serpillière
+item_247,item_255,household,serviette,towel,towel,serviette
+item_248,item_713,household,serviette de table,,napkin,serviette de table
+item_249,item_256,household,sirop,syrop,syrup,sirop
+item_250,item_257,household,sous/pièces,change,,sous/pièces
+item_251,item_258,household,sucette,,pacifier,sucette
+item_252,item_259,household,tasse,cup,cup,tasse
+item_253,item_260,household,télécommande,remote control,remote control,télécommande
+item_254,item_261,household,téléphone,telephone,telephone,téléphone
+item_255,item_717,household,trotteur,,,trotteur
+item_256,item_262,household,verre,glass,glass,verre
+item_257,item_147,body_parts,aïe bobo,owie,owie,aïe bobo
+item_258,item_148,body_parts,bouche,mouth,mouth,bouche
+item_259,item_149,body_parts,bras,arm,arm,bras
+item_260,item_150,body_parts,cheveux,hair,hair,cheveux
+item_261,item_583,body_parts,cheville,ankle,ankle,cheville
+item_262,item_151,body_parts,cœur,heart,heart,cœur
+item_263,item_152,body_parts,dent,tooth,tooth,dent (body part)
+item_264,item_153,body_parts,doigt,finger,finger,doigt
+item_265,item_154,body_parts,doigt de pieds,toe,toe,doigt de pied
+item_266,item_584,body_parts,fesses,butt,butt,fesses
+item_267,item_155,body_parts,figure/visage,face,face,figure
+item_268,item_156,body_parts,genou,knee,knee,genou
+item_269,item_157,body_parts,jambe,leg,leg,jambe
+item_270,item_158,body_parts,joue,cheek,cheek,joue
+item_271,item_159,body_parts,langue,tongue,tongue,langue
+item_272,item_586,body_parts,lèvre,lips,lip,lèvre
+item_273,item_160,body_parts,main,hand,hand,main
+item_274,item_585,body_parts,menton,chin,chin,menton
+item_275,item_161,body_parts,nez,nose,nose,nez
+item_276,item_162,body_parts,nombril,belly button,belly button,nombril
+item_277,item_163,body_parts,oreille,ear,ear,oreille
+item_278,item_587,body_parts,pénis/zizi…,penis,penis,pénis/zizi…
+item_279,item_164,body_parts,pied,foot,foot,pied
+item_280,item_165,body_parts,pouce,thumb,thumb,pouce
+item_281,item_166,body_parts,tête,head,head,tête
+item_282,item_588,body_parts,vagin/zezette,vagina,vagina,vagin/zezette…
+item_283,item_167,body_parts,ventre,tummy,tummy,ventre
+item_284,item_168,body_parts,yeux,eye,eye,yeux
+item_285,item_106,food_drink,baguette,baguette,bread,baguette
+item_286,item_107,food_drink,banane,banana,banana,banane
+item_287,item_549,food_drink,beignet,fritter,pastry,beignet
+item_288,item_108,food_drink,beurre,butter,butter,beurre
+item_289,item_109,food_drink,boisson,drink (beverage),drink (beverage),boisson
+item_290,item_556,food_drink,bonbons,candy,candy,bonbons
+item_291,item_570,food_drink,bretzel,pretzel,pretzel,bretzel
+item_292,item_110,food_drink,café,coffee,coffee,café
+item_293,item_111,food_drink,carottes,carrot,carrot,carotte
+item_294,item_112,food_drink,céréales,cereal,cereal,céréales
+item_295,item_552,food_drink,chewing-gum,chewing-gum,gum,chewing-gum
+item_296,item_569,food_drink,chips,chips,chips,chips
+item_297,item_546,food_drink,chocolat,chocolate,chocolate,chocolat
+item_298,item_113,food_drink,clémentine,clementine,clementine,clémentine
+item_299,item_547,food_drink,coca,coke,soda,coca
+item_300,item_544,food_drink,compote,compote,jam,compote
+item_301,item_557,food_drink,confiture,jam,jam,confiture
+item_302,item_114,food_drink,cornflakes,cornflakes,cheerios,cornflakes
+item_303,item_572,food_drink,courge,gourd,squash,courge
+item_304,item_563,food_drink,crêpe,crepe,pancake,crêpe
+item_305,item_115,food_drink,eau,water (beverage),water (beverage),eau (drink)
+item_306,item_567,food_drink,esquimau,popsicle,popsicle,esquimau
+item_307,item_571,food_drink,flan,(??),pudding,flan
+item_308,item_578,food_drink,fraise,strawberry,strawberry,fraise
+item_309,item_550,food_drink,frites,french fries,french fries,frites
+item_310,item_116,food_drink,fromage,cheese,cheese,fromage
+item_311,item_117,food_drink,gâteau,cake,cake,gâteau
+item_312,item_118,food_drink,gâteaux apéro,,cracker,gâteaux apéro
+item_313,item_119,food_drink,glace,ice cream,ice cream,glace
+item_314,item_554,food_drink,glaçon,ice cube,ice,glaçon
+item_315,item_553,food_drink,hamburger,hamburger,hamburger,hamburger
+item_316,item_545,food_drink,haricot,bean,beans,haricot
+item_317,item_551,food_drink,haricots verts,french bean,green beans,haricots verts
+item_318,item_120,food_drink,jus de fruit,juice,juice,jus de fruit
+item_319,item_543,food_drink,kiwi,kiwi,kiwi,kiwi
+item_320,item_121,food_drink,lait,milk,milk,lait
+item_321,item_577,food_drink,limonade,lemonade,juice,limonade
+item_322,item_561,food_drink,madeleine,madeleine,muffin,madeleine
+item_323,item_548,food_drink,maïs,corn,,maïs
+item_324,item_565,food_drink,mayonnaise,mayonnaise,mayonnaise,mayonnaise
+item_325,item_560,food_drink,melon,melon,melon,melon
+item_326,item_562,food_drink,noisettes,hazelnut,nut,noisettes
+item_327,item_122,food_drink,nourriture,food,food,nourriture
+item_328,item_564,food_drink,nutella,nutella,nutella,nutella
+item_329,item_123,food_drink,œuf,egg,egg,œuf
+item_330,item_124,food_drink,orange,orange (fruit),orange (food),orange (food)
+item_331,item_125,food_drink,pain,bread,bread,pain
+item_332,item_126,food_drink,pâtes,pasta,pasta,pâtes
+item_333,item_127,food_drink,petits gâteaux,small cake,muffin,petits gâteaux
+item_334,item_128,food_drink,petits pois,peas,peas,petits pois
+item_335,item_541,food_drink,petits pots,peas,peas,petits pots
+item_336,item_129,food_drink,pizza,pizza,pizza,pizza
+item_337,item_130,food_drink,poisson,fish (food),fish (food),poisson (food)
+item_338,item_131,food_drink,pomme,apple,apple,pomme
+item_339,item_568,food_drink,pomme de terre,potato,potato,pomme de terre
+item_340,item_566,food_drink,pop-corn,pop-corn,popcorn,pop-corn
+item_341,item_132,food_drink,poulet,chicken (food),chicken (food),poulet
+item_342,item_133,food_drink,purée,mashed potato,potato,purée
+item_343,item_134,food_drink,raisin,grapes,grapes,raisin
+item_344,item_573,food_drink,raisins secs,raisin,raisin,raisins secs
+item_345,item_575,food_drink,sandwich,sandwich,sandwich,sandwich
+item_346,item_576,food_drink,sauce,sauce,sauce,sauce
+item_347,item_574,food_drink,sel,salt,salt,sel
+item_348,item_135,food_drink,soupe,soup,soup,soupe
+item_349,item_136,food_drink,spaghetti,pasta,pasta,spaghetti
+item_350,item_559,food_drink,sucette,,lollipop,sucette (food)
+item_351,item_137,food_drink,sucre,sugar,sugar,sucre
+item_352,item_138,food_drink,tartine,tartine,toast,tartine
+item_353,item_542,food_drink,thon,tuna,tuna,thon
+item_354,item_579,food_drink,vanille,vanilla,vanilla,vanille
+item_355,item_139,food_drink,viande,meat,meat,viande
+item_356,item_555,food_drink,vitamines,vitamines,vitamin,vitamines
+item_357,item_558,food_drink,yaourt,yogurt,yogurt,yaourt
+item_358,item_263,furniture_rooms,baignoire,bath,bath,baignoire
+item_359,item_595,furniture_rooms,banc,bench,bench,banc
+item_360,item_264,furniture_rooms,berceau,cradle,cradle,berceau
+item_361,item_265,furniture_rooms,canapé,couch,couch,canapé
+item_362,item_594,furniture_rooms,cave,cellar,basement,cave
+item_363,item_266,furniture_rooms,chaise,chair,chair,chaise
+item_364,item_267,furniture_rooms,chaise haute,high chair,high chair,chaise haute
+item_365,item_268,furniture_rooms,chambre,bedroom,bedroom,chambre
+item_366,item_589,furniture_rooms,cuisine,kitchen,kitchen,cuisine
+item_367,item_269,furniture_rooms,cuisinière,cooker,,cuisinière
+item_368,item_592,furniture_rooms,douche,shower,shower,douche
+item_369,item_591,furniture_rooms,entrée,entrance,corridor,entrée
+item_370,item_270,furniture_rooms,escalier,stairs,stairs,escalier
+item_371,item_590,furniture_rooms,étendage,,dryer,étendage
+item_372,item_271,furniture_rooms,évier,sink,sink,évier
+item_373,item_272,furniture_rooms,fauteuil,armchair,armchair,fauteuil
+item_374,item_273,furniture_rooms,fenêtre,window,window,fenêtre
+item_375,item_274,furniture_rooms,four,oven,oven,four
+item_376,item_275,furniture_rooms,frigo,refrigerator,refrigerator,frigo
+item_377,item_276,furniture_rooms,garage,garage,garage,garage
+item_378,item_277,furniture_rooms,lavabo,sink,sink,lavabo
+item_379,item_278,furniture_rooms,lit,bed,bed,lit
+item_380,item_597,furniture_rooms,machine à laver,washing machine,washing machine,machine à laver
+item_381,item_279,furniture_rooms,parc,,park,parc
+item_382,item_593,furniture_rooms,pièce,room,room,pièce
+item_383,item_280,furniture_rooms,porte,door,door,porte
+item_384,item_281,furniture_rooms,pot,,jar,pot (furniture)
+item_385,item_282,furniture_rooms,salle de bain,bathroom,bathroom,salle de bain
+item_386,item_283,furniture_rooms,salon,living room,living room,salon
+item_387,item_284,furniture_rooms,table,table,table,table
+item_388,item_285,furniture_rooms,télé,tv,TV,télé
+item_389,item_286,furniture_rooms,tiroir,drawer,drawer,tiroir
+item_390,item_596,furniture_rooms,wc,potty,potty,wc
+item_391,item_169,people,bébé,baby,baby,bébé
+item_392,item_681,people,clown,clown,clown,clown
+item_393,item_684,people,copain/e,friend,friend,copain/ine
+item_394,item_170,people,dame,lady,lady,dame
+item_395,item_682,people,docteur,doctor,doctor,docteur
+item_396,item_171,people,enfant,child,child,enfant
+item_397,item_685,people,facteur,mailman,mailman,facteur
+item_398,item_172,people,fille,girl,girl,fille
+item_399,item_173,people,frère,brother,brother,frère
+item_400,item_174,people,garçon,boy,boy,garçon
+item_401,item_175,people,gens,people,people,gens
+item_402,item_176,people,grand-mère,grandma,grandma,grand-mère
+item_403,item_177,people,grand-père,grandpa,grandpa,grand-père
+item_404,item_686,people,infirmière,nurse,nurse,infirmière
+item_405,item_178,people,maître/sse,teacher,teacher,maître/sse
+item_406,item_179,people,maman,mommy,mommy,maman
+item_407,item_680,people,monsieur,man,man,monsieur
+item_408,item_688,people,nom de l'animal,the name of the animal,pet's name,nom de l'animal domestique
+item_409,item_180,people,nom de l'enfant,child's own name,child's own name,nom de l'enfant
+item_410,item_181,people,nom de la nounou,babysitter's name,babysitter's name,nom de la nounou
+item_411,item_182,people,nounou,babysitter,babysitter,nounou
+item_412,item_183,people,oncle,uncle,uncle,oncle
+item_413,item_184,people,papa,daddy,daddy,papa
+item_414,item_185,people,personne,person,person,personne
+item_415,item_687,people,police,police,police,police
+item_416,item_683,people,pompier,firefighter,firefighter,pompier
+item_417,item_186,people,sœur,sister,sister,sœur
+item_418,item_187,people,tante,aunt,aunt,tante
+item_419,item_324,descriptive_words,attention,watch out,watch out,attention
+item_420,item_325,descriptive_words,avoir faim,hungry,hungry,avoir faim
+item_421,item_326,descriptive_words,avoir peur,scared,scared,avoir peur
+item_422,item_327,descriptive_words,avoir soif,thirsty,thirsty,avoir soif
+item_423,,descriptive_words,avoir sommeil,sleepy,sleepy,
+item_424,item_328,descriptive_words,beau/belle,beautiful,beautiful,beau/belle
+item_425,item_329,descriptive_words,bien,good,good,bien
+item_426,item_741,descriptive_words,blanc/he,white,white,blanc/he
+item_427,item_330,descriptive_words,blessé,hurt (description),hurt (description),blessé
+item_428,item_331,descriptive_words,bleu,blue,blue,bleu
+item_429,item_332,descriptive_words,bon/ne,good,good,bon/ne
+item_430,item_734,descriptive_words,bruyant/e,loud,loud,bruyant/e
+item_431,item_333,descriptive_words,cassé,broken,broken,cassé
+item_432,item_334,descriptive_words,chaud/e,hot,hot,chaud/e
+item_433,item_745,descriptive_words,coincé,stuck,stuck,coincé
+item_434,item_739,descriptive_words,collant/e,sticky,sticky,collant/e
+item_435,item_335,descriptive_words,content/e,happy,happy,content/e
+item_436,item_744,descriptive_words,coquin/e,naughty,naughty,coquin/e
+item_437,item_336,descriptive_words,dégoutant/e,disgusting,disgusting,dégoûtant/e
+item_438,item_729,descriptive_words,dernier/e,last one,last,dernier/e
+item_439,item_337,descriptive_words,doux/ce,soft,soft,doux/ce
+item_440,item_338,descriptive_words,dur,hard,hard,dur
+item_441,item_339,descriptive_words,endormi,asleep,asleep,endormi
+item_442,item_720,descriptive_words,être réveillé,awake,awake,être réveillé
+item_443,item_340,descriptive_words,fatigué,tired,tired,fatigué
+item_444,item_731,descriptive_words,fort/e,strong,strong,fort/e
+item_445,item_732,descriptive_words,fou/lle,crazy,crazy,fou/folle
+item_446,item_341,descriptive_words,froid,cold,cold,froid
+item_447,item_342,descriptive_words,gentil/le,nice,nice,gentil/le
+item_448,,descriptive_words,grand/e,big,big,
+item_449,item_728,descriptive_words,haut/e,high,high,haut/e
+item_450,item_743,descriptive_words,jaune,yellow,yellow,jaune
+item_451,item_344,descriptive_words,joli,beautiful,pretty,joli
+item_452,item_738,descriptive_words,lent/e,slow,slow,lent/e
+item_453,item_730,descriptive_words,long/ue,long,long,long/ue
+item_454,item_727,descriptive_words,lourd/e,heavy,heavy,lourd/e
+item_455,item_345,descriptive_words,malade,sick,sick,malade
+item_456,item_723,descriptive_words,marron,brown,brown,marron
+item_457,item_346,descriptive_words,méchant/e,nasty,nasty,méchant/e
+item_458,item_721,descriptive_words,mieux,better,better,mieux
+item_459,item_347,descriptive_words,mignon/e,cute,cute,mignon/ne
+item_460,item_740,descriptive_words,minuscule,little (description),little (description),minuscule
+item_461,item_348,descriptive_words,mouillé,wet (description),wet (description),mouillé
+item_462,item_733,descriptive_words,neuf/ve,new,new,neuf/ve
+item_463,item_722,descriptive_words,noir,black,black,noir
+item_464,item_735,descriptive_words,orange,orange (description),orange (description),orange
+item_465,item_349,descriptive_words,parti,all gone,all gone,parti
+item_466,item_350,descriptive_words,pas bon,not good,bad,pas bon
+item_467,item_351,descriptive_words,petit/e,little (description),little (description),petit/e
+item_468,item_725,descriptive_words,plein/e,full,full,plein/ne
+item_469,item_724,descriptive_words,premier/ère,first,first,premier/ère
+item_470,item_352,descriptive_words,propre,clean (description),clean (description),propre
+item_471,item_353,descriptive_words,rouge,red,red,rouge
+item_472,item_354,descriptive_words,sale,dirty,dirty,sale
+item_473,item_355,descriptive_words,sec/he,dry (description),dry (description),sec/che
+item_474,item_356,descriptive_words,sombre,dark,dark,sombre
+item_475,item_357,descriptive_words,tendre,tender,tender,tendre
+item_476,item_736,descriptive_words,tranquille,calm,calm,tranquille
+item_477,item_737,descriptive_words,triste,sad,sad,triste
+item_478,item_742,descriptive_words,venteux,(??),windy,venteux
+item_479,item_726,descriptive_words,vert/e,green,green,vert/e
+item_480,item_358,descriptive_words,vide,empty,empty,vide
+item_481,item_359,descriptive_words,vieux/vieille,old,old,vieux/vieille
+item_482,item_360,descriptive_words,vilain/e,villain,naughty,vilain/e
+item_483,item_361,descriptive_words,vite,fast,fast,vite
+item_484,item_749,action_words,acheter,buy,buy,acheter
+item_485,item_362,action_words,aider,help,help,aider
+item_486,item_363,action_words,aimer,love,love,aimer
+item_487,item_767,action_words,aimer bien,like,like,aimer bien
+item_488,item_364,action_words,aller,go,go,aller (verb)
+item_489,item_757,action_words,aller bien avec,go well with,,aller bien avec
+item_490,item_365,action_words,apporter,bring,bring,apporter
+item_491,item_789,action_words,arracher,pull/tear off,tear,arracher
+item_492,item_366,action_words,arrêter,stop,stop,arrêter
+item_493,item_791,action_words,attendre,wait,wait,attendre
+item_494,item_751,action_words,attraper,catch,catch,attraper
+item_495,item_760,action_words,avoir,have,have,avoir
+item_496,item_368,action_words,balancer,swing (action),swing (action),balancer
+item_497,item_786,action_words,balayer,sweep,sweep,balayer
+item_498,item_369,action_words,boire,drink (action),drink (action),boire
+item_499,item_762,action_words,cacher,hide,hide,cacher
+item_500,item_370,action_words,casser,break,break,casser
+item_501,item_371,action_words,chanter,sing,sing,chanter
+item_502,item_372,action_words,chatouiller,tickle,tickle,chatouiller
+item_503,item_373,action_words,conduire,drive,drive,conduire
+item_504,item_748,action_words,construire,build,build,construire
+item_505,item_764,action_words,couper,cut,cut,couper
+item_506,item_374,action_words,courir,run,run,courir
+item_507,item_752,action_words,courir après,chase,chase,courir après
+item_508,item_793,action_words,couvrir,cover,cover (action),couvrir
+item_509,item_795,action_words,cuisiner,cook,cook,cuisiner
+item_510,item_375,action_words,danser,dance,dance,danser
+item_511,item_776,action_words,déchirer,tear,tear,déchirer
+item_512,item_755,action_words,déposer,put,put,déposer
+item_513,item_376,action_words,dessiner,draw,draw,dessiner
+item_514,item_759,action_words,détester,hate,hate,détester
+item_515,item_377,action_words,dire,say,say,dire
+item_516,item_378,action_words,donner,give,give,donner
+item_517,item_379,action_words,donner un coup,kick,kick,donner un coup de pied
+item_518,item_380,action_words,dormir,sleep,sleep,dormir
+item_519,item_381,action_words,éclabousser,splash,splash,éclabousser
+item_520,item_768,action_words,écouter,listen,listen,écouter
+item_521,item_382,action_words,écrire,write,write,écrire
+item_522,item_761,action_words,entendre,hear,hear,entendre
+item_523,item_383,action_words,essuyer,wipe,wipe,essuyer
+item_524,item_784,action_words,être debout,get up,get up,être debout
+item_525,item_769,action_words,faire,do,do,faire (verb)
+item_526,item_753,action_words,faire bravo,(??),congratulate,faire bravo
+item_527,item_771,action_words,faire de la peinture,paint (action),paint (action),faire de la peinture
+item_528,item_780,action_words,faire du patin,skate,skate (action),faire du patin
+item_529,item_384,action_words,faire du vélo/moto,,ride,faire du vélo/de la moto
+item_530,item_774,action_words,faire semblant,pretend,pretend,faire semblant
+item_531,item_385,action_words,faire un bisou,kiss,kiss,faire un bisou
+item_532,item_386,action_words,fermer,close,close,fermer
+item_533,item_387,action_words,finir,finish,finish,finir
+item_534,item_765,action_words,frapper à la porte,knock,knock,frapper à la porte
+item_535,item_781,action_words,glisser,slide (action),slide (action),glisser
+item_536,item_788,action_words,goûter,taste,taste,goûter (verb)
+item_537,item_775,action_words,goutter,drip,drip,goutter
+item_538,item_794,action_words,grimper,climb,climb,grimper
+item_539,item_388,action_words,jeter,dump,dump,jeter
+item_540,item_389,action_words,jouer,play,play,jouer
+item_541,item_390,action_words,laver,wash,wash,laver
+item_542,item_766,action_words,lécher,lick,lick,lécher
+item_543,item_391,action_words,lire,read,read,lire
+item_544,item_392,action_words,manger,eat,eat,manger
+item_545,item_393,action_words,marcher,walk,walk,marcher
+item_546,item_394,action_words,mettre,put,put,mettre
+item_547,item_395,action_words,montrer,show,show,montrer
+item_548,item_396,action_words,mordre,bite,bite,mordre
+item_549,item_397,action_words,nager,swim,swim,nager
+item_550,item_398,action_words,nettoyer,clean (action),clean (action),nettoyer
+item_551,item_399,action_words,nourrir,feed,feed,nourrir
+item_552,item_400,action_words,ouvrir,open (action),open (action),ouvrir
+item_553,item_787,action_words,parler,talk,talk,parler
+item_554,item_778,action_words,partager,share,share,partager
+item_555,item_790,action_words,penser,think,think,penser
+item_556,item_401,action_words,pleurer,cry,cry,pleurer
+item_557,item_750,action_words,porter,carry,carry,porter
+item_558,item_402,action_words,pousser,push,push,pousser
+item_559,item_403,action_words,prendre,take,take,prendre
+item_560,item_404,action_words,prendre dans ses bras,hug,hug,prendre dans ses bras
+item_561,item_770,action_words,ramasser,pick up,pick,ramasser
+item_562,item_405,action_words,recevoir,receive,,recevoir
+item_563,item_406,action_words,regarder,look,look,regarder
+item_564,item_772,action_words,renverser,spill,spill,renverser
+item_565,item_758,action_words,réparer,repair/fix,fix,réparer
+item_566,item_785,action_words,rester,stay,stay,rester
+item_567,item_779,action_words,s'asseoir,sit,sit,s'asseoir
+item_568,item_407,action_words,sauter,jump,jump,sauter
+item_569,item_408,action_words,se cogner,hit/bump into,hit,se cogner
+item_570,item_409,action_words,se dépêcher,hurry up,hurry,se dépêcher
+item_571,item_792,action_words,se réveiller,wake,wake,se réveiller
+item_572,item_754,action_words,sécher,dry (action),dry (action),sécher
+item_573,item_777,action_words,secouer,shake,shake,secouer
+item_574,item_410,action_words,souffler,blow,blow,souffler
+item_575,item_783,action_words,souhaiter,wish,wish,souhaiter
+item_576,item_411,action_words,sourire,smile,smile,sourire
+item_577,item_412,action_words,taper,hit,hit,taper
+item_578,item_763,action_words,tenir,hold,hold,tenir
+item_579,item_413,action_words,tirer,pull,pull,tirer
+item_580,item_414,action_words,tomber,fall,fall,tomber
+item_581,item_415,action_words,toucher,touch,touch,toucher
+item_582,item_782,action_words,travailler,work (action),work (action),travailler
+item_583,item_756,action_words,trouver,find,find,trouver
+item_584,item_773,action_words,verser,pour,pour,verser
+item_585,item_416,action_words,voir,see,see,voir
+item_586,item_654,time_words,après,after,after,après
+item_587,item_417,time_words,aujourd'hui,today,today,aujourd'hui
+item_588,item_655,time_words,avant,before,before,avant
+item_589,item_418,time_words,ce soir,tonight,tonight,ce soir
+item_590,item_419,time_words,demain,tomorrow,tomorrow,demain
+item_591,item_656,time_words,heure,time,time,heure
+item_592,item_657,time_words,hier,yesterday,yesterday,hier
+item_593,item_420,time_words,jour,day,day,jour
+item_594,item_421,time_words,maintenant,now,now,maintenant
+item_595,item_422,time_words,matin,morning,morning,matin
+item_596,item_423,time_words,nuit,night,night,nuit
+item_597,item_695,helping_verbs,a fait,did,did,a fait
+item_598,,helping_verbs,aller,go,go,aller
+item_599,item_700,helping_verbs,avoir à faire,have to do,,avoir à faire
+item_600,item_702,helping_verbs,avoir besoin de,I need,,avoir besoin de
+item_601,item_699,helping_verbs,devoir faire,have to do,need,devoir faire
+item_602,item_703,helping_verbs,essayer de,try to,try,essayer de
+item_603,item_692,helping_verbs,est,is,is,est
+item_604,item_705,helping_verbs,était,was,was,était
+item_605,item_691,helping_verbs,être,to be,be,être
+item_606,item_696,helping_verbs,faire,,do,faire
+item_607,item_697,helping_verbs,fait,do,do,fait
+item_608,item_701,helping_verbs,laisse-moi,let me,allow,laisse-moi
+item_609,item_698,helping_verbs,ne pas,not,not,ne pas
+item_610,item_693,helping_verbs,peux,can,can,peux
+item_611,item_694,helping_verbs,pourrait,could,could,pourrait
+item_612,item_690,helping_verbs,sont,are,are,sont
+item_613,item_689,helping_verbs,suis,am,am,suis
+item_614,item_704,helping_verbs,vouloir,want,want,vouloir
+item_615,item_444,question_words,comment,how,how,comment
+item_616,item_632,question_words,le/la/les/quel(les),,which (question),le/la/les/quel(les)
+item_617,item_445,question_words,où,where (question),where (question),où
+item_618,item_446,question_words,pourquoi,why,why,pourquoi
+item_619,item_447,question_words,quand,when (question),when (question),quand
+item_620,item_448,question_words,qui,who,who,qui
+item_621,item_449,question_words,quoi,what,what,quoi
+item_622,item_619,prepositions,à,at,at,à
+item_623,item_620,prepositions,à côté de,next to,next to,à côté de
+item_624,item_624,prepositions,à l'intérieur de,inside,inside,à l'intérieur de
+item_625,item_617,prepositions,au dessus de,above,above,au dessus de
+item_626,item_627,prepositions,au loin,far,far,au loin
+item_627,item_628,prepositions,au sommet de,at the top of,on top,au sommet de
+item_628,item_616,prepositions,au sujet de,about,about,au sujet de
+item_629,item_618,prepositions,autour de,around,around,autour de
+item_630,item_631,prepositions,avec,with,with,avec
+item_631,item_621,prepositions,chez,In someone’s house,,chez
+item_632,item_424,prepositions,dans,in,in,dans
+item_633,item_626,prepositions,de,of,of,de
+item_634,item_426,prepositions,dehors,outside,outside,dehors
+item_635,item_427,prepositions,derrière,behind,behind,derrière
+item_636,item_428,prepositions,en bas,down,down,en bas
+item_637,item_429,prepositions,en haut,up,up,en haut
+item_638,item_623,prepositions,ici,here,here,ici
+item_639,item_430,prepositions,là,there,there,là
+item_640,item_431,prepositions,là-bas,there,there,là-bas
+item_641,item_432,prepositions,loin,far,far,loin
+item_642,item_629,prepositions,par-dessus,over,over,par dessus
+item_643,item_622,prepositions,pour,in order to,for,pour
+item_644,item_625,prepositions,près de,near,near,près de
+item_645,item_433,prepositions,sous,under,under,sous
+item_646,item_434,prepositions,sur,on,on,sur
+item_647,item_630,prepositions,vers,towards,towards,vers
+item_648,item_633,quantifiers,aucun/e,none,none,
+item_649,item_639,quantifiers,aussi,also,also,aussi
+item_650,item_638,quantifiers,autre,other,other,autre
+item_651,item_637,quantifiers,chaque,each/every,,chaque
+item_652,item_636,quantifiers,du/de la/des,some,some,du/de la/des
+item_653,item_451,quantifiers,encore,again,again,encore
+item_654,item_452,quantifiers,le/la même,same,same,le/la même
+item_655,item_640,quantifiers,le/la/les,the,the,le/la/les
+item_656,item_453,quantifiers,pas,not,not,pas
+item_657,item_635,quantifiers,plein/beaucoup,a lot,a lot,plein/beaucoup
+item_658,item_454,quantifiers,tous/tout,all,all,tous/tout
+item_659,item_455,quantifiers,un autre,another,another,un autre
+item_660,item_456,quantifiers,un peu,little (amount),little (amount),un peu
+item_661,item_634,quantifiers,un/une,a,a,un/une
+item_662,item_435,pronouns,à elle/sa,hers,hers,à elle/sa
+item_663,item_436,pronouns,à lui/son,his,his,à lui/son
+item_664,item_437,pronouns,à moi,mine,mine,à moi
+item_665,item_438,pronouns,ça,that,that,ça
+item_666,item_648,pronouns,ces,these,these,ces
+item_667,item_650,pronouns,ceux,those,those,ceux
+item_668,item_646,pronouns,elle,she,she,elle
+item_669,,pronouns,eux,them,them,eux
+item_670,item_641,pronouns,il,he,he,Il
+item_671,item_649,pronouns,ils/elles,they,they,ils/elles
+item_672,item_439,pronouns,je,i,I,je
+item_673,item_647,pronouns,leur,their,their,leur
+item_674,item_643,pronouns,lui,him,him,lui
+item_675,item_440,pronouns,ma/mon/mes,my,my,ma/mon/mes
+item_676,item_441,pronouns,moi,me,me,moi
+item_677,item_644,pronouns,moi-même,myself,myself,moi-même
+item_678,item_645,pronouns,notre,our,our,notre
+item_679,item_651,pronouns,nous,we,we,nous
+item_680,item_652,pronouns,on,they,they,on
+item_681,item_642,pronouns,ses,his,his,ses
+item_682,item_653,pronouns,toi-même,yourself,yourself,toi-même
+item_683,item_442,pronouns,votre/ta/ton,your,your,votre/ta/ton
+item_684,item_443,pronouns,vous/tu,you,you,vous/tu
+item_685,item_663,connecting_words,alors,so,so,alors
+item_686,item_662,connecting_words,donc,so,so,donc
+item_687,item_658,connecting_words,et,and,and,et
+item_688,item_660,connecting_words,mais,but,but,mais
+item_689,item_659,connecting_words,parce que,because,because,parce que
+item_690,item_661,connecting_words,si,if,if,si
+,item_50,games_routines,attends,,wait,attends
+,item_68,games_routines,veux,,,veux
+,item_234,household,dent,,,
+,item_343,descriptive_words,grand,,big,grand
+,item_367,action_words,avoir sommeil,,sleepy,avoir sommeil
+,item_425,prepositions,dedans,,inside,dedans
+,item_450,quantifiers,aucun/ne,,none,aucun/e
+,item_521,vehicles,traîneau,,sled,traîneau
+,item_580,clothing,genouillère,knee pad,,
+,item_581,body_parts,aïe,,ouch,
+,item_582,body_parts,bobo,,owie,
+,item_598,games_routines,les courses,,,les courses
+,item_676,outside,bâton,,stick,bâton
+,item_719,household,sac,,bag,
+,item_746,action_words,finir recevoir,,receive,
+,item_747,action_words,donner aller,,give,

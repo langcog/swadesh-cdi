@@ -1,0 +1,881 @@
+WS,WG,category,definition,gloss,uni_lemma
+item_1,,sounds,اخ-وای,ouch,ouch
+item_2,,sounds,اه-اخ,ouch,ouch
+item_3,,sounds,صداي اژير (ب، بو),ring (alarm),
+item_4,,sounds,صداي اسب,neigh,neigh
+item_5,,sounds,صداي اردك,quack,quack quack
+item_6,,sounds,صدای تفنگ (بنگ،بنگ),bang (gun),bang bang
+item_7,,sounds,صداي جوجه ( جيك،جيك),chirp (chicken),
+item_8,,sounds,صداي خروس ( قوقولي قوقو),cockadoodledoo,cockadoodledoo
+item_9,,sounds,صداي سگ (هاپ،هاپ),woof woof,woof woof
+item_10,,sounds,صداي قطار (هو هو چي چي),choo choo,choo choo
+item_11,,sounds,صداي كلاغ ( قار قار),caw caw (crow),caw
+item_12,,sounds,صداي گربه ( ميو ميو),meow meow,meow
+item_13,,sounds,صداي گوسفند (بع بع),baa baa,baa baa
+item_14,,sounds,صداي ماشين (ام/بيب، بيب),honk,honk honk
+item_15,,sounds,صدای موتور,vroom,vroom
+item_16,item_82,vehicles,اتوبوس,bus,bus
+item_17,,vehicles,تراکتور,tractor,tractor
+item_18,,vehicles,دوچرخه (چرخ),bicycle,bicycle
+item_19,,vehicles,سهچرخه,tricycle,
+item_20,,vehicles,قایق,boat,boat
+item_21,item_84,vehicles,قطار,train,train
+item_22,item_85,vehicles,کامیون,truck,truck
+item_23,item_87,vehicles,ماشین,car,car
+item_24,item_88,vehicles,موتور,motorcycle,motorcycle
+item_25,,vehicles,مینی بوس,minibus,bus
+item_26,item_89,vehicles,هلی کوپتر,helicopter,helicopter
+item_27,item_90,vehicles,هواپیما,airplane,airplane
+item_28,,vehicles,کشتی,ship,boat
+item_29,,food_drink,اب,water,water (beverage)
+item_30,,food_drink,ابگوشت,broth,soup
+item_31,,food_drink,اب میوه) ساندیس),juice,juice
+item_32,,food_drink,اب نبات,candy,candy
+item_33,,food_drink,اجیل,nuts,nut
+item_34,,food_drink,ادامس,gum,gum
+item_35,item_102,food_drink,آش,soup,soup
+item_36,,food_drink,البالو,sour cherry,cherry
+item_37,,food_drink,انار,pomegranate,pomegranate
+item_38,,food_drink,انگور,grape,grapes
+item_39,,food_drink,بادام,almond,
+item_40,,food_drink,برنج,rice,rice
+item_41,item_105,food_drink,بستنی,ice cream,ice cream
+item_42,,food_drink,بلال,roasted corn,corn
+item_43,item_104,food_drink,بیسکویت,biscuits,cookie
+item_44,item_108,food_drink,پرتقال,orange,orange (food)
+item_45,,food_drink,پسته,pistachio,
+item_46,item_106,food_drink,پفک,cheetos,
+item_47,,food_drink,پلو,rice,rice
+item_48,item_107,food_drink,پنیر,cheese,cheese
+item_49,,food_drink,پیاز,onion,onion
+item_50,,food_drink,پیتزا,pizza,pizza
+item_51,item_109,food_drink,تخم مرغ,egg,egg
+item_52,,food_drink,تن ماهی,tuna,fish (food)
+item_53,,food_drink,توت,mulberry,berry
+item_54,item_110,food_drink,چای,tea,tea
+item_55,,food_drink,چوب شور,pretzel,pretzel
+item_56,,food_drink,چیپس,chips,chips
+item_57,,food_drink,خربزه,melon,
+item_58,,food_drink,خورش,stew,
+item_59,,food_drink,خیار,cucumber,cucumber
+item_60,,food_drink,رب,tomato paste,
+item_61,,food_drink,دوغ,doogh (yogurt drink),yogurt drink
+item_62,,food_drink,ساندویچ,sandwich,sandwich
+item_63,,food_drink,سبزی,vegetables,vegetable
+item_64,,food_drink,سس,sauce,sauce
+item_65,item_111,food_drink,سوپ,soup,soup
+item_66,,food_drink,سوسیس,sausage,sausage
+item_67,item_112,food_drink,سیب,apple,apple
+item_68,,food_drink,سیب زمینی,potato,potato
+item_69,item_113,food_drink,شربت,syrup,
+item_70,,food_drink,شکلات,chocolate,chocolate
+item_71,,food_drink,شیر (خوراکی),milk,milk
+item_72,item_115,food_drink,شیرینی,sweets,candy
+item_73,item_116,food_drink,غذا,food,food
+item_74,,food_drink,فلفل,pepper,pepper
+item_75,,food_drink,فندق,hazelnut,
+item_76,,food_drink,قارچ,mushrooms,mushroom
+item_77,item_117,food_drink,قند,sugar,sugar
+item_78,,food_drink,کاکائو,cocoa,cocoa
+item_79,,food_drink,کالباس,bologna,
+item_80,,food_drink,کره,butter,butter
+item_81,,food_drink,کباب,barbecue,
+item_82,,food_drink,کشمش,raisins,raisin
+item_83,item_118,food_drink,کیک,cake,cake
+item_84,,food_drink,کیوی,kiwi,kiwi
+item_85,item_119,food_drink,گردو,walnut,
+item_86,item_120,food_drink,گوشت,meat,meat
+item_87,,food_drink,گوجه,tomato,tomato
+item_88,,food_drink,گیلاس,cherries,cherry
+item_89,,food_drink,لوبیا,beans,beans
+item_90,,food_drink,لیمو,lemon,lemon
+item_91,,food_drink,ماست,yogurt,yogurt
+item_92,item_122,food_drink,ماکارونی,macaroni,pasta
+item_93,item_123,food_drink,مربا,jam,jam
+item_94,item_124,food_drink,موز,banana,banana
+item_95,item_125,food_drink,میوه,fruit,fruit
+item_96,item_126,food_drink,نان,bread,bread
+item_97,,food_drink,نارنگی,mandarin,orange (food)
+item_98,item_127,food_drink,نوشابه,soda,soda
+item_99,,food_drink,نخودچی,chickpeas,
+item_100,,food_drink,نمک,salt,salt
+item_101,,food_drink,هلو,peach,peach
+item_102,,food_drink,همبرگر,hamburgers,hamburger
+item_103,,food_drink,هندوانه,watermelon,watermelon
+item_104,,food_drink,یخ,ice,ice
+item_105,item_91,toys,اسباب بازی,toy,toy (object)
+item_106,,toys,بادبادک,kite,kite
+item_107,item_92,toys,بادکنک,balloons,balloon
+item_108,,toys,پازل,puzzle,puzzle
+item_109,item_241,toys,تاب,swing,swing (object)
+item_110,,toys,تخته,board,
+item_111,item_94,toys,توپ,ball,ball
+item_112,,toys,چسب,glue,glue (object)
+item_113,,toys,خط کش,ruler,ruler
+item_114,,toys,خمیر,play dough,play dough
+item_115,,toys,خودکار,pen/pencil,pen/pencil
+item_116,,toys,دفتر,note book,notebook
+item_117,,toys,سوت,whistle,whistle (object)
+item_118,item_96,toys,عروسک,dolls,doll
+item_119,,toys,شیپور,trumpet,trumpet
+item_120,,toys,طناب,rope,rope
+item_121,item_97,toys,کتاب,book,book
+item_122,,toys,کتاب داستان,story book,book
+item_123,,toys,لگو,lego,blocks
+item_124,,toys,ماژیک,marker,
+item_125,,toys,مداد,pencil,pen/pencil
+item_126,,toys,مداد رنگی,crayons,crayon
+item_127,,toys,مشق,homework,
+item_128,,toys,نقاشی,painting,painting
+item_129,item_46,animals,آهو,gazelle,
+item_130,item_47,animals,اسب,horse,horse
+item_131,,animals,اردک,duck,duck
+item_132,item_48,animals,الاغ,donkey,donkey
+item_133,,animals,ببر,tiger,tiger
+item_134,item_49,animals,بره,lamb,lamb
+item_135,,animals,بز,goat,goat
+item_136,,animals,بلبل,nightingale,
+item_137,,animals,پرنده,bird,bird
+item_138,item_50,animals,پروانه,butterfly,butterfly
+item_139,,animals,پشه,mosquito,mosquito
+item_140,,animals,پلنگ,leopard,leopard
+item_141,item_53,animals,جوجه,chicken,chicken (animal)
+item_142,,animals,حیوان,animal,animal
+item_143,,animals,خر,donkey,donkey
+item_144,,animals,خرچنگ,crab,crab
+item_145,item_55,animals,خرس,bear,bear
+item_146,item_56,animals,خرگوش,rabbit,bunny
+item_147,item_57,animals,خروس,rooster,rooster
+item_148,item_58,animals,روباه,fox,fox
+item_149,item_59,animals,زرافه,giraffe,giraffe
+item_150,item_60,animals,زنبور,bee,bee
+item_151,item_61,animals,سگ,dog,dog
+item_152,item_62,animals,سنجاب,squirrel,squirrel
+item_153,,animals,سوسک,cockroach,cockroach
+item_154,item_63,animals,شتر,camel,camel
+item_155,,animals,طوطی,parrot,parrot
+item_156,,animals,عقاب,eagle,eagle
+item_157,item_66,animals,فیل,elephant,elephant
+item_158,item_67,animals,قورباغه,frog,frog
+item_159,item_68,animals,کبوتر,pigeons,pigeon
+item_160,item_69,animals,کلاغ,crow,crow
+item_161,item_70,animals,گاو,cow,cow
+item_162,item_71,animals,گربه,cat,cat
+item_163,,animals,گرگ,wolf,wolf
+item_164,item_72,animals,گنجشک,sparrow,sparrow
+item_165,,animals,گورخر,zebra,zebra
+item_166,item_73,animals,گوسفند,sheep,sheep
+item_167,,animals,گوزن,deer,deer
+item_168,item_74,animals,لاک پشت,turtle,turtle
+item_169,item_76,animals,مار,snake,snake
+item_170,item_75,animals,ماهی,fish,fish (animal)
+item_171,item_77,animals,مرغ,chicken,chicken (animal)
+item_172,item_78,animals,مگس,fly,fly (animal)
+item_173,item_79,animals,مورچه,ant,ant
+item_174,item_80,animals,موش,mouse,mouse
+item_175,item_81,animals,میمون,monkey,monkey
+item_176,,games_routines,اب بازی,bath,bath
+item_177,,games_routines,اتل متل,(traditional children's game),
+item_178,,games_routines,الله اکبر,(allahu akbar),
+item_179,,games_routines,الو,hello,hello
+item_180,,games_routines,بای بای ( خداحافظ),bye bye (goodbye),bye
+item_181,,games_routines,بله ( اره),yes / yeah,yes
+item_182,,games_routines,به سلامت,goodbye,bye
+item_183,,games_routines,تاب تاب عباسی,(traditional children's song),
+item_184,,games_routines,خواب,sleep,sleep
+item_185,,games_routines,دالی/داکی,peekaboo,peekaboo
+item_186,,games_routines,ده- بیست- سی- چهل,ten- twenty- thirty- forty,
+item_187,item_286,games_routines,سلام,hello,hello
+item_188,item_287,games_routines,شام,dinner,dinner
+item_189,item_288,games_routines,شب بخیر,good night,good night
+item_190,,games_routines,عصرانه,evening meal,
+item_191,,games_routines,عمو زنجیر باف,(traditional children's game),
+item_192,,games_routines,عید,eid,
+item_193,,games_routines,قایم (قایم باشک),hide and seek,hide and seek
+item_194,item_289,games_routines,صبحانه,breakfast,breakfast
+item_195,,games_routines,صبح بخیر,good morning,good morning
+item_196,,games_routines,کلاغ پر,(traditional children's game),
+item_197,,games_routines,لطفا,please,please
+item_198,,games_routines,مبارک,happy,happy
+item_199,,games_routines,مرسی (ممنون),thank you,thank you
+item_200,,games_routines,نانای,music / dance,
+item_201,,games_routines,نهار,lunch,lunch
+item_202,,games_routines,هیس,hush,shh
+item_203,,outside,اداره,office,work (place)
+item_204,item_235,outside,باغ,garden,garden
+item_205,,outside,بیرون,outside,outside
+item_206,item_239,outside,پارک,park,park
+item_207,,outside,پل,bridge,bridge
+item_208,item_243,outside,حیاط,yard,yard
+item_209,item_244,outside,خانه,home,home
+item_210,,outside,دریا,sea,sea
+item_211,item_248,outside,ساحل,coast,
+item_212,,outside,سینما,cinema,movie
+item_213,,outside,کلاس,class,
+item_214,item_253,outside,کوچه,alley,
+item_215,item_254,outside,کوه,mountain,mountain
+item_216,item_256,outside,مدرسه,school,school
+item_217,item_257,outside,مسجد,mosque,church
+item_218,,outside,مغازه,shop,store
+item_219,,outside,مهمانی,party,party
+item_220,,clothing,النگو,bangle,bracelet
+item_221,,clothing,انگشتر,ring,ring (object)
+item_222,item_129,clothing,بلوز,blouse,shirt
+item_223,item_130,clothing,پوشک,diapers,diaper
+item_224,item_132,clothing,پیراهن,shirt,shirt
+item_225,,clothing,تِل,hair clip,hair clip
+item_226,item_131,clothing,پیش بند,apron,apron
+item_227,item_134,clothing,جوراب,socks,sock
+item_228,item_135,clothing,چادر,chador,
+item_229,,clothing,چکمه,boot,boots
+item_230,,clothing,دستبند,bracelet,bracelet
+item_231,item_139,clothing,دستکش,gloves,glove
+item_232,item_136,clothing,دکمه,button,button
+item_233,,clothing,دمپای ی,slippers,slipper
+item_234,item_140,clothing,روسری,scarf,scarf
+item_235,item_141,clothing,زیپ,zipper,zipper
+item_236,,clothing,سنجاق,pin,
+item_237,item_142,clothing,شال,shawl,shawl
+item_238,item_143,clothing,شلوار,pants,pants
+item_239,item_144,clothing,شورت,shorts,shorts
+item_240,item_145,clothing,کاپشن,jacket,jacket
+item_241,item_146,clothing,کت,coat,coat
+item_242,,clothing,کِش,elastic band,
+item_243,item_147,clothing,کفش,shoe,shoe
+item_244,item_148,clothing,کلاه,hat,hat
+item_245,,clothing,کمربند,belt,belt
+item_246,,clothing,گردنبند,necklaces,necklace
+item_247,,clothing,گل سر (گیر),hairslide,
+item_248,,clothing,گوشواره,earrings,earring
+item_249,item_149,clothing,لباس,dress,dress (object)
+item_250,item_150,clothing,مانتو,gown,dress (object)
+item_251,item_151,body_parts,ابرو,eyebrow,eyebrow
+item_252,item_152,body_parts,انگشت,finger,finger
+item_253,,body_parts,بازو,arm,arm
+item_254,item_153,body_parts,باسن*,butt,butt
+item_255,,body_parts,بینی(دماغ),nose,nose
+item_256,item_156,body_parts,پا,leg,leg
+item_257,,body_parts,چانه,chin,chin
+item_258,item_157,body_parts,چشم,eye,eye
+item_259,item_158,body_parts,دست,hand,hand
+item_260,,body_parts,دل,belly,tummy
+item_261,item_159,body_parts,دندان,tooth,tooth
+item_262,item_160,body_parts,دهان,mouth,mouth
+item_263,,body_parts,زانو,knee,knee
+item_264,item_162,body_parts,زبان,tongue,tongue
+item_265,,body_parts,سر (کله),head,head
+item_266,,body_parts,شانه,shoulder,shoulder
+item_267,,body_parts,شکم,belly,tummy
+item_268,,body_parts,شست,thumb,thumb
+item_269,item_164,body_parts,صورت,face,face
+item_270,,body_parts,گردن,neck,neck
+item_271,item_165,body_parts,گوش,ear,ear
+item_272,,body_parts,لب ها,lips,lips
+item_273,item_167,body_parts,لپ,cheek,cheek
+item_274,item_168,body_parts,مو,hair,hair
+item_275,,body_parts,مچ,wrist,
+item_276,,body_parts,مشت,fist,
+item_277,,body_parts,مژه,eyelashes,
+item_278,item_170,body_parts,ناف,belly button,belly button
+item_279,,people,ادم,human,person
+item_280,,people,اسم خود کودک,baby's name,child's own name
+item_281,,people,اقا,sir,sir
+item_282,,people,الله (خدا),allah (god),
+item_283,item_261,people,بابا*,daddy,daddy
+item_284,,people,بابا بزرگ*,grandpa,grandpa
+item_285,,people,بچه (نی نی),baby,baby
+item_286,item_264,people,پسر,boy,boy
+item_287,,people,پستچی,postman,mailman
+item_288,,people,پلیس,cop,policeman
+item_289,item_266,people,خاله,aunt,aunt
+item_290,,people,خانم,lady,lady
+item_291,,people,خواهر ( ابجی) *,sister,sister
+item_292,,people,داداش*,brother,brother
+item_293,,people,دای ی,uncle,uncle
+item_294,item_270,people,دختر,girl,girl
+item_295,,people,دک ت ر,doctor,doctor
+item_296,,people,دوست,friend,friend
+item_297,,people,راننده,driver,driver
+item_298,,people,زن,female,woman
+item_299,item_273,people,عمو,uncle,uncle
+item_300,item_272,people,عمه,aunt,aunt
+item_301,item_274,people,مامان*,mommy,mommy
+item_302,,people,مامان بزرگ*,grandma,grandma
+item_303,,people,مرد,man,man
+item_304,,people,معلم,teacher,teacher
+item_305,,people,مهندس,engineer,engineer
+item_306,item_172,furniture_rooms,اشپزخانه,kitchen,kitchen
+item_307,,furniture_rooms,آیفون,phone,telephone
+item_308,,furniture_rooms,اتاق,room,room
+item_309,,furniture_rooms,اتو,iron,iron (object)
+item_310,,furniture_rooms,اجاق (گاز),stove,stove
+item_311,,furniture_rooms,ایوان,porch,porch
+item_312,item_175,furniture_rooms,بخاری,heater,radiator
+item_313,,furniture_rooms,پارکینگ,parking,
+item_314,,furniture_rooms,پذیرایی,living room,living room
+item_315,,furniture_rooms,پله,step,stairs
+item_316,item_178,furniture_rooms,پنجره,window,window
+item_317,,furniture_rooms,تخت,bed,bed
+item_318,item_180,furniture_rooms,تلویزیون,television,TV
+item_319,item_181,furniture_rooms,حمام,bathroom,bathroom
+item_320,item_182,furniture_rooms,در,door,door
+item_321,item_184,furniture_rooms,دستشویی,toilet,toilet
+item_322,,furniture_rooms,دوش,shower,shower
+item_323,item_183,furniture_rooms,دیوار,wall,wall
+item_324,,furniture_rooms,رختخواب,bed,bed
+item_325,,furniture_rooms,زیرزمین,basement,basement
+item_326,,furniture_rooms,سماور,samovar,teapot
+item_327,item_186,furniture_rooms,صندلی,chair,chair
+item_328,item_187,furniture_rooms,ضبط,record player,
+item_329,,furniture_rooms,فریزر,freezer,
+item_330,,furniture_rooms,ظرفشویی,dishwasher,dishwasher
+item_331,,furniture_rooms,قالی ( فرش),carpet,carpet
+item_332,item_189,furniture_rooms,کامپیوتر,computer,computer
+item_333,,furniture_rooms,کشو,dresser,cupboard
+item_334,item_190,furniture_rooms,کمد,closet,closet
+item_335,,furniture_rooms,ماشین لباسشویی,washing machine,washing machine
+item_336,,furniture_rooms,مبل,sofa,couch
+item_337,item_193,furniture_rooms,میز,table,table
+item_338,item_194,furniture_rooms,یخچال,refrigerator,refrigerator
+item_339,item_195,household,اشغال,rubbish,trash
+item_340,,household,اینه,mirror,mirror
+item_341,,household,استکان,glass,glass
+item_342,,household,بالش (پشتی),pillow (back),pillow
+item_343,,household,برس,brush,brush (object)
+item_344,item_196,household,بشقاب,plate,plate
+item_345,item_197,household,پارچ,pitcher,
+item_346,,household,پارچه,cloth,cloth
+item_347,item_198,household,پتو,blanket,blanket
+item_348,,household,پرده,curtain,curtain
+item_349,item_200,household,پول,money,money
+item_350,,household,پیچ,screw,
+item_351,,household,پیچ گوشتی,screw driver,
+item_352,item_202,household,تلفن,phone,telephone
+item_353,,household,جارو,broom,broom
+item_354,,household,جارو برقی,vacuum cleaner,vacuum
+item_355,item_205,household,چاقو,knife,knife
+item_356,,household,چتر,umbrella,umbrella
+item_357,,household,چکش,hammer,hammer
+item_358,item_206,household,چنگال,fork,fork
+item_359,,household,چوب,wood,wood
+item_360,item_207,household,حوله,towel,towel
+item_361,,household,خمیر دندان,toothpaste,toothpaste
+item_362,,household,دارو,medicine,medicine
+item_363,,household,دستمال,napkin,tissue
+item_364,,household,دوربین,camera,camera
+item_365,,household,دیس,platter,plate
+item_366,,household,رادیو,radio,radio
+item_367,item_209,household,ساعت,watch / clock,watch (object)
+item_368,item_210,household,سطل,bucket,bucket
+item_369,,household,سوزن,needle,needle
+item_370,,household,سی دی,disk,CD
+item_371,item_212,household,سینی,tray,tray
+item_372,item_214,household,شامپو,shampoo,shampoo
+item_373,item_213,household,شانه,comb,comb (object)
+item_374,,household,شمع,candle,candle
+item_375,,household,شیشه (شیر),bottle (of milk),bottle
+item_376,item_216,household,صابون,soap,soap
+item_377,item_217,household,ظرف,box / plate,box
+item_378,item_218,household,عکس,picture,picture
+item_379,item_219,household,عینک,glasses,glasses
+item_380,item_221,household,قاشق,spoon,spoon
+item_381,item_223,household,قوری,teapot,teapot
+item_382,,household,قیچی,scissors,scissors
+item_383,item_224,household,کاسه,bowl,bowl
+item_384,,household,کاغذ,paper,paper
+item_385,,household,کبریت,matches,matches
+item_386,,household,کتری,kettle,kettle
+item_387,item_225,household,کلید,key,keys
+item_388,,household,کنترل,remote,remote control
+item_389,,household,کیف,bag,bag
+item_390,,household,لامپ,lamp,lamp
+item_391,,household,لیف,washcloth,
+item_392,item_228,household,لیوان,glass,glass
+item_393,item_229,household,مسواک,toothbrush,toothbrush
+item_394,,household,نخ,thread,
+item_395,item_230,household,نمکدان,salt shaker,
+item_396,,outside,اتش,fire,fire
+item_397,,outside,آدم برفی,snowman,snowman
+item_398,,outside,اسمان,sky,sky
+item_399,,outside,ابر,cloud,cloud
+item_400,,outside,باد,wind,wind
+item_401,item_236,outside,باران,rain,rain
+item_402,,outside,بام (پشت بام),roof,roof
+item_403,item_238,outside,برف,snow,snow
+item_404,,outside,برگ,leaves,leaf
+item_405,,outside,بیل,shovel / spade,shovel
+item_406,,outside,پرچم,flag,
+item_407,,outside,پیاده رو,sidewalk,sidewalk
+item_408,,outside,حوض (استخر),pool / pond,pool
+item_409,,outside,خاک,soil,soil
+item_410,item_245,outside,خورشید,sun,sun
+item_411,,outside,خیابان,street,street
+item_412,item_246,outside,درخت,tree,tree
+item_413,,outside,دود,smoke,
+item_414,,outside,زمین,earth,earth
+item_415,,outside,ساقه,stem,
+item_416,item_249,outside,ستاره,star,star
+item_417,item_250,outside,سرسره,slide,slide (object)
+item_418,,outside,سنگ,rock,rock (object)
+item_419,,outside,شلنگ,hose,
+item_420,,outside,علف (سبزه),grass,grass
+item_421,,outside,گل,flower,flower
+item_422,,outside,گِل,flower,flower
+item_423,item_255,outside,ماه,moon,moon
+item_424,,outside,هوا,air,air
+item_425,item_426,quantifiers,بیشتر,more,more
+item_426,item_427,quantifiers,خیلی,very,many
+item_427,,quantifiers,دیگه,other,other
+item_428,item_383,quantifiers,زیاد,much,much
+item_429,,quantifiers,یه کم( یه ذره),a little,little (amount)
+item_430,,quantifiers,مثلِ ( شکلِ),like,
+item_431,,quantifiers,هر,any,any
+item_432,,quantifiers,همه- همش,all,all
+item_433,,quantifiers,هیچی,nothing,nothing
+item_434,,quantifiers,هیچ کدوم,none,none
+item_435,,quantifiers,یک,one,one
+item_436,,time_words,الان,now,now
+item_437,item_352,time_words,امروز,today,today
+item_438,,time_words,بعد,next,next
+item_439,,time_words,دیروز,yesterday,yesterday
+item_440,item_356,time_words,روز,day,day
+item_441,,time_words,زود,soon,soon
+item_442,item_357,time_words,شب,night,night
+item_443,item_358,time_words,صبح,morning,morning
+item_444,,time_words,ظهر,noon,
+item_445,,time_words,عصر,evening,evening
+item_446,item_359,time_words,فردا,tomorrow,tomorrow
+item_447,,time_words,قبل,before,before
+item_448,,pronouns,آن (اون),that,that
+item_449,,pronouns,آنها,they,
+item_450,,pronouns,او (اون),he / she,
+item_451,item_398,pronouns,این,this,this
+item_452,item_400,pronouns,اینها,these,these
+item_453,item_402,pronouns,تو,you,you
+item_454,,pronouns,خودت,yourself,
+item_455,,pronouns,خودتان (خودتون),yourself,
+item_456,,pronouns,خودش,himself,
+item_457,,pronouns,خودشان,themselves,
+item_458,,pronouns,خودم,myself,
+item_459,,pronouns,خودمان (خودمون),ourselves,
+item_460,item_403,pronouns,شما,you,you
+item_461,item_405,pronouns,ما,we,we
+item_462,item_404,pronouns,من,I,I
+item_463,,pronouns,همان(همون),same,same
+item_464,,descriptive_words,آبی,blue,blue
+item_465,,descriptive_words,آخر,end,
+item_466,,descriptive_words,آهسته (یواش),slow,slow
+item_467,,descriptive_words,اذیت,annoying,
+item_468,,descriptive_words,اول,first,first
+item_469,item_360,descriptive_words,باز,open,open (description)
+item_470,,descriptive_words,بامزه,funny,funny
+item_471,item_361,descriptive_words,بد,bad,bad
+item_472,,descriptive_words,بد مزه,bad-tasting,yucky
+item_473,item_363,descriptive_words,بزرگ,big,big
+item_474,item_364,descriptive_words,بسته,closed,closed
+item_475,,descriptive_words,بلند (صدا),loud (sound),loud
+item_476,,descriptive_words,بهتر,better,
+item_477,,descriptive_words,بیدار,awake,awake
+item_478,,descriptive_words,پاره,ripped,
+item_479,,descriptive_words,پر,full,full
+item_480,,descriptive_words,پیر,old,old
+item_481,item_366,descriptive_words,تاریک,dark,dark
+item_482,,descriptive_words,تازه,new,new
+item_483,,descriptive_words,ترش,sour,sour
+item_484,,descriptive_words,تلخ,bitter,bitter
+item_485,item_369,descriptive_words,تمیز,clean,clean (description)
+item_486,item_371,descriptive_words,چاق,fat,fat
+item_487,item_372,descriptive_words,خالی,empty,empty
+item_488,item_375,descriptive_words,خسته,tired,tired
+item_489,item_376,descriptive_words,خشک,dry,dry (description)
+item_490,,descriptive_words,خواب,asleep,asleep
+item_491,,descriptive_words,خوابیده,asleep,asleep
+item_492,item_379,descriptive_words,خوشحال,happy,happy
+item_493,,descriptive_words,خوشگل,beautiful,beautiful
+item_494,item_378,descriptive_words,خوشمزه,delicious,tasty
+item_495,,descriptive_words,خیس,wet,wet (description)
+item_496,item_381,descriptive_words,داغ,hot,hot
+item_497,,descriptive_words,دراز (بلند),long / tall,long
+item_498,item_382,descriptive_words,روشن,bright,bright
+item_499,,descriptive_words,زرد,yellow,yellow
+item_500,,descriptive_words,سبز,green,green
+item_501,,descriptive_words,سبک,light,light (description)
+item_502,item_385,descriptive_words,سرد,cold,cold
+item_503,,descriptive_words,سریع (تند),fast,fast
+item_504,,descriptive_words,سفت,stiff / hard,hard
+item_505,,descriptive_words,سفید,white,white
+item_506,,descriptive_words,سنگین,heavy,heavy
+item_507,,descriptive_words,سیاه,black,black
+item_508,,descriptive_words,شکسته,broken,broken
+item_509,,descriptive_words,شور,salty,salty
+item_510,,descriptive_words,شیرین,sweet,sweet
+item_511,item_387,descriptive_words,شیطان,naughty,naughty
+item_512,,descriptive_words,قرمز,red,red
+item_513,,descriptive_words,قهوه ای,brown,brown
+item_514,item_388,descriptive_words,کثیف,dirty,dirty
+item_515,item_389,descriptive_words,کوچک,little,little (description)
+item_516,,descriptive_words,کهنه,old (objects),old
+item_517,item_391,descriptive_words,گرسنه,hungry,hungry
+item_518,,descriptive_words,گرم,hot,hot
+item_519,item_392,descriptive_words,لاغر,thin,thin
+item_520,item_393,descriptive_words,مریض,sick,sick
+item_521,item_395,descriptive_words,ناراحت,upset,
+item_522,,descriptive_words,نارنجی,orange,orange (description)
+item_523,,descriptive_words,ناز,cute,cute
+item_524,,descriptive_words,نازک,thin,thin
+item_525,,descriptive_words,نرم,soft,soft
+item_526,,descriptive_words,نو (جدید، تازه),new,new
+item_527,,locations,از,from,
+item_528,,locations,اطراف,around,around
+item_529,,locations,آنجا,there,there
+item_530,,locations,اینجا,here,here
+item_531,,locations,اونطرف,on the other side,
+item_532,,locations,این طرف(این ور),this side,
+item_533,,locations,بالا(بالا ِی),top,top
+item_534,,locations,برای,to,to
+item_535,,locations,به,to,to
+item_536,,locations,بیرون,outside,outside
+item_537,,locations,پایین,down,down
+item_538,,locations,پشت,back,back (location)
+item_539,,locations,جلو (جلوی),front,front
+item_540,,locations,داخل (توی/ در),inside,inside
+item_541,item_421,locations,دور,far,far
+item_542,,locations,دورتر,further,
+item_543,item_422,locations,روی,on,on
+item_544,item_423,locations,زیر,under,under
+item_545,,locations,عقب,back / behind,behind
+item_546,item_425,locations,کنار,next to the,beside
+item_547,,locations,نزدیک,close,near
+item_548,,connecting_words,اگر,if,if
+item_549,,connecting_words,اما (ولی),but,but
+item_550,,connecting_words,بعد,next / after,then
+item_551,,connecting_words,پس,so,so
+item_552,,connecting_words,چون (چون که/ زیرا/ برای اینکه),because,because
+item_553,,connecting_words,و,and,and
+item_554,item_409,question_words,چرا,why,why
+item_555,,question_words,چطور,how,how
+item_556,,question_words,چیه,what,what
+item_557,,question_words,کجا,where,where (question)
+item_558,,question_words,کدام,which,which (question)
+item_559,,question_words,کو,where,where (question)
+item_560,item_412,question_words,کِی,when,when (question)
+item_561,,question_words,کی,who,who
+item_562,,action_words,امد,come,come
+item_563,,action_words,افتاد,fall,fall
+item_564,,action_words,انداخت,drop,drop
+item_565,,action_words,ایستادن (وایسا),stand,stand
+item_566,,action_words,باز (کردن),open,open (action)
+item_567,,action_words,بازی (کردن),play,play
+item_568,,action_words,باشه,ok,
+item_569,,action_words,ببر,take,take
+item_570,,action_words,ببند,close,close
+item_571,,action_words,ببین,look,look
+item_572,,action_words,ببینم,see,see
+item_573,,action_words,بپر,jump,jump
+item_574,,action_words,بپوش,wear,wear
+item_575,,action_words,بخر,buy,buy
+item_576,,action_words,بخند,laugh,laugh
+item_577,,action_words,بخوان,read,read
+item_578,,action_words,بخور,eat,eat
+item_579,,action_words,بخورم,eat,eat
+item_580,,action_words,بدو,run,run
+item_581,,action_words,بده,give,give
+item_582,,action_words,بردار,take,take
+item_583,,action_words,برم,go,go
+item_584,,action_words,برو,go,go
+item_585,,action_words,برویم (بریم),go,go
+item_586,,action_words,بریزم,pour,pour
+item_587,,action_words,بست,close,close
+item_588,,action_words,بشور,wash,wash
+item_589,,action_words,بشورم,wash,wash
+item_590,,action_words,بغل کردن,hug,hug
+item_591,,action_words,بکش,kill,
+item_592,,action_words,بکن,do,do
+item_593,,action_words,بگو,say,say
+item_594,,action_words,بگیر,catch,catch
+item_595,,action_words,بنداز,throw,throw
+item_596,,action_words,بشین,sit down,sit
+item_597,,action_words,بشینم,sit,sit
+item_598,,action_words,بنویس,write,write
+item_599,,action_words,بنویسم,write,write
+item_600,,action_words,بوس کن,kiss,kiss
+item_601,,action_words,بیا,come,come
+item_602,,action_words,بیار,bring,bring
+item_603,,action_words,بیدار شد,wake up,wake
+item_604,,action_words,بیدار شو,wake up,wake
+item_605,,action_words,پاره شد,tear,tear
+item_606,,action_words,پا شو,stand up,stand
+item_607,,action_words,پاک کن,erase,erase
+item_608,,action_words,پوشید,wear,wear
+item_609,,action_words,پوشیدم,wear,wear
+item_610,,action_words,تاب بده,swing,swing (action)
+item_611,,action_words,تمام شد,finish,finish
+item_612,,action_words,جاروکن,sweep,sweep
+item_613,,action_words,جاروکنم,sweep,sweep
+item_614,,action_words,جمع (کردن),tidy up,
+item_615,,action_words,حرف نزن,be quiet,
+item_616,,action_words,خراب شد,destroy,
+item_617,,action_words,خرید,buy,buy
+item_618,,action_words,خواب,sleep,sleep
+item_619,,action_words,خوابه,sleep,sleep
+item_620,,action_words,خوابید,sleep,sleep
+item_621,,action_words,خواندم,read,read
+item_622,,action_words,خورد,eat,eat
+item_623,,action_words,خوردم,eat,eat
+item_624,,action_words,خیس شد,get wet,get wet
+item_625,,action_words,درآر,take out,take out
+item_626,,action_words,دربزن,knock,knock
+item_627,,action_words,درزد,knock,knock
+item_628,,action_words,درست کن,fix,fix
+item_629,,action_words,دست بزن,clap,clap
+item_630,,action_words,دستزد,touch,touch
+item_631,,action_words,دستنزن,not touch,
+item_632,,action_words,دیدی,see,see
+item_633,,action_words,رفت,go,go
+item_634,,action_words,رنگ کن,paint,paint (action)
+item_635,,action_words,رنگ کنم,paint,paint (action)
+item_636,,action_words,روشنشد,turn on,turn on
+item_637,,action_words,ریخت,pour,pour
+item_638,,action_words,زد,fall,fall
+item_639,,action_words,ساکت,be silent,be quiet
+item_640,,action_words,سوار شو,get on,get on
+item_641,,action_words,سوخت,burn,
+item_642,,action_words,سیر شدم,be full,
+item_643,,action_words,شستم,wash,wash
+item_644,,action_words,شکست,break,break
+item_645,,action_words,شنا( کردن),swim,swim
+item_646,,action_words,شوت (کردن),shoot (a ball),kick
+item_647,,action_words,صبر کن,wait,wait
+item_648,,action_words,قلقلک (کردن),tickle,tickle
+item_649,,action_words,فوت کن,blow,blow
+item_650,,action_words,قایم شو,hide,hide
+item_651,,action_words,کشیدم,draw / pull,draw
+item_652,,action_words,کمک (کردن),help,help
+item_653,,action_words,گاز ( گرفتن),bite,bite
+item_654,,action_words,گریه کن,cry,cry
+item_655,,action_words,گوش کن (گوش بده),listen,listen
+item_656,,action_words,می خوانم,read,read
+item_657,,action_words,میزنم,hit,hit
+item_658,,action_words,نرو,stay,stay
+item_659,,action_words,نشست,sit,sit
+item_660,,action_words,نشستم,sit,sit
+item_661,,action_words,نقاشی (کردن),paint,paint (action)
+item_662,,action_words,نکن,stop,stop
+item_663,,action_words,نگاه کن,look,look
+item_664,,action_words,نگاه می کنم,look,look
+item_665,,action_words,نیست,not be,
+item_666,,action_words,نماز (خواندن),pray,
+item_667,,action_words,هل داد,push,push
+item_668,,helping_verbs,بود,(he) was,be
+item_669,,helping_verbs,بودم,(I) was,be
+item_670,,helping_verbs,بودند,(they) were,be
+item_671,,helping_verbs,بودی,(you) were,be
+item_672,,helping_verbs,بودیم,(we) were,be
+item_673,,helping_verbs,دارم,(I) have,have
+item_674,,helping_verbs,داری,(you) have,have
+item_675,,helping_verbs,دارند,(he) has,have
+item_676,,helping_verbs,دارید,(you) have,have
+item_677,,helping_verbs,داریم,(we) have,have
+item_678,,helping_verbs,می خواهم,(I) want,want
+item_679,,helping_verbs,می خواهی,(you) want,want
+item_680,,helping_verbs,می خواهیم,(we) want,want
+item_681,,helping_verbs,نمی دهم,(I do) not give,
+item_682,,helping_verbs,نمی دهد,(he does) not give,
+item_683,,helping_verbs,نمی دهی,(you do) not give,
+item_684,,helping_verbs,نمی دهید,(you do) not give,
+item_685,,helping_verbs,نمی دهیم,(we do) not give,
+item_686,,helping_verbs,نمی خواهم,(I do) not want,
+item_687,,helping_verbs,نمی خواهی,(you do) not want,
+item_688,,helping_verbs,نمی خواهیم,(we do) not want,
+,item_34,sounds,آخ,ouch,ouch
+,item_35,sounds,اَخ/ اَه/ کخ/گخ,ouch,ouch
+,item_36,sounds,بَه بَه / م...م,yum yum,yum yum
+,item_37,sounds,بع بع,baa baa,baa baa
+,item_38,sounds,بیب بیب,beep beep,beep beep
+,item_39,sounds,پیف,pew (bad smell),
+,item_40,sounds,جیز/اُخ/ اُخه,ouch,ouch
+,item_41,sounds,جیک جیک,chirp,
+,item_42,sounds,میو میو,meow meow,meow
+,item_43,sounds,وای,oops,
+,item_44,sounds,هاپ هاپ,woof woof,woof woof
+,item_45,sounds,هوهو چی چی,choo choo,choo choo
+,item_51,animals,پرنده/ توتو,bird,bird
+,item_52,animals,پنگوئن,penguin,penguin
+,item_54,animals,حشره,insect,bug
+,item_64,animals,شیر,lion,lion
+,item_65,animals,غاز,goose,goose
+,item_83,vehicles,دوچرخه,bike,bicycle
+,item_86,vehicles,کشتی / قایق,ship/boat,boat
+,item_93,toys,تفنگ,gun,gun
+,item_95,toys,جغجغه,rattle,rattle (object)
+,item_98,toys,مکعب/ لگو,cube/lego,blocks
+,item_99,food_drink,آب,water,water (beverage)
+,item_100,food_drink,آب میوه,juice,juice
+,item_101,food_drink,آب نبات/ شکلات,candy/chocolate,candy
+,item_103,food_drink,برنج/ پلو,rice,rice
+,item_114,food_drink,شیر,lion,lion
+,item_121,food_drink,ماهی,fish,fish (food)
+,item_128,food_drink,هویج,carrots,carrot
+,item_133,clothing,تسبیح,rosary,
+,item_137,clothing,دامن,skirt,skirt
+,item_138,clothing,دمپایی,slippers,slipper
+,item_154,body_parts,بدن/ تن,body,body
+,item_155,body_parts,بینی,nose,nose
+,item_161,body_parts,دل/ شکم,belly,tummy
+,item_163,body_parts,سر / کله,head,head
+,item_166,body_parts,لب,lip,lip
+,item_169,body_parts,ناخن,nails,nail (body part)
+,item_171,furniture_rooms,اتاق خواب,bedroom,bedroom
+,item_173,furniture_rooms,آینه,mirror,mirror
+,item_174,furniture_rooms,بالش,pillow,pillow
+,item_176,furniture_rooms,پله/ راه پله,stairs,stairs
+,item_177,furniture_rooms,پرده,curtain,curtain
+,item_179,furniture_rooms,ختخواب/رختخواب/تخت,bed,bed
+,item_185,furniture_rooms,شیر آب,faucet,faucet
+,item_188,furniture_rooms,فرش,carpet,carpet
+,item_191,furniture_rooms,گاز,stove,stove
+,item_192,furniture_rooms,گهواره,cradle,cradle
+,item_199,household,پستانک,pacifier,pacifier
+,item_201,household,تشت/ لگن,chamber pot / tub,
+,item_203,household,جارو/ جاروبرقی,vacuum cleaner,vacuum
+,item_204,household,جعبه,box,box
+,item_208,household,دارو/ دوا,medicine,medicine
+,item_211,household,سفره,tablecloth,tablecloth
+,item_215,household,شیشه شیر,bottle of milk,bottle
+,item_220,household,فنجان,cup,cup
+,item_222,household,قندان,sugar,sugar
+,item_226,household,گل/ گلدان,vase,vase
+,item_227,household,لامپ/ چراغ,lamps/lights,light (object)
+,item_231,outside,آتش,fire,fire
+,item_232,outside,آسمان,sky,sky
+,item_233,outside,الاکلنگ,seesaw,
+,item_234,outside,بازار,market,market
+,item_237,outside,باغچه,garden,garden
+,item_240,outside,پشت بام,rooftop,roof
+,item_242,outside,چرخ و فلک,carousel,carousel
+,item_247,outside,زیر زمین,basement,basement
+,item_251,outside,شهربازی,amusement park,
+,item_252,outside,فروشگاه/دکان/مغازه,shop,store
+,item_258,people,أقا/ مرد,man,man
+,item_259,people,آدم/ آدمها,man / woman,person
+,item_260,people,اسم خودکودک,child's own name,child's own name
+,item_262,people,برادر / داداش *,brother,brother
+,item_263,people,بچه,baby,baby
+,item_265,people,پدربزرگ*,grandpa,grandpa
+,item_267,people,خانم/ زن,woman,woman
+,item_268,people,خواهر/ آجی/آبجی,sister,sister
+,item_269,people,دایی,uncle,uncle
+,item_271,people,شوهر,husband,
+,item_275,people,مادربزرگ*,grandma,grandma
+,item_276,people,نوه,grandchild,
+,item_277,people,نی نی/ بِه بِه,baby,baby
+,item_278,games_routines,اتل متل توتوله,(traditional children's game),
+,item_279,games_routines,بله,yes,yes
+,item_280,games_routines,جیش,pee,pee
+,item_281,games_routines,چُرت/خواب/لالا,snooze/sleep,nap
+,item_282,games_routines,حمام کردن,take a bath,bath
+,item_283,games_routines,خداحافظی,goodbye,bye
+,item_284,games_routines,کلاغ پَر,(traditional children's game),
+,item_285,games_routines,دالّی/ داکّی,peekaboo,peekaboo
+,item_290,games_routines,صبر کردن(وایسا),wait,wait
+,item_291,games_routines,لی لی حوضک,(traditional children's game),
+,item_292,games_routines,مرسی/ممنون/متشکرم,thank you,thank you
+,item_293,games_routines,می خوام,I want,wanna
+,item_294,games_routines,ناهار,lunch,lunch
+,item_295,games_routines,نه,no,no
+,item_296,games_routines,هیس/ ش,hush,shh
+,item_297,action_words,آمدن,come,come
+,item_298,action_words,آوردن,bring,bring
+,item_299,action_words,آشتی کردن,reconcile,
+,item_300,action_words,افتادن,fall,fall
+,item_301,action_words,ایستادن,stand,stand
+,item_302,action_words,باز کردن,open,open (action)
+,item_303,action_words,بازی کردن,play,play
+,item_304,action_words,بردن,carry,carry
+,item_305,action_words,بستن,close,close
+,item_306,action_words,بوسیدن,kiss,kiss
+,item_307,action_words,پختن,cook,cook
+,item_308,action_words,پرت کردن,throw,throw
+,item_309,action_words,پریدن,jump,jump
+,item_310,action_words,تاب خوردن,swing,swing (action)
+,item_311,action_words,تکان دادن,shake,shake
+,item_312,action_words,تمیزکردن/پاک کردن,clean,clean (action)
+,item_313,action_words,ترسیدن,fear,be scared
+,item_314,action_words,جیغ کشیدن,squeal,
+,item_315,action_words,شانه کردن,comb,comb (action)
+,item_316,action_words,خاموش کردن,turn off,turn off
+,item_317,action_words,خجالت کشیدن,feel shy,
+,item_318,action_words,خندیدن,laugh,laugh
+,item_319,action_words,خوردن,eat,eat
+,item_320,action_words,خوردن (اصابت کردن),hit,hit
+,item_321,action_words,خواندن,read,read
+,item_322,action_words,خوابیدن,sleep,sleep
+,item_323,action_words,درد گرفتن,hurt,hurt
+,item_324,action_words,دعا کردن,pray,
+,item_325,action_words,دویدن,run,run
+,item_326,action_words,دوست داشتن,love,love
+,item_327,action_words,دیدن/نگاه کردن,see,see
+,item_328,action_words,رانندگی کردن,drive,drive
+,item_329,action_words,راه رفتن,walk,walk
+,item_330,action_words,رفتن,go,go
+,item_331,action_words,زمین خوردن,fall down,fall
+,item_332,action_words,سلام کردن,hello,hello
+,item_333,action_words,سینه زدن,pound on chest (done in mourning),
+,item_334,action_words,شناکردن,swim,swim
+,item_335,action_words,طبل زدن/ضربه زدن/کوبیدن,drum,drum
+,item_336,action_words,غذا دادن,feed,feed
+,item_337,action_words,قلقلک دادن,tickle,tickle
+,item_338,action_words,فوت کردن,blow,blow
+,item_339,action_words,قصه گفتن,tell a story,tell
+,item_340,action_words,کتک زدن,beat,hit
+,item_341,action_words,کشیدن,draw,draw
+,item_342,action_words,کمک کردن,help,help
+,item_343,action_words,گاز گرفتن,bite,bite
+,item_344,action_words,گریه کردن,cry,cry
+,item_345,action_words,لج کردن/قهر کردن,sulk,
+,item_346,action_words,لگد زدن,kick,kick
+,item_347,action_words,لمس کردن/ دست زدن,touch,touch
+,item_348,action_words,نانای کردن/ رقصیدن,dance,dance
+,item_349,action_words,نقاشی کردن,paint,paint (action)
+,item_350,action_words,نمازخواندن,pray,
+,item_351,action_words,نوشتن,write,write
+,item_353,time_words,امشب,tonight,tonight
+,item_354,time_words,بعداً,later,later
+,item_355,time_words,حالا,now,now
+,item_362,descriptive_words,بداخلاق,bad-tempered,
+,item_365,descriptive_words,پُر,full,full
+,item_367,descriptive_words,تر / خیس,wet,wet (description)
+,item_368,descriptive_words,تشنه,thirsty,thirsty
+,item_370,descriptive_words,تند/زود/سریع,fast,fast
+,item_373,descriptive_words,خاموش,off,off
+,item_374,descriptive_words,خراب,broken,broken
+,item_377,descriptive_words,خوب,good,good
+,item_380,descriptive_words,خوش اخلاق,well-behaved,good
+,item_384,descriptive_words,سخت/سفت,hard,hard
+,item_386,descriptive_words,سیر,full,full
+,item_390,descriptive_words,کم,little,little (amount)
+,item_394,descriptive_words,ناز/قشنگ,cute/beautiful,cute
+,item_396,descriptive_words,یواش/آهسته,slow,slow
+,item_397,pronouns,آن,that,that
+,item_399,pronouns,آنها,they,
+,item_401,pronouns,او,he / she,
+,item_406,pronouns,مالِ من/ منِ,mine,
+,item_407,pronouns,مال تو/ توئه,yours,
+,item_408,pronouns,مال اون/ اونه,his/hers,
+,item_410,question_words,چطوری/چگونه/ چه جوری,how,how
+,item_411,question_words,چی,what,what
+,item_413,question_words,کی(چه کسی),who,who
+,item_414,question_words,کجا/ کو,where,where (question)
+,item_415,locations,آنجا,there,there
+,item_416,locations,بالا,top,top
+,item_417,locations,بیرون/ خارج,out,out
+,item_418,locations,پائین,down,down
+,item_419,locations,جلو,front,front
+,item_420,locations,داخل/ دَر/ توی,in,in
+,item_424,locations,عقب / پشت,back,back (location)
+,item_428,quantifiers,همان قدر,as much,
+,item_429,quantifiers,هیچکدام,none,none
+,item_430,quantifiers,هیچی(نه),nothing,nothing
+,item_431,quantifiers,یکی,one,one
+,item_432,quantifiers,همه,all,all
+,item_433,quantifiers,یه کمی/مقداری/ یه کم دیگه,a little (more),little (amount)

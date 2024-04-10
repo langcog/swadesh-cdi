@@ -1,0 +1,726 @@
+WS,WG,category,definition,gloss,uni_lemma
+item_1,item_3,sounds,ai,oh,oh
+item_2,,sounds,ala,,
+item_3,item_4,sounds,amunt/aupa,get up,
+item_4,,sounds,beee (xai),baa baa,baa baa
+item_5,item_5,sounds,brumbrum (cotxe),vroom,vroom
+item_6,item_7,sounds,guau-guaua/bup-bup,woof woof,woof woof
+item_7,item_8,sounds,miau,meow,meow
+item_8,,sounds,muu,moo,moo
+item_9,item_10,sounds,oh,oh,oh
+item_10,item_11,sounds,piu-piu,beep beep,beep beep
+item_11,item_12,sounds,qua-qua,quack quack,quack quack
+item_12,,sounds,quiquiriqui,cock-a-doodle-doo,cock-a-doodle-doo
+item_13,item_15,animals,abella,bee,bee
+item_14,item_17,animals,animal,animal,animal
+item_15,item_16,animals,anec,duck,duck
+item_16,item_18,animals,aranya,spider,spider
+item_17,item_19,animals,bitxo,insect,insect
+item_18,item_20,animals,burro/ase,donkey,donkey
+item_19,,animals,camell,camel,camel
+item_20,,animals,canari,canary,
+item_21,,animals,cargol,snail,snail
+item_22,item_21,animals,cavall,horse,horse
+item_23,,animals,colom,dove,
+item_24,item_23,animals,conill,rabbit,bunny
+item_25,,animals,cuc/cuca,worm,worm
+item_26,,animals,dinosaure,dinosaur,dinosaur
+item_27,item_24,animals,dofi,dolphin,dolphin
+item_28,item_25,animals,elefant,elephant,elephant
+item_29,item_27,animals,formiga,ant,ant
+item_30,item_28,animals,gallina,hen,hen
+item_31,item_29,animals,gat,cat,cat
+item_32,item_30,animals,girafa,giraffe,giraffe
+item_33,item_31,animals,gos,dog,dog
+item_34,item_32,animals,granota,frog,frog
+item_35,,animals,hipopotam,hippopotamus,hippopotamus
+item_36,item_33,animals,lleo,lion,lion
+item_37,,animals,marieta,ladybug,ladybug
+item_38,item_36,animals,mico/mono,monkey,monkey
+item_39,item_37,animals,mosca,fly (animal),fly (animal)
+item_40,item_38,animals,ocell,bird,bird
+item_41,item_39,animals,os,bear,bear
+item_42,item_40,animals,ovella/xai,sheep/lamb,sheep
+item_43,item_41,animals,papallona,butterfly,butterfly
+item_44,item_42,animals,peix,fish (animal),fish (animal)
+item_45,item_44,animals,pingui,penguin,penguin
+item_46,,animals,pop,,
+item_47,item_46,animals,porc,pig,pig
+item_48,item_47,animals,rata/ratoli,rat/mouse,mouse
+item_49,,animals,sargantana,lizard,lizard
+item_50,,animals,serp,snake,snake
+item_51,item_48,animals,tigre,tiger,tiger
+item_52,,animals,toro,bull,bull
+item_53,item_49,animals,tortuga,turtle,turtle
+item_54,item_50,animals,vaca,cow,cow
+item_55,,animals,zebra,zebra,zebra
+item_56,item_51,vehicles,ambulancia,ambulance,ambulance
+item_57,,vehicles,autobus/bus,bus,bus
+item_58,item_52,vehicles,avio,airplane,airplane
+item_59,,vehicles,bicicleta,bicycle,bicycle
+item_60,item_53,vehicles,camio,truck,truck
+item_61,,vehicles,carro/carreta,cart/carriage,cart
+item_62,item_54,vehicles,cotxe,car,car
+item_63,,vehicles,grua,crane,crane
+item_64,,vehicles,helicopter,helicopter,helicopter
+item_65,item_56,vehicles,moto,motorcycle,motorcycle
+item_66,,vehicles,patins,skates,skate (object)
+item_67,,vehicles,tractor,tractor,tractor
+item_68,item_58,vehicles,tren,train,train
+item_69,item_59,vehicles,vaixell/barco,ship/boat,boat
+item_70,,toys,caixa,box,box
+item_71,,toys,cartes (joc),cards,card
+item_72,,toys,colors,colors,
+item_73,item_60,toys,conte/llibre,story/book,book
+item_74,,toys,cuinetes,kitchen,
+item_75,,toys,domino,domino,
+item_76,item_64,toys,galleda,bucket,bucket
+item_77,item_63,toys,globus,balloon,balloon
+item_78,,toys,guitarra,guitar,guitar
+item_79,item_66,toys,joguina,toy,toy (object)
+item_80,item_67,toys,llapis,pencil,Pencil
+item_81,item_68,toys,nina/nino,doll,doll
+item_82,item_69,toys,pala,shovel,shovel
+item_83,item_71,toys,pilota,ball,ball
+item_84,,toys,puzzle/trencaclosques,puzzle,puzzle
+item_85,,toys,retolador,marker,marker
+item_86,item_72,toys,tambor,drum,drum
+item_87,item_73,toys,trompeta,trumpet,trumpet
+item_88,item_74,food_drink,aigua,water,water (beverage)
+item_89,,food_drink,amanida,salad,salad
+item_90,item_75,food_drink,arros,rice,rice
+item_91,,food_drink,berenar,snack,snack
+item_92,item_76,food_drink,bibero,baby bottle,bottle
+item_93,,food_drink,cafe,coffee,coffee
+item_94,item_77,food_drink,caramel,candy,candy
+item_95,item_78,food_drink,carn,meat,meat
+item_96,,food_drink,ceba,onion,onion
+item_97,item_79,food_drink,cereals,cereal,cereal
+item_98,item_80,food_drink,coca,cake,cake
+item_99,item_81,food_drink,cola-cao,Cola Cao (chocolate drink),
+item_100,,food_drink,crispetes,popcorn,popcorn
+item_101,,food_drink,croissant,croissant,croissant
+item_102,,food_drink,croquetes,croquette,croquette
+item_103,,food_drink,enciam,lettuce,lettuce
+item_104,,food_drink,entrepa,sandwich,sandwich
+item_105,,food_drink,espaguetis,spaghetti,spaghetti
+item_106,,food_drink,fideus,noodles,noodles
+item_107,,food_drink,fruita,fruit,fruit
+item_108,item_82,food_drink,formatge,cheese,cheese
+item_109,item_83,food_drink,galeta,cookie,cookie
+item_110,item_84,food_drink,gelat,ice cream,ice cream
+item_111,,food_drink,hamburguesa,hamburger,hamburger
+item_112,item_85,food_drink,iogurt,yogurt,yogurt
+item_113,,food_drink,kiwi,kiwi fruit,kiwi
+item_114,,food_drink,llenties,lentils,
+item_115,item_86,food_drink,llet,milk,milk
+item_116,,food_drink,llimona,lemon,lemon
+item_117,,food_drink,macarrons,macaroni,macaroni
+item_118,,food_drink,maduixa,strawberry,strawberry
+item_119,,food_drink,magdalenes,cupcakes,
+item_120,item_87,food_drink,mandarina,mandarin,orange (food)
+item_121,,food_drink,melo,melon,melon
+item_122,,food_drink,mongetes,beans,beans
+item_123,,food_drink,natilles,custard,
+item_124,,food_drink,olives,olives,olive
+item_125,,food_drink,ou,egg,egg
+item_126,item_88,food_drink,pa,bread,bread
+item_127,,food_drink,pasta,pasta,pasta
+item_128,,food_drink,pastanaga/carrota,carrot,carrot
+item_129,item_90,food_drink,pastis,cake,cake
+item_130,item_89,food_drink,patates,potatoes,potato
+item_131,item_91,food_drink,peix2,fish (food),fish (food)
+item_132,item_92,food_drink,pera,pear,pear
+item_133,item_93,food_drink,pernil (dolc/salat),ham (sweet/savory),ham
+item_134,,food_drink,pesols,peas,peas
+item_135,,food_drink,piruleta,lollipop,lollipop
+item_136,item_94,food_drink,platan,banana,banana
+item_137,,food_drink,pollastre,chicken (food),chicken (food)
+item_138,item_95,food_drink,poma,apple,apple
+item_139,,food_drink,postres,dessert,dessert
+item_140,item_96,food_drink,potito,baby food,baby food
+item_141,item_97,food_drink,pure,puree,puree
+item_142,,food_drink,raim,grape,grapes
+item_143,,food_drink,sal,salt,salt
+item_144,item_98,food_drink,salsitxes,sausages,sausage
+item_145,item_99,food_drink,sopa,soup,soup
+item_146,item_100,food_drink,suc,juice,juice
+item_147,,food_drink,sucre,sugar,sugar
+item_148,item_101,food_drink,taronja,orange,orange
+item_149,,food_drink,torrada,toast,toast
+item_150,item_102,food_drink,tomaquet/tomata,tomato,tomato
+item_151,,food_drink,torro,nougat,
+item_152,item_103,food_drink,truita,omelette,
+item_153,,food_drink,xindria/sindria,watermelon,watermelon
+item_154,item_104,food_drink,xocolata,chocolate,chocolate
+item_155,,food_drink,xupa-xups,lollipop,lollipop
+item_156,item_105,clothing,abric,coat,coat
+item_157,,clothing,anorac,anorak,
+item_158,,clothing,bambes,shoes,shoe
+item_159,item_106,clothing,barret,hat,hat
+item_160,,clothing,bata,gown,
+item_161,,clothing,banyador/biquini,swimsuit,swimsuit
+item_162,item_107,clothing,bolquer,diaper,diaper
+item_163,item_108,clothing,bota/es,boots,boots
+item_164,item_109,clothing,boto,button,button
+item_165,item_110,clothing,bufanda,scarf,scarf
+item_166,item_111,clothing,calcetes/calcotets,underpants,underpants
+item_167,,clothing,cinturo,belt,belt
+item_168,,clothing,faldilla,skirt,skirt
+item_169,item_112,clothing,gorra,cap,cap
+item_170,,clothing,guants,gloves,glove
+item_171,item_114,clothing,jersei,sweater,sweater
+item_172,,clothing,mitges,tights,tights
+item_173,item_115,clothing,mitjons,socks,sock
+item_174,,clothing,mocador,scarf,scarf
+item_175,item_116,clothing,pantalons,pants,pants
+item_176,,clothing,paraigues,umbrella,umbrella
+item_177,item_117,clothing,pijama,pajamas,pajamas
+item_178,item_118,clothing,pitet,bib,bib
+item_179,item_119,clothing,roba,clothing,clothing
+item_180,item_120,clothing,sabata/es,shoe,shoe
+item_181,,clothing,sabatilles,slippers,slipper
+item_182,item_121,clothing,samarreta,shirt,shirt
+item_183,,clothing,ulleres,glasses,glasses
+item_184,,clothing,xandall,tracksuit,tracksuit
+item_185,,body_parts,barba,beard,beard
+item_186,item_123,body_parts,boca,mouth,mouth
+item_187,item_124,body_parts,braco/os,arm,arm
+item_188,item_125,body_parts,cabell,hair,hair
+item_189,item_126,body_parts,cama/es,leg,leg
+item_190,item_127,body_parts,cap...193,head,head
+item_191,,body_parts,colze,elbow,elbow
+item_192,,body_parts,coll,neck,neck
+item_193,item_129,body_parts,cul,butt,butt
+item_194,item_130,body_parts,dent/s,tooth,tooth
+item_195,item_131,body_parts,dit/s,finger/toe,finger
+item_196,,body_parts,esquena,back,back
+item_197,item_132,body_parts,galta,cheek,cheek
+item_198,item_133,body_parts,genoll/s,knee,knee
+item_199,,body_parts,llavis,lips,lip
+item_200,item_134,body_parts,llengua,tongue,tongue
+item_201,item_135,body_parts,ma/ns,hand,hand
+item_202,item_136,body_parts,melic/llombrigol,belly button,belly button
+item_203,item_137,body_parts,nas,nose,nose
+item_204,item_138,body_parts,orella/es,ear,ear
+item_205,,body_parts,panxa,belly,
+item_206,,body_parts,pell,skin,
+item_207,item_139,body_parts,penis,penis,penis
+item_208,item_140,body_parts,peu/s,foot,foot
+item_209,,body_parts,piga,freckle,
+item_210,item_141,body_parts,ull/s,eye,eye
+item_211,item_142,body_parts,vulva,vulva,vagina
+item_212,,people,amic/a,friend,friend
+item_213,item_229,people,avi/iaio,grandpa,grandpa
+item_214,item_228,people,avia/iaia,grandma,grandma
+item_215,item_230,people,bebe,baby,baby
+item_216,,people,cosi,cousin,cousin
+item_217,,people,cosina,cousin,cousin
+item_218,item_231,people,dona,woman,woman
+item_219,,people,germa,brother,brother
+item_220,,people,germana,sister,sister
+item_221,item_232,people,home,man,man
+item_222,item_234,people,mare/mama/mami,mommy,mommy
+item_223,,people,mestre/a,teacher,teacher
+item_224,item_235,people,metge/ssa,doctor,doctor
+item_225,item_236,people,nen,boy,boy
+item_226,item_237,people,nena,girl,girl
+item_227,,people,noi/a,boy/girl,
+item_228,item_238,people,nom del nen/a,child's name,child's name
+item_229,item_239,people,nom propi,person's name,
+item_230,item_240,people,nom propi2,person's name,
+item_231,item_242,people,oncle/tiet/tio,uncle,uncle
+item_232,,people,padri/na,godparent,
+item_233,,people,pallasso/a,clown,clown
+item_234,item_243,people,pare/papa/papi,daddy,daddy
+item_235,item_244,people,persona,person,person
+item_236,,people,policia,police,police
+item_237,item_245,people,senyor,sir,sir
+item_238,item_246,people,senyora,ma'am,
+item_239,item_247,people,tia/tieta,aunt,aunt
+item_240,item_167,household,aixeta,faucet,faucet
+item_241,item_168,household,ampolla,bottle,bottle
+item_242,,household,batedora,blender,
+item_243,,household,carta,letter,
+item_244,item_170,household,cistell/cabas,basket,basket
+item_245,item_171,household,claus,keys,keys
+item_246,item_172,household,coixi,pillow,pillow
+item_247,item_173,household,colonia,cologne,
+item_248,,household,crema,cream,
+item_249,item_175,household,cullera,spoon,spoon
+item_250,item_176,household,diners/centims,money/cents,
+item_251,,household,disc,disc,CD
+item_252,,household,encenedor,lighter,lighter
+item_253,,household,endoll,plug,plug
+item_254,item_177,household,escombra,broom,broom
+item_255,,household,escombraries,garbage,garbage
+item_256,item_179,household,esponja,sponge,sponge
+item_257,item_178,household,estora/catifa,mat/rug,carpet
+item_258,item_180,household,forquilla,fork,fork
+item_259,item_181,household,ganivet,knife,knife
+item_260,item_182,household,got,glass,glass
+item_261,,household,llencol,bedsheet,sheet
+item_262,item_184,household,manta,blanket,blanket
+item_263,item_185,household,martell,hammer,hammer
+item_264,,household,medicina,medicine,medicine
+item_265,item_186,household,mirall/espill,mirror,mirror
+item_266,item_187,household,mobil,phone,phone
+item_267,,household,olla,pot,pot
+item_268,item_188,household,orinal,potty,potty
+item_269,,household,paella,frying pan,pan
+item_270,item_70,household,paper,paper,paper
+item_271,,household,pila,battery,battery
+item_272,item_189,household,pinta,paint,paint (object)
+item_273,item_190,household,plat,plate,plate
+item_274,item_191,household,radio,radio,radio
+item_275,item_192,household,raspall,brush,brush (object)
+item_276,item_193,household,rellotge,watch,watch (object)
+item_277,item_194,household,sabo,soap,soap
+item_278,item_195,household,tassa,cup,cup
+item_279,item_196,household,telefon,phone,phone
+item_280,,household,test/torratxa,flower pot,flower pot
+item_281,item_197,household,tisores,scissors,scissors
+item_282,,household,tornavis,screwdriver,screwdriver
+item_283,item_198,household,tovallola,towel,towel
+item_284,item_199,household,tovalloletes,wipes,
+item_285,,household,ulleres2,glasses,
+item_286,,household,video,video,
+item_287,,household,xampu,shampoo,shampoo
+item_288,item_200,household,xarop,(cough) syrup,
+item_289,item_201,household,xumet/pipa,pacifier,pacifier
+item_290,item_143,furniture_rooms,armari,wardrobe,wardrobe
+item_291,,furniture_rooms,ascensor,elevator,elevator
+item_292,,furniture_rooms,aspiradora,vacuum cleaner,vacuum
+item_293,item_144,furniture_rooms,balco,balcony,balcony
+item_294,,furniture_rooms,bany,bathroom,bathroom
+item_295,item_145,furniture_rooms,banyera,bathtub,bathtub
+item_296,,furniture_rooms,bidet,bidet,bidet
+item_297,item_146,furniture_rooms,bressol,cot,cot
+item_298,item_147,furniture_rooms,cadira,chair,chair
+item_299,item_148,furniture_rooms,calaix,drawer,drawer
+item_300,item_149,furniture_rooms,cuina,kitchen,kitchen
+item_301,item_150,furniture_rooms,dutxa,shower,shower
+item_302,item_151,furniture_rooms,escala,ladder,ladder
+item_303,,furniture_rooms,estufa,stove,stove
+item_304,item_152,furniture_rooms,finestra,window,window
+item_305,,furniture_rooms,garatge,garage,garage
+item_306,item_153,furniture_rooms,habitacio,room,room
+item_307,item_154,furniture_rooms,lavabo,sink,sink
+item_308,item_155,furniture_rooms,llit,bed,bed
+item_309,item_156,furniture_rooms,menjador,dining room,dining room
+item_310,,furniture_rooms,microones,microwave,microwave
+item_311,item_157,furniture_rooms,nevera,refrigerator,refrigerator
+item_312,item_218,furniture_rooms,pati,patio,patio
+item_313,item_159,furniture_rooms,porta,door,door
+item_314,item_160,furniture_rooms,rentadora,washing machine,washing machine
+item_315,item_161,furniture_rooms,sofa,sofa,sofa
+item_316,,furniture_rooms,tamboret,stool,stool
+item_317,item_162,furniture_rooms,taula,table,table
+item_318,item_163,furniture_rooms,televisor,TV,TV
+item_319,item_164,furniture_rooms,terra,ground,ground
+item_320,,furniture_rooms,terrassa,terrace,terrace
+item_321,item_165,furniture_rooms,trona,highchair,high chair
+item_322,item_166,furniture_rooms,water,toilet,toilet
+item_323,item_202,outside,arbre,tree,tree
+item_324,,outside,banc,bank,bank
+item_325,,outside,bandera/senyera,flag,flag
+item_326,,outside,bustia,mailbox,
+item_327,item_207,outside,cel,sky,sky
+item_328,item_210,outside,estrella,star,star
+item_329,item_212,outside,flor,flower,flower
+item_330,,outside,foc,fire,fire
+item_331,,outside,fulles,leaves,leaf
+item_332,item_213,outside,gronxador,swing (toy),swing (object)
+item_333,,outside,herba,grass,grass
+item_334,item_214,outside,jardi,garden,garden
+item_335,,outside,llenya,firewood,firewood
+item_336,item_183,outside,llum,light,light
+item_337,item_215,outside,lluna,moon,moon
+item_338,,outside,manguera,hose,hose
+item_339,,outside,neu,snow,snow
+item_340,item_216,outside,nuvol,cloud,cloud
+item_341,item_219,outside,pedra/roc,stone/rock,stone
+item_342,item_221,outside,planta,plant,plant
+item_343,item_223,outside,pluja,rain,rain
+item_344,,outside,pont,bridge,bridge
+item_345,,outside,regadora,watering can,watering can
+item_346,item_224,outside,riu,river,river
+item_347,item_225,outside,sol,ground,ground
+item_348,item_226,outside,sorra/arena,sand,sand
+item_349,,outside,timbre,doorbell,doorbell
+item_350,item_227,outside,tobogan,slide (object),slide (object)
+item_351,,outside,vent/aire,wind/air,wind
+item_352,,outside,vorera,sidewalk,sidewalk
+item_353,,outside,xemeneia,fireplace,fireplace
+item_354,,places,bar,bar,bar
+item_355,,places,bosc,forest,forest
+item_356,item_203,places,botiga,store,store
+item_357,item_204,places,camp,field,field
+item_358,item_205,places,carrer,street,street
+item_359,item_206,places,casa,house,house
+item_360,,places,cavallets,carousel,carousel
+item_361,item_208,places,cinema/cine,cinema,movie
+item_362,,places,circ,circus,circus
+item_363,item_209,places,escola/cole,school,school
+item_364,,places,esglesia,church,church
+item_365,,places,festa,party,party
+item_366,item_211,places,fira,fair (gathering),
+item_367,,places,hort,vegetable garden,
+item_368,,places,mercat,market,
+item_369,,places,muntanya,mountain,mountain
+item_370,,places,nom de centre comercial,name of mall,
+item_371,item_217,places,parc,park,park
+item_372,item_220,places,piscina,swimming pool,swimming pool
+item_373,,places,placa,plate,
+item_374,item_222,places,platja,beach,beach
+item_375,,places,supermercat/super,supermarket,
+item_376,item_248,games_routines,a banyar,to bathe,
+item_377,item_249,games_routines,a dormir,to sleep,
+item_378,item_250,games_routines,a menjar,to eat,
+item_379,,games_routines,a veure,let me see,
+item_380,item_252,games_routines,adeu,bye,bye
+item_381,,games_routines,aixo no,not that,
+item_382,item_254,games_routines,anem,let's go,
+item_383,item_256,games_routines,bon dia,good morning,good morning
+item_384,item_257,games_routines,bona nit,good night,good night
+item_385,item_258,games_routines,caca,poo,
+item_386,item_259,games_routines,deixa'm,leave me,
+item_387,item_260,games_routines,dolent,bad,bad
+item_388,item_261,games_routines,espera,wait,wait
+item_389,item_264,games_routines,hola,hello,hello
+item_390,item_265,games_routines,ja esta,it's done,
+item_391,item_266,games_routines,mal/pupa,boo boo,
+item_392,item_267,games_routines,mira,look,look
+item_393,item_255,games_routines,molt be,really good,
+item_394,item_268,games_routines,no,no,no
+item_395,item_269,games_routines,no hi es/no esta,not there,
+item_396,item_271,games_routines,pipi/pis,pee,pee
+item_397,item_272,games_routines,porc/a,pig,pig
+item_398,item_273,games_routines,prou,enough,enough
+item_399,,games_routines,que,what,what
+item_400,,games_routines,"un, dos... i tres",one two three,one two three
+item_401,,games_routines,s'ha acabat,it's over,
+item_402,item_275,games_routines,si,yes,yes
+item_403,,games_routines,si us plau,please,please
+item_404,,games_routines,t'estimo,I love you,
+item_405,item_277,games_routines,vine,come,come
+item_406,item_278,action_words,acabar,finish,finish
+item_407,item_279,action_words,agafar,take,take
+item_408,,action_words,agradar,like,like
+item_409,,action_words,aixecar,lift,lift (action)
+item_410,,action_words,ajudar,help,help
+item_411,item_280,action_words,anar,go,go
+item_412,item_281,action_words,apagar,turn off,turn off
+item_413,,action_words,apartar,separate,
+item_414,item_282,action_words,asseure,sit,sit
+item_415,item_283,action_words,baixar,go down,go down
+item_416,item_284,action_words,ballar,dance,dance
+item_417,item_285,action_words,banyar,bathe,bathe
+item_418,,action_words,beure,drink,drink (action)
+item_419,item_286,action_words,bufar,blow,blow
+item_420,,action_words,buscar,search,search
+item_421,,action_words,cordar,tie,tie (action)
+item_422,,action_words,cabre,fit,fit
+item_423,,action_words,callar,be quiet,
+item_424,item_287,action_words,caminar,walk,walk
+item_425,,action_words,cansar,tire,tire (action)
+item_426,item_288,action_words,cantar,sing,sing
+item_427,item_289,action_words,caure,fall,fall
+item_428,,action_words,collocar,put,put
+item_429,,action_words,comprar,buy,buy
+item_430,,action_words,conduir,drive,drive
+item_431,item_290,action_words,correr,run,run
+item_432,,action_words,costar,cost,
+item_433,,action_words,creixer,grow,grow
+item_434,item_291,action_words,cremar,burn,burn
+item_435,,action_words,cuidar,think,think
+item_436,,action_words,cuinar,cook,cook
+item_437,,action_words,deixar,leave,leave
+item_438,,action_words,despertar,wake,wake
+item_439,item_292,action_words,dibuixar,draw,draw
+item_440,item_293,action_words,dir,say,say
+item_441,item_294,action_words,donar,give,give
+item_442,item_295,action_words,dormir,sleep,sleep
+item_443,item_296,action_words,empenyer,push,push
+item_444,,action_words,enganxar,paste,
+item_445,item_297,action_words,entrar,enter,enter
+item_446,,action_words,esborrar,erase,erase
+item_447,,action_words,escapar,escape,escape
+item_448,item_298,action_words,escoltar,listen,listen
+item_449,,action_words,escriure,write,write
+item_450,item_299,action_words,esmorzar,have breakfast,
+item_451,,action_words,espatllar,spoil,
+item_452,item_300,action_words,esperar,wait,wait
+item_453,item_301,action_words,estar,be,be
+item_454,item_302,action_words,fer,do,do
+item_455,item_303,action_words,ficar,put,put
+item_456,,action_words,guardar,save,save
+item_457,item_304,action_words,haver (hi ha),have,have
+item_458,item_305,action_words,jugar,play,play
+item_459,,action_words,llancar,throw,throw
+item_460,item_306,action_words,llegir,read,read
+item_461,item_307,action_words,menjar,eat,eat
+item_462,item_308,action_words,mirar,watch,watch (action)
+item_463,item_309,action_words,mossegar,bite,bite
+item_464,item_310,action_words,mullar,wet (action),wet (action)
+item_465,,action_words,muntar,ride,ride
+item_466,,action_words,nedar,swim,swim
+item_467,,action_words,netejar,clean (action),clean (action)
+item_468,item_311,action_words,obrir,open,open
+item_469,,action_words,passar,pass,pass
+item_470,,action_words,passejar,take a walk,
+item_471,,action_words,penjar,hang,hang
+item_472,item_313,action_words,pentinar,comb (action),comb (action)
+item_473,,action_words,perdre,lose,lose
+item_474,,action_words,pesar,weigh,
+item_475,,action_words,picar,bite,bite
+item_476,item_314,action_words,pintar,paint (action),paint (action)
+item_477,item_315,action_words,plorar,cry,cry
+item_478,,action_words,ploure,rain,rain
+item_479,item_316,action_words,poder,can,can
+item_480,item_317,action_words,portar,bring,bring
+item_481,item_318,action_words,posar,put,put
+item_482,,action_words,prendre,take,take
+item_483,item_319,action_words,pujar,go up,go up
+item_484,,action_words,punxar,prick,prick
+item_485,,action_words,rentar,wash,wash
+item_486,item_320,action_words,riure,laugh,laugh
+item_487,,action_words,saber,know,know
+item_488,item_321,action_words,saltar,jump,jump
+item_489,,action_words,semblar,resemble,resemble
+item_490,,action_words,sentir,feel,feel
+item_491,item_322,action_words,ser,be,be
+item_492,,action_words,sopar,dine,dine
+item_493,item_323,action_words,sortir,leave,leave
+item_494,,action_words,tallar,cut,cut
+item_495,,action_words,tapar,cover,cover (action)
+item_496,item_324,action_words,tenir,have,have
+item_497,item_326,action_words,tocar,touch,touch
+item_498,,action_words,tossir,cough,cough
+item_499,,action_words,treballar,work,work (action)
+item_500,item_327,action_words,trencar,break,break
+item_501,item_328,action_words,trepitjar,step on,
+item_502,item_329,action_words,treure,take out,take out
+item_503,item_330,action_words,venir,come,come
+item_504,,action_words,vestir,wear,wear
+item_505,,action_words,veure,see,see
+item_506,,action_words,volar,fly,fly (action)
+item_507,item_331,action_words,voler,want,want
+item_508,,action_words,xiular,whistle,whistle (action)
+item_509,item_340,descriptive_words,alt,high,high
+item_510,item_341,descriptive_words,apagat,switched off,
+item_511,item_342,descriptive_words,blanc,white,white
+item_512,item_343,descriptive_words,blau,blue,blue
+item_513,,descriptive_words,bo,good,good
+item_514,item_344,descriptive_words,bonic,beautiful,beautiful
+item_515,item_345,descriptive_words,brut,dirty,dirty
+item_516,,descriptive_words,buit,empty,empty
+item_517,item_346,descriptive_words,calent,hot,hot
+item_518,item_347,descriptive_words,cansat,tired,tired
+item_519,item_348,descriptive_words,content,happy,happy
+item_520,,descriptive_words,dificil,difficult,difficult
+item_521,item_349,descriptive_words,dolent2,bad,bad
+item_522,item_350,descriptive_words,ences,turned on,
+item_523,item_351,descriptive_words,enfadat,angry,angry
+item_524,item_353,descriptive_words,fosc,dark,dark
+item_525,item_354,descriptive_words,fred,cold,cold
+item_526,item_355,descriptive_words,gana,hungry,hungry
+item_527,item_356,descriptive_words,gran,big,big
+item_528,item_357,descriptive_words,groc,yellow,yellow
+item_529,item_358,descriptive_words,guapo,handsome,handsome
+item_530,,descriptive_words,igual,same,same
+item_531,item_359,descriptive_words,llarg,long,long
+item_532,item_360,descriptive_words,lleig,ugly,ugly
+item_533,,descriptive_words,llest,ready,ready
+item_534,item_361,descriptive_words,malalt,ill,sick
+item_535,,descriptive_words,mentider,lying,
+item_536,item_362,descriptive_words,negre,black,black
+item_537,item_363,descriptive_words,net,clean (description),clean (description)
+item_538,,descriptive_words,nou,new,new
+item_539,item_364,descriptive_words,pesat,heavy,heavy
+item_540,item_365,descriptive_words,petit,small,small
+item_541,item_366,descriptive_words,ple,full,full
+item_542,item_367,descriptive_words,por,afraid,afraid
+item_543,item_368,descriptive_words,rodo,round,round
+item_544,,descriptive_words,rosa (color),pink,pink
+item_545,item_369,descriptive_words,set,thirsty,thirsty
+item_546,item_370,descriptive_words,sol2,alone,alone
+item_547,,descriptive_words,son,,
+item_548,item_371,descriptive_words,suau,soft,soft
+item_549,item_372,descriptive_words,trencat,broken,broken
+item_550,item_373,descriptive_words,trist,sad,sad
+item_551,,descriptive_words,valent,brave,brave
+item_552,item_374,descriptive_words,vell,old,old
+item_553,item_375,descriptive_words,verd,green,green
+item_554,item_376,descriptive_words,vermell,red,red
+item_555,,time_words,ahir,yesterday,yesterday
+item_556,,time_words,anys,years,year
+item_557,item_332,time_words,ara,now,now
+item_558,item_333,time_words,avui,today,today
+item_559,item_334,time_words,dema,tomorrow,tomorrow
+item_560,item_335,time_words,despres,after,after
+item_561,item_336,time_words,dia,day,day
+item_562,item_337,time_words,ja,already,already
+item_563,,time_words,mai,never,
+item_564,,time_words,mati,,
+item_565,item_338,time_words,nit,night,night
+item_566,,time_words,vegades,times,
+item_567,item_398,question_words,com,how,how
+item_568,item_399,question_words,on,where (question),where (question)
+item_569,item_400,question_words,per que,why,why
+item_570,,question_words,quan,when (question),when (question)
+item_571,item_401,question_words,que2,what,what
+item_572,item_402,question_words,qui,who,who
+item_573,item_403,question_words,quin,which (question),which (question)
+item_574,item_377,pronouns,aixo,this,this
+item_575,item_378,pronouns,altra/e,other,other
+item_576,item_379,pronouns,allo,that,that
+item_577,,pronouns,(amb/per) mi,(with/for) me,1SG
+item_578,,pronouns,(amb/per) tu,(with/for) you,2SG
+item_579,,pronouns,aquell,that,that
+item_580,,pronouns,aquella,that,that
+item_581,,pronouns,aquells,those,those
+item_582,,pronouns,aquelles,those,those
+item_583,,pronouns,aquest,this,this
+item_584,,pronouns,aquesta,this,this
+item_585,,pronouns,aquests,these,these
+item_586,,pronouns,aquestes,these,these
+item_587,,pronouns,ell,he,3SG
+item_588,,pronouns,ella,she,3SG
+item_589,,pronouns,ells,they,3PL
+item_590,,pronouns,elles,them,3PL
+item_591,item_387,pronouns,jo,I,1SG
+item_592,,pronouns,meu,my,1SG.POSS
+item_593,,pronouns,meva,my,1SG.POSS
+item_594,,pronouns,meus,my,1SG.POSS
+item_595,,pronouns,meves,my,1SG.POSS
+item_596,item_392,pronouns,nosaltres,we,1PL
+item_597,,pronouns,nostre,our,1PL.POSS
+item_598,item_397,pronouns,tu,you,2SG
+item_599,,pronouns,alguna cose,something,something
+item_600,,pronouns,seu/seva,his/her,3SG.POSS
+item_601,,pronouns,teu,your,2SG.POSS
+item_602,,pronouns,teva,your,2SG.POSS
+item_603,,pronouns,teus,your,2SG.POSS
+item_604,,pronouns,teves,your,2SG.POSS
+item_605,,pronouns,hi,,
+item_606,item_386,pronouns,ho,it,3SG
+item_607,,pronouns,li,him/her/it,3SG
+item_608,item_394,pronouns,te,you,2SG
+item_609,item_388,pronouns,lo,him,3SG
+item_610,,pronouns,ne/en,,
+item_611,,pronouns,us,you,2PL
+item_612,item_389,pronouns,me,me,1SG
+item_613,,pronouns,se,oneself,
+item_614,item_404,locations,a/al,to,
+item_615,,locations,aixi,so,so
+item_616,,locations,(al) costat,next (to),next to
+item_617,item_406,locations,alla/alli,there,there
+item_618,,locations,amb,with,with
+item_619,,locations,a baix,below/under,below
+item_620,item_405,locations,a dalt,above/on top of,above
+item_621,item_407,locations,aqui,here,here
+item_622,,locations,be,well,
+item_623,item_410,locations,davant,in front of,in front of
+item_624,item_409,locations,darrera,behind,behind
+item_625,item_411,locations,de/del,from,from
+item_626,,locations,des de,from,from
+item_627,item_412,locations,dins,inside,inside
+item_628,,locations,en,in,in
+item_629,,locations,entre,between,between
+item_630,,locations,fins,to,to
+item_631,item_413,locations,fora,outside,outside
+item_632,,locations,mal,bad,
+item_633,,locations,lluny,far,far
+item_634,,locations,per,for,for
+item_635,,locations,per a,to,to
+item_636,,locations,quasi,almost,almost
+item_637,,locations,sense,without,without
+item_638,,locations,sobre,about,about
+item_639,item_414,locations,sota,under,under
+item_640,,quantifiers,algun/a,some,some
+item_641,,quantifiers,altre/altra vegada,another time,
+item_642,,quantifiers,cap...645,none,none
+item_643,,quantifiers,dos,two,two
+item_644,item_415,quantifiers,el,the,the
+item_645,,quantifiers,els,the,the
+item_646,item_417,quantifiers,la,the,the
+item_647,,quantifiers,les,the,the
+item_648,,quantifiers,gens,few,few
+item_649,item_418,quantifiers,mes,more,more
+item_650,,quantifiers,(una) mica,a little,a little
+item_651,item_419,quantifiers,molt/s,a lot,a lot
+item_652,,quantifiers,ningu,no one,no one
+item_653,,quantifiers,no hi ha,there is not,
+item_654,item_423,quantifiers,poc/s,little (amount),little (amount)
+item_655,,quantifiers,quatre,four,four
+item_656,,quantifiers,res,nothing,nothing
+item_657,,quantifiers,tambe,too,too
+item_658,,quantifiers,tampoc,neither,
+item_659,item_421,quantifiers,tots/es,all,all
+item_660,item_420,quantifiers,tot,all,all
+item_661,item_422,quantifiers,tres,three,three
+item_662,item_424,quantifiers,un,one,one
+item_663,item_425,quantifiers,una,one,one
+item_664,,quantifiers,unes,some,some
+item_665,,quantifiers,uns,some,some
+item_666,,helping_verbs,anar2,go,go
+item_667,,helping_verbs,estar2,be,be
+item_668,,helping_verbs,haver,have,have
+item_669,,helping_verbs,poder2,can (auxiliary),can (auxiliary)
+item_670,,helping_verbs,voler2,want,want
+item_671,,connecting_words,despres2,then,then
+item_672,,connecting_words,i,and,and
+item_673,,connecting_words,llavors/aleshores,then,then
+item_674,,connecting_words,pero,but,but
+item_675,,connecting_words,perque,because,because
+item_676,,connecting_words,que3,that,
+item_677,,connecting_words,sino,but,but
+item_678,,connecting_words,tambe2,also,also
+,item_6,sounds,eh,huh,
+,item_9,sounds,nino-nino (sirena),nee naw,
+,item_13,sounds,ring-ring,ring ring,ring ring
+,item_14,sounds,tic-tac,tick tock,tick tock
+,item_22,animals,cocodril,crocodile,crocodile
+,item_26,animals,esquirol,squirrel,squirrel
+,item_34,animals,llop,wolf,wolf
+,item_35,animals,lloro,parrot,parrot
+,item_43,animals,periquito,parakeet,parrot
+,item_45,animals,pollet,chicken (animal),chicken (animal)
+,item_55,vehicles,cotxet,stroller,stroller
+,item_57,vehicles,patinet,scooter,scooter
+,item_61,toys,cubs,blocks,blocks
+,item_62,toys,flauta,flute,
+,item_65,toys,gronxador,swing (toy),swing (object)
+,item_113,clothing,jaqueta,jacket,jacket
+,item_122,clothing,vestit,dress,dress (object)
+,item_128,body_parts,cara,face,face
+,item_158,furniture_rooms,ordinador,computer,computer
+,item_169,household,bossa,bag,bag
+,item_174,household,comandament,remote control,remote control
+,item_233,people,germa/germana,brother/sister,sibling
+,item_241,people,nom propi3,person's name,
+,item_251,games_routines,a vestir,to wear,
+,item_253,games_routines,un altre cop/vegada,once again,
+,item_262,games_routines,estigues quiet,be quiet,
+,item_263,games_routines,gracies,thank you,thank you
+,item_270,games_routines,no n'hi ha,there isn't,
+,item_274,games_routines,shhh,shh,shh
+,item_276,games_routines,"un, dos i tres","one, two, and three",
+,item_312,action_words,pegar,hit,hit
+,item_325,action_words,tirar,throw,throw
+,item_339,time_words,tarda,afternoon,afternoon
+,item_352,descriptive_words,ensurt/susto,scared,scared
+,item_380,pronouns,aquell/a,that,that
+,item_381,pronouns,aquells/es,those,those
+,item_382,pronouns,aquest/a,this,this
+,item_383,pronouns,aquests/es,these,these
+,item_384,pronouns,ell/a,he/she,3SG
+,item_385,pronouns,ells/es,they,3PL
+,item_390,pronouns,meu/meva,my,1SG.POSS
+,item_391,pronouns,meus/meves,my,1SG.POSS
+,item_393,pronouns,mi,me,1SG
+,item_395,pronouns,teu/teva,your,2SG.POSS
+,item_396,pronouns,teus/teves,your,2SG.POSS
+,item_408,locations,a sobre,on/above,on
+,item_416,quantifiers,gens/res,any/nothing,any

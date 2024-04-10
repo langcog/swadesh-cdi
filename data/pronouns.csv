@@ -1,0 +1,1359 @@
+instr,itemID,item,type,choices,definition,category,gloss,uni_lemma,is_both,lexical_class,item_id,new_uni_lemma,language,form
+ASL_FormA,item_359,HE_SHE_IT,word,understands; produces,HE/SHE/IT,pronouns,,,,,,3SG,American Sign Language,FormA
+ASL_FormA,item_360,HIS_HERS,word,understands; produces,HIS/HERS,pronouns,,,,,,3SG.POSS,American Sign Language,FormA
+ASL_FormA,item_361,ME,word,understands; produces,ME,pronouns,,me,,,,1SG,American Sign Language,FormA
+ASL_FormA,item_362,MINE_MY,word,understands; produces,MINE/MY,pronouns,,my,,,,1SG.POSS,American Sign Language,FormA
+ASL_FormA,item_363,MYSELF,word,understands; produces,MYSELF,pronouns,,self,,,,1SG.REFL,American Sign Language,FormA
+ASL_FormA,item_364,OUR,word,understands; produces,OUR,pronouns,,our,,,,1PL.POSS,American Sign Language,FormA
+ASL_FormA,item_365,THAT_THESE,word,understands; produces,THAT/THESE,pronouns,,that,,,,that,American Sign Language,FormA
+ASL_FormA,item_366,THEIR,word,understands; produces,THEIR,pronouns,,,,,,3PL.POSS,American Sign Language,FormA
+ASL_FormA,item_367,THEY,word,understands; produces,THEY,pronouns,,they,,,,3SG,American Sign Language,FormA
+ASL_FormA,item_368,WE,word,understands; produces,WE,pronouns,,we,,,,1PL,American Sign Language,FormA
+ASL_FormA,item_369,YOU,word,understands; produces,YOU,pronouns,,you,,,,2SG,American Sign Language,FormA
+ASL_FormA,item_370,YOUR,word,understands; produces,YOUR,pronouns,,your,,,,2SG.POSS,American Sign Language,FormA
+ASL_FormA,item_371,YOURSELF,word,understands; produces,YOURSELF,pronouns,,,,,,2SG.REFL,American Sign Language,FormA
+ASL_FormB1,item_262,HE_SHE_IT,word,produces,HE/SHE/IT,pronouns,,,,,,3SG,American Sign Language,FormBOne
+ASL_FormB1,item_263,HIS_HERS,word,produces,HIS/HERS,pronouns,,,,,,3SG.POSS,American Sign Language,FormBOne
+ASL_FormB1,item_264,ME,word,produces,ME,pronouns,,me,,,,1SG,American Sign Language,FormBOne
+ASL_FormB1,item_265,MY_MINE,word,produces,MY/MINE,pronouns,,my,,,,1SG.POSS,American Sign Language,FormBOne
+ASL_FormB1,item_266,MYSELF,word,produces,MYSELF,pronouns,,self,,,,1SG.REFL,American Sign Language,FormBOne
+ASL_FormB1,item_267,OUR,word,produces,OUR,pronouns,,our,,,,1PL.POSS,American Sign Language,FormBOne
+ASL_FormB1,item_268,THAT,word,produces,THAT,pronouns,,that,,,,that,American Sign Language,FormBOne
+ASL_FormB1,item_269,THEIR,word,produces,THEIR,pronouns,,,,,,3PL.POSS,American Sign Language,FormBOne
+ASL_FormB1,item_270,THESE,word,produces,THESE,pronouns,,these,,,,these,American Sign Language,FormBOne
+ASL_FormB1,item_271,THEY,word,produces,THEY,pronouns,,they,,,,3PL,American Sign Language,FormBOne
+ASL_FormB1,item_272,WE,word,produces,WE,pronouns,,we,,,,1PL,American Sign Language,FormBOne
+ASL_FormB1,item_273,YOU,word,produces,YOU,pronouns,,you,,,,2SG,American Sign Language,FormBOne
+ASL_FormB1,item_274,YOUR,word,produces,YOUR,pronouns,,your,,,,2SG.POSS,American Sign Language,FormBOne
+ASL_FormB1,item_275,YOURSELF,word,produces,YOURSELF,pronouns,,,,,,2SG.REFL,American Sign Language,FormBOne
+ASL_FormB2,item_375,HE_SHE_IT,word,produces,HE/SHE/IT,pronouns,,,,,,3SG,American Sign Language,FormBTwo
+ASL_FormB2,item_376,HIS_HERS,word,produces,HIS/HERS,pronouns,,,,,,3SG.POSS,American Sign Language,FormBTwo
+ASL_FormB2,item_377,ME,word,produces,ME,pronouns,,me,,,,1SG,American Sign Language,FormBTwo
+ASL_FormB2,item_378,MY_MINE,word,produces,MINE/MY,pronouns,,my,,,,1SG.POSS,American Sign Language,FormBTwo
+ASL_FormB2,item_379,MYSELF,word,produces,MYSELF,pronouns,,self,,,,1SG.REFL,American Sign Language,FormBTwo
+ASL_FormB2,item_380,OUR,word,produces,OUR,pronouns,,our,,,,1PL.POSS,American Sign Language,FormBTwo
+ASL_FormB2,item_381,THAT,word,produces,THAT/THESE,pronouns,,that,,,,that,American Sign Language,FormBTwo
+ASL_FormB2,item_382,THEIR,word,produces,THEIR,pronouns,,,,,,3PL.POSS,American Sign Language,FormBTwo
+ASL_FormB2,item_383,THEY,word,produces,THEY,pronouns,,they,,,,3PL,American Sign Language,FormBTwo
+ASL_FormB2,item_384,WE,word,produces,WE,pronouns,,we,,,,1PL,American Sign Language,FormBTwo
+ASL_FormB2,item_385,YOU,word,produces,YOU,pronouns,,you,,,,2SG,American Sign Language,FormBTwo
+ASL_FormB2,item_386,YOUR,word,produces,YOUR,pronouns,,your,,,,2SG.POSS,American Sign Language,FormBTwo
+ASL_FormB2,item_387,YOURSELF,word,produces,YOURSELF,pronouns,,,,,,2SG.REFL,American Sign Language,FormBTwo
+ASL_FormC,item_375,HE_SHE_IT,word,produces,HE/SHE/IT,pronouns,,,,,,3SG,American Sign Language,FormC
+ASL_FormC,item_376,HIS_HERS,word,produces,HIS/HERS,pronouns,,,,,,3SG.POSS,American Sign Language,FormC
+ASL_FormC,item_377,ME,word,produces,ME,pronouns,,me,,,,1SG,American Sign Language,FormC
+ASL_FormC,item_378,MY_MINE,word,produces,MINE/MY,pronouns,,my,,,,1SG.POSS,American Sign Language,FormC
+ASL_FormC,item_379,MYSELF,word,produces,MYSELF,pronouns,,self,,,,1SG.REFL,American Sign Language,FormC
+ASL_FormC,item_380,OUR,word,produces,OUR,pronouns,,our,,,,1PL.POSS,American Sign Language,FormC
+ASL_FormC,item_381,THAT,word,produces,THAT/THESE,pronouns,,that,,,,that,American Sign Language,FormC
+ASL_FormC,item_382,THEIR,word,produces,THEIR,pronouns,,,,,,3PL.POSS,American Sign Language,FormC
+ASL_FormC,item_383,THEY,word,produces,THEY,pronouns,,they,,,,3PL,American Sign Language,FormC
+ASL_FormC,item_384,WE,word,produces,WE,pronouns,,we,,,,1PL,American Sign Language,FormC
+ASL_FormC,item_385,YOU,word,produces,YOU,pronouns,,you,,,,2SG,American Sign Language,FormC
+ASL_FormC,item_386,YOUR,word,produces,YOUR,pronouns,,your,,,,2SG.POSS,American Sign Language,FormC
+ASL_FormC,item_387,YOURSELF,word,produces,YOURSELF,pronouns,,,,,,2SG.REFL,American Sign Language,FormC
+BSL_WG,item_257,hesheit,word,understands; produces,he/she/it,pronouns,he/she/it,,,,,3SG,British Sign Language,WG
+BSL_WG,item_258,hershis,word,understands; produces,her/his,pronouns,her/his,,,,,3SG.POSS,British Sign Language,WG
+BSL_WG,item_259,me,word,understands; produces,me,pronouns,me,me,,,,1SG,British Sign Language,WG
+BSL_WG,item_260,mymine,word,understands; produces,my/mine,pronouns,my/mine,my,,,,1SG.POSS,British Sign Language,WG
+BSL_WG,item_261,myself,word,understands; produces,myself,pronouns,myself,self,,,,1SG.REFL,British Sign Language,WG
+BSL_WG,item_262,our,word,understands; produces,our,pronouns,our,our,,,,1PL.POSS,British Sign Language,WG
+BSL_WG,item_263,that,word,understands; produces,that,pronouns,that,that,,,,that,British Sign Language,WG
+BSL_WG,item_264,their,word,understands; produces,their,pronouns,their,,,,,3PL.POSS,British Sign Language,WG
+BSL_WG,item_265,these,word,understands; produces,these,pronouns,these,these,,,,these,British Sign Language,WG
+BSL_WG,item_266,they,word,understands; produces,they,pronouns,they,they,,,,3PL,British Sign Language,WG
+BSL_WG,item_267,we,word,understands; produces,we,pronouns,we,we,,,,1PL,British Sign Language,WG
+BSL_WG,item_268,you,word,understands; produces,you,pronouns,you,you,,,,2SG,British Sign Language,WG
+BSL_WG,item_269,your,word,understands; produces,your,pronouns,your,your,,,,2SG.POSS,British Sign Language,WG
+BSL_WG,item_270,yourself,word,understands; produces,yourself,pronouns,yourself,,,,,2SG.REFL,British Sign Language,WG
+Cantonese_WS,item_705,P18ME,word,produces,我,pronouns,,me,,,,1SG,Cantonese,WS
+Cantonese_WS,item_706,P18MINEC,word,produces,我嘅,pronouns,,my,,,,1SG.POSS,Cantonese,WS
+Cantonese_WS,item_707,P18SELF,word,produces,自己,pronouns,,self,,,,REFL,Cantonese,WS
+Cantonese_WS,item_708,P18SMINC,word,produces,自己嘅,pronouns,,mine,,,,1SG.POSS,Cantonese,WS
+Cantonese_WS,item_709,P18YOU,word,produces,你,pronouns,,you,,,,2SG,Cantonese,WS
+Cantonese_WS,item_710,P18YOURC,word,produces,你嘅,pronouns,,your,,,,2SG.POSS,Cantonese,WS
+Cantonese_WS,item_711,P18HEC,word,produces,佢,pronouns,he / she,he/she,,,,3SG,Cantonese,WS
+Cantonese_WS,item_712,P18HISC,word,produces,佢嘅,pronouns,his / hers,his,,,,3SG.POSS,Cantonese,WS
+Cantonese_WS,item_713,P18THISC,word,produces,呢個,pronouns,,this,,,,this,Cantonese,WS
+Cantonese_WS,item_714,P18THATC,word,produces,嗰個,pronouns,,that,,,,that,Cantonese,WS
+Cantonese_WS,item_715,P18THESC,word,produces,呢啲,pronouns,,these,,,,these,Cantonese,WS
+Cantonese_WS,item_716,P18THOSC,word,produces,嗰啲,pronouns,,those,,,,those,Cantonese,WS
+Cantonese_WS,item_717,P18USC,word,produces,我哋,pronouns,us / we,us,,,,1PL,Cantonese,WS
+Cantonese_WS,item_718,P18YOUPL,word,produces,你哋,pronouns,,you (plural),,,,2PL,Cantonese,WS
+Cantonese_WS,item_719,P18THEYC,word,produces,佢哋,pronouns,,they,,,,3PL,Cantonese,WS
+Cantonese_WS,item_720,P18OURS,word,produces,我哋嘅,pronouns,,our,,,,1PL.POSS,Cantonese,WS
+Cantonese_WS,item_721,P18YOURP,word,produces,你哋嘅,pronouns,,your,,,,2PL.POSS,Cantonese,WS
+Cantonese_WS,item_722,P18THEIC,word,produces,佢哋嘅,pronouns,,their,,,,3PL.POSS,Cantonese,WS
+Cantonese_WS,item_723,P18OTHPL,word,produces,人哋,pronouns,,other people,,,,3PL,Cantonese,WS
+Cantonese_WS,item_724,P18OTHPP,word,produces,人哋嘅,pronouns,other people's / their,their,,,,3PL.POSS,Cantonese,WS
+Croatian_WG,item_206,njezin,word,understands; produces,njezin,pronouns,her,her,,,,3SG.POSS,Croatian,WG
+Croatian_WG,item_205,njegov,word,understands; produces,njegov,pronouns,his,his,,,,3SG.POSS,Croatian,WG
+Croatian_WG,item_103,ja,word,understands; produces,ja,pronouns,I,i,,,,1SG,Croatian,WG
+Croatian_WG,item_336,to,word,understands; produces,to,pronouns,it,it,,,,3SG,Croatian,WG
+Croatian_WG,item_182,meni,word,understands; produces,meni,pronouns,me,me,,,,1SG,Croatian,WG
+Croatian_WG,item_189,moj,word,understands; produces,moj,pronouns,mine,my,,,,1SG.POSS,Croatian,WG
+Croatian_WG,item_219,ono,word,understands; produces,ono,pronouns,that,that,,,,that,Croatian,WG
+Croatian_WG,item_223,ovo,word,understands; produces,ovo,pronouns,this,this,,,,this,Croatian,WG
+Croatian_WG,item_326,tebi,word,understands; produces,tebi,pronouns,you,you,,,,2SG,Croatian,WG
+Croatian_WG,item_332,ti,word,understands; produces,ti,pronouns,you,you,,,,2SG,Croatian,WG
+Croatian_WG,item_347,tvoj,word,understands; produces,tvoj,pronouns,your,your,,,,2SG.POSS,Croatian,WG
+Croatian_WS,item_579,ja,word,produces,ja,pronouns,I,i,,,,1SG,Croatian,WS
+Croatian_WS,item_580,mene/me,word,produces,mene/me,pronouns,me,me,,,,1SG,Croatian,WS
+Croatian_WS,item_581,meni/mi,word,produces,meni/mi,pronouns,to me,me,,,,1SG,Croatian,WS
+Croatian_WS,item_582,mi,word,produces,mi,pronouns,we,,,,,1PL,Croatian,WS
+Croatian_WS,item_583,moj,word,produces,moj,pronouns,my,my,,,,1SG.POSS,Croatian,WS
+Croatian_WS,item_584,nama,word,produces,nama,pronouns,to us,,,,,1PL,Croatian,WS
+Croatian_WS,item_585,nas,word,produces,nas,pronouns,us,,,,,1PL,Croatian,WS
+Croatian_WS,item_586,nas,word,produces,naš,pronouns,our,,,,,1PL.POSS,Croatian,WS
+Croatian_WS,item_587,nje/je,word,produces,nje/je,pronouns,her,,,,,3SG,Croatian,WS
+Croatian_WS,item_588,njega/ga,word,produces,njega/ga,pronouns,him,,,,,3SG,Croatian,WS
+Croatian_WS,item_589,njegov,word,produces,njegov,pronouns,his,his,,,,3SG.POSS,Croatian,WS
+Croatian_WS,item_590,njemu/mu,word,produces,njemu/mu,pronouns,to him,him,,,,3SG,Croatian,WS
+Croatian_WS,item_591,njezin,word,produces,njezin,pronouns,hers,her,,,,3SG.POSS,Croatian,WS
+Croatian_WS,item_592,njih/ih,word,produces,njih/ih,pronouns,them,,,,,3PL,Croatian,WS
+Croatian_WS,item_593,njihov,word,produces,njihov,pronouns,their,,,,,3PL.POSS,Croatian,WS
+Croatian_WS,item_594,njima/im,word,produces,njima/im,pronouns,to them,,,,,3PL,Croatian,WS
+Croatian_WS,item_595,njoj/joj,word,produces,njoj/joj,pronouns,to her,,,,,3SG,Croatian,WS
+Croatian_WS,item_596,nju/ju/je,word,produces,nju/ju/je,pronouns,her,,,,,3SG,Croatian,WS
+Croatian_WS,item_597,on,word,produces,on,pronouns,he,,,,,3SG,Croatian,WS
+Croatian_WS,item_598,ona,word,produces,ona,pronouns,she,,,,,3SG,Croatian,WS
+Croatian_WS,item_599,one,word,produces,one,pronouns,they (female),,,,,3PL,Croatian,WS
+Croatian_WS,item_600,oni,word,produces,oni,pronouns,they,,,,,3PL,Croatian,WS
+Croatian_WS,item_601,ono,word,produces,ono,pronouns,it,that,,,,3SG,Croatian,WS
+Croatian_WS,item_602,ono/onaj/ona,word,produces,ono/onaj/ona,pronouns,that,,,,,that,Croatian,WS
+Croatian_WS,item_603,ovo/ovaj/ova,word,produces,ovo/ovaj/ova,pronouns,this,this,,,,this,Croatian,WS
+Croatian_WS,item_604,ovi/ove,word,produces,ovi/ove,pronouns,these,,,,,these,Croatian,WS
+Croatian_WS,item_605,sebe/se,word,produces,sebe/se,pronouns,myself,,,,,1SG.REFL,Croatian,WS
+Croatian_WS,item_606,svoj,word,produces,svoj,pronouns,her/his own,,,,,3SG.POSS,Croatian,WS
+Croatian_WS,item_607,to/taj/ta,word,produces,to/taj/ta,pronouns,this,,,,,this,Croatian,WS
+Croatian_WS,item_608,tebe/te,word,produces,tebe/te,pronouns,you,,,,,2SG,Croatian,WS
+Croatian_WS,item_609,tebi/ti,word,produces,tebi/ti,pronouns,to you,,,,,2SG,Croatian,WS
+Croatian_WS,item_610,ti,word,produces,ti,pronouns,you,you,,,,2SG,Croatian,WS
+Croatian_WS,item_611,tvoj,word,produces,tvoj,pronouns,your,your,,,,2SG.POSS,Croatian,WS
+Czech_WS,item_488,488_ja1,word,produces,já,pronouns,I,i,,,,1SG,Czech,WS
+Czech_WS,item_489,489_ty1,word,produces,ty,pronouns,you,you,,,,2SG,Czech,WS
+Czech_WS,item_490,490_on1,word,produces,on,pronouns,he,he,,,,3SG,Czech,WS
+Czech_WS,item_491,491_ona,word,produces,ona,pronouns,she,she,,,,3SG,Czech,WS
+Czech_WS,item_492,492_my1,word,produces,my,pronouns,we,we,,,,1PL,Czech,WS
+Czech_WS,item_493,493_vy1,word,produces,vy,pronouns,you(pl.),you,,,,2PL,Czech,WS
+Czech_WS,item_494,494_oni1,word,produces,oni,pronouns,they,they,,,,3PL,Czech,WS
+Czech_WS,item_495,495_moje,word,produces,moje,pronouns,my/mine,mine,,,,1SG,Czech,WS
+Czech_WS,item_496,496_muj,word,produces,můj,pronouns,my/mine,my,,,,1SG,Czech,WS
+Czech_WS,item_497,497_tvuj,word,produces,tvůj,pronouns,yours,your,,,,2SG.POSS,Czech,WS
+Czech_WS,item_498,498_tvoje,word,produces,tvoje,pronouns,yours,your,,,,2SG.POSS,Czech,WS
+Czech_WS,item_499,499_nase,word,produces,naše,pronouns,ours,our,,,,1PL.POSS,Czech,WS
+Czech_WS,item_500,500_vase,word,produces,vaše,pronouns,yours(pl.),your,,,,2PL.POSS,Czech,WS
+Czech_WS,item_501,501_sam,word,produces,sám,pronouns,himself/herself/alone,myself,,,,3SG.REFL,Czech,WS
+Czech_WS,item_502,502_nic,word,produces,nic,pronouns,nothing,nothing,,,,,Czech,WS
+Czech_WS,item_503,503_ten,word,produces,ten,pronouns,this(masculine),him,,,,this,Czech,WS
+Czech_WS,item_504,504_ta,word,produces,ta,pronouns,this(feminine),her,,,,this,Czech,WS
+Czech_WS,item_505,505_to,word,produces,to,pronouns,this(neuter),it,,,,this,Czech,WS
+Czech_WS,item_506,506_tenhle,word,produces,tenhle,pronouns,this-one(masculine),him,,,,this,Czech,WS
+Danish_WG,item_366,den,word,understands; produces,den,pronouns,,it,,,,3SG,Danish,WG
+Danish_WG,item_367,din/dit/dine,word,understands; produces,din/dit/dine,pronouns,,your,,,,2SG.POSS,Danish,WG
+Danish_WG,item_368,jeg,word,understands; produces,jeg,pronouns,,i,,,,1SG,Danish,WG
+Danish_WG,item_369,denne/den_her,word,understands; produces,denne/den her,pronouns,,this,,,,this,Danish,WG
+Danish_WG,item_370,du,word,understands; produces,du,pronouns,,you,,,,2SG,Danish,WG
+Danish_WG,item_371,mig,word,understands; produces,mig,pronouns,,me,,,,1SG,Danish,WG
+Danish_WG,item_372,det,word,understands; produces,det (determiner),pronouns,,that,,,,that,Danish,WG
+Danish_WG,item_373,hans,word,understands; produces,hans,pronouns,,his,,,,3SG.POSS,Danish,WG
+Danish_WG,item_374,min/mit/mine,word,understands; produces,min/mit/mine,pronouns,,mine,,,,1SG.POSS,Danish,WG
+Danish_WG,item_375,dette/det_her,word,understands; produces,dette/det her,pronouns,,this,,,,this,Danish,WG
+Danish_WG,item_376,hendes,word,understands; produces,hendes,pronouns,,her,,,,3SG.POSS,Danish,WG
+Danish_WS,item_598,i_17_1,word,produces,de,pronouns,they,,,,,3PL,Danish,WS
+Danish_WS,item_599,i_17_2,word,produces,du,pronouns,you,you,,,,2SG,Danish,WS
+Danish_WS,item_600,i_17_3,word,produces,mig,pronouns,me,me,,,,1SG,Danish,WS
+Danish_WS,item_601,i_17_4,word,produces,dem,pronouns,them,,,,,3PL,Danish,WS
+Danish_WS,item_602,i_17_5,word,produces,han,pronouns,he,,,,,3SG,Danish,WS
+Danish_WS,item_603,i_17_6,word,produces,mig selv,pronouns,myself,,,,,1SG.POSS,Danish,WS
+Danish_WS,item_604,i_17_7,word,produces,den,pronouns,the,it,,,,3SG,Danish,WS
+Danish_WS,item_605,i_17_8,word,produces,hans,pronouns,his,his,,,,3SG.POSS,Danish,WS
+Danish_WS,item_606,i_17_9,word,produces,min/mit/mine,pronouns,my / my / mine,mine,,,,1SG.POSS,Danish,WS
+Danish_WS,item_607,i_17_10,word,produces,denne/den her,pronouns,this / it here,this,,,,this,Danish,WS
+Danish_WS,item_608,i_17_11,word,produces,ham,pronouns,him,,,,,3SG,Danish,WS
+Danish_WS,item_609,i_17_12,word,produces,os,pronouns,us,,,,,1PL,Danish,WS
+Danish_WS,item_610,i_17_13,word,produces,dens/dets,pronouns,its / their,,,,,3SG.POSS,Danish,WS
+Danish_WS,item_611,i_17_14,word,produces,hende,pronouns,her,,,,,3SG,Danish,WS
+Danish_WS,item_612,i_17_15,word,produces,sig,pronouns,themselves,,,,,3PL.REFL,Danish,WS
+Danish_WS,item_613,i_17_16,word,produces,deres,pronouns,their,,,,,3PL.POSS,Danish,WS
+Danish_WS,item_614,i_17_17,word,produces,hendes,pronouns,her,her,,,,3SG.POSS,Danish,WS
+Danish_WS,item_615,i_17_18,word,produces,sig selv,pronouns,per se,,,,,3SG.REFL,Danish,WS
+Danish_WS,item_616,i_17_19,word,produces,det,pronouns,the,,,,,3SG,Danish,WS
+Danish_WS,item_617,i_17_20,word,produces,hun,pronouns,she,,,,,3SG,Danish,WS
+Danish_WS,item_618,i_17_21,word,produces,sin/sit/sine,pronouns,his / her / its,,,,,3SG.POSS,Danish,WS
+Danish_WS,item_619,i_17_22,word,produces,dette/det her,pronouns,this / it here,this,,,,this,Danish,WS
+Danish_WS,item_620,i_17_23,word,produces,I,pronouns,You,,,,,2PL,Danish,WS
+Danish_WS,item_621,i_17_24,word,produces,vi,pronouns,we,,,,,1PL,Danish,WS
+Danish_WS,item_622,i_17_25,word,produces,dig,pronouns,you,,,,,2SG,Danish,WS
+Danish_WS,item_623,i_17_26,word,produces,jeg,pronouns,I,i,,,,1SG,Danish,WS
+Danish_WS,item_624,i_17_27,word,produces,vores,pronouns,our,,,,,1PL.POSS,Danish,WS
+Danish_WS,item_625,i_17_28,word,produces,dig selv,pronouns,yourself,,,,,2SG.REFL,Danish,WS
+Danish_WS,item_626,i_17_29,word,produces,jer,pronouns,you,,,,,2PL,Danish,WS
+Danish_WS,item_627,i_17_30,word,produces,din/dit/dine,pronouns,your / your / your,your,,,,2SG.POSS,Danish,WS
+Danish_WS,item_628,i_17_31,word,produces,jeres,pronouns,your,,,,,2PL.POSS,Danish,WS
+Dutch_FormOne,item_77,dat,word,understands;produces,dat,pronouns,that,that,,,,that,Dutch,FormOne
+Dutch_FormThree,item_29,deze,word,produces;doesn't produce,deze,pronouns,this,this,,,,this,Dutch,FormThree
+Dutch_FormThree,item_30,hun,word,produces;doesn't produce,hun,pronouns,them,them,,,,3PL,Dutch,FormThree
+Dutch_FormThree,item_31,jezelf,word,produces;doesn't produce,jezelf,pronouns,yourself,yourself,,,,2SG.REFL,Dutch,FormThree
+Dutch_FormThree,item_91,zij/ze,word,produces;doesn't produce,zij/ze,pronouns,she,she,,,,3SG,Dutch,FormThree
+Dutch_FormTwoA,item_100,ik,word,understands;produces,ik,pronouns,I,i,,,,1SG,Dutch,FormTwoA
+Dutch_WG,item_326,dat,word,understands;produces,dat,pronouns,that,that,,,,that,Dutch,WS
+Dutch_WG,item_327,deze,word,understands;produces,deze,pronouns,this,this,,,,this,Dutch,WS
+Dutch_WG,item_328,het(vnw),word,understands;produces,het(vnw),pronouns,it,it,,,,3SG,Dutch,WS
+Dutch_WG,item_329,ik,word,understands;produces,ik,pronouns,I,i,,,,1SG,Dutch,WS
+Dutch_WG,item_330,jij,word,understands;produces,jij,pronouns,you,you,,,,2SG,Dutch,WS
+Dutch_WG,item_331,jouw(e)/vanjou/dejou(we),word,understands;produces,jouw(e)/vanjou/dejou(we),pronouns,your,your,,,,2SG.POSS,Dutch,WS
+Dutch_WG,item_332,mij,word,understands;produces,mij,pronouns,me,me,,,,1SG,Dutch,WS
+Dutch_WG,item_333,mijn(e)/vanmij,word,understands;produces,mijn(e)/vanmij,pronouns,my,my,,,,1SG.POSS,Dutch,WS
+Dutch_WG,item_334,wij,word,understands;produces,wij,pronouns,we,we,,,,1PL,Dutch,WS
+Dutch_WG,item_434,dit/deze/dees,word,understands;produces,dit/deze/dees,pronouns,this,this,,,,this,Dutch,WS
+Dutch_WG,item_435,zijn/haar,word,understands;produces,zijn/haar,pronouns,his/her,his/her,,,,3SG.POSS,Dutch,WS
+Dutch_WS,item_600,dat,word,understands;produces,dat,pronouns,that,that,,,,that,Dutch,WG
+Dutch_WS,item_601,deze,word,understands;produces,deze,pronouns,this,this,,,,this,Dutch,WG
+Dutch_WS,item_602,die,word,understands;produces,die,pronouns,that,that,,,,that,Dutch,WG
+Dutch_WS,item_603,dit,word,understands;produces,dit,pronouns,this,this,,,,this,Dutch,WG
+Dutch_WS,item_604,haar(vnw),word,understands;produces,haar(vnw),pronouns,her,her (accusative),,,,3SG,Dutch,WG
+Dutch_WS,item_605,hem,word,understands;produces,hem,pronouns,him,him,,,,3SG,Dutch,WG
+Dutch_WS,item_606,hen,word,understands;produces,hen,pronouns,them,them,,,,3PL,Dutch,WG
+Dutch_WS,item_607,het(vnw),word,understands;produces,het(vnw),pronouns,it,it,,,,3SG,Dutch,WG
+Dutch_WS,item_608,hethare/haar,word,understands;produces,hethare/haar,pronouns,her,her (possessive),,,,3SG.POSS,Dutch,WG
+Dutch_WS,item_609,hetzijne/zijn,word,understands;produces,hetzijne/zijn,pronouns,his,his,,,,3SG.POSS,Dutch,WG
+Dutch_WS,item_610,hij,word,understands;produces,hij,pronouns,he,he,,,,3SG,Dutch,WG
+Dutch_WS,item_611,hun,word,understands;produces,hun,pronouns,them,them,,,,3PL,Dutch,WG
+Dutch_WS,item_612,ik,word,understands;produces,ik,pronouns,I,i,,,,1SG,Dutch,WG
+Dutch_WS,item_613,jezelf,word,understands;produces,jezelf,pronouns,yourself,yourself,,,,2SG.REFL,Dutch,WG
+Dutch_WS,item_614,jij,word,understands;produces,jij,pronouns,you,you,,,,2SG,Dutch,WG
+Dutch_WS,item_615,jouw(e)/vanjou/dejou(we),word,understands;produces,jouw(e)/vanjou/dejou(we),pronouns,your,your,,,,2SG.POSS,Dutch,WG
+Dutch_WS,item_616,mezelf,word,understands;produces,mezelf,pronouns,myself,myself,,,,1SG.REFL,Dutch,WG
+Dutch_WS,item_617,mij,word,understands;produces,mij,pronouns,me,me,,,,1SG,Dutch,WG
+Dutch_WS,item_618,mijn(e)/vanmij,word,understands;produces,mijn(e)/vanmij,pronouns,my,my,,,,1SG.POSS,Dutch,WG
+Dutch_WS,item_619,ons,word,understands;produces,ons,pronouns,our,our,,,,1PL.POSS,Dutch,WG
+Dutch_WS,item_620,wij,word,understands;produces,wij,pronouns,we,we,,,,1PL,Dutch,WG
+Dutch_WS,item_621,zij(meervoud),word,understands;produces,zij(meervoud),pronouns,they,they,,,,3PL,Dutch,WG
+Dutch_WS,item_622,zij(meisje),word,understands;produces,zij(meisje),pronouns,she,she,,,,3SG,Dutch,WG
+English_British_Oxford,item_386,386_her,word,understands; produces,her,pronouns,,her,,,,3SG.POSS,English (British),Oxford CDI
+English_British_Oxford,item_387,387_his,word,understands; produces,his,pronouns,,his,,,,3SG.POSS,English (British),Oxford CDI
+English_British_Oxford,item_388,388_I,word,understands; produces,I,pronouns,,i,,,,1SG,English (British),Oxford CDI
+English_British_Oxford,item_389,389_it,word,understands; produces,it,pronouns,,it,,,,3SG,English (British),Oxford CDI
+English_British_Oxford,item_390,390_me,word,understands; produces,me,pronouns,,me,,,,1SG,English (British),Oxford CDI
+English_British_Oxford,item_391,391_mine,word,understands; produces,mine,pronouns,,mine,,,,1SG.POSS,English (British),Oxford CDI
+English_British_Oxford,item_392,392_my,word,understands; produces,my,pronouns,,my,,,,1SG.POSS,English (British),Oxford CDI
+English_British_Oxford,item_393,393_that,word,understands; produces,that,pronouns,,that,,,,that,English (British),Oxford CDI
+English_British_Oxford,item_394,394_this,word,understands; produces,this,pronouns,,this,,,,this,English (British),Oxford CDI
+English_British_Oxford,item_395,395_you,word,understands; produces,you,pronouns,,you,,,,2SG,English (British),Oxford CDI
+English_British_Oxford,item_396,396_your,word,understands; produces,your,pronouns,,your,,,,2SG.POSS,English (British),Oxford CDI
+English_Irish_WS,item_1129,his,word,produces; doesn't produce,his,pronouns,his,his,0,function_words,,3SG.POSS,English (Irish),WS
+English_Irish_WS,item_1130,her,word,produces; doesn't produce,her,pronouns,her,her,0,function_words,,3SG.POSS,English (Irish),WS
+English_Irish_WS,item_1131,their,word,produces; doesn't produce,their,pronouns,their,their,0,function_words,,3PL.POSS,English (Irish),WS
+English_Irish_WS,item_1133,our,word,produces; doesn't produce,our,pronouns,our,our,0,function_words,,1PL.POSS,English (Irish),WS
+English_Irish_WS,item_1135,one,word,produces; doesn't produce,one,pronouns,one,,0,function_words,,one,English (Irish),WS
+English_Irish_WS,item_1137,yoursg,word,produces; doesn't produce,your,pronouns,your,your,0,function_words,,2SG.POSS,English (Irish),WS
+English_Irish_WS,item_1139,it(m),word,produces; doesn't produce,it(m),pronouns,it/him,,0,function_words,,3SG,English (Irish),WS
+English_Irish_WS,item_1141,(my)self,word,produces; doesn't produce,(my)self,pronouns,(my)self,,0,function_words,,REFL,English (Irish),WS
+English_Irish_WS,item_1143,she,word,produces; doesn't produce,she,pronouns,she,she,0,function_words,,3SG,English (Irish),WS
+English_Irish_WS,item_1144,her,word,produces; doesn't produce,her_A,pronouns,her,her,0,function_words,,3SG,English (Irish),WS
+English_Irish_WS,item_1145,it,word,produces; doesn't produce,it,pronouns,it,it,0,function_words,,3SG,English (Irish),WS
+English_Irish_WS,item_1147,they,word,produces; doesn't produce,they,pronouns,they,they,0,function_words,,3PL,English (Irish),WS
+English_Irish_WS,item_1148,them,word,produces; doesn't produce,them,pronouns,them,them,0,function_words,,3PL,English (Irish),WS
+English_Irish_WS,item_1150,me,word,produces; doesn't produce,me,pronouns,me,me,0,function_words,,1SG,English (Irish),WS
+English_Irish_WS,item_1153,my,word,produces; doesn't produce,my,pronouns,my,my,0,function_words,,1SG.POSS,English (Irish),WS
+English_Irish_WS,item_1155,we,word,produces; doesn't produce,we_us,pronouns,we,we,0,function_words,,1PL,English (Irish),WS
+English_Irish_WS,item_1157,hesub,word,produces; doesn't produce,he,pronouns,he,he,0,function_words,,3SG,English (Irish),WS
+English_Irish_WS,item_1159,this,word,produces; doesn't produce,this,pronouns,this,this,0,function_words,,this,English (Irish),WS
+English_Irish_WS,item_1161,shesub,word,produces; doesn't produce,she,pronouns,she,she,0,function_words,,3SG,English (Irish),WS
+English_Irish_WS,item_1163,they,word,produces; doesn't produce,they_A,pronouns,they,they,0,function_words,,3PL,English (Irish),WS
+English_Irish_WS,item_1165,youpl,word,produces; doesn't produce,youpl,pronouns,you (pl),,0,function_words,,2PL,English (Irish),WS
+English_Irish_WS,item_1167,that,word,produces; doesn't produce,that,pronouns,that,that,0,function_words,,that,English (Irish),WS
+English_Irish_WS,item_1169,you,word,produces; doesn't produce,you,pronouns,you,you,0,function_words,,2SG,English (Irish),WS
+English_WG,item_394,his,word,understands; produces,his,pronouns,his,his,,,,3SG.POSS,English (American),WG
+English_WG,item_395,her,word,understands; produces,her,pronouns,her,her,,,,3SG.POSS,English (American),WG
+English_WG,item_396,i,word,understands; produces,I,pronouns,I,i,,,,1SG,English (American),WG
+English_WG,item_397,it,word,understands; produces,it,pronouns,it,it,,,,3SG,English (American),WG
+English_WG,item_398,me,word,understands; produces,me,pronouns,me,me,,,,1SG,English (American),WG
+English_WG,item_399,mine,word,understands; produces,mine,pronouns,mine,mine,,,,1SG.POSS,English (American),WG
+English_WG,item_400,my,word,understands; produces,my,pronouns,my,my,,,,1SG.POSS,English (American),WG
+English_WG,item_401,that,word,understands; produces,that,pronouns,that,that,,,,that,English (American),WG
+English_WG,item_402,this,word,understands; produces,this,pronouns,this,this,,,,this,English (American),WG
+English_WG,item_403,you,word,understands; produces,you,pronouns,you,you,,,,2SG,English (American),WG
+English_WG,item_404,your,word,understands; produces,your,pronouns,your,your,,,,2SG.POSS,English (American),WG
+English_WS,item_579,he,word,produces,he,pronouns,he,he,,,,3SG.POSS,English (American),WS
+English_WS,item_580,her,word,produces,her,pronouns,her,her,,,,3SG.POSS,English (American),WS
+English_WS,item_581,hers,word,produces,hers,pronouns,hers,hers,,,,3SG.POSS,English (American),WS
+English_WS,item_582,him,word,produces,him,pronouns,him,him,,,,3SG,English (American),WS
+English_WS,item_583,his,word,produces,his,pronouns,his,his,,,,3SG.POSS,English (American),WS
+English_WS,item_584,i,word,produces,I,pronouns,I,I,,,,1SG,English (American),WS
+English_WS,item_585,it,word,produces,it,pronouns,it,it,,,,3SG,English (American),WS
+English_WS,item_586,me,word,produces,me,pronouns,me,me,,,,1SG,English (American),WS
+English_WS,item_587,mine,word,produces,mine,pronouns,mine,mine,,,,1SG.POSS,English (American),WS
+English_WS,item_588,my,word,produces,my,pronouns,my,my,,,,1SG.POSS,English (American),WS
+English_WS,item_589,myself,word,produces,myself,pronouns,myself,myself,,,,1SG.REFL,English (American),WS
+English_WS,item_590,our,word,produces,our,pronouns,our,our,,,,1PL.POSS,English (American),WS
+English_WS,item_591,she,word,produces,she,pronouns,she,she,,,,3SG,English (American),WS
+English_WS,item_592,that,word,produces,that,pronouns,that,that,,,,that,English (American),WS
+English_WS,item_593,their,word,produces,their,pronouns,their,their,,,,3PL.POSS,English (American),WS
+English_WS,item_594,them,word,produces,them,pronouns,them,them,,,,3PL,English (American),WS
+English_WS,item_595,these,word,produces,these,pronouns,these,these,,,,these,English (American),WS
+English_WS,item_596,they,word,produces,they,pronouns,they,they,,,,3PL,English (American),WS
+English_WS,item_597,this,word,produces,this,pronouns,this,this,,,,this,English (American),WS
+English_WS,item_598,those,word,produces,those,pronouns,those,those,,,,those,English (American),WS
+English_WS,item_599,us,word,produces,us,pronouns,us,us,,,,1PL,English (American),WS
+English_WS,item_600,we,word,produces,we,pronouns,we,we,,,,1PL,English (American),WS
+English_WS,item_601,you,word,produces,you,pronouns,you,you,,,,2SG,English (American),WS
+English_WS,item_602,your,word,produces,your,pronouns,your,your,,,,2SG.POSS,English (American),WS
+English_WS,item_603,yourself,word,produces,yourself,pronouns,yourself,yourself,,,,2SG.REFL,English (American),WS
+Finnish_WS,item_525,he,word,produces,he,pronouns,they,they,,,,3PL,Finnish,WS
+Finnish_WS,item_526,heille,word,produces,heille,pronouns,to them,,,,,3PL,Finnish,WS
+Finnish_WS,item_527,hänelle,word,produces,hänelle,pronouns,to him to her,,,,,3SG,Finnish,WS
+Finnish_WS,item_528,me,word,produces,me,pronouns,we,we,,,,1PL,Finnish,WS
+Finnish_WS,item_529,meille,word,produces,meille,pronouns,to us,,,,,1PL,Finnish,WS
+Finnish_WS,item_530,minun,word,produces,minun,pronouns,mine,mine,,,,1SG,Finnish,WS
+Finnish_WS,item_531,näiden,word,produces,näiden,pronouns,theirs,,,,,3PL,Finnish,WS
+Finnish_WS,item_532,nämä,word,produces,nämä,pronouns,these,these,,,,these,Finnish,WS
+Finnish_WS,item_533,sen,word,produces,sen,pronouns,its,,,,,3SG.POSS,Finnish,WS
+Finnish_WS,item_534,sinulle,word,produces,sinulle,pronouns,to you,to you,,,,2SG,Finnish,WS
+Finnish_WS,item_535,sinä,word,produces,sinä,pronouns,you,you,,,,2SG,Finnish,WS
+Finnish_WS,item_536,tämä,word,produces,tämä,pronouns,this,this,,,,this,Finnish,WS
+Finnish_WS,item_537,heidän,word,produces,heidän,pronouns,their,their,,,,3PL.POSS,Finnish,WS
+Finnish_WS,item_538,hän,word,produces,hän,pronouns,he she,,,,,3SG,Finnish,WS
+Finnish_WS,item_539,hänen,word,produces,hänen,pronouns,his hers,,,,,3SG.POSS,Finnish,WS
+Finnish_WS,item_540,meidän,word,produces,meidän,pronouns,ours,,,,,1PL.POSS,Finnish,WS
+Finnish_WS,item_541,minulle,word,produces,minulle,pronouns,to me,,,,,1SG,Finnish,WS
+Finnish_WS,item_542,minä,word,produces,minä,pronouns,I,i,,,,1SG,Finnish,WS
+Finnish_WS,item_543,näille,word,produces,näille,pronouns,to these,,,,,these,Finnish,WS
+Finnish_WS,item_544,se,word,produces,se,pronouns,it,it,,,,3SG,Finnish,WS
+Finnish_WS,item_545,sille,word,produces,sille,pronouns,to it,,,,,3SG,Finnish,WS
+Finnish_WS,item_546,sinun,word,produces,sinun,pronouns,yours,,,,,2SG.POSS,Finnish,WS
+Finnish_WS,item_547,tälle,word,produces,tälle,pronouns,to this,,,,,this,Finnish,WS
+Finnish_WS,item_548,tämän,word,produces,tämän,pronouns,this ones,,,,,this,Finnish,WS
+French_French_WG,item_435,item_435,word,understands; produces,à elle/sa,pronouns,hers,hers,,,item_351,3SG.POSS,French (French),WG
+French_French_WG,item_436,item_436,word,understands; produces,à lui/son,pronouns,his,his,,,item_352,3SG.POSS,French (French),WG
+French_French_WG,item_437,item_437,word,understands; produces,à moi,pronouns,mine,mine,,,,1SG.POSS,French (French),WG
+French_French_WG,item_438,item_438,word,understands; produces,ça,pronouns,that,that,,,item_354,that,French (French),WG
+French_French_WG,item_439,item_439,word,understands; produces,je,pronouns,i,i,,,item_353,1SG,French (French),WG
+French_French_WG,item_440,item_440,word,understands; produces,ma/mon/mes,pronouns,my,my,,,item_356,1SG.POSS,French (French),WG
+French_French_WG,item_441,item_441,word,understands; produces,moi,pronouns,me,me,,,item_355,1SG,French (French),WG
+French_French_WG,item_442,item_442,word,understands; produces,votre/ta/ton,pronouns,your,your,,,item_358,2SG.POSS,French (French),WG
+French_French_WG,item_443,item_443,word,understands; produces,vous/tu,pronouns,you,you,,,item_357,2SG,French (French),WG
+French_French_WG,item_641,item_641,word,understands; produces,Il,pronouns,he,he,,,item_359,3SG,French (French),WG
+French_French_WG,item_642,item_642,word,understands; produces,ses,pronouns,his,his,,,item_360,3SG.POSS,French (French),WG
+French_French_WG,item_643,item_643,word,understands; produces,lui,pronouns,him,him,,,item_361,3SG,French (French),WG
+French_French_WG,item_644,item_644,word,understands; produces,moi-même,pronouns,myself,myself,,,item_362,1SG.REFL,French (French),WG
+French_French_WG,item_645,item_645,word,understands; produces,notre,pronouns,our,our,,,item_363,1PL.POSS,French (French),WG
+French_French_WG,item_646,item_646,word,understands; produces,elle,pronouns,she,she,,,item_364,3SG,French (French),WG
+French_French_WG,item_647,item_647,word,understands; produces,leur,pronouns,their,their,,,item_365,3PL.POSS,French (French),WG
+French_French_WG,item_648,item_648,word,understands; produces,ces,pronouns,these,these,,,item_366,these,French (French),WG
+French_French_WG,item_649,item_649,word,understands; produces,ils/elles,pronouns,they,they,,,item_367,3PL,French (French),WG
+French_French_WG,item_650,item_650,word,understands; produces,ceux,pronouns,those,those,,,item_368,those,French (French),WG
+French_French_WG,item_651,item_651,word,understands; produces,nous,pronouns,we,we,,,item_369,1PL,French (French),WG
+French_French_WG,item_652,item_652,word,understands; produces,on,pronouns,they,they,,,item_370,1PL,French (French),WG
+French_French_WG,item_653,item_653,word,understands; produces,toi-même,pronouns,yourself,,,,item_371,2PL.REFL,French (French),WG
+French_French_WS,item_662,item_662,word,produces,à elle/sa,pronouns,hers,hers,,,,3SG.POSS,French (French),WS
+French_French_WS,item_663,item_663,word,produces,à lui/son,pronouns,his,his,,,,3SG.POSS,French (French),WS
+French_French_WS,item_664,item_664,word,produces,à moi,pronouns,mine,mine,,,,1SG.POSS,French (French),WS
+French_French_WS,item_665,item_665,word,produces,ça,pronouns,that,that,,,,that,French (French),WS
+French_French_WS,item_666,item_666,word,produces,ces,pronouns,these,these,,,,these,French (French),WS
+French_French_WS,item_667,item_667,word,produces,ceux,pronouns,those,those,,,,those,French (French),WS
+French_French_WS,item_668,item_668,word,produces,elle,pronouns,she,she,,,,3SG,French (French),WS
+French_French_WS,item_669,item_669,word,produces,eux,pronouns,them,them,,,,3PL,French (French),WS
+French_French_WS,item_670,item_670,word,produces,il,pronouns,he,he,,,,3SG,French (French),WS
+French_French_WS,item_671,item_671,word,produces,ils/elles,pronouns,they,they,,,,3PL,French (French),WS
+French_French_WS,item_672,item_672,word,produces,je,pronouns,i,i,,,,1SG,French (French),WS
+French_French_WS,item_673,item_673,word,produces,leur,pronouns,their,their,,,,3PL.POSS,French (French),WS
+French_French_WS,item_674,item_674,word,produces,lui,pronouns,him,him,,,,3SG.POSS,French (French),WS
+French_French_WS,item_675,item_675,word,produces,ma/mon/mes,pronouns,my,my,,,,1SG.POSS,French (French),WS
+French_French_WS,item_676,item_676,word,produces,moi,pronouns,me,me,,,,1SG,French (French),WS
+French_French_WS,item_677,item_677,word,produces,moi-même,pronouns,myself,myself,,,,1SG.REFL,French (French),WS
+French_French_WS,item_678,item_678,word,produces,notre,pronouns,our,our,,,,1PL.POSS,French (French),WS
+French_French_WS,item_679,item_679,word,produces,nous,pronouns,we,we,,,,1PL,French (French),WS
+French_French_WS,item_680,item_680,word,produces,on,pronouns,they,they,,,,1PL,French (French),WS
+French_French_WS,item_681,item_681,word,produces,ses,pronouns,his,his,,,,3SG.POSS,French (French),WS
+French_French_WS,item_682,item_682,word,produces,toi-même,pronouns,yourself,,,,,2SG.REFL,French (French),WS
+French_French_WS,item_683,item_683,word,produces,votre/ta/ton,pronouns,your,your,,,,2SG.POSS,French (French),WS
+French_French_WS,item_684,item_684,word,produces,vous/tu,pronouns,you,you,,,,2SG,French (French),WS
+French_Quebecois_WG,item_384,`a_moi,word,understands; produces,à moi,pronouns,mine,mine,,,,1SG.POSS,French (Quebecois),WG
+French_Quebecois_WG,item_385,ca,word,understands; produces,ça,pronouns,that,that,,,,that,French (Quebecois),WG
+French_Quebecois_WG,item_386,je,word,understands; produces,je,pronouns,i,i,,,,1SG,French (Quebecois),WG
+French_Quebecois_WG,item_387,(`a)_lui/(`a)_elle,word,understands; produces,(à) lui/(à) elle,pronouns,him,him,,,,3SG,French (Quebecois),WG
+French_Quebecois_WG,item_388,moi,word,understands; produces,moi,pronouns,me,me,,,,1SG,French (Quebecois),WG
+French_Quebecois_WG,item_389,mon,word,understands; produces,mon,pronouns,my,my,,,,1SG.POSS,French (Quebecois),WG
+French_Quebecois_WG,item_390,son,word,understands; produces,son,pronouns,his,his,,,,3SG.POSS,French (Quebecois),WG
+French_Quebecois_WG,item_391,toi,word,understands; produces,toi,pronouns,you,you,,,,2SG,French (Quebecois),WG
+French_Quebecois_WG,item_392,ton,word,understands; produces,ton,pronouns,your,your,,,,2SG.POSS,French (Quebecois),WG
+French_Quebecois_WG,item_393,tu,word,understands; produces,tu,pronouns,you,you,,,,2SG,French (Quebecois),WG
+French_Quebecois_WS,item_581,`a_eux,word,produces,à eux,pronouns,their,theirs,,,,3PL.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_582,`a_lui,word,produces,à lui,pronouns,his,his,,,,3SG.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_583,`a_moi,word,produces,à moi,pronouns,to me,mine,,,,1SG.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_584,`a_nous,word,produces,à nous,pronouns,ours,,,,,1PL.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_585,`a_toi,word,produces,à toi,pronouns,yours,,,,,2SG.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_586,`a_vous,word,produces,à vous,pronouns,to you,,,,,2PL.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_587,ca,word,produces,ça,pronouns,it,that,,,,that,French (Quebecois),WS
+French_Quebecois_WS,item_588,ce,word,produces,ce,pronouns,this,this,,,,this,French (Quebecois),WS
+French_Quebecois_WS,item_589,celui-l`a,word,produces,celui-là,pronouns,that one,,,,,that,French (Quebecois),WS
+French_Quebecois_WS,item_590,elle,word,produces,elle,pronouns,she,she,,,,3SG,French (Quebecois),WS
+French_Quebecois_WS,item_591,elles,word,produces,elles,pronouns,they,they,,,,3PL,French (Quebecois),WS
+French_Quebecois_WS,item_592,il,word,produces,il,pronouns,he,he,,,,3SG,French (Quebecois),WS
+French_Quebecois_WS,item_593,ils,word,produces,ils,pronouns,they,they,,,,3PL,French (Quebecois),WS
+French_Quebecois_WS,item_594,je,word,produces,je,pronouns,I,i,,,,1SG,French (Quebecois),WS
+French_Quebecois_WS,item_595,le_mien,word,produces,le mien,pronouns,mine,mine,,,,1SG.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_596,le_tien,word,produces,le tien,pronouns,yours,,,,,2SG.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_597,lui,word,produces,lui,pronouns,him,him,,,,3SG,French (Quebecois),WS
+French_Quebecois_WS,item_598,me,word,produces,me,pronouns,Moi,,,,,1SG,French (Quebecois),WS
+French_Quebecois_WS,item_599,moi,word,produces,moi,pronouns,me,me,,,,1SG,French (Quebecois),WS
+French_Quebecois_WS,item_600,mon,word,produces,mon,pronouns,my,my,,,,1SG.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_601,nous,word,produces,nous,pronouns,we,we,,,,1PL,French (Quebecois),WS
+French_Quebecois_WS,item_602,n^otre/nos,word,produces,nôtre/nos,pronouns,ours / our,our,,,,1PL.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_603,on,word,produces,on,pronouns,we,they,,,,1PL,French (Quebecois),WS
+French_Quebecois_WS,item_604,son,word,produces,son,pronouns,his,his,,,,3SG.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_605,toi,word,produces,toi,pronouns,you,you,,,,2SG,French (Quebecois),WS
+French_Quebecois_WS,item_606,ton,word,produces,ton,pronouns,your,your,,,,2SG.POSS,French (Quebecois),WS
+French_Quebecois_WS,item_607,tu,word,produces,tu,pronouns,you,you,,,,2SG,French (Quebecois),WS
+French_Quebecois_WS,item_608,vous,word,produces,vous,pronouns,you,you,,,,2PL,French (Quebecois),WS
+German_WS,item_496,er,word,produces,er,pronouns,he,he,,,,3SG,German,WS
+German_WS,item_497,wir,word,produces,wir,pronouns,we,we,,,,1PL,German,WS
+German_WS,item_498,ihnen,word,produces,ihnen,pronouns,them,them,,,,3PL,German,WS
+German_WS,item_499,mich,word,produces,mich,pronouns,I,me,,,,1SG,German,WS
+German_WS,item_500,unser,word,produces,unser,pronouns,our,our,,,,1PL.POSS,German,WS
+German_WS,item_501,es,word,produces,es,pronouns,it,it,,,,3SG,German,WS
+German_WS,item_502,euch,word,produces,euch,pronouns,you,you,,,,2PL,German,WS
+German_WS,item_503,ich,word,produces,ich,pronouns,I,,,,,1SG,German,WS
+German_WS,item_504,ihr,word,produces,ihr,pronouns,you,her,,,,2PL,German,WS
+German_WS,item_505,dein,word,produces,dein,pronouns,your,your,,,,2SG.POSS,German,WS
+German_WS,item_506,ihm,word,produces,ihm,pronouns,he,him,,,,3SG,German,WS
+German_WS,item_507,dies,word,produces,dies,pronouns,this,this,,,,this,German,WS
+German_WS,item_508,das,word,produces,das,pronouns,that,,,,,that,German,WS
+German_WS,item_509,meiner,word,produces,meiner,pronouns,mine,mine,,,,1SG.POSS,German,WS
+German_WS,item_510,du_,word,produces,du,pronouns,you,you,,,,2SG,German,WS
+German_WS,item_511,mein,word,produces,mein,pronouns,my,my,,,,1SG.POSS,German,WS
+German_WS,item_512,diese,word,produces,diese,pronouns,this,this,,,,this,German,WS
+German_WS,item_513,sein,word,produces,sein,pronouns,his,his,,,,3SG.POSS,German,WS
+German_WS,item_514,mir,word,produces,mir,pronouns,I,me,,,,1SG,German,WS
+German_WS,item_515,uns,word,produces,uns,pronouns,us,us,,,,1PL,German,WS
+Greek_Cypriot_WS,item_676,P1_THIS_FE,word,produces,αυτή,pronouns,this (female singular),this,,,,this,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_677,P2_THIS_NE,word,produces,αυτό,pronouns,this (neutral singular),this,,,,this,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_678,P3_THIS_MA,word,produces,αυτός,pronouns,this (male singular),this,,,,this,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_679,P4_MINE,word,produces,δικό μου,pronouns,mine,mine,,,,1SG.POSS,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_680,P5_YOURS,word,produces,δικό σου,pronouns,yours,mine,,,,2SG.POSS,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_681,P6_HIS,word,produces,δικό του,pronouns,his,mine,,,,3SG.POSS,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_682,P7_I,word,produces,εγώ,pronouns,I,i,,,,1SG,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_683,P8_THAT_FE,word,produces,εκείνη,pronouns,that (female singular),that,,,,that,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_684,P9_THAT_NE,word,produces,εκείνο,pronouns,that (neutral singular),that,,,,that,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_685,P10_THAT_M,word,produces,εκείνος,pronouns,that (male singular),that,,,,that,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_686,P11_WE,word,produces,εμείς,pronouns,we,we,,,,1PL,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_687,P12_YOU_PL,word,produces,εσείς,pronouns,you (plural),,,,,2PL,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_688,P13_YOU_SI,word,produces,εσύ,pronouns,you (singular),you,,,,2SG,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_689,P14_ME_ACC,word,produces,με (αγαπά),pronouns,me (accusative),me,,,,1SG,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_690,P15_ME_GEN,word,produces,μου (λέει),pronouns,me (genitive),me,,,,1SG.POSS,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_691,P16_YOU_AC,word,produces,σε (αγαπώ),pronouns,you (accusative),you,,,,2SG,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_692,P17_YOU_GE,word,produces,σου (μιλώ),pronouns,you (genitive),you,,,,2SG.POSS,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_693,P18_HER_AC,word,produces,την (αγαπώ),pronouns,her (accusative),her,,,,3SG,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_694,P19_IT_ACC,word,produces,το (αγαπώ),pronouns,it (accusative),it,,,,3SG,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_695,P20_HIM_AC,word,produces,τον (αγαπώ),pronouns,him (accusative),him,,,,3SG,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_696,P21_HIM_IT,word,produces,του (μιλώ),pronouns,him/it (genitive),him,,,,3SG.POSS,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_697,P22_THAT_C_CG,word,produces,τζείνη,pronouns,that CG (female singular),,,,,that,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_698,P23_THAT_C_CG,word,produces,τζείνο,pronouns,that CG (neutral singular),,,,,that,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_699,P24_THAT_C_CG,word,produces,τζείνος,pronouns,that CG (male singular),,,,,that,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_700,P25_THIS_C_CG,word,produces,τούτη,pronouns,this CG (female singular),that,,,,this,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_701,P26_THIS_C_CG,word,produces,τούτο,pronouns,this CG (neutral singular),that,,,,this,Greek (Cypriot),WS
+Greek_Cypriot_WS,item_702,P27_THIS_C_CG,word,produces,τούτος,pronouns,this CG (male singular),that,,,,this,Greek (Cypriot),WS
+Hebrew_WG,item_439,,word,understands; produces,אותי,pronouns,Me,me,,,,1SG,Hebrew,WG
+Hebrew_WG,item_440,,word,understands; produces,אני,pronouns,I,i,,,,1SG,Hebrew,WG
+Hebrew_WG,item_441,,word,understands; produces,אתה,pronouns,You,you,,,,2SG,Hebrew,WG
+Hebrew_WG,item_442,,word,understands; produces,הוא,pronouns,Is,his,,,,3SG,Hebrew,WG
+Hebrew_WG,item_443,,word,understands; produces,הינה,pronouns,Is,her,,,,here,Hebrew,WG
+Hebrew_WG,item_444,,word,understands; produces,זה,pronouns,This,this,,,,this,Hebrew,WG
+Hebrew_WG,item_445,,word,understands; produces,שלי,pronouns,My,mine,,,,1SG.POSS,Hebrew,WG
+Hebrew_WG,item_446,,word,understands; produces,שלך,pronouns,Your,your,,,,2SG.POSS,Hebrew,WG
+Hebrew_WS,item_553,p1_c17_i01,word,understands; produces,אותי,pronouns,me,me,,,,1SG,Hebrew,WS
+Hebrew_WS,item_554,p1_c17_i02,word,understands; produces,אלה,pronouns,those,those,,,,those,Hebrew,WS
+Hebrew_WS,item_555,p1_c17_i03,word,understands; produces,אנחנו,pronouns,we,we,,,,1PL,Hebrew,WS
+Hebrew_WS,item_556,p1_c17_i04,word,understands; produces,אני,pronouns,I,i,,,,1SG,Hebrew,WS
+Hebrew_WS,item_557,p1_c17_i05,word,understands; produces,אתה/ את,pronouns,you,you,,,,2SG,Hebrew,WS
+Hebrew_WS,item_558,p1_c17_i06,word,understands; produces,הוא/ היא,pronouns,he \ she,he,,,,3SG,Hebrew,WS
+Hebrew_WS,item_559,p1_c17_i07,word,understands; produces,הם,pronouns,they,they,,,,3PL,Hebrew,WS
+Hebrew_WS,item_560,p1_c17_i08,word,understands; produces,הנה,pronouns,here,,,,,here,Hebrew,WS
+Hebrew_WS,item_561,p1_c17_i09,word,understands; produces,זה,pronouns,this,this,,,,this,Hebrew,WS
+Hebrew_WS,item_562,p1_c17_i10,word,understands; produces,שלי,pronouns,mine,mine,,,,1SG.POSS,Hebrew,WS
+Hebrew_WS,item_563,p1_c17_i11,word,understands; produces,שלך,pronouns,yours,your,,,,2SG.POSS,Hebrew,WS
+Hebrew_WS,item_564,p1_c17_i12,word,understands; produces,שלנו,pronouns,ours,our,,,,1PL.POSS,Hebrew,WS
+Hungarian_WS,item_706,item_706,word,produces,az,pronouns,that,,,,,that,Hungarian,WS
+Hungarian_WS,item_707,item_707,word,produces,azok,pronouns,those,,,,,those,Hungarian,WS
+Hungarian_WS,item_708,item_708,word,produces,én,pronouns,I,,,,,1SG,Hungarian,WS
+Hungarian_WS,item_709,item_709,word,produces,engem,pronouns,me,,,,,1SG,Hungarian,WS
+Hungarian_WS,item_710,item_710,word,produces,enyém,pronouns,mine,,,,,1SG.POSS,Hungarian,WS
+Hungarian_WS,item_711,item_711,word,produces,ez,pronouns,this,,,,,this,Hungarian,WS
+Hungarian_WS,item_712,item_712,word,produces,ezek,pronouns,these,,,,,these,Hungarian,WS
+Hungarian_WS,item_713,item_713,word,produces,mi,pronouns,we,,,,,1PL,Hungarian,WS
+Hungarian_WS,item_714,item_714,word,produces,mienk,pronouns,our,,,,,1PL.POSS,Hungarian,WS
+Hungarian_WS,item_715,item_715,word,produces,minket,pronouns,us,,,,,1PL,Hungarian,WS
+Hungarian_WS,item_716,item_716,word,produces,nála,pronouns,at her/him,,,,,3SG,Hungarian,WS
+Hungarian_WS,item_717,item_717,word,produces,neki,pronouns,to her/him,,,,,3SG,Hungarian,WS
+Hungarian_WS,item_718,item_718,word,produces,övé,pronouns,his/hers,,,,,3SG.POSS,Hungarian,WS
+Hungarian_WS,item_719,item_719,word,produces,ő,pronouns,he/she,,,,,3SG,Hungarian,WS
+Hungarian_WS,item_720,item_720,word,produces,ők,pronouns,they,,,,,3PL,Hungarian,WS
+Hungarian_WS,item_721,item_721,word,produces,őket,pronouns,them,,,,,3PL,Hungarian,WS
+Hungarian_WS,item_722,item_722,word,produces,őt,pronouns,him/her,,,,,3SG,Hungarian,WS
+Hungarian_WS,item_723,item_723,word,produces,rajta,pronouns,on him/her,,,,,3SG,Hungarian,WS
+Hungarian_WS,item_724,item_724,word,produces,te,pronouns,you,,,,,2SG,Hungarian,WS
+Hungarian_WS,item_725,item_725,word,produces,téged,pronouns,you (accusative),,,,,2SG,Hungarian,WS
+Hungarian_WS,item_726,item_726,word,produces,tiéd,pronouns,your,,,,,2SG.POSS,Hungarian,WS
+Hungarian_WS,item_727,item_727,word,produces,ti,pronouns,you (plural),,,,,2PL,Hungarian,WS
+Hungarian_WS,item_728,item_728,word,produces,titeket,pronouns,you (plural & accusative),,,,,2PL,Hungarian,WS
+Hungarian_WS,item_729,item_729,word,produces,vele,pronouns,with her/him,,,,,3SG,Hungarian,WS
+Irish_WS,item_1128,a,word,produces; doesn't produce,a,pronouns,his/her/their,his/her/their,0,function_words,,3SG.POSS,Irish,WS
+Irish_WS,item_1132,ár,word,produces; doesn't produce,ár,pronouns,our,our,0,function_words,,1PL.POSS,Irish,WS
+Irish_WS,item_1134,ceann,word,produces; doesn't produce,ceann,pronouns,one,one (of),0,function_words,,one,Irish,WS
+Irish_WS,item_1136,do,word,produces; doesn't produce,do,pronouns,your,your,0,function_words,,2SG.POSS,Irish,WS
+Irish_WS,item_1138,é,word,produces; doesn't produce,é_eisean,pronouns,it/he/him,it/he,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1140,féin,word,produces; doesn't produce,féin,pronouns,(my)self,me,0,function_words,,REFL,Irish,WS
+Irish_WS,item_1142,í,word,produces; doesn't produce,í_ise,pronouns,she/her/it,she/her,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1146,iad,word,produces; doesn't produce,iad_iadsan,pronouns,they/them,they/them,0,function_words,,3PL,Irish,WS
+Irish_WS,item_1149,mé,word,produces; doesn't produce,mé,pronouns,me,me,0,function_words,,1SG,Irish,WS
+Irish_WS,item_1151,miseie,word,produces; doesn't produce,mise,pronouns,me,me,0,function_words,,1SG,Irish,WS
+Irish_WS,item_1152,mo,word,produces; doesn't produce,mo,pronouns,my,my,0,function_words,,1SG.POSS,Irish,WS
+Irish_WS,item_1154,muid,word,produces; doesn't produce,muid_sinn,pronouns,we,we,0,function_words,,1PL,Irish,WS
+Irish_WS,item_1156,sé,word,produces; doesn't produce,sé,pronouns,he,he,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1158,seo,word,produces; doesn't produce,seo,pronouns,this,this,0,function_words,,this,Irish,WS
+Irish_WS,item_1160,sí,word,produces; doesn't produce,sí,pronouns,she,she,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1162,siad,word,produces; doesn't produce,siad,pronouns,they,they,0,function_words,,3PL,Irish,WS
+Irish_WS,item_1164,sibh,word,produces; doesn't produce,sibh_sibhse,pronouns,you (pl),ye,0,function_words,,2PL,Irish,WS
+Irish_WS,item_1166,sin,word,produces; doesn't produce,sin_san,pronouns,that,that,0,function_words,,that,Irish,WS
+Irish_WS,item_1168,tú,word,produces; doesn't produce,tú,pronouns,you,you,0,function_words,,2SG,Irish,WS
+Irish_WS,item_1170,tusa,word,produces; doesn't produce,tusa,pronouns,hey you,you,0,function_words,,2SG,Irish,WS
+Irish_WS,item_1171,agam,word,produces; doesn't produce,agam,pronouns,at me,,0,function_words,,1SG,Irish,WS
+Irish_WS,item_1172,agat,word,produces; doesn't produce,agat,pronouns,at you,,0,function_words,,2SG,Irish,WS
+Irish_WS,item_1173,aige,word,produces; doesn't produce,aige,pronouns,at him,,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1174,aici,word,produces; doesn't produce,aici,pronouns,at her,,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1175,againn,word,produces; doesn't produce,againn,pronouns,at us,,0,function_words,,1PL,Irish,WS
+Irish_WS,item_1176,dom,word,produces; doesn't produce,dom,pronouns,to me,,0,function_words,,1SG,Irish,WS
+Irish_WS,item_1177,duit,word,produces; doesn't produce,duit,pronouns,to you,,0,function_words,,2SG,Irish,WS
+Irish_WS,item_1178,dúinn,word,produces; doesn't produce,dúinn,pronouns,to us,,0,function_words,,1PL,Irish,WS
+Irish_WS,item_1179,liom,word,produces; doesn't produce,liom,pronouns,with me,,0,function_words,,1SG,Irish,WS
+Irish_WS,item_1180,leat,word,produces; doesn't produce,leat,pronouns,with you,,0,function_words,,2SG,Irish,WS
+Irish_WS,item_1181,leis,word,produces; doesn't produce,leis,pronouns,with him,with him,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1182,leí,word,produces; doesn't produce,leí,pronouns,with her,with her,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1183,linn,word,produces; doesn't produce,linn,pronouns,with us,with us,0,function_words,,1PL,Irish,WS
+Irish_WS,item_1184,orm,word,produces; doesn't produce,orm,pronouns,on me,on me,0,function_words,,1SG,Irish,WS
+Irish_WS,item_1185,ort,word,produces; doesn't produce,ort,pronouns,on you,on you,0,function_words,,2SG,Irish,WS
+Irish_WS,item_1186,air,word,produces; doesn't produce,air,pronouns,on him,on him,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1187,uirthi,word,produces; doesn't produce,uirthi,pronouns,on her,on her,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1188,orainn,word,produces; doesn't produce,orainn,pronouns,on us,on us,0,function_words,,1PL,Irish,WS
+Irish_WS,item_1189,díom,word,produces; doesn't produce,díom,pronouns,off me,off me,0,function_words,,1SG,Irish,WS
+Irish_WS,item_1190,díot,word,produces; doesn't produce,díot,pronouns,off you,off you,0,function_words,,2SG,Irish,WS
+Irish_WS,item_1191,uaim,word,produces; doesn't produce,uaim,pronouns,from me,from me,0,function_words,,1SG,Irish,WS
+Irish_WS,item_1192,uait,word,produces; doesn't produce,uait,pronouns,from you,from you,0,function_words,,2SG,Irish,WS
+Irish_WS,item_1193,uaidh,word,produces; doesn't produce,uaidh,pronouns,from him,from him,0,function_words,,3SG,Irish,WS
+Irish_WS,item_1194,uainn,word,produces; doesn't produce,uainn,pronouns,from us,from us,0,function_words,,1PL,Irish,WS
+Italian_WG,item_403,io,word,understands; produces,io,pronouns,I,i,,,,1SG,Italian,WG
+Italian_WG,item_404,tu,word,understands; produces,tu,pronouns,you,you,,,,2SG,Italian,WG
+Italian_WG,item_405,lui,word,understands; produces,lui,pronouns,he,he,,,,3SG,Italian,WG
+Italian_WG,item_406,lei,word,understands; produces,lei,pronouns,she,she,,,,3SG,Italian,WG
+Italian_WG,item_407,noi,word,understands; produces,noi,pronouns,we/us,we,,,,1PL,Italian,WG
+Italian_WG,item_408,voi,word,understands; produces,voi,pronouns,you,you,,,,2PL,Italian,WG
+Italian_WG,item_409,loro,word,understands; produces,loro,pronouns,they/their/them,they,,,,3PL,Italian,WG
+Italian_WG,item_410,mio/a,word,understands; produces,mio/a,pronouns,mine/my,my,,,,1SG.POSS,Italian,WG
+Italian_WG,item_411,tuo/a,word,understands; produces,tuo/a,pronouns,your,your,,,,2SG.POSS,Italian,WG
+Italian_WG,item_412,suo/a,word,understands; produces,suo/a,pronouns,his/hers,his,,,,3SG.POSS,Italian,WG
+Italian_WG,item_413,me/mi,word,understands; produces,me/mi,pronouns,me/myself,me,,,,1SG.REFL,Italian,WG
+Italian_WG,item_414,quello/a,word,understands; produces,quello/a,pronouns,that,that,,,,that,Italian,WG
+Italian_WG,item_415,questo/a,word,understands; produces,questo/a,pronouns,this,this,,,,this,Italian,WG
+Italian_WS,item_579,io,word,produces,io,pronouns,I,i,,,,1SG,Italian,WS
+Italian_WS,item_580,tu,word,produces,tu,pronouns,you,you,,,,2SG,Italian,WS
+Italian_WS,item_581,lui,word,produces,lui,pronouns,he,he,,,,3SG,Italian,WS
+Italian_WS,item_582,lei,word,produces,lei,pronouns,she,she,,,,3SG,Italian,WS
+Italian_WS,item_583,noi,word,produces,noi,pronouns,we/us,we,,,,1PL,Italian,WS
+Italian_WS,item_584,voi,word,produces,voi,pronouns,you,you,,,,2PL,Italian,WS
+Italian_WS,item_585,loro,word,produces,loro,pronouns,they/their/them,they,,,,3PL,Italian,WS
+Italian_WS,item_586,mio/a,word,produces,mio/a,pronouns,mine/my,my,,,,1SG.POSS,Italian,WS
+Italian_WS,item_587,tuo/a,word,produces,tuo/a,pronouns,your,your,,,,2SG.POSS,Italian,WS
+Italian_WS,item_588,suo/a,word,produces,suo/a,pronouns,his/hers,his,,,,3SG.POSS,Italian,WS
+Italian_WS,item_589,nostro/a,word,produces,nostro/a,pronouns,our,,,,,1PL.POSS,Italian,WS
+Italian_WS,item_590,vostro/a,word,produces,vostro/a,pronouns,your,,,,,2PL.POSS,Italian,WS
+Italian_WS,item_591,me/mi,word,produces,me/mi,pronouns,me/myself,me,,,,1SG,Italian,WS
+Italian_WS,item_592,te/ti,word,produces,te/ti,pronouns,yourself,,,,,2SG,Italian,WS
+Italian_WS,item_593,ci,word,produces,ci,pronouns,us,,,,,1PL,Italian,WS
+Italian_WS,item_594,vi,word,produces,vi,pronouns,you,,,,,2PL,Italian,WS
+Italian_WS,item_595,si,word,produces,si,pronouns,himself/herself/itself/oneself,,,,,3SG,Italian,WS
+Italian_WS,item_596,che,word,produces,che,pronouns,who/that,,,,,,Italian,WS
+Italian_WS,item_597,quello/a,word,produces,quello/a,pronouns,that,that,,,,that,Italian,WS
+Italian_WS,item_598,questo/a,word,produces,questo/a,pronouns,this,this,,,,this,Italian,WS
+Italian_WS,item_599,gli,word,produces,gli,pronouns,him,,,,,3SG,Italian,WS
+Italian_WS,item_600,lo/a,word,produces,lo/a,pronouns,it,,,,,3SG,Italian,WS
+Italian_WS,item_601,li/e,word,produces,li/e,pronouns,it,,,,,3SG,Italian,WS
+Kigiriama_WG,item_283,p2mine,word,understands; produces,Changu,pronouns,Mine class 7,,,,,1SG.POSS,Kigiriama,WG
+Kigiriama_WG,item_284,p8this,word,understands; produces,ii,pronouns,This one (thing) class 9,,,,,this,Kigiriama,WG
+Kigiriama_WG,item_285,p4that,word,understands; produces,iryahu,pronouns,That one (thing) class 9,,,,,that,Kigiriama,WG
+Kigiriama_WG,item_286,p6that,word,understands; produces,iye,pronouns,That one (person) class 1,,,,,that,Kigiriama,WG
+Kigiriama_WG,item_287,p5that,word,understands; produces,Kiryahu,pronouns,that one ( something) class 7,,,,,that,Kigiriama,WG
+Kigiriama_WG,item_288,p1i,word,understands; produces,Mimi,pronouns,I,,,,,1SG,Kigiriama,WG
+Kigiriama_WG,item_289,p9what,word,understands; produces,Noni?,pronouns,What?,,,,,,Kigiriama,WG
+Kigiriama_WG,item_290,p10you,word,understands; produces,Uwe,pronouns,You,,,,,2SG,Kigiriama,WG
+Kigiriama_WG,item_291,p3mine,word,understands; produces,Yangu,pronouns,Mine class 9,,,,,1SG.POSS,Kigiriama,WG
+Kigiriama_WG,item_292,p7this,word,understands; produces,Yuyu,pronouns,This one (person) class 1,,,,,this,Kigiriama,WG
+Kigiriama_WS,item_568,v10idyuy,word,produces,Yuyu,pronouns,01dem1,,,,,this,Kigiriama,WS
+Kigiriama_WS,item_569,v20idyuy,word,produces,Yuyahu,pronouns,01dem2,,,,,that,Kigiriama,WS
+Kigiriama_WS,item_570,v30idiye,word,produces,Iye,pronouns,01dem3,,,,,that,Kigiriama,WS
+Kigiriama_WS,item_571,v40idmun,word,produces,Mungine,pronouns,01dem5,,,,,another,Kigiriama,WS
+Kigiriama_WS,item_572,v50idmwe,word,produces,mwenye,pronouns,01dem6,,,,,POSS,Kigiriama,WS
+Kigiriama_WS,item_573,v60ipwan,word,produces,Wangu,pronouns,01ps1,,,,,1SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_574,v70ipwak,word,produces,Wako,pronouns,01ps2,,,,,2SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_575,v80ipwak,word,produces,Wakwe,pronouns,01ps3,,,,,3SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_576,v90ipweh,word,produces,Wehu,pronouns,01ps4,,,,,1PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_577,v100ipwe,word,produces,Wenu,pronouns,01ps5,,,,,2PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_578,v110ipwo,word,produces,Wao,pronouns,01ps6,,,,,3PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_579,v1202daa,word,produces,Aa,pronouns,02dem1,,,,,these,Kigiriama,WS
+Kigiriama_WS,item_580,v1302dar,word,produces,Aryahu,pronouns,02dem2,,,,,those,Kigiriama,WS
+Kigiriama_WS,item_581,v1402dao,word,produces,Ao,pronouns,02dem3,,,,,those,Kigiriama,WS
+Kigiriama_WS,item_582,v151502d,word,produces,osi,pronouns,02dem4,,,,,all,Kigiriama,WS
+Kigiriama_WS,item_583,v1602dan,word,produces,angine,pronouns,02dem5,,,,,other,Kigiriama,WS
+Kigiriama_WS,item_584,v1702den,word,produces,enye,pronouns,02dem6,,,,,POSS,Kigiriama,WS
+Kigiriama_WS,item_585,v1805dri,word,produces,Riri,pronouns,05dem1,,,,,this,Kigiriama,WS
+Kigiriama_WS,item_586,v1905dri,word,produces,Riryahu,pronouns,05dem2,,,,,this,Kigiriama,WS
+Kigiriama_WS,item_587,v2005dri,word,produces,Riro,pronouns,05dem3,,,,,that,Kigiriama,WS
+Kigiriama_WS,item_588,v2105dro,word,produces,Rosi,pronouns,05dem4,,,,,that,Kigiriama,WS
+Kigiriama_WS,item_589,v2205dri,word,produces,Ringine,pronouns,05dem5,,,,,another,Kigiriama,WS
+Kigiriama_WS,item_590,v2305dre,word,produces,Renye,pronouns,05dem6,,,,,POSS,Kigiriama,WS
+Kigiriama_WS,item_591,v2405pra,word,produces,Rangu,pronouns,05ps1,,,,,1SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_592,v2505pra,word,produces,Rako,pronouns,05ps2,,,,,2SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_593,v2605pra,word,produces,Rakwe,pronouns,05ps3,,,,,3SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_594,v2705pre,word,produces,Rehu,pronouns,05ps4,,,,,1PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_595,v2805pre,word,produces,Renu,pronouns,05ps5,,,,,2PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_596,v2905pra,word,produces,Rao,pronouns,05ps6,,,,,3PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_597,v3006dga,word,produces,Gaga,pronouns,06dem1,,,,,these,Kigiriama,WS
+Kigiriama_WS,item_598,v3106dga,word,produces,Garyahu,pronouns,06dem2,,,,,those,Kigiriama,WS
+Kigiriama_WS,item_599,v3206dga,word,produces,Gago,pronouns,06dem3,,,,,those,Kigiriama,WS
+Kigiriama_WS,item_600,v3306dgo,word,produces,Gosi,pronouns,06dem4,,,,,all,Kigiriama,WS
+Kigiriama_WS,item_601,v3406dma,word,produces,Mangine,pronouns,06dem5,,,,,other,Kigiriama,WS
+Kigiriama_WS,item_602,v3506dge,word,produces,Genye,pronouns,06dem6,,,,,POSS,Kigiriama,WS
+Kigiriama_WS,item_603,v3607dki,word,produces,Kiki,pronouns,07dem1,,,,,this,Kigiriama,WS
+Kigiriama_WS,item_604,v3707dki,word,produces,Kiryahu,pronouns,07dem2,,,,,this,Kigiriama,WS
+Kigiriama_WS,item_605,v3807dki,word,produces,Kicho,pronouns,07dem3,,,,,that,Kigiriama,WS
+Kigiriama_WS,item_606,v3907dch,word,produces,Chosi,pronouns,07dem4,,,,,that,Kigiriama,WS
+Kigiriama_WS,item_607,v4007dki,word,produces,Kingine,pronouns,07dem5,,,,,another,Kigiriama,WS
+Kigiriama_WS,item_608,v4107pch,word,produces,Changu,pronouns,07ps1,,,,,1SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_609,v4207pch,word,produces,Chako,pronouns,07ps2,,,,,2SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_610,v4307pch,word,produces,Chakwe,pronouns,07ps3,,,,,3SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_611,v4407pch,word,produces,Chehu,pronouns,07ps4,,,,,1PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_612,v4507pch,word,produces,Chenu,pronouns,07ps5,,,,,2PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_613,v4607pch,word,produces,Chao,pronouns,07ps6,,,,,3PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_614,v4708dvi,word,produces,Vivi,pronouns,08dem1,,,,,these,Kigiriama,WS
+Kigiriama_WS,item_615,v4808dvi,word,produces,Viryahu,pronouns,08dem2,,,,,those,Kigiriama,WS
+Kigiriama_WS,item_616,v4908dvi,word,produces,Vivyo,pronouns,08dem3,,,,,those,Kigiriama,WS
+Kigiriama_WS,item_617,v5008dvi,word,produces,Vingine,pronouns,08dem4,,,,,other,Kigiriama,WS
+Kigiriama_WS,item_618,v5109dli,word,produces,Ii,pronouns,09dem1,,,,,this,Kigiriama,WS
+Kigiriama_WS,item_619,v5209dir,word,produces,Iryahu,pronouns,09dem2,,,,,that,Kigiriama,WS
+Kigiriama_WS,item_620,v5309diy,word,produces,Iyo,pronouns,09dem3,,,,,that,Kigiriama,WS
+Kigiriama_WS,item_621,v5409dyo,word,produces,Yosi,pronouns,09dem4,,,,,all,Kigiriama,WS
+Kigiriama_WS,item_622,v5509din,word,produces,Ingine,pronouns,09dem5,,,,,other,Kigiriama,WS
+Kigiriama_WS,item_623,v5609dye,word,produces,yenye,pronouns,09dem6,,,,,POSS,Kigiriama,WS
+Kigiriama_WS,item_624,v5709pya,word,produces,Yangu,pronouns,09ps1,,,,,1SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_625,v5809pya,word,produces,Yako,pronouns,09ps2,,,,,2SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_626,v5909pya,word,produces,Yakwe,pronouns,09ps3,,,,,3SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_627,v6009pye,word,produces,Yehu,pronouns,09ps4,,,,,1PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_628,v6109pye,word,produces,Yenu,pronouns,09ps5,,,,,2PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_629,v6209pya,word,produces,Yao,pronouns,09ps6,,,,,3PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_630,v6310dzi,word,produces,Zizi,pronouns,10dem1,,,,,these,Kigiriama,WS
+Kigiriama_WS,item_631,v6410dzi,word,produces,Ziryahu,pronouns,10dem2,,,,,those,Kigiriama,WS
+Kigiriama_WS,item_632,v6510dzi,word,produces,Zizo,pronouns,10dem3,,,,,those,Kigiriama,WS
+Kigiriama_WS,item_633,v6610dzo,word,produces,Zosi,pronouns,10dem4,,,,,all,Kigiriama,WS
+Kigiriama_WS,item_634,v6710dze,word,produces,Zenye,pronouns,10dem6,,,,,POSS,Kigiriama,WS
+Kigiriama_WS,item_635,v6810pza,word,produces,Zangu,pronouns,10ps1,,,,,1SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_636,v6910pza,word,produces,Zako,pronouns,10ps2,,,,,2SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_637,v7010pza,word,produces,Zakwe,pronouns,10ps3,,,,,3SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_638,v7110pze,word,produces,Zehu,pronouns,10ps4,,,,,1PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_639,v7210pze,word,produces,Zenu,pronouns,10ps5,,,,,2PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_640,v7310pza,word,produces,Zao,pronouns,10ps6,,,,,3PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_641,v7416dha,word,produces,Haha,pronouns,16dem1,,,,,this,Kigiriama,WS
+Kigiriama_WS,item_642,v7516dha,word,produces,Haryahu,pronouns,16dem2,,,,,this,Kigiriama,WS
+Kigiriama_WS,item_643,v7616dha,word,produces,Haho,pronouns,16dem3,,,,,that,Kigiriama,WS
+Kigiriama_WS,item_644,v7716dha,word,produces,Hangine,pronouns,16dem5,,,,,another,Kigiriama,WS
+Kigiriama_WS,item_645,v7816dhe,word,produces,Henye,pronouns,16dem6,,,,,POSS,Kigiriama,WS
+Kigiriama_WS,item_646,v7917dku,word,produces,Kuku,pronouns,17dem1,,,,,here,Kigiriama,WS
+Kigiriama_WS,item_647,v8017dku,word,produces,Kuryahu,pronouns,17dem2,,,,,there,Kigiriama,WS
+Kigiriama_WS,item_648,v8117dku,word,produces,Kuko,pronouns,17dem3,,,,,there,Kigiriama,WS
+Kigiriama_WS,item_649,v8217dko,word,produces,Kosi,pronouns,17dem4,,,,,all,Kigiriama,WS
+Kigiriama_WS,item_650,v8317dku,word,produces,Kungine,pronouns,17dem5,,,,,another,Kigiriama,WS
+Kigiriama_WS,item_651,v8417pkw,word,produces,Kwangu,pronouns,17ps1,,,,,1SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_652,v8517pkw,word,produces,Kwako,pronouns,17ps2,,,,,2SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_653,v8617pkw,word,produces,Kwakwe,pronouns,17ps3,,,,,3SG.POSS,Kigiriama,WS
+Kigiriama_WS,item_654,v8717pkw,word,produces,Kwehu,pronouns,17ps4,,,,,1PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_655,v8817pkw,word,produces,Kwenu,pronouns,17ps5,,,,,2PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_656,v8917pkw,word,produces,Kwao,pronouns,17ps6,,,,,3PL.POSS,Kigiriama,WS
+Kigiriama_WS,item_657,v90permi,word,produces,Mimi,pronouns,pers1,,,,,1SG,Kigiriama,WS
+Kigiriama_WS,item_658,v91persi,word,produces,Siswi,pronouns,pers2,,,,,1PL,Kigiriama,WS
+Kigiriama_WS,item_659,v92peruw,word,produces,Uwe,pronouns,pers3,,,,,2SG,Kigiriama,WS
+Kigiriama_WS,item_660,v93periy,word,produces,Iye,pronouns,pers4,,,,,3SG,Kigiriama,WS
+Kiswahili_WG,item_283,p2mine,word,understands; produces,Changu,pronouns,mine class 7,mine,,,,1SG.POSS,Kiswahili,WG
+Kiswahili_WG,item_284,p8this,word,understands; produces,Hii,pronouns,This one (thing) class 9,this,,,,this,Kiswahili,WG
+Kiswahili_WG,item_285,p4that,word,understands; produces,Ile,pronouns,that one (thing) class 9,that,,,,that,Kiswahili,WG
+Kiswahili_WG,item_286,p6that,word,understands; produces,huyo,pronouns,that one (a person) class 1,he,,,,that,Kiswahili,WG
+Kiswahili_WG,item_287,p5that,word,understands; produces,Kile,pronouns,That one (thing) class 7,that,,,,that,Kiswahili,WG
+Kiswahili_WG,item_288,p1i,word,understands; produces,Mimi,pronouns,I,,,,,1SG,Kiswahili,WG
+Kiswahili_WG,item_289,p9what,word,understands; produces,Nini,pronouns,what,why,,,,,Kiswahili,WG
+Kiswahili_WG,item_290,p10you,word,understands; produces,Wewe,pronouns,You,you,,,,2SG,Kiswahili,WG
+Kiswahili_WG,item_291,p3mine,word,understands; produces,Yangu,pronouns,mine class 9,my,,,,1SG.POSS,Kiswahili,WG
+Kiswahili_WG,item_292,p7this,word,understands; produces,Huyu,pronouns,This one (someone) class 1,her,,,,this,Kiswahili,WG
+Kiswahili_WS,item_568,v10idhu,word,produces,Huyu,pronouns,01dem1,her,,,,this,Kiswahili,WS
+Kiswahili_WS,item_569,v20idyu,word,produces,Yule,pronouns,01dem2,he,,,,that,Kiswahili,WS
+Kiswahili_WS,item_570,v30idhu,word,produces,Huyo,pronouns,01dem3,he,,,,that,Kiswahili,WS
+Kiswahili_WS,item_571,v40idmw,word,produces,Mwingine,pronouns,01dem5,another,,,,another,Kiswahili,WS
+Kiswahili_WS,item_572,v50idmw,word,produces,Mwenye,pronouns,01dem6,self,,,,POSS,Kiswahili,WS
+Kiswahili_WS,item_573,v60ipwa,word,produces,Wangu,pronouns,01ps1,mine,,,,1SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_574,v70ipwak,word,produces,Wako,pronouns,01ps2,to you,,,,2SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_575,v80ipwa,word,produces,Wake,pronouns,01ps3,his,,,,3SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_576,v90ipwe,word,produces,Wetu,pronouns,01ps4,our,,,,1PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_577,v100ipwe,word,produces,Wenu,pronouns,01ps5,,,,,2PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_578,v110ipwa,word,produces,Wao,pronouns,01ps6,they,,,,3PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_579,v1202dha,word,produces,Hawa,pronouns,02dem1,them,,,,these,Kiswahili,WS
+Kiswahili_WS,item_580,v1302dw,word,produces,Wale,pronouns,02dem2,those,,,,those,Kiswahili,WS
+Kiswahili_WS,item_581,v1402dha,word,produces,Hao,pronouns,02dem3,them,,,,those,Kiswahili,WS
+Kiswahili_WS,item_582,v1502dwo,word,produces,Wote,pronouns,02dem4,all,,,,all,Kiswahili,WS
+Kiswahili_WS,item_583,v1602dwe,word,produces,Wengine,pronouns,02dem5,other,,,,other,Kiswahili,WS
+Kiswahili_WS,item_584,v1702dwe,word,produces,Wenye,pronouns,02dem6,them,,,,POSS,Kiswahili,WS
+Kiswahili_WS,item_585,v1805dhi,word,produces,Hili,pronouns,05dem1,this,,,,this,Kiswahili,WS
+Kiswahili_WS,item_586,v1905dli,word,produces,Lile,pronouns,05dem2,that,,,,this,Kiswahili,WS
+Kiswahili_WS,item_587,v2005dhi,word,produces,Hilo,pronouns,05dem3,that,,,,that,Kiswahili,WS
+Kiswahili_WS,item_588,v2105dlo,word,produces,Lote,pronouns,05dem4,all,,,,that,Kiswahili,WS
+Kiswahili_WS,item_589,v2205dli,word,produces,Lingine,pronouns,05dem5,another,,,,another,Kiswahili,WS
+Kiswahili_WS,item_590,v2305dle,word,produces,Lenye,pronouns,05dem6,with,,,,POSS,Kiswahili,WS
+Kiswahili_WS,item_591,v2405pla,word,produces,Langu,pronouns,05ps1,mine,,,,1SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_592,v2505pla,word,produces,Lako,pronouns,05ps2,,,,,2SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_593,v2605pla,word,produces,Lake,pronouns,05ps3,his,,,,3SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_594,v2705ple,word,produces,Letu,pronouns,05ps4,,,,,1PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_595,v2805ple,word,produces,Lenu,pronouns,05ps5,,,,,2PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_596,v2905pla,word,produces,Lao,pronouns,05ps6,theirs,,,,3PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_597,v3006dha,word,produces,Haya,pronouns,06dem1,these,,,,these,Kiswahili,WS
+Kiswahili_WS,item_598,v3106dya,word,produces,Yale,pronouns,06dem2,those,,,,those,Kiswahili,WS
+Kiswahili_WS,item_599,v3206dha,word,produces,Hayo,pronouns,06dem3,those,,,,those,Kiswahili,WS
+Kiswahili_WS,item_600,v3306dyo,word,produces,Yote,pronouns,06dem4,,,,,all,Kiswahili,WS
+Kiswahili_WS,item_601,v3406dme,word,produces,Mengine,pronouns,06dem5,,,,,other,Kiswahili,WS
+Kiswahili_WS,item_602,v3506dye,word,produces,Yenye,pronouns,06dem6,with,,,,POSS,Kiswahili,WS
+Kiswahili_WS,item_603,v3607dhi,word,produces,Hiki,pronouns,07dem1,this,,,,this,Kiswahili,WS
+Kiswahili_WS,item_604,v3707dki,word,produces,kile,pronouns,07dem2,that,,,,this,Kiswahili,WS
+Kiswahili_WS,item_605,v3807dhi,word,produces,Hicho,pronouns,07dem3,it,,,,that,Kiswahili,WS
+Kiswahili_WS,item_606,v3907dch,word,produces,Chote,pronouns,07dem4,all,,,,that,Kiswahili,WS
+Kiswahili_WS,item_607,v4007dki,word,produces,Kingine,pronouns,07dem5,another,,,,another,Kiswahili,WS
+Kiswahili_WS,item_608,v4107pch,word,produces,Changu,pronouns,07ps1,mine,,,,1SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_609,v4207pch,word,produces,Chako,pronouns,07ps2,,,,,2SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_610,v4307pch,word,produces,Chake,pronouns,07ps3,his,,,,3SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_611,v4407pch,word,produces,Chetu,pronouns,07ps4,,,,,1PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_612,v4507pch,word,produces,Chenu,pronouns,07ps5,,,,,2PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_613,v4607pch,word,produces,Chao,pronouns,07ps6,theirs,,,,3PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_614,v4708dhi,word,produces,Hivi,pronouns,08dem1,this,,,,these,Kiswahili,WS
+Kiswahili_WS,item_615,v4808dvi,word,produces,Vile,pronouns,08dem2,,,,,those,Kiswahili,WS
+Kiswahili_WS,item_616,v4908dhi,word,produces,Hivyo,pronouns,08dem3,those,,,,those,Kiswahili,WS
+Kiswahili_WS,item_617,v5008dvi,word,produces,Vingine,pronouns,08dem4,another,,,,other,Kiswahili,WS
+Kiswahili_WS,item_618,v5109dhi,word,produces,Hii,pronouns,09dem1,this,,,,this,Kiswahili,WS
+Kiswahili_WS,item_619,v5209dil,word,produces,Ile,pronouns,09dem2,that,,,,that,Kiswahili,WS
+Kiswahili_WS,item_620,v5309dhi,word,produces,Hiyo,pronouns,09dem3,that,,,,that,Kiswahili,WS
+Kiswahili_WS,item_621,v5409dyo,word,produces,Yote,pronouns,09dem4,,,,,all,Kiswahili,WS
+Kiswahili_WS,item_622,v5509dny,word,produces,Nyingine,pronouns,09dem5,,,,,other,Kiswahili,WS
+Kiswahili_WS,item_623,v5609dye,word,produces,yenye,pronouns,09dem6,with,,,,POSS,Kiswahili,WS
+Kiswahili_WS,item_624,v5709pya,word,produces,Yangu,pronouns,09ps1,my,,,,1SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_625,v5809pya,word,produces,Yako,pronouns,09ps2,,,,,2SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_626,v5909pya,word,produces,Yake,pronouns,09ps3,his,,,,3SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_627,v6009pye,word,produces,Yetu,pronouns,09ps4,our,,,,1PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_628,v6109pye,word,produces,Yenu,pronouns,09ps5,,,,,2PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_629,v6209pya,word,produces,Yao,pronouns,09ps6,them,,,,3PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_630,v6310hi,word,produces,Hizi,pronouns,10dem1,these,,,,these,Kiswahili,WS
+Kiswahili_WS,item_631,v6410zi,word,produces,Zile,pronouns,10dem2,those,,,,those,Kiswahili,WS
+Kiswahili_WS,item_632,v6510hi,word,produces,Hizo,pronouns,10dem3,those,,,,those,Kiswahili,WS
+Kiswahili_WS,item_633,v6610zo,word,produces,Zote,pronouns,10dem4,all,,,,all,Kiswahili,WS
+Kiswahili_WS,item_634,v6710dze,word,produces,Zenye,pronouns,10dem6,with,,,,POSS,Kiswahili,WS
+Kiswahili_WS,item_635,v6810pza,word,produces,Zangu,pronouns,10ps1,mine,,,,1SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_636,v6910pza,word,produces,Zako,pronouns,10ps2,,,,,2SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_637,v7010pza,word,produces,Zake,pronouns,10ps3,his,,,,3SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_638,v7110pze,word,produces,Zetu,pronouns,10ps4,,,,,1PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_639,v7210pze,word,produces,Zenu,pronouns,10ps5,,,,,2PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_640,v7310pza,word,produces,Zao,pronouns,10ps6,theirs,,,,3PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_641,v7416dha,word,produces,Hapa,pronouns,16dem1,,,,,this,Kiswahili,WS
+Kiswahili_WS,item_642,v7516dpa,word,produces,Pale,pronouns,16dem2,,,,,this,Kiswahili,WS
+Kiswahili_WS,item_643,v7616dha,word,produces,Hapo,pronouns,16dem3,above,,,,that,Kiswahili,WS
+Kiswahili_WS,item_644,v7716dpe,word,produces,Pengine,pronouns,16dem5,,,,,another,Kiswahili,WS
+Kiswahili_WS,item_645,v7816dpe,word,produces,penye,pronouns,16dem6,,,,,POSS,Kiswahili,WS
+Kiswahili_WS,item_646,v7917dhu,word,produces,Huku,pronouns,17dem1,,,,,here,Kiswahili,WS
+Kiswahili_WS,item_647,v8017dku,word,produces,Kule,pronouns,17dem2,there,,,,there,Kiswahili,WS
+Kiswahili_WS,item_648,v8117dhu,word,produces,Huko,pronouns,17dem3,there,,,,there,Kiswahili,WS
+Kiswahili_WS,item_649,v8217dkw,word,produces,kwote,pronouns,17dem4,all,,,,all,Kiswahili,WS
+Kiswahili_WS,item_650,v8317dku,word,produces,Kungine,pronouns,17dem5,another,,,,another,Kiswahili,WS
+Kiswahili_WS,item_651,v8417pkw,word,produces,Kwangu,pronouns,17ps1,,,,,1SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_652,v8517pkw,word,produces,Kwako,pronouns,17ps2,to you,,,,2SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_653,v8617pkw,word,produces,Kwake,pronouns,17ps3,,,,,3SG.POSS,Kiswahili,WS
+Kiswahili_WS,item_654,v8717pkw,word,produces,Kwetu,pronouns,17ps4,,,,,1PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_655,v8817pkw,word,produces,Kwenu,pronouns,17ps5,,,,,2PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_656,v8917pkw,word,produces,Kwao,pronouns,17ps6,,,,,3PL.POSS,Kiswahili,WS
+Kiswahili_WS,item_657,v90permi,word,produces,Mimi,pronouns,pers1,,,,,1SG,Kiswahili,WS
+Kiswahili_WS,item_658,v91persi,word,produces,Sisi,pronouns,pers2,us,,,,1PL,Kiswahili,WS
+Kiswahili_WS,item_659,v92perwe,word,produces,Wewe,pronouns,pers3,you,,,,2SG,Kiswahili,WS
+Kiswahili_WS,item_660,v93perye,word,produces,Yeye,pronouns,pers4,her,,,,3SG,Kiswahili,WS
+Korean_WG,item_197,item_197,word,understands; produces,거기,pronouns,there,there,,,,there,Korean,WG
+Korean_WG,item_198,item_198,word,understands; produces,나/내,pronouns,I,I,,,,1SG,Korean,WG
+Korean_WG,item_199,item_199,word,understands; produces,누구,pronouns,who,who,,,,,Korean,WG
+Korean_WG,item_200,item_200,word,understands; produces,뭐/무엇,pronouns,what,what,,,,,Korean,WG
+Korean_WG,item_201,item_201,word,understands; produces,여기,pronouns,here,here,,,,here,Korean,WG
+Korean_WG,item_202,item_202,word,understands; produces,이거/요거,pronouns,this,this,,,,this,Korean,WG
+Korean_WG,item_203,item_203,word,understands; produces,저거,pronouns,that,that,,,,that,Korean,WG
+Korean_WS,item_629,item_629,word,understands; produces,그거,pronouns,that,that,,,,that,Korean,WS
+Korean_WS,item_630,item_630,word,understands; produces,나,pronouns,I,i,,,,1SG,Korean,WS
+Korean_WS,item_631,item_631,word,understands; produces,너,pronouns,you,you,,,,2SG,Korean,WS
+Korean_WS,item_632,item_632,word,understands; produces,여기,pronouns,here,here,,,,here,Korean,WS
+Korean_WS,item_633,item_633,word,understands; produces,우리,pronouns,we,we,,,,1PL,Korean,WS
+Korean_WS,item_634,item_634,word,understands; produces,이거,pronouns,this,this,,,,this,Korean,WS
+Korean_WS,item_635,item_635,word,understands; produces,저기,pronouns,over there,,,,,there,Korean,WS
+Latvian_WG,item_370,370_cits_cita,word,understands; produces,cits/cita,pronouns,other,,,,,other,Latvian,WG
+Latvian_WG,item_371,371_es,word,understands; produces,es,pronouns,I.nom.sg,,,,,1SG,Latvian,WG
+Latvian_WG,item_372,372_man,word,understands; produces,man,pronouns,I.dat.sg,,,,,1SG,Latvian,WG
+Latvian_WG,item_373,373_mans_mana,word,understands; produces,mans/mana,pronouns,my.fem.sg/my.masc.sg,,,,,1SG.POSS,Latvian,WG
+Latvian_WG,item_374,374_pats_pati,word,understands; produces,pats/pati,pronouns,"self.masc.sg, self.fem.sg",,,,,REFL,Latvian,WG
+Latvian_WG,item_375,375_sis_si,word,understands; produces,šis/ šī,pronouns,this.masc.sg/this.fem.sg,this,,,,this,Latvian,WG
+Latvian_WG,item_376,376_tas_ta,word,understands; produces,tas/ tā,pronouns,this.masc.sg/that.fem.sg,that,,,,this,Latvian,WG
+Latvian_WG,item_377,377_tavs_tava,word,understands; produces,tavs/tava,pronouns,your.masc.sg./yours.fem.sg,your,,,,2SG.POSS,Latvian,WG
+Latvian_WG,item_378,378_tev,word,understands; produces,tev,pronouns,you.dat.sg,you,,,,2SG,Latvian,WG
+Latvian_WG,item_379,379_tu,word,understands; produces,tu,pronouns,you.nom.sg,you,,,,2SG,Latvian,WG
+Latvian_WG,item_380,380_savs_sava,word,understands; produces,savs/sava,pronouns,own.masc.sg/own.fem.sg,their,,,,REFL.POSS,Latvian,WG
+Latvian_WG,item_381,381_vins_vina_,word,understands; produces,viņš/viņa/viņi/viņas,pronouns,he/she/they.masc./they.fem,he,,,,3SG,Latvian,WG
+Latvian_WG,item_382,382_viss_visi_,word,understands; produces,viss/visi/visas,pronouns,everything/all.masc./all.fem,,,,,all,Latvian,WG
+Latvian_WS,item_609,609_es,word,produces,es,pronouns,I,,,,,1SG,Latvian,WS
+Latvian_WS,item_610,610_jums,word,produces,jums,pronouns,you.Dat.pl.,,,,,2PL,Latvian,WS
+Latvian_WS,item_611,611_jus,word,produces,jūs,pronouns,you.Nom.pl.,,,,,2PL,Latvian,WS
+Latvian_WS,item_612,612_jusu,word,produces,jūsu,pronouns,your.pl,,,,,2PL.POSS,Latvian,WS
+Latvian_WS,item_613,613_man,word,produces,man,pronouns,me.Dat.sg.,,,,,1SG,Latvian,WS
+Latvian_WS,item_614,614_manis,word,produces,manis,pronouns,I.Gen.sg,,,,,1SG.POSS,Latvian,WS
+Latvian_WS,item_615,615_mans_mana,word,produces,mans/mana,pronouns,"my.masc.sg, my.fem.sg",,,,,1SG.POSS,Latvian,WS
+Latvian_WS,item_616,616_mes,word,produces,mēs,pronouns,we.nom.sg,,,,,1PL,Latvian,WS
+Latvian_WS,item_617,617_mums,word,produces,mums,pronouns,we.dat.pl.,,,,,1PL,Latvian,WS
+Latvian_WS,item_618,618_musu,word,produces,mūsu,pronouns,our,,,,,1PL.POSS,Latvian,WS
+Latvian_WS,item_619,619_pats_pati,word,produces,pats/pati,pronouns,"self.masc.sg, self.fem.sg",,,,,REFL,Latvian,WS
+Latvian_WS,item_620,620_si,word,produces,šī,pronouns,this.fem.sg,,,,,this,Latvian,WS
+Latvian_WS,item_621,621_sie,word,produces,šie,pronouns,this.masc.pl,,,,,these,Latvian,WS
+Latvian_WS,item_622,622_sis,word,produces,šis,pronouns,this.masc.sg.,,,,,this,Latvian,WS
+Latvian_WS,item_623,623_sis,word,produces,šīs,pronouns,this.fem.pl.,,,,,these,Latvian,WS
+Latvian_WS,item_624,624_ta,word,produces,tā,pronouns,that.fem.sg,,,,,that,Latvian,WS
+Latvian_WS,item_625,625_tas,word,produces,tas,pronouns,that.masc.sg,,,,,that,Latvian,WS
+Latvian_WS,item_626,626_tas,word,produces,tās,pronouns,that.fem.pl,,,,,those,Latvian,WS
+Latvian_WS,item_627,627_tavs_tava,word,produces,"tavs, tava",pronouns,"yours.masc.sg, yours.fem.sg",,,,,2SG.POSS,Latvian,WS
+Latvian_WS,item_628,628_tev,word,produces,tev,pronouns,you.dat.sg,,,,,2SG,Latvian,WS
+Latvian_WS,item_629,629_tevis,word,produces,tevis,pronouns,you.gen.sg,,,,,2SG.POSS,Latvian,WS
+Latvian_WS,item_630,630_tie,word,produces,tie,pronouns,that.masc.pl.,,,,,those,Latvian,WS
+Latvian_WS,item_631,631_tu,word,produces,tu,pronouns,you.Nom.sg.,,,,,2SG,Latvian,WS
+Latvian_WS,item_632,632_vina,word,produces,viņa,pronouns,she.nom.sg,,,,,3SG,Latvian,WS
+Latvian_WS,item_633,633_vinai,word,produces,viņai,pronouns,she.dat.sg.,,,,,3SG,Latvian,WS
+Latvian_WS,item_634,634_vinam,word,produces,viņam,pronouns,he.dat.sg.,,,,,3SG,Latvian,WS
+Latvian_WS,item_635,635_vini,word,produces,viņi,pronouns,they.nom.pl.,,,,,3PL,Latvian,WS
+Latvian_WS,item_636,636_viniem,word,produces,viņiem,pronouns,they.dat.pl.,,,,,3PL,Latvian,WS
+Latvian_WS,item_637,637_vins,word,produces,viņš,pronouns,he.nom.sg.,,,,,3SG,Latvian,WS
+Mandarin_Beijing_IC,item_214,214_wo3,word,understands; produces,我,pronouns,I,I,,,,1SG,Mandarin (Beijing),IC
+Mandarin_Beijing_IC,item_215,215_zhe4ge5,word,understands; produces,这个,pronouns,this,this,,,,this,Mandarin (Beijing),IC
+Mandarin_Beijing_IC,item_216,216_na4ge5,word,understands; produces,那个,pronouns,that,that,,,,that,Mandarin (Beijing),IC
+Mandarin_Beijing_IC,item_217,217_zher4,word,understands; produces,这儿,pronouns,here,here,,,,here,Mandarin (Beijing),IC
+Mandarin_Beijing_IC,item_218,218_nar4,word,understands; produces,那儿,pronouns,there,there,,,,there,Mandarin (Beijing),IC
+Mandarin_Beijing_TC,item_670,ta1,word,produces,他(她),pronouns,he; she; him,he,,,,3SG,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_671,ta1de5,word,produces,他(她)的,pronouns,his; her,his,,,,3SG.POSS,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_672,ta1men5,word,produces,他们,pronouns,them,them,,,,3PL,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_673,ta1men5 de5,word,produces,他们的,pronouns,their,,,,,3PL.POSS,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_674,ni3,word,produces,你,pronouns,you,you,,,,2SG,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_675,ni3de5,word,produces,你的,pronouns,your,your,,,,2SG.POSS,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_676,ni3men5,word,produces,你们,pronouns,you,you,,,,2PL,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_677,ni3men5 de5,word,produces,你们的,pronouns,your,your,,,,2PL.POSS,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_678,wo3,word,produces,我,pronouns,I,I,,,,1SG,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_679,wo3de5,word,produces,我的,pronouns,mine; my,my,,,,1SG.POSS,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_680,wo3men5,word,produces,我们,pronouns,us; we,we,,,,1PL,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_681,wo3men5 de5,word,produces,我们的,pronouns,our,our,,,,1PL.POSS,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_682,wo3 zi4ji3,word,produces,我自己,pronouns,myself,,,,,1SG.REFL,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_683,zher4,word,produces,这儿,pronouns,here,here,,,,here,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_684,zhe4ge5,word,produces,这个,pronouns,this,this,,,,this,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_685,zhe4xie1,word,produces,这些,pronouns,these,these,,,,these,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_686,na4xie1,word,produces,那些,pronouns,those,those,,,,those,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_687,nar4,word,produces,那儿,pronouns,there,there,,,,there,Mandarin (Beijing),TC
+Mandarin_Beijing_TC,item_688,na4ge5,word,produces,那个,pronouns,that,that,,,,that,Mandarin (Beijing),TC
+Mandarin_Beijing_WS,item_702,P18ME,word,produces,我,pronouns,I,I,,,,1SG,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_703,P18MINE,word,produces,我的,pronouns,my,my,,,,1SG.POSS,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_704,P18SELF,word,produces,自己,pronouns,self,self,,,,REFL,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_705,P18SMINE,word,produces,自己的,pronouns,,,,,,REFL.POSS,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_706,P18YOU,word,produces,你,pronouns,you,you,,,,2SG,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_707,P18YOURS,word,produces,你的,pronouns,your,your,,,,2SG.POSS,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_708,P18HE,word,produces,他（她、它）,pronouns,,,,,,3SG,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_709,P18HIS,word,produces,他的,pronouns,his,his,,,,3SG.POSS,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_710,P18THIS,word,produces,这个,pronouns,this,this,,,,this,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_711,P18THAT,word,produces,那个,pronouns,that,that,,,,that,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_712,P18THOSE,word,produces,那些,pronouns,those,those,,,,those,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_713,P18THESE,word,produces,这些,pronouns,these,these,,,,these,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_714,P18BIEDE,word,produces,别的,pronouns,,,,,,other,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_715,P18US,word,produces,我们,pronouns,we,we,,,,1PL,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_716,P18ZANME,word,produces,咱们,pronouns,,,,,,1PL,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_717,P18YOUPL,word,produces,你们,pronouns,you,you,,,,2PL,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_718,P18THEY,word,produces,他们,pronouns,them,them,,,,3PL,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_719,P18USPOS,word,produces,我们的,pronouns,our,our,,,,1PL.POSS,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_720,P18ZANMS,word,produces,咱们的,pronouns,our,our,,,,1PL.POSS,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_721,P18YOUPP,word,produces,你们的,pronouns,your,your,,,,2PL.POSS,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_722,P18THEIR,word,produces,他们的,pronouns,,,,,,3PL.POSS,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_723,P18RENJI,word,produces,人家,pronouns,,,,,,other,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_724,P18QITA,word,produces,其它,pronouns,other,other,,,,other,Mandarin (Beijing),WS
+Mandarin_Beijing_WS,item_725,P18SOMEO,word,produces,别人,pronouns,,,,,,other,Mandarin (Beijing),WS
+Mandarin_Taiwanese_WG,item_343,d16_01,word,understands; produces,這個,pronouns,this,this,,,,this,Mandarin (Taiwanese),WG
+Mandarin_Taiwanese_WG,item_344,d16_02,word,understands; produces,一個(二、三個…),pronouns,"one (two, three...)",one two three,,,,one,Mandarin (Taiwanese),WG
+Mandarin_Taiwanese_WG,item_345,d16_03,word,understands; produces,好多,pronouns,much,much,,,,many,Mandarin (Taiwanese),WG
+Mandarin_Taiwanese_WG,item_346,d16_04,word,understands; produces,沒半個/沒有,pronouns,none,none,,,,none,Mandarin (Taiwanese),WG
+Mandarin_Taiwanese_WG,item_347,d16_05,word,understands; produces,還有,pronouns,furthermore,also,,,,also,Mandarin (Taiwanese),WG
+Mandarin_Taiwanese_WG,item_348,d16_06,word,understands; produces,那個,pronouns,that,that,,,,that,Mandarin (Taiwanese),WG
+Norwegian_WG,item_385,i_20_1,word,understands; produces,den,pronouns,the,the,,,,3SG,Norwegian,WG
+Norwegian_WG,item_386,i_20_2,word,understands; produces,denne,pronouns,this,this,,,,this,Norwegian,WG
+Norwegian_WG,item_387,i_20_3,word,understands; produces,det,pronouns,it,it,,,,that,Norwegian,WG
+Norwegian_WG,item_388,i_20_4,word,understands; produces,dette,pronouns,this,this,,,,this,Norwegian,WG
+Norwegian_WG,item_389,i_20_5,word,understands; produces,din,pronouns,your,your,,,,2SG.POSS,Norwegian,WG
+Norwegian_WG,item_390,i_20_6,word,understands; produces,du,pronouns,you,you,,,,2SG,Norwegian,WG
+Norwegian_WG,item_391,i_20_7,word,understands; produces,hans,pronouns,his,his,,,,3SG.POSS,Norwegian,WG
+Norwegian_WG,item_392,i_20_8,word,understands; produces,hennes,pronouns,her,her,,,,3SG.POSS,Norwegian,WG
+Norwegian_WG,item_393,i_20_9,word,understands; produces,jeg,pronouns,I,i,,,,1SG,Norwegian,WG
+Norwegian_WG,item_394,i_20_10,word,understands; produces,meg,pronouns,me,me,,,,1SG,Norwegian,WG
+Norwegian_WG,item_395,i_20_11,word,understands; produces,min,pronouns,my,my,,,,1SG.POSS,Norwegian,WG
+Norwegian_WS,item_600,i_17_1,word,produces,de,pronouns,they,,,,,3PL,Norwegian,WS
+Norwegian_WS,item_601,i_17_2,word,produces,deg,pronouns,you,,,,,2SG,Norwegian,WS
+Norwegian_WS,item_602,i_17_3,word,produces,deg selv,pronouns,yourself,,,,,2SG.REFL,Norwegian,WS
+Norwegian_WS,item_603,i_17_4,word,produces,dem,pronouns,them,,,,,3PL,Norwegian,WS
+Norwegian_WS,item_604,i_17_5,word,produces,den,pronouns,the,the,,,,3SG,Norwegian,WS
+Norwegian_WS,item_605,i_17_6,word,produces,denne,pronouns,this,this,,,,this,Norwegian,WS
+Norwegian_WS,item_606,i_17_7,word,produces,dere,pronouns,you all,,,,,2PL,Norwegian,WS
+Norwegian_WS,item_607,i_17_8,word,produces,deres,pronouns,your,,,,,2PL.POSS,Norwegian,WS
+Norwegian_WS,item_608,i_17_9,word,produces,det,pronouns,it,it,,,,that,Norwegian,WS
+Norwegian_WS,item_609,i_17_10,word,produces,dette,pronouns,this,this,,,,this,Norwegian,WS
+Norwegian_WS,item_610,i_17_11,word,produces,din,pronouns,your,your,,,,2SG.POSS,Norwegian,WS
+Norwegian_WS,item_611,i_17_12,word,produces,disse,pronouns,these,,,,,these,Norwegian,WS
+Norwegian_WS,item_612,i_17_13,word,produces,du,pronouns,you,you,,,,2SG,Norwegian,WS
+Norwegian_WS,item_613,i_17_14,word,produces,ham,pronouns,him,,,,,3SG,Norwegian,WS
+Norwegian_WS,item_614,i_17_15,word,produces,han,pronouns,he,,,,,3SG,Norwegian,WS
+Norwegian_WS,item_615,i_17_16,word,produces,hans,pronouns,his,his,,,,3SG.POSS,Norwegian,WS
+Norwegian_WS,item_616,i_17_17,word,produces,henne,pronouns,her,,,,,3SG,Norwegian,WS
+Norwegian_WS,item_617,i_17_18,word,produces,hennes,pronouns,her,her,,,,3SG.POSS,Norwegian,WS
+Norwegian_WS,item_618,i_17_19,word,produces,hun,pronouns,she,,,,,3SG,Norwegian,WS
+Norwegian_WS,item_619,i_17_20,word,produces,hverandre,pronouns,each other,,,,,REFL,Norwegian,WS
+Norwegian_WS,item_620,i_17_21,word,produces,jeg,pronouns,I,i,,,,1SG,Norwegian,WS
+Norwegian_WS,item_621,i_17_22,word,produces,man,pronouns,one,,,,,one,Norwegian,WS
+Norwegian_WS,item_622,i_17_23,word,produces,meg,pronouns,me,me,,,,1SG,Norwegian,WS
+Norwegian_WS,item_623,i_17_24,word,produces,meg selv,pronouns,myself,,,,,1SG.REFL,Norwegian,WS
+Norwegian_WS,item_624,i_17_25,word,produces,min,pronouns,my,my,,,,1SG.POSS,Norwegian,WS
+Norwegian_WS,item_625,i_17_26,word,produces,oss,pronouns,us,,,,,1PL,Norwegian,WS
+Norwegian_WS,item_626,i_17_27,word,produces,seg,pronouns,themselves,,,,,3PL.REFL,Norwegian,WS
+Norwegian_WS,item_627,i_17_28,word,produces,seg selv,pronouns,itself,,,,,3SG.REFL,Norwegian,WS
+Norwegian_WS,item_628,i_17_29,word,produces,sin,pronouns,its,,,,,3SG.POSS,Norwegian,WS
+Norwegian_WS,item_629,i_17_30,word,produces,vår,pronouns,our,,,,,1PL.POSS,Norwegian,WS
+Norwegian_WS,item_630,i_17_31,word,produces,vi,pronouns,we,,,,,1PL,Norwegian,WS
+Persian_WG,item_397,X1,word,understands; produces,آن,pronouns,,,,,,3SG,Persian,WS
+Persian_WG,item_398,X2,word,understands; produces,این,pronouns,this,this,,,,this,Persian,WS
+Persian_WG,item_399,X3,word,understands; produces,آنها,pronouns,they,they,,,,3PL,Persian,WS
+Persian_WG,item_400,X4,word,understands; produces,اینها,pronouns,these,these,,,,these,Persian,WS
+Persian_WG,item_401,X5,word,understands; produces,او,pronouns,she,she,,,,3SG,Persian,WS
+Persian_WG,item_402,X6,word,understands; produces,تو,pronouns,you,you,,,,2SG,Persian,WS
+Persian_WG,item_403,X7,word,understands; produces,شما,pronouns,you,you,,,,2PL,Persian,WS
+Persian_WG,item_404,X8,word,understands; produces,من,pronouns,i,I,,,,1SG,Persian,WS
+Persian_WG,item_405,X9,word,understands; produces,ما,pronouns,we,we,,,,1PL,Persian,WS
+Persian_WG,item_406,X10,word,understands; produces,مالِ من/ منِ,pronouns,,,,,,1SG.POSS,Persian,WS
+Persian_WG,item_407,X11,word,understands; produces,مال تو/ توئه,pronouns,yours/yours,,,,,2SG.POSS,Persian,WS
+Persian_WG,item_408,X12,word,understands; produces,مال اون/ اونه,pronouns,his/hers,,,,,3SG.POSS,Persian,WS
+Persian_WS,item_448,zamir1,word,produces,ان (اون),pronouns,,,,,,that,Persian,WG
+Persian_WS,item_449,zamir2,word,produces,انها,pronouns,,,,,,3PL,Persian,WG
+Persian_WS,item_450,zamir3,word,produces,او (اون),pronouns,he (she),,,,,3SG,Persian,WG
+Persian_WS,item_451,zamir4,word,produces,این,pronouns,this,this,,,,this,Persian,WG
+Persian_WS,item_452,zamir5,word,produces,اینها,pronouns,these,these,,,,these,Persian,WG
+Persian_WS,item_453,zamir6,word,produces,تو,pronouns,you,you,,,,2SG,Persian,WG
+Persian_WS,item_454,zamir7,word,produces,خودت,pronouns,yourself,,,,,2SG.REFL,Persian,WG
+Persian_WS,item_455,zamir8,word,produces,خودتان (خودتون),pronouns,yourself,,,,,2SG.REFL,Persian,WG
+Persian_WS,item_456,zamir9,word,produces,خودش,pronouns,himself,,,,,3SG.REFL,Persian,WG
+Persian_WS,item_457,zamir10,word,produces,خودشان,pronouns,themselves,,,,,3PL.REFL,Persian,WG
+Persian_WS,item_458,zamir11,word,produces,خودم,pronouns,by my own,,,,,1SG.REFL,Persian,WG
+Persian_WS,item_459,zamir12,word,produces,خودمان (خودمون),pronouns,ourselves,,,,,1PL.REFL,Persian,WG
+Persian_WS,item_460,zamir13,word,produces,شما,pronouns,you,you,,,,2PL,Persian,WG
+Persian_WS,item_461,zamir14,word,produces,ما,pronouns,we,we,,,,1PL,Persian,WG
+Persian_WS,item_462,zamir15,word,produces,من,pronouns,I,I,,,,1SG,Persian,WG
+Persian_WS,item_463,zamir16,word,produces,همان(همون),pronouns,same,same,,,,same,Persian,WG
+Portuguese_European_WG,item_289,aquilo,word,understands; produces,Aquilo,pronouns,That,,,,,that,Portuguese (European),WG
+Portuguese_European_WG,item_290,eu,word,understands; produces,Eu,pronouns,I/ me,,,,,1SG,Portuguese (European),WG
+Portuguese_European_WG,item_291,isto,word,understands; produces,Isto,pronouns,This,,,,,this,Portuguese (European),WG
+Portuguese_European_WG,item_292,meu,word,understands; produces,Meu,pronouns,Mine,,,,,1SG.POSS,Portuguese (European),WG
+Portuguese_European_WG,item_293,teu,word,understands; produces,Teu,pronouns,Yours,,,,,2SG.POSS,Portuguese (European),WG
+Portuguese_European_WG,item_294,dele,word,understands; produces,Dele/Dela,pronouns,His/hers,,,,,3SG.POSS,Portuguese (European),WG
+Portuguese_European_WS,item_553,aquele,word,produces,Aquele(a),pronouns,That,,,,,that,Portuguese (European),WS
+Portuguese_European_WS,item_554,aquilo,word,produces,Aquilo,pronouns,That,,,,,that,Portuguese (European),WS
+Portuguese_European_WS,item_555,comigo,word,produces,Comigo,pronouns,With me,,,,,1SG,Portuguese (European),WS
+Portuguese_European_WS,item_556,contigo,word,produces,Contigo,pronouns,With you,,,,,2SG,Portuguese (European),WS
+Portuguese_European_WS,item_557,desse,word,produces,Desse(a),pronouns,This/ That,,,,,that,Portuguese (European),WS
+Portuguese_European_WS,item_558,ele,word,produces,Ele(a),pronouns,He,,,,,3SG,Portuguese (European),WS
+Portuguese_European_WS,item_559,esse,word,produces,Esse(a),pronouns,That,,,,,that,Portuguese (European),WS
+Portuguese_European_WS,item_560,este,word,produces,Este(a),pronouns,This,,,,,this,Portuguese (European),WS
+Portuguese_European_WS,item_561,eu,word,produces,Eu,pronouns,I,,,,,1SG,Portuguese (European),WS
+Portuguese_European_WS,item_562,isso,word,produces,Isso,pronouns,This/ that,,,,,that,Portuguese (European),WS
+Portuguese_European_WS,item_563,isto,word,produces,Isto,pronouns,This,,,,,this,Portuguese (European),WS
+Portuguese_European_WS,item_564,me,word,produces,Me (dá-me),pronouns,"Me (as in ""gave me"")",,,,,1SG,Portuguese (European),WS
+Portuguese_European_WS,item_565,meu,word,produces,Meu,pronouns,Mine,,,,,1SG.POSS,Portuguese (European),WS
+Portuguese_European_WS,item_566,mim,word,produces,Mim (a mim),pronouns,Me,,,,,1SG,Portuguese (European),WS
+Portuguese_European_WS,item_567,minha,word,produces,Minha,pronouns,Mine,,,,,1SG.POSS,Portuguese (European),WS
+Portuguese_European_WS,item_568,nosso,word,produces,Nosso(a),pronouns,Ours,,,,,1PL.POSS,Portuguese (European),WS
+Portuguese_European_WS,item_569,outro,word,produces,Outro(a),pronouns,Other/ another,,,,,other,Portuguese (European),WS
+Portuguese_European_WS,item_570,teu,word,produces,Teu,pronouns,Yours,,,,,2SG.POSS,Portuguese (European),WS
+Portuguese_European_WS,item_571,ti,word,produces,Ti,pronouns,"You (as in ""important to you"")",,,,,2SG,Portuguese (European),WS
+Portuguese_European_WS,item_572,tu,word,produces,Tu,pronouns,You,,,,,2SG,Portuguese (European),WS
+Portuguese_European_WS,item_573,tua,word,produces,Tua,pronouns,Yours,,,,,2SG.POSS,Portuguese (European),WS
+Russian_WG,item_421,,word,understands; produces,мне/меня,pronouns,me,me,,,,1SG,Russian,WG
+Russian_WG,item_422,,word,understands; produces,мой/моя,pronouns,my,my,,,,1SG.POSS,Russian,WG
+Russian_WG,item_423,,word,understands; produces,мы,pronouns,us,we,,,,1PL,Russian,WG
+Russian_WG,item_424,,word,understands; produces,наш,pronouns,our,our,,,,1PL.POSS,Russian,WG
+Russian_WG,item_425,,word,understands; produces,он,pronouns,his,he,,,,3SG,Russian,WG
+Russian_WG,item_426,,word,understands; produces,она,pronouns,her,she,,,,3SG,Russian,WG
+Russian_WG,item_427,,word,understands; produces,сам/сама,pronouns,himself/herself,myself,,,,1SG.REFL,Russian,WG
+Russian_WG,item_428,,word,understands; produces,твой,pronouns,your,your,,,,2SG.POSS,Russian,WG
+Russian_WG,item_429,,word,understands; produces,тебе/ты,pronouns,you,you,,,,2SG,Russian,WG
+Russian_WG,item_430,,word,understands; produces,это/этот/эти,pronouns,this,this,,,,this,Russian,WG
+Russian_WG,item_431,,word,understands; produces,я,pronouns,i,i,,,,1SG,Russian,WG
+Russian_WS,item_627,,word,produces,я,pronouns,I,i,,,,1SG,Russian,WS
+Russian_WS,item_628,,word,produces,ты,pronouns,you,you,,,,2SG,Russian,WS
+Russian_WS,item_629,,word,produces,мы,pronouns,we,we,,,,1PL,Russian,WS
+Russian_WS,item_630,,word,produces,вы,pronouns,you,you (plural),,,,2PL,Russian,WS
+Russian_WS,item_631,,word,produces,он,pronouns,he,he,,,,3SG,Russian,WS
+Russian_WS,item_632,,word,produces,она,pronouns,she,she,,,,3SG,Russian,WS
+Russian_WS,item_633,,word,produces,они,pronouns,they,they,,,,3PL,Russian,WS
+Russian_WS,item_634,,word,produces,меня,pronouns,me,me,,,,1SG.POSS,Russian,WS
+Russian_WS,item_635,,word,produces,тебя,pronouns,you,you,,,,2SG.POSS,Russian,WS
+Russian_WS,item_636,,word,produces,нас,pronouns,us,us,,,,1PL.POSS,Russian,WS
+Russian_WS,item_637,,word,produces,вас,pronouns,you,you (plural),,,,2PL.POSS,Russian,WS
+Russian_WS,item_638,,word,produces,его,pronouns,him,his,,,,3SG.POSS,Russian,WS
+Russian_WS,item_639,,word,produces,ее (genitive),pronouns,her,her,,,,3SG.POSS,Russian,WS
+Russian_WS,item_640,,word,produces,их (genitive),pronouns,them,them,,,,3PL.POSS,Russian,WS
+Russian_WS,item_641,,word,produces,мне,pronouns,me,me,,,,1SG,Russian,WS
+Russian_WS,item_642,,word,produces,тебе,pronouns,you,you,,,,2SG,Russian,WS
+Russian_WS,item_643,,word,produces,нам,pronouns,us,us,,,,1PL,Russian,WS
+Russian_WS,item_644,,word,produces,вам,pronouns,your,you (plural),,,,2PL,Russian,WS
+Russian_WS,item_645,,word,produces,ему,pronouns,him,him,,,,3SG,Russian,WS
+Russian_WS,item_646,,word,produces,ей,pronouns,her,her,,,,3SG,Russian,WS
+Russian_WS,item_647,,word,produces,им,pronouns,them,them,,,,3PL,Russian,WS
+Russian_WS,item_648,,word,produces,мой/моя,pronouns,my/mine,my,,,,1SG.POSS,Russian,WS
+Russian_WS,item_649,,word,produces,твой,pronouns,your,your,,,,2SG.POSS,Russian,WS
+Russian_WS,item_650,,word,produces,наш,pronouns,our,our,,,,1PL.POSS,Russian,WS
+Russian_WS,item_651,,word,produces,ваш,pronouns,your,your,,,,2PL.POSS,Russian,WS
+Russian_WS,item_652,,word,produces,его,pronouns,his,his,,,,3SG.POSS,Russian,WS
+Russian_WS,item_653,,word,produces,ее (possessive),pronouns,her,hers,,,,3SG.POSS,Russian,WS
+Russian_WS,item_654,,word,produces,их (possessive),pronouns,their,theirs,,,,3PL.POSS,Russian,WS
+Russian_WS,item_655,,word,produces,такой/такой же/такая,pronouns,such/same,same,,,,same,Russian,WS
+Russian_WS,item_656,,word,produces,тот/та/те,pronouns,that/those,that,,,,that,Russian,WS
+Russian_WS,item_657,,word,produces,это/этот/эти,pronouns,this/these,this,,,,this,Russian,WS
+Russian_WS,item_658,,word,produces,сам/сама,pronouns,myself/yourself,myself,,,,REFL,Russian,WS
+Slovak_WG,item_331,,word,understands; produces,ja,pronouns,I,,,,,1SG,Slovak,WG
+Slovak_WG,item_332,,word,understands; produces,my,pronouns,we,we,,,,1PL,Slovak,WG
+Slovak_WG,item_333,,word,understands; produces,ten,pronouns,the,that,,,,that,Slovak,WG
+Slovak_WG,item_334,,word,understands; produces,to,pronouns,it,that,,,,that,Slovak,WG
+Slovak_WG,item_335,,word,understands; produces,toto,pronouns,this,this,,,,this,Slovak,WG
+Slovak_WG,item_336,,word,understands; produces,tu,pronouns,here,,,,,here,Slovak,WG
+Slovak_WG,item_337,,word,understands; produces,ty,pronouns,the,you,,,,2SG,Slovak,WG
+Slovak_WS,item_523,,word,understands; produces,ja,pronouns,I,,,,,1SG,Slovak,WS
+Slovak_WS,item_524,,word,understands; produces,mi / ma,pronouns,I / m,me,,,,1SG,Slovak,WS
+Slovak_WS,item_525,,word,understands; produces,moje,pronouns,my,my,,,,1SG.POSS,Slovak,WS
+Slovak_WS,item_526,,word,understands; produces,ty,pronouns,the,you,,,,2SG,Slovak,WS
+Slovak_WS,item_527,,word,understands; produces,ti / ťa/ s tebou,pronouns,I / you / with you,you,,,,2SG,Slovak,WS
+Slovak_WS,item_528,,word,understands; produces,tvoje,pronouns,Your,your,,,,2SG.POSS,Slovak,WS
+Slovak_WS,item_529,,word,understands; produces,si (=sebe),pronouns,self,,,,,REFL,Slovak,WS
+Slovak_WS,item_530,,word,understands; produces,on / ona,pronouns,he she,he,,,,3SG,Slovak,WS
+Slovak_WS,item_531,,word,understands; produces,mu / ho / jej / ju,pronouns,it / him / her / it,her,,,,3SG,Slovak,WS
+Slovak_WS,item_532,,word,understands; produces,my,pronouns,we,we,,,,1PL,Slovak,WS
+Slovak_WS,item_533,,word,understands; produces,nám,pronouns,us,us,,,,1PL,Slovak,WS
+Slovak_WS,item_534,,word,understands; produces,vy,pronouns,you,you,,,,2PL,Slovak,WS
+Slovak_WS,item_535,,word,understands; produces,vám,pronouns,you,you,,,,2PL,Slovak,WS
+Slovak_WS,item_536,,word,understands; produces,oni,pronouns,they,they,,,,3PL,Slovak,WS
+Slovak_WS,item_537,,word,understands; produces,ich,pronouns,their,them,,,,3PL,Slovak,WS
+Slovak_WS,item_538,,word,understands; produces,to,pronouns,it,that,,,,that,Slovak,WS
+Slovak_WS,item_539,,word,understands; produces,ten / tento / tá,pronouns,this / that / it,that,,,,that,Slovak,WS
+Slovak_WS,item_540,,word,understands; produces,tú,pronouns,here,this,,,,this,Slovak,WS
+Slovak_WS,item_541,,word,understands; produces,tieto,pronouns,these,these,,,,these,Slovak,WS
+Slovak_WS,item_542,,word,understands; produces,niekto / niečo,pronouns,someone / something,someone,,,,someone,Slovak,WS
+Spanish_Argentinian_WS,item_597,aquel,word,produces,aquel,pronouns,that (masculine),that,,,,that,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_598,aquellos,word,produces,aquellos,pronouns,those (masculine),,,,,those,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_599,aquella,word,produces,aquella,pronouns,that (feminine),that,,,,that,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_600,aquellas,word,produces,aquellas,pronouns,those (feminine),,,,,those,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_601,él,word,produces,él,pronouns,he,he,,,,3SG,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_602,ellos,word,produces,ellos,pronouns,they  (masculine),they,,,,3PL,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_603,ella,word,produces,ella,pronouns,she,her,,,,3SG,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_604,ellas,word,produces,ellas,pronouns,they  (feminine),they,,,,3PL,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_605,esa,word,produces,esa,pronouns,that (feminine),that,,,,that,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_606,esas,word,produces,esas,pronouns,those (feminine),,,,,those,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_607,ese,word,produces,ese,pronouns,that (masculine),that,,,,that,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_608,eso,word,produces,eso,pronouns,that (neuter),that,,,,that,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_609,esos,word,produces,esos,pronouns,those (masculine),,,,,those,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_610,esta,word,produces,esta,pronouns,this (feminine),,,,,this,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_611,estas,word,produces,estas,pronouns,these  (feminine),,,,,these,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_612,este,word,produces,este,pronouns,this (masculine),,,,,this,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_613,esto,word,produces,esto,pronouns,this (neuter),this,,,,this,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_614,estos,word,produces,estos,pronouns,these  (masculine),,,,,these,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_615,le_le,word,produces,le_le,pronouns,to it/to him/to her,,,,,3SG,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_616,les,word,produces,les,pronouns,them,them,,,,3PL,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_617,lo,word,produces,lo,pronouns,it/him/her,him,,,,3SG,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_618,me,word,produces,me,pronouns,me,me,,,,3SG,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_619,mi,word,produces,mi,pronouns,my,,,,,1SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_620,mía,word,produces,mía,pronouns,mine (feminine),mine,,,,1SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_621,mías,word,produces,mías,pronouns,mine (feminine plural),mine,,,,1SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_622,mío,word,produces,mío,pronouns,mine (masculine),mine,,,,1SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_623,míos,word,produces,míos,pronouns,mine (masculine plural),mine,,,,1SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_624,nosotros,word,produces,nosotros,pronouns,we,,,,,1PL,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_625,nuestro,word,produces,nuestro,pronouns,our,,,,,1PL.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_626,se,word,produces,se,pronouns,self,self,,,,REFL,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_627,su,word,produces,su,pronouns,his/her/its,his,,,,3SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_628,suya,word,produces,suya,pronouns,yours (feminine),,,,,3SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_629,suyas,word,produces,suyas,pronouns,theirs (feminine plural),,,,,3SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_630,suyo,word,produces,suyo,pronouns,yours (masculine),,,,,3SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_631,suyos,word,produces,suyos,pronouns,yours (masculine plural),,,,,3SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_632,te,word,produces,te,pronouns,you,,,,,2SG,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_633,tu,word,produces,tu,pronouns,you,,,,,2SG,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_634,tuya,word,produces,tuya,pronouns,your (feminine),,,,,2SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_635,tuyas,word,produces,tuyas,pronouns,yours (feminine plural),,,,,2SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_636,tuyo,word,produces,tuyo,pronouns,your (masculine),,,,,2SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_637,tuyos,word,produces,tuyos,pronouns,yours (masculine plural),,,,,2SG.POSS,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_638,vos,word,produces,vos,pronouns,you,,,,,2PL,Spanish (Argentinian),WS
+Spanish_Argentinian_WS,item_639,yo,word,produces,yo,pronouns,I,I,,,,1SG,Spanish (Argentinian),WS
+Spanish_Chilean_WG,item_391,aquel,word,understands; produces,aquel,pronouns,that one,,,,,that,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_392,aquella,word,understands; produces,aquella,pronouns,that one,,,,,that,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_393,el,word,understands; produces,él,pronouns,he,he,,,,3SG,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_394,ella,word,understands; produces,ella,pronouns,she,she,,,,3SG,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_395,ellas,word,understands; produces,ellas,pronouns,them,them,,,,3PL,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_396,ellos,word,understands; produces,ellos,pronouns,them,them,,,,3PL,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_397,esa,word,understands; produces,esa,pronouns,that one,,,,,that,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_398,esas,word,understands; produces,esas,pronouns,those,those,,,,those,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_399,ese,word,understands; produces,ese,pronouns,that,that,,,,that,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_400,eso,word,understands; produces,eso,pronouns,it,it,,,,that,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_401,esos,word,understands; produces,esos,pronouns,those,those,,,,those,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_402,esta,word,understands; produces,ésta,pronouns,this one,,,,,this,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_403,estas,word,understands; produces,éstas,pronouns,these,these,,,,these,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_404,este,word,understands; produces,éste,pronouns,this one,,,,,this,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_405,esto,word,understands; produces,ésto,pronouns,this,this,,,,this,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_406,estos,word,understands; produces,éstos,pronouns,these,these,,,,these,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_407,le,word,understands; produces,le,pronouns,,,,,,3SG,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_408,les,word,understands; produces,les,pronouns,them,them,,,,3PL,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_409,lo,word,understands; produces,lo,pronouns,it,it,,,,3SG,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_410,me,word,understands; produces,me,pronouns,me,me,,,,1SG,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_411,mia,word,understands; produces,mía,pronouns,mine,mine,,,,1SG.POSS,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_412,mias,word,understands; produces,mías,pronouns,mine,mine,,,,1SG.POSS,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_413,mio,word,understands; produces,mío,pronouns,mine,mine,,,,1SG.POSS,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_414,mios,word,understands; produces,míos,pronouns,mine,mine,,,,1SG.POSS,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_415,se,word,understands; produces,se,pronouns,it,it,,,,3SG,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_416,su,word,understands; produces,su,pronouns,his,his,,,,3SG,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_417,te,word,understands; produces,te,pronouns,you,you,,,,2SG,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_418,tu,word,understands; produces,tú,pronouns,you,you,,,,2SG,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_419,tuya,word,understands; produces,tuya,pronouns,yours,,,,,2SG.POSS,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_420,tuyas,word,understands; produces,tuyas,pronouns,yours,,,,,2SG.POSS,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_421,tuyo,word,understands; produces,tuyo,pronouns,yours,,,,,2SG.POSS,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_422,tuyos,word,understands; produces,tuyos,pronouns,yours,,,,,2SG.POSS,Spanish (Chilean),WG
+Spanish_Chilean_WG,item_423,yo,word,understands; produces,yo,pronouns,me,me,,,,1SG,Spanish (Chilean),WG
+Spanish_European_WG,item_278,ese,word,understands; produces,ese/esa/o,pronouns,that,that,,,,that,Spanish (European),WG
+Spanish_European_WG,item_279,mio,word,understands; produces,mío/a,pronouns,mine,mine,,,,1SG.POSS,Spanish (European),WG
+Spanish_European_WG,item_280,otra,word,understands; produces,otra/o,pronouns,other,other,,,,other,Spanish (European),WG
+Spanish_European_WG,item_281,parami,word,understands; produces,(para) mí,pronouns,for me,,,,,1SG,Spanish (European),WG
+Spanish_European_WG,item_282,yo,word,understands; produces,yo,pronouns,I,i,,,,1SG,Spanish (European),WG
+Spanish_European_WG,item_283,tu_tuyo,word,understands; produces,tu/tuyo,pronouns,you,you,,,,2SG,Spanish (European),WG
+Spanish_European_WG,item_284,este,word,understands; produces,este/a/o,pronouns,this,this,,,,this,Spanish (European),WG
+Spanish_European_WS,item_492,algo,word,produces,algo,pronouns,something,,,,,something,Spanish (European),WS
+Spanish_European_WS,item_493,aquel,word,produces,aquel,pronouns,that,,,,,that,Spanish (European),WS
+Spanish_European_WS,item_494,aquella,word,produces,aquella/as/os,pronouns,those,,,,,those,Spanish (European),WS
+Spanish_European_WS,item_495,conmigo,word,produces,conmigo,pronouns,with me,,,,,1SG,Spanish (European),WS
+Spanish_European_WS,item_496,contigo,word,produces,contigo,pronouns,with you,,,,,2SG,Spanish (European),WS
+Spanish_European_WS,item_497,el_,word,produces,él,pronouns,he,,,,,3SG,Spanish (European),WS
+Spanish_European_WS,item_498,ella,word,produces,ella,pronouns,her,,,,,3SG,Spanish (European),WS
+Spanish_European_WS,item_499,ellos,word,produces,ellos/as,pronouns,them,,,,,3PL,Spanish (European),WS
+Spanish_European_WS,item_500,esa,word,produces,esa,pronouns,this,,,,,this,Spanish (European),WS
+Spanish_European_WS,item_501,ese,word,produces,ese,pronouns,that,,,,,that,Spanish (European),WS
+Spanish_European_WS,item_502,eso,word,produces,eso,pronouns,that,,,,,that,Spanish (European),WS
+Spanish_European_WS,item_503,esos,word,produces,esos/as,pronouns,those,,,,,those,Spanish (European),WS
+Spanish_European_WS,item_504,esta,word,produces,ésta,pronouns,this,,,,,this,Spanish (European),WS
+Spanish_European_WS,item_505,este,word,produces,éste,pronouns,this,,,,,this,Spanish (European),WS
+Spanish_European_WS,item_506,esto,word,produces,ésto,pronouns,this,,,,,this,Spanish (European),WS
+Spanish_European_WS,item_507,estos,word,produces,éstos/éstas,pronouns,these,,,,,these,Spanish (European),WS
+Spanish_European_WS,item_508,mi,word,produces,mí,pronouns,my,,,,,1SG.POSS,Spanish (European),WS
+Spanish_European_WS,item_509,para_mi,word,produces,(para) mí,pronouns,for me,,,,,1SG,Spanish (European),WS
+Spanish_European_WS,item_510,mio,word,produces,mío/mía,pronouns,mine,,,,,1SG.POSS,Spanish (European),WS
+Spanish_European_WS,item_511,mios,word,produces,míos/mías,pronouns,mine,,,,,1SG.POSS,Spanish (European),WS
+Spanish_European_WS,item_512,otra,word,produces,otra/o,pronouns,other,,,,,other,Spanish (European),WS
+Spanish_European_WS,item_513,su,word,produces,su,pronouns,its,,,,,3SG.POSS,Spanish (European),WS
+Spanish_European_WS,item_514,suyo,word,produces,suyo/a,pronouns,his,,,,,3SG.POSS,Spanish (European),WS
+Spanish_European_WS,item_515,para_ti,word,produces,(para) ti,pronouns,you,,,,,2SG,Spanish (European),WS
+Spanish_European_WS,item_516,tu_,word,produces,tú,pronouns,you,,,,,2SG,Spanish (European),WS
+Spanish_European_WS,item_517,tu,word,produces,tu,pronouns,your,,,,,2SG.POSS,Spanish (European),WS
+Spanish_European_WS,item_518,tuyo,word,produces,tuyo/tuya,pronouns,yours,,,,,2SG.POSS,Spanish (European),WS
+Spanish_European_WS,item_519,tuyos,word,produces,tuyos/tuyas,pronouns,yours,,,,,2SG.POSS,Spanish (European),WS
+Spanish_European_WS,item_520,yo,word,produces,yo,pronouns,i,,,,,1SG,Spanish (European),WS
+Spanish_Mexican_WG,item_362,aquel,word,understands; produces,aquel,pronouns,that,that,,,,that,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_363,aquela,word,understands; produces,aquella,pronouns,that,that,,,,that,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_364,el1,word,understands; produces,él (pronouns),pronouns,he,he,,,,1SG,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_365,ella,word,understands; produces,ella,pronouns,she,her,,,,1SG,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_366,ellas,word,understands; produces,ellas,pronouns,they,they,,,,1PL,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_367,ellos,word,understands; produces,ellos,pronouns,they,they,,,,1PL,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_368,esa,word,understands; produces,esa,pronouns,that,that,,,,that,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_369,esas,word,understands; produces,esas,pronouns,those,those,,,,those,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_370,ese,word,understands; produces,ese,pronouns,that,that,,,,that,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_371,eso,word,understands; produces,eso,pronouns,that,that,,,,that,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_372,esos,word,understands; produces,esos,pronouns,those,those,,,,those,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_373,esta,word,understands; produces,ésta,pronouns,this,this,,,,this,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_374,estas,word,understands; produces,éstas,pronouns,these,these,,,,these,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_375,este,word,understands; produces,éste,pronouns,this,this,,,,this,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_376,esto,word,understands; produces,esto,pronouns,this,this,,,,this,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_377,estos,word,understands; produces,éstos,pronouns,these,these,,,,these,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_378,le,word,understands; produces,le,pronouns,you,it,,,,3SG,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_379,les,word,understands; produces,les,pronouns,them,them,,,,3PL,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_380,lo,word,understands; produces,lo,pronouns,the,him,,,,3SG,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_381,me,word,understands; produces,me,pronouns,me,me,,,,1SG,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_382,mia,word,understands; produces,mía,pronouns,mine,mine,,,,1SG.POSS,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_383,mias,word,understands; produces,mías,pronouns,mine,mine,,,,1SG.POSS,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_384,mio,word,understands; produces,mío,pronouns,mine,mine,,,,1SG.POSS,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_385,mios,word,understands; produces,míos,pronouns,mine,mine,,,,1SG.POSS,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_386,se,word,understands; produces,se,pronouns,self,self,,,,REFL,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_387,su,word,understands; produces,su,pronouns,his,his,,,,3SG,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_388,te,word,understands; produces,te,pronouns,you,you,,,,2SG,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_389,tu,word,understands; produces,tú,pronouns,you,you,,,,2SG,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_390,tuya,word,understands; produces,tuya,pronouns,yours,your,,,,2SG.POSS,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_391,tuyas,word,understands; produces,tuyas,pronouns,yours,your,,,,2SG.POSS,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_392,tuyo,word,understands; produces,tuyo,pronouns,yours,your,,,,2SG.POSS,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_393,tuyos,word,understands; produces,tuyos,pronouns,yours,your,,,,2SG.POSS,Spanish (Mexican),WG
+Spanish_Mexican_WG,item_394,yo,word,understands; produces,yo,pronouns,I,i,,,,1SG,Spanish (Mexican),WG
+Spanish_Mexican_WS,item_582,aquel,word,produces,aquel,pronouns,that,that,,,,that,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_583,aquela,word,produces,aquella,pronouns,that,that,,,,that,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_584,aquelas,word,produces,aquellas,pronouns,those,,,,,those,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_585,aquelos,word,produces,aquellos,pronouns,those,,,,,those,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_586,el1,word,produces,él (pronouns),pronouns,he,he,,,,3SG,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_587,ella,word,produces,ella,pronouns,she,her,,,,3SG,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_588,ellas,word,produces,ellas,pronouns,they,they,,,,3PL,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_589,ellos,word,produces,ellos,pronouns,they,they,,,,3PL,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_590,esa,word,produces,esa,pronouns,that,that,,,,that,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_591,esas,word,produces,esas,pronouns,those,those,,,,those,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_592,ese,word,produces,ese,pronouns,that,that,,,,that,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_593,eso,word,produces,eso,pronouns,that,that,,,,that,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_594,esos,word,produces,esos,pronouns,those,those,,,,those,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_595,esta,word,produces,ésta,pronouns,this,this,,,,this,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_596,estas,word,produces,éstas,pronouns,these,these,,,,these,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_597,este,word,produces,éste,pronouns,this,this,,,,this,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_598,esto,word,produces,esto,pronouns,this,this,,,,this,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_599,estos,word,produces,éstos,pronouns,these,these,,,,these,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_600,prole,word,produces,le,pronouns,you,it,,,,3SG,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_601,les,word,produces,les,pronouns,them,them,,,,3PL,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_602,lo,word,produces,lo,pronouns,the,him,,,,3SG,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_603,me,word,produces,me,pronouns,me,me,,,,1SG,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_604,mi,word,produces,mí,pronouns,my,,,,,1SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_605,mia,word,produces,mía,pronouns,mine,mine,,,,1SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_606,mias,word,produces,mías,pronouns,mine,mine,,,,1SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_607,mio,word,produces,mío,pronouns,mine,mine,,,,1SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_608,mios,word,produces,míos,pronouns,mine,mine,,,,1SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_609,nosotros,word,produces,nosotros,pronouns,we,,,,,1PL,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_610,nuestro,word,produces,nuestro,pronouns,our,,,,,1PL.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_611,se,word,produces,se,pronouns,self,self,,,,REFL,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_612,su,word,produces,su,pronouns,his,his,,,,3SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_613,suya,word,produces,suya,pronouns,yours,,,,,3SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_614,suyas,word,produces,suyas,pronouns,theirs,,,,,3SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_615,suyo,word,produces,suyo,pronouns,yours,,,,,3SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_616,suyos,word,produces,suyos,pronouns,yours,,,,,3SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_617,te2,word,produces,te (pronouns),pronouns,you,,,,,2SG,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_618,ti,word,produces,tí,pronouns,you,,,,,2SG,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_619,tu,word,produces,tú,pronouns,you,you,,,,2SG,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_620,tuya,word,produces,tuya,pronouns,yours,your,,,,2SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_621,tuyas,word,produces,tuyas,pronouns,yours,your,,,,2SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_622,tuyo,word,produces,tuyo,pronouns,yours,your,,,,2SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_623,tuyos,word,produces,tuyos,pronouns,yours,your,,,,2SG.POSS,Spanish (Mexican),WS
+Spanish_Mexican_WS,item_624,yo,word,produces,yo,pronouns,I,i,,,,1SG,Spanish (Mexican),WS
+Spanish_Peruvian_WG,item_304,el,word,understands; produces,él/ella,pronouns,he/she,he,,,,3SG,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_305,ellos,word,understands; produces,ellos/ellas,pronouns,they,they,,,,3PL,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_306,ese,word,understands; produces,ese/esa/eso,pronouns,that/that/it,that,,,,that,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_307,este,word,understands; produces,este/esta/esto,pronouns,this/this/this,this,,,,this,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_308,mi,word,understands; produces,mi (pelota…),pronouns,my (ball…),,,,,1SG,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_309,mio,word,understands; produces,mío(a),pronouns,mine,mine,,,,1SG.POSS,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_310,nosotros,word,understands; produces,nosotros(as),pronouns,we,we,,,,1PL,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_311,nuestro,word,understands; produces,nuestro(a),pronouns,our,,,,,1PL.POSS,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_312,otro,word,understands; produces,otro(a),pronouns,other,other,,,,other,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_313,el_,word,understands; produces,(para) él/ella,pronouns,(for) him/her,him,,,,3SG,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_314,mi,word,understands; produces,(para) mí,pronouns,(for) me,me,,,,1SG,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_315,ti,word,understands; produces,(para) ti,pronouns,(for) you,you,,,,2SG,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_316,su,word,understands; produces,su/suyo,pronouns,his/hers,his,,,,3SG.POSS,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_317,tu,word,understands; produces,tu/tuyo,pronouns,your/yours,your,,,,2SG.POSS,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_318,todos,word,understands; produces,todos (cantamos…),pronouns,we all (sing…),,,,,all,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_319,ustedes,word,understands; produces,ustedes,pronouns,your,your,,,,2PL.POSS,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_320,yo,word,understands; produces,yo,pronouns,I,I,,,,1SG,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_338,mas,word,understands; produces,más,pronouns,more,more,,,,more,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_340,poco,word,understands; produces,poco/poquito,pronouns,very little,,,,,little,Spanish (Peruvian),WG
+Spanish_Peruvian_WG,item_341,todo,word,understands; produces,todo(a/os/as) (los niños),pronouns,all (the children),all,,,,all,Spanish (Peruvian),WG
+Spanish_Peruvian_WS,item_512,algo,word,produces,algo,pronouns,something,,,,,something,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_513,conmigo,word,produces,conmigo,pronouns,with me,,,,,1SG,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_514,contigo,word,produces,contigo,pronouns,with you,,,,,2SG,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_515,el,word,produces,él,pronouns,the,the,,,,3SG,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_516,ella,word,produces,ella,pronouns,she,she,,,,3SG,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_517,ellos,word,produces,ellos(as),pronouns,they,they,,,,3PL,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_518,ese,word,produces,ese/esa/eso,pronouns,that/that/it,that,,,,that,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_519,esos,word,produces,esos(as),pronouns,those,those,,,,those,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_520,este,word,produces,este/esta/esto,pronouns,this/this/this,this,,,,this,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_521,estos,word,produces,estos(as),pronouns,these,these,,,,these,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_522,mi,word,produces,(para) mí,pronouns,(for me,me,,,,1SG,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_523,mio,word,produces,mío/mía,pronouns,mine,mine,,,,1SG.POSS,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_524,mios,word,produces,míos/mías,pronouns,mine,mine,,,,1SG.POSS,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_525,otro,word,produces,otro(a),pronouns,other,other,,,,other,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_526,su,word,produces,su,pronouns,his,his,,,,3SG.POSS,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_527,ti,word,produces,(para) ti,pronouns,(for you,you,,,,2SG,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_528,tu_,word,produces,tú,pronouns,your,your,,,,2SG.POSS,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_529,tu,word,produces,tu,pronouns,you,you,,,,2SG,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_530,tuyo,word,produces,tuyo(a),pronouns,yours,,,,,2SG.POSS,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_531,tuyos,word,produces,tuyos(as),pronouns,yours,,,,,2SG.POSS,Spanish (Peruvian),WS
+Spanish_Peruvian_WS,item_532,yo,word,produces,yo,pronouns,i,I,,,,1SG,Spanish (Peruvian),WS
+Swedish_WG,item_351,den,word,understands; produces,den,pronouns,that,that,,,,that,Swedish,WG
+Swedish_WG,item_352,den_dar,word,understands; produces,den där,pronouns,that one,that,,,,that,Swedish,WG
+Swedish_WG,item_353,den_har,word,understands; produces,den här,pronouns,this one,this,,,,this,Swedish,WG
+Swedish_WG,item_354,det,word,understands; produces,det,pronouns,it,it,,,,3SG,Swedish,WG
+Swedish_WG,item_355,du/din,word,understands; produces,du/din,pronouns,you/yours,you,,,,2SG,Swedish,WG
+Swedish_WG,item_356,hans,word,understands; produces,hans,pronouns,his,his,,,,3SG.POSS,Swedish,WG
+Swedish_WG,item_357,henne,word,understands; produces,henne,pronouns,hers,her,,,,3SG,Swedish,WG
+Swedish_WG,item_358,jag,word,understands; produces,jag,pronouns,I,i,,,,1SG,Swedish,WG
+Swedish_WG,item_359,mig,word,understands; produces,mig,pronouns,myself,my,,,,1SG.REFL,Swedish,WG
+Swedish_WG,item_360,min,word,understands; produces,min,pronouns,mine,mine,,,,1SG.REFL,Swedish,WG
+Swedish_WS,item_602,de/dem/dom,word,produces,de/dem/dom,pronouns,they,,,,,1PL,Swedish,WS
+Swedish_WS,item_603,den_dar,word,produces,den där,pronouns,that one,that,,,,that,Swedish,WS
+Swedish_WS,item_604,den_har,word,produces,den här,pronouns,this one,this,,,,this,Swedish,WS
+Swedish_WS,item_605,den_,word,produces,den,pronouns,that,that,,,,that,Swedish,WS
+Swedish_WS,item_606,det,word,produces,det,pronouns,it,it,,,,3SG,Swedish,WS
+Swedish_WS,item_607,deras,word,produces,deras,pronouns,theirs,,,,,3PL.POSS,Swedish,WS
+Swedish_WS,item_608,dessa,word,produces,dessa,pronouns,these,,,,,these,Swedish,WS
+Swedish_WS,item_609,din,word,produces,din,pronouns,yours,you,,,,2SG.POSS,Swedish,WS
+Swedish_WS,item_610,du,word,produces,du,pronouns,you,you,,,,2SG,Swedish,WS
+Swedish_WS,item_611,han,word,produces,han,pronouns,he,,,,,3SG,Swedish,WS
+Swedish_WS,item_612,hans,word,produces,hans,pronouns,his,his,,,,3SG.POSS,Swedish,WS
+Swedish_WS,item_613,henne,word,produces,henne,pronouns,her,her,,,,3SG,Swedish,WS
+Swedish_WS,item_614,hennes,word,produces,hennes,pronouns,hers,,,,,3SG.POSS,Swedish,WS
+Swedish_WS,item_615,hon,word,produces,hon,pronouns,she,,,,,3SG,Swedish,WS
+Swedish_WS,item_616,honom,word,produces,honom,pronouns,him,,,,,3SG,Swedish,WS
+Swedish_WS,item_617,jag,word,produces,jag,pronouns,I,i,,,,1SG,Swedish,WS
+Swedish_WS,item_618,mig,word,produces,mig,pronouns,me,my,,,,1SG.POSS,Swedish,WS
+Swedish_WS,item_619,min,word,produces,min,pronouns,my,mine,,,,1SG.POSS,Swedish,WS
+Swedish_WS,item_620,mina,word,produces,mina,pronouns,mine,,,,,1SG.POSS,Swedish,WS
+Swedish_WS,item_621,oss,word,produces,oss,pronouns,us,,,,,1PL,Swedish,WS
+Swedish_WS,item_622,sjalv,word,produces,själv,pronouns,self,,,,,REFL,Swedish,WS
+Swedish_WS,item_623,vi,word,produces,vi,pronouns,we,,,,,1PL,Swedish,WS
+Swedish_WS,item_624,var,word,produces,vår,pronouns,our,,,,,1PL.POSS,Swedish,WS
+Turkish_WG,item_382,Bana,word,understands; produces,Bana,pronouns,me,me,,,,1SG,Turkish,WG
+Turkish_WG,item_383,Ben,word,understands; produces,Ben,pronouns,i,i,,,,1SG,Turkish,WG
+Turkish_WG,item_384,Benim,word,understands; produces,Benim,pronouns,my,my,,,,1SG.POSS,Turkish,WG
+Turkish_WG,item_393,Biri,word,understands; produces,Biri,pronouns,someone,someone,,,,someone,Turkish,WG
+Turkish_WG,item_385,Bu,word,understands; produces,Bu,pronouns,this,this,,,,this,Turkish,WG
+Turkish_WG,item_389,O,word,understands; produces,O,pronouns,that/s/he/it,that,,,,that,Turkish,WG
+Turkish_WG,item_390,Ona,word,understands; produces,Ona,pronouns,him/her/it,it,,,,3SG,Turkish,WG
+Turkish_WG,item_391,Onun,word,understands; produces,Onun,pronouns,his/hers/its,his,,,,3SG.POSS,Turkish,WG
+Turkish_WG,item_392,Sana,word,understands; produces,Sana,pronouns,(to) you,to you,,,,2SG,Turkish,WG
+Turkish_WG,item_386,Sen,word,understands; produces,Sen,pronouns,you,you,,,,2SG,Turkish,WG
+Turkish_WG,item_387,Senin,word,understands; produces,Senin,pronouns,your,your,,,,2SG.POSS,Turkish,WG
+Turkish_WG,item_388,Su,word,understands; produces,Şu,pronouns,that,that,,,,that,Turkish,WG
+Turkish_WS,item_628,Bana,word,produces,Bana,pronouns,me,me,,,,1SG,Turkish,WS
+Turkish_WS,item_629,Ben,word,produces,Ben,pronouns,I,i,,,,1SG,Turkish,WS
+Turkish_WS,item_630,Benim,word,produces,Benim,pronouns,my,my,,,,1SG.POSS,Turkish,WS
+Turkish_WS,item_631,Bu,word,produces,Bu,pronouns,this,this,,,,this,Turkish,WS
+Turkish_WS,item_632,Biz,word,produces,Biz,pronouns,we,,,,,1PL,Turkish,WS
+Turkish_WS,item_633,Bizim,word,produces,Bizim,pronouns,our,,,,,1PL.POSS,Turkish,WS
+Turkish_WS,item_634,Sen,word,produces,Sen,pronouns,you,you,,,,2SG,Turkish,WS
+Turkish_WS,item_635,Senin,word,produces,Senin,pronouns,your,your,,,,2SG.POSS,Turkish,WS
+Turkish_WS,item_636,Siz,word,produces,Siz,pronouns,you,,,,,2PL,Turkish,WS
+Turkish_WS,item_637,Sizin,word,produces,Sizin,pronouns,your,,,,,2PL.POSS,Turkish,WS
+Turkish_WS,item_638,Su,word,produces,Şu,pronouns,that,that,,,,that,Turkish,WS
+Turkish_WS,item_639,Kendi,word,produces,Kendi,pronouns,own-self/himself/herself,,,,,REFL,Turkish,WS
+Turkish_WS,item_640,Kendim,word,produces,Kendim,pronouns,myself,,,,,1SG.REFL,Turkish,WS
+Turkish_WS,item_641,O,word,produces,O,pronouns,that/s/he/it,that,,,,that,Turkish,WS
+Turkish_WS,item_642,Ona,word,produces,Ona,pronouns,him/her/it,it,,,,3SG,Turkish,WS
+Turkish_WS,item_643,Onlar,word,produces,Onlar,pronouns,them,,,,,3PL,Turkish,WS
+Turkish_WS,item_644,Onun,word,produces,Onun,pronouns,his/hers/its,his,,,,3SG.POSS,Turkish,WS
+Turkish_WS,item_645,Kimse,word,produces,Kimse,pronouns,anyone/nonone,,,,,,Turkish,WS
+Turkish_WS,item_646,Sana,word,produces,Sana,pronouns,(to)you,to you,,,,2SG,Turkish,WS
+Turkish_WS,item_647,Biri,word,produces,Biri,pronouns,someone,someone,,,,someone,Turkish,WS
+Turkish_WS,item_648,Sey,word,produces,Şey,pronouns,thing,,,,,,Turkish,WS

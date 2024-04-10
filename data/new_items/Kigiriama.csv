@@ -1,0 +1,768 @@
+WS,WG,category,definition,gloss,uni_lemma
+item_1,item_1,sounds,Baa baa,Sheep,baa baa
+item_2,item_2,sounds,chri chri chri,bird,bird
+item_3,,sounds,Giya,Dove,coo
+item_4,,sounds,Ha ha ha,Duck,quack quack
+item_5,item_3,sounds,Hi hoo hihoo,Donkey,hee haw
+item_6,item_4,sounds,Huu huu huu,Dog,woof woof
+item_7,item_5,sounds,Kima/Tsalu,monkey,monkey
+item_8,item_6,sounds,Kokoikoo,Cockerel,cockadoodledoo
+item_9,,sounds,Kru kru kru,Chicken calling chicks,tweet tweet
+item_10,item_8,sounds,Kunguru,Crow,crow
+item_11,item_9,sounds,Lumira,Ouch,ouch
+item_12,item_10,sounds,Mee mee,Goat,baa baa
+item_13,item_11,sounds,Miau miau,Cat,cat
+item_14,,sounds,Moo moo,Cow,cow
+item_15,,sounds,Pikipiki/Honda,Motorbike,motorcycle
+item_16,item_13,sounds,Simu,Phone,ring ring
+item_17,item_14,sounds,Tamu tamu/Pamu pamu,Sweetness,yum yum
+item_18,,sounds,Vruum vruum,Car,car
+item_19,item_16,animals,Batha,Duck,duck
+item_20,,animals,Batha muzinga,Turkey,turkey
+item_21,,animals,Boho,Butterfly,butterfly
+item_22,item_17,animals,Chula,Frog,frog
+item_23,,animals,Farasi,Horse,horse
+item_24,,animals,Gongolo,Millipede,NA
+item_25,,animals,Jogolo,Cockerel,rooster
+item_26,,animals,Juijui,Spider,spider
+item_27,,animals,Kajonjoloka,Lizard,lizard
+item_28,,animals,Katsungula,"Hare, rabbit",bunny
+item_29,,animals,Kobe,Tortoise,turtle
+item_30,item_18,animals,Kolo,Hen,hen
+item_31,item_19,animals,Kuku,Chicken,chicken (animal)
+item_32,,animals,Kunguni,Bed bug,bed bug
+item_33,item_20,animals,Kunguru,Crow,crow
+item_34,item_21,animals,Kuro,Dog,dog
+item_35,,animals,Mbu/Usunye,Mosquito,mosquito
+item_36,,animals,Mbuzi/Mee,Goat,goat
+item_37,item_23,animals,Mududu,Insect,bug
+item_38,item_24,animals,Munyama,Animal,animal
+item_39,,animals,Mutswa/Tsungu,Ant,ant
+item_40,,animals,Mwana wa kuro,Puppy,puppy
+item_41,,animals,Ndema,Bat,bat (animal)
+item_42,item_25,animals,Ng’ombe,Cow,cow
+item_43,,animals,Ng’onzi,Sheep,sheep
+item_44,,animals,Nyoka,snake,snake
+item_45,,animals,Nyuchi,Bee,bee
+item_46,,animals,Nzi,House Fly,fly (animal)
+item_47,,animals,Nzovu,Elephant,elephant
+item_48,,animals,Nzowe/Punda,Donkey,donkey
+item_49,item_26,animals,Paka/Nyau,Cat,cat
+item_50,,animals,Pambaiko,Cockroach,cockroach
+item_51,,animals,Panya/Thali/ Pinji,Rat/Mouse,mouse
+item_52,,animals,Punda milia,Zebra,zebra
+item_53,item_28,animals,Samaki,Fish,fish (animal)
+item_54,,animals,Simba,Lion,lion
+item_55,,animals,Tsongo/Kachongo,Bird,bird
+item_56,,animals,Tumbiri/ Tsalu,Monkey,monkey
+item_57,,vehicles,Basi,Bus,bus
+item_58,item_31,vehicles,Basikili,Bicycle,bicycle
+item_59,,vehicles,Dau,Small boat,boat
+item_60,item_32,vehicles,Gari,Car,car
+item_61,,vehicles,Gari ra moshi,Train,train
+item_62,,vehicles,Helikoputa,Helicopter,helicopter
+item_63,item_33,vehicles,Jongoo,Tractor,tractor
+item_64,,vehicles,Lori,Lorry,truck
+item_65,,vehicles,Matatu,Minibus,bus
+item_66,,vehicles,Meli,Ship,ship
+item_67,,vehicles,Mukokoteni,Handcart,cart
+item_68,item_34,vehicles,Ndege,Aeroplane,airplane
+item_69,item_35,vehicles,Pikipiki/ Honda,Motorbike,motorcycle
+item_70,,toys,Bunduki,Gun,gun
+item_71,,toys,Choki/Makala,Chalk,chalk
+item_72,item_37,toys,Doli,Doll,doll
+item_73,,toys,Gamu/Ulimbo,Glue,glue (object)
+item_74,item_38,toys,Kalamu,Pen,pen
+item_75,item_39,toys,Kibofu,Balloon,balloon
+item_76,item_40,toys,Kithabu,Book,book
+item_77,,toys,Lugwe,Rope,rope
+item_78,item_41,toys,Muchezo,Game,game
+item_79,item_42,toys,Mupira,Ball,ball
+item_80,,toys,Ngano,Story,story
+item_81,,toys,Penseli ya rangi,colouring pencil/crayons,crayon
+item_82,,toys,Penseli/Kalamu ya mahe,Pencil,pencil
+item_83,item_43,toys,Povu,Foam,NA
+item_84,item_44,toys,Ulongo,Mud/Clay,clay
+item_85,,toys,"Vibao, Bao",Board,game
+item_86,,toys,Vifudu,Coconut shell,NA
+item_87,item_45,toys,Zawadi,Present,present
+item_88,,food_drink,Apple,Apple,apple
+item_89,,food_drink,Avocado,Avocado,avocado
+item_90,,food_drink,Bajia,Fried Potatoes,french fries
+item_91,item_46,food_drink,Barafu,Ice,ice
+item_92,,food_drink,Biriani,Rice made in such away that it has atleast two different colours,rice
+item_93,item_47,food_drink,Bisikuti,Biscuit,cookie
+item_94,item_48,food_drink,Chai,Tea,tea
+item_95,item_49,food_drink,Chakurya,Food,food
+item_96,item_50,food_drink,Chapati,Chapati,bread
+item_97,,food_drink,Chocolate,Chocolate,chocolate
+item_98,item_60,food_drink,Chungwa,Orange,orange (food)
+item_99,,food_drink,Ice cream,Ice cream,ice cream
+item_100,item_52,food_drink,Izu,Banana,banana
+item_101,,food_drink,Jam,Jam,jam
+item_102,,food_drink,Kahawa,Coffee,coffee
+item_103,item_53,food_drink,Kaimati,bun1,bun
+item_104,item_54,food_drink,Karoti,Carrot,carrot
+item_105,item_55,food_drink,Keki,Cake,cake
+item_106,,food_drink,Kiboma,Kingfish,NA
+item_107,,food_drink,Kiboma_2,Kingfish,NA
+item_108,,food_drink,Kinywadzi/Nyunya,DrinkN,drink (beverage)
+item_109,item_56,food_drink,Kirazi,Potato,potato
+,item_69,food_drink,Kirazi,,potato
+item_110,,food_drink,Kitumbua,Bun2,NA
+item_111,,food_drink,Koo,Sweet,sweets
+item_112,item_57,food_drink,Kuku,Chicken,chicken (food)
+item_113,item_68,food_drink,Kumbu,Sardine,fish (food)
+item_114,,food_drink,Kunde,Cow peas,peas
+item_115,,food_drink,Kungu,Fruit,fruit
+item_116,,food_drink,Madafu,Unripe coconuts,coconut
+item_117,item_59,food_drink,Madzi,WaterF,water (beverage)
+item_118,,food_drink,Madzi ga machungwa/Juisi,Orange juice,orange juice
+item_119,item_61,food_drink,Maembe,Mango,mango
+item_120,item_62,food_drink,Mahamuri,Dumpling,dumpling
+item_121,item_63,food_drink,Maharagwe,Beans,beans
+item_122,,food_drink,Makalange,Popcorn,popcorn
+item_123,,food_drink,Matomoko,Fruit,fruit
+item_124,,food_drink,Matsere,Maize,corn
+item_125,item_64,food_drink,Maziya,Milk,milk
+item_126,,food_drink,Maziya maivu/Maziya lala,Sour milk,NA
+item_127,,food_drink,Mbalazi,Green peas,peas
+item_128,item_65,food_drink,Mugazija,Cassava,cassava
+item_129,item_66,food_drink,Muhunga/Muchele,Rice,rice
+item_130,item_67,food_drink,Mukahe,Bread,bread
+item_131,,food_drink,Munyu,Salt,salt
+item_132,,food_drink,Muswa,Porridge,porridge
+item_133,,food_drink,Mutsuzi,Soup,soup
+item_134,item_70,food_drink,Nazi,Coconut,coconut
+item_135,item_71,food_drink,Nyama,Meat,meat
+item_136,,food_drink,Nyanya/Tindi,Tomatoes,tomato
+item_137,item_73,food_drink,Nzugu/Jugu,Groundnuts,nut
+item_138,,food_drink,Paipai/Papayu,Pawpaw,papaya
+item_139,,food_drink,Pamu/Tamu,Something sweet,sweets
+item_140,,food_drink,Papa,Shark,shark
+item_141,item_75,food_drink,Peremende,Sweets,candy
+item_142,item_76,food_drink,Peremende Ubani/Big G/Ball gum,Bubblegum,gum
+item_143,,food_drink,Pilau,Pilau,pilaf
+item_144,,food_drink,Pili pili,Pepper,pepper
+item_145,,food_drink,Podzo,Green peas,peas
+item_146,item_77,food_drink,Samaki,FishF,fish (food)
+item_147,,food_drink,Sambusa,Samosa,samosa
+item_148,,food_drink,Siagi,Butter,butter
+item_149,,food_drink,Siki,Ginger,ginger
+item_150,item_78,food_drink,Soda,Soda,soda
+item_151,item_79,food_drink,Sukuma,Kale,kale
+item_152,,food_drink,Supageti,Spaghetti,spaghetti
+item_153,,food_drink,Supu,Soup,soup
+item_154,,food_drink,Thambi,Noodles,pasta
+item_155,,food_drink,Tikiti,Watermelon,watermelon
+item_156,item_81,food_drink,Tosi,Toast,toast
+item_157,,food_drink,Uchi,Alcohol,alcohol
+item_158,,food_drink,Uki/Asali/Nyuki,Honey,honey
+item_159,,food_drink,Unga,Maize Flour,NA
+item_160,,food_drink,Virazi,Potatoes,potato
+item_161,,food_drink,Virazi zha kukalanga/Chips,Chips,chips
+item_162,,food_drink,Virazi zha rojo,potatoes in soup,NA
+item_163,item_83,food_drink,Wari,Thick porridge,porridge
+item_164,item_84,food_drink,Yai/ Iji,Egg,egg
+item_165,,clothing,Bangili,Bangles,bracelet
+item_166,,clothing,Bib,Bib,bib
+item_167,,clothing,Buibui,Moslem overdress,shawl
+item_168,,clothing,Chepeo,Hat/cap,hat
+item_169,,clothing,Fulana,T-Shirt,t-shirt
+item_170,,clothing,Hombo/Kopo ra mwana/Nyonyo,Nipple,NA
+item_171,,clothing,Jaketi,Jacket,jacket
+item_172,,clothing,Jinzi,Jeans,jeans
+item_173,,clothing,Kamisi,Petticoat,underpants
+item_174,,clothing,Kanga,Cloth1,NA
+item_175,,clothing,Kifungo/Kipingo,Button,button
+item_176,,clothing,Kikoi,Cloth2,scarf
+item_177,item_86,clothing,Kipande/Suruale fuhi,Shorts,shorts
+item_178,item_87,clothing,Kirahu,Shoe,shoe
+item_179,,clothing,Kirinda,Petticoat,underpants
+item_180,,clothing,Kitambaa cha kitswa/Hijab,Headscarf,scarf
+item_181,,clothing,Kithambaa,Piece of cloth,NA
+item_182,,clothing,Kofia/,Hat/cap,hat
+item_183,,clothing,Koti,Coat,coat
+item_184,item_89,clothing,Leso,Colured cloth worn by women and has wordings,NA
+item_185,,clothing,Mabuti,Boots,boots
+item_186,,clothing,Mukufu/Ushanga,Necklace,necklace
+item_187,item_90,clothing,Ndaweya,Underpants,underpants
+item_188,item_91,clothing,Nepi,Nappy,diaper
+item_189,item_92,clothing,Nguo,Clothes,clothes
+item_190,,clothing,Rinda/ Joho,Dress,dress (object)
+item_191,item_93,clothing,Sapata,Sandals,sandal
+item_192,item_94,clothing,Shati,Shirt,shirt
+item_193,,clothing,Shuka/Shiti,Sheet,sheet
+item_194,,clothing,Sikati,Skirt,skirt
+item_195,item_95,clothing,Sokisi,Socks,sock
+item_196,,clothing,Suruale/Suruale nyire,Trousers,pants
+item_197,,clothing,Suti/Beli,Suit,suit
+item_198,item_97,clothing,Sweta,Sweater,sweater
+item_199,,clothing,Ukanda,Belt,belt
+item_200,,clothing,Vipuli,Earrings,earring
+item_201,,clothing,Zipu,Zip,zipper
+item_202,item_98,body_parts,Chala,Finger,finger
+item_203,item_99,body_parts,Dzino,Tooth,tooth
+item_204,item_100,body_parts,Dzitso,Eye,eye
+item_205,,body_parts,Ganza,Palm,palm
+item_206,,body_parts,Goti/ Vindi,Knee,knee
+item_207,item_101,body_parts,Kigulu,Leg,leg
+item_208,,body_parts,Kirevu,Chin,chin
+item_209,item_102,body_parts,Kitovu,Umbilical cord,belly button
+item_210,item_103,body_parts,Kitswa,Head,head
+item_211,,body_parts,Kituro,Shoulder,shoulder
+item_212,item_104,body_parts,Kombe,Fingernail,nail (body part)
+item_213,,body_parts,Luthimi,Tongue,tongue
+item_214,item_105,body_parts,Mahako*,Buttocks,butt
+item_215,,body_parts,Mongo,Back,back (body part)
+item_216,item_107,body_parts,Mukono,Hand,hand
+item_217,,body_parts,Mulomo,Mouth,mouth
+item_218,item_108,body_parts,Ndani/ Tumbo,Stomach,tummy
+item_219,,body_parts,Nyayo,Feet,foot
+item_220,item_109,body_parts,Nyere,Hair,hair
+item_221,,body_parts,Pula,Nose,nose
+item_222,,body_parts,Sehemu za siri/ Mududu,Private parts,penis
+item_223,item_111,body_parts,Sikiro,Ear,ear
+item_224,,body_parts,Tsavu,Cheek,cheek
+item_225,item_112,body_parts,Uso,Face,face
+item_226,,household,Bagi/ Pochi/ Mukoba,Bag,bag
+item_227,item_114,household,Bakuli,Bowl,bowl
+item_228,,household,Baruwa,Letter,letter
+item_229,,household,Burangeti,Blanket,blanket
+item_230,,household,Burashi,Brush,brush (object)
+item_231,item_116,household,Dawa,Medicine,medicine
+item_232,,household,Dishi/ Beseni,Basin,sink
+item_233,item_117,household,Fimbo,StickH,stick (object)
+item_234,item_118,household,Funguo,Keys,key
+item_235,item_119,household,Gilasi,Glass,glass
+item_236,item_120,household,Godoro,Mattress,bed
+item_237,item_121,household,Jagi,Jug,NA
+item_238,,household,Kapeti,Carpet,carpet
+item_239,item_122,household,Karatasi,Paper,paper
+item_240,,household,Karatasi ya kudzihangusa,Toilet paper,toilet paper
+item_241,,household,Kifudu,copra (coconut cover),NA
+item_242,,household,Kifuguriro cha soda,Opener,bottle opener
+item_243,item_123,household,Kijiko,Spoon,spoon
+item_244,item_124,household,Kikahana,Basket,basket
+item_245,item_125,household,Kikombe,Cup,cup
+item_246,item_126,household,Kishu,Knife,knife
+item_247,item_127,household,Kitsana/ Shanua,Comb,comb (object)
+item_248,,household,Kopo,Mug,mug
+item_249,item_128,household,Lushero,Broom,broom
+item_250,,household,Makasi,Scissors,scissors
+item_251,,household,Makuti,coconut leaves,roof
+item_252,,household,Mbuzi,A tool used to grate coconut,NA
+item_253,item_129,household,Miwani,Glasses,glasses
+item_254,,household,Mukebe,Tin,NA
+item_255,,household,Mukeka,Mat,NA
+item_256,item_130,household,Muswaki,Toothbrush,toothbrush
+item_257,,household,Muto,Pillow,pillow
+item_258,item_131,household,Mwiko,Cooking stick,NA
+item_259,item_132,household,Ndoo,Bucket1,NA
+item_260,,household,Nyundo,Hammer,hammer
+item_261,,household,Peni/ Shilingi,Shilling/Penny,NA
+item_262,item_134,household,Pesa,Money,money
+item_263,item_135,household,Picha,Picture,picture
+item_264,,household,Picha/Kamera,Camera,camera
+item_265,item_136,household,Redio,Radio,radio
+item_266,,household,Remote,Remote control,remote control
+item_267,item_137,household,Saa,Watch/Clock,NA
+item_268,item_138,household,Sabuni,Soap,soap
+item_269,item_139,household,Sahani,Plate,plate
+item_270,item_140,household,Sanduku,Box,box
+item_271,item_141,household,Simu,Phone,NA
+item_272,item_142,household,Sinia,Metal tray,NA
+item_273,item_143,household,Taa,Light,light (object)
+item_274,,household,Taa ya karabai,Lamp,lamp
+item_275,,household,Taa ya mukopo,Lamp,lamp
+item_276,item_144,household,Tauli,Towel,towel
+item_277,item_145,household,Thupa,Bottle,bottle
+item_278,,household,Uchafu/Taka taka,Dirt/Waste,NA
+item_279,,household,Ukuta,Wall,wall
+item_280,,household,Uma,Fork,fork
+item_281,,furniture_rooms,Bafu/ Uwani,Bathroom,bathroom
+item_282,,furniture_rooms,Baraza,Veranda,NA
+item_283,,furniture_rooms,Bomani,Structure with walls but no roof,NA
+item_284,,furniture_rooms,Chooni,Toilet,NA
+item_285,item_147,furniture_rooms,Chumba,Room,room
+item_286,,furniture_rooms,Dirisha,Window,window
+item_287,,furniture_rooms,Furiji,Fridge,refrigerator
+item_288,,furniture_rooms,Gogo/ Kumbi,Log,NA
+item_289,,furniture_rooms,Jiko,Cooker,stove
+item_290,item_148,furniture_rooms,Jikoni,Kitchen,kitchen
+item_291,item_149,furniture_rooms,Kabati,Cupboard,cupboard
+item_292,item_150,furniture_rooms,Kihi/ Kibao,Chair,chair
+item_293,item_151,furniture_rooms,Kitanda,Bed,bed
+item_294,,furniture_rooms,Kochi,Couch,couch
+item_295,item_152,furniture_rooms,Meza,Table,table
+item_296,item_153,furniture_rooms,Muryango,Door,door
+item_297,item_154,furniture_rooms,Poti,Potty,potty
+item_298,,furniture_rooms,Sakafu/Simiti,Floor,floor
+item_299,,furniture_rooms,Sofa,Sofa set,couch
+item_300,item_156,furniture_rooms,Stuli,Stool,stool
+item_301,,furniture_rooms,TV/ Televisheni,Television,TV
+item_302,item_158,outside,Barabara,Road,road
+item_303,item_159,outside,Dzuwa,Sun,sun
+item_304,item_160,outside,Iwe,Stone,stone
+item_305,item_161,outside,Jembe,Hoe,hoe (object)
+item_306,item_162,outside,Kigongo,StickO,stick (object)
+item_307,,outside,Lupeho,Wind,wind
+item_308,item_163,outside,Luwa,Flower,flower
+item_309,item_164,outside,Madzi,WaterO,water (not beverage)
+item_310,,outside,Maingu,Cloud,cloud
+item_311,item_165,outside,Mtsanga,Sand,sand
+item_312,item_166,outside,Mufereji/Paipu,Pipe,pipe
+item_313,item_167,outside,Muhi,Tree,tree
+item_314,,outside,Mulunguni,Sky,sky
+item_315,,outside,Mupira wa madzi,Hose pipe,hose
+item_316,,outside,Muteza,Swing,swing (object)
+item_317,item_168,outside,Mvula,Rain,rain
+item_318,item_169,outside,Mwezi,Moon,moon
+item_319,item_170,outside,Mwiko,Spade,spade
+item_320,item_171,outside,Ndoo,Bucket2,bucket
+item_321,,outside,Ngazi,Ladder,ladder
+item_322,,outside,Ngira,Way,NA
+item_323,item_172,outside,Nyasi,Grass,grass
+item_324,,outside,Nyenyezi,Stars,star
+item_325,item_173,outside,Panga,Slasher,machete
+item_326,,outside,Shimo,Hole,hole
+item_327,item_175,outside,Vizhuma,Small pieces of metal,NA
+item_328,,places,Bahari/Pwani,Beach/Ocean,beach
+item_329,,places,Barazani,Veranda,balcony
+item_330,,places,Duka,Shop,store
+item_331,,places,Hathi/ Pati/Harusi,Party,party
+item_332,item_179,places,Kanisa/ Mushikiti*,Mosque/church,church
+item_333,,places,Kazini/ Shughulini,Workplace,work (place)
+item_334,,places,Kituo cha mafuha/Petroli,Petrol station,gas station
+item_335,,places,Madirasa/Chuwoni,Islamic school for children,school
+item_336,item_182,places,Mudzini/ Nyumbani,Home,home
+item_337,,places,Mundani,Farm,farm
+item_338,,places,Nyumba,House,house
+item_339,item_185,places,Sikuli,School,school
+item_340,,places,Sinema,Cinema,movie
+item_341,,places,Sipitali,Hospital,hospital
+item_342,,places,Sokoni,Market,market
+item_343,,places,Tsakani/ Vuwe,Bush,country
+item_344,,places,Uwanjani,Compound,market
+item_345,item_186,people,Ahu/ Jomba/ Uncle,Maternal uncle,uncle
+item_346,item_187,people,Baba,Father,daddy
+item_347,,people,Bamuhoho,Younger paternal uncle,uncle
+item_348,,people,Bamuzhere,Older paternal uncle,uncle
+item_349,item_188,people,Dakitari,Doctor,doctor
+item_350,item_189,people,Dzina ra kuro/ paka,Dog or cat's name,pet's name
+item_351,,people,Dzina ra muzhazi/murezi,Caregiver's name,babysitter's name
+item_352,item_191,people,Dzina ra ye mwana mwenye,Child's own name,child's own name
+item_353,item_192,people,Fundi,Expert,NA
+item_354,item_193,people,Hawe/ Nyanya,Grandmother,grandma
+item_355,item_194,people,Mama,Mother,mommy
+item_356,,people,Mamuhoho,Younger maternal aunt,aunt
+item_357,,people,Mamuzhere,Older maternal aunt,aunt
+item_358,,people,Muche,Wife,wife
+item_359,item_195,people,Muhoho/ Dede,Child,child
+item_360,,people,Mujema,Wine tapper,NA
+item_361,,people,Mukazi,Maid,maid
+item_362,,people,Mukurima,Farmer,farmer
+item_363,,people,Murisa,Herdsman,herder
+item_364,,people,Musena,Friend,friend
+item_365,,people,Musichana,"Girl, young woman",NA
+item_366,item_196,people,Mutu,Person,person
+item_367,,people,Muvulana/ muthana,Boy,boy
+item_368,,people,Mwalimu,Teacher,teacher
+item_369,item_197,people,Mwana mutsanga,Infant,baby
+item_370,,people,Nasi,Nurse,nurse
+item_371,item_198,people,Ndugu,Sibling,sibling
+item_372,,people,Polisi,Policeman,police
+item_373,,people,Tsangazimi/ Aunt,Aunt,aunt
+item_374,item_199,people,Tsawe/ Babu,Grandfather,grandpa
+item_375,item_200,games_routines,Asante/ mumvera,Thank you,thank you
+item_376,,games_routines,Chakurya cha dziloni,"Dinner, supper",dinner
+item_377,,games_routines,Chakurya cha mutsana,Lunch,lunch
+item_378,item_201,games_routines,Eeeh,Yes,yes
+item_379,item_202,games_routines,Haah,No,no
+item_380,item_203,games_routines,Kamuna utu?,How are you? ( respectful greeting),NA
+item_381,,games_routines,Karibu,Welcome,welcome
+item_382,item_204,games_routines,Kibe,Game of hide and seek,NA
+item_383,,games_routines,Kufungula,Breakfast,breakfast
+item_384,,games_routines,Kuna utu,How are you,how are you
+item_385,,games_routines,Kuoga,Bathe,bathe
+item_386,,games_routines,Kuoya,Relaxing,NA
+item_387,,games_routines,Kupiga simu,Make a phone call,call
+item_388,,games_routines,Kwenda chooni,Go to the toilet,go potty
+item_389,item_207,games_routines,Pore,Sorry,sorry
+item_390,,games_routines,Senzi,Don't want to,NA
+item_391,item_208,games_routines,Shh,Tell someone to keep quiet,shh
+item_392,,games_routines,Tafadhali,Please,please
+item_393,,games_routines,Udzasindaze?,Good evening,good evening
+item_394,item_209,games_routines,Ukaleto/Bye,Bye,bye
+item_395,,games_routines,Ukuti,Game involving going round,ring around the rosie
+item_396,item_210,games_routines,Ulazeto,Good night,good night
+item_397,,games_routines,Unacho,You have it,NA
+item_398,item_211,games_routines,Vikara?,hi?,him
+item_399,,games_routines,Agwa,Fall,fall
+item_400,,action_words,Anika,Spread clothes,NA
+item_401,item_221,action_words,Anwa,Drink,drink (action)
+item_402,item_230,action_words,Arya,Eat,eat
+item_403,,action_words,Banda/Vunza,Break,break
+item_404,item_218,action_words,Bisha/ Hodi,Knock,knock
+item_405,item_217,action_words,Busa,Blow,blow
+item_406,,action_words,Busu/ Shumu,Kiss,kiss
+item_407,item_213,action_words,Bwaga,Drop,drop
+item_408,item_220,action_words,Chimbira,Run away,run
+item_409,,action_words,Chimbiza,Chase,chase
+item_410,,action_words,Chora,Draw,draw
+item_411,,action_words,Dima,Be able,able
+item_412,,action_words,Dzala,Fill,fill
+item_413,,action_words,Fikiria,Think,think
+item_414,item_237,action_words,Fitsa,Hide,hide
+item_415,item_224,action_words,Funga,Close,close
+item_416,,action_words,Funika,Cover,cover (action)
+item_417,,action_words,Futa/Hangusa,Wipe,wipe
+item_418,,action_words,Gandamira,Hug,hug
+item_419,,action_words,Gazhirana,Share,share
+item_420,item_249,action_words,Gesa,Wash,wash
+item_421,item_223,action_words,Gita,Cook,cook
+item_422,,action_words,Gonga/ Dunda,Hit,hit
+item_423,,action_words,Gula,Buy,buy
+item_424,item_226,action_words,Guta,Touch,touch
+item_425,,action_words,Gwira/Ganda,Catch/hold,catch
+item_426,item_228,action_words,Hala,Take,take
+item_427,,action_words,Henda,Do,do
+item_428,,action_words,Henda kazi,Work,work (action)
+item_429,item_216,action_words,Henda mwii/Tseka,Laugh/smile,laugh
+item_430,,action_words,Henza,"Love, like",love
+item_431,,action_words,Hereza,slip,slip
+item_432,item_241,action_words,Hirika,Drive,drive
+item_433,,action_words,Hokera,Receive,receive
+item_434,,action_words,Huruka,Jump,jump
+item_435,,action_words,Iga,Pretend,pretend
+item_436,item_222,action_words,Ika,Keep,keep
+item_437,item_232,action_words,Ima,Stand,stand
+item_438,item_233,action_words,Imba,Sing,sing
+item_439,,action_words,Jenga,Build,build
+item_440,,action_words,Jeza/ Jaribu,Try,try
+item_441,item_234,action_words,Kala,Stay,stay
+item_442,,action_words,Kata,Cut,cut
+item_443,,action_words,Kaza,Tighten,tighten
+item_444,item_235,action_words,Kelesi,Sit,sit
+item_445,item_236,action_words,Kuha/ shiba,Be satisfied with food,NA
+item_446,,action_words,Kunukira,Doze off,nap
+item_447,item_240,action_words,Kwenda,Go,go
+item_448,,action_words,Kwera/ Panda,Climb,climb
+item_449,item_238,action_words,Lala,SleepV,sleep
+item_450,,action_words,Lamba,Lick,lick
+item_451,item_239,action_words,Lamuka,Wake up,wake
+item_452,,action_words,Lamusa,Greet,greet
+item_453,item_244,action_words,Lazha,Give out,give
+item_454,item_264,action_words,Loha,Dream,dream
+item_455,item_242,action_words,Lola,Look,look
+item_456,,action_words,Lorera/Tsunza,take care of,care
+item_457,item_243,action_words,Luma,Bite,bite
+item_458,,action_words,Lumira,Get hurt,hurt (action)
+item_459,,action_words,Mala,Want,want
+item_460,item_255,action_words,Marigiza,Finish,finish
+item_461,item_245,action_words,Mwaga,Pour,pour
+item_462,,action_words,Mwagika,Spill,spill
+item_463,item_246,action_words,Ndika,Write,write
+item_464,,action_words,Nena,"Speak, say",say
+item_465,,action_words,Nena,Talk,talk
+item_466,,action_words,Ni,is,be
+item_467,,action_words,Ning'inira,Hang on,hang
+item_468,item_247,action_words,Ojerera,Swim,swim
+item_469,item_248,action_words,Ona,See,see
+item_470,,action_words,Onyesa,Show,show
+item_471,,action_words,Pashula,Spill,spill
+item_472,,action_words,Pata,Get,get
+item_473,item_227,action_words,Piga makofi,Clap,clap
+item_474,,action_words,Piga rangi/ Haka rangi,Paint,paint (action)
+item_475,item_231,action_words,Piga teke,Kick,kick
+item_476,item_215,action_words,Reha,Bring,bring
+item_477,item_229,action_words,Richa,Leave,leave
+item_478,item_214,action_words,Rira,Cry,cry
+item_479,item_212,action_words,Risa,Feed,feed
+item_480,,action_words,Safisha,CleanV,clean (action)
+item_481,,action_words,Saidia/ Viza,Help,help
+item_482,item_256,action_words,Shera,Sweep,sweep
+item_483,,action_words,Shoma/Soma,"Read, study",read
+item_484,,action_words,Sikira,hear,hear
+item_485,,action_words,Sirikiza,Listen,listen
+item_486,item_258,action_words,Sukuma,Push,push
+item_487,,action_words,Sumurira,Talk or say something,NA
+item_488,,action_words,Tafuta,Look for,look for
+item_489,,action_words,Tekerenya/ Gweregecha,Tickle,tickle
+item_490,,action_words,Tengeza,"Make, mend",make
+item_491,,action_words,Teza,Swing,swing (action)
+item_492,,action_words,Thariza/Rinda,Wait,wait
+item_493,,action_words,Tharura,Tear,tear
+item_494,item_260,action_words,Thatha,Taste,taste
+item_495,,action_words,Tsagula,Choose,choose
+item_496,item_261,action_words,Tsembera,Move around/walk,walk
+item_497,item_262,action_words,Tsuha,Throw,throw
+item_498,,action_words,Tsukirirwa/ Mena,Hate/be angry,hate
+item_499,item_251,action_words,Tsukula,Carry,carry
+item_500,,action_words,Tukusa,Shake,shake
+item_501,item_225,action_words,Vina,Dance,dance
+item_502,item_265,action_words,Vugula,Open,open (action)
+item_503,item_266,action_words,Vuha,"Pull, go fishing",pull
+item_504,,action_words,Vunzika,Break by itself,break
+item_505,item_267,action_words,Zaziga,Play,play
+item_506,,descriptive_words (adjectives),Bomu,Big,big
+item_507,,descriptive_words (adjectives),Buluu,Blue,blue
+item_508,,descriptive_words (adjectives),Chache/ Kidogo,Few,little (amount)
+item_509,,descriptive_words (adjectives),Chafu,Dirty,dirty
+item_510,,descriptive_words (adjectives),Dzasira/ Goma,Finished,finished
+item_511,,descriptive_words (adjectives),Furufu/ Kavu/ uma,Dry,dry (description)
+item_512,,descriptive_words (adjectives),Idziyovunzika/ Bandika,One that has broken,broken
+item_513,,descriptive_words (adjectives),Kaheri,Again,again
+item_514,,descriptive_words (adjectives),kali,Hot tempered,angry
+item_515,,descriptive_words (adjectives),Kara kara,OK,ok
+item_516,,descriptive_words (adjectives),Kihu,Thirst,thirsty
+item_517,,descriptive_words (adjectives),Kiza,Darkness,dark
+item_518,,descriptive_words (adjectives),Komu,"Hard, difficult",difficult
+item_519,,descriptive_words (adjectives),Kongo,Rotten,rotten
+item_520,,descriptive_words (adjectives),Kongo,"Sick, ill",sick
+item_521,,descriptive_words (adjectives),Kuka,Doze,sleepy
+item_522,,descriptive_words (adjectives),Kululu/ Lonzo,Noise,noisy
+item_523,,descriptive_words (adjectives),Kwanza,First,first
+item_524,,descriptive_words (adjectives),Laini,Soft,soft
+item_525,,descriptive_words (adjectives),Lumira,Got hurt,hurt (description)
+item_526,,descriptive_words (adjectives),Lupeho,Wind,wind
+item_527,,descriptive_words (adjectives),Lwama,Get wet,wet (description)
+item_528,,descriptive_words (adjectives),Malo,Quick,quick
+item_529,,descriptive_words (adjectives),Matso,Alert,alert
+item_530,,descriptive_words (adjectives),Mbidzo,Good,good
+item_531,,descriptive_words (adjectives),Mbii,Bad,bad
+item_532,,descriptive_words (adjectives),Mbisha,New,new
+item_533,,descriptive_words (adjectives),Moho,Hot/fire,hot
+item_534,,descriptive_words (adjectives),Mu/Urembo,"Beautiful, beauty",beautiful
+item_535,,descriptive_words (adjectives),Mure/Nyire,Long,long
+item_536,,descriptive_words (adjectives),Mwisho/ Dumu,Last long,tough
+item_537,,descriptive_words (adjectives),Nyamala,Quiet,quiet
+item_538,,descriptive_words (adjectives),Nyaruhe,White,white
+item_539,,descriptive_words (adjectives),Nyiru,Black,black
+item_540,,descriptive_words (adjectives),Nzala,Hunger,hungry
+item_541,,descriptive_words (adjectives),Nziho/ Memerea,Thick/heavy,heavy
+item_542,,descriptive_words (adjectives),Ogoha,Fear,afraid
+item_543,,descriptive_words (adjectives),Peho,"cold, Shade, air,",cold
+item_544,item_279,descriptive_words (adjectives),Porepore,Slowly,slow
+item_545,,descriptive_words (adjectives),Raha,Happiness,happy
+item_546,,descriptive_words (adjectives),Rangi ya nyasi,Green,green
+item_547,,descriptive_words (adjectives),Safi,CleanA,clean (description)
+item_548,,descriptive_words (adjectives),Sauti ya dzulu,Loud,loud
+item_549,,descriptive_words (adjectives),Tele/ Dzala,Full,full
+item_550,,descriptive_words (adjectives),Thithe,Small,small
+item_551,,descriptive_words (adjectives),Thumia,Old thing,old
+item_552,,descriptive_words (adjectives),Thune,Red,red
+item_553,,descriptive_words (adjectives),Tsoka,Get tired,tired
+item_554,,descriptive_words (adjectives),Tsukirwa,Anger,angry
+item_555,,descriptive_words (adjectives),Tuhu,Empty,empty
+item_556,item_282,descriptive_words (adjectives),Utsingizini,SleepA,sleepy
+item_557,,time_words,Baadaye,Later,later
+item_558,,time_words,Dzana,Yesterday,yesterday
+item_559,,time_words,Dziloni,Evening,evening
+item_560,,time_words,Machero,Tomorrow,tomorrow
+item_561,,time_words,Madzacha,Morning,morning
+item_562,,time_words,Mutsana,Daytime,daytime
+item_563,,time_words,Rero,today,today
+item_564,,time_words,Siku,Day,day
+item_565,,time_words,Siku nzima,Whole day,NA
+item_566,,time_words,Usiku,Night,night
+item_567,,time_words,Vikara/Sasa,Now,now
+item_568,item_292,pronouns,Yuyu,01dem1,NA
+item_569,,pronouns,Yuyahu,01dem2,NA
+item_570,,pronouns,Iye,01dem3,NA
+item_571,,pronouns,Mungine,01dem5,NA
+item_572,,pronouns,mwenye,01dem6,NA
+item_573,,pronouns,Wangu,01ps1,NA
+item_574,,pronouns,Wako,01ps2,NA
+item_575,,pronouns,Wakwe,01ps3,NA
+item_576,,pronouns,Wehu,01ps4,NA
+item_577,,pronouns,Wenu,01ps5,NA
+item_578,,pronouns,Wao,01ps6,NA
+item_579,,pronouns,Aa,02dem1,NA
+item_580,,pronouns,Aryahu,02dem2,NA
+item_581,,pronouns,Ao,02dem3,NA
+item_582,,pronouns,osi,02dem4,NA
+item_583,,pronouns,angine,02dem5,NA
+item_584,,pronouns,enye,02dem6,NA
+item_585,,pronouns,Riri,05dem1,NA
+item_586,,pronouns,Riryahu,05dem2,NA
+item_587,,pronouns,Riro,05dem3,NA
+item_588,,pronouns,Rosi,05dem4,NA
+item_589,,pronouns,Ringine,05dem5,NA
+item_590,,pronouns,Renye,05dem6,NA
+item_591,,pronouns,Rangu,05ps1,NA
+item_592,,pronouns,Rako,05ps2,NA
+item_593,,pronouns,Rakwe,05ps3,NA
+item_594,,pronouns,Rehu,05ps4,NA
+item_595,,pronouns,Renu,05ps5,NA
+item_596,,pronouns,Rao,05ps6,NA
+item_597,,pronouns,Gaga,06dem1,NA
+item_598,,pronouns,Garyahu,06dem2,NA
+item_599,,pronouns,Gago,06dem3,NA
+item_600,,pronouns,Gosi,06dem4,NA
+item_601,,pronouns,Mangine,06dem5,NA
+item_602,,pronouns,Genye,06dem6,NA
+item_603,,pronouns,Kiki,07dem1,NA
+item_604,item_287,pronouns,Kiryahu,07dem2,NA
+item_605,,pronouns,Kicho,07dem3,NA
+item_606,,pronouns,Chosi,07dem4,NA
+item_607,,pronouns,Kingine,07dem5,NA
+item_608,item_283,pronouns,Changu,07ps1,NA
+item_609,,pronouns,Chako,07ps2,NA
+item_610,,pronouns,Chakwe,07ps3,NA
+item_611,,pronouns,Chehu,07ps4,NA
+item_612,,pronouns,Chenu,07ps5,NA
+item_613,,pronouns,Chao,07ps6,NA
+item_614,,pronouns,Vivi,08dem1,NA
+item_615,,pronouns,Viryahu,08dem2,NA
+item_616,,pronouns,Vivyo,08dem3,NA
+item_617,,pronouns,Vingine,08dem4,NA
+item_618,,pronouns,Ii,09dem1,NA
+item_619,,pronouns,Iryahu,09dem2,NA
+item_620,,pronouns,Iyo,09dem3,NA
+item_621,,pronouns,Yosi,09dem4,NA
+item_622,,pronouns,Ingine,09dem5,NA
+item_623,,pronouns,yenye,09dem6,NA
+item_624,item_291,pronouns,Yangu,09ps1,NA
+item_625,,pronouns,Yako,09ps2,NA
+item_626,,pronouns,Yakwe,09ps3,NA
+item_627,,pronouns,Yehu,09ps4,NA
+item_628,,pronouns,Yenu,09ps5,NA
+item_629,,pronouns,Yao,09ps6,NA
+item_630,,pronouns,Zizi,10dem1,NA
+item_631,,pronouns,Ziryahu,10dem2,NA
+item_632,,pronouns,Zizo,10dem3,NA
+item_633,,pronouns,Zosi,10dem4,NA
+item_634,,pronouns,Zenye,10dem6,NA
+item_635,,pronouns,Zangu,10ps1,NA
+item_636,,pronouns,Zako,10ps2,NA
+item_637,,pronouns,Zakwe,10ps3,NA
+item_638,,pronouns,Zehu,10ps4,NA
+item_639,,pronouns,Zenu,10ps5,NA
+item_640,,pronouns,Zao,10ps6,NA
+item_641,,pronouns,Haha,16dem1,NA
+item_642,,pronouns,Haryahu,16dem2,NA
+item_643,,pronouns,Haho,16dem3,NA
+item_644,,pronouns,Hangine,16dem5,NA
+item_645,,pronouns,Henye,16dem6,NA
+item_646,,pronouns,Kuku,17dem1,NA
+item_647,,pronouns,Kuryahu,17dem2,NA
+item_648,,pronouns,Kuko,17dem3,NA
+item_649,,pronouns,Kosi,17dem4,NA
+item_650,,pronouns,Kungine,17dem5,NA
+item_651,,pronouns,Kwangu,17ps1,NA
+item_652,,pronouns,Kwako,17ps2,NA
+item_653,,pronouns,Kwakwe,17ps3,NA
+item_654,,pronouns,Kwehu,17ps4,NA
+item_655,,pronouns,Kwenu,17ps5,NA
+item_656,,pronouns,Kwao,17ps6,NA
+item_657,item_288,pronouns,Mimi,pers1,NA
+item_658,,pronouns,Siswi,pers2,NA
+item_659,item_290,pronouns,Uwe,pers3,NA
+item_660,,pronouns,Iye,pers4,NA
+item_661,,question_words,Hani,Who,who
+item_662,,question_words,Hiko,Where,where (question)
+item_663,,question_words,Hiye,Which one?,which (question)
+item_664,,question_words,Hiyo,Which one?,which (question)
+item_665,,question_words,Kwanoni,why?,why
+item_666,,question_words,Ngahi,how many,how
+item_667,,question_words,Noni,What?,what
+item_668,,question_words,Rini,When?,when (question)
+item_669,,question_words,Vidze,How is it?,how
+item_670,,prepositions,Dzulu/Dzulu dzulu,On top of/up,on top
+item_671,,prepositions,Haha,Here,here
+item_672,,prepositions,Haryahu,There,there
+item_673,,prepositions,Hehi,Near,near
+item_674,,prepositions,Hehi na,Next to,next to
+item_675,,prepositions,Henye,Where there is,NA
+item_676,,prepositions,Kanda,besides,beside
+item_677,,prepositions,Kanda kanda,At the edge,NA
+item_678,,prepositions,Konze,Outside,outside
+item_679,,prepositions,Kure,Far,far
+item_680,,prepositions,kwa,At,at
+item_681,,prepositions,Ndani,Inside,inside
+item_682,,prepositions,Ndani,inside,inside
+item_683,,prepositions,Nyuma,Behind,behind
+item_684,,prepositions,Tsini,Down,down
+item_685,,prepositions,Ya,Of,of
+item_686,,descriptive_words (adverbs),Bila,without,without
+item_687,,descriptive_words (adverbs),Ingine,Another,another
+item_688,,descriptive_words (adverbs),Kahana,None,none
+item_689,,descriptive_words (adverbs),Kila,Every,every
+item_690,,descriptive_words (adverbs),Nyinji,Many,many
+item_691,,descriptive_words (adverbs),Pia,Also,also
+item_692,,descriptive_words (adverbs),Sana/Zhomu,very much,a lot
+item_693,,descriptive_words (adverbs),Sawa/ Karakara,"Same, correct",same
+item_694,,descriptive_words (adverbs),Sozho/Soyo,Not that,not
+item_695,,descriptive_words (adverbs),Yosi,All of it,everything
+item_696,,descriptive_words (adverbs),Yoyosi,Any,any
+item_697,,descriptive_words (adverbs),Zaidi,More,more
+item_698,,connecting_words,Alafu,Then,then
+item_699,,connecting_words,Ama/ Au,Or,or
+item_700,,connecting_words,Angalau,At least,NA
+item_701,,connecting_words,Hamwenga na,Together with,together
+item_702,,connecting_words,Kwa sababu,Because,because
+item_703,,connecting_words,Kwa vizho,So then,so
+item_704,,connecting_words,Lakini,But,but
+item_705,,connecting_words,Na,And,and
+,item_7,sounds,kru kru kru,Chicken calling chicks,NA
+,item_12,sounds,moo moo,Cow,cow
+,item_15,sounds,Vruum Vruum,Car,car
+,item_22,animals,Mbuzi,Goat,goat
+,item_27,animals,Panya,Cat,cat
+,item_29,animals,Tsongo/Kachango,Bird,bird
+,item_30,animals,Tumbiri/Tsalu,Monkey,monkey
+,item_36,toys,Choki,Chalk,chalk
+,item_51,food_drink,Madzi ga machungwa/juisi,Orange juice,orange juice
+,item_58,food_drink,Kumbi,Sardine,sardine
+,item_72,food_drink,Naynay/Tindi,Tomatoes,tomato
+,item_74,food_drink,Pamu,Something sweet,sweets
+,item_80,food_drink,Supu/Mutsuzi,Soup,soup
+,item_82,food_drink,Virazi zha kukalanga/chips,Chips,chips
+,item_85,clothing,Hombo/Nyonyo/Kopo ra mwana,Nipple,NA
+,item_88,clothing,Kofia/Chepeo,Hat/cap,hat
+,item_96,clothing,suruale,Trousers,pants
+,item_106,body_parts,Milomo,Mouth,mouth
+,item_110,body_parts,Sehemu za siri/ Mududu*,Private parts,penis
+,item_113,household,Bagi/Pochi/Mukoba,Bag,bag
+,item_115,household,Beseni,Basin,sink
+,item_133,household,Peni/Shilingi,Shilling /penny,coin
+,item_146,household,Uchafu,Waste,trash
+,item_155,furniture_rooms,Sofa/Kochi,Sofa set,couch
+,item_157,furniture_rooms,Varanda/Baraza,Veranda,balcony
+,item_174,outside,Shimoni,Hole/ In the hole,hole
+,item_176,places,Dukani,Shop,store
+,item_177,places,Haha,Here,here
+,item_178,places,haryahu,There,there
+,item_180,places,Konze,Outside,outside
+,item_181,places,Kwehu,Our place,home
+,item_183,places,Munda,Farm,farm
+,item_184,places,Ndani,Inside,inside
+,item_190,people,Dzina ra murezi,Caregiver's name,babysitter's name
+,item_205,games_routines,Kwenda,Go to the toilet,go potty
+,item_206,games_routines,Mambo/Mautu?,How are you?,how are you
+,item_219,action_words,Agwa,Fall,fall
+,item_250,action_words,Busu/Shumu,Kiss,kiss
+,item_252,action_words,Banda,Break,break
+,item_253,action_words,Rinda/Lolera,take care of,care
+,item_254,action_words,Chora/Andika,Draw,draw
+,item_257,action_words,Soma,"Read, study",read
+,item_259,action_words,Thariza,Wait,wait
+,item_263,action_words,Gwira,"Catch, hold",catch
+,item_268,descriptive_words,Chache,Few,little (amount)
+,item_269,descriptive_words,Chafu,Dirty,dirty
+,item_270,descriptive_words,Ingine,Another,another
+,item_271,descriptive_words,Kaheri,Again,again
+,item_272,descriptive_words,Kongo,Sick/Ill,sick
+,item_273,descriptive_words,Kululu/Lonzo,Noise,noisy
+,item_274,descriptive_words,Lumira,Got hurt,hurt (description)
+,item_275,descriptive_words,Moho,Quiet,quiet
+,item_276,descriptive_words,Nyamala,Quiet,quiet
+,item_277,descriptive_words,Nyinji,A lot,a lot
+,item_278,descriptive_words,Nzala,Hunger,hungry
+,item_280,descriptive_words,Raha,Happiness,happy
+,item_281,descriptive_words,Tsukirwa,Anger,angry
+,item_284,pronouns,ii,This one (thing) class 9,NA
+,item_285,pronouns,iryahu,That one (thing) class 9,NA
+,item_286,pronouns,iye,That one (person) class 1,NA
+,item_289,pronouns,Noni?,What?,what

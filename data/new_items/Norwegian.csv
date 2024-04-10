@@ -1,0 +1,746 @@
+WS,WG,category,definition,gloss,uni_lemma
+item_1,item_32,sounds,au,sheep,ouch
+item_2,item_33,sounds,bææ,bææ,baa baa
+item_3,item_34,sounds,brrr (bil-lyd),brr (car audio),vroom
+item_4,item_35,sounds,gakk gakk,gakk gakk,quack quack
+item_5,item_36,sounds,grr,grrr,grrr
+item_6,item_37,sounds,kykeliky,kykeliky,cockadoodledoo
+item_7,item_38,sounds,mjau,meow,meow
+item_8,item_39,sounds,møø,Need we say,moo
+item_9,item_40,sounds,nam - nam,nam - nam,yum yum
+item_10,,sounds,oi (uttrykk for overraskelse),oi (expressed surprise),wow 
+item_11,item_41,sounds,tøff-tøff,tough-tough,choo choo
+item_12,item_42,sounds,voff voff,voff voff,woof woof
+item_13,item_44,animals,(meite)mark,(Earthworms) mark,worm
+item_14,item_43,animals,and,duck,duck
+item_15,,animals,apekatt,monkey,monkey
+item_16,item_46,animals,bjørn,Bears,bear
+item_17,item_47,animals,dyr,animals,animal
+item_18,item_48,animals,ekorn,Squirrel,squirrel
+item_19,item_49,animals,elefant,elephant,elephant
+item_20,item_50,animals,elg,moose,moose
+item_21,,animals,esel,ass,donkey 
+item_22,item_51,animals,fisk (animal),fish,fish (animal)
+item_23,item_52,animals,flue,fly,fly (animal)
+item_24,item_53,animals,frosk,frog,frog
+item_25,item_54,animals,fugl,bird,bird
+item_26,item_55,animals,gås,goose,goose
+item_27,item_56,animals,gris,pig,pig
+item_28,,animals,hane,rooster,rooster
+item_29,item_57,animals,hest,horse,horse
+item_30,,animals,høne,hen,hen 
+item_31,item_58,animals,hund,dog,dog
+item_32,item_59,animals,kanin,rabbit,bunny
+item_33,item_60,animals,katt,cat,cat
+item_34,item_61,animals,kattunge,kitten,kitty
+item_35,,animals,krokodille,crocodile,crocodile 
+item_36,item_62,animals,ku,cow,cow
+item_37,item_63,animals,kylling (animal),chicken,chicken (animal)
+item_38,item_64,animals,lam,lamb,lamb
+item_39,item_65,animals,(leke)bamse,(Play) teddy bear,teddybear
+item_40,item_66,animals,løve,lion,lion
+item_41,,animals,maur,ants,ant
+item_42,item_67,animals,mus,mouse,mouse
+item_43,,animals,mygg,mosquito,mosquito
+item_44,item_68,animals,pingvin,Penguin,penguin
+item_45,,animals,ponni,pony,pony
+item_46,item_69,animals,reinsdyr,reindeer,deer
+item_47,item_71,animals,sau,sheep,sheep
+item_48,,animals,sebra,zebra,zebra
+item_49,item_72,animals,sjiraff,giraffe,giraffe
+item_50,item_73,animals,skilpadde,tortoise,turtle
+item_51,item_74,animals,sommerfugl,butterfly,butterfly
+item_52,item_75,animals,tiger,tiger,tiger
+item_53,item_76,animals,ugle,owl,owl
+item_54,,animals,ulv,wolf,wolf 
+item_55,item_77,animals,valp,Puppy,puppy
+item_56,item_78,animals,veps,wasp,wasp
+item_57,,vehicles,akebrett,sledges,sled
+item_58,item_79,vehicles,barnevogn,stroller,stroller
+item_59,item_80,vehicles,bil,car,car
+item_60,item_81,vehicles,brannbil,fire truck,firetruck
+item_61,,vehicles,båt,boat,boat
+item_62,item_82,vehicles,buss,coach,bus
+item_63,item_83,vehicles,fly,plane,airplane
+item_64,,vehicles,helikopter,helicopter,helicopter
+item_65,item_84,vehicles,lastebil,truck,truck
+item_66,item_85,vehicles,motorsykkel,motorcycle,motorcycle
+item_67,item_86,vehicles,sykkel,bicycle,bicycle
+item_68,item_87,vehicles,tog,train,train
+item_69,,vehicles,traktor,tractor,tractor
+item_70,,vehicles,trehjulssykkel,tricycle,tricycle
+item_71,item_88,toys,ball,prom,ball
+item_72,item_89,toys,ballong,balloon,balloon
+item_73,,toys,blyant,pencil,pen/pencil
+item_74,item_90,toys,bok,book,book
+item_75,item_91,toys,klosser,bricks,blocks
+item_76,item_92,toys,dukke,baby doll,doll
+item_77,,toys,lego,Lego,blocks
+item_78,,toys,eventyr,fairy tales,story
+item_79,,toys,fargeblyant,crayon,pen/pencil
+item_80,,toys,presang,gift,present
+item_81,,toys,kritt,chalk,chalk 
+item_82,item_93,toys,leke (object),play,toy (object)
+item_83,,toys,lim,glue,glue (object)
+item_84,,toys,penn,pen,pen 
+item_85,,toys,plastilina,plasticine,play dough
+item_86,,toys,puslespill,jigsaw puzzle,puzzle
+item_87,,toys,spill,game,game 
+item_88,item_95,toys,såpebobler,soap bubbles,bubbles
+item_89,,food_drink,(brød)skive,(Bread) slice,sandwich
+item_90,,food_drink,agurk,cucumber,cucumber
+item_91,item_96,food_drink,appelsin,orange,orange (food)
+item_92,item_97,food_drink,banan,banana,banana
+item_93,,food_drink,boller,bowls,bun
+item_94,,food_drink,bønner,beans,beans
+item_95,item_99,food_drink,brød,loaf of bread,bread
+item_96,,food_drink,brus,soft drinks,soda
+item_97,,food_drink,cola,Coke,coke
+item_98,item_100,food_drink,corn flakes,corn flakes,cheerios
+item_99,,food_drink,dessert,dessert,dessert 
+item_100,item_101,food_drink,drikke (beverage),drink,drink (beverage)
+item_101,,food_drink,druer,grapes,grapes
+item_102,item_102,food_drink,egg,eggs,egg
+item_103,item_103,food_drink,eple,apple,apple
+item_104,,food_drink,erter,peas,peas
+item_105,item_104,food_drink,fisk (food),fish,fish (food)
+item_106,item_105,food_drink,frokostblanding,cereal,cereal
+item_107,,food_drink,frukt,fruit,fruit 
+item_108,,food_drink,godteri,candy,candy
+item_109,,food_drink,grøt,porridge,porridge 
+item_110,item_106,food_drink,gulrot,carrot,carrot
+item_111,,food_drink,hamburger,hamburger,hamburger
+item_112,item_107,food_drink,is,ice,ice cream
+item_113,,food_drink,jordbær,strawberries,strawberry
+item_114,item_108,food_drink,juice,juice,juice
+item_115,item_109,food_drink,kaffe,coffee,coffee
+item_116,item_110,food_drink,kake,cake,cake
+item_117,item_111,food_drink,kjeks,cookies,cracker
+item_118,item_112,food_drink,kjøtt,meat,meat
+item_119,,food_drink,kjøttkaker,Meatball,meatball
+item_120,,food_drink,knekkebrød,crispbread,cracker
+item_121,item_113,food_drink,kylling (food),chicken,chicken (food)
+item_122,,food_drink,leverpostei,liverpaste,NA
+item_123,item_114,food_drink,mat,food,food
+item_124,,food_drink,matpakke,packed,lunchbox
+item_125,item_115,food_drink,melk,milk,milk
+item_126,,food_drink,melon,melon,melon
+item_127,,food_drink,nøtter,nuts,nut
+item_128,,food_drink,nugatti,Nugatti,NA
+item_129,item_116,food_drink,ost,cheese,cheese
+item_130,,food_drink,pannekake,pancake,pancake
+item_131,item_117,food_drink,pasta,pasta,pasta
+item_132,item_118,food_drink,pizza,pizza,pizza
+item_133,,food_drink,pølser,hot dogs,hot dog
+item_134,,food_drink,pommes frites,french fries,french fries
+item_135,,food_drink,popcorn,popcorn,popcorn 
+item_136,,food_drink,poteter,potatoes,potato
+item_137,,food_drink,potetgull,potato chips,chips
+item_138,,food_drink,ris,rice,rice
+item_139,,food_drink,ristet brød,toast,toast
+item_140,item_119,food_drink,rosiner,raisins,raisin
+item_141,,food_drink,saft,squash,juice
+item_142,,food_drink,salami,salami,salami 
+item_143,,food_drink,salt,salt,salt
+item_144,,food_drink,saus,sauce,sauce 
+item_145,,food_drink,sjokolade,chocolate,chocolate
+item_146,item_120,food_drink,smør,butter,butter
+item_147,item_121,food_drink,spagetti,spaghetti,pasta
+item_148,item_122,food_drink,sukkertøy,Confectionery,candy
+item_149,,food_drink,suppe,soup,soup
+item_150,,food_drink,syltetøy,jam,jam
+item_151,,food_drink,te,tea,tea
+item_152,,food_drink,tran,cod liver oil,NA
+item_153,,food_drink,tyggegummi,chewing gum,gum
+item_154,,food_drink,vafler,waffles,pancake
+item_155,item_123,food_drink,vann (beverage),water,water (beverage)
+item_156,,food_drink,yoghurt,yogurt,yogurt
+item_157,,clothing,belte,belt,belt
+item_158,item_124,clothing,bleie,Diaper,diaper
+item_159,item_125,clothing,bukse,pants,pants
+item_160,,clothing,dress (ute),dress (out),suit 
+item_161,item_126,clothing,genser,sweater,sweater
+item_162,item_127,clothing,glidelås,zipper,zipper
+item_163,item_128,clothing,halskjede,Necklace,necklace
+item_164,,clothing,hansker,gloves,glove
+item_165,item_129,clothing,jakke,jacket,jacket
+item_166,,clothing,joggesko,sneakers,sneaker
+item_167,item_130,clothing,kjole,dress,dress (object)
+item_168,,clothing,knapper,Buttons,button
+item_169,item_132,clothing,lue,cap,hat
+item_170,item_133,clothing,pysjamas,pajamas,pajamas
+item_171,item_134,clothing,regntøy,rainwear,coat
+item_172,,clothing,sandaler,sandals,sandal
+item_173,item_135,clothing,shorts,shorts,shorts
+item_174,,clothing,skjerf,scarf,scarf
+item_175,,clothing,skjorte,shirt,shirt
+item_176,item_136,clothing,sko,shoe,shoe
+item_177,item_137,clothing,smekke,bib,bib
+item_178,item_138,clothing,smokk,pacifier,pacifier
+item_179,item_139,clothing,sokker,socks,sock
+item_180,item_140,clothing,støvler,boots,boot
+item_181,item_141,clothing,strømpebukse,tights,tights
+item_182,,clothing,strømper,stockings,tights
+item_183,item_142,clothing,t-skjorte,T-shirt,t-shirt
+item_184,,clothing,tøfler,slippers,slipper
+item_185,,clothing,underbukse,briefs,underpants
+item_186,item_143,clothing,votter,mittens,mitten
+item_187,,body_parts,ankel,Ankle,ankle
+item_188,item_144,body_parts,ansikt,face,face
+item_189,item_145,body_parts,arm,arm,arm
+item_190,item_146,body_parts,bein,bone,leg
+item_191,item_147,body_parts,finger,finger,finger
+item_192,item_148,body_parts,fot,foot,foot
+item_193,,body_parts,hake,chin,chin 
+item_194,item_149,body_parts,hånd,hand,hand
+item_195,item_150,body_parts,hår,hair,hair
+item_196,item_151,body_parts,hode,head,head
+item_197,item_152,body_parts,kinn,cheek,cheek
+item_198,item_153,body_parts,kne,knee,knee
+item_199,,body_parts,lepper,lips,lip
+item_200,item_154,body_parts,mage,stomach,tummy
+item_201,item_155,body_parts,munn,mouth,mouth
+item_202,item_156,body_parts,navle,belly button,belly button
+item_203,item_157,body_parts,nese,nose,nose
+item_204,item_158,body_parts,øre,ear,ear
+item_205,item_159,body_parts,øye,eye,eye
+item_206,,body_parts,pupp,tit,breast
+item_207,,body_parts,rumpe,butt,butt
+item_208,,body_parts,rygg,back,back (body part)
+item_209,,body_parts,skulder,shoulder,shoulder
+item_210,item_161,body_parts,tenner,teeth,tooth
+item_211,item_162,body_parts,tiss,tiss,penis
+item_212,item_163,body_parts,tunge,tongue,tongue
+item_213,item_160,body_parts,tå,toe,toe
+item_214,item_164,household,bilde,picture,picture
+item_215,,household,boks,box,box
+item_216,item_165,household,børste,brush,brush (object)
+item_217,,household,bøtte,bucket,bucket
+item_218,,household,brett,board,board
+item_219,item_166,household,briller,glasses,glasses
+item_220,,household,dopapir,dopapir,toilet paper
+item_221,item_167,household,dyne,duvet,blanket
+item_222,item_168,household,eske,box,box
+item_223,,household,fat,barrel,plate
+item_224,item_169,household,flaske,bottle,bottle
+item_225,,household,gåbil,gåbil,NA
+item_226,item_170,household,gaffel,fork,fork
+item_227,item_171,household,glass,glass,glass
+item_228,item_172,household,hammer,hammer,hammer
+item_229,item_173,household,håndkle,towel,towel
+item_230,item_174,household,kam,comb,comb (object)
+item_231,,household,kamera,camera,camera
+item_232,,household,kasse,Checkout,box
+item_233,,household,kjøkkenrull,kitchen roll,paper towel
+item_234,item_175,household,klokke,clock,clock
+item_235,item_176,household,kniv,knife,knife
+item_236,item_177,household,kopp,cup,cup
+item_237,item_178,household,kost,costly,broom
+item_238,,household,krukke,jar,jar
+item_239,,household,krus,mug,mug 
+item_240,item_179,household,lampe,lamp,lamp
+item_241,item_180,household,lommebok,purse,wallet
+item_242,item_181,household,lys,light,light (object)
+item_243,item_182,household,medisin,medicine,medicine
+item_244,item_183,household,nøkler,Keys,key
+item_245,item_184,household,papir,paper,paper
+item_246,item_185,household,penger,money,money
+item_247,item_186,household,plante,plant,plant
+item_248,item_187,household,pute,pillow,pillow
+item_249,item_188,household,radio,radio,radio
+item_250,item_189,household,saks,scissors,scissors
+item_251,item_190,household,såpe,soap,soap
+item_252,,household,sekk,sack,backpack 
+item_253,,household,serviett,napkin,napkin
+item_254,item_191,household,skål,Cheers,bowl
+item_255,item_192,household,skje,spoon,spoon
+item_256,item_193,household,søppel,trash,trash
+item_257,,household,søppelbøtte,trash can,trash can 
+item_258,item_194,household,støvsuger,vacuum cleaner,vacuum
+item_259,item_195,household,tallerken,plate,plate
+item_260,item_196,household,tannbørste,toothbrush,toothbrush
+item_261,item_197,household,telefon,phone,telephone
+item_262,item_198,household,teppe,blanket,blanket
+item_263,,household,veske,handbag,bag
+item_264,item_199,furniture_rooms,bad,bathroom,bathroom
+item_265,item_200,furniture_rooms,badekar,bathtub,bathtub
+item_266,,furniture_rooms,balkong,balcony,balcony
+item_267,,furniture_rooms,barneseng,cot,cot
+item_268,item_201,furniture_rooms,barnestol,Highchair,high chair
+item_269,item_202,furniture_rooms,bord,table,table
+item_270,,furniture_rooms,do,do,toilet 
+item_271,item_203,furniture_rooms,dør,dies,door
+item_272,,furniture_rooms,dusj,shower,shower
+item_273,item_204,furniture_rooms,garasje,garage,garage
+item_274,item_205,furniture_rooms,gyngestol,rocking chair,rocking chair
+item_275,,furniture_rooms,kjeller,basement,basement
+item_276,item_206,furniture_rooms,kjøkken,kitchen,kitchen
+item_277,item_207,furniture_rooms,kjøleskap,refrigerator,refrigerator
+item_278,item_208,furniture_rooms,komfyr,stove,stove
+item_279,item_209,furniture_rooms,lekegrind,playpen,play pen
+item_280,item_210,furniture_rooms,ovn,oven,oven
+item_281,,furniture_rooms,PC,PC,computer
+item_282,item_211,furniture_rooms,potte,Potty,potty
+item_283,,furniture_rooms,rom,rom,room 
+item_284,item_212,furniture_rooms,seng,bed,bed
+item_285,,furniture_rooms,skap,cupboard,cupboard 
+item_286,item_213,furniture_rooms,skuff,Tray,drawer
+item_287,item_214,furniture_rooms,sofa,sofa,couch
+item_288,item_215,furniture_rooms,soverom,bedroom,bedroom
+item_289,item_216,furniture_rooms,stol,chair,chair
+item_290,item_217,furniture_rooms,stue,living room,living room
+item_291,,furniture_rooms,terrasse,terrace,terrace
+item_292,,furniture_rooms,tørketrommel,dryer,dryer
+item_293,item_218,furniture_rooms,trapp,staircase,stairs
+item_294,item_219,furniture_rooms,TV,Television,TV
+item_295,item_220,furniture_rooms,vask,wash,sink
+item_296,,furniture_rooms,vaskemaskin,washing machine,washing machine 
+item_297,item_221,furniture_rooms,vindu,window,window
+item_298,,outside,badebasseng,swimming pool,pool
+item_299,,outside,bakgård,Backyard,backyard
+item_300,item_222,outside,blomst,flower,flower
+item_301,,outside,fjell,mountain,mountain 
+item_302,,outside,flagg,flag,flag
+item_303,,outside,fortau,pavement,pavement
+item_304,,outside,gress,grass,grass
+item_305,,outside,gressklipper,lawn mower,lawn mower
+item_306,item_223,outside,himmel,heaven,sky
+item_307,item_224,outside,huske (object),remember,swing (object)
+item_308,,outside,kjelke,toboggan,sled
+item_309,item_225,outside,måne,moon,moon
+item_310,,outside,pinne,stick,stick 
+item_311,item_226,outside,regn,rain,rain
+item_312,,outside,sandkasse,sandpit,sandbox
+item_313,item_227,outside,sklie,slide,slide (object)
+item_314,,outside,skyer,clouds,cloud
+item_315,item_228,outside,snø,snow,snow
+item_316,,outside,snømann,snowman,snowman 
+item_317,item_229,outside,sol,sun,sun
+item_318,item_230,outside,spade,shovel,shovel
+item_319,,outside,steiner,stones,rock (object)
+item_320,,outside,stige,step ladder,ladder
+item_321,item_232,outside,stjerner,stars,star
+item_322,,outside,tak,ceiling,roof
+item_323,,outside,trampoline,trampoline,trampoline
+item_324,item_233,outside,tre,three,tree
+item_325,item_235,outside,vann (not beverage),water,water (not beverage)
+item_326,,outside,vannslange,water hose,hose
+item_327,,outside,vei,road,road
+item_328,,outside,vind,wind,wind
+item_329,,places,bensinstasjon,gas station,gas station
+item_330,,places,bondegård,Farm,farm 
+item_331,item_236,places,butikk,shop,store
+item_332,,places,byen,the city,city
+item_333,,places,campingplass,camping site,camping
+item_334,item_237,places,dyrehage,zoo,zoo
+item_335,item_238,places,fest,fest,party
+item_336,item_239,places,hage,garden,garden
+item_337,item_240,places,hjem,home,home
+item_338,item_241,places,hus,house,house
+item_339,item_242,places,jobb,job,work (place)
+item_340,,places,kino,movie theater,movie
+item_341,item_243,places,kirke,church,church
+item_342,,places,landet,the country,country
+item_343,,places,lekeplass,playground,playground
+item_344,item_244,places,park,park,park
+item_345,,places,sirkus,circus,circus
+item_346,,places,skogen,the woods,forest
+item_347,item_245,places,skole,school,school
+item_348,item_246,places,strand,beach,beach
+item_349,item_247,places,svømmehall,svømmehall,pool
+item_350,,places,ut,out,outside 
+item_351,item_248,people,baby,baby,baby
+item_352,item_249,people,barn,children,child
+item_353,item_250,people,barnets navn,child's name,child's own name
+item_354,,people,barnevaktens navn,Barnevakten name,babysitter's name 
+item_355,item_251,people,bestefar,grandfather,grandpa
+item_356,item_252,people,bestemor,grandmother,grandma
+item_357,,people,bonde,farmer,farmer
+item_358,,people,brannmann,firefighter,firefighter
+item_359,item_253,people,bror,brother,brother
+item_360,,people,cowboy,cowboy,cowboy 
+item_361,item_254,people,dame,lady,lady
+item_362,,people,doktor,Doctor,doctor
+item_363,item_255,people,farfar,grandfather,grandpa
+item_364,item_256,people,farmor,grandmother,grandma
+item_365,,people,folk,people,people 
+item_366,item_257,people,gutt,boy,boy
+item_367,,people,helsesøster,nurse,nurse
+item_368,item_258,people,jente,girl,girl
+item_369,,people,klovn,clown,clown 
+item_370,,people,lærer,teacher,teacher
+item_371,,people,mamma/mor,mom / mother,mommy
+item_372,item_260,people,mann,husband,man
+item_373,,people,mennesker,human beings,person
+item_374,item_262,people,morfar,grandfather,grandpa
+item_375,item_263,people,mormor,Granny,grandma
+item_376,,people,navn på kjæledyr,pet names,pet's name
+item_377,item_264,people,oldefar,great grandfather,great grandpa
+item_378,item_265,people,oldemor,great grandmother,great grandma
+item_379,item_266,people,onkel,Uncle,uncle
+item_380,,people,pappa/far,dad / father,daddy
+item_381,,people,politi,police,police
+item_382,,people,postbud,postman,postman  
+item_383,item_268,people,søster,sister,sister
+item_384,item_269,people,tante,Aunt,aunt
+item_385,,people,venn,friend,friend
+item_386,,people,venninne,Girlfriend,friend
+item_387,,games_routines,”kommer og tar deg” lek,Come and take you play,tag
+item_388,item_270,games_routines,bade,bathing,bath
+item_389,item_271,games_routines,frokost,breakfast,breakfast
+item_390,,games_routines,gå på do,go to the bathroom,go potty
+item_391,item_272,games_routines,god natt,good night,good night
+item_392,item_273,games_routines,ha det,bye bye,bye
+item_393,,games_routines,hallo,Hello,hello
+item_394,,games_routines,handle,Shopping,shopping
+item_395,item_274,games_routines,hei,hey there,hi
+item_396,item_275,games_routines,hysj,hush,shh
+item_397,item_276,games_routines,ikke (routine),do not,don't
+item_398,item_277,games_routines,ja,yes,yes
+item_399,,games_routines,jo,the,yeah 
+item_400,item_278,games_routines,klappe kake,pat cake,pattycake
+item_401,,games_routines,kveldsmat,evening meal,NA
+item_402,item_279,games_routines,Borte! (lek hvor ansikt gjemmes og plutselig vises),Gone! (Play where face hidden and suddenly appears),peekaboo
+item_403,item_280,games_routines,lunsj,lunch,lunch
+item_404,item_281,games_routines,middag,dinner,dinner
+item_405,item_282,games_routines,nei,no,no
+item_406,,games_routines,ringe,call,call 
+item_407,,games_routines,snurre rundt,spin around,ring around the rosie
+item_408,item_283,games_routines,sovetid,sleeping time,nap
+item_409,,games_routines,sååå stor,sooo big,so big 
+item_410,item_284,games_routines,takk,thank you,thank you
+item_411,item_285,games_routines,vær så snill,por favor,please
+item_412,item_286,games_routines,vent,hold it,wait
+item_413,item_287,games_routines,vil,want to,wanna
+item_414,,action_words,jobbe,work,work (action)
+item_415,item_288,action_words,bite,bite,bite
+item_416,item_289,action_words,blåse,blow,blow
+item_417,,action_words,bråke,brawl,fight
+item_418,,action_words,bygge,building,build
+item_419,,action_words,bære,carry,carry 
+item_420,item_290,action_words,danse,dance,dance
+item_421,,action_words,dele,share,share
+item_422,item_292,action_words,drikke (action),drink,drink (action)
+item_423,item_293,action_words,dytte,shove,push
+item_424,item_294,action_words,elske,making love,love
+item_425,,action_words,fange,catch,catch 
+item_426,item_296,action_words,falle,fall,fall
+item_427,,action_words,finne,find,find 
+item_428,item_297,action_words,forte seg,hurry,hurry
+item_429,item_295,action_words,få,get,get
+item_430,item_299,action_words,gi,give,give
+item_431,,action_words,gjemme,hide,hide
+item_432,item_300,action_words,gjøre seg ferdig,should finish,finish
+item_433,,action_words,gli,slide,slide (action)
+item_434,item_301,action_words,gråte,cry,cry
+item_435,item_298,action_words,gå,go,walk
+item_436,,action_words,ha,have,have
+item_437,,action_words,hate,hate,hate 
+item_438,,action_words,helle,pour,pour 
+item_439,item_302,action_words,hente,fetch,get
+item_440,item_303,action_words,hjelpe,help,help
+item_441,,action_words,holde,hold,hold 
+item_442,item_304,action_words,holde øye med,keep an eye on,watch (action)
+item_443,item_305,action_words,hoppe,jump,jump
+item_444,item_306,action_words,huske (action),remember,remember
+item_445,,action_words,høre,hear,hear
+item_446,,action_words,høre etter,listen,listen 
+item_447,,action_words,følge etter,follow,follow 
+item_448,item_307,action_words,kaste,throw,throw
+item_449,item_308,action_words,kile,wedge,tickle
+item_450,,action_words,kjøpe,buy,buy 
+item_451,item_309,action_words,kjøre,driving,drive
+item_452,,action_words,klappe,pat,pat
+item_453,,action_words,klatre,climb,climb 
+item_454,item_310,action_words,klemme,clamp,hug
+item_455,,action_words,kle på,dress,dress (action)
+item_456,,action_words,koste,cost,sweep 
+item_457,item_311,action_words,kysse,kiss,kiss
+item_458,,action_words,lage mat,cook,cook 
+item_459,,action_words,late som,pretend,pretend
+item_460,,action_words,putte,put,put 
+item_461,item_312,action_words,legge,put,put
+item_462,item_313,action_words,leke (action),play,play
+item_463,item_314,action_words,lese,read,read
+item_464,,action_words,like,equally,like 
+item_465,item_316,action_words,lukke,close,close
+item_466,item_315,action_words,løpe,run,run
+item_467,,action_words,male,paint,paint (action)
+item_468,item_317,action_words,mate,feed,feed
+item_469,,action_words,miste,Lose,lose
+item_470,,action_words,reparere,repair,repair 
+item_471,,action_words,passe,fit,fit 
+item_472,item_319,action_words,plaske,splash,splash
+item_473,,action_words,prøve,sample,try
+item_474,,action_words,puste,breathing,breathe
+item_475,item_320,action_words,ri,ri,ride
+item_476,,action_words,riste,shake,shake 
+item_477,,action_words,rive av,tear off,tear
+item_478,item_321,action_words,rydde,clear,clean (action)
+item_479,,action_words,røre,stir,stir 
+item_480,item_322,action_words,se,see,see
+item_481,item_323,action_words,se på,look at,look
+item_482,,action_words,sette,put,place 
+item_483,item_324,action_words,si,say,say
+item_484,,action_words,sitte,sit,sit 
+item_485,,action_words,skjære,Magpie,cut 
+item_486,,action_words,skli,slip,slide (action)
+item_487,item_325,action_words,skrive,write,write
+item_488,,action_words,skynde seg,hasten,hurry
+item_489,,action_words,slikke,lick,lick 
+item_490,,action_words,slutte,quit,quit
+item_491,item_326,action_words,slå,switch,hit
+item_492,,action_words,smake,taste,taste
+item_493,item_327,action_words,smile,smile,smile
+item_494,,action_words,snakke,talk,talk
+item_495,item_328,action_words,sove,sleep,sleep
+item_496,item_329,action_words,sparke,Kick,kick
+item_497,,action_words,spille,play,play 
+item_498,item_330,action_words,spise,eat,eat
+item_499,,action_words,stikke,stick,sting 
+item_500,item_331,action_words,stoppe,stop,stop
+item_501,,action_words,stå,stand,stand 
+item_502,item_333,action_words,synge,sing,sing
+item_503,item_332,action_words,svømme,swim,swim
+item_504,,action_words,søle,spill,spill
+item_505,item_334,action_words,ta,take,take
+item_506,item_336,action_words,tegne,draw,draw
+item_507,,action_words,tenke,thinking,think 
+item_508,,action_words,treffe,hit,hit
+item_509,item_291,action_words,dra,drag,go
+item_510,item_337,action_words,tørke,drought,dry (action)
+item_511,item_338,action_words,vaske,wash,wash
+item_512,,action_words,vente,wait,wait 
+item_513,,action_words,slå seg,settle,hurt (action)
+item_514,item_339,action_words,vise,view,show
+item_515,,action_words,velte,topple,NA
+item_516,,action_words,være glad i,be fond of,love
+item_517,,action_words,våkne,wake up,wake
+item_518,item_318,action_words,ødelegge,tear up,break
+item_519,,action_words,ønske,desire,wish 
+item_520,item_340,action_words,åpne,open up,open (action)
+item_521,,descriptive_words,bedre,better,better
+item_522,item_341,descriptive_words,blå,blue,blue
+item_523,,descriptive_words,bløt,soft,moist
+item_524,item_342,descriptive_words,borte,away,all gone
+item_525,item_343,descriptive_words,bra,good,good
+item_526,,descriptive_words,bråkete,noisy,noisy 
+item_527,,descriptive_words,brun,brown,brown 
+item_528,,descriptive_words,dårlig,bad,bad 
+item_529,item_344,descriptive_words,ekkelt,disgusting,yucky
+item_530,item_345,descriptive_words,fin,nice,fine
+item_531,item_346,descriptive_words,forsiktig,careful,careful
+item_532,,descriptive_words,først,at first,first
+item_533,item_347,descriptive_words,fort,fast,fast
+item_534,item_348,descriptive_words,frekk,rude,bad
+item_535,,descriptive_words,full,full,full 
+item_536,item_349,descriptive_words,gammel,old,old
+item_537,item_350,descriptive_words,glad,happy,happy
+item_538,,descriptive_words,god,good,good
+item_539,,descriptive_words,grønn,green,green 
+item_540,,descriptive_words,gul,yellow,yellow 
+item_541,item_352,descriptive_words,hard,hard,hard
+item_542,,descriptive_words,høy,tall,tall
+item_543,,descriptive_words,hvit,white,white
+item_544,item_353,descriptive_words,kald,cold,cold
+item_545,,descriptive_words,klissete,sticky,sticky 
+item_546,,descriptive_words,lang,long,long 
+item_547,,descriptive_words,lei seg,upset,upset
+item_548,item_354,descriptive_words,liten,small,little (description)
+item_549,item_355,descriptive_words,mørkt,dark,dark
+item_550,,descriptive_words,ny,new,new
+item_551,item_357,descriptive_words,ødelagt,destroyed,broken
+item_552,,descriptive_words,oransje,orange,orange (description)
+item_553,item_358,descriptive_words,pen,pretty,pretty
+item_554,,descriptive_words,rar,rar,strange
+item_555,item_359,descriptive_words,redd,afraid,scared
+item_556,item_360,descriptive_words,ren,clean,clean (description)
+item_557,item_361,descriptive_words,rød,red,red
+item_558,,descriptive_words,sen,late,late 
+item_559,,descriptive_words,sint,angry,angry 
+item_560,,descriptive_words,sist,last time,last 
+item_561,,descriptive_words,sitter fast,stuck,stuck 
+item_562,item_362,descriptive_words,skitten,filthy,dirty
+item_563,item_363,descriptive_words,skjønn,discretion,beautiful
+item_564,item_364,descriptive_words,slem,naughty,naughty
+item_565,,descriptive_words,snill,kind,nice
+item_566,item_366,descriptive_words,søt,soot,cute
+item_567,,descriptive_words,søvnig,sleepy,sleepy
+item_568,,descriptive_words,stakkars,poor thing,poor thing 
+item_569,,descriptive_words,stille,silent,quiet
+item_570,item_367,descriptive_words,stor,large,big
+item_571,item_368,descriptive_words,sulten,hungry,hungry
+item_572,,descriptive_words,sur,sur,angry 
+item_573,,descriptive_words,svart,black,black 
+item_574,item_369,descriptive_words,syk,sick,sick
+item_575,item_370,descriptive_words,tom,empty,empty
+item_576,item_371,descriptive_words,tørr,dry,dry (description)
+item_577,item_372,descriptive_words,tørst,thirst,thirsty
+item_578,item_373,descriptive_words,trøtt,sleepy,tired
+item_579,,descriptive_words,tung,heavy,heavy 
+item_580,,descriptive_words,våken,awake,awake 
+item_581,item_374,descriptive_words,varm,hot,hot
+item_582,item_375,descriptive_words,våt,wet,wet (description)
+item_583,item_376,descriptive_words,vondt,ache,hurt (description)
+item_584,item_377,time_words,dag,day,day
+item_585,,time_words,etter,after,after 
+item_586,,time_words,ettermiddag,after dinner,afternoon 
+item_587,,time_words,etterpå,afterwards,after
+item_588,,time_words,før,prior to,before
+item_589,,time_words,formiddag,morning,morning
+item_590,item_378,time_words,i dag,present day,today
+item_591,,time_words,i går,yesterday,yesterday 
+item_592,item_379,time_words,i kveld,tonight,tonight
+item_593,item_380,time_words,i morgen,tomorrow,tomorrow
+item_594,,time_words,kveld,evening,evening 
+item_595,item_381,time_words,morgen,morning,morning
+item_596,item_382,time_words,nå,by now,now
+item_597,item_383,time_words,natt,night,night
+item_598,item_384,time_words,senere,later on,later
+item_599,,time_words,tid,time,time 
+item_600,,pronouns,de,they,they 
+item_601,,pronouns,deg,you,you 
+item_602,,pronouns,deg selv,yourself,yourself
+item_603,,pronouns,dem,them,them 
+item_604,item_385,pronouns,den,the,the
+item_605,item_386,pronouns,denne,this,this
+item_606,,pronouns,dere,you all,you 
+item_607,,pronouns,deres,your,your
+item_608,item_387,pronouns,det,it,it
+item_609,item_388,pronouns,dette,this,this
+item_610,item_389,pronouns,din,your,your
+item_611,,pronouns,disse,these,these 
+item_612,item_390,pronouns,du,you,you
+item_613,,pronouns,ham,him,him 
+item_614,,pronouns,han,he,he 
+item_615,item_391,pronouns,hans,his,his
+item_616,,pronouns,henne,her,her
+item_617,item_392,pronouns,hennes,her,her
+item_618,,pronouns,hun,she,she
+item_619,,pronouns,hverandre,each other,each other 
+item_620,item_393,pronouns,jeg,I,I
+item_621,,pronouns,man,one,one 
+item_622,item_394,pronouns,meg,me,me
+item_623,,pronouns,meg selv,myself,myself 
+item_624,item_395,pronouns,min,my,my
+item_625,,pronouns,oss,us,us 
+item_626,,pronouns,seg,themselves,themselves
+item_627,,pronouns,seg selv,itself,itself 
+item_628,,pronouns,sin,its,its 
+item_629,,pronouns,vår,our,our
+item_630,,pronouns,vi,we,we 
+item_631,item_396,question_words,hva,what,what
+item_632,item_397,question_words,hvem,who,who
+item_633,,question_words,hvilken,which one,which (question)
+item_634,item_398,question_words,hvor,where,where (question)
+item_635,item_399,question_words,hvordan,how to,how
+item_636,item_400,question_words,hvorfor,how come,why
+item_637,item_401,question_words,når,what time,when (question)
+item_638,item_402,locations,av,of the,of
+item_639,item_403,locations,bak,behind,back (location)
+item_640,item_404,locations,bort,away,away
+item_641,,locations,borte,away,away
+item_642,item_405,locations,der,there,there
+item_643,,locations,for,for the,for 
+item_644,,locations,foran,in front of,in front
+item_645,,locations,fra,from the,from
+item_646,,locations,frem,forward,forward
+item_647,,locations,gjennom,through,through
+item_648,,locations,her,over here,here 
+item_649,,locations,hit,here,here 
+item_650,,locations,hjem,home,home
+item_651,,locations,hjemme,at home,home
+item_652,,locations,hos,with,with 
+item_653,item_406,locations,i,in,in
+item_654,,locations,i stedet for,instead of,instead of 
+item_655,item_407,locations,inn,in,inside
+item_656,item_408,locations,inne,in,inside
+item_657,item_409,locations,inni,Occasionally,inside
+item_658,,locations,med,with the,with 
+item_659,,locations,mot,versus,against
+item_660,item_410,locations,ned,down,down
+item_661,item_411,locations,nede,down,down
+item_662,,locations,nedi,down,down 
+item_663,,locations,om,if,if 
+item_664,item_412,locations,opp,up,up
+item_665,,locations,oppå,top,top 
+item_666,item_413,locations,oppe,up,up
+item_667,,locations,oppi,Oppi,up in 
+item_668,,locations,over,over,over 
+item_669,item_414,locations,på,on the,on
+item_670,,locations,til,to the,to 
+item_671,,locations,tilbake,in return,back (location)
+item_672,item_415,locations,under,under,under
+item_673,item_416,locations,ut,out,out
+item_674,item_417,locations,ute (location),out,outside
+item_675,,locations,utenfor,outside,outside
+item_676,,locations,utenpå,surface,outside
+item_677,,locations,ved siden av,adjacent to,beside
+item_678,,locations,vekk,away,away
+item_679,item_418,quantifiers,alle,all of them,all
+item_680,,quantifiers,alt,all of,everything
+item_681,,quantifiers,andre,other,other
+item_682,,quantifiers,den,the,the 
+item_683,,quantifiers,det,it,it
+item_684,,quantifiers,ei,ei,one
+item_685,,quantifiers,en,one,one
+item_686,item_419,quantifiers,en annen,another one,another
+item_687,,quantifiers,et,a,a
+item_688,,quantifiers,hver,each one,each 
+item_689,,quantifiers,hvert,each,each 
+item_690,item_420,quantifiers,ikke (amount),do not,not
+item_691,item_421,quantifiers,ingen,no one,none
+item_692,item_422,quantifiers,ingenting,nothing,nothing
+item_693,,quantifiers,litt,a little,little (amount)
+item_694,,quantifiers,mange,many,many
+item_695,item_423,quantifiers,mer,more,more
+item_696,,quantifiers,mye,a lot,a lot 
+item_697,item_424,quantifiers,noe,something,something
+item_698,item_425,quantifiers,noen,a few,any
+item_699,,quantifiers,også,as well,also 
+item_700,item_426,quantifiers,samme,same,same
+item_701,,helping_verbs,bli,be,be
+item_702,,helping_verbs,bør,should,should
+item_703,,helping_verbs,burde,should have,should 
+item_704,,helping_verbs,er,is,is
+item_705,,helping_verbs,få,get,get
+item_706,,helping_verbs,gjør,makes,do
+item_707,,helping_verbs,gjorde,do they,did 
+item_708,,helping_verbs,gjøre,do,do
+item_709,,helping_verbs,ha,have,have
+item_710,,helping_verbs,hadde,had,had
+item_711,,helping_verbs,har,have,have
+item_712,,helping_verbs,kan,may,can
+item_713,,helping_verbs,kunne,could,could 
+item_714,,helping_verbs,la,let,let
+item_715,,helping_verbs,må,have to,must
+item_716,,helping_verbs,måtte,had to,has to
+item_717,,helping_verbs,skal,going to,will 
+item_718,,helping_verbs,skulle,should,should
+item_719,,helping_verbs,være,be,be
+item_720,,helping_verbs,var,was,was
+item_721,,helping_verbs,vil,want to,want
+item_722,,helping_verbs,ville,would,want
+item_723,,connecting_words,at,that,that
+item_724,,connecting_words,eller,or,or
+item_725,,connecting_words,for,for the,for
+item_726,,connecting_words,fordi,because,because
+item_727,,connecting_words,hvis,if,if 
+item_728,,connecting_words,men,but,but 
+item_729,,connecting_words,og,and the,and 
+item_730,,connecting_words,så,so,so 
+item_731,,connecting_words,som,as,as
+,item_45,animals,ape(katt),monkey,monkey
+,item_70,animals,rev,fox,fox
+,item_94,toys,(farge)blyant,(Color) pencil,crayon
+,item_98,food_drink,bolle,bun,bun
+,item_131,clothing,knapp,button,button
+,item_231,outside,stein,stone,rock (object)
+,item_234,outside,ute (place),out,outside
+,item_259,people,mamma,mommy,mommy
+,item_261,people,menneske,person,person
+,item_267,people,pappa,daddy,daddy
+,item_335,action_words,ta på,touch,touch
+,item_351,descriptive_words,grei,easy,nice
+,item_356,descriptive_words,myk,soft,soft
+,item_365,descriptive_words,sliten,sleepy,tired
