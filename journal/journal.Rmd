@@ -21,10 +21,10 @@ abstract: >
     not yet have CDIs, posing a significant barrier to increasing the diversity of languages that are 
     studied. Here, we propose a method for selecting candidate words to include on new CDIs, leveraging
     analysis of psychometric properties of translation-equivalent concepts that are frequently included on 
-    existing CDIs. Leveraging 27 datasets from existing CDIs, we propose a list of 100 concepts that have
+    existing CDIs. Leveraging 32 datasets from existing CDIs, we propose a list of 100 concepts that have
     low variability in their cross-linguistic learning difficulty. This pool of common concepts---analogous 
     to the "Swadesh" lists used in glottochronology---can be used as a starting point for future 
-    CDI adaptations. We test how well the proposed list generalizes to data from 11 additional languages.
+    CDI adaptations. We test how well the proposed list generalizes to data from 10 additional languages.
     
 keywords: >
     early language learning; CDI; psychometrics; cross-linguistic comparison; Swadesh vocabulary
@@ -191,7 +191,7 @@ While other standard IRT models exist (e.g., the 3PL model adds a "guessing" par
 ## Datasets
 
 
-```{r, show-data, echo=F, results="asis"}
+```{r, show-data-old, echo=F, include=F, results="asis"}
 # WG langs that don't have WS: British Sign Language, Spanish (Chilean), American Sign Language, English (British)
 
 it_tab <- all_tab %>% #rename(`WS items`=items, `WS N`=N) %>%
@@ -201,7 +201,21 @@ it_tab <- all_tab %>% #rename(`WS items`=items, `WS N`=N) %>%
 bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
 
 tab1 <- xtable::xtable(it_tab, digits=c(0), 
-                       caption = "CDI:WS items and subjects (N) per dataset. The final 8 datasets were used for a generalization test.")
+                       caption = "CDI:WS items and subjects (N) per dataset. The final 10 datasets were used for a generalization test.")
+print(tab1, type="latex", comment = F, 
+      sanitize.colnames.function=bold, # bold the header row
+      table.placement = "H", hline.after=length(train_langs),
+      include.rownames=FALSE, size="\\fontsize{9pt}{10pt}\\selectfont")
+```
+
+```{r, show-data-new, echo=F, results="asis"}
+it_tab <- model_stats %>% select(-iterations) %>%
+  arrange(desc(participants))
+
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+
+tab1 <- xtable::xtable(it_tab, digits=c(0), 
+                       caption = "Total CDI items and participants per dataset (language). The final 10 datasets were used for a generalization test.")
 print(tab1, type="latex", comment = F, 
       sanitize.colnames.function=bold, # bold the header row
       table.placement = "H", hline.after=length(train_langs),
@@ -227,7 +241,7 @@ All uni-lemmas are accessible from Wordbank; details about the recent update can
 
 ```{r participant-data, eval=F, echo=F}
 readRDS("data/intermediates/demographics.rds") |> 
-  kable()
+  kable() # currently missing?
 ```
 
 
@@ -447,7 +461,7 @@ wordcloud2(data=data.frame(word = names(swad_freq[1:150]),
 ```
 
 
-```{r plot-crossval-fscores, fig.width=4, fig.height=8}
+```{r plot-crossval-fscores, fig.width=7, fig.height=9}
 full_fscores <- readRDS(here("data/intermediates/full_fscores_allforms.rds"))
 
 cv_res_sum <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rds"))
