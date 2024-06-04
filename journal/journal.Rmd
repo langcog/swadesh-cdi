@@ -269,16 +269,7 @@ All models, data, and code for reproducing this paper are available on OSF[^3].
 # Results
 
 
-```{r, include=F}
-# 1954
-uni_ag <- xldf_clean %>% filter(uni_lemma!="NA") %>%
-  group_by(uni_lemma) %>% # category <- but many uni-lemmas are categorized differently across languages
-  summarise(d_m=mean(d), a1_m=mean(a1), d_sd = sd(d), a1_sd = sd(a1), n=n())
-
-# The more times a uni-lemma appears, the easier it tends to be:
-cor.test(uni_ag$d_m, uni_ag$n) # t(2107) = -16.79, r=-.34, p<.001
-#plot(uni_ag$d_m, uni_ag$n)
-
+```{r, helper-functions, echo=F}
 pval_str <- function(pval) {
   p_str = ifelse(pval<.001, "<.001", 
                 ifelse(pval<.01, "<.01", 
@@ -299,6 +290,17 @@ report_ttest <- function(ttest) {
 }
 
 # variability in difficulty also correlated number of forms uni-lemma is on
+```
+
+```{r, singleton-analysis, include=F}
+# 1954
+uni_ag <- xldf_clean %>% filter(uni_lemma!="NA") %>%
+  group_by(uni_lemma) %>% # category <- but many uni-lemmas are categorized differently across languages
+  summarise(d_m=mean(d), a1_m=mean(a1), d_sd = sd(d), a1_sd = sd(a1), n=n())
+
+# The more times a uni-lemma appears, the easier it tends to be:
+cor.test(uni_ag$d_m, uni_ag$n) # t(2107) = -16.79, r=-.34, p<.001
+#plot(uni_ag$d_m, uni_ag$n)
 
 # 494 singletons
 uni1 <- uni_ag %>% filter(n==1) 
@@ -327,17 +329,17 @@ However, these modest but significant correlations were also important to keep i
 
 ```{r fig-mean-item-diff, include=F, fig.cap=c("Mean item difficulty for each CDI:WS form. Bars represent bootstrapped 95\\% confidence intervals. Color shows mean age (months) of the sample, which is correlated with mean word difficulty (r=.57)."), fig.height=4.3, fig.width=3.4}
 # re: Philip's question of are item difficulties comparable across languages:
-lang_d_m <- xldf_clean %>% filter(!is.na(d)) %>% # one Slovak word has NA parms..
+lang_d_m <- xldf_clean %>%
   group_by(language) %>% 
   tidyboot::tidyboot_mean(d, na.rm=T) %>%
   arrange(desc(mean))
 
-lang_d_m <- lang_d_m %>% left_join(demo_age %>% select(language, age))
+#lang_d_m <- lang_d_m %>% left_join(demo_age %>% select(language, age))
 # problem: average item difficulty per language is strongly related to mean sample age
 # cor.test(lang_d_m$mean, lang_d_m$age) # r=.57  t(24) = 3.44, p = 0.002
 
 lang_d_m %>% ggplot(aes(x=reorder(language, -mean), y=mean)) + coord_flip() + 
-  geom_point(aes(color=age)) + theme_classic() +
+  geom_point() + theme_classic() + # aes(color=age)
   geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7) +
   theme(legend.position="bottom") +
   xlab("Language") + ylab("Mean item difficulty")
@@ -365,14 +367,50 @@ Finally, we re-ran the selection procedure using $k = 23$ across all training la
 
 ## Choosing a Random Baseline
 
+```{r eval-random-unilemma-lists, eval=F}
+# when selecting 100 random uni-lemmas, how many forms would those uni-lemmas appear on? (on average)
+# how many categories would be covered? how many unique uni-lemmas would be selected? 
+evaluate_random_lists <- function(xldf, n=100, nsim=1000) {
+  dat <- tibble()
+  for(i in 1:nsim) {
+    samp <- xldf[sample(1:nrow(xldf), size=n),]
+    tot_langs = 0
+    for(s in 1:nrow(samp)) {
+      tot_langs = tot_langs + length(unique(subset(xldf, uni_lemma==samp[s,]$uni_lemma)$language)) - 1
+    }
+    dat <- bind_rows(dat, 
+                     bind_cols(ncats = length(unique(samp$category)),
+                        nlangs = length(unique(samp$language)),
+                        nunique_unis = length(unique(samp$uni_lemma)),
+                        mean_other_langs = tot_langs / n))
+  }
+  return(dat)
+}
+
+rand_lists_stats <- evaluate_random_lists(xldf)
+colMeans(rand_lists_stats)
+#   ncats     nlangs    nunique_unis  mean_other_langs 
+#   23.05     38.00     91.68         25.72
+# On average, a random set of 100 uni-lemmas has 91.7 unique uni-lemmas covering 23 (out of 44) semantic categories,
+# and each uni-lemma on average is on 26.7 other forms (range: 22.35 - 31.14)
+```
+
+
 To determine whether a candidate Swadesh list functions well, it is necessary to have a baseline list of random items (of similar length) to compare to.
 However, there are many ways to select a random set of uni-lemmas to compare to, and each method could be argued to unfairly advantage either the Swadesh list or the random baseline.
-For example, if we simply selected 100 uni-lemmas uniformly at random from the uni-lemmas for all languages, many of the selected uni-lemmas would not appear on any given language's CDI forms (on average: ToDo: give number), and thus random would perform poorly.
+For example, if we simply selected 100 uni-lemmas uniformly at random from the uni-lemmas for all languages, many of the selected uni-lemmas would not appear on many other languages' CDI forms, and thus random would perform poorly.
 At the other extreme, if we sample 100 random uni-lemmas from each language's full CDI forms, the Swadesh list is unfairly disadvantaged, as some of the 100 Swadesh items may be missing from any given language's forms.
 To somewhat level the playing field, we selected the random comparison items uniformly at random from the list of uni-lemmas that appear in at least $k = 23$ languages -- the same constraint we placed on choosing Swadesh candidates. 
 This ensured that, in expectation, the same number of items per language would appear on the random baseline lists and the Swadesh candidate lists.
 
 <!-- ToDO: add characterization of cross-linguistic composition of CDIs: category representation per language (and lexical class); items on k forms vs. item difficulty... -->
+```{r, eval=F}
+sort(unique(xldf$category)) # "sounds2", "unknown", NA, "other" ... "locations_quantities_adverbs"
+xldf %>% group_by(language) %>%
+  summarise(categories = length(unique(category))) %>%
+  arrange(desc(categories)) # 15-24 semantic categories per form
+```
+
 
 However, note that selecting $N$ items uniformly at random from a full CDI list sets quite a high bar: if your other method of selecting items introduces any bias (e.g., selecting easier or more difficult items, on average), then the randomly-selected baseline will have the stronger correlation with the full set.[^5]
 Thus, the goal for the Swadesh list is to generate scores as strongly correlated with the full CDI scores as the random baseline's correlation -- while also selecting items that better generalize to out-of-distribution languages by having less variation in cross-linguistic difficulty.
@@ -380,6 +418,26 @@ Thus, the goal for the Swadesh list is to generate scores as strongly correlated
 [^5]: In fact, random subsets of items work so well--ending up with representative numbers of words per semantic and syntactic categories, and of varying difficulty--that researchers initially start CDI short forms using a random subset of items (e.g., ToDo CITE).
 
 ```{r, echo=F, include=F}
+# mean proportion of each semantic category (across all forms)
+cat_props <- read_csv("../data/category_proportions.csv") %>%
+  mutate(desired_n = round(mean_prop * 100, 0)) %>% # rounding gets N=98
+  arrange(desc(desired_n))
+cat_props[which(cat_props$desired_n==1),]$desired_n = 2 # add 1 to smallest 2 categories
+# sum(cat_props$desired_n) # 100
+# note: this list has both Locations (3) and Places (3)
+
+# 
+candidates <- xldf_clean %>% group_by(uni_lemma, category) %>% 
+  summarise(d_m=mean(d), a1_m=mean(a1), d_sd = sd(d), a1_sd = sd(a1), n=n()) %>%
+  filter(n>=23)
+
+prop_swad_its <- list()
+for(i in 1:nrow(cat_props)) {
+  prop_swad_its[[cat_props[i,]$category]] = candidates %>% 
+    filter(category==cat_props[i,]$category) %>%
+    arrange(d_sd) %>% head(cat_props[i,]$desired_n) %>% pull(uni_lemma)
+}
+
 # only want 1 
 uni_per_form <- xldf_clean %>% arrange(desc(language), desc(uni_lemma), desc(a1)) %>% # get most discriminating uni_lemma per lang
   select(uni_lemma, category, language, d) %>% # lexical_category, ToDo: add lexical_class to xldf
