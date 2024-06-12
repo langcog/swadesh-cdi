@@ -1,25 +1,33 @@
 COR_TYPE = "spearman" # "pearson"
 
-cat_props <- read_csv("../data/category_proportions.csv") %>%
-  mutate(desired_n = round(mean_prop * 100, 0)) %>% # rounding gets N=98
-  arrange(desc(desired_n))
-cat_props[which(cat_props$desired_n==1),]$desired_n = 2 # add 1 to smallest 2 categories
-# sum(cat_props$desired_n) # 100
-# note: this list has both Locations (3) and Places (3)
-
+cat_props_rounded <- read_csv("data/category_proportions.csv")
 
 make_proportional_sublist <- function(prod_sum, list_size, k) {
-  candidates <- xldf_clean %>% group_by(uni_lemma, category) %>% 
-    summarise(d_m=mean(d), a1_m=mean(a1), d_sd = sd(d), a1_sd = sd(a1), n=n()) %>%
-    filter(n>=k)
+  cat_props_rounded <- cat_props_rounded |> 
+    mutate(prop = mean_prop * list_size,
+           count = floor(prop),
+           remainder = prop - count) |> 
+    arrange(desc(remainder)) |> 
+    mutate(add = c(rep(1, list_size - sum(count)), rep(0, n() - list_size + sum(count))),
+           count = count + add) |> 
+    select(-remainder, -prop, -add) |> 
+    arrange(desc(count))
+  
+  prod_sum |>
+    filter(num_langs >= k) |>
+    group_by(uni_lemma, category)
+  #candidates <- xldf_clean %>% group_by(uni_lemma, category) %>% 
+  #  summarise(d_m=mean(d), a1_m=mean(a1), d_sd = sd(d), a1_sd = sd(a1), n=n()) %>%
+  #  filter(n>=k)
   
   prop_swad_its <- list()
-  for(i in 1:nrow(cat_props)) {
-    prop_swad_its[[cat_props[i,]$category]] = candidates %>% 
-      filter(category==cat_props[i,]$category) %>%
-      arrange(d_sd) %>% head(cat_props[i,]$desired_n) %>% pull(uni_lemma)
+  for(i in 1:nrow(cat_props_rounded)) {
+    prop_swad_its[[cat_props_rounded[i,]$category]] = candidates %>% 
+      filter(category==cat_props_rounded[i,]$category) %>%
+      arrange(d_sd) %>% head(cat_props_rounded[i,]$desired_n) %>% pull(uni_lemma)
   }
   
+  # return list!
 }
 
 make_swadesh_sublist <- function(prod_sum, list_size, k) {
