@@ -14,6 +14,7 @@ walk(list.files("scripts", pattern = "*.R$", full.names = TRUE), source)
 
 S_LEN = 100 # Swadesh list length
 N_RAND = 100 # number of random sublists to compare to
+BEST_K = 23 # 
 ```
 
 # Data fetching and stitching
@@ -189,10 +190,10 @@ cv_res <- lapply(train_langs, \(lang) {
                           response.pattern = full_model$model@Data$data, 
                           method = "MAP")[,1] 
   
-  # Swadesh 
+  # Swadesh - best words
   prod_cors <- sapply(2:(length(train_langs)-1), \(k) {
     sublist <- make_swadesh_sublist(prod_sum, S_LEN, k)
-    if (k == 23) {
+    if (k == BEST_K) {
       fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
     } else {
       fscore_cor <- NA
@@ -206,11 +207,28 @@ cv_res <- lapply(train_langs, \(lang) {
            language = lang,
            sublist = "Swadesh")
   
+  # Swadesh - category proportion match
+  cat_cors <- sapply(2:(length(train_langs)-1), \(k) {
+    sublist <- make_proportional_sublist(prod_sum, S_LEN, k)
+    if (k == BEST_K) {
+      fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
+    } else {
+      fscore_cor <- NA
+    }
+    c(get_difficulty_cor(sublist, prod_test), fscore_cor)
+  }) |> t() |> 
+    `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
+    as_tibble() |> 
+    mutate(run = NA,
+           k = 2:(length(train_langs)-1),
+           language = lang,
+           sublist = "Proportional")
+  
   # random
   rand_cors <- lapply(2:(length(train_langs)-1), \(k) {
     rand_cors <- sapply(1:N_RAND, \(comp) {
       sublist <- make_random_sublist(prod_sum, S_LEN, k)
-      if (k == 23) {
+      if (k == BEST_K) {
         fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
       } else {
         fscore_cor <- NA
@@ -226,7 +244,7 @@ cv_res <- lapply(train_langs, \(lang) {
     mutate(language = lang,
            sublist = "Random")
   
-  bind_rows(prod_cors, rand_cors)
+  bind_rows(prod_cors, cat_cors, rand_cors)
 }) |> bind_rows()
 
 cv_res_sum <- cv_res |> 
@@ -271,10 +289,10 @@ ggplot(cv_res_sum,
 ```
 
 ```{r, fig.width=7, fig.height=4}
-t.test(subset(cv_res_sum, sublist=="Swadesh" & k==23)$fscore_cor - 
-       subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="Swadesh" & k==BEST_K)$fscore_cor - 
+       subset(cv_res_sum, sublist=="Random" & k==BEST_K)$fscore_cor) # n.s.
 
-cv_res_sum %>% filter(k==23) %>%
+cv_res_sum %>% filter(k==BEST_K) %>%
   ggplot(aes(x = language, y = fscore_cor, group = sublist, col = sublist)) +
   geom_point(alpha=.7) +
   labs(y = "Fscore correlation") +
@@ -291,8 +309,6 @@ all_prod <- readRDS("data/intermediates/allforms_prod_per_lang.rds")
 ```
 
 ```{r}
-K = 23
-
 prod_sum <- prod_pars |> 
   filter(language %in% train_langs) |> 
   group_by(uni_lemma) |> 
@@ -301,7 +317,7 @@ prod_sum <- prod_pars |>
             sd_d = sd(d, na.rm = TRUE))
 
 # Swadesh 
-swadesh_sublist <- make_swadesh_sublist(prod_sum, S_LEN, K)
+swadesh_sublist <- make_swadesh_sublist(prod_sum, S_LEN, BEST_K)
 prod_cors <- sapply(gen_langs, \(lang) {
   get_sumscore_cor(swadesh_sublist, xldf, all_prod, lang)
 }) |> t() |>
@@ -312,7 +328,7 @@ prod_cors <- sapply(gen_langs, \(lang) {
 # random
 rand_cors <- lapply(gen_langs, \(lang) {
   rand_cors <- sapply(1:N_RAND, \(comp) {
-    sublist <- make_random_sublist(prod_sum, S_LEN, K)
+    sublist <- make_random_sublist(prod_sum, S_LEN, BEST_K)
     get_sumscore_cor(sublist, xldf, all_prod, lang)
   }) |> t() |> 
     `colnames<-`(c("num_overlap", "sumscore_cor")) |> 

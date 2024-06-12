@@ -1,5 +1,27 @@
 COR_TYPE = "spearman" # "pearson"
 
+cat_props <- read_csv("../data/category_proportions.csv") %>%
+  mutate(desired_n = round(mean_prop * 100, 0)) %>% # rounding gets N=98
+  arrange(desc(desired_n))
+cat_props[which(cat_props$desired_n==1),]$desired_n = 2 # add 1 to smallest 2 categories
+# sum(cat_props$desired_n) # 100
+# note: this list has both Locations (3) and Places (3)
+
+
+make_proportional_sublist <- function(prod_sum, list_size, k) {
+  candidates <- xldf_clean %>% group_by(uni_lemma, category) %>% 
+    summarise(d_m=mean(d), a1_m=mean(a1), d_sd = sd(d), a1_sd = sd(a1), n=n()) %>%
+    filter(n>=k)
+  
+  prop_swad_its <- list()
+  for(i in 1:nrow(cat_props)) {
+    prop_swad_its[[cat_props[i,]$category]] = candidates %>% 
+      filter(category==cat_props[i,]$category) %>%
+      arrange(d_sd) %>% head(cat_props[i,]$desired_n) %>% pull(uni_lemma)
+  }
+  
+}
+
 make_swadesh_sublist <- function(prod_sum, list_size, k) {
   prod_sum |> 
     filter(num_langs >= k) |> 
