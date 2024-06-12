@@ -154,6 +154,8 @@ xldf_clean <- xldf |>
   mutate(category = case_when(
     category == "descriptive_words (adjectives)" ~ "descriptive_words",
     category == "outside_places" ~ "outside",
+    category == "articles" ~ "quantifiers",
+    category == "prepositions" ~ "locations",
     .default = category))
 
 prod_pars <- xldf_clean |> 
@@ -741,5 +743,29 @@ dends %>% untangle(method = "step1side") %>%
 #  "Yue Chinese"
 # setdiff(unique(lang_sims$LangName_1), unique(lang_sims$LangName_2))
 #  "Standard Arabic"
+```
+
+
+# Proportional Swadesh lists
+```{r}
+## We use canonical categories from the American English form
+main_cats <- xldf_clean |> filter(language == "English (American)") |> pull(category) |> unique()
+cat_props <- xldf_clean |> 
+  filter(category %in% main_cats) |> 
+  group_by(language) |> 
+  count(category) |> 
+  mutate(prop = n / sum(n)) |> 
+  group_by(category) |> 
+  summarise(mean_prop = mean(prop))
+cat_props_rounded <- cat_props |> 
+  mutate(prop = mean_prop * 100,
+         count = floor(prop),
+         remainder = prop - count) |> 
+  arrange(desc(remainder)) |> 
+  mutate(add = c(rep(1, 100 - sum(count)), rep(0, n() - 100 + sum(count))),
+         count = count + add) |> 
+  select(-remainder, -prop, -add) |> 
+  arrange(desc(count))
+write_csv(cat_props_rounded, "data/category_proportions.csv")
 ```
 
