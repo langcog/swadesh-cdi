@@ -176,13 +176,22 @@ train_langs <- setdiff(languages, gen_langs)
 cv_res <- lapply(train_langs, \(lang) {
   message(glue("Calculating for {lang}..."))
   
+  prod_cats <- prod_pars |> 
+    filter(language %in% train_langs,
+           language != lang) |> 
+    group_by(uni_lemma) |> 
+    count(category) |> 
+    arrange(desc(category)) |> 
+    slice(1)
+  
   prod_sum <- prod_pars |> 
     filter(language %in% train_langs,
            language != lang) |> 
     group_by(uni_lemma) |> 
     summarise(num_langs = n(),
               mean_d = mean(d, na.rm = TRUE),
-              sd_d = sd(d, na.rm = TRUE))
+              sd_d = sd(d, na.rm = TRUE)) |> 
+    left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
   prod_test <- prod_pars |> 
     filter(language == lang)
   
@@ -774,15 +783,6 @@ cat_props <- xldf_clean |>
   mutate(prop = n / sum(n)) |> 
   group_by(category) |> 
   summarise(mean_prop = mean(prop))
-cat_props_rounded <- cat_props |> 
-  mutate(prop = mean_prop * 100,
-         count = floor(prop),
-         remainder = prop - count) |> 
-  arrange(desc(remainder)) |> 
-  mutate(add = c(rep(1, 100 - sum(count)), rep(0, n() - 100 + sum(count))),
-         count = count + add) |> 
-  select(-remainder, -prop, -add) |> 
-  arrange(desc(count))
-write_csv(cat_props_rounded, "data/category_proportions.csv")
+write_csv(cat_props, "data/category_proportions.csv")
 ```
 

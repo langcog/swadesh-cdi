@@ -1,9 +1,9 @@
 COR_TYPE = "spearman" # "pearson"
 
-cat_props_rounded <- read_csv("data/category_proportions.csv")
+cat_props <- read_csv("data/category_proportions.csv")
 
 make_proportional_sublist <- function(prod_sum, list_size, k) {
-  cat_props_rounded <- cat_props_rounded |> 
+  cat_props_rounded <- cat_props |> 
     mutate(prop = mean_prop * list_size,
            count = floor(prop),
            remainder = prop - count) |> 
@@ -15,19 +15,12 @@ make_proportional_sublist <- function(prod_sum, list_size, k) {
   
   prod_sum |>
     filter(num_langs >= k) |>
-    group_by(uni_lemma, category)
-  #candidates <- xldf_clean %>% group_by(uni_lemma, category) %>% 
-  #  summarise(d_m=mean(d), a1_m=mean(a1), d_sd = sd(d), a1_sd = sd(a1), n=n()) %>%
-  #  filter(n>=k)
-  
-  prop_swad_its <- list()
-  for(i in 1:nrow(cat_props_rounded)) {
-    prop_swad_its[[cat_props_rounded[i,]$category]] = candidates %>% 
-      filter(category==cat_props_rounded[i,]$category) %>%
-      arrange(d_sd) %>% head(cat_props_rounded[i,]$desired_n) %>% pull(uni_lemma)
-  }
-  
-  # return list!
+    arrange(sd_d) |> 
+    nest(data = -category) |> 
+    left_join(cat_props_rounded, by = join_by(category)) |> 
+    filter(!is.na(count)) |> 
+    mutate(data = map2(data, count, \(d, c) {slice_head(d, n = c)})) |> 
+    unnest(data)
 }
 
 make_swadesh_sublist <- function(prod_sum, list_size, k) {
