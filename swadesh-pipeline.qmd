@@ -751,7 +751,8 @@ dends %>% untangle(method = "step1side") %>%
 ## We use canonical categories from the American English form
 main_cats <- xldf_clean |> filter(language == "English (American)") |> pull(category) |> unique()
 cat_props <- xldf_clean |> 
-  filter(category %in% main_cats) |> 
+  filter(category %in% main_cats,
+         language %in% train_langs) |> 
   group_by(language) |> 
   count(category) |> 
   mutate(prop = n / sum(n)) |> 
