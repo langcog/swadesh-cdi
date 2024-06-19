@@ -439,69 +439,17 @@ uni_per_form %>% ggplot(aes(x=jitter(n), y=d_sd, color=d_m)) +
 
 
 
-```{r grid-search, eval=F}
-# ToDo: remove entirely -- but load relevant dataframes from swadesh-pipeline.qmd
+```{r frequent-swadesh-items, eval=F}
+# which Swadesh items crop up over and over? (have to decide which items to discuss in the paper!)
+#all_swad <- c()
+#for(k in 2:31) {
+#  all_swad = c(all_swad, swad_lists[[k]]$uni_lemma)
+#}
+#swad_freq = sort(table(all_swad), decr=T)
 
-# how many Swadesh words when looking at all uni-lemmas included in at least k languages?
-# (same mean(sd) - sd(sd) threshold applied to all, but could make that a grid, e.g. sd_thresh = seq(0, 2, .25)
-swad_lists <- list()
-swad_agg <- tibble()
-
-# has to be at least 2 forms, as SD only defined for 2+
-for(k in 2:31) {
-  uni_k <- uni_per_form %>%
-    filter(n >= k)
-  N = nrow(uni_k)
-  mean_diff = mean(uni_k$d_m) # average difficulty of uni-lemmas on at least k forms
-  mean_sd = mean(uni_k$d_sd) # average SD of difficulty of uni-lemmas on at least k forms
-  sd_sd = sd(uni_k$d_sd) # variability of SD(diff)
-  sd_thresh = mean_sd - .5*sd_sd
-  swad_lists[[k]] = uni_k %>% filter(d_sd < sd_thresh)
-  
-  xx_g <- run_comparisons(xldf, train_langs |> sort(), swad_lists[[k]]$uni_lemma, 
-                        rand_method = "items", rand_comparisons = 100,
-                        metrics = c("sumscore_cor", "test_info")) # theta_cor breaks on French (French): incompatible dimensions
-  
-  xx_agg <- xx_g |> 
-    group_by(language, sublist, metric) |> 
-    summarise(mean = mean(value),
-              N_avail = mean(N),
-              sublist_mean_diff = mean(mean_d)) |> 
-    spread(metric, mean) |>
-    mutate(k = k, 
-           N = N,
-           mean_diff = mean_diff,
-           mean_sd = mean_sd,
-           sd_sd = sd_sd,
-           sd_thresh = sd_thresh,
-           swad_mean_diff = mean(swad_lists[[k]]$d_m),
-           swad_diff_sd = sd(swad_lists[[k]]$d_m),
-           swad_n = nrow(swad_lists[[k]]),
-           sublist_mean_diff = sublist_mean_diff)
-  
-  swad_agg <- bind_rows(swad_agg, xx_agg)
-}
-
-
-
-# which items crop up over and over? (have to decide which items to discuss in the paper!)
-all_swad <- c()
-for(k in 2:31) {
-  all_swad = c(all_swad, swad_lists[[k]]$uni_lemma)
-}
-swad_freq = sort(table(all_swad), decr=T)
-
-save(swad_agg, swad_lists, swad_freq, file=here("data/intermediates/Swadesh_grid_search_final.Rdata"))
-
-#library(wordcloud)
-#library(RColorBrewer)
-#wordcloud(words = names(swad_freq), freq = swad_freq, min.freq = 1,           
-#          max.words=100, random.order=FALSE, rot.per=0.35, scale=c(3.5,0.25),
-#          colors=brewer.pal(8, "Dark2"))
-
-library(wordcloud2)
-wordcloud2(data=data.frame(word = names(swad_freq[1:150]), 
-                           freq = as.vector(swad_freq[1:150]-13)), size=.5, color='random-dark')
+#library(wordcloud2)
+#wordcloud2(data=data.frame(word = names(swad_freq[1:150]), 
+#                           freq = as.vector(swad_freq[1:150]-13)), size=.5, color='random-dark')
 ```
 
 

@@ -76,7 +76,7 @@ for (language in setdiff(languages, completed)) {
 ```
 
 Get demographics
-```{r}
+```{r, eval=F}
 demog <- lapply(languages, \(language) {
   lang_data <- readRDS(glue("data/all_forms/{language}_data.rds"))
   # FIXME: all_demo is wrong---maybe because of filter_age
@@ -143,12 +143,12 @@ model_stats <- tibble(language = languages,
 saveRDS(model_stats, "data/intermediates/model_stats.rds")
 ```
 
-```{r}
+```{r, load-irt-parameters}
 xldf <- readRDS("data/intermediates/xldf_prod_allforms.rds")
 model_stats <- readRDS("data/intermediates/model_stats.rds")
 ```
 
-Clean xldf
+Clean IRT parameters (`xldf`)
 ```{r}
 xldf_clean <- xldf |> 
   filter(!is.na(uni_lemma), !is.na(d)) |> 
@@ -302,6 +302,10 @@ ggplot(cv_res_sum,
 ```{r, fig.width=7, fig.height=4}
 t.test(subset(cv_res_sum, sublist=="Swadesh" & k==BEST_K)$fscore_cor - 
        subset(cv_res_sum, sublist=="Random" & k==BEST_K)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="Proportional" & k==BEST_K)$fscore_cor - 
+       subset(cv_res_sum, sublist=="Random" & k==BEST_K)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="Proportional" & k==BEST_K)$fscore_cor - 
+       subset(cv_res_sum, sublist=="Swadesh" & k==BEST_K)$fscore_cor) # n.s.
 
 cv_res_sum %>% filter(k==BEST_K) %>%
   ggplot(aes(x = language, y = fscore_cor, group = sublist, col = sublist)) +
@@ -322,7 +326,7 @@ all_prod <- readRDS("data/intermediates/allforms_prod_per_lang.rds")
 ```{r}
 prod_sum <- prod_pars |> 
   filter(language %in% train_langs) |> 
-  group_by(uni_lemma) |> 
+  group_by(uni_lemma) |> # now 2735, was 2007 with only uni_lemma
   summarise(num_langs = n(),
             mean_d = mean(d, na.rm = TRUE),
             sd_d = sd(d, na.rm = TRUE))
@@ -350,13 +354,34 @@ rand_cors <- lapply(gen_langs, \(lang) {
   bind_rows() |> 
   mutate(sublist = "Random")
 
-gen_res <- bind_rows(prod_cors, rand_cors)
+
+# TODO: Alvin, is also grouping by category alright? maybe we just take modal uni category?
+prod_sum <- prod_pars |> 
+  filter(language %in% train_langs) |> 
+  group_by(uni_lemma, category) |> # now 2735, was 2007 with only uni_lemma
+  summarise(num_langs = n(),
+            mean_d = mean(d, na.rm = TRUE),
+            sd_d = sd(d, na.rm = TRUE))
+
+# Proportional
+proportional_sublist <- make_proportional_sublist(prod_sum, S_LEN, BEST_K)
+prop_cors <- sapply(gen_langs, \(lang) {
+  get_sumscore_cor(proportional_sublist, xldf, all_prod, lang)
+}) |> t() |>
+  `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
+  as_tibble(rownames = "language") |> 
+  mutate(sublist = "Proportional")
+
+
+gen_res <- bind_rows(prod_cors, prop_cors, rand_cors)
 
 gen_res_sum <- gen_res |> 
   group_by(language, sublist) |> 
   summarise(num_overlap = mean(num_overlap),
             sumscore_cor = mean(sumscore_cor)) |> 
   mutate(sumscore_cor_t = atanh(sumscore_cor)) # Fisher transform
+
+save(gen_res_sum, gen_res, file="data/intermediates/generalization_results.rds")
 ```
 
 ```{r, fig.width=6, fig.height=4}
@@ -365,11 +390,13 @@ ggplot(gen_res_sum,
   geom_col(position = "dodge") +
   labs(y = "Sumscore correlation") +
   theme_classic() +
-  theme(legend.position = "bottom",
-        axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) 
+  theme(legend.position = "bottom", 
+        axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+  labs(fill="List type")
 ```
 
 ```{r, fig.width=6, fig.height=4}
+# TODO: proportional clearly has too many items..
 ggplot(gen_res_sum,
        aes(x = language, y = num_overlap, fill = sublist)) +
   geom_col(position = "dodge") +
@@ -452,8 +479,6 @@ for (lang in languages) {
   swad_fscores <- fscores(swad_mod, response.pattern=masked_resps, method="MAP")[,1] 
   
   
-  
-
   
   # this works, but we need to 1) remove (or NA?) non-Swadesh columns, and 2) remove (or NA?) non-Swadesh parameters
   swad_mod <- mirt(fitted$model@Data$data, 1, pars=mod2values(fitted$model))
