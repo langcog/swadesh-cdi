@@ -23,11 +23,29 @@ make_proportional_sublist <- function(prod_sum, list_size, k) {
     unnest(data)
 }
 
+# special case of make_binned_swadesh_sublist, with n_bins=1
 make_swadesh_sublist <- function(prod_sum, list_size, k) {
   prod_sum |> 
     filter(num_langs >= k) |> 
     arrange(sd_d) |> 
     slice(1:list_size)
+}
+
+# split into n_bins difficulty bins, pick an equal number from each bin
+make_binned_swadesh_sublist <- function(prod_sum, list_size, k, n_bins=1) {
+  breaks <- quantile(prod_sum$mean_d, 
+                     probs = seq(0, 1, length.out = n_bins + 1), na.rm = TRUE)
+  
+  binned_sublist <- prod_sum |> 
+    filter(num_langs >= k) |> 
+    mutate(bin = cut(mean_d, breaks = breaks, include.lowest = TRUE)) |> 
+    group_by(bin) |> 
+    arrange(sd_d, .by_group = TRUE) |> 
+    slice_head(n = ceiling(list_size / n_bins)) |> 
+    ungroup() |> 
+    slice_head(n = list_size)
+  
+  return(binned_sublist)
 }
 
 make_random_sublist <- function(prod_sum, list_size, k) {

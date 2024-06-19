@@ -324,12 +324,20 @@ all_prod <- readRDS("data/intermediates/allforms_prod_per_lang.rds")
 ```
 
 ```{r}
+prod_cats <- prod_pars |> 
+  filter(language %in% train_langs) |> 
+  group_by(uni_lemma) |> 
+  count(category) |> 
+  arrange(desc(category)) |> 
+  slice(1)
+  
 prod_sum <- prod_pars |> 
   filter(language %in% train_langs) |> 
-  group_by(uni_lemma) |> # now 2735, was 2007 with only uni_lemma
+  group_by(uni_lemma) |> 
   summarise(num_langs = n(),
             mean_d = mean(d, na.rm = TRUE),
-            sd_d = sd(d, na.rm = TRUE))
+            sd_d = sd(d, na.rm = TRUE)) |> 
+  left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
 
 # Swadesh 
 swadesh_sublist <- make_swadesh_sublist(prod_sum, S_LEN, BEST_K)
@@ -354,14 +362,6 @@ rand_cors <- lapply(gen_langs, \(lang) {
   bind_rows() |> 
   mutate(sublist = "Random")
 
-
-# TODO: Alvin, is also grouping by category alright? maybe we just take modal uni category?
-prod_sum <- prod_pars |> 
-  filter(language %in% train_langs) |> 
-  group_by(uni_lemma, category) |> # now 2735, was 2007 with only uni_lemma
-  summarise(num_langs = n(),
-            mean_d = mean(d, na.rm = TRUE),
-            sd_d = sd(d, na.rm = TRUE))
 
 # Proportional
 proportional_sublist <- make_proportional_sublist(prod_sum, S_LEN, BEST_K)
@@ -396,7 +396,6 @@ ggplot(gen_res_sum,
 ```
 
 ```{r, fig.width=6, fig.height=4}
-# TODO: proportional clearly has too many items..
 ggplot(gen_res_sum,
        aes(x = language, y = num_overlap, fill = sublist)) +
   geom_col(position = "dodge") +
