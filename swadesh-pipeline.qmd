@@ -218,6 +218,23 @@ cv_res <- lapply(train_langs, \(lang) {
            language = lang,
            sublist = "Swadesh")
   
+  # Swadesh - best words in 3 difficulty strata
+  bin3_cors <- sapply(2:(length(train_langs)-1), \(k) {
+    sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, k, n_bins = 3)
+    if (k == BEST_K) {
+      fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
+    } else {
+      fscore_cor <- NA
+    }
+    c(get_difficulty_cor(sublist, prod_test), fscore_cor)
+  }) |> t() |> 
+    `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
+    as_tibble() |> 
+    mutate(run = NA,
+           k = 2:(length(train_langs)-1),
+           language = lang,
+           sublist = "3 Strata")
+  
   # Swadesh - category proportion match
   cat_cors <- sapply(2:(length(train_langs)-1), \(k) {
     sublist <- make_proportional_sublist(prod_sum, S_LEN, k)
@@ -255,7 +272,7 @@ cv_res <- lapply(train_langs, \(lang) {
     mutate(language = lang,
            sublist = "Random")
   
-  bind_rows(prod_cors, cat_cors, rand_cors)
+  bind_rows(prod_cors, bin3_cors, cat_cors, rand_cors)
 }) |> bind_rows()
 
 cv_res_sum <- cv_res |> 
@@ -565,34 +582,66 @@ Not significantly different (hooray / awww).
 
 T-tests:
 
-Swadesh is not significantly different than random
+Swadesh is not significantly different than random in terms of sumscore correlation:
 ```{r}
 t.test(gen_res_sum |> filter(sublist == "Swadesh") |> pull(sumscore_cor),
        gen_res_sum |> filter(sublist == "Random") |> pull(sumscore_cor),
        paired = TRUE)
 ```
 
+Proportional is also no different than random in terms of sumscore correlation:
+```{r}
+t.test(gen_res_sum |> filter(sublist == "Proportional") |> pull(sumscore_cor),
+       gen_res_sum |> filter(sublist == "Random") |> pull(sumscore_cor),
+       paired = TRUE)
+```
+
+
+Amount of overlap - Swadesh same as random
 ```{r}
 t.test(gen_res_sum |> filter(sublist == "Swadesh") |> pull(num_overlap),
        gen_res_sum |> filter(sublist == "Random") |> pull(num_overlap),
        paired = TRUE)
 ```
 
+Proportional has less overlap than random sublists
+```{r}
+t.test(gen_res_sum |> filter(sublist == "Proportional") |> pull(num_overlap),
+       gen_res_sum |> filter(sublist == "Random") |> pull(num_overlap),
+       paired = TRUE)
+```
+
+
 Swadesh is significantly easier than all items
 ```{r}
 t.test(swadesh_sublist$mean_d,
        prod_sum$mean_d)
 ```
-## Examining the list
+
+## Examining list composition
 
 ```{r}
-swadesh_sublist <- swadesh_sublist %>% left_join(xldf_clean %>% filter(language=="English (American)") %>% select(uni_lemma, category))
-swad_cats <- swadesh_sublist %>% group_by(category) %>% summarise(n = n()) %>% arrange(desc(n)) %>%
+swad_cats <- swadesh_sublist |> mutate(sublist = "Swadesh") |>
+  bind_rows(proportional_sublist |> mutate(sublist = "Proportional")) |>
+  group_by(sublist, category) %>% summarise(n = n()) %>% arrange(desc(n)) %>%
   mutate(freq = n / sum(n))
-swad_cats
+
+ggplot(swad_cats, aes(x = sublist, y = n, fill = category)) +
+  geom_bar(stat = "identity", position = "stack") +
+  theme_minimal()
 ```
 so many animals! also other nouns (body parts, clothing, food/drink), action words, descriptives - what about relative to distribution of frequency on other forms?
 average frequency per category on a CDI:WS
+
+
+```{r}
+swadesh_sublist |> mutate(sublist = "Swadesh") |>
+  bind_rows(proportional_sublist |> mutate(sublist = "Proportional")) |>
+  bind_rows(prod_sum |> filter(num_langs>=BEST_K) |> mutate(sublist = "All (k>=23)")) |>
+  ggplot(aes(x=sublist, y=mean_d)) + 
+  geom_violin() + geom_jitter(alpha=.3, width=.1) + theme_classic()
+```
+
 
 ```{r, fig.width=5, fig.height=12}
 
