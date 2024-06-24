@@ -143,7 +143,9 @@ For example, the American English CDI:WS and Mexican Spanish CDI:WS forms each h
 
 
 It is well-established that, all over the world, early-learned words reflect the people and things that children are likely to experience, that is, words for family members, animals, and common household objects [@tardif2008baby; @frank2021]. 
-Given this finding, it is reasonable to ask: Is there a single set of translation equivalents that would meet the criteria for inclusion on CDIs from multiple languages? 
+Given this finding, it is reasonable to ask: Is there a set of translation equivalents that would meet the criteria for inclusion on CDIs from multiple languages? 
+Identifying a small set of translation-equivalent items that function well for assessing early language development could lead not only to shorter assessments in languages that already have CDIs, but also to lowering the burden of creating CDIs in new languages. 
+Our goal is to leverage the roughly 100,000 CDI administrations from 32 languages on Wordbank to choose and systematically evaluate sublists that meet researchers' criteria for creating a new CDI.
 
 To facilitate this effort, it is useful to leverage Item-Response Theory [IRT, @embretson2013] models. 
 IRT models infer both the abilities of test takers and the difficulty of individual test items (i.e., words), along standardized dimensions. 
@@ -153,6 +155,8 @@ CAT-based CDIs presenting 50 or fewer items have been found to strongly correlat
 A general method for creating CDI CATs that work well across a broader age range (12--36 months) has been proposed, and tested for American English and Mexican Spanish [@Kachergis2022]. 
 However, the IRT model driving each CAT needs to be trained on a large and normative dataset (that is, a sample that is representative of a target population), which may not be available in a given language. 
 To date, the IRT models are fitted separately for each language, and the fitted parameters (e.g., word difficulty) are likely to vary across languages.
+Importantly, this work has also revealed that scores on random subsets of items from a CDI form are highly-correlated with scores on the full CDI [e.g., for English, full CDI vs. 100 random items $r=0.989$; @Kachergis2022].
+However, random items from a single form are not guaranteed to be 1) relevant in other languages, 2) of similar difficulty in other languages, or 3) representative of the overall proportion of semantic categories present on the full CDI (for a given language, let alone all languages).
 
 The goal of the current study is to use IRT modeling in conjunction with data from Wordbank to examine whether there might be a core set of concepts that are frequently included on CDIs, and---importantly---whether enough of them are of roughly equal difficulty across many languages to allow them to be used as candidate items in new languages. 
 This work takes its inspiration from the fields of lexicostatistics and glottochronology, where researchers [notably, @Swadesh1971] have proposed lists of common concepts that exist in all catalogued languages, in order to quantify the genealogical relatedness and dates of divergence of languages. 

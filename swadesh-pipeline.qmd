@@ -293,9 +293,11 @@ cv_output <- cv_res_sum |>
   group_by(k, sublist) |> 
   summarise(num_overlap = mean(num_overlap, na.rm = TRUE),
             difficulty_cor = mean(difficulty_cor, na.rm = TRUE))
+cv_output[which(cv_output$difficulty_cor == max(cv_output$difficulty_cor)),] 
+# k=23, Swadesh sublist, num_overlap=90.5, diff_cor=.841
 ```
 
-```{r}
+```{r, fig.width=8, fig.height=5}
 ggplot(cv_res_sum,
        aes(x = k, y = difficulty_cor, col = sublist)) +
   geom_jitter(aes(col = sublist),
