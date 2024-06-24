@@ -197,40 +197,40 @@ Dutch_FormThree,item_30,hun,word,produces;doesn't produce,hun,pronouns,them,them
 Dutch_FormThree,item_31,jezelf,word,produces;doesn't produce,jezelf,pronouns,yourself,yourself,,,,2SG.REFL,Dutch,FormThree
 Dutch_FormThree,item_91,zij/ze,word,produces;doesn't produce,zij/ze,pronouns,she,she,,,,3SG,Dutch,FormThree
 Dutch_FormTwoA,item_100,ik,word,understands;produces,ik,pronouns,I,i,,,,1SG,Dutch,FormTwoA
-Dutch_WG,item_326,dat,word,understands;produces,dat,pronouns,that,that,,,,that,Dutch,WS
-Dutch_WG,item_327,deze,word,understands;produces,deze,pronouns,this,this,,,,this,Dutch,WS
-Dutch_WG,item_328,het(vnw),word,understands;produces,het(vnw),pronouns,it,it,,,,3SG,Dutch,WS
-Dutch_WG,item_329,ik,word,understands;produces,ik,pronouns,I,i,,,,1SG,Dutch,WS
-Dutch_WG,item_330,jij,word,understands;produces,jij,pronouns,you,you,,,,2SG,Dutch,WS
-Dutch_WG,item_331,jouw(e)/vanjou/dejou(we),word,understands;produces,jouw(e)/vanjou/dejou(we),pronouns,your,your,,,,2SG.POSS,Dutch,WS
-Dutch_WG,item_332,mij,word,understands;produces,mij,pronouns,me,me,,,,1SG,Dutch,WS
-Dutch_WG,item_333,mijn(e)/vanmij,word,understands;produces,mijn(e)/vanmij,pronouns,my,my,,,,1SG.POSS,Dutch,WS
-Dutch_WG,item_334,wij,word,understands;produces,wij,pronouns,we,we,,,,1PL,Dutch,WS
-Dutch_WG,item_434,dit/deze/dees,word,understands;produces,dit/deze/dees,pronouns,this,this,,,,this,Dutch,WS
-Dutch_WG,item_435,zijn/haar,word,understands;produces,zijn/haar,pronouns,his/her,his/her,,,,3SG.POSS,Dutch,WS
-Dutch_WS,item_600,dat,word,understands;produces,dat,pronouns,that,that,,,,that,Dutch,WG
-Dutch_WS,item_601,deze,word,understands;produces,deze,pronouns,this,this,,,,this,Dutch,WG
-Dutch_WS,item_602,die,word,understands;produces,die,pronouns,that,that,,,,that,Dutch,WG
-Dutch_WS,item_603,dit,word,understands;produces,dit,pronouns,this,this,,,,this,Dutch,WG
-Dutch_WS,item_604,haar(vnw),word,understands;produces,haar(vnw),pronouns,her,her (accusative),,,,3SG,Dutch,WG
-Dutch_WS,item_605,hem,word,understands;produces,hem,pronouns,him,him,,,,3SG,Dutch,WG
-Dutch_WS,item_606,hen,word,understands;produces,hen,pronouns,them,them,,,,3PL,Dutch,WG
-Dutch_WS,item_607,het(vnw),word,understands;produces,het(vnw),pronouns,it,it,,,,3SG,Dutch,WG
-Dutch_WS,item_608,hethare/haar,word,understands;produces,hethare/haar,pronouns,her,her (possessive),,,,3SG.POSS,Dutch,WG
-Dutch_WS,item_609,hetzijne/zijn,word,understands;produces,hetzijne/zijn,pronouns,his,his,,,,3SG.POSS,Dutch,WG
-Dutch_WS,item_610,hij,word,understands;produces,hij,pronouns,he,he,,,,3SG,Dutch,WG
-Dutch_WS,item_611,hun,word,understands;produces,hun,pronouns,them,them,,,,3PL,Dutch,WG
-Dutch_WS,item_612,ik,word,understands;produces,ik,pronouns,I,i,,,,1SG,Dutch,WG
-Dutch_WS,item_613,jezelf,word,understands;produces,jezelf,pronouns,yourself,yourself,,,,2SG.REFL,Dutch,WG
-Dutch_WS,item_614,jij,word,understands;produces,jij,pronouns,you,you,,,,2SG,Dutch,WG
-Dutch_WS,item_615,jouw(e)/vanjou/dejou(we),word,understands;produces,jouw(e)/vanjou/dejou(we),pronouns,your,your,,,,2SG.POSS,Dutch,WG
-Dutch_WS,item_616,mezelf,word,understands;produces,mezelf,pronouns,myself,myself,,,,1SG.REFL,Dutch,WG
-Dutch_WS,item_617,mij,word,understands;produces,mij,pronouns,me,me,,,,1SG,Dutch,WG
-Dutch_WS,item_618,mijn(e)/vanmij,word,understands;produces,mijn(e)/vanmij,pronouns,my,my,,,,1SG.POSS,Dutch,WG
-Dutch_WS,item_619,ons,word,understands;produces,ons,pronouns,our,our,,,,1PL.POSS,Dutch,WG
-Dutch_WS,item_620,wij,word,understands;produces,wij,pronouns,we,we,,,,1PL,Dutch,WG
-Dutch_WS,item_621,zij(meervoud),word,understands;produces,zij(meervoud),pronouns,they,they,,,,3PL,Dutch,WG
-Dutch_WS,item_622,zij(meisje),word,understands;produces,zij(meisje),pronouns,she,she,,,,3SG,Dutch,WG
+Dutch_WG,item_326,dat,word,understands;produces,dat,pronouns,that,that,,,,that,Dutch,WG
+Dutch_WG,item_327,deze,word,understands;produces,deze,pronouns,this,this,,,,this,Dutch,WG
+Dutch_WG,item_328,het(vnw),word,understands;produces,het(vnw),pronouns,it,it,,,,3SG,Dutch,WG
+Dutch_WG,item_329,ik,word,understands;produces,ik,pronouns,I,i,,,,1SG,Dutch,WG
+Dutch_WG,item_330,jij,word,understands;produces,jij,pronouns,you,you,,,,2SG,Dutch,WG
+Dutch_WG,item_331,jouw(e)/vanjou/dejou(we),word,understands;produces,jouw(e)/vanjou/dejou(we),pronouns,your,your,,,,2SG.POSS,Dutch,WG
+Dutch_WG,item_332,mij,word,understands;produces,mij,pronouns,me,me,,,,1SG,Dutch,WG
+Dutch_WG,item_333,mijn(e)/vanmij,word,understands;produces,mijn(e)/vanmij,pronouns,my,my,,,,1SG.POSS,Dutch,WG
+Dutch_WG,item_334,wij,word,understands;produces,wij,pronouns,we,we,,,,1PL,Dutch,WG
+Dutch_WG,item_434,dit/deze/dees,word,understands;produces,dit/deze/dees,pronouns,this,this,,,,this,Dutch,WG
+Dutch_WG,item_435,zijn/haar,word,understands;produces,zijn/haar,pronouns,his/her,his/her,,,,3SG.POSS,Dutch,WG
+Dutch_WS,item_600,dat,word,understands;produces,dat,pronouns,that,that,,,,that,Dutch,WS
+Dutch_WS,item_601,deze,word,understands;produces,deze,pronouns,this,this,,,,this,Dutch,WS
+Dutch_WS,item_602,die,word,understands;produces,die,pronouns,that,that,,,,that,Dutch,WS
+Dutch_WS,item_603,dit,word,understands;produces,dit,pronouns,this,this,,,,this,Dutch,WS
+Dutch_WS,item_604,haar(vnw),word,understands;produces,haar(vnw),pronouns,her,her (accusative),,,,3SG,Dutch,WS
+Dutch_WS,item_605,hem,word,understands;produces,hem,pronouns,him,him,,,,3SG,Dutch,WS
+Dutch_WS,item_606,hen,word,understands;produces,hen,pronouns,them,them,,,,3PL,Dutch,WS
+Dutch_WS,item_607,het(vnw),word,understands;produces,het(vnw),pronouns,it,it,,,,3SG,Dutch,WS
+Dutch_WS,item_608,hethare/haar,word,understands;produces,hethare/haar,pronouns,her,her (possessive),,,,3SG.POSS,Dutch,WS
+Dutch_WS,item_609,hetzijne/zijn,word,understands;produces,hetzijne/zijn,pronouns,his,his,,,,3SG.POSS,Dutch,WS
+Dutch_WS,item_610,hij,word,understands;produces,hij,pronouns,he,he,,,,3SG,Dutch,WS
+Dutch_WS,item_611,hun,word,understands;produces,hun,pronouns,them,them,,,,3PL,Dutch,WS
+Dutch_WS,item_612,ik,word,understands;produces,ik,pronouns,I,i,,,,1SG,Dutch,WS
+Dutch_WS,item_613,jezelf,word,understands;produces,jezelf,pronouns,yourself,yourself,,,,2SG.REFL,Dutch,WS
+Dutch_WS,item_614,jij,word,understands;produces,jij,pronouns,you,you,,,,2SG,Dutch,WS
+Dutch_WS,item_615,jouw(e)/vanjou/dejou(we),word,understands;produces,jouw(e)/vanjou/dejou(we),pronouns,your,your,,,,2SG.POSS,Dutch,WS
+Dutch_WS,item_616,mezelf,word,understands;produces,mezelf,pronouns,myself,myself,,,,1SG.REFL,Dutch,WS
+Dutch_WS,item_617,mij,word,understands;produces,mij,pronouns,me,me,,,,1SG,Dutch,WS
+Dutch_WS,item_618,mijn(e)/vanmij,word,understands;produces,mijn(e)/vanmij,pronouns,my,my,,,,1SG.POSS,Dutch,WS
+Dutch_WS,item_619,ons,word,understands;produces,ons,pronouns,our,our,,,,1PL.POSS,Dutch,WS
+Dutch_WS,item_620,wij,word,understands;produces,wij,pronouns,we,we,,,,1PL,Dutch,WS
+Dutch_WS,item_621,zij(meervoud),word,understands;produces,zij(meervoud),pronouns,they,they,,,,3PL,Dutch,WS
+Dutch_WS,item_622,zij(meisje),word,understands;produces,zij(meisje),pronouns,she,she,,,,3SG,Dutch,WS
 English_British_Oxford,item_386,386_her,word,understands; produces,her,pronouns,,her,,,,3SG.POSS,English (British),Oxford CDI
 English_British_Oxford,item_387,387_his,word,understands; produces,his,pronouns,,his,,,,3SG.POSS,English (British),Oxford CDI
 English_British_Oxford,item_388,388_I,word,understands; produces,I,pronouns,,i,,,,1SG,English (British),Oxford CDI
@@ -937,34 +937,34 @@ Norwegian_WS,item_627,i_17_28,word,produces,seg selv,pronouns,itself,,,,,3SG.REF
 Norwegian_WS,item_628,i_17_29,word,produces,sin,pronouns,its,,,,,3SG.POSS,Norwegian,WS
 Norwegian_WS,item_629,i_17_30,word,produces,vår,pronouns,our,,,,,1PL.POSS,Norwegian,WS
 Norwegian_WS,item_630,i_17_31,word,produces,vi,pronouns,we,,,,,1PL,Norwegian,WS
-Persian_WG,item_397,X1,word,understands; produces,آن,pronouns,,,,,,3SG,Persian,WS
-Persian_WG,item_398,X2,word,understands; produces,این,pronouns,this,this,,,,this,Persian,WS
-Persian_WG,item_399,X3,word,understands; produces,آنها,pronouns,they,they,,,,3PL,Persian,WS
-Persian_WG,item_400,X4,word,understands; produces,اینها,pronouns,these,these,,,,these,Persian,WS
-Persian_WG,item_401,X5,word,understands; produces,او,pronouns,she,she,,,,3SG,Persian,WS
-Persian_WG,item_402,X6,word,understands; produces,تو,pronouns,you,you,,,,2SG,Persian,WS
-Persian_WG,item_403,X7,word,understands; produces,شما,pronouns,you,you,,,,2PL,Persian,WS
-Persian_WG,item_404,X8,word,understands; produces,من,pronouns,i,I,,,,1SG,Persian,WS
-Persian_WG,item_405,X9,word,understands; produces,ما,pronouns,we,we,,,,1PL,Persian,WS
-Persian_WG,item_406,X10,word,understands; produces,مالِ من/ منِ,pronouns,,,,,,1SG.POSS,Persian,WS
-Persian_WG,item_407,X11,word,understands; produces,مال تو/ توئه,pronouns,yours/yours,,,,,2SG.POSS,Persian,WS
-Persian_WG,item_408,X12,word,understands; produces,مال اون/ اونه,pronouns,his/hers,,,,,3SG.POSS,Persian,WS
-Persian_WS,item_448,zamir1,word,produces,ان (اون),pronouns,,,,,,that,Persian,WG
-Persian_WS,item_449,zamir2,word,produces,انها,pronouns,,,,,,3PL,Persian,WG
-Persian_WS,item_450,zamir3,word,produces,او (اون),pronouns,he (she),,,,,3SG,Persian,WG
-Persian_WS,item_451,zamir4,word,produces,این,pronouns,this,this,,,,this,Persian,WG
-Persian_WS,item_452,zamir5,word,produces,اینها,pronouns,these,these,,,,these,Persian,WG
-Persian_WS,item_453,zamir6,word,produces,تو,pronouns,you,you,,,,2SG,Persian,WG
-Persian_WS,item_454,zamir7,word,produces,خودت,pronouns,yourself,,,,,2SG.REFL,Persian,WG
-Persian_WS,item_455,zamir8,word,produces,خودتان (خودتون),pronouns,yourself,,,,,2SG.REFL,Persian,WG
-Persian_WS,item_456,zamir9,word,produces,خودش,pronouns,himself,,,,,3SG.REFL,Persian,WG
-Persian_WS,item_457,zamir10,word,produces,خودشان,pronouns,themselves,,,,,3PL.REFL,Persian,WG
-Persian_WS,item_458,zamir11,word,produces,خودم,pronouns,by my own,,,,,1SG.REFL,Persian,WG
-Persian_WS,item_459,zamir12,word,produces,خودمان (خودمون),pronouns,ourselves,,,,,1PL.REFL,Persian,WG
-Persian_WS,item_460,zamir13,word,produces,شما,pronouns,you,you,,,,2PL,Persian,WG
-Persian_WS,item_461,zamir14,word,produces,ما,pronouns,we,we,,,,1PL,Persian,WG
-Persian_WS,item_462,zamir15,word,produces,من,pronouns,I,I,,,,1SG,Persian,WG
-Persian_WS,item_463,zamir16,word,produces,همان(همون),pronouns,same,same,,,,same,Persian,WG
+Persian_WG,item_397,X1,word,understands; produces,آن,pronouns,,,,,,3SG,Persian,WG
+Persian_WG,item_398,X2,word,understands; produces,این,pronouns,this,this,,,,this,Persian,WG
+Persian_WG,item_399,X3,word,understands; produces,آنها,pronouns,they,they,,,,3PL,Persian,WG
+Persian_WG,item_400,X4,word,understands; produces,اینها,pronouns,these,these,,,,these,Persian,WG
+Persian_WG,item_401,X5,word,understands; produces,او,pronouns,she,she,,,,3SG,Persian,WG
+Persian_WG,item_402,X6,word,understands; produces,تو,pronouns,you,you,,,,2SG,Persian,WG
+Persian_WG,item_403,X7,word,understands; produces,شما,pronouns,you,you,,,,2PL,Persian,WG
+Persian_WG,item_404,X8,word,understands; produces,من,pronouns,i,I,,,,1SG,Persian,WG
+Persian_WG,item_405,X9,word,understands; produces,ما,pronouns,we,we,,,,1PL,Persian,WG
+Persian_WG,item_406,X10,word,understands; produces,مالِ من/ منِ,pronouns,,,,,,1SG.POSS,Persian,WG
+Persian_WG,item_407,X11,word,understands; produces,مال تو/ توئه,pronouns,yours/yours,,,,,2SG.POSS,Persian,WG
+Persian_WG,item_408,X12,word,understands; produces,مال اون/ اونه,pronouns,his/hers,,,,,3SG.POSS,Persian,WG
+Persian_WS,item_448,zamir1,word,produces,ان (اون),pronouns,,,,,,that,Persian,WS
+Persian_WS,item_449,zamir2,word,produces,انها,pronouns,,,,,,3PL,Persian,WS
+Persian_WS,item_450,zamir3,word,produces,او (اون),pronouns,he (she),,,,,3SG,Persian,WS
+Persian_WS,item_451,zamir4,word,produces,این,pronouns,this,this,,,,this,Persian,WS
+Persian_WS,item_452,zamir5,word,produces,اینها,pronouns,these,these,,,,these,Persian,WS
+Persian_WS,item_453,zamir6,word,produces,تو,pronouns,you,you,,,,2SG,Persian,WS
+Persian_WS,item_454,zamir7,word,produces,خودت,pronouns,yourself,,,,,2SG.REFL,Persian,WS
+Persian_WS,item_455,zamir8,word,produces,خودتان (خودتون),pronouns,yourself,,,,,2SG.REFL,Persian,WS
+Persian_WS,item_456,zamir9,word,produces,خودش,pronouns,himself,,,,,3SG.REFL,Persian,WS
+Persian_WS,item_457,zamir10,word,produces,خودشان,pronouns,themselves,,,,,3PL.REFL,Persian,WS
+Persian_WS,item_458,zamir11,word,produces,خودم,pronouns,by my own,,,,,1SG.REFL,Persian,WS
+Persian_WS,item_459,zamir12,word,produces,خودمان (خودمون),pronouns,ourselves,,,,,1PL.REFL,Persian,WS
+Persian_WS,item_460,zamir13,word,produces,شما,pronouns,you,you,,,,2PL,Persian,WS
+Persian_WS,item_461,zamir14,word,produces,ما,pronouns,we,we,,,,1PL,Persian,WS
+Persian_WS,item_462,zamir15,word,produces,من,pronouns,I,I,,,,1SG,Persian,WS
+Persian_WS,item_463,zamir16,word,produces,همان(همون),pronouns,same,same,,,,same,Persian,WS
 Portuguese_European_WG,item_289,aquilo,word,understands; produces,Aquilo,pronouns,That,,,,,that,Portuguese (European),WG
 Portuguese_European_WG,item_290,eu,word,understands; produces,Eu,pronouns,I/ me,,,,,1SG,Portuguese (European),WG
 Portuguese_European_WG,item_291,isto,word,understands; produces,Isto,pronouns,This,,,,,this,Portuguese (European),WG
