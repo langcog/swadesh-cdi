@@ -355,19 +355,32 @@ lang_d_m %>% ggplot(aes(x=reorder(language, -mean), y=mean)) + coord_flip() +
 
 ## Identifying Swadesh CDI Candidates
 
-To construct the Swadesh CDI, we aimed to choose uni-lemmas with low variability in their cross-linguistic difficulty—that is, uni-lemmas that are similarly difficult to learn across languages. 
+There were two key desiderata for a Swadesh CDI list:
+
+1. Generalizability to new languages, and 
+2. Comprehensive measurement of a child's vocabulary.
+
+To satisfy the generalizability criterion, we aimed to choose unilemmas with low variability in their cross-linguistic difficulty---that is, unilemmas that are similarly difficult to learn across languages, operationalized as having the lowest standard deviation in item difficulty.
+To satisfy the comprehensiveness criterion, we adopted two specific criteria that were most often used in previous short form constructions: diversity in semantic categories represented, and diversity in item difficulties represented.
+These criteria were operationalized by stratifying all unilemmas by semantic category or by difficulty, and selecting the lowest variability unilemmas within each stratum.
+
 We arbitrarily selected a list size of 100 items[^4], noting that the same procedure could be followed to generate lists of larger or smaller sizes. 
-We thus wanted to select the 100 items with the least variability in item difficulty, operationalized as the items with the lowest standard deviation. 
-However, this method tended to prefer items that appear on fewer forms, since it was more likely for two items to coincidentally have very similar difficulties than for 20 items to have similar difficulties, even though this measure of variability was likely to be an underestimate of true cross-linguistic variability in the former case. 
+We thus wanted to select the 100 unilemmas with the least variability in item difficulty; this process was either conducted across all unilemmas (i.e., unstratified), or stratified by category or by difficulty.
+For category stratification, we considered the semantic categories that were the most common across all languages, and calculated the mean proportions of items in each semantic category across all languages.
+The mean proportions were then rounded to fit 100 items, resulting in quotas for each semantic category; least variable items were drawn across all semantic categories to satisfy the quotas.
+For difficulty stratification, we binned the unilemmas into 2--5 quantiles, and least variable items were equally drawn across all strata. 
+
+The method of choosing the lowest variability items tended to prefer items that appear on fewer forms, since it was more likely for two items to coincidentally have very similar difficulties than for 20 items to have similar difficulties, even though this measure of variability was likely to be an underestimate of true cross-linguistic variability in the former case. 
 As such, we also used a threshold $k$, reflecting the minimum number of current languages which must contain the uni-lemma (i.e., for $k = 5$, we included only uni-lemmas that appeared on the forms of at least 5 languages). 
 
 [^4]: Though we note that most CDI short-forms are of this length: 100 items yields, on balance, a reliable measure of children's early vocabulary without being too time-consuming for use in a variety of studies of early development.
 
 In order to choose the optimum value of $k$, we conducted leave-one-out cross-validation over our training languages. 
 Specifically, we held out one training language and conducted the selection procedure using the data from all other training languages for all values of $k \in [2, 31]$. 
-With these candidate lists, we compared the item difficulties in the held-out language with the mean item difficulties in the remaining training languages, and selected the value of k for which the correlation was the highest, $k = 23$.
+With these candidate lists, we compared the item difficulties in the held-out language with the mean item difficulties in the remaining training languages, and selected the value of $k$ for which the correlation was the highest for each method (unstratified, category stratified, and difficulty stratified).
+<!-- TODO: figure out how to reason about k during LOO-CV vs k when no LOO is happening -->
 
-Finally, we re-ran the selection procedure using $k = 23$ across all training languages (without holding out any language) to arrive at the final Swadesh CDI list, shown in Table 2.
+Finally, we re-ran the selection procedure using the best $k$ values across all training languages (without holding out any language) to arrive at the final Swadesh CDI list, shown in Table 2.
 
 ## Choosing a Random Baseline
 
