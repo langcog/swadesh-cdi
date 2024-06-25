@@ -171,6 +171,21 @@ gen_langs <- model_stats |> filter(participants < 300) |> pull(language)
 train_langs <- setdiff(languages, gen_langs)
 ```
 
+Get category proportions
+```{r}
+## We use canonical categories from the American English form
+main_cats <- xldf_clean |> filter(language == "English (American)") |> pull(category) |> unique()
+cat_props <- xldf_clean |> 
+  filter(category %in% main_cats,
+         language %in% train_langs) |> 
+  group_by(language) |> 
+  count(category) |> 
+  mutate(prop = n / sum(n)) |> 
+  group_by(category) |> 
+  summarise(mean_prop = mean(prop))
+write_csv(cat_props, "data/category_proportions.csv")
+```
+
 # Cross-validation
 ```{r, eval=F}
 all_fscores <- readRDS("data/intermediates/full_fscores_allforms.rds")
@@ -203,7 +218,7 @@ cv_res <- lapply(train_langs, \(lang) {
   #                         response.pattern = full_model$model@Data$data, 
   #                         method = "MAP")[,1] 
   
-  # Swadesh - best words
+  # Swadesh - unstratified
   prod_cors <- sapply(2:(length(train_langs)-1), \(k) {
     sublist <- make_swadesh_sublist(prod_sum, S_LEN, k)
     if (k == BEST_K) {
@@ -220,7 +235,7 @@ cv_res <- lapply(train_langs, \(lang) {
            language = lang,
            sublist = "Swadesh")
   
-  # Swadesh - best words in 3 difficulty strata
+  # Swadesh - difficulty stratified (3 bins)
   bin3_cors <- sapply(2:(length(train_langs)-1), \(k) {
     sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, k, n_bins = 3)
     if (k == BEST_K) {
@@ -237,7 +252,7 @@ cv_res <- lapply(train_langs, \(lang) {
            language = lang,
            sublist = "3 Strata")
   
-  # Swadesh - category proportion match
+  # Swadesh - category stratified
   cat_cors <- sapply(2:(length(train_langs)-1), \(k) {
     sublist <- make_proportional_sublist(prod_sum, S_LEN, k)
     if (k == BEST_K) {
@@ -846,107 +861,4 @@ dends %>% untangle(method = "step1side") %>%
 # setdiff(unique(lang_sims$LangName_1), unique(lang_sims$LangName_2))
 #  "Standard Arabic"
 ```
-
-
-# Proportional Swadesh lists
-```{r}
-## We use canonical categories from the American English form
-main_cats <- xldf_clean |> filter(language == "English (American)") |> pull(category) |> unique()
-cat_props <- xldf_clean |> 
-  filter(category %in% main_cats,
-         language %in% train_langs) |> 
-  group_by(language) |> 
-  count(category) |> 
-  mutate(prop = n / sum(n)) |> 
-  group_by(category) |> 
-  summarise(mean_prop = mean(prop))
-write_csv(cat_props, "data/category_proportions.csv")
-```
-
-```{r}
-cv_res_prop <- lapply(train_langs, \(lang) {
-  message(glue("Calculating for {lang}..."))
-  
-  prod_cats <- prod_pars |> 
-    filter(language %in% train_langs,
-           language != lang) |> 
-    group_by(uni_lemma) |> 
-    count(category) |> 
-    arrange(desc(category)) |> 
-    slice(1)
-  
-  prod_sum <- prod_pars |> 
-    filter(language %in% train_langs,
-           language != lang) |> 
-    group_by(uni_lemma) |> 
-    summarise(num_langs = n(),
-              mean_d = mean(d, na.rm = TRUE),
-              sd_d = sd(d, na.rm = TRUE)) |> 
-    left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
-  prod_test <- prod_pars |> 
-    filter(language == lang)
-  
-  # calculate full fscores once (rather than once per comparison)
-  full_model <- readRDS(glue("data/prod_models/{lang}_2PL_allforms_prod_fits.rds"))
-  full_fscores <- fscores(full_model$model, 
-                          response.pattern = full_model$model@Data$data, 
-                          method = "MAP")[,1] 
-  BEST_K = 27
-  # Swadesh - category proportion match
-  cat_cors <- sapply(2:(length(train_langs)-1), \(k) {
-    sublist <- make_proportional_sublist(prod_sum, S_LEN, k)
-    if (k == BEST_K) {
-      fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
-    } else {
-      fscore_cor <- NA
-    }
-    c(get_difficulty_cor(sublist, prod_test), fscore_cor)
-  }) |> t() |> 
-    `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
-    as_tibble() |> 
-    mutate(run = NA,
-           k = 2:(length(train_langs)-1),
-           language = lang,
-           sublist = "Proportional")
-  
-  ## TODO: random by proportional
-  # random
-  # rand_cors <- lapply(2:(length(train_langs)-1), \(k) {
-  #   rand_cors <- sapply(1:N_RAND, \(comp) {
-  #     sublist <- make_random_sublist(prod_sum, S_LEN, k)
-  #     if (k == BEST_K) {
-  #       fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
-  #     } else {
-  #       fscore_cor <- NA
-  #     }
-  #     c(get_difficulty_cor(sublist, prod_test), fscore_cor)
-  #   }) |> t() |> 
-  #     `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
-  #     as_tibble() |> 
-  #     mutate(run = 1:N_RAND,
-  #            k = k)
-  # }) |> 
-  #   bind_rows() |> 
-  #   mutate(language = lang,
-  #          sublist = "Random")
-  
-  # bind_rows(cat_cors, rand_cors)
-}) |> bind_rows()
-
-cv_res_sum_prop <- cv_res_prop |> 
-  group_by(k, language, sublist) |> 
-  summarise(num_overlap = mean(num_overlap),
-            difficulty_cor = mean(difficulty_cor),
-            fscore_cor = mean(fscore_cor)) |> 
-  mutate(difficulty_cor_t = atanh(difficulty_cor), # Fisher transform
-         fscore_cor_t = atanh(fscore_cor)) 
-
-cv_output_prop <- cv_res_sum_prop |> 
-  group_by(k, sublist) |> 
-  summarise(num_overlap_mean = mean(num_overlap, na.rm = TRUE),
-            num_overlap_sd = sd(num_overlap, na.rm = TRUE),
-            difficulty_cor_mean = mean(difficulty_cor, na.rm = TRUE),
-            difficulty_cor_sd = sd(difficulty_cor, na.rm = TRUE))
-```
-
 
