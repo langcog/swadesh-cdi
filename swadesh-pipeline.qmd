@@ -233,7 +233,24 @@ cv_res <- lapply(train_langs, \(lang) {
     mutate(run = NA,
            k = 2:(length(train_langs)-1),
            language = lang,
-           sublist = "Swadesh")
+           sublist = "unstratified")
+  
+  # Swadesh - difficulty stratified (2 bins)
+  bin2_cors <- sapply(2:(length(train_langs)-1), \(k) {
+    sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, k, n_bins = 2)
+    if (k == BEST_K) {
+      fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
+    } else {
+      fscore_cor <- NA
+    }
+    c(get_difficulty_cor(sublist, prod_test), fscore_cor)
+  }) |> t() |> 
+    `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
+    as_tibble() |> 
+    mutate(run = NA,
+           k = 2:(length(train_langs)-1),
+           language = lang,
+           sublist = "2 strata")
   
   # Swadesh - difficulty stratified (3 bins)
   bin3_cors <- sapply(2:(length(train_langs)-1), \(k) {
@@ -250,7 +267,24 @@ cv_res <- lapply(train_langs, \(lang) {
     mutate(run = NA,
            k = 2:(length(train_langs)-1),
            language = lang,
-           sublist = "3 Strata")
+           sublist = "3 strata")
+  
+  # Swadesh - difficulty stratified (4 bins)
+  bin4_cors <- sapply(2:(length(train_langs)-1), \(k) {
+    sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, k, n_bins = 4)
+    if (k == BEST_K) {
+      fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
+    } else {
+      fscore_cor <- NA
+    }
+    c(get_difficulty_cor(sublist, prod_test), fscore_cor)
+  }) |> t() |> 
+    `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
+    as_tibble() |> 
+    mutate(run = NA,
+           k = 2:(length(train_langs)-1),
+           language = lang,
+           sublist = "4 strata")
   
   # Swadesh - category stratified
   cat_cors <- sapply(2:(length(train_langs)-1), \(k) {
@@ -267,7 +301,7 @@ cv_res <- lapply(train_langs, \(lang) {
     mutate(run = NA,
            k = 2:(length(train_langs)-1),
            language = lang,
-           sublist = "Proportional")
+           sublist = "category")
   
   # random
   rand_cors <- lapply(2:(length(train_langs)-1), \(k) {
@@ -289,7 +323,7 @@ cv_res <- lapply(train_langs, \(lang) {
     mutate(language = lang,
            sublist = "Random")
   
-  bind_rows(prod_cors, bin3_cors, cat_cors, rand_cors)
+  bind_rows(prod_cors, bin2_cors, bin3_cors, bin4_cors, cat_cors, rand_cors)
 }) |> bind_rows()
 
 cv_res_sum <- cv_res |> 
