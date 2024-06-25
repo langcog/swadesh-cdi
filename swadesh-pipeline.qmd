@@ -173,6 +173,7 @@ train_langs <- setdiff(languages, gen_langs)
 
 # Cross-validation
 ```{r, eval=F}
+all_fscores <- readRDS("data/intermediates/full_fscores_allforms.rds")
 cv_res <- lapply(train_langs, \(lang) {
   message(glue("Calculating for {lang}..."))
   
@@ -197,9 +198,10 @@ cv_res <- lapply(train_langs, \(lang) {
   
   # calculate full fscores once (rather than once per comparison)
   full_model <- readRDS(glue("data/prod_models/{lang}_2PL_allforms_prod_fits.rds"))
-  full_fscores <- fscores(full_model$model, 
-                          response.pattern = full_model$model@Data$data, 
-                          method = "MAP")[,1] 
+  full_fscores <- all_fscores[[lang]]
+  # full_fscores <- fscores(full_model$model, 
+  #                         response.pattern = full_model$model@Data$data, 
+  #                         method = "MAP")[,1] 
   
   # Swadesh - best words
   prod_cors <- sapply(2:(length(train_langs)-1), \(k) {
