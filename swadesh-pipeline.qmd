@@ -256,10 +256,10 @@ cv_res <- lapply(train_langs, \(lang) {
   
   # calculate full fscores once (rather than once per comparison)
   full_model <- readRDS(glue("data/prod_models/{lang}_2PL_allforms_prod_fits.rds"))
-  full_fscores <- all_fscores[[lang]]
-  # full_fscores <- fscores(full_model$model, 
-  #                         response.pattern = full_model$model@Data$data, 
-  #                         method = "MAP")[,1] 
+  #full_fscores <- all_fscores[[lang]]
+  full_fscores <- fscores(full_model$model, 
+                          response.pattern = full_model$model@Data$data, 
+                          method = "MAP")[,1] 
   
   prod_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
                            make_swadesh_sublist, "unstratified")
