@@ -33,11 +33,12 @@ make_swadesh_sublist <- function(prod_sum, list_size, k) {
 
 # split into n_bins difficulty bins, pick an equal number from each bin
 make_binned_swadesh_sublist <- function(prod_sum, list_size, k, n_bins=1) {
+  prod_sum <- prod_sum |> 
+    filter(num_langs >= k)
   breaks <- quantile(prod_sum$mean_d, 
                      probs = seq(0, 1, length.out = n_bins + 1), na.rm = TRUE)
   
   binned_sublist <- prod_sum |> 
-    filter(num_langs >= k) |> 
     mutate(bin = cut(mean_d, breaks = breaks, include.lowest = TRUE)) |> 
     group_by(bin) |> 
     arrange(sd_d, .by_group = TRUE) |> 
@@ -55,19 +56,6 @@ make_random_sublist <- function(prod_sum, list_size, k) {
   subk |> slice(idx)
 }
 
-get_difficulty_cor <- function(sublist, test_items) {
-  prod_res <- sublist |>
-    left_join(test_items, by = "uni_lemma",
-              multiple = "first")
-  if (nrow(prod_res) == 0 || 
-      complete.cases(prod_res$mean_d, prod_res$d) |> sum() == 0) {
-    return(c(0, NA))
-  }
-  c((!is.na(prod_res$d)) |> sum(),
-    cor(prod_res$mean_d, prod_res$d, 
-        use = "complete.obs", method = COR_TYPE))
-}
-
 get_sumscore_cor <- function(sublist, xldf, all_prod, lang) {
   xldf_sub <- sublist |> 
     left_join(xldf |> filter(language == lang),
@@ -83,7 +71,22 @@ get_sumscore_cor <- function(sublist, xldf, all_prod, lang) {
   }
   c(nrow(xldf_sub),
     cor(rowMeans(all_prod[[lang]], na.rm = TRUE), prod_sub,
-      use = "na.or.complete", method = COR_TYPE))
+        use = "na.or.complete", method = COR_TYPE))
+}
+
+# returns item overlap, difficulty correlation, and RMSE
+get_difficulty_metrics <- function(sublist, test_items) {
+  prod_res <- sublist |>
+    left_join(test_items, by = "uni_lemma",
+              multiple = "first")
+  if (nrow(prod_res) == 0 || 
+      complete.cases(prod_res$mean_d, prod_res$d) |> sum() == 0) {
+    return(c(0, NA, NA))
+  }
+  num_overlap <- (!is.na(prod_res$d)) |> sum()
+  correlation <- cor(prod_res$mean_d, prod_res$d, use = "complete.obs", method = COR_TYPE)
+  rmse <- sqrt(mean((prod_res$mean_d - prod_res$d)^2, na.rm = TRUE))
+  c(num_overlap, correlation, rmse)
 }
 
 get_fscore_cor <- function(sublist, xldf, lang, full_fscores) {

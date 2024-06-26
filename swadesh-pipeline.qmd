@@ -15,6 +15,7 @@ walk(list.files("scripts", pattern = "*.R$", full.names = TRUE), source)
 S_LEN = 100 # Swadesh list length
 N_RAND = 100 # number of random sublists to compare to
 BEST_K = 23 # 
+BEST_Ks = 23:29
 ```
 
 # Data fetching and stitching
@@ -196,7 +197,7 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
     lapply(2:(length(train_langs)-1), \(k) {
       sapply(1:N_RAND, \(comp) {
         sublist <- sublist_func(prod_sum, S_LEN, k)
-        if (k == BEST_K) { # | k == (BEST_K+1)
+        if (is.element(k, BEST_Ks)) { 
           fscore_cor <- tryCatch({
             get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
           }, error = function(e) {
@@ -206,9 +207,9 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
         } else {
           fscore_cor <- NA
         }
-        c(get_difficulty_cor(sublist, prod_test), fscore_cor)
+        c(get_difficulty_metrics(sublist, prod_test), fscore_cor)
       }) |> t() |> 
-        `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
+        `colnames<-`(c("num_overlap", "difficulty_cor", "rmse", "fscore_cor")) |> 
         as_tibble() |> 
         mutate(run = 1:N_RAND, k = k)
     }) |> bind_rows() |> 
@@ -216,7 +217,7 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
   } else {
     sapply(2:(length(train_langs)-1), \(k) {
       sublist <- if (is.null(bins)) sublist_func(prod_sum, S_LEN, k) else sublist_func(prod_sum, S_LEN, k, n_bins = bins)
-      if (k == BEST_K) { # | k == (BEST_K+1)
+      if (is.element(k, BEST_Ks)) { 
         fscore_cor <- tryCatch({
           get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
         }, error = function(e) {
@@ -226,9 +227,9 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
       } else {
         fscore_cor <- NA
       }
-      c(get_difficulty_cor(sublist, prod_test), fscore_cor)
+      c(get_difficulty_metrics(sublist, prod_test), fscore_cor)
     }) |> t() |> 
-      `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
+      `colnames<-`(c("num_overlap", "difficulty_cor", "rmse", "fscore_cor")) |> 
       as_tibble() |> 
       mutate(run = NA, k = 2:(length(train_langs)-1), language = lang, sublist = sublist_name)
   }
