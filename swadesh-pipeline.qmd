@@ -368,48 +368,32 @@ prod_sum <- prod_pars |>
             sd_d = sd(d, na.rm = TRUE)) |> 
   left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
 
-# Swadesh 
-unstrat_sublist <- make_swadesh_sublist(prod_sum, S_LEN, BEST_K)
-unstrat_cors <- sapply(gen_langs, \(lang) {
-  get_sumscore_cor(unstrat_sublist, xldf, all_prod, lang)
-}) |> t() |>
-  `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
-  as_tibble(rownames = "language") |> 
-  mutate(sublist = "unstratified")
+generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name) {
+  sublist <- if (is.null(bins)) {
+    sublist_function(prod_sum, S_LEN, BEST_K)
+  } else {
+    sublist_function(prod_sum, S_LEN, BEST_K, bins)
+  }
+  
+  cors <- sapply(gen_langs, \(lang) {
+    get_sumscore_cor(sublist, xldf, all_prod, lang)
+  }) |> t() |>
+    `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
+    as_tibble(rownames = "language") |> 
+    mutate(sublist = sublist_name)
+  
+  return(cors)
+}
 
-strat2_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, BEST_K, n_bins=2)
-strat2_cors <- sapply(gen_langs, \(lang) {
-  get_sumscore_cor(strat2_sublist, xldf, all_prod, lang)
-}) |> t() |>
-  `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
-  as_tibble(rownames = "language") |> 
-  mutate(sublist = "2 strata")
+# Unstratified (could actually use make_binned_swadesh_sublist(..., n_bins=1))
+unstrat_cors <- generate_sublist_cors(make_swadesh_sublist, sublist_name = "unstratified")
 
-strat3_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, BEST_K, n_bins=3)
-strat3_cors <- sapply(gen_langs, \(lang) {
-  get_sumscore_cor(strat3_sublist, xldf, all_prod, lang)
-}) |> t() |>
-  `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
-  as_tibble(rownames = "language") |> 
-  mutate(sublist = "3 strata")
+# Stratified with bins 2 to 5
+strat_cors_list <- lapply(2:5, function(bins) {
+  generate_sublist_cors(make_binned_swadesh_sublist, bins, sublist_name = paste0(bins, " strata"))
+})
 
-strat4_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, BEST_K, n_bins=4)
-strat4_cors <- sapply(gen_langs, \(lang) {
-  get_sumscore_cor(strat4_sublist, xldf, all_prod, lang)
-}) |> t() |>
-  `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
-  as_tibble(rownames = "language") |> 
-  mutate(sublist = "4 strata")
-
-strat5_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, BEST_K, n_bins=5)
-strat5_cors <- sapply(gen_langs, \(lang) {
-  get_sumscore_cor(strat5_sublist, xldf, all_prod, lang)
-}) |> t() |>
-  `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
-  as_tibble(rownames = "language") |> 
-  mutate(sublist = "5 strata")
-
-# random
+# Random
 rand_cors <- lapply(gen_langs, \(lang) {
   rand_cors <- sapply(1:N_RAND, \(comp) {
     sublist <- make_random_sublist(prod_sum, S_LEN, BEST_K)
@@ -423,19 +407,11 @@ rand_cors <- lapply(gen_langs, \(lang) {
   bind_rows() |> 
   mutate(sublist = "Random")
 
-
 # Category Proportional
-category_sublist <- make_proportional_sublist(prod_sum, S_LEN, BEST_K)
-cat_cors <- sapply(gen_langs, \(lang) {
-  get_sumscore_cor(category_sublist, xldf, all_prod, lang)
-}) |> t() |>
-  `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
-  as_tibble(rownames = "language") |> 
-  mutate(sublist = "category")
+category_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "category")
 
-
-gen_res <- bind_rows(unstrat_cors, cat_cors, rand_cors, 
-                     strat2_cors, strat3_cors, strat4_cors, strat5_cors)
+# Combine all results
+gen_res <- bind_rows(unstrat_cors, category_cors, rand_cors, do.call(bind_rows, strat_cors_list))
 
 gen_res_sum <- gen_res |> 
   group_by(language, sublist) |> 
