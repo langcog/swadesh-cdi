@@ -301,7 +301,7 @@ cv_output[which(cv_output$difficulty_cor == max(cv_output$difficulty_cor)),]
 # k=23, Swadesh sublist, num_overlap=90.5, diff_cor=.841
 ```
 
-```{r, fig.width=8, fig.height=5}
+```{r, fig.width=10, fig.height=5}
 ggplot(cv_res_sum,
        aes(x = k, y = difficulty_cor, col = sublist)) +
   geom_jitter(aes(col = sublist),
@@ -311,7 +311,7 @@ ggplot(cv_res_sum,
   theme(legend.position = "bottom") + theme_classic()
 ```
 
-```{r}
+```{r, fig.width=10, fig.height=5}
 ggplot(cv_res_sum,
        aes(x = k, y = num_overlap, col = sublist)) +
   geom_jitter(aes(col = sublist),
@@ -322,17 +322,23 @@ ggplot(cv_res_sum,
   theme(legend.position = "bottom") 
 ```
 
-```{r, fig.width=7, fig.height=4}
-t.test(subset(cv_res_sum, sublist=="Swadesh" & k==BEST_K)$fscore_cor - 
+```{r, fig.width=9, fig.height=5}
+t.test(subset(cv_res_sum, sublist=="unstratified" & k==BEST_K)$fscore_cor - 
        subset(cv_res_sum, sublist=="Random" & k==BEST_K)$fscore_cor) # n.s.
-t.test(subset(cv_res_sum, sublist=="Proportional" & k==BEST_K)$fscore_cor - 
+t.test(subset(cv_res_sum, sublist=="category" & k==BEST_K)$fscore_cor - 
        subset(cv_res_sum, sublist=="Random" & k==BEST_K)$fscore_cor) # n.s.
-t.test(subset(cv_res_sum, sublist=="Proportional" & k==BEST_K)$fscore_cor - 
-       subset(cv_res_sum, sublist=="Swadesh" & k==BEST_K)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="category" & k==BEST_K)$fscore_cor - 
+       subset(cv_res_sum, sublist=="unstratified" & k==BEST_K)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="category" & k==BEST_K)$fscore_cor - 
+       subset(cv_res_sum, sublist=="2 strata" & k==BEST_K)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="unstratified" & k==BEST_K)$fscore_cor - 
+       subset(cv_res_sum, sublist=="2 strata" & k==BEST_K)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="Random" & k==BEST_K)$fscore_cor - 
+       subset(cv_res_sum, sublist=="2 strata" & k==BEST_K)$fscore_cor) # n.s.
 
 cv_res_sum %>% filter(k==BEST_K) %>%
   ggplot(aes(x = language, y = fscore_cor, group = sublist, col = sublist)) +
-  geom_point(alpha=.7) +
+  geom_point(alpha=.7) + # geom_jitter
   labs(y = "Fscore correlation") +
   theme(legend.position = "bottom") + theme_classic() + 
   theme(axis.text.x = element_text(angle = 45, hjust=0.95, vjust=0.9)) 
@@ -362,16 +368,32 @@ prod_sum <- prod_pars |>
             sd_d = sd(d, na.rm = TRUE)) |> 
   left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
 
-# Swadesh 
-swadesh_sublist <- make_swadesh_sublist(prod_sum, S_LEN, BEST_K)
-prod_cors <- sapply(gen_langs, \(lang) {
-  get_sumscore_cor(swadesh_sublist, xldf, all_prod, lang)
-}) |> t() |>
-  `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
-  as_tibble(rownames = "language") |> 
-  mutate(sublist = "Swadesh")
+generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name) {
+  sublist <- if (is.null(bins)) {
+    sublist_function(prod_sum, S_LEN, BEST_K)
+  } else {
+    sublist_function(prod_sum, S_LEN, BEST_K, bins)
+  }
+  
+  cors <- sapply(gen_langs, \(lang) {
+    get_sumscore_cor(sublist, xldf, all_prod, lang)
+  }) |> t() |>
+    `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
+    as_tibble(rownames = "language") |> 
+    mutate(sublist = sublist_name)
+  
+  return(cors)
+}
 
-# random
+# Unstratified (could actually use make_binned_swadesh_sublist(..., n_bins=1))
+unstrat_cors <- generate_sublist_cors(make_swadesh_sublist, sublist_name = "unstratified")
+
+# Stratified with bins 2 to 5
+strat_cors_list <- lapply(2:5, function(bins) {
+  generate_sublist_cors(make_binned_swadesh_sublist, bins, sublist_name = paste0(bins, " strata"))
+})
+
+# Random
 rand_cors <- lapply(gen_langs, \(lang) {
   rand_cors <- sapply(1:N_RAND, \(comp) {
     sublist <- make_random_sublist(prod_sum, S_LEN, BEST_K)
@@ -385,18 +407,11 @@ rand_cors <- lapply(gen_langs, \(lang) {
   bind_rows() |> 
   mutate(sublist = "Random")
 
+# Category Proportional
+category_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "category")
 
-# Proportional
-proportional_sublist <- make_proportional_sublist(prod_sum, S_LEN, BEST_K)
-prop_cors <- sapply(gen_langs, \(lang) {
-  get_sumscore_cor(proportional_sublist, xldf, all_prod, lang)
-}) |> t() |>
-  `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
-  as_tibble(rownames = "language") |> 
-  mutate(sublist = "Proportional")
-
-
-gen_res <- bind_rows(prod_cors, prop_cors, rand_cors)
+# Combine all results
+gen_res <- bind_rows(unstrat_cors, category_cors, rand_cors, do.call(bind_rows, strat_cors_list))
 
 gen_res_sum <- gen_res |> 
   group_by(language, sublist) |> 
@@ -407,7 +422,21 @@ gen_res_sum <- gen_res |>
 save(gen_res_sum, gen_res, file="data/intermediates/generalization_results.rds")
 ```
 
-```{r, fig.width=6, fig.height=4}
+```{r, generate-candidate-swadesh-lists}
+swadesh_sublist <- make_swadesh_sublist(prod_sum, S_LEN, BEST_K)
+category_sublist <- make_proportional_sublist(prod_sum, S_LEN, BEST_K)
+strat2_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, BEST_K, n_bins=2)
+
+# 60-66% overlap between the various methods
+#intersect(category_sublist$uni_lemma, strat2_sublist$uni_lemma) # 60
+#intersect(swadesh_sublist$uni_lemma, strat2_sublist$uni_lemma) # 66
+#intersect(swadesh_sublist$uni_lemma, category_sublist$uni_lemma) # 66
+#setdiff(swadesh_sublist$uni_lemma, category_sublist$uni_lemma)
+#setdiff(category_sublist$uni_lemma, swadesh_sublist$uni_lemma)
+```
+
+
+```{r, fig.width=7, fig.height=4.5}
 ggplot(gen_res_sum,
        aes(x = language, y = sumscore_cor, fill = sublist)) +
   geom_col(position = "dodge") +
@@ -418,7 +447,7 @@ ggplot(gen_res_sum,
   labs(fill="List type")
 ```
 
-```{r, fig.width=6, fig.height=4}
+```{r, fig.width=7, fig.height=4.5}
 ggplot(gen_res_sum,
        aes(x = language, y = num_overlap, fill = sublist)) +
   geom_col(position = "dodge") +
@@ -450,7 +479,7 @@ for (lang in languages) {
   lang_data <- readRDS(glue("data/all_forms/{lang}_data.rds"))
   fitted <- readRDS(glue("data/prod_models/{lang}_2PL_allforms_prod_fits.rds"))
   # get UIDs of non-Swadesh items
-  swad_item_ids <- xldf %>% filter(language==lang, is.element(uni_lemma, swadesh_sublist$uni_lemma)) %>% 
+  swad_item_ids <- xldf %>% filter(language==lang, is.element(uni_lemma, unstrat_sublist$uni_lemma)) %>% 
     pull(uid)
   #non_swad_item_ids <- setdiff(colnames(fitted$model@Data$data), swad_item_ids)
   # mask (NA) the responses to non-Swadesh items
@@ -590,14 +619,21 @@ T-tests:
 
 Swadesh is not significantly different than random in terms of sumscore correlation:
 ```{r}
-t.test(gen_res_sum |> filter(sublist == "Swadesh") |> pull(sumscore_cor),
+t.test(gen_res_sum |> filter(sublist == "unstratified") |> pull(sumscore_cor),
        gen_res_sum |> filter(sublist == "Random") |> pull(sumscore_cor),
        paired = TRUE)
 ```
 
-Proportional is also no different than random in terms of sumscore correlation:
+Category proportional is also no different than random in terms of sumscore correlation:
 ```{r}
-t.test(gen_res_sum |> filter(sublist == "Proportional") |> pull(sumscore_cor),
+t.test(gen_res_sum |> filter(sublist == "category") |> pull(sumscore_cor),
+       gen_res_sum |> filter(sublist == "Random") |> pull(sumscore_cor),
+       paired = TRUE)
+```
+
+2 strata is also no different than random in terms of sumscore correlation:
+```{r}
+t.test(gen_res_sum |> filter(sublist == "2 strata") |> pull(sumscore_cor),
        gen_res_sum |> filter(sublist == "Random") |> pull(sumscore_cor),
        paired = TRUE)
 ```
@@ -605,14 +641,21 @@ t.test(gen_res_sum |> filter(sublist == "Proportional") |> pull(sumscore_cor),
 
 Amount of overlap - Swadesh same as random
 ```{r}
-t.test(gen_res_sum |> filter(sublist == "Swadesh") |> pull(num_overlap),
+t.test(gen_res_sum |> filter(sublist == "unstratified") |> pull(num_overlap),
        gen_res_sum |> filter(sublist == "Random") |> pull(num_overlap),
        paired = TRUE)
 ```
 
 Proportional has less overlap than random sublists
 ```{r}
-t.test(gen_res_sum |> filter(sublist == "Proportional") |> pull(num_overlap),
+t.test(gen_res_sum |> filter(sublist == "category") |> pull(num_overlap),
+       gen_res_sum |> filter(sublist == "Random") |> pull(num_overlap),
+       paired = TRUE)
+```
+
+2 difficulty strata is not significantly different in overlap than random
+```{r}
+t.test(gen_res_sum |> filter(sublist == "2 strata") |> pull(num_overlap),
        gen_res_sum |> filter(sublist == "Random") |> pull(num_overlap),
        paired = TRUE)
 ```
@@ -627,8 +670,8 @@ t.test(swadesh_sublist$mean_d,
 ## Examining list composition
 
 ```{r}
-swad_cats <- swadesh_sublist |> mutate(sublist = "Swadesh") |>
-  bind_rows(proportional_sublist |> mutate(sublist = "Proportional")) |>
+swad_cats <- swadesh_sublist |> mutate(sublist = "unstratified") |>
+  bind_rows(category_sublist |> mutate(sublist = "category")) |>
   group_by(sublist, category) %>% summarise(n = n()) %>% arrange(desc(n)) %>%
   mutate(freq = n / sum(n))
 
@@ -641,8 +684,9 @@ average frequency per category on a CDI:WS
 
 
 ```{r}
-swadesh_sublist |> mutate(sublist = "Swadesh") |>
-  bind_rows(proportional_sublist |> mutate(sublist = "Proportional")) |>
+swadesh_sublist |> mutate(sublist = "unstratified") |>
+  bind_rows(category_sublist |> mutate(sublist = "category")) |>
+  bind_rows(strat2_sublist |> mutate(sublist = "2 strata")) |>
   bind_rows(prod_sum |> filter(num_langs>=BEST_K) |> mutate(sublist = "All (k>=23)")) |>
   ggplot(aes(x=sublist, y=mean_d)) + 
   geom_violin() + geom_jitter(alpha=.3, width=.1) + theme_classic()
