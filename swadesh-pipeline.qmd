@@ -189,126 +189,40 @@ write_csv(cat_props, "data/category_proportions.csv")
 # Cross-validation
 ```{r, eval=F}
 all_fscores <- readRDS("data/intermediates/full_fscores_allforms.rds")
-cv_res <- lapply(train_langs, \(lang) {
-  message(glue("Calculating for {lang}..."))
-  
-  prod_cats <- prod_pars |> 
-    filter(language %in% train_langs,
-           language != lang) |> 
-    group_by(uni_lemma) |> 
-    count(category) |> 
-    arrange(desc(category)) |> 
-    slice(1)
-  
-  prod_sum <- prod_pars |> 
-    filter(language %in% train_langs,
-           language != lang) |> 
-    group_by(uni_lemma) |> 
-    summarise(num_langs = n(),
-              mean_d = mean(d, na.rm = TRUE),
-              sd_d = sd(d, na.rm = TRUE)) |> 
-    left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
-  prod_test <- prod_pars |> 
-    filter(language == lang)
-  
-  # calculate full fscores once (rather than once per comparison)
-  full_model <- readRDS(glue("data/prod_models/{lang}_2PL_allforms_prod_fits.rds"))
-  full_fscores <- all_fscores[[lang]]
-  # full_fscores <- fscores(full_model$model, 
-  #                         response.pattern = full_model$model@Data$data, 
-  #                         method = "MAP")[,1] 
-  
-  # Swadesh - unstratified
-  prod_cors <- sapply(2:(length(train_langs)-1), \(k) {
-    sublist <- make_swadesh_sublist(prod_sum, S_LEN, k)
-    if (k == BEST_K) {
-      fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
-    } else {
-      fscore_cor <- NA
-    }
-    c(get_difficulty_cor(sublist, prod_test), fscore_cor)
-  }) |> t() |> 
-    `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
-    as_tibble() |> 
-    mutate(run = NA,
-           k = 2:(length(train_langs)-1),
-           language = lang,
-           sublist = "unstratified")
-  
-  # Swadesh - difficulty stratified (2 bins)
-  bin2_cors <- sapply(2:(length(train_langs)-1), \(k) {
-    sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, k, n_bins = 2)
-    if (k == BEST_K) {
-      fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
-    } else {
-      fscore_cor <- NA
-    }
-    c(get_difficulty_cor(sublist, prod_test), fscore_cor)
-  }) |> t() |> 
-    `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
-    as_tibble() |> 
-    mutate(run = NA,
-           k = 2:(length(train_langs)-1),
-           language = lang,
-           sublist = "2 strata")
-  
-  # Swadesh - difficulty stratified (3 bins)
-  bin3_cors <- sapply(2:(length(train_langs)-1), \(k) {
-    sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, k, n_bins = 3)
-    if (k == BEST_K) {
-      fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
-    } else {
-      fscore_cor <- NA
-    }
-    c(get_difficulty_cor(sublist, prod_test), fscore_cor)
-  }) |> t() |> 
-    `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
-    as_tibble() |> 
-    mutate(run = NA,
-           k = 2:(length(train_langs)-1),
-           language = lang,
-           sublist = "3 strata")
-  
-  # Swadesh - difficulty stratified (4 bins)
-  bin4_cors <- sapply(2:(length(train_langs)-1), \(k) {
-    sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, k, n_bins = 4)
-    if (k == BEST_K) {
-      fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
-    } else {
-      fscore_cor <- NA
-    }
-    c(get_difficulty_cor(sublist, prod_test), fscore_cor)
-  }) |> t() |> 
-    `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
-    as_tibble() |> 
-    mutate(run = NA,
-           k = 2:(length(train_langs)-1),
-           language = lang,
-           sublist = "4 strata")
-  
-  # Swadesh - category stratified
-  cat_cors <- sapply(2:(length(train_langs)-1), \(k) {
-    sublist <- make_proportional_sublist(prod_sum, S_LEN, k)
-    if (k == BEST_K) {
-      fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
-    } else {
-      fscore_cor <- NA
-    }
-    c(get_difficulty_cor(sublist, prod_test), fscore_cor)
-  }) |> t() |> 
-    `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
-    as_tibble() |> 
-    mutate(run = NA,
-           k = 2:(length(train_langs)-1),
-           language = lang,
-           sublist = "category")
-  
-  # random
-  rand_cors <- lapply(2:(length(train_langs)-1), \(k) {
-    rand_cors <- sapply(1:N_RAND, \(comp) {
-      sublist <- make_random_sublist(prod_sum, S_LEN, k)
-      if (k == BEST_K) {
-        fscore_cor <- get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
+
+create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test, 
+                        sublist_func, sublist_name, bins = NULL, rand = FALSE) {
+  if (rand) {
+    lapply(2:(length(train_langs)-1), \(k) {
+      sapply(1:N_RAND, \(comp) {
+        sublist <- sublist_func(prod_sum, S_LEN, k)
+        if (k == BEST_K) { # | k == (BEST_K+1)
+          fscore_cor <- tryCatch({
+            get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
+          }, error = function(e) {
+            message(glue("Error in get_fscore_cor for language {lang}, k {k}: {e$message}"))
+            NA
+          })
+        } else {
+          fscore_cor <- NA
+        }
+        c(get_difficulty_cor(sublist, prod_test), fscore_cor)
+      }) |> t() |> 
+        `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
+        as_tibble() |> 
+        mutate(run = 1:N_RAND, k = k)
+    }) |> bind_rows() |> 
+      mutate(language = lang, sublist = sublist_name)
+  } else {
+    sapply(2:(length(train_langs)-1), \(k) {
+      sublist <- if (is.null(bins)) sublist_func(prod_sum, S_LEN, k) else sublist_func(prod_sum, S_LEN, k, n_bins = bins)
+      if (k == BEST_K) { # | k == (BEST_K+1)
+        fscore_cor <- tryCatch({
+          get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
+        }, error = function(e) {
+          message(glue("Error in get_fscore_cor for language {lang}, k {k}: {e$message}"))
+          NA
+        })
       } else {
         fscore_cor <- NA
       }
@@ -316,14 +230,53 @@ cv_res <- lapply(train_langs, \(lang) {
     }) |> t() |> 
       `colnames<-`(c("num_overlap", "difficulty_cor", "fscore_cor")) |> 
       as_tibble() |> 
-      mutate(run = 1:N_RAND,
-             k = k)
-  }) |> 
-    bind_rows() |> 
-    mutate(language = lang,
-           sublist = "Random")
+      mutate(run = NA, k = 2:(length(train_langs)-1), language = lang, sublist = sublist_name)
+  }
+}
+
+cv_res <- lapply(train_langs, \(lang) {
+  message(glue("Calculating for {lang}..."))
   
-  bind_rows(prod_cors, bin2_cors, bin3_cors, bin4_cors, cat_cors, rand_cors)
+  prod_cats <- prod_pars |> 
+    filter(language %in% train_langs, language != lang) |> 
+    group_by(uni_lemma) |> 
+    count(category) |> 
+    arrange(desc(category)) |> 
+    slice(1)
+  
+  prod_sum <- prod_pars |> 
+    filter(language %in% train_langs, language != lang) |> 
+    group_by(uni_lemma) |> 
+    summarise(num_langs = n(),
+              mean_d = mean(d, na.rm = TRUE),
+              sd_d = sd(d, na.rm = TRUE)) |> 
+    left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
+  
+  prod_test <- prod_pars |> filter(language == lang)
+  
+  # calculate full fscores once (rather than once per comparison)
+  full_model <- readRDS(glue("data/prod_models/{lang}_2PL_allforms_prod_fits.rds"))
+  #full_fscores <- all_fscores[[lang]]
+  full_fscores <- fscores(full_model$model, 
+                          response.pattern = full_model$model@Data$data, 
+                          method = "MAP")[,1] 
+  
+  prod_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+                           make_swadesh_sublist, "unstratified")
+  bin2_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+                           make_binned_swadesh_sublist, "2 strata", bins = 2)
+  bin3_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+                           make_binned_swadesh_sublist, "3 strata", bins = 3)
+  bin4_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+                           make_binned_swadesh_sublist, "4 strata", bins = 4)
+  bin5_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+                           make_binned_swadesh_sublist, "5 strata", bins = 5)
+  cat_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+                          make_proportional_sublist, "category")
+  rand_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+                           make_random_sublist, "Random", rand = TRUE)
+  
+  bind_rows(prod_cors, bin2_cors, bin3_cors, bin4_cors, bin5_cors, cat_cors, rand_cors)
 }) |> bind_rows()
 
 cv_res_sum <- cv_res |> 
