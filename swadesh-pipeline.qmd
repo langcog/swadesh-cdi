@@ -284,7 +284,8 @@ cv_res_sum <- cv_res |>
   group_by(k, language, sublist) |> 
   summarise(num_overlap = mean(num_overlap),
             difficulty_cor = mean(difficulty_cor),
-            fscore_cor = mean(fscore_cor)) |> 
+            fscore_cor = mean(fscore_cor),
+            rmse = mean(rmse)) |> 
   mutate(difficulty_cor_t = atanh(difficulty_cor), # Fisher transform
          fscore_cor_t = atanh(fscore_cor)) 
 
@@ -297,9 +298,19 @@ cv_res_sum <- readRDS("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rd
 cv_output <- cv_res_sum |> 
   group_by(k, sublist) |> 
   summarise(num_overlap = mean(num_overlap, na.rm = TRUE),
-            difficulty_cor = mean(difficulty_cor, na.rm = TRUE))
-cv_output[which(cv_output$difficulty_cor == max(cv_output$difficulty_cor)),] 
-# k=23, Swadesh sublist, num_overlap=90.5, diff_cor=.841
+            difficulty_cor = mean(difficulty_cor, na.rm = TRUE),
+            rmse = mean(rmse, na.rm=T))
+
+cv_output |>
+  ungroup() |> group_by(sublist) |>
+  filter(difficulty_cor == max(difficulty_cor, na.rm = TRUE)) |>
+  slice(1) |> ungroup() |> arrange(desc(difficulty_cor))
+# k=26, 2 strata, num_overlap=93.2, diff_cor=.842
+
+cv_output |>
+  ungroup() |> group_by(sublist) |>
+  filter(rmse == min(rmse, na.rm = TRUE)) |>
+  slice(1) |> ungroup() |> arrange(rmse)
 ```
 
 ```{r, fig.width=10, fig.height=5}
