@@ -14,7 +14,7 @@ walk(list.files("scripts", pattern = "*.R$", full.names = TRUE), source)
 
 S_LEN = 100 # Swadesh list length
 N_RAND = 100 # number of random sublists to compare to
-BEST_K = 23 # 
+BEST_K = 25 # best for 2 strata and unstratified; k=26 for category
 BEST_Ks = 23:29
 ```
 
@@ -318,7 +318,7 @@ best_k <- cv_output |>
 best_k # |> kableExtra::kable(digits=3)
 ```
 
-```{r, fig.width=8, fig.height=8}
+```{r, fig.width=8, fig.height=8, include=F}
 cv_output |> filter(rmse<1.2) |>
   ggplot(aes(x=rmse, y=difficulty_cor, color=num_overlap)) + 
   facet_wrap(. ~ sublist) +
@@ -328,8 +328,9 @@ cv_output |> filter(rmse<1.2) |>
 
 
 ```{r, fig.width=10, fig.height=5}
-ggplot(cv_res_sum,
-       aes(x = k, y = difficulty_cor, col = sublist)) +
+cv_res_sum |>
+  #filter(is.element(sublist, c("Random","category","unstratified","2 strata"))) |> 
+  ggplot(aes(x = k, y = difficulty_cor, col = sublist)) +
   geom_jitter(aes(col = sublist),
               alpha = .1) +
   geom_boxplot(aes(group = interaction(k, sublist))) +
@@ -338,8 +339,9 @@ ggplot(cv_res_sum,
 ```
 
 ```{r, fig.width=10, fig.height=5}
-ggplot(cv_res_sum,
-       aes(x = k, y = num_overlap, col = sublist)) +
+cv_res_sum |>
+    #filter(is.element(sublist, c("Random","category","unstratified","2 strata"))) |> 
+ggplot(aes(x = k, y = num_overlap, col = sublist)) +
   geom_jitter(aes(col = sublist),
               alpha = .1) +
   geom_boxplot(aes(group = interaction(k, sublist))) +
@@ -363,16 +365,26 @@ t.test(subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor -
 t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor - 
        subset(cv_res_sum, sublist=="2 strata" & k==26)$fscore_cor) # p<.001 (2 strata .002 better)
 
-cv_res_sum %>% filter(k==BEST_K) %>%
+# identify best k for each method
+cv_res_sum$best_k = F
+for(i in 1:nrow(best_k)) {
+  idx <- which(cv_res_sum$k==best_k[i,]$k & cv_res_sum$sublist==best_k[i,]$sublist)
+  cv_res_sum[idx,]$best_k = T
+}
+
+cv_res_sum |>
+  filter(best_k==T) |>
   ggplot(aes(x = language, y = fscore_cor, group = sublist, col = sublist)) +
   geom_point(alpha=.7) + # geom_jitter
   labs(y = "Fscore correlation") +
   theme(legend.position = "bottom") + theme_classic() + 
   theme(axis.text.x = element_text(angle = 45, hjust=0.95, vjust=0.9)) 
+# TODO: just a table tallying for how many languages each method is the best?
 ```
 
 
-CV results show that $k=23$ is the optimal value; we use this to construct the final list for generalization testing.
+CV results show that $k=25$ is the optimal value for both the unstratified and 2 difficulty strata methods, so we use this to construct the final list for generalization testing.
+For the category proportional method, k=26 (which is quite similar).
 
 # Generalization test
 ```{r}
@@ -451,15 +463,21 @@ save(gen_res_sum, gen_res, file="data/intermediates/generalization_results.rds")
 
 ```{r, generate-candidate-swadesh-lists}
 swadesh_sublist <- make_swadesh_sublist(prod_sum, S_LEN, BEST_K)
-category_sublist <- make_proportional_sublist(prod_sum, S_LEN, BEST_K)
+category_sublist <- make_proportional_sublist(prod_sum, S_LEN, BEST_K) 
+category_sublist26 <- make_proportional_sublist(prod_sum, S_LEN, 26) # best k for category
 strat2_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, BEST_K, n_bins=2)
 
-# 60-66% overlap between the various methods
-#intersect(category_sublist$uni_lemma, strat2_sublist$uni_lemma) # 60
-#intersect(swadesh_sublist$uni_lemma, strat2_sublist$uni_lemma) # 66
-#intersect(swadesh_sublist$uni_lemma, category_sublist$uni_lemma) # 66
-#setdiff(swadesh_sublist$uni_lemma, category_sublist$uni_lemma)
-#setdiff(category_sublist$uni_lemma, swadesh_sublist$uni_lemma)
+# 62-96% overlap between the various methods
+intersect(category_sublist$uni_lemma, strat2_sublist$uni_lemma) # 65
+intersect(category_sublist26$uni_lemma, strat2_sublist$uni_lemma) # 63
+intersect(swadesh_sublist$uni_lemma, strat2_sublist$uni_lemma) # 96 - !
+intersect(swadesh_sublist$uni_lemma, category_sublist$uni_lemma) # 64
+intersect(swadesh_sublist$uni_lemma, category_sublist26$uni_lemma) # 62
+
+setdiff(swadesh_sublist$uni_lemma, category_sublist$uni_lemma) # a lot of extra sounds and animals
+setdiff(category_sublist$uni_lemma, swadesh_sublist$uni_lemma)
+
+setdiff(category_sublist$uni_lemma, swadesh_sublist$uni_lemma)
 ```
 
 
@@ -488,7 +506,6 @@ ggplot(gen_res_sum,
 ### Compare Swadesh thetas to full CDI thetas/sumscores (and to random sumscores)
 ```{r, eval=F}
 full_fscores <- readRDS("data/intermediates/full_fscores_allforms.rds")
-
 # either do this in cross-validation (show that thetas from swadesh lists are better for training languages)
 # ..may not make sense for gen languages because those models are trained on little data (may not be stable parms)
 
