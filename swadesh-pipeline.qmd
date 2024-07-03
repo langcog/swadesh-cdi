@@ -301,17 +301,31 @@ cv_output <- cv_res_sum |>
             difficulty_cor = mean(difficulty_cor, na.rm = TRUE),
             rmse = mean(rmse, na.rm=T))
 
-cv_output |>
+best_k <- cv_output |>
   ungroup() |> group_by(sublist) |>
   filter(difficulty_cor == max(difficulty_cor, na.rm = TRUE)) |>
   slice(1) |> ungroup() |> arrange(desc(difficulty_cor))
+best_k #  |> kableExtra::kable(digits=3)
 # k=26, 2 strata, num_overlap=93.2, diff_cor=.842
+```
 
-cv_output |>
+```{r, best-by-rmse, eval=F}
+# selecting by RMSE doesn't favor high overlap (and k is less consistent)
+best_k <- cv_output |>
   ungroup() |> group_by(sublist) |>
   filter(rmse == min(rmse, na.rm = TRUE)) |>
   slice(1) |> ungroup() |> arrange(rmse)
+best_k # |> kableExtra::kable(digits=3)
 ```
+
+```{r, fig.width=8, fig.height=8}
+cv_output |> filter(rmse<1.2) |>
+  ggplot(aes(x=rmse, y=difficulty_cor, color=num_overlap)) + 
+  facet_wrap(. ~ sublist) +
+  geom_point()
+```
+
+
 
 ```{r, fig.width=10, fig.height=5}
 ggplot(cv_res_sum,
@@ -335,18 +349,19 @@ ggplot(cv_res_sum,
 ```
 
 ```{r, fig.width=9, fig.height=5}
-t.test(subset(cv_res_sum, sublist=="unstratified" & k==BEST_K)$fscore_cor - 
-       subset(cv_res_sum, sublist=="Random" & k==BEST_K)$fscore_cor) # n.s.
-t.test(subset(cv_res_sum, sublist=="category" & k==BEST_K)$fscore_cor - 
-       subset(cv_res_sum, sublist=="Random" & k==BEST_K)$fscore_cor) # n.s.
-t.test(subset(cv_res_sum, sublist=="category" & k==BEST_K)$fscore_cor - 
-       subset(cv_res_sum, sublist=="unstratified" & k==BEST_K)$fscore_cor) # n.s.
-t.test(subset(cv_res_sum, sublist=="category" & k==BEST_K)$fscore_cor - 
-       subset(cv_res_sum, sublist=="2 strata" & k==BEST_K)$fscore_cor) # n.s.
-t.test(subset(cv_res_sum, sublist=="unstratified" & k==BEST_K)$fscore_cor - 
-       subset(cv_res_sum, sublist=="2 strata" & k==BEST_K)$fscore_cor) # n.s.
-t.test(subset(cv_res_sum, sublist=="Random" & k==BEST_K)$fscore_cor - 
-       subset(cv_res_sum, sublist=="2 strata" & k==BEST_K)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor - 
+       subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="category" & k==25)$fscore_cor - 
+       subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="category" & k==25)$fscore_cor - 
+       subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="category" & k==25)$fscore_cor - 
+       subset(cv_res_sum, sublist=="2 strata" & k==26)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor - 
+       subset(cv_res_sum, sublist=="2 strata" & k==26)$fscore_cor) # n.s.
+
+t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor - 
+       subset(cv_res_sum, sublist=="2 strata" & k==26)$fscore_cor) # p<.001 (2 strata .002 better)
 
 cv_res_sum %>% filter(k==BEST_K) %>%
   ggplot(aes(x = language, y = fscore_cor, group = sublist, col = sublist)) +
