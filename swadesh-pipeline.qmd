@@ -365,6 +365,9 @@ t.test(subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor -
 t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor - 
        subset(cv_res_sum, sublist=="2 strata" & k==26)$fscore_cor) # p<.001 (2 strata .002 better)
 
+t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor - 
+       subset(cv_res_sum, sublist=="2 strata" & k==26)$fscore_cor)
+
 # identify best k for each method
 cv_res_sum$best_k = F
 for(i in 1:nrow(best_k)) {
@@ -374,6 +377,7 @@ for(i in 1:nrow(best_k)) {
 
 cv_res_sum |>
   filter(best_k==T) |>
+  filter(sublist!="4 strata", sublist!="5 strata") |>
   ggplot(aes(x = language, y = fscore_cor, group = sublist, col = sublist)) +
   geom_point(alpha=.7) + # geom_jitter
   labs(y = "Fscore correlation") +
@@ -383,8 +387,8 @@ cv_res_sum |>
 ```
 
 
-CV results show that $k=25$ is the optimal value for both the unstratified and 2 difficulty strata methods, so we use this to construct the final list for generalization testing.
-For the category proportional method, k=26 (which is quite similar).
+CV results show that $k=26$ is the optimal value for the 2 difficulty strata method, $k=25$ is optimal for the category-stratified method, and $k=23$ is optimal for the unstratified method.
+We construct the sublist for each of these methods, and compare them in order to construct a final list for the generalization test.
 
 # Generalization test
 ```{r}
@@ -407,11 +411,11 @@ prod_sum <- prod_pars |>
             sd_d = sd(d, na.rm = TRUE)) |> 
   left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
 
-generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name) {
+generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name, this_k) {
   sublist <- if (is.null(bins)) {
-    sublist_function(prod_sum, S_LEN, BEST_K)
+    sublist_function(prod_sum, S_LEN, this_k)
   } else {
-    sublist_function(prod_sum, S_LEN, BEST_K, bins)
+    sublist_function(prod_sum, S_LEN, this_k, bins)
   }
   
   cors <- sapply(gen_langs, \(lang) {
@@ -424,13 +428,12 @@ generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name) {
   return(cors)
 }
 
-# Unstratified (could actually use make_binned_swadesh_sublist(..., n_bins=1))
-unstrat_cors <- generate_sublist_cors(make_swadesh_sublist, sublist_name = "unstratified")
+strat2_cors <- generate_sublist_cors(make_binned_swadesh_sublist, 2, sublist_name = "2 strata", this_k = 26)
 
-# Stratified with bins 2 to 5
-strat_cors_list <- lapply(2:5, function(bins) {
-  generate_sublist_cors(make_binned_swadesh_sublist, bins, sublist_name = paste0(bins, " strata"))
-})
+category_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "category", this_k = 25)
+
+unstrat_cors <- generate_sublist_cors(make_swadesh_sublist, sublist_name = "unstratified", this_k = 23)
+
 
 # Random
 rand_cors <- lapply(gen_langs, \(lang) {
@@ -446,11 +449,9 @@ rand_cors <- lapply(gen_langs, \(lang) {
   bind_rows() |> 
   mutate(sublist = "Random")
 
-# Category Proportional
-category_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "category")
 
 # Combine all results
-gen_res <- bind_rows(unstrat_cors, category_cors, rand_cors, do.call(bind_rows, strat_cors_list))
+gen_res <- bind_rows(unstrat_cors, category_cors, rand_cors, strat2_cors)
 
 gen_res_sum <- gen_res |> 
   group_by(language, sublist) |> 
@@ -462,22 +463,21 @@ save(gen_res_sum, gen_res, file="data/intermediates/generalization_results.rds")
 ```
 
 ```{r, generate-candidate-swadesh-lists}
-swadesh_sublist <- make_swadesh_sublist(prod_sum, S_LEN, BEST_K)
-category_sublist <- make_proportional_sublist(prod_sum, S_LEN, BEST_K) 
-category_sublist26 <- make_proportional_sublist(prod_sum, S_LEN, 26) # best k for category
+unstrat_sublist <- make_swadesh_sublist(prod_sum, S_LEN, 23)
+category_sublist <- make_proportional_sublist(prod_sum, S_LEN, 25) 
 strat2_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, BEST_K, n_bins=2)
 
 # 62-96% overlap between the various methods
 intersect(category_sublist$uni_lemma, strat2_sublist$uni_lemma) # 65
 intersect(category_sublist26$uni_lemma, strat2_sublist$uni_lemma) # 63
-intersect(swadesh_sublist$uni_lemma, strat2_sublist$uni_lemma) # 96 - !
-intersect(swadesh_sublist$uni_lemma, category_sublist$uni_lemma) # 64
-intersect(swadesh_sublist$uni_lemma, category_sublist26$uni_lemma) # 62
+intersect(unstrat_sublist$uni_lemma, strat2_sublist$uni_lemma) # 96 - !
+intersect(unstrat_sublist$uni_lemma, category_sublist$uni_lemma) # 64
+intersect(unstrat_sublist$uni_lemma, category_sublist26$uni_lemma) # 62
 
-setdiff(swadesh_sublist$uni_lemma, category_sublist$uni_lemma) # a lot of extra sounds and animals
-setdiff(category_sublist$uni_lemma, swadesh_sublist$uni_lemma)
+setdiff(unstrat_sublist$uni_lemma, category_sublist$uni_lemma) # a lot of extra sounds and animals
+setdiff(category_sublist$uni_lemma, unstrat_sublist$uni_lemma)
 
-setdiff(category_sublist$uni_lemma, swadesh_sublist$uni_lemma)
+setdiff(category_sublist$uni_lemma, unstrat_sublist$uni_lemma)
 ```
 
 
@@ -705,11 +705,13 @@ t.test(gen_res_sum |> filter(sublist == "2 strata") |> pull(num_overlap),
 ```
 
 
-Swadesh is significantly easier than all items
+Unstratified is significantly easier than all items
 ```{r}
 t.test(swadesh_sublist$mean_d,
        prod_sum$mean_d)
 ```
+
+TODO: add comparison of 2 strata and category list difficulties
 
 ## Examining list composition
 

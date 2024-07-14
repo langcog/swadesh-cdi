@@ -506,7 +506,7 @@ p3 <- cv_res_sum %>% filter(k==23) %>%
   ggtitle("Fscore Correlation vs. Full CDI for k=23") + 
   theme(axis.text.x = element_text(angle = 45, hjust=0.95, vjust=0.9)) 
 
-ggarrange(p1, p2, p3, ncol=1, common.legend = T)
+ggpubr::ggarrange(p1, p2, p3, ncol=1, common.legend = T)
 ```
 
 
