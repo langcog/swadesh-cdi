@@ -411,6 +411,14 @@ prod_sum <- prod_pars |>
             sd_d = sd(d, na.rm = TRUE)) |> 
   left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
 
+
+# nrow(subset(prod_sum, num_langs>=26)) # 310 unilemmas on at least 26 forms
+# nrow(subset(prod_sum, num_langs>=25)) # 342 on 25+
+# nrow(subset(prod_sum, num_langs>=23)) # 392 on 23+
+# random overlap: 
+# length(intersect(sample(1:310, 100), sample(1:310, 100))) # ~31
+# length(intersect(sample(1:392, 100), sample(1:392, 100)))
+
 generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name, this_k) {
   sublist <- if (is.null(bins)) {
     sublist_function(prod_sum, S_LEN, this_k)
@@ -465,19 +473,28 @@ save(gen_res_sum, gen_res, file="data/intermediates/generalization_results.rds")
 ```{r, generate-candidate-swadesh-lists}
 unstrat_sublist <- make_swadesh_sublist(prod_sum, S_LEN, 23)
 category_sublist <- make_proportional_sublist(prod_sum, S_LEN, 25) 
-strat2_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, BEST_K, n_bins=2)
+strat2_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, 26, n_bins=2)
+
+table(unstrat_sublist$category) # 18 categories - few action words, more animals
+table(category_sublist$category) # 22 cats - more actions, 
+table(strat2_sublist$category) # 17 cats
+
+setdiff(unique(category_sublist$category), unique(unstrat_sublist$category))
+# "quantifiers" "pronouns" "connecting_words" "helping_verbs" "furniture_rooms" 
+setdiff(unique(category_sublist$category), unique(strat2_sublist$category))
 
 # 62-96% overlap between the various methods
-intersect(category_sublist$uni_lemma, strat2_sublist$uni_lemma) # 65
-intersect(category_sublist26$uni_lemma, strat2_sublist$uni_lemma) # 63
-intersect(unstrat_sublist$uni_lemma, strat2_sublist$uni_lemma) # 96 - !
-intersect(unstrat_sublist$uni_lemma, category_sublist$uni_lemma) # 64
-intersect(unstrat_sublist$uni_lemma, category_sublist26$uni_lemma) # 62
+intersect(strat2_sublist$uni_lemma, category_sublist$uni_lemma) # 62
+intersect(unstrat_sublist$uni_lemma, category_sublist$uni_lemma) # 62
+intersect(unstrat_sublist$uni_lemma, strat2_sublist$uni_lemma) # 85
+
+intersect(category_sublist$uni_lemma, intersect(unstrat_sublist$uni_lemma, strat2_sublist$uni_lemma)) # 58
 
 setdiff(unstrat_sublist$uni_lemma, category_sublist$uni_lemma) # a lot of extra sounds and animals
 setdiff(category_sublist$uni_lemma, unstrat_sublist$uni_lemma)
 
-setdiff(category_sublist$uni_lemma, unstrat_sublist$uni_lemma)
+setdiff(category_sublist$uni_lemma, strat2_sublist$uni_lemma)
+setdiff(strat2_sublist$uni_lemma, category_sublist$uni_lemma)
 ```
 
 
@@ -661,36 +678,30 @@ Not significantly different (hooray / awww).
 
 T-tests:
 
-Swadesh is not significantly different than random in terms of sumscore correlation:
+The Swadesh sublist selection methods are not significantly different than random in terms of sumscore correlation:
 ```{r}
 t.test(gen_res_sum |> filter(sublist == "unstratified") |> pull(sumscore_cor),
        gen_res_sum |> filter(sublist == "Random") |> pull(sumscore_cor),
        paired = TRUE)
-```
 
-Category proportional is also no different than random in terms of sumscore correlation:
-```{r}
+t.test(gen_res_sum |> filter(sublist == "2 strata") |> pull(sumscore_cor),
+       gen_res_sum |> filter(sublist == "Random") |> pull(sumscore_cor),
+       paired = TRUE)
+
 t.test(gen_res_sum |> filter(sublist == "category") |> pull(sumscore_cor),
        gen_res_sum |> filter(sublist == "Random") |> pull(sumscore_cor),
        paired = TRUE)
 ```
 
-2 strata is also no different than random in terms of sumscore correlation:
-```{r}
-t.test(gen_res_sum |> filter(sublist == "2 strata") |> pull(sumscore_cor),
-       gen_res_sum |> filter(sublist == "Random") |> pull(sumscore_cor),
-       paired = TRUE)
-```
 
-
-Amount of overlap - Swadesh same as random
+Amount of overlap - unstratified no different than random
 ```{r}
 t.test(gen_res_sum |> filter(sublist == "unstratified") |> pull(num_overlap),
        gen_res_sum |> filter(sublist == "Random") |> pull(num_overlap),
        paired = TRUE)
 ```
 
-Proportional has less overlap than random sublists
+Category stratified has less overlap than random sublists
 ```{r}
 t.test(gen_res_sum |> filter(sublist == "category") |> pull(num_overlap),
        gen_res_sum |> filter(sublist == "Random") |> pull(num_overlap),
@@ -705,19 +716,29 @@ t.test(gen_res_sum |> filter(sublist == "2 strata") |> pull(num_overlap),
 ```
 
 
-Unstratified is significantly easier than all items
+All of the methods result in sublists that are significantly easier than all items
 ```{r}
-t.test(swadesh_sublist$mean_d,
+t.test(unstrat_sublist$mean_d,
        prod_sum$mean_d)
 ```
 
-TODO: add comparison of 2 strata and category list difficulties
+
+```{r}
+t.test(strat2_sublist$mean_d,
+       prod_sum$mean_d)
+```
+
+```{r}
+t.test(category_sublist$mean_d,
+       prod_sum$mean_d)
+```
 
 ## Examining list composition
 
 ```{r}
-swad_cats <- swadesh_sublist |> mutate(sublist = "unstratified") |>
+swad_cats <- unstrat_sublist |> mutate(sublist = "unstratified") |>
   bind_rows(category_sublist |> mutate(sublist = "category")) |>
+  bind_rows(strat2_sublist |> mutate(sublist = "2 strat")) |>
   group_by(sublist, category) %>% summarise(n = n()) %>% arrange(desc(n)) %>%
   mutate(freq = n / sum(n))
 
@@ -730,7 +751,7 @@ average frequency per category on a CDI:WS
 
 
 ```{r}
-swadesh_sublist |> mutate(sublist = "unstratified") |>
+unstrat_sublist |> mutate(sublist = "unstratified") |>
   bind_rows(category_sublist |> mutate(sublist = "category")) |>
   bind_rows(strat2_sublist |> mutate(sublist = "2 strata")) |>
   bind_rows(prod_sum |> filter(num_langs>=BEST_K) |> mutate(sublist = "All (k>=23)")) |>
