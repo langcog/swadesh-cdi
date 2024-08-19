@@ -185,6 +185,21 @@ cat_props <- xldf_clean |>
   group_by(category) |> 
   summarise(mean_prop = mean(prop))
 write_csv(cat_props, "data/category_proportions.csv")
+
+syn_cats <- read_csv("data/categories.csv",
+                     col_names = c("category", "lexical_category", "lexical_class")) |> 
+  distinct()
+syn_props <- xldf |> 
+  filter(language %in% train_langs) |> 
+  left_join(syn_cats, by = join_by(category), relationship = "many-to-one") |> 
+  group_by(language) |> 
+  count(lexical_category) |> 
+  filter(!is.na(lexical_category),
+         lexical_category != "unknown") |> 
+  mutate(prop = n / sum(n)) |>
+  group_by(lexical_category) |> 
+  summarise(mean_prop = mean(prop))
+write_csv(syn_props, "data/syntactic_proportions.csv")
 ```
 
 # Cross-validation
