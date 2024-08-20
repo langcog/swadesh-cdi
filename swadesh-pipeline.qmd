@@ -211,7 +211,7 @@ syntactic_props <- read_csv("data/syntactic_proportions.csv") |>
   rename(category = lexical_category)
 
 create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test, 
-                        sublist_func, sublist_name, bins = NULL, proportional = '') {
+                        sublist_func, sublist_name, bins = NULL) {
   if (sublist_name=="Random") {
     lapply(2:(length(train_langs)-1), \(k) {
       sapply(1:N_RAND, \(comp) {
@@ -233,8 +233,8 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
         mutate(run = 1:N_RAND, k = k)
     }) |> bind_rows() |> 
       mutate(language = lang, sublist = sublist_name)
-  } else if(proportional!='') {
-    if(proportional=="syntactic") { 
+  } else if(sublist_name=='syntactic' | sublist_name=='category') {
+    if(sublist_name=="syntactic") { 
       cat_props = syntactic_props 
     } else {
       cat_props = category_props
@@ -304,6 +304,10 @@ cv_res <- lapply(train_langs, \(lang) {
                           response.pattern = full_model$model@Data$data, 
                           method = "MAP")[,1] 
   
+  cat_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+                          make_proportional_sublist, "category")
+  syn_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+                          make_proportional_sublist, "syntactic")
   prod_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
                            make_swadesh_sublist, "unstratified")
   bin2_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
@@ -314,12 +318,8 @@ cv_res <- lapply(train_langs, \(lang) {
                            make_binned_swadesh_sublist, "4 strata", bins = 4)
   bin5_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
                            make_binned_swadesh_sublist, "5 strata", bins = 5)
-  cat_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
-                          make_proportional_sublist, "category")
-  syn_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
-                          make_proportional_sublist, "syntactic")
   rand_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
-                           make_random_sublist, "Random", rand = TRUE)
+                           make_random_sublist, "Random")
   
   bind_rows(prod_cors, bin2_cors, bin3_cors, bin4_cors, bin5_cors, cat_cors, syn_cors, rand_cors)
 }) |> bind_rows()
@@ -463,6 +463,8 @@ prod_sum <- prod_pars |>
 # length(intersect(sample(1:310, 100), sample(1:310, 100))) # ~31
 # length(intersect(sample(1:392, 100), sample(1:392, 100)))
 
+
+# ToDo: update this to accept semantic or syntactic category prop
 generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name, this_k) {
   sublist <- if (is.null(bins)) {
     sublist_function(prod_sum, S_LEN, this_k)
@@ -483,6 +485,8 @@ generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name, t
 strat2_cors <- generate_sublist_cors(make_binned_swadesh_sublist, 2, sublist_name = "2 strata", this_k = 26)
 
 category_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "category", this_k = 25)
+
+syntactic_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "syntactic", this_k = 25) # ToDo: which k?
 
 unstrat_cors <- generate_sublist_cors(make_swadesh_sublist, sublist_name = "unstratified", this_k = 23)
 
@@ -516,7 +520,8 @@ save(gen_res_sum, gen_res, file="data/intermediates/generalization_results.rds")
 
 ```{r, generate-candidate-swadesh-lists}
 unstrat_sublist <- make_swadesh_sublist(prod_sum, S_LEN, 23)
-category_sublist <- make_proportional_sublist(prod_sum, S_LEN, 25) 
+category_sublist <- make_proportional_sublist(prod_sum, S_LEN, 25, category_props) 
+syntactic_sublist <- make_proportional_sublist(prod_sum, S_LEN, 25, syntactic_props) # ToDo: update with cross-validated k
 strat2_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, 26, n_bins=2)
 
 table(unstrat_sublist$category) # 18 categories - few action words, more animals
