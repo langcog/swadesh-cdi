@@ -1,8 +1,7 @@
 COR_TYPE = "spearman" # "pearson"
 
-cat_props <- read_csv("data/category_proportions.csv")
 
-make_proportional_sublist <- function(prod_sum, list_size, k) {
+make_proportional_sublist <- function(prod_sum, list_size, k, cat_props) {
   cat_props_rounded <- cat_props |> 
     mutate(prop = mean_prop * list_size,
            count = floor(prop),
@@ -13,7 +12,7 @@ make_proportional_sublist <- function(prod_sum, list_size, k) {
     select(-remainder, -prop, -add) |> 
     arrange(desc(count))
   
-  prod_sum |>
+  sublist <- prod_sum |>
     filter(num_langs >= k) |>
     arrange(sd_d) |> 
     nest(data = -category) |> 
@@ -21,6 +20,26 @@ make_proportional_sublist <- function(prod_sum, list_size, k) {
     filter(!is.na(count)) |> 
     mutate(data = map2(data, count, \(d, c) {slice_head(d, n = c)})) |> 
     unnest(data)
+  
+  if(nrow(sublist) < list_size) {
+    wanted_per_category <- sublist |>
+      group_by(category) |>
+      summarise(n = n()) |> 
+      left_join(cat_props_rounded, by = join_by(category)) |>
+      mutate(wanted = count - n)
+    
+    additional_items <- prod_sum |>
+      filter(num_langs < k) |>
+      arrange(desc(k), sd_d) |>
+      nest(data = -category) |>
+      left_join(wanted_per_category, by = join_by(category)) |> 
+      filter(!is.na(wanted)) |> 
+      mutate(data = map2(data, wanted, \(d, c) {slice_head(d, n = c)})) |> 
+      unnest(data)
+    
+    sublist <- bind_rows(sublist, additional_items)
+  }
+  sublist
 }
 
 # special case of make_binned_swadesh_sublist, with n_bins=1

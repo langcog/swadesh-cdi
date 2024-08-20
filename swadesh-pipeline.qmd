@@ -173,7 +173,7 @@ train_langs <- setdiff(languages, gen_langs)
 ```
 
 Get category proportions
-```{r}
+```{r, eval=F}
 ## We use canonical categories from the American English form
 main_cats <- xldf_clean |> filter(language == "English (American)") |> pull(category) |> unique()
 cat_props <- xldf_clean |> 
@@ -206,9 +206,13 @@ write_csv(syn_props, "data/syntactic_proportions.csv")
 ```{r, eval=F}
 all_fscores <- readRDS("data/intermediates/full_fscores_allforms.rds")
 
+category_props <- read_csv("data/category_proportions.csv") 
+syntactic_props <- read_csv("data/syntactic_proportions.csv") |>
+  rename(category = lexical_category)
+
 create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test, 
-                        sublist_func, sublist_name, bins = NULL, rand = FALSE) {
-  if (rand) {
+                        sublist_func, sublist_name, bins = NULL, proportional = '') {
+  if (sublist_name=="Random") {
     lapply(2:(length(train_langs)-1), \(k) {
       sapply(1:N_RAND, \(comp) {
         sublist <- sublist_func(prod_sum, S_LEN, k)
@@ -229,6 +233,29 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
         mutate(run = 1:N_RAND, k = k)
     }) |> bind_rows() |> 
       mutate(language = lang, sublist = sublist_name)
+  } else if(proportional!='') {
+    if(proportional=="syntactic") { 
+      cat_props = syntactic_props 
+    } else {
+      cat_props = category_props
+    }
+    sapply(2:(length(train_langs)-1), \(k) {
+      sublist <- sublist_func(prod_sum, S_LEN, k, cat_props) 
+      if (is.element(k, BEST_Ks)) { 
+        fscore_cor <- tryCatch({
+          get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
+        }, error = function(e) {
+          message(glue("Error in get_fscore_cor for language {lang}, k {k}: {e$message}"))
+          NA
+        })
+      } else {
+        fscore_cor <- NA
+      }
+      c(get_difficulty_metrics(sublist, prod_test), fscore_cor)
+    }) |> t() |> 
+      `colnames<-`(c("num_overlap", "difficulty_cor", "rmse", "fscore_cor")) |> 
+      as_tibble() |> 
+      mutate(run = NA, k = 2:(length(train_langs)-1), language = lang, sublist = sublist_name)
   } else {
     sapply(2:(length(train_langs)-1), \(k) {
       sublist <- if (is.null(bins)) sublist_func(prod_sum, S_LEN, k) else sublist_func(prod_sum, S_LEN, k, n_bins = bins)
@@ -289,10 +316,12 @@ cv_res <- lapply(train_langs, \(lang) {
                            make_binned_swadesh_sublist, "5 strata", bins = 5)
   cat_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
                           make_proportional_sublist, "category")
+  syn_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+                          make_proportional_sublist, "syntactic")
   rand_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
                            make_random_sublist, "Random", rand = TRUE)
   
-  bind_rows(prod_cors, bin2_cors, bin3_cors, bin4_cors, bin5_cors, cat_cors, rand_cors)
+  bind_rows(prod_cors, bin2_cors, bin3_cors, bin4_cors, bin5_cors, cat_cors, syn_cors, rand_cors)
 }) |> bind_rows()
 
 cv_res_sum <- cv_res |> 
