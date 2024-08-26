@@ -155,11 +155,68 @@ xldf_clean <- xldf |>
   filter(!is.na(uni_lemma), !is.na(d)) |> 
   mutate(category = case_when(
     category == "descriptive_words (adjectives)" ~ "descriptive_words",
-    category == "outside_places" ~ "outside",
+    category == "descriptive_words (adverbs)" ~ "descriptive_words",
+    category == "outside_places" ~ "outside", 
+    category == "places" ~ "outside", # combine outside and places
     category == "articles" ~ "quantifiers",
     category == "prepositions" ~ "locations",
-    .default = category))
-
+    category == "negation_words" ~ "games_routines", # Arabic: 'finished', 'don't want', 'not mine'...
+    uni_lemma == "although" & is.na(category) ~ "connecting_words",
+    uni_lemma == "accident" & is.na(category) ~ "other",
+    uni_lemma == "expensive" & is.na(category) ~ "descriptive_words",
+    uni_lemma == "album" & category == "toys" ~ "household",
+    uni_lemma == "allowed" & category == "games_routines" ~ "helping_verbs",
+    uni_lemma == "bored" & is.na(category) ~ "descriptive_words",
+    uni_lemma == "circle" & is.na(category) ~ "descriptive_words",
+    uni_lemma == "backpack" ~ "household",
+    uni_lemma == "only" ~ "quantifiers",
+    uni_lemma == "material" & is.na(category) ~ "household",
+    uni_lemma == "microscope" & is.na(category) ~ "toys",
+    uni_lemma == "mall" ~ "outside",
+    uni_lemma == "our" ~ "pronouns",
+    uni_lemma == "I" ~ "pronouns",
+    uni_lemma == "today" ~ "time_words",
+    uni_lemma == "bounce" ~ "action_words",
+    uni_lemma == "blouse" ~ "clothing",
+    uni_lemma == "gas" ~ "outside",
+    uni_lemma == "yet" ~ "descriptive_words",
+    uni_lemma == "deep" & is.na(category) ~ "descriptive_words",
+    uni_lemma == "bead" ~ "clothing",
+    uni_lemma == "every" ~ "quantifiers",
+    uni_lemma == "fishtank" ~ "household",
+    uni_lemma == "he" ~ "pronouns",
+    uni_lemma == "might" ~ "helping_verbs",
+    .default = category)) |>
+  mutate(uni_lemma = case_when(
+    uni_lemma == "Pencil" ~ "pencil", # Catalan typo
+    uni_lemma == "allowed" ~ "allow",
+    uni_lemma == "mop" ~ "mop (object)",
+    uni_lemma == "her" ~ "3SG.POSS", # Dutch
+    uni_lemma == "he" ~ "3SG", # Mandarin (Taiwanese)
+    uni_lemma == "fishtank" ~ "fish tank",
+    uni_lemma == "aggrieved" ~ "upset",
+    uni_lemma == "aound" ~ "round", # Irish typo
+    uni_lemma == "baby chair" ~ "high chair", # 
+    uni_lemma == "self" & category == "vehicles" ~ "car", # Spanish (Chilean)
+    uni_lemma == "self" & category == "pronouns" ~ "1SG", # Estonian
+    uni_lemma == "back" & category == "body_parts" ~ "back (body part)", 
+    uni_lemma == "nail" & category == "body_parts" ~ "fingernail", 
+    uni_lemma == "baker" & category == "outside" ~ "bakery", 
+    uni_lemma == "bat" & category == "toys" ~ "bat (object)", 
+    uni_lemma == "chicken" & category == "animals" ~ "chicken (animal)", 
+    uni_lemma == "I" ~ "1SG", # Japanese (boku, watashi)
+    uni_lemma == "our" ~ "1PL.POSS",
+    uni_lemma == "bead" ~ "beads",
+    uni_lemma == "chewing gum" ~ "gum",
+    uni_lemma == "clothing" ~ "clothes",
+    uni_lemma == "cock-a-doodle-doo" ~ "cockadoodledoo",
+    uni_lemma == "child's name" ~ "child's own name",
+    uni_lemma == "fireman" ~ "firefighter",
+    uni_lemma == "fridge/freezer" ~ "fridge",
+    uni_lemma == "forger" ~ "forget",
+    uni_lemma == "fries" ~ "french fries",
+    .default = uni_lemma
+  ))
 prod_pars <- xldf_clean |> 
   arrange(language, uni_lemma, desc(a1)) |> # get most discriminating uni_lemma per lang
   select(uni_lemma, language, uid, category, language, d) |>
@@ -174,6 +231,16 @@ train_langs <- setdiff(languages, gen_langs)
 
 Get category proportions
 ```{r, eval=F}
+# get modal semantic category per uni_lemma (xldf, or xldf_clean?)
+category_counts <- xldf_clean %>%
+  group_by(uni_lemma, category) %>%
+  summarize(count = n(), .groups = 'drop')
+
+modal_categories <- category_counts %>%
+  group_by(uni_lemma) %>%
+  filter(count == max(count)) %>%
+  ungroup()
+
 ## We use canonical categories from the American English form
 main_cats <- xldf_clean |> filter(language == "English (American)") |> pull(category) |> unique()
 cat_props <- xldf_clean |> 
@@ -236,11 +303,20 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
   } else if(sublist_name=='syntactic' | sublist_name=='category') {
     if(sublist_name=="syntactic") { 
       cat_props = syntactic_props 
+      cat("syntactic")
     } else {
       cat_props = category_props
+      cat("category")
     }
     sapply(2:(length(train_langs)-1), \(k) {
-      sublist <- sublist_func(prod_sum, S_LEN, k, cat_props) 
+      sublist <- sublist_func(prod_sum, S_LEN, k, cat_props) # PROBLEM:
+      # Slovak is missing 4 categories of words
+      # setdiff(cat_props$category, unique(slo$category))
+      # "games_routines" "helping_verbs"  "places"         "time_words" 
+      # setdiff(unique(slo$category), cat_props$category) # extra Slovak categories: "descriptive_words (adverbs)" "other" 
+      # Note: "today" is in "descriptive_words (adverbs)" ...
+      # problem: this is empty:
+      # make_proportional_sublist(prod_sum, 100, 23, cat_props)
       if (is.element(k, BEST_Ks)) { 
         fscore_cor <- tryCatch({
           get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
@@ -251,7 +327,7 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
       } else {
         fscore_cor <- NA
       }
-      c(get_difficulty_metrics(sublist, prod_test), fscore_cor)
+      c(get_difficulty_metrics(sublist, prod_test), fscore_cor) # <- error is here: 'uni_lemma' column not in sublist
     }) |> t() |> 
       `colnames<-`(c("num_overlap", "difficulty_cor", "rmse", "fscore_cor")) |> 
       as_tibble() |> 
@@ -269,6 +345,7 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
       } else {
         fscore_cor <- NA
       }
+      cat("3")
       c(get_difficulty_metrics(sublist, prod_test), fscore_cor)
     }) |> t() |> 
       `colnames<-`(c("num_overlap", "difficulty_cor", "rmse", "fscore_cor")) |> 
@@ -283,7 +360,7 @@ cv_res <- lapply(train_langs, \(lang) {
   prod_cats <- prod_pars |> 
     filter(language %in% train_langs, language != lang) |> 
     group_by(uni_lemma) |> 
-    count(category) |> 
+    count(category) |> # ToDo: is this category OK for syntactic??
     arrange(desc(category)) |> 
     slice(1)
   
