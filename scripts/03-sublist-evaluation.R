@@ -1,7 +1,7 @@
 COR_TYPE = "spearman" # "pearson"
 
 
-make_proportional_sublist <- function(prod_sum, list_size, k, cat_props) {
+make_proportional_sublist <- function(prod_sum, list_size, k, cat_props) { 
   cat_props_rounded <- cat_props |> 
     mutate(prop = mean_prop * list_size,
            count = floor(prop),
@@ -21,6 +21,7 @@ make_proportional_sublist <- function(prod_sum, list_size, k, cat_props) {
     mutate(data = map2(data, count, \(d, c) {slice_head(d, n = c)})) |> 
     unnest(data)
   
+  # if we're missing items, fill with best items from that category with lower k
   if(nrow(sublist) < list_size) {
     wanted_per_category <- sublist |>
       group_by(category) |>
@@ -36,6 +37,8 @@ make_proportional_sublist <- function(prod_sum, list_size, k, cat_props) {
       filter(!is.na(wanted)) |> 
       mutate(data = map2(data, wanted, \(d, c) {slice_head(d, n = c)})) |> 
       unnest(data)
+    # failure mode?
+    #if(nrow(additional_items) < (list_size - nrow(sublist))) 
     
     sublist <- bind_rows(sublist, additional_items)
   }

@@ -43,6 +43,11 @@ for (language in languages) {
     rep_items <- c(rep_items, list(repeated))
   }
 }
+
+# get syntactic <-> semantic category mapping
+syn_cats <- read_csv("data/categories.csv",
+                     col_names = c("category", "lexical_category", "lexical_class")) |> 
+  distinct()
 ```
 
 Stitch data together and save outputs
@@ -154,12 +159,24 @@ Clean IRT parameters (`xldf`)
 xldf_clean <- xldf |> 
   filter(!is.na(uni_lemma), !is.na(d)) |> 
   mutate(category = case_when(
+    uni_lemma == "yes" & language == "Slovak" ~ "games_routines",
+    uni_lemma == "no" & language == "Slovak" ~ "games_routines",
+    uni_lemma == "peekaboo" & language == "Slovak" ~ "games_routines",
+    uni_lemma == "finished" & language == "Slovak" ~ "games_routines",
+    uni_lemma == "hello" & language == "Slovak" ~ "games_routines",
+    uni_lemma == "bye" & language == "Slovak" ~ "games_routines",
+    uni_lemma == "be" & language == "Slovak" ~ "helping_verbs",
     category == "descriptive_words (adjectives)" ~ "descriptive_words",
     category == "descriptive_words (adverbs)" ~ "descriptive_words",
     category == "outside_places" ~ "outside", 
     category == "places" ~ "outside", # combine outside and places
     category == "articles" ~ "quantifiers",
+    category == "hold" ~ "household",
+    category == "states" ~ "action_words",
     category == "prepositions" ~ "locations",
+    category == "mental" & uni_lemma == "understand" ~ "action_words",
+    category == "mental" & uni_lemma == "remember" ~ "action_words",
+    category == "mental" & uni_lemma == "mad" ~ "descriptive_words",
     category == "negation_words" ~ "games_routines", # Arabic: 'finished', 'don't want', 'not mine'...
     uni_lemma == "although" & is.na(category) ~ "connecting_words",
     uni_lemma == "accident" & is.na(category) ~ "other",
@@ -176,6 +193,7 @@ xldf_clean <- xldf |>
     uni_lemma == "our" ~ "pronouns",
     uni_lemma == "I" ~ "pronouns",
     uni_lemma == "today" ~ "time_words",
+    uni_lemma == "now" ~ "time_words",
     uni_lemma == "bounce" ~ "action_words",
     uni_lemma == "blouse" ~ "clothing",
     uni_lemma == "gas" ~ "outside",
@@ -188,6 +206,8 @@ xldf_clean <- xldf |>
     uni_lemma == "might" ~ "helping_verbs",
     .default = category)) |>
   mutate(uni_lemma = case_when(
+    definition == "haber (hay)" ~ "have",
+    definition == "musieť" ~ "must",
     uni_lemma == "Pencil" ~ "pencil", # Catalan typo
     uni_lemma == "allowed" ~ "allow",
     uni_lemma == "mop" ~ "mop (object)",
@@ -217,12 +237,26 @@ xldf_clean <- xldf |>
     uni_lemma == "fries" ~ "french fries",
     .default = uni_lemma
   ))
+
+xldf_clean <- xldf_clean |>
+  mutate(category = case_when(
+    uni_lemma == "have" & language == "Slovak" ~ "helping_verbs",
+    definition == "musieť" ~ "helping_verbs",
+    uni_lemma == "want" & language == "Slovak" ~ "helping_verbs",
+    .default = category
+  ))
+
 prod_pars <- xldf_clean |> 
   arrange(language, uni_lemma, desc(a1)) |> # get most discriminating uni_lemma per lang
   select(uni_lemma, language, uid, category, language, d) |>
   group_by(uni_lemma, language) |>
   slice(1) |> 
-  ungroup()
+  ungroup() |>
+  left_join(syn_cats) |>
+  rename(semantic_category = category,
+         syntactic_category = lexical_category) |>
+  select(-lexical_class)
+
 
 gen_langs <- model_stats |> filter(participants < 300) |> pull(language)
 
@@ -277,6 +311,10 @@ category_props <- read_csv("data/category_proportions.csv")
 syntactic_props <- read_csv("data/syntactic_proportions.csv") |>
   rename(category = lexical_category)
 
+syn_cats <- read_csv("data/categories.csv",
+                     col_names = c("category", "lexical_category", "lexical_class"))
+# join syn_cats to xldf ? no, we actually 
+
 create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test, 
                         sublist_func, sublist_name, bins = NULL) {
   if (sublist_name=="Random") {
@@ -303,20 +341,11 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
   } else if(sublist_name=='syntactic' | sublist_name=='category') {
     if(sublist_name=="syntactic") { 
       cat_props = syntactic_props 
-      cat("syntactic")
     } else {
       cat_props = category_props
-      cat("category")
     }
     sapply(2:(length(train_langs)-1), \(k) {
-      sublist <- sublist_func(prod_sum, S_LEN, k, cat_props) # PROBLEM:
-      # Slovak is missing 4 categories of words
-      # setdiff(cat_props$category, unique(slo$category))
-      # "games_routines" "helping_verbs"  "places"         "time_words" 
-      # setdiff(unique(slo$category), cat_props$category) # extra Slovak categories: "descriptive_words (adverbs)" "other" 
-      # Note: "today" is in "descriptive_words (adverbs)" ...
-      # problem: this is empty:
-      # make_proportional_sublist(prod_sum, 100, 23, cat_props)
+      sublist <- sublist_func(prod_sum, S_LEN, k, cat_props) 
       if (is.element(k, BEST_Ks)) { 
         fscore_cor <- tryCatch({
           get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
@@ -327,7 +356,7 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
       } else {
         fscore_cor <- NA
       }
-      c(get_difficulty_metrics(sublist, prod_test), fscore_cor) # <- error is here: 'uni_lemma' column not in sublist
+      c(get_difficulty_metrics(sublist, prod_test), fscore_cor) 
     }) |> t() |> 
       `colnames<-`(c("num_overlap", "difficulty_cor", "rmse", "fscore_cor")) |> 
       as_tibble() |> 
@@ -354,23 +383,43 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
   }
 }
 
+# needs to know whether to use syn_props or cat_props...
 cv_res <- lapply(train_langs, \(lang) {
   message(glue("Calculating for {lang}..."))
   
-  prod_cats <- prod_pars |> 
+  # semantic cats
+  prod_semantic_cats <- prod_pars |> 
     filter(language %in% train_langs, language != lang) |> 
     group_by(uni_lemma) |> 
-    count(category) |> # ToDo: is this category OK for syntactic??
-    arrange(desc(category)) |> 
+    count(semantic_category) |> 
+    arrange(desc(semantic_category)) |> 
     slice(1)
   
-  prod_sum <- prod_pars |> 
+  # syntactic cats
+  prod_syntactic_cats <- prod_pars |> 
+    filter(language %in% train_langs, language != lang) |> 
+    group_by(uni_lemma) |> 
+    count(syntactic_category) |> 
+    arrange(desc(syntactic_category)) |> 
+    slice(1)
+  
+  prod_semantic_sum <- prod_pars |> 
     filter(language %in% train_langs, language != lang) |> 
     group_by(uni_lemma) |> 
     summarise(num_langs = n(),
               mean_d = mean(d, na.rm = TRUE),
               sd_d = sd(d, na.rm = TRUE)) |> 
-    left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
+    left_join(prod_semantic_cats |> select(-n), by = join_by(uni_lemma)) |>
+    rename(category=semantic_category)
+  
+  prod_syntactic_sum <- prod_pars |> 
+    filter(language %in% train_langs, language != lang) |> 
+    group_by(uni_lemma) |> 
+    summarise(num_langs = n(),
+              mean_d = mean(d, na.rm = TRUE),
+              sd_d = sd(d, na.rm = TRUE)) |> 
+    left_join(prod_syntactic_cats |> select(-n), by = join_by(uni_lemma)) |>
+    rename(category=syntactic_category)
   
   prod_test <- prod_pars |> filter(language == lang)
   
@@ -381,21 +430,21 @@ cv_res <- lapply(train_langs, \(lang) {
                           response.pattern = full_model$model@Data$data, 
                           method = "MAP")[,1] 
   
-  cat_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+  cat_cors <- create_cors(full_model, full_fscores, lang, prod_semantic_sum, prod_test, 
                           make_proportional_sublist, "category")
-  syn_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+  syn_cors <- create_cors(full_model, full_fscores, lang, prod_syntactic_sum, prod_test, 
                           make_proportional_sublist, "syntactic")
-  prod_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+  prod_cors <- create_cors(full_model, full_fscores, lang, prod_semantic_sum, prod_test, 
                            make_swadesh_sublist, "unstratified")
-  bin2_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+  bin2_cors <- create_cors(full_model, full_fscores, lang, prod_semantic_sum, prod_test, 
                            make_binned_swadesh_sublist, "2 strata", bins = 2)
-  bin3_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+  bin3_cors <- create_cors(full_model, full_fscores, lang, prod_semantic_sum, prod_test, 
                            make_binned_swadesh_sublist, "3 strata", bins = 3)
-  bin4_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+  bin4_cors <- create_cors(full_model, full_fscores, lang, prod_semantic_sum, prod_test, 
                            make_binned_swadesh_sublist, "4 strata", bins = 4)
-  bin5_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+  bin5_cors <- create_cors(full_model, full_fscores, lang, prod_semantic_sum, prod_test, 
                            make_binned_swadesh_sublist, "5 strata", bins = 5)
-  rand_cors <- create_cors(full_model, full_fscores, lang, prod_sum, prod_test, 
+  rand_cors <- create_cors(full_model, full_fscores, lang, prod_semantic_sum, prod_test, 
                            make_random_sublist, "Random")
   
   bind_rows(prod_cors, bin2_cors, bin3_cors, bin4_cors, bin5_cors, cat_cors, syn_cors, rand_cors)
@@ -524,6 +573,7 @@ prod_cats <- prod_pars |>
   arrange(desc(category)) |> 
   slice(1)
   
+# ToDO fix me catgories...
 prod_sum <- prod_pars |> 
   filter(language %in% train_langs) |> 
   group_by(uni_lemma) |> 
@@ -893,7 +943,6 @@ unstrat_sublist |> mutate(sublist = "unstratified") |>
 cat_freq <- xldf %>% # @Alvin filter to canonical categories?
   filter(#!is.na(category), 
          category!="locations_quantities_adverbs",
-         category!="hold",
          category!="sounds2",
          category!="unknown") %>%
   group_by(category, language) %>%
