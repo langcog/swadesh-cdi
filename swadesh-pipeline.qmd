@@ -525,17 +525,22 @@ t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor -
 t.test(subset(cv_res_sum, sublist=="category" & k==25)$fscore_cor - 
        subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor) # n.s.
 t.test(subset(cv_res_sum, sublist=="category" & k==25)$fscore_cor - 
-       subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor) # n.s.
-t.test(subset(cv_res_sum, sublist=="category" & k==25)$fscore_cor - 
-       subset(cv_res_sum, sublist=="2 strata" & k==26)$fscore_cor) # n.s.
+       subset(cv_res_sum, sublist=="2 strata" & k==27)$fscore_cor) # n.s.
 t.test(subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor - 
-       subset(cv_res_sum, sublist=="2 strata" & k==26)$fscore_cor) # n.s.
+       subset(cv_res_sum, sublist=="2 strata" & k==27)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="syntactic" & k==27)$fscore_cor - 
+       subset(cv_res_sum, sublist=="2 strata" & k==27)$fscore_cor) # n.s.
+t.test(subset(cv_res_sum, sublist=="syntactic" & k==27)$fscore_cor - 
+       subset(cv_res_sum, sublist=="category" & k==25)$fscore_cor) # n.s.
+
+t.test(subset(cv_res_sum, sublist=="category" & k==25)$fscore_cor - 
+       subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor) # p=.001 (category better)
 
 t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor - 
-       subset(cv_res_sum, sublist=="2 strata" & k==26)$fscore_cor) # p<.001 (2 strata .002 better)
+       subset(cv_res_sum, sublist=="2 strata" & k==27)$fscore_cor) # p<.001 (2 strata .002 better)
 
-t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor - 
-       subset(cv_res_sum, sublist=="2 strata" & k==26)$fscore_cor)
+t.test(subset(cv_res_sum, sublist=="syntactic" & k==23)$fscore_cor - 
+       subset(cv_res_sum, sublist=="2 strata" & k==27)$fscore_cor) # p=.02 (s strata better)
 
 # identify best k for each method
 cv_res_sum$best_k = F
@@ -556,7 +561,7 @@ cv_res_sum |>
 ```
 
 
-CV results show that $k=26$ is the optimal value for the 2 difficulty strata method, $k=25$ is optimal for the category-stratified method, and $k=23$ is optimal for the unstratified method.
+CV results show that $k=27$ is the optimal value for the 2 difficulty strata method and the syntactic category-stratified method, $k=25$ is optimal for the semantic category-stratified method, and $k=23$ is optimal for the unstratified method.
 We construct the sublist for each of these methods, and compare them in order to construct a final list for the generalization test.
 
 # Generalization test
@@ -565,11 +570,12 @@ all_prod <- readRDS("data/intermediates/allforms_prod_per_lang.rds")
 ```
 
 ```{r}
+# FixMe: prod_pars now has both semantic_category and syntactic_category - we need each for the two methods
 prod_cats <- prod_pars |> 
   filter(language %in% train_langs) |> 
   group_by(uni_lemma) |> 
-  count(category) |> 
-  arrange(desc(category)) |> 
+  count(semantic_category) |> 
+  arrange(desc(semantic_category)) |> 
   slice(1)
   
 # ToDO fix me catgories...
@@ -608,11 +614,11 @@ generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name, t
   return(cors)
 }
 
-strat2_cors <- generate_sublist_cors(make_binned_swadesh_sublist, 2, sublist_name = "2 strata", this_k = 26)
+strat2_cors <- generate_sublist_cors(make_binned_swadesh_sublist, 2, sublist_name = "2 strata", this_k = 27)
+
+syntactic_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "syntactic", this_k = 27) 
 
 category_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "category", this_k = 25)
-
-syntactic_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "syntactic", this_k = 25) # ToDo: which k?
 
 unstrat_cors <- generate_sublist_cors(make_swadesh_sublist, sublist_name = "unstratified", this_k = 23)
 
