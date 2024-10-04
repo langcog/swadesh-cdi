@@ -374,7 +374,6 @@ create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test,
       } else {
         fscore_cor <- NA
       }
-      cat("3")
       c(get_difficulty_metrics(sublist, prod_test), fscore_cor)
     }) |> t() |> 
       `colnames<-`(c("num_overlap", "difficulty_cor", "rmse", "fscore_cor")) |> 
