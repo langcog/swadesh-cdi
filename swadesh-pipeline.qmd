@@ -257,6 +257,8 @@ prod_pars <- xldf_clean |>
          syntactic_category = lexical_category) |>
   select(-lexical_class)
 
+save(prod_pars, xldf_clean, file=here("data/intermediates/xldf_clean_allforms.Rdata"))
+
 
 gen_langs <- model_stats |> filter(participants < 300) |> pull(language)
 
@@ -474,7 +476,7 @@ best_k <- cv_output |>
   ungroup() |> group_by(sublist) |>
   filter(difficulty_cor == max(difficulty_cor, na.rm = TRUE)) |>
   slice(1) |> ungroup() |> arrange(desc(difficulty_cor))
-best_k #  |> kableExtra::kable(digits=3)
+best_k |> kableExtra::kable(digits=3)
 # k=26, 2 strata, num_overlap=93.2, diff_cor=.842
 ```
 
