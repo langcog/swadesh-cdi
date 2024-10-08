@@ -478,6 +478,8 @@ best_k #  |> kableExtra::kable(digits=3)
 # k=26, 2 strata, num_overlap=93.2, diff_cor=.842
 ```
 
+10/7/24: We believe we prefer difficulty correlation over RMSE since the samples (and thus language parameters) are not directly comparable (but should be correlated)
+
 ```{r, best-by-rmse, eval=F}
 # selecting by RMSE doesn't favor high overlap (and k is less consistent)
 best_k <- cv_output |>
@@ -486,6 +488,7 @@ best_k <- cv_output |>
   slice(1) |> ungroup() |> arrange(rmse)
 best_k # |> kableExtra::kable(digits=3)
 ```
+Best RMSE (2 strata and unstratified k=25) still have pretty high overlap (~92.3), so maybe aren't bad candidates..? But their correlations are not great (~.84, maximum is 0.855).
 
 ```{r, fig.width=8, fig.height=8, include=F}
 cv_output |> filter(rmse<1.2) |>
@@ -506,6 +509,8 @@ cv_res_sum |>
   labs(y = "Difficulty correlation") +
   theme(legend.position = "bottom") + theme_classic()
 ```
+
+# ToDo: not full boxplot, just show medians ?
 
 ```{r, fig.width=10, fig.height=5}
 cv_res_sum |>
@@ -570,22 +575,40 @@ all_prod <- readRDS("data/intermediates/allforms_prod_per_lang.rds")
 ```
 
 ```{r}
-# FixMe: prod_pars now has both semantic_category and syntactic_category - we need each for the two methods
-prod_cats <- prod_pars |> 
-  filter(language %in% train_langs) |> 
-  group_by(uni_lemma) |> 
-  count(semantic_category) |> 
-  arrange(desc(semantic_category)) |> 
-  slice(1)
+
+ # semantic cats
+  prod_semantic_cats <- prod_pars |> 
+    filter(language %in% train_langs) |> 
+    group_by(uni_lemma) |> 
+    count(semantic_category) |> 
+    arrange(desc(semantic_category)) |> 
+    slice(1)
   
-# ToDO fix me catgories...
-prod_sum <- prod_pars |> 
-  filter(language %in% train_langs) |> 
-  group_by(uni_lemma) |> 
-  summarise(num_langs = n(),
-            mean_d = mean(d, na.rm = TRUE),
-            sd_d = sd(d, na.rm = TRUE)) |> 
-  left_join(prod_cats |> select(-n), by = join_by(uni_lemma))
+  # syntactic cats
+  prod_syntactic_cats <- prod_pars |> 
+    filter(language %in% train_langs) |> 
+    group_by(uni_lemma) |> 
+    count(syntactic_category) |> 
+    arrange(desc(syntactic_category)) |> 
+    slice(1)
+  
+  prod_semantic_sum <- prod_pars |> 
+    filter(language %in% train_langs) |> 
+    group_by(uni_lemma) |> 
+    summarise(num_langs = n(),
+              mean_d = mean(d, na.rm = TRUE),
+              sd_d = sd(d, na.rm = TRUE)) |> 
+    left_join(prod_semantic_cats |> select(-n), by = join_by(uni_lemma)) |>
+    rename(category=semantic_category)
+  
+  prod_syntactic_sum <- prod_pars |> 
+    filter(language %in% train_langs) |> 
+    group_by(uni_lemma) |> 
+    summarise(num_langs = n(),
+              mean_d = mean(d, na.rm = TRUE),
+              sd_d = sd(d, na.rm = TRUE)) |> 
+    left_join(prod_syntactic_cats |> select(-n), by = join_by(uni_lemma)) |>
+    rename(category=syntactic_category)
 
 
 # nrow(subset(prod_sum, num_langs>=26)) # 310 unilemmas on at least 26 forms
@@ -596,12 +619,15 @@ prod_sum <- prod_pars |>
 # length(intersect(sample(1:392, 100), sample(1:392, 100)))
 
 
-# ToDo: update this to accept semantic or syntactic category prop
-generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name, this_k) {
-  sublist <- if (is.null(bins)) {
-    sublist_function(prod_sum, S_LEN, this_k)
+generate_sublist_cors <- function(sublist_function, sublist_name, this_k, prod_sum, bins = NULL) {
+  if(sublist_name=="syntactic") {
+    sublist <- sublist_function(prod_sum, S_LEN, this_k, syntactic_props)
+  } else if(sublist_name=="category") {
+    sublist <- sublist_function(prod_sum, S_LEN, this_k, category_props)
+  } else if(is.null(bins)) {
+    sublist <- sublist_function(prod_sum, S_LEN, this_k)
   } else {
-    sublist_function(prod_sum, S_LEN, this_k, bins)
+    sublist <- sublist_function(prod_sum, S_LEN, this_k, bins)
   }
   
   cors <- sapply(gen_langs, \(lang) {
@@ -614,14 +640,17 @@ generate_sublist_cors <- function(sublist_function, bins = NULL, sublist_name, t
   return(cors)
 }
 
-strat2_cors <- generate_sublist_cors(make_binned_swadesh_sublist, 2, sublist_name = "2 strata", this_k = 27)
+strat2_cors <- generate_sublist_cors(make_binned_swadesh_sublist, sublist_name = "2 strata", this_k = 27,
+                                     prod_semantic_sum, bins = 2)
 
-syntactic_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "syntactic", this_k = 27) 
+syntactic_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "syntactic", this_k = 27,
+                                        prod_syntactic_sum) 
 
-category_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "category", this_k = 25)
+category_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name = "category", this_k = 25, 
+                                       prod_semantic_sum)
 
-unstrat_cors <- generate_sublist_cors(make_swadesh_sublist, sublist_name = "unstratified", this_k = 23)
-
+unstrat_cors <- generate_sublist_cors(make_swadesh_sublist, sublist_name = "unstratified", this_k = 23,
+                                      prod_semantic_sum)
 
 # Random
 rand_cors <- lapply(gen_langs, \(lang) {
@@ -639,7 +668,7 @@ rand_cors <- lapply(gen_langs, \(lang) {
 
 
 # Combine all results
-gen_res <- bind_rows(unstrat_cors, category_cors, rand_cors, strat2_cors)
+gen_res <- bind_rows(unstrat_cors, syntactic_cors, category_cors, rand_cors, strat2_cors)
 
 gen_res_sum <- gen_res |> 
   group_by(language, sublist) |> 
@@ -651,23 +680,28 @@ save(gen_res_sum, gen_res, file="data/intermediates/generalization_results.rds")
 ```
 
 ```{r, generate-candidate-swadesh-lists}
-unstrat_sublist <- make_swadesh_sublist(prod_sum, S_LEN, 23)
-category_sublist <- make_proportional_sublist(prod_sum, S_LEN, 25, category_props) 
-syntactic_sublist <- make_proportional_sublist(prod_sum, S_LEN, 25, syntactic_props) # ToDo: update with cross-validated k
-strat2_sublist <- make_binned_swadesh_sublist(prod_sum, S_LEN, 26, n_bins=2)
+unstrat_sublist <- make_swadesh_sublist(prod_semantic_sum, S_LEN, 23)
+category_sublist <- make_proportional_sublist(prod_semantic_sum, S_LEN, 25, category_props) 
+syntactic_sublist <- make_proportional_sublist(prod_syntactic_sum, S_LEN, 25, syntactic_props) # ToDo: update with cross-validated k
+strat2_sublist <- make_binned_swadesh_sublist(prod_semantic_sum, S_LEN, 26, n_bins=2)
 
-table(unstrat_sublist$category) # 18 categories - few action words, more animals
-table(category_sublist$category) # 22 cats - more actions, 
-table(strat2_sublist$category) # 17 cats
+table(unstrat_sublist$category) # 16 categories - few action words, more animals
+table(category_sublist$category) # 21 cats - more actions, 
+table(strat2_sublist$category) # 16 cats
+table(syntactic_sublist$category) # ToDo: merge semantic category in..
+# function_words          nouns          other     predicates 
+#            13             46             16             25 
 
 setdiff(unique(category_sublist$category), unique(unstrat_sublist$category))
 # "quantifiers" "pronouns" "connecting_words" "helping_verbs" "furniture_rooms" 
-setdiff(unique(category_sublist$category), unique(strat2_sublist$category))
+
 
 # 62-96% overlap between the various methods
 intersect(strat2_sublist$uni_lemma, category_sublist$uni_lemma) # 62
 intersect(unstrat_sublist$uni_lemma, category_sublist$uni_lemma) # 62
 intersect(unstrat_sublist$uni_lemma, strat2_sublist$uni_lemma) # 85
+intersect(unstrat_sublist$uni_lemma, syntactic_sublist$uni_lemma) # 80
+intersect(category_sublist$uni_lemma, syntactic_sublist$uni_lemma) # 65
 
 intersect(category_sublist$uni_lemma, intersect(unstrat_sublist$uni_lemma, strat2_sublist$uni_lemma)) # 58
 
@@ -682,7 +716,7 @@ setdiff(strat2_sublist$uni_lemma, category_sublist$uni_lemma)
 ```{r, fig.width=7, fig.height=4.5}
 ggplot(gen_res_sum,
        aes(x = language, y = sumscore_cor, fill = sublist)) +
-  geom_col(position = "dodge") +
+  geom_col(position = "dodge") + 
   labs(y = "Sumscore correlation") +
   theme_classic() +
   theme(legend.position = "bottom", 

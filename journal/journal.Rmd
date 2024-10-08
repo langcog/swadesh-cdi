@@ -950,6 +950,8 @@ Developing a list of appropriate vocabulary words is not the only challenge rese
 The pragmatics of language between children and adults can differ greatly across cultures, and has been found to interfere with administration of parent-report measures of early vocabulary, for example in Kiswahili [@alcock2017production] and Wolof [@weber2018]. <!-- TODO: FOR EXAMPLE... -->
 As such, local cultural knowledge remains essential in appropriately developing and administering novel CDI adaptations.
 
+ToDo: discuss bi/multilingualism - e.g. generalizing approach used in DLL EN-ES (Tamis-Lemonda2023)...
+
 Despite the myriad challenges that remain in creating new measures of early language development, we believe that the proposed Swadesh CDI list will give researchers a solid foundation to start from, lowering the barrier to the adaptation of CDI forms in new languages, since these are often time-consuming and challenging to construct.
 Expanding the number of languages with effective vocabulary measures would be a critical step in addressing issues related to the under-representation of lingustic diversity in language acquisition research [@kidd2022]. 
 Certainly, increasing the diversity of languages studied is a critical step towards developing a truly general understanding of how young children learn language.
