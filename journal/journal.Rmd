@@ -504,10 +504,53 @@ p2 <- ggplot(gen_res_sum,
 ggarrange(p1, p2, ncol=1, common.legend = T)
 ```
 
-```{r create-final-swadesh-list}
+```{r create-final-swadesh-list, include=F}
 # ToDo: what shall we do? pick the best-performing method?
 # syntactic, k=27 -> 92.2     0.856
 # or vote across best_k methods, and pick the 100 most commonly selected items?
+load(here("data/intermediates/best_k_swadesh_lists.rds"))
+# unstrat_sublist, category_sublist, syntactic_sublist, strat2_sublist
+
+uni_sem_cats <- prod_pars |> group_by(uni_lemma) |>
+  count(semantic_category) |> arrange(uni_lemma, desc(n)) |>
+  group_by(uni_lemma) |> slice(1)
+
+uni_syn_cats <- prod_pars |> group_by(uni_lemma) |>
+  count(syntactic_category) |> arrange(uni_lemma, desc(n)) |>
+  group_by(uni_lemma) |> slice(1)
+
+syntactic_sublist <- syntactic_sublist |> select(-category, -count, -mean_prop) |>
+  left_join(uni_sem_cats |> select(uni_lemma, semantic_category)) |>
+  rename(category = semantic_category) 
+
+all_swadesh <- bind_rows(category_sublist |> mutate(method = "Semantic") |> select(-n, -wanted, -count, -mean_prop), 
+                         unstrat_sublist |> mutate(method = "Unstratified"),
+                         syntactic_sublist |> mutate(method = "Syntactic"),
+                         strat2_sublist |> mutate(method = "2 difficulties") |> select(-bin)) |>
+  rename(semantic_category = category) |>
+  left_join(uni_syn_cats |> select(uni_lemma, syntactic_category))
+#write_csv(all_swadesh, file="Swadesh_items_from_4_methods.csv")
+
+length(unique(all_swadesh$uni_lemma)) # 156 unique items across 4 methods
+votes <- sort(table(all_swadesh$uni_lemma))
+length(which(votes==4)) # 53
+length(which(votes==3)) # 31
+length(which(votes==2)) # 23
+
+all_swadesh |> group_by(semantic_category, method) |>
+  summarise(n = n()) |>
+  ggplot(aes(y=semantic_category, x=n)) +
+  geom_col() + theme_classic() +
+  facet_grid(cols=vars(method))
+
+all_swadesh |> group_by(syntactic_category, method) |>
+  summarise(n = n()) |>
+  ggplot(aes(y=syntactic_category, x=n)) +
+  geom_col() + theme_classic() +
+  facet_grid(cols=vars(method))
+
+swadesh_sublist <- all_swadesh |> count(uni_lemma) |>
+  filter(n>1)
 ```
 
 
@@ -516,28 +559,27 @@ ggarrange(p1, p2, ncol=1, common.legend = T)
 ```{r, fig.cap=c("The relative frequency of categories on the English CDI:WS form (e.g. n=103 action words / 680 total items = 0.15), and the relative frequency of categories represented in the 100-item Swadesh list."), echo=FALSE}
 #knitr::include_graphics("figs/SwadeshCDI_list.pdf")
 
-xldf_clean <- xldf_clean %>% 
+prod_pars <- prod_pars %>% 
   mutate(SwadeshCDI=ifelse(is.element(uni_lemma, swadesh_sublist$uni_lemma), 1, 0))
 
-swad_per_lang <- xldf_clean %>% filter(SwadeshCDI==1) %>% group_by(category, language) %>%
+swad_per_lang <- prod_pars %>% filter(SwadeshCDI==1) %>% group_by(semantic_category, language) %>%
   summarise(n=n()) %>%
-  group_by(category) %>%
+  group_by(semantic_category) %>%
   summarise(n = mean(n)) %>% arrange(desc(n))
 
-# ToDo fixme -- add lexical_category
-#swad_lex_cat <- xldf %>% filter(SwadeshCDI==1) %>% group_by(lexical_category, language) %>%
-#  summarise(n=n()) %>%
-#  group_by(lexical_category) %>%
-#  summarise(n = mean(n)) %>% arrange(desc(n))
-# sum(swad_lex_cat$n) # 171 words..
+swad_lex_cat <- prod_pars %>% filter(SwadeshCDI==1) %>% group_by(syntactic_category, language) %>%
+  summarise(n=n()) %>%
+  group_by(syntactic_category) %>%
+  summarise(n = mean(n)) %>% arrange(desc(n))
+ sum(swad_lex_cat$n) # 171 words..
 
-en_cats <- xldf_clean %>% filter(language=="English (American)") %>% select(category) %>% 
-  group_by(category) %>% summarise(n = n()) %>% arrange(desc(n)) %>%
+en_cats <- prod_pars %>% filter(language=="English (American)") %>% select(semantic_category) %>% 
+  group_by(semantic_category) %>% summarise(n = n()) %>% arrange(desc(n)) %>%
   mutate(EN_freq = n / sum(n))
 
 swadesh_sublist <- swadesh_sublist %>% 
-  left_join(xldf_clean %>% filter(language=="English (American)") %>%select(uni_lemma, category))
-swad_cats <- swadesh_sublist %>% group_by(category) %>% summarise(n = n()) %>% 
+  left_join(prod_pars %>% filter(language=="English (American)") %>%select(uni_lemma, semantic_category))
+swad_cats <- swadesh_sublist %>% group_by(semantic_category) %>% summarise(n = n()) %>% 
   mutate(Swad_freq = n / sum(n)) %>% select(-n)
 
 

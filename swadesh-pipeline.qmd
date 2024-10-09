@@ -82,6 +82,7 @@ for (language in setdiff(languages, completed)) {
 ```
 
 Get demographics
+ToDo: update or remove
 ```{r, eval=F}
 demog <- lapply(languages, \(language) {
   lang_data <- readRDS(glue("data/all_forms/{language}_data.rds"))
@@ -306,12 +307,18 @@ write_csv(syn_props, "data/syntactic_proportions.csv")
 ```
 
 # Cross-validation
-```{r, eval=F}
-all_fscores <- readRDS("data/intermediates/full_fscores_allforms.rds")
 
+```{r}
 category_props <- read_csv("data/category_proportions.csv") 
 syntactic_props <- read_csv("data/syntactic_proportions.csv") |>
   rename(category = lexical_category)
+```
+
+
+
+```{r, eval=F}
+all_fscores <- readRDS("data/intermediates/full_fscores_allforms.rds")
+
 
 syn_cats <- read_csv("data/categories.csv",
                      col_names = c("category", "lexical_category", "lexical_class"))
@@ -512,7 +519,7 @@ cv_res_sum |>
   theme(legend.position = "bottom") + theme_classic()
 ```
 
-# ToDo: not full boxplot, just show medians ?
+ToDo: not full boxplot, just show medians ?
 
 ```{r, fig.width=10, fig.height=5}
 cv_res_sum |>
@@ -684,8 +691,11 @@ save(gen_res_sum, gen_res, file="data/intermediates/generalization_results.rds")
 ```{r, generate-candidate-swadesh-lists}
 unstrat_sublist <- make_swadesh_sublist(prod_semantic_sum, S_LEN, 23)
 category_sublist <- make_proportional_sublist(prod_semantic_sum, S_LEN, 25, category_props) 
-syntactic_sublist <- make_proportional_sublist(prod_syntactic_sum, S_LEN, 25, syntactic_props) # ToDo: update with cross-validated k
-strat2_sublist <- make_binned_swadesh_sublist(prod_semantic_sum, S_LEN, 26, n_bins=2)
+syntactic_sublist <- make_proportional_sublist(prod_syntactic_sum, S_LEN, 27, syntactic_props) 
+strat2_sublist <- make_binned_swadesh_sublist(prod_semantic_sum, S_LEN, 27, n_bins=2)
+
+save(unstrat_sublist, category_sublist, syntactic_sublist, strat2_sublist,
+     file="data/intermediates/best_k_swadesh_lists.rds")
 
 table(unstrat_sublist$category) # 16 categories - few action words, more animals
 table(category_sublist$category) # 21 cats - more actions, 
