@@ -280,8 +280,8 @@ report_cor(cor.test(uni_ag_gt1$d_m, uni_ag_gt1$d_sd)) # r=.03
 
 <!-- ToDo: update the language in this paragraph to be about CDI items per language (not just CDI:WS) -- or could add range of WG items -->
 Across the `r length(languages)` IRT models for different languages' CDI forms, difficulty and discrimination parameters for a total of `r nrow(xldf)` items were fitted.
-Of those items, 95.5% had unilemmas defined, with a median of 693 per CDI:WS form (range: 553 in Czech to 804 in Cantonese). 
-A total of `r length(unique(xldf$uni_lemma))` unique unilemmas were defined across the forms, but `r nrow(uni1)` of these were singletons, appearing on only one of the forms.\footnote{These singletons were significantly more difficult than the `r nrow(uni_ag_gt1)` unilemmas appearing more than once ($M_1=$ `r round(mean(uni1$d_m),2)`; $M_{>1}=$ `r round(mean(uni_ag_gt1$d_m),2)`; `r report_ttest(t.test(uni1$d_m, uni_ag_gt1$d_m))`).} 
+Of those items, 95.5% had unilemmas defined, with a median of `r median(table(xldf_clean$language))` per language (range: 440 in Chilean Spanish to 1061 in Mandarin Chinese). 
+A total of `r length(unique(xldf_clean$uni_lemma))` unique unilemmas were defined across the forms, but `r nrow(uni1)` of these were singletons, appearing on only one of the forms.\footnote{These singletons were significantly more difficult than the `r nrow(uni_ag_gt1)` unilemmas appearing more than once ($M_1=$ `r round(-mean(uni1$d_m),2)`; $M_{>1}=$ `r round(-mean(uni_ag_gt1$d_m),2)`; `r report_ttest(t.test(uni1$d_m, uni_ag_gt1$d_m))`).} 
 There was a significant relation between how often a unilemma appears and its difficulty: the more often a unilemma appears, the _easier_ it tended to be (`r report_cor(cor.test(uni_ag$d_m, uni_ag$n))`).
 Moreover, there was a weak but significant relation between the number of forms a unilemma appears on and its cross-linguistic variability (`r report_cor(cor.test(uni_ag$d_sd, uni_ag$n))`).
 It is perhaps intuitive that lower-variability items tend to be earlier-learned, and are thus often selected to be on CDI forms, echoing prior work characterizing the consistency of children's first words across several languages [@tardif2008baby].
@@ -383,9 +383,10 @@ This ensured that, in expectation, the same number of items per language would a
 <!-- ToDO: add characterization of cross-linguistic composition of CDIs: category representation per language (and lexical class); items on k forms vs. item difficulty... -->
 ```{r, eval=F}
 sort(unique(xldf_clean$category)) # "sounds2", "unknown", NA, "other" ... "locations_quantities_adverbs"
-xldf_clean %>% group_by(language) %>%
+tmp <- xldf_clean %>% group_by(language) %>%
   summarise(categories = length(unique(category))) %>%
   arrange(desc(categories)) # 15-24 semantic categories per form
+# Forms have a median of 21 semantic categories (mean = 20.5).
 ```
 
 
@@ -415,6 +416,14 @@ uni_per_form %>% ggplot(aes(x=jitter(n), y=d_sd, color=d_m)) +
 ```
 
 
+## Cross-validation Results
+
+Table X shows the optimal values of $k$ selected for each sublist selection method, along with how well each method performs with the chosen $k$. The syntactic category selection method with $k=27$ had the highest overall correlation ($r=0.856), and resulted in an average overlap of 92.2 items on the resulting lists.
+There was nearly a 3-way tie for the next best selection method: 2 difficulty strata ($r=0.844$, $k=27$), unstratified ($r=0.841$, $k=23$), and semantic category ($r=0.841$, $k=25$).
+Random selection showed the lowest correlation ($r=0.776$, $k=23$), but resulted in more overlap than semantic category selection (88.4 vs. 85.8 items).
+It is noteworthy that despite the wide range of $k$ values that were evaluated, there was some consistency in the optimal $k$ for all methods (range: 23-27).
+The similar correlations and overlap of the top methods also motivates us to investigate whether there is some convergence in the items that are being selected, which we will return to after examining the generalization results.
+
 ```{r frequent-swadesh-items, eval=F}
 # which Swadesh items crop up over and over? (have to decide which items to discuss in the paper!)
 #all_swad <- c()
@@ -429,7 +438,7 @@ uni_per_form %>% ggplot(aes(x=jitter(n), y=d_sd, color=d_m)) +
 ```
 
 
-```{r best-k-by-method}
+```{r best-k-by-method, tab.cap="The optimal $k$ for each sublist selection method, and measures of average overlap and item difficulty correlations with held-out languages."}
 full_fscores <- readRDS(here("data/intermediates/full_fscores_allforms.rds"))
 
 cv_res_sum <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rds"))
@@ -443,12 +452,16 @@ cv_output <- cv_res_sum |>
 best_k <- cv_output |>
   ungroup() |> group_by(sublist) |>
   filter(difficulty_cor == max(difficulty_cor, na.rm = TRUE)) |>
-  slice(1) |> ungroup() |> arrange(desc(difficulty_cor))
+  slice(1) |> ungroup() |> arrange(desc(difficulty_cor)) |>
+  relocate(sublist, .before = k) |>
+  select(-rmse) |>
+  mutate(sublist = ifelse(sublist=="category", "semantic", sublist))
+names(best_k) = c("Selection Method", "Best k", "Avg. Overlap", "Difficulty r")
 best_k |> kableExtra::kable(digits=3)
 ```
 
 
-```{r plot-crossval-fscores, fig.width=7, fig.height=9}
+```{r plot-crossval-fscores, fig.width=7, fig.height=9, fig.cap="Difficulty correlation and overlap by k for the different sublist selection methods."}
 p1 <- ggplot(cv_res_sum,
        aes(x = k, y = num_overlap, col = sublist)) +
   geom_jitter(aes(col = sublist),
@@ -483,11 +496,11 @@ p3 <- cv_res_sum |>
   theme(axis.text.x = element_text(angle = 45, hjust=0.95, vjust=0.9)) 
 # ToDo: maybe sort these by the difference (Swadesh - random) ? 
 
-ggpubr::ggarrange(p1, p2, p3, ncol=1, common.legend = T)
+ggpubr::ggarrange(p1, p2, ncol=1, common.legend = T) # , p3
 ```
 
 
-```{r plot-swadesh-generalization-results, fig.width=6, fig.height=7}
+```{r plot-swadesh-generalization-results, fig.width=6, fig.height=7, fig.cap="Correlation of each sublist's ability scores vs. full CDI sumscores and overlap in the generalization test."}
 p1 <- ggplot(gen_res_sum,
        aes(x = language, y = sumscore_cor, fill = sublist)) +
   geom_col(position = "dodge") +
@@ -504,6 +517,7 @@ p2 <- ggplot(gen_res_sum,
 
 ggarrange(p1, p2, ncol=1, common.legend = T)
 ```
+
 
 ```{r create-final-swadesh-list, include=F}
 # ToDo: what shall we do? pick the best-performing method?
