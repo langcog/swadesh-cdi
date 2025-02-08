@@ -190,13 +190,14 @@ print(tab1, type="latex", comment = F,
       include.rownames=FALSE, size="\\fontsize{9pt}{10pt}\\selectfont")
 ```
 
+
 We pulled data for `r length(languages)` languages from Wordbank [@frank2017].
 For each language, we extracted production data for all forms present on Wordbank (including WG and WS, as well as other language-specific forms).
 We then stitched the data across all forms within a language by matching items by their item definition (i.e., what was actually presented on the form for that item) and category; we used fuzzy matching with manual correction to allow for instances where essentially one item had slight variation in item definitions across forms (e.g., spelling differences, different ordering for multiple options).
 We used data from `r length(train_langs)` languages with more than 300 participants as our training languages from which we constructed our candidate word list, as it was possible to fit reliable IRT models from these data.
 The remaining `r length(gen_langs)` languages had too few participants to be analyzed with IRT, and we used them as our generalization languages to test how well the word list could generalize to novel languages.
 
-### unilemmas
+### Unilemmas
 
 Comparison across languages requires a method to map between words that correspond to broadly similar concepts across languages. 
 As such, each item on the CDI:WS for each language was mapped onto a set of “universal lemmas” or “unilemmas”, which are approximate cross-linguistic conceptual mappings of words. 
@@ -207,8 +208,11 @@ All unilemmas are accessible from Wordbank; details about the recent update can 
 
 ### Participants
 
-The Wordbank[^2] datasets consisted of CDI:WS production data for `r nrow(demo %>% filter(form=="WS"))` children aged 16--30 months and CDI:WG production data from `r nrow(demo %>% filter(form=="WG"))` children aged 8--18 months
-on `r sum(all_tab$items)` items across `r nrow(all_tab)` forms.[^3]
+```{r, eval=F, include=F}
+# The Wordbank[^2] datasets consisted of CDI:WS production data for `r nrow(demo %>% filter(form=="WS"))` children aged 16--30 months and CDI:WG production data from `r nrow(demo %>% filter(form=="WG"))` children aged 8--18 months on `r sum(all_tab$items)` items across `r nrow(all_tab)` forms.[^3] 
+```
+
+The Wordbank[^2] datasets consisted of CDI:WG and CDI:WS production data for `r sum(all_tab$N)` children aged 8--30 months `r sum(all_tab$items)` items across `r nrow(all_tab)` languages.[^3]
 Note that the distributions of demographic variables (age, sex, etc.) of these datasets are not matched, so comparing overall language ability estimates across languages would be ill-advised. 
 (See @frank2021 for a discussion of effects of demographic variables on vocabulary development.) 
 Thus, we focused only on the estimated item parameters, and in particular the variability of item difficulty ($b_i$).
@@ -279,7 +283,7 @@ report_cor(cor.test(uni_ag_gt1$d_m, uni_ag_gt1$d_sd)) # r=.03
 
 
 <!-- ToDo: update the language in this paragraph to be about CDI items per language (not just CDI:WS) -- or could add range of WG items -->
-Across the `r length(languages)` IRT models for different languages' CDI forms, difficulty and discrimination parameters for a total of `r nrow(xldf)` items were fitted.
+Across the `r length(languages)` IRT models for different languages' CDI forms, difficulty and discrimination parameters for a total of `r nrow(xldf_clean)` items were fitted.
 Of those items, 95.5% had unilemmas defined, with a median of `r median(table(xldf_clean$language))` per language (range: 440 in Chilean Spanish to 1061 in Mandarin Chinese). 
 A total of `r length(unique(xldf_clean$uni_lemma))` unique unilemmas were defined across the forms, but `r nrow(uni1)` of these were singletons, appearing on only one of the forms.\footnote{These singletons were significantly more difficult than the `r nrow(uni_ag_gt1)` unilemmas appearing more than once ($M_1=$ `r round(-mean(uni1$d_m),2)`; $M_{>1}=$ `r round(-mean(uni_ag_gt1$d_m),2)`; `r report_ttest(t.test(uni1$d_m, uni_ag_gt1$d_m))`).} 
 There was a significant relation between how often a unilemma appears and its difficulty: the more often a unilemma appears, the _easier_ it tended to be (`r report_cor(cor.test(uni_ag$d_m, uni_ag$n))`).
@@ -424,19 +428,6 @@ Random selection showed the lowest correlation ($r=0.776$, $k=23$), but resulted
 It is noteworthy that despite the wide range of $k$ values that were evaluated, there was some consistency in the optimal $k$ for all methods (range: 23-27).
 The similar correlations and overlap of the top methods also motivates us to investigate whether there is some convergence in the items that are being selected, which we will return to after examining the generalization results.
 
-```{r frequent-swadesh-items, eval=F}
-# which Swadesh items crop up over and over? (have to decide which items to discuss in the paper!)
-#all_swad <- c()
-#for(k in 2:31) {
-#  all_swad = c(all_swad, swad_lists[[k]]$uni_lemma)
-#}
-#swad_freq = sort(table(all_swad), decr=T)
-
-#library(wordcloud2)
-#wordcloud2(data=data.frame(word = names(swad_freq[1:150]), 
-#                           freq = as.vector(swad_freq[1:150]-13)), size=.5, color='random-dark')
-```
-
 
 ```{r best-k-by-method, tab.cap="The optimal $k$ for each sublist selection method, and measures of average overlap and item difficulty correlations with held-out languages."}
 full_fscores <- readRDS(here("data/intermediates/full_fscores_allforms.rds"))
@@ -500,24 +491,6 @@ ggpubr::ggarrange(p1, p2, ncol=1, common.legend = T) # , p3
 ```
 
 
-```{r plot-swadesh-generalization-results, fig.width=6, fig.height=7, fig.cap="Correlation of each sublist's ability scores vs. full CDI sumscores and overlap in the generalization test."}
-p1 <- ggplot(gen_res_sum,
-       aes(x = language, y = sumscore_cor, fill = sublist)) +
-  geom_col(position = "dodge") +
-  labs(y = "Sumscore correlation") +
-  theme_classic() + 
-  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) 
-
-p2 <- ggplot(gen_res_sum,
-       aes(x = language, y = num_overlap, fill = sublist)) +
-  geom_col(position = "dodge") +
-  labs(y = "Overlap size") +
-  theme_classic() +
-  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
-
-ggarrange(p1, p2, ncol=1, common.legend = T)
-```
-
 
 ```{r create-final-swadesh-list, include=F}
 # ToDo: what shall we do? pick the best-performing method?
@@ -564,9 +537,51 @@ all_swadesh |> group_by(syntactic_category, method) |>
   geom_col() + theme_classic() +
   facet_grid(cols=vars(method))
 
-swadesh_sublist <- all_swadesh |> count(uni_lemma) |>
-  filter(n>1)
+
+#library(wordcloud2)
+#swad_counts <- all_swadesh |> count(uni_lemma)
+#wordcloud2(data=data.frame(word = names(swad_counts$uni_lemma), 
+#                           freq = as.vector(swad_counts$n)), size=.5, color='random-dark')
+
+# Vote method: include any item that is selected by at least 2 of the top methods (N=107)
+#swadesh_sublist <- all_swadesh |> count(uni_lemma) |>
+#  filter(n>1)
+
+# Our decision is to use syntactic category stratification:
+swadesh_sublist <- syntactic_sublist
 ```
+
+```{r simulate-overlap-of-random-selection-methods-by-k, eval=F, include=F}
+# with N items, if you select 100 items 4 times (with replacement), what is the expected # of items that were selected 0, 1, 2, 3, or 4 times?
+
+tmp <- xldf_clean |> group_by(uni_lemma) |> summarise(n = n())
+Nitems = nrow(tmp |> filter(n>=27)) # number of unilemmas for k=27
+
+run_rand_sim <- function(Nitems, test_length=100, n_tests=4) {
+  items = 1:Nitems
+  result = data.frame()
+  for(i in 1:100) {
+    selections = c()
+    for(t in 1:n_tests) {
+      t = sample(items, test_length, replace=F)
+      selections = c(selections, t)
+    }
+    result = bind_rows(result, table(table(selections)))
+  }
+  result
+}
+
+sim_result <- run_rand_sim(483)
+sim_result[which(is.na(sim_result[,4])),4] = 0
+colMeans(sim_result)
+```
+
+
+For construction of the final Swadesh-CDI list, we chose the syntactic category subselection method with the optimal $k=27$ due to it resulting in the highest correlation between S-CDI and full CDI scores during cross-validation.
+However, we were struck that the top four selection methods performed so similarly, and thus opted to explore whether these distinct methods were choosing similar items (a convergent solution), or were finding distinct subsets of words that merely achieved similar results (equivalent local maxima). If the methods are indeed finding convergent solutions, we may have greater hope that the solution may generalize well to other languages.
+
+Examining the lists selected by each of the top four methods, we found that only 156 unique unilemmas were selected across the 400 items in the lists: 53 unilemmas were selected by all four methods -- far higher than chance (which increases with $k$, but for $k=27$ the expected overlap of 4 randomly selected lists would be $\sim 1$ unilemma out of the 483 unilemmas).
+A further 31 unilemmas were selected by 3 of the 4 methods (vs. chance: $\sim 13$ unilemmas).
 
 
 ## Characterizing the Swadesh-CDI 
@@ -632,20 +647,23 @@ cat_freq %>% ggplot(aes(x=freq, y=category, group=language)) +
 
 ```{r difficulty-by-category, fig.env = "figure", fig.pos = "h", fig.height=3.6, fig.width=3.4, fig.align = "center", fig.cap = "Mean cross-linguistic difficulty of CDI words by semantic category, showing that selection of Swadesh concepts broadly maintained representative difficulty. Bars represent bootstrapped 95\\% confidence intervals."}
 
+xldf_clean <- xldf_clean |>
+  mutate(SwadeshCDI = ifelse(uni_lemma %in% swadesh_sublist$uni_lemma, 1, 0))
+
 # remove categories that only exist in 1 or 2 languages:
-prod_cat <- xldf_clean %>% 
+prod_cat <- xldf_clean |>
   filter(!is.na(d), !is.na(category),
          !is.element(category, c("final_particles", "directions", "numbers", "articles", "other",
                                  "descriptive_words (adverbs)", "states", "unknown",
                                  "verb_endings", "verb_modifiers",
-                                 "classifiers", "locations_quantities_adverbs"))) %>%
-  group_by(language, category, SwadeshCDI) %>%
+                                 "classifiers", "locations_quantities_adverbs"))) |>
+  group_by(language, category, SwadeshCDI) |>
   summarise(d = mean(d), a1 = mean(a1))
 
 # mean variability of each category, across languages
-prod_cat %>% mutate(Items = ifelse(SwadeshCDI==1, "Swadesh", "other")) %>%
-  group_by(category, Items) %>%
-  tidyboot::tidyboot_mean(d, na.rm=T) %>%
+prod_cat %>% mutate(Items = ifelse(SwadeshCDI==1, "Swadesh", "other")) |>
+  group_by(category, Items) |>
+  tidyboot::tidyboot_mean(d, na.rm=T) |>
   ggplot(aes(x=reorder(category, mean), y=mean, group=Items, color=Items)) + 
   geom_point(alpha=.7, position = position_dodge2(.2)) +
   geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7, position = position_dodge2(.2)) +
@@ -677,9 +695,9 @@ swad_d_m %>% mutate(Swadesh = ifelse(SwadeshCDI, "Swadesh", "non-Swadesh")) %>%
 
 
 ```{r, swadesh-vs-non-swadesh-diff, echo=F}
-tmp <- xldf_clean %>% 
-  group_by(SwadeshCDI) %>% 
-  filter(!is.na(d)) %>%
+tmp <- xldf_clean |> 
+  group_by(SwadeshCDI) |>
+  filter(!is.na(d)) |>
   summarise(sd_d = sd(d), d = mean(d), 
             sd_a1 = sd(a1), a1 = mean(a1))
 # mean difficulty of Swadesh words: .11; mean difficulty of other words: 0.53
@@ -725,6 +743,23 @@ Table 2 shows the results of this comparison, alongside the upper bound random b
 Once again, the S-CDI performed nearly as well as a random sample of the actual CDI (random mean $r=0.994$).
 With the 10-item extension, the S-CDI's correlation rose to mean $r=0.993$, demonstrating the value of including items from the more difficult (and variable) categories that were underrepresented on the original list.
 
+```{r plot-swadesh-generalization-results, fig.width=6, fig.height=7, fig.cap="Correlation of each sublist's ability scores vs. full CDI sumscores and overlap in the generalization test."}
+p1 <- ggplot(gen_res_sum,
+       aes(x = language, y = sumscore_cor, fill = sublist)) +
+  geom_col(position = "dodge") +
+  labs(y = "Sumscore correlation") +
+  theme_classic() + 
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) 
+
+p2 <- ggplot(gen_res_sum,
+       aes(x = language, y = num_overlap, fill = sublist)) +
+  geom_col(position = "dodge") +
+  labs(y = "Overlap size") +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+
+ggarrange(p1, p2, ncol=1, common.legend = T)
+```
 
 ```{r gen-results, results='asis'}
 # ToDo: filter to generalization languages?
