@@ -293,7 +293,7 @@ However, these modest but significant correlations were also important to keep i
 
 <!--Fortunately, among the unilemmas appearing on at least two forms, there is no significant relation between the unilemmas' difficulty and cross-linguistic variability in difficulty.-->
 
-```{r fig-mean-item-diff, eval=F, fig.cap=c("Mean item difficulty for each CDI form. Bars represent bootstrapped 95\\% confidence intervals. Color shows mean age (months) of the sample, which is correlated with mean word difficulty (r=.57)."), fig.height=4.3, fig.width=3.4}
+```{r fig-mean-item-diff, eval=F, fig.cap=c("Mean item difficulty for each CDI form. Bars represent bootstrapped 95\\% confidence intervals. Color shows mean age (months) of the sample, which is correlated with mean word difficulty (r=.57)."), fig.height=5.5, fig.width=3.6}
 # re: Philip's question of are item difficulties comparable across languages:
 lang_d_m <- xldf_clean %>%
   group_by(language) %>% 
@@ -578,13 +578,18 @@ colMeans(sim_result)
 
 
 For construction of the final Swadesh-CDI list, we chose the syntactic category subselection method with the optimal $k=27$ due to it resulting in the highest correlation between S-CDI and full CDI scores during cross-validation.
-However, we were struck that the top four selection methods performed so similarly, and thus opted to explore whether these distinct methods were choosing similar items (a convergent solution), or were finding distinct subsets of words that merely achieved similar results (equivalent local maxima). If the methods are indeed finding convergent solutions, we may have greater hope that the solution may generalize well to other languages.
+However, we were struck that the top four selection methods performed so similarly, and thus opted to explore whether these distinct methods were choosing similar items (a convergent solution), or were finding distinct subsets of words that merely achieved similar results (equivalent local maxima). If the methods are indeed finding convergent solutions, we may be reassured that the particular method we choose may not make much of a difference.
 
 Examining the lists selected by each of the top four methods, we found that only 156 unique unilemmas were selected across the 400 items in the lists: 53 unilemmas were selected by all four methods -- far higher than chance (which increases with $k$, but for $k=27$ the expected overlap of 4 randomly selected lists would be $\sim 1$ unilemma out of the 483 unilemmas).
 A further 31 unilemmas were selected by 3 of the 4 methods (vs. chance: $\sim 13$ unilemmas).
-
+The fact that these various methods of selecting a Swadesh list tend to select many of the same unilemmas suggests that our choice may matter little.
 
 ## Characterizing the Swadesh-CDI 
+
+```{r, fig.width=5.5, fig.cap=c("The 100-item Swadesh-CDI list by semantic category, along with a few recommended items from the unrepresented semantic categories (in gray)."), echo=FALSE}
+knitr::include_graphics("figs/SwadeshCDI_list.pdf")
+```
+
 
 ```{r, fig.cap=c("The relative frequency of categories on the English CDI:WS form (e.g. n=103 action words / 680 total items = 0.15), and the relative frequency of categories represented in the 100-item Swadesh list."), echo=FALSE}
 #knitr::include_graphics("figs/SwadeshCDI_list.pdf")
@@ -601,7 +606,7 @@ swad_lex_cat <- prod_pars %>% filter(SwadeshCDI==1) %>% group_by(syntactic_categ
   summarise(n=n()) %>%
   group_by(syntactic_category) %>%
   summarise(n = mean(n)) %>% arrange(desc(n))
- sum(swad_lex_cat$n) # 171 words..
+ sum(swad_lex_cat$n) # 96 words
 
 en_cats <- prod_pars %>% filter(language=="English (American)") %>% select(semantic_category) %>% 
   group_by(semantic_category) %>% summarise(n = n()) %>% arrange(desc(n)) %>%
@@ -613,12 +618,15 @@ swad_cats <- swadesh_sublist %>% group_by(semantic_category) %>% summarise(n = n
   mutate(Swad_freq = n / sum(n)) %>% select(-n)
 
 
+missing_from_swadesh <- setdiff(en_cats$semantic_category, swad_cats$semantic_category)
+#setdiff(swad_cats$semantic_category, en_cats$semantic_category)
+
 en_cats %>% left_join(swad_cats) %>% kable(digits=2)
 ```
 
 The `r S_LEN` S-CDI items, shown in Fig. 3, represented `r nrow(na.omit(swad_cats))` of the 22 semantic categories present on the original American English CDI:WS form, with concrete nouns being most prevalent, followed by adjectives and verbs,
-and some categories entirely unrepresented: connecting words, helping verbs, quantifiers, pronouns, and toys (but see proposed extension below).
-64% of the S-CDI concepts were nouns, 20% were predicates (verbs and adjectives), XX% were function words, and XX% belonged to other lexical categories.
+and some categories entirely unrepresented: locations, helping verbs, quantifiers, and toys (but see proposed extension below).
+44% of the S-CDI concepts were nouns, 20% were predicates (verbs and adjectives), 15% were function words, and the remaining concepts belonged to other lexical categories.
 Compared to the relative frequency of items per lexical category on the 680-item English CDI:WS (46% nouns, 24% predicates, 15% function words, and 5% other), the S-CDI list tends to have more nouns (especially animals) and fewer function words.
 The S-CDI items were also present on more forms than typical in the selection set: on average, each item appeared on `r round(sum(xldf_clean$SwadeshCDI) / S_LEN, 0)` forms, despite only being required to appear on at least 23 forms.
 Finally, 2 S-CDI unilemmas were not present on the American English CDI:WS: *fly (animal)* and *crocodile*.
@@ -675,7 +683,7 @@ prod_cat %>% mutate(Items = ifelse(SwadeshCDI==1, "Swadesh", "other")) |>
 ```
 
 
-```{r fig-mean-swadesh-item-diff, fig.cap=c("Mean item difficulty of Swadesh vs. non-Swadesh CDI items per language. Swadesh items are consistently easier than non-Swadesh items, but show the same difficulty trend as non-Swadesh items across languages. Bars represent bootstrapped 95\\% confidence intervals."), fig.height=3.5, fig.width=3.4}
+```{r fig-mean-swadesh-item-diff, fig.cap=c("Mean item difficulty of Swadesh vs. non-Swadesh CDI items per language. Swadesh items are consistently easier than non-Swadesh items, but show the same difficulty trend as non-Swadesh items across languages. Bars represent bootstrapped 95\\% confidence intervals."), fig.height=5.5, fig.width=4.0}
 
 swad_d_m <- xldf_clean %>% 
   group_by(language, SwadeshCDI) %>% 
@@ -698,16 +706,16 @@ swad_d_m %>% mutate(Swadesh = ifelse(SwadeshCDI, "Swadesh", "non-Swadesh")) %>%
 tmp <- xldf_clean |> 
   group_by(SwadeshCDI) |>
   filter(!is.na(d)) |>
-  summarise(sd_d = sd(d), d = mean(d), 
-            sd_a1 = sd(a1), a1 = mean(a1))
+  summarise(sd_d = sd(d), d = -mean(d), 
+            sd_a1 = sd(a1), a1 = -mean(a1))
 # mean difficulty of Swadesh words: .11; mean difficulty of other words: 0.53
 # (mean of all: mean(xldf$d, na.rm=T) .34
 
 swad_discrim = t.test(subset(xldf_clean, SwadeshCDI==1)$a1, 
                       subset(xldf_clean, SwadeshCDI==0)$a1) 
 
-swad_diff_ttest = t.test(subset(xldf_clean, SwadeshCDI==1)$d, 
-                         subset(xldf_clean, SwadeshCDI==0)$d)
+swad_diff_ttest = t.test(-subset(xldf_clean, SwadeshCDI==1)$d, 
+                         -subset(xldf_clean, SwadeshCDI==0)$d)
 ```
 
 Comparing the IRT parameters of the S-CDI unilemmas to the rest of the items (across all CDI:WS forms) showed that the discrimination parameter (i.e., slope) of the Swadesh items did not significantly differ from the others, suggesting that the Swadesh items could measure ability as well as non-Swadesh unilemmas.
