@@ -1,5 +1,7 @@
 ---
 title: "Measuring children's early vocabulary in low-resource languages using a Swadesh-style word list"
+# A Swadesh-Inspired Approach to Measuring Early Vocabulary (in Low-Resource Languages)
+# Toward Universal Vocabulary Assessment: A Swadesh-Style Word List (for Low-Resource Languages)
 bibliography: library.bib
 document-params: "10pt, letterpaper"
 
@@ -23,8 +25,9 @@ abstract: >
     analysis of psychometric properties of translation-equivalent concepts that are frequently included on 
     existing CDIs. Leveraging 32 datasets from existing CDIs, we propose a list of 100 concepts that have
     low variability in their cross-linguistic learning difficulty. This pool of common concepts---analogous 
-    to the "Swadesh" lists used in glottochronology---can be used as a starting point for future 
-    CDI adaptations. We test how well the proposed list generalizes to data from 10 additional languages.
+    to the Swadesh lists, which are basic vocabulary lists used in glottochronology for cross-language 
+    comparison---can be used as a starting point for future CDI adaptations. We test how well the proposed 
+    list generalizes to data from 10 additional languages.
     
 keywords: >
     early language learning; CDI; psychometrics; cross-linguistic comparison; Swadesh vocabulary
@@ -108,7 +111,7 @@ On the CDIs, vocabulary size is assessed via a checklist format, which enables c
 For example, the American English CDI Words & Sentences (CDI:WS) form, targeting children 16--30 months of age, is comprised of 680 words from 22 semantic categories, including nouns (e.g., Body Parts, Toys, and Clothing), action words, descriptive words, and closed-class words such as pronouns. 
 Items on this original CDI:WS were chosen to reflect a range of difficulty levels (i.e., easy, moderate, and more difficult), as well as capture the linguistic and societal contexts of (most) children living in the US.
 The CDI Words & Gestures form (CDI:WG) targets children 8--18 months of age, typically consisting of a subset of approximately 500 of the easier items from the CDI:WS of the same language, and which asks caregivers to report children's comprehension as well as production of each word. 
-Short versions of the CDI:WS forms are also available [e.g., @Fenson2000], each consisting of a set of around 100 items, often selected to generate scores that strongly correlate with scores on the full forms, while retaining representation across a broad set of semantic categories.
+Short versions of the CDI:WS forms are also available [e.g., @marchman2023], each consisting of a set of around 100 items, often selected to generate scores that strongly correlate with scores on the full forms, while retaining representation across a broad set of semantic categories.
 <!-- ToDo: Alvin, this could be a good place to summarize a bit more of your review...(maybe cite as in prep, or even get a doi on figshare/OSF?) --> 
 
 <!-- gap! -->
@@ -127,8 +130,7 @@ Given this finding, it is reasonable to ask: Is there a set of translation equiv
 Identifying a small set of translation-equivalent items that function well for assessing early language development could lead not only to shorter assessments in languages that already have CDIs, but also to lowering the burden of creating CDIs in new languages. 
 Our goal is to leverage the roughly 100,000 CDI administrations from 32 languages on Wordbank to choose and systematically evaluate sublists that meet researchers' criteria for creating a new CDI.
 
-To facilitate this effort, it is useful to leverage Item-Response Theory [IRT, @embretson2013] models. 
-IRT models infer both the abilities of test takers and the difficulty of individual test items (i.e., words), along standardized dimensions. 
+To facilitate this effort Item-Response Theory [IRT, @embretson2013] models are useful, as they infer both the abilities of test takers and the difficulty of individual test items (i.e., words), along standardized dimensions. 
 Recent work using IRT models has facilitated our understanding of the psychometric properties of specific CDI instruments. 
 As such, they offer the potential to not only yield more accurate measures of children's language ability, but also to enable the construction of language-specific Computerized Adaptive Tests (CATs), which choose the next test item based on the responses to the previous items, and thus quickly hone in on the test taker's language ability. 
 CAT-based CDIs presenting 50 or fewer items have been found to strongly correlate with scores on the full CDI:WS [@chai2020;@mayor2019;@Makransky2016]. 
@@ -192,6 +194,7 @@ print(tab1, type="latex", comment = F,
 
 
 We pulled data for `r length(languages)` languages from Wordbank [@frank2017].
+Table 1 summarizes the data used for our analysis. 
 For each language, we extracted production data for all forms present on Wordbank (including WG and WS, as well as other language-specific forms).
 We then stitched the data across all forms within a language by matching items by their item definition (i.e., what was actually presented on the form for that item) and category; we used fuzzy matching with manual correction to allow for instances where essentially one item had slight variation in item definitions across forms (e.g., spelling differences, different ordering for multiple options).
 We used data from `r length(train_langs)` languages with more than 300 participants as our training languages from which we constructed our candidate word list, as it was possible to fit reliable IRT models from these data.
@@ -322,7 +325,7 @@ There were two key desiderata for a Swadesh CDI list:
 1. Generalizability to new languages, and 
 2. Comprehensive measurement of a child's vocabulary.
 
-To satisfy the generalizability criterion, we aimed to choose unilemmas with low variability in their cross-linguistic difficulty---that is, unilemmas that are similarly difficult to learn across languages, operationalized as having the lowest standard deviation in item difficulty.
+To satisfy the generalizability criterion, we aimed to choose unilemmas with low variability in their cross-linguistic difficulty---that is, unilemmas that are similarly difficult to learn across languages, operationalized as having the lowest standard deviation across languages in item difficulty.
 To satisfy the comprehensiveness criterion, we adopted three specific criteria that were most often used in previous short form constructions: diversity in item difficulties, semantic categories, or syntactic categories represented.
 These criteria were operationalized by stratifying all unilemmas by difficulty, semantic category, or syntactic category, and selecting the lowest variability unilemmas within each stratum.
 
@@ -422,7 +425,7 @@ uni_per_form %>% ggplot(aes(x=jitter(n), y=d_sd, color=d_m)) +
 
 ## Cross-validation Results
 
-Table X shows the optimal values of $k$ selected for each sublist selection method, along with how well each method performs with the chosen $k$. The syntactic category selection method with $k=27$ had the highest overall correlation ($r=0.856), and resulted in an average overlap of 92.2 items on the resulting lists.
+Table X shows the optimal values of $k$ selected for each sublist selection method, along with how well each method performs with the chosen $k$. The syntactic category selection method with $k=27$ had the highest overall correlation ($r=0.856$), and resulted in an average overlap of 92.2 items on the resulting lists.
 There was nearly a 3-way tie for the next best selection method: 2 difficulty strata ($r=0.844$, $k=27$), unstratified ($r=0.841$, $k=23$), and semantic category ($r=0.841$, $k=25$).
 Random selection showed the lowest correlation ($r=0.776$, $k=23$), but resulted in more overlap than semantic category selection (88.4 vs. 85.8 items).
 It is noteworthy that despite the wide range of $k$ values that were evaluated, there was some consistency in the optimal $k$ for all methods (range: 23-27).
