@@ -122,8 +122,8 @@ For example, the American English CDI:WS and Mexican Spanish CDI:WS forms each h
 [^1]: [https://mb-cdi.stanford.edu/adaptations.htm](https://mb-cdi.stanford.edu/adaptations.htm)
 
 While CDI adaptations now exist for many languages, there remain important gaps in language coverage.
-For example, the CDI has been adapted to only very few languages in India and Africa, despite the large number of speakers of some of these overlooked languages (e.g., Punjabi, Marathi, Telugu, Hausa, and Amharic, all of which have over 50 million speakers [CITE Ethnologue]). 
-Moreover, the CDI has not been adapted to any of the thousands of languages spoken by indigenous peoples in the Americas, Africa, Asia, and Oceania.
+For example, the CDI has been adapted to only very few languages in India and Africa, despite the large number of speakers of some of these overlooked languages (e.g., Punjabi, Marathi, Telugu, Hausa, and Amharic, all of which have over 50 million speakers [@eberhard2025]). 
+Moreover, the CDI has not been adapted to any of the thousands of languages spoken by indigenous peoples around the world.
 The lack of CDIs in these languages is a significant barrier to understanding the diversity of language development across the world, which is crucial for developing and validating theories of language acquisition that are purportedly universal [@kidd2022; @singh2023].
 More broadly, many of these languages are under-resourced, and lack a language resource ecosystem---not only vocabulary assessment instruments, but also corpora, acquisition descriptions, computational tools, and other resources supporting language development research [@hellwig2021].
 The absence of these resources also makes CDI development more difficult---for example, examining corpora of child and child-directed language is a common method for selecting items for a new CDI [@jaruskova2023]; this approach would not be possible if such corpora do not exist, or are not appropriately pre-processed and made accessible.
