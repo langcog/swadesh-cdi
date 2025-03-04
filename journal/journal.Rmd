@@ -113,19 +113,26 @@ Short versions of the CDI:WS forms are also available [e.g., @Fenson2000], each 
 
 <!-- gap! -->
 Creating a new CDI requires a lot of effort and resources, presenting a daunting barrier to increasing the diversity of languages studied.
-Following the guidelines[^1] from the MacArthur-Bates CDI Advisory Board, the process of adapting a CDI for a language other than American English goes well beyond simply translating items on these forms to that new language. 
+Following the guidelines[^1] from the MacArthur-Bates CDI Advisory Board, the process of adapting a CDI for a language other than American English goes well beyond simply translating items on these forms to that new language [see @jaruskova2023; @brookes2025]. 
 While the process can begin with identifying translation equivalents (i.e., items that capture the same general concept in both languages, e.g., "dog" in English, and "perro" in Spanish), the final item set must then be filtered so that all items appropriately reflect the linguistic and sociocultural context of the children learning that language. 
-This process usually requires considerable time and effort by researchers who are both native speakers of the language and who have experience with children, to first select and identify translation equivalents and to then iteratively add, refine, and pilot the new CDI in the target language (see [@jaruskova2023]). 
+This process usually requires considerable time and effort by researchers who are both native speakers of the language and who have experience with children, to first select and identify translation equivalents and to then iteratively add, refine, and pilot the new CDI in the target language. 
 Because the goal is to obtain the set of items that best capture general trends and individual differences in that language, the items across CDIs in different languages do not necessarily overlap to a great extent. 
 For example, the American English CDI:WS and Mexican Spanish CDI:WS forms each have 680 words, but only have 463 overlapping concepts (68%).
 
 [^1]: [https://mb-cdi.stanford.edu/adaptations.htm](https://mb-cdi.stanford.edu/adaptations.htm)
 
+While CDI adaptations now exist for many languages, there remain important gaps in language coverage.
+For example, the CDI has been adapted to only very few languages in India and Africa, despite the large number of speakers of some of these overlooked languages (e.g., Punjabi, Marathi, Telugu, Hausa, and Amharic, all of which have over 50 million speakers [CITE Ethnologue]). 
+Moreover, the CDI has not been adapted to any of the thousands of languages spoken by indigenous peoples in the Americas, Africa, Asia, and Oceania.
+The lack of CDIs in these languages is a significant barrier to understanding the diversity of language development across the world, which is crucial for developing and validating theories of language acquisition that are purportedly universal [@kidd2022; @singh2023].
+More broadly, many of these languages are under-resourced, and lack a language resource ecosystem---not only vocabulary assessment instruments, but also corpora, acquisition descriptions, computational tools, and other resources supporting language development research [@hellwig2021].
+The absence of these resources also makes CDI development more difficult---for example, examining corpora of child and child-directed language is a common method for selecting items for a new CDI [@jaruskova2023]; this approach would not be possible if such corpora do not exist, or are not appropriately pre-processed and made accessible.
 
-It is well-established that, all over the world, early-learned words reflect the people and things that children are likely to experience, that is, words for family members, animals, and common household objects [@tardif2008baby; @frank2021]. 
-Given this finding, it is reasonable to ask: Is there a set of translation equivalents that would meet the criteria for inclusion on CDIs from multiple languages? 
-Identifying a small set of translation-equivalent items that function well for assessing early language development could lead not only to shorter assessments in languages that already have CDIs, but also to lowering the burden of creating CDIs in new languages. 
-Our goal is to leverage the roughly 100,000 CDI administrations from 32 languages on Wordbank to choose and systematically evaluate sublists that meet researchers' criteria for creating a new CDI.
+The importance and challenge of adapting the CDI to new, low-resource languages prompts the following question: Can we find a less resource-intensive way to create new CDIs that are valid and reliable?
+One possible approach is to identify a small set of items that are learned consistently across many languages, and which would meet the criteria for inclusion on many CDIs.
+This approach would lower the burden of creating CDIs in new languages, as a translation of this common set of items could serve as the basis for a new CDI adaptation.
+Furthermore, finding a small set of items that are nonetheless highly informative for vocabulary assessment could also lead to shorter assessments in languages that already have CDIs.
+Our goal in the current study is to leverage the roughly 100,000 CDI administrations from 32 languages on Wordbank to choose and systematically evaluate small sets of items that may meet researchers' criteria for creating a new CDI.
 
 To facilitate this effort, it is useful to leverage Item-Response Theory [IRT, @embretson2013] models. 
 IRT models infer both the abilities of test takers and the difficulty of individual test items (i.e., words), along standardized dimensions. 
