@@ -186,8 +186,11 @@ While other standard IRT models exist (e.g., the 3PL model adds a "guessing" par
 
 ```{r, show-data-new, echo=F, results="asis"}
 # ToDo: split out WS and WG items (and Ns), or not?
-it_tab <- model_stats %>% select(-iterations) %>%
-  arrange(desc(participants))
+it_tab <- model_stats |> select(-iterations) |>
+  arrange(desc(participants)) |>
+  rename(Language = language,
+         Participants = participants, 
+         Items = items)
 
 bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
 
@@ -615,7 +618,7 @@ swad_lex_cat <- prod_pars %>% filter(SwadeshCDI==1) %>% group_by(syntactic_categ
   summarise(n=n()) %>%
   group_by(syntactic_category) %>%
   summarise(n = mean(n)) %>% arrange(desc(n))
- sum(swad_lex_cat$n) # 96 words
+# sum(swad_lex_cat$n) # 96 words
 
 en_cats <- prod_pars %>% filter(language=="English (American)") %>% select(semantic_category) %>% 
   group_by(semantic_category) %>% summarise(n = n()) %>% arrange(desc(n)) %>%
