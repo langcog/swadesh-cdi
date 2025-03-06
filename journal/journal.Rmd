@@ -222,7 +222,7 @@ All unilemmas are accessible from Wordbank; details about the recent update can 
 # The Wordbank[^2] datasets consisted of CDI:WS production data for `r nrow(demo %>% filter(form=="WS"))` children aged 16--30 months and CDI:WG production data from `r nrow(demo %>% filter(form=="WG"))` children aged 8--18 months on `r sum(all_tab$items)` items across `r nrow(all_tab)` forms.[^3] 
 ```
 
-The Wordbank[^2] datasets consisted of CDI:WG and CDI:WS production data for `r sum(all_tab$N)` children aged 8--30 months `r sum(all_tab$items)` items across `r nrow(all_tab)` languages.[^3]
+The Wordbank[^2] datasets consisted of CDI:WG and CDI:WS production data for `r sum(all_tab$N)` children aged 8--30 months `r sum(all_tab$items)` items across `r nrow(all_tab)` languages (release: `wordbank_20240111`).[^3]
 Note that the distributions of demographic variables (age, sex, etc.) of these datasets are not matched, so comparing overall language ability estimates across languages would be ill-advised. 
 (See @frank2021 for a discussion of effects of demographic variables on vocabulary development.) 
 Thus, we focused only on the estimated item parameters, and in particular the variability of item difficulty ($b_i$).
@@ -338,7 +338,7 @@ These criteria were operationalized by stratifying all unilemmas by difficulty, 
 
 We arbitrarily selected a list size of 100 items[^4], noting that the same procedure could be followed to generate lists of larger or smaller sizes. 
 We thus wanted to select the 100 unilemmas with the least variability in item difficulty; this process was either conducted across all unilemmas (i.e., unstratified), or stratified by difficulty, by semantic category, or by syntactic category.
-For difficulty stratification, we binned the unilemmas into 2--5 quantiles by difficulty, and the least variable items were equally drawn across all strata. 
+For difficulty stratification, we binned the unilemmas into 2--5 quantiles by difficulty, and an equal number of the least variable items per strata were selected. 
 For semantic category stratification, we considered the semantic categories that were the most common across all languages, while for syntactic category stratification, we classified all items as nouns, predicates (verbs and adjectives), function words, or other (e.g., onomatopoeia, routinized phrases, closed class adverbs).
 In each case, we calculated the mean proportion of each semantic or syntactic category across all languages.
 The mean proportions were then rounded to fit 100 items, resulting in quotas for each category; least variable items were drawn within each category to satisfy the quotas.
@@ -404,7 +404,7 @@ tmp <- xldf_clean %>% group_by(language) %>%
 ```
 
 
-However, note that selecting $N$ items uniformly at random from a full CDI list sets quite a high bar: if your other method of selecting items introduces any bias (e.g., selecting easier or more difficult items, on average), then the randomly-selected baseline will have the stronger correlation with the full set.[^5]
+However, note that selecting $N$ items uniformly at random from a full CDI list sets quite a high bar: if your other method of selecting items introduces any difficulty bias (e.g., selecting easier or more difficult items, on average), then the randomly-selected baseline will have the stronger correlation with the full set.[^5]
 Thus, the goal for the Swadesh list is to generate scores as strongly correlated with the full CDI scores as the random baseline's correlation -- while also selecting items that better generalize to out-of-distribution languages by having less variation in cross-linguistic difficulty.
 
 [^5]: In fact, random subsets of items work so well--ending up with representative numbers of words per semantic and syntactic categories, and of varying difficulty--that researchers initially start CDI short forms using a random subset of items (e.g., ToDo CITE).
@@ -432,12 +432,11 @@ uni_per_form %>% ggplot(aes(x=jitter(n), y=d_sd, color=d_m)) +
 
 ## Cross-validation Results
 
-Table X shows the optimal values of $k$ selected for each sublist selection method, along with how well each method performs with the chosen $k$. The syntactic category selection method with $k=27$ had the highest overall correlation ($r=0.856$), and resulted in an average overlap of 92.2 items on the resulting lists.
+Table 2 shows the optimal values of $k$ selected for each sublist selection method, along with the correlation of the selected lists' items with item difficulty from the held out language, and how much average overlap there is between the 100 list items and the held out language. The syntactic category selection method with $k=27$ had the highest overall correlation ($r=0.856$), and resulted in an average overlap of 92.2 items on the resulting lists.
 There was nearly a 3-way tie for the next best selection method: 2 difficulty strata ($r=0.844$, $k=27$), unstratified ($r=0.841$, $k=23$), and semantic category ($r=0.841$, $k=25$).
 Random selection showed the lowest correlation ($r=0.776$, $k=23$), but resulted in more overlap than semantic category selection (88.4 vs. 85.8 items).
 It is noteworthy that despite the wide range of $k$ values that were evaluated, there was some consistency in the optimal $k$ for all methods (range: 23-27).
-The similar correlations and overlap of the top methods also motivates us to investigate whether there is some convergence in the items that are being selected, which we will return to after examining the generalization results.
-
+<!-- The similar correlations and overlap of the top methods also motivates us to investigate whether there is some convergence in the specific items that are being selected, which we will return to after examining the generalization results.-->
 
 ```{r best-k-by-method, tab.cap="The optimal $k$ for each sublist selection method, and measures of average overlap and item difficulty correlations with held-out languages."}
 full_fscores <- readRDS(here("data/intermediates/full_fscores_allforms.rds"))
@@ -634,12 +633,12 @@ missing_from_swadesh <- setdiff(en_cats$semantic_category, swad_cats$semantic_ca
 en_cats %>% left_join(swad_cats) %>% kable(digits=2)
 ```
 
-The `r S_LEN` S-CDI items, shown in Fig. 3, represented `r nrow(na.omit(swad_cats))` of the 22 semantic categories present on the original American English CDI:WS form, with concrete nouns being most prevalent, followed by adjectives and verbs,
+The `r S_LEN` S-CDI items, shown in Figure 2, represented `r nrow(na.omit(swad_cats))` of the 22 semantic categories present on the original American English CDI:WS form, with concrete nouns being most prevalent, followed by adjectives and verbs,
 and some categories entirely unrepresented: locations, helping verbs, quantifiers, and toys (but see proposed extension below).
-44% of the S-CDI concepts were nouns, 20% were predicates (verbs and adjectives), 15% were function words, and the remaining concepts belonged to other lexical categories.
-Compared to the relative frequency of items per lexical category on the 680-item English CDI:WS (46% nouns, 24% predicates, 15% function words, and 5% other), the S-CDI list tends to have more nouns (especially animals) and fewer function words.
+43% of the S-CDI concepts were nouns, 20% were predicates (verbs and adjectives), 14% were function words, and the remaining concepts belonged to other lexical categories.
+These proportions are broadly similar to the lexical category proportions on the 680-item English CDI:WS (46% nouns, 24% predicates, 15% function words, and 5% other).
 The S-CDI items were also present on more forms than typical in the selection set: on average, each item appeared on `r round(sum(xldf_clean$SwadeshCDI) / S_LEN, 0)` forms, despite only being required to appear on at least 23 forms.
-Finally, 2 S-CDI unilemmas were not present on the American English CDI:WS: *fly (animal)* and *crocodile*.
+<!-- Finally, X S-CDI unilemmas were not present on the American English CDI:WS: ... -->
 
 Figure 2 shows the average cross-linguistic difficulty of CDI items by semantic category, for both Swadesh and non-Swadesh items. 
 The difficulty of Swadesh items generally tracked with that of non-Swadesh items, although there were cases where one or the other was more or less difficult.
@@ -729,16 +728,17 @@ swad_diff_ttest = t.test(-subset(xldf_clean, SwadeshCDI==1)$d,
 ```
 
 Comparing the IRT parameters of the S-CDI unilemmas to the rest of the items (across all CDI:WS forms) showed that the discrimination parameter (i.e., slope) of the Swadesh items did not significantly differ from the others, suggesting that the Swadesh items could measure ability as well as non-Swadesh unilemmas.
-However, S-CDI items were significantly easier than other unilemmas (mean S-CDI $d=$ `r round(tmp[2,"d"], 2)`, others' mean $d=$ `r round(tmp[1,"d"], 2)`, `r report_ttest(swad_diff_ttest)`).
+However, S-CDI items were significantly easier than other unilemmas (mean S-CDI $d=$ `r round(tmp[2,"d"], 2)`, others' mean $d=$ `r round(tmp[1,"d"], 2)`, `r report_ttest(swad_diff_ttest)`), which could result in older/more-skilled children being at ceiling on the test.
 
-To limit the likelihood of a ceiling effect, we proposed extending the S-CDI with 10 additionanl unilemmas chosen from the original Swadesh (1971) list, which were selected to fill gaps in the S-CDI, including pronouns (_I, you, we, this, that_), quantifiers (_all, many, not_), and question words (_who, what_).
+ToDo REVIEW THIS RECOMMENDATION:
+To mitigate the likelihood of a ceiling effect, we propose extending the S-CDI with 10 additional unilemmas chosen from the original Swadesh (1971) list, which were selected to fill gaps in the S-CDI, including pronouns (_I, you, we, this, that_), quantifiers (_all, many, not_), and question words (_who, what_).
 These unilemmas are included on a mean of 21 of the 26 forms, but are of greater difficulty (mean $d=0.84$), and cross-linguistic variability (mean $sd(d)=1.36$).
 
 
 ## Validating the Swadesh CDI
 
 To validate the S-CDI, we first measured how well simulated raw scores from the S-CDI items correlated with full CDI:WS scores.
-This metric approximately reflects how reliable the S-CDI would be as a measure of a child's vocabulary.
+This metric approximately reflects how valid the S-CDI would be as a measure of a child's vocabulary.
 On average, for the `r length(train_langs)` large CDI:WS datasets, the S-CDI's scores were strongly related to the full CDI:WS scores (mean $r=0.996$; $min=0.989$, $max=0.998$; full table on [OSF](https://osf.io/8swhb/?view_only=6f6ab9818f2a4bb288e05ca9e12f540c)).
 We compared these correlations against a baseline that simulated an upper bound for how well the Swadesh CDI could be expected to perform: randomly sample $N$ items from the actual CDI:WS of the target language, where $N$ is the number of Swadesh items that are present on the form.
 On average, the `r length(train_langs)` CDI forms included $N=98$ of the Swadesh items.
