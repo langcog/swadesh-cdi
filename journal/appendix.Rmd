@@ -26,30 +26,30 @@ html_table_width <- function(kable_output, width){
   sub("<table>", paste0("<table>\n", width_html), kable_output)
 } 
 
-source(here("cross-ling-comparison-helpers.R"))
+source(here("scripts/04-cross-ling-comparison-helpers.R"))
 
-# long data-frame of all WS production parameters
-load(here("data/xling-WSprod-IRTparms.Rdata"))
+# production fits
+load(here("data/intermediates/xldf_clean_allforms.Rdata")) 
+# xldf_clean, prod_pars
+# 42 languages, 28541 parameters
 
-low_data_langs = c("Persian","Finnish","Kiswahili","Irish",
-                   "English (Irish)","Kigiriama","Spanish (Peruvian)","Greek (Cypriot)")
+load(file=here("data/intermediates/generalization_results.rds"))
+# gen_res_sum, gen_res
 
-xldf <- xldf %>% mutate(uni_lemma = ifelse(uni_lemma=="NA", NA, uni_lemma))
-xldf <- xldf %>% filter(!is.na(uni_lemma)) # only want the words with defined uni-lemmas
-xldf_lowd <- xldf %>% filter(is.element(language, low_data_langs)) # 5464
-xldf <- xldf %>% filter(!is.element(language, low_data_langs)) # 17715
+model_stats <- readRDS(here("data/intermediates/model_stats.rds"))
 
-# align some categories: Russian has descriptive adjectives and adverbs
-xldf[which(xldf$category=="descriptive_words (adjectives)"),]$category = "descriptive_words"
-xldf[which(xldf$category=="outside_places"),]$category = "outside"
+gen_langs <- model_stats |> filter(participants < 300) |> pull(language)
+
+xldf_lowd <- xldf_clean %>% filter(is.element(language, gen_langs)) # 6324
+xldf_train <- xldf_clean %>% filter(!is.element(language, gen_langs)) # 22217
 
 
-olap <- get_uni_lemma_overlap(xldf)
+olap <- get_uni_lemma_overlap(xldf_clean)
 ```
 
-## Uni-lemma Overlap on CDI:WS Forms
+## Uni-lemma Overlap on CDI Forms
 
-Number of overlapping concepts on each pair of CDI:WS forms.
+Number of overlapping concepts on each pair of CDI forms.
 American English has the highest average degree of overlap (468 uni-lemmas), which may be driven in large part by it being the oldest form, from which many others were adapted.
 The form with the lowest average degree of overlap is European Spanish, with only 325 uni-lemmas shared with other forms, on average.
 
@@ -62,9 +62,14 @@ heatmap.2(olap, dendrogram = "none", margins=c(10,10))
 ## Word Difficulty by Semantic Category and Language
 
 ```{r semantic-cats-by-lang, fig.width=10, fig.height=18, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Mean difficulty of CDI words by semantic category and language. Bars represent bootstrapped 95\\% confidence intervals."}
-prod_cat <- xldf %>% group_by(language, category) %>%
+# conversations (JP) -> "games_routines" ?
+# sounds2 (JP) -> "sounds" ?
+# prepositional_pronouns -> ... "connecting_words" ?
+
+prod_cat <- xldf_clean %>% group_by(language, category) %>%
   filter(!is.na(d), !is.na(category),
          !is.element(category, c("final_particles", "directions", "numbers", "articles", "other",
+                                 "others", "conversations", "sounds2", "prepositional_pronouns",
                                  "descriptive_words (adverbs)", "states", "unknown",
                                  "verb_endings", "verb_modifiers",
                                  "classifiers", "locations_quantities_adverbs"))) %>%
@@ -83,19 +88,19 @@ prod_cat %>% ggplot(aes(x=reorder(language, mean), y=mean)) + geom_point(alpha=.
 We look at the Spearman correlation between the item difficulty of each language compared to each other language. 
 We might expect this to recapitulate the historical relationship between languages, with more similar languages having more similar item difficulties (e.g., Quebecois and European French).
 
-```{r xling-sim, fig.width=10, fig.height=10, set.cap.width=T, num.cols.cap=2, fig.cap = "Cross-linguistic similarity (Spearman correlation) of IRT item difficulty from the CDI:WS."}
+```{r xling-sim, fig.width=10, fig.height=10, set.cap.width=T, num.cols.cap=2, fig.cap = "Cross-linguistic similarity (Spearman correlation) of IRT item difficulty from the CDI."}
 # parm diffs in low- vs. high-data langs
 #t.test(xldf$d, xldf_lowd$d) # -.45 vs. -.02 (closer to prior of 0 in low-data langs)
 #t.test(xldf$a1, xldf_lowd$a1) # higher discrim in high-data langs
 
-tmp <- get_cross_ling_difficulty_cors(xldf)
+tmp <- get_cross_ling_difficulty_cors(xldf_clean)
 prod_cors = tmp$prod_cors
 prod_sims = tmp$prod_sims
 
 Colors = brewer.pal(11,"Spectral")
 diag(prod_cors) = NA
 
-#pdf(file="xling_difficulty_similarity_WSprod.pdf", width=13, height=13)
+#pdf(file="xling_difficulty_similarity.pdf", width=13, height=13)
 heatmap.2(prod_cors, col=Colors, margins=c(10,10))
 #dev.off()
 

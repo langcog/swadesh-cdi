@@ -41,7 +41,7 @@ get_cross_ling_difficulty_cors <- function(xldf) {
   for(l1 in languages) {
     for(l2 in languages) {
       tmp <- xldf %>% filter(language==l1 | language==l2, !is.na(d)) %>%
-        select(uni_lemma, category, lexical_category, language, d) %>%
+        select(uni_lemma, category, language, d) %>% # lexical_category,
         group_by(uni_lemma, language) %>%
         slice(1) %>% 
         pivot_wider(names_from = language, values_from = d) %>%
