@@ -1,0 +1,47 @@
+---
+title: "Appendix to _Measuring children's early vocabulary in low-resource languages using a Swadesh-style word list_"
+date: "March 23, 2025"
+---
+
+
+# Cross-validation Results
+
+```{r plot-crossval-fscores, fig.width=7, fig.height=9, fig.cap="Difficulty correlation and overlap by k for the different sublist selection methods."}
+cv_res_sum <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rds"))
+
+p1 <- ggplot(cv_res_sum,
+       aes(x = k, y = num_overlap, col = sublist)) +
+  geom_jitter(aes(col = sublist),
+              alpha = .1) +
+  geom_boxplot(aes(group = interaction(k, sublist))) +
+  labs(y = "Overlap") + theme_classic()
+
+p2 <- ggplot(cv_res_sum,
+       aes(x = k, y = difficulty_cor, col = sublist)) +
+  geom_jitter(aes(col = sublist),
+              alpha = .1) +
+  geom_boxplot(aes(group = interaction(k, sublist))) +
+  labs(y = "Difficulty correlation") + theme_classic()
+
+# full vs. Swadesh fscore correlation for k=23
+fscore_cor_t <- t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor - 
+                       subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor) # n.s.
+
+cv_res_sum$best_k = F
+for(i in 1:nrow(best_k)) {
+  idx <- which(cv_res_sum$k==best_k[i,]$k & cv_res_sum$sublist==best_k[i,]$sublist)
+  cv_res_sum[idx,]$best_k = T
+}
+
+p3 <- cv_res_sum |>
+  filter(best_k==T) |>
+  filter(sublist!="4 strata", sublist!="5 strata") |>
+  ggplot(aes(x = language, y = fscore_cor, group = sublist, col = sublist)) +
+  geom_point(alpha=.7) + # geom_jitter
+  labs(y = "Fscore correlation") +
+  theme(legend.position = "bottom") + theme_classic() + 
+  theme(axis.text.x = element_text(angle = 45, hjust=0.95, vjust=0.9)) 
+# ToDo: maybe sort these by the difference (Swadesh - random) ? 
+
+ggpubr::ggarrange(p1, p2, ncol=1, common.legend = T) # , p3
+```
