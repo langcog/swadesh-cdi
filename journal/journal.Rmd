@@ -20,18 +20,21 @@ abstract: >
     and reliable instruments for measuring children's early language skill. CDIs have been
     painstakingly adapted to dozens of languages, and cross-linguistic comparisons thus far show both 
     consistency and variability in language acquisition trajectories. However, thousands of languages do 
-    not yet have CDIs, posing a significant barrier to increasing the diversity of languages that are 
-    studied. Here, we propose a method for selecting candidate words to include on new CDIs, leveraging
-    analysis of psychometric properties of translation-equivalent concepts that are frequently included on 
-    existing CDIs. Leveraging 32 datasets from existing CDIs, we propose a list of 100 concepts that have
-    low variability in their cross-linguistic learning difficulty. This pool of common concepts---analogous 
-    to the Swadesh lists, which are basic vocabulary lists used in glottochronology for cross-language 
-    comparison---can be used as a starting point for future CDI adaptations. We test how well the proposed 
-    list generalizes to data from 10 additional languages.
+    not yet have CDIs, nor the early language corpora needed to create them, posing a significant barrier 
+    to increasing the diversity of languages that are studied. Here, we propose a method for selecting 
+    candidate words to include on new CDIs through analyzing psychometric properties of the
+    translation-equivalent concepts that are frequently included on existing CDIs. Leveraging 32 datasets 
+    from existing CDIs, we propose a list of 100 concepts that have low variability in their 
+    cross-linguistic learning difficulty. This pool of common concepts---analogous to the Swadesh lists, 
+    which are basic vocabulary lists used in glottochronology for cross-language comparison---can be used 
+    as a starting point for future CDI adaptations. We test how well the proposed list generalizes to data 
+    from 10 additional languages.
     
 keywords: >
     early language learning; CDI; psychometrics; cross-linguistic comparison; Swadesh vocabulary
-    
+
+appendix: "appendix_a.Rmd"
+
 output:
   pdf_document: default
 ---
@@ -144,8 +147,9 @@ CAT-based CDIs presenting 50 or fewer items have been found to strongly correlat
 A general method for creating CDI CATs that work well across a broader age range (12--36 months) has been proposed, and tested for American English and Mexican Spanish [@Kachergis2022]. 
 However, the IRT model driving each CAT needs to be trained on a large and normative dataset (that is, a sample that is representative of a target population), which may not be available in a given language. 
 To date, the IRT models are fitted separately for each language, and the fitted parameters (e.g., word difficulty) are likely to vary across languages.
-Importantly, this work has also revealed that scores on random subsets of items from a CDI form are highly-correlated with scores on the full CDI [e.g., for English, full CDI vs. 100 random items $r=0.989$; @Kachergis2022].
-However, random items from a single form are not guaranteed to be 1) relevant in other languages, 2) of similar difficulty in other languages, or 3) representative of the overall proportion of semantic categories present on the full CDI (for a given language, let alone all languages).
+Importantly, this work has also revealed that scores on random subsets of items from a CDI form are highly-correlated with scores on the full CDI [e.g., for English, full CDI vs. 100 random items $r=0.989$; @Kachergis2022], making random selection an important baseline comparison for any other proposed method.
+However, random items from a single form are not guaranteed to be 1) relevant in other languages, 2) of similar difficulty in other languages, or 3) representative of the overall proportion of semantic categories present on the full CDI (for a given language, let alone all languages). 
+
 
 The goal of the current study is to use IRT modeling in conjunction with data from Wordbank to examine whether there might be a core set of concepts that are frequently included on CDIs, and---importantly---whether enough of them are of roughly equal difficulty across many languages to allow them to be used as candidate items in new languages. 
 This work takes its inspiration from the fields of lexicostatistics and glottochronology, where researchers [notably, @Swadesh1971] have proposed lists of common concepts that exist in all catalogued languages, in order to quantify the genealogical relatedness and dates of divergence of languages. 
@@ -221,9 +225,6 @@ All unilemmas are accessible from Wordbank; details about the recent update can 
 
 ### Participants
 
-```{r, eval=F, include=F}
-# The Wordbank[^2] datasets consisted of CDI:WS production data for `r nrow(demo %>% filter(form=="WS"))` children aged 16--30 months and CDI:WG production data from `r nrow(demo %>% filter(form=="WG"))` children aged 8--18 months on `r sum(all_tab$items)` items across `r nrow(all_tab)` forms.[^3] 
-```
 
 The Wordbank[^2] datasets consisted of CDI:WG and CDI:WS production data for `r sum(all_tab$N)` children aged 8--30 months `r sum(all_tab$items)` items across `r nrow(all_tab)` languages (release: `wordbank_20240111`).[^3]
 Note that the distributions of demographic variables (age, sex, etc.) of these datasets are not matched, so comparing overall language ability estimates across languages would be ill-advised. 
@@ -232,7 +233,7 @@ Thus, we focused only on the estimated item parameters, and in particular the va
 
 [^2]: [http://wordbank.stanford.edu/contributors](http://wordbank.stanford.edu/contributors)
 
-[^3]: Note that Wordbank contains some forms which are neither WS nor WG (e.g., TC in Mandarin (Beijing), Form A in American Sign Language). In Wordbank all forms have been assigned a form type (WS or WG) which broadly reflects the intended age range for the form, and the demographics table more precisely reflects the number of participants for each form type.
+<!-- [^3]: Note that Wordbank contains some forms which are neither WS nor WG (e.g., TC in Mandarin (Beijing), Form A in American Sign Language). In Wordbank all forms have been assigned a form type (WS or WG) which broadly reflects the intended age range for the form, and the demographics table more precisely reflects the number of participants for each form type. -->
 
 
 ### Instruments
@@ -408,7 +409,7 @@ tmp <- xldf_clean %>% group_by(language) %>%
 
 
 However, note that selecting $N$ items uniformly at random from a full CDI list sets quite a high bar: if your other method of selecting items introduces any difficulty bias (e.g., selecting easier or more difficult items, on average), then the randomly-selected baseline will have the stronger correlation with the full set.[^5]
-Thus, the goal for the Swadesh list is to generate scores as strongly correlated with the full CDI scores as the random baseline's correlation -- while also selecting items that better generalize to out-of-distribution languages by having less variation in cross-linguistic difficulty.
+Thus, this random baseline would serve as a strong benchmark for the Swadesh list to outperform. The Swadesh CDI will be considered a success if its simulated scores are at least as strongly correlated with children's full CDI scores as the random baseline's correlation -- while also selecting items that better generalize to out-of-distribution languages by having less variation in cross-linguistic difficulty.
 
 [^5]: In fact, random subsets of items work so well--ending up with representative numbers of words per semantic and syntactic categories, and of varying difficulty--that researchers initially start CDI short forms using a random subset of items (e.g., ToDo CITE).
 
@@ -435,7 +436,8 @@ uni_per_form %>% ggplot(aes(x=jitter(n), y=d_sd, color=d_m)) +
 
 ## Cross-validation Results
 
-Table 2 shows the optimal values of $k$ selected for each sublist selection method, along with the correlation of the selected lists' items with item difficulty from the held out language, and how much average overlap there is between the 100 list items and the held out language. The syntactic category selection method with $k=27$ had the highest overall correlation ($r=0.856$), and resulted in an average overlap of 92.2 items on the resulting lists.
+Table 2 shows the optimal values of $k$ selected for each sublist selection method, along with the correlation of the selected lists' items with item difficulty from the held out language, and how much average overlap there is between the 100 list items and the held out language. 
+The syntactic category selection method with $k=27$ had the highest overall correlation ($r=0.856$), and resulted in an average overlap of 92.2 items on the resulting lists.
 There was nearly a 3-way tie for the next best selection method: 2 difficulty strata ($r=0.844$, $k=27$), unstratified ($r=0.841$, $k=23$), and semantic category ($r=0.841$, $k=25$).
 Random selection showed the lowest correlation ($r=0.776$, $k=23$), but resulted in more overlap than semantic category selection (88.4 vs. 85.8 items).
 It is noteworthy that despite the wide range of $k$ values that were evaluated, there was some consistency in the optimal $k$ for all methods (range: 23-27).
@@ -463,45 +465,7 @@ names(best_k) = c("Selection Method", "Best k", "Avg. Overlap", "Difficulty r")
 best_k |> kableExtra::kable(digits=3)
 ```
 
-
-```{r plot-crossval-fscores, fig.width=7, fig.height=9, fig.cap="Difficulty correlation and overlap by k for the different sublist selection methods."}
-p1 <- ggplot(cv_res_sum,
-       aes(x = k, y = num_overlap, col = sublist)) +
-  geom_jitter(aes(col = sublist),
-              alpha = .1) +
-  geom_boxplot(aes(group = interaction(k, sublist))) +
-  labs(y = "Overlap") + theme_classic()
-
-p2 <- ggplot(cv_res_sum,
-       aes(x = k, y = difficulty_cor, col = sublist)) +
-  geom_jitter(aes(col = sublist),
-              alpha = .1) +
-  geom_boxplot(aes(group = interaction(k, sublist))) +
-  labs(y = "Difficulty correlation") + theme_classic()
-
-# full vs. Swadesh fscore correlation for k=23
-fscore_cor_t <- t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor - 
-                       subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor) # n.s.
-
-cv_res_sum$best_k = F
-for(i in 1:nrow(best_k)) {
-  idx <- which(cv_res_sum$k==best_k[i,]$k & cv_res_sum$sublist==best_k[i,]$sublist)
-  cv_res_sum[idx,]$best_k = T
-}
-
-p3 <- cv_res_sum |>
-  filter(best_k==T) |>
-  filter(sublist!="4 strata", sublist!="5 strata") |>
-  ggplot(aes(x = language, y = fscore_cor, group = sublist, col = sublist)) +
-  geom_point(alpha=.7) + # geom_jitter
-  labs(y = "Fscore correlation") +
-  theme(legend.position = "bottom") + theme_classic() + 
-  theme(axis.text.x = element_text(angle = 45, hjust=0.95, vjust=0.9)) 
-# ToDo: maybe sort these by the difference (Swadesh - random) ? 
-
-ggpubr::ggarrange(p1, p2, ncol=1, common.legend = T) # , p3
-```
-
+<!-- plot-crossval-fscores moved to Appendix --> 
 
 
 ```{r create-final-swadesh-list, include=F}
