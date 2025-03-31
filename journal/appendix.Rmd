@@ -50,10 +50,12 @@ olap <- get_uni_lemma_overlap(xldf_clean)
 ## Uni-lemma Overlap on CDI Forms
 
 Number of overlapping concepts on each pair of CDI forms.
-American English has the highest average degree of overlap (468 uni-lemmas), which may be driven in large part by it being the oldest form, from which many others were adapted.
-The form with the lowest average degree of overlap is European Spanish, with only 325 uni-lemmas shared with other forms, on average.
+American English has the highest average degree of overlap (458 uni-lemmas), which may be driven in large part by it being the oldest form, from which many others were adapted.
+The form with the lowest average degree of overlap is Chilean Spanish, with only 314 uni-lemmas shared with other forms, on average.
+The median of the average overlap per language is 393 uni-lemmas.
 
 ```{r, fig.width=10, fig.height=10}
+# sort(rowMeans(olap))
 # show heatmap of overlap between each CDI:WS
 heatmap.2(olap, dendrogram = "none", margins=c(10,10))
 ```
@@ -79,7 +81,7 @@ prod_cat %>% ggplot(aes(x=reorder(language, mean), y=mean)) + geom_point(alpha=.
   geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7) +
   facet_wrap(. ~ category) + coord_flip() + 
   theme_classic() + ylab("Mean item easiness") + xlab("Language")
-#ggsave("xling_diff_by_category_WSprod.pdf", width=10, height=16)
+#ggsave("xling_diff_by_category_WSprod.pdf", width=11, height=16)
 ```
 
 
@@ -112,57 +114,19 @@ heatmap.2(prod_cors, col=Colors, margins=c(10,10))
 ```
 
 
-## Evaluating Thresholds for Inclusion on Swadesh CDI
-
-It is unclear how many existing forms a uni-lemma should be included on in order for it to be considered for inclusion on a Swadesh CDI. 
-Instead of setting an arbitrary threshold, we chose to try all possible values of $k$ (i.e., number of forms on which a uni-lemma is included, $k \in \{2,..,26\}$), and chose the $k$ which yields the set of Swadesh CDI (S-CDI) items with the highest total test information.
-The table below shows test information for each threshold, with the highest S-CDI test information achieved by $k=9$ (66085).
-
-
-```{r, echo=F}
-load(here("data/Swadesh_grid_search_final.Rdata")) # mean-.5sd threshold
-
-swad_tab <- swad_agg %>% filter(sublist=="Swadesh") %>%
-  mutate(k = as.factor(k)) %>%
-  group_by(k, N, mean_diff, mean_sd, sd_sd, sd_thresh, swad_n, swad_mean_diff, swad_diff_sd) %>%
-    summarise(N_avail = mean(N_avail),
-              `S-CDI vs CDI:WS` = mean(sumscore_cor), # want sd(sumscore_cor) and sd(test_info) ?
-              `S-CDI Info` = round(mean(test_info),0))
-
-rand_tab <- swad_agg %>% filter(sublist=="random") %>%
-  mutate(k = as.factor(k)) %>%
-  group_by(k) %>%
-    summarise(`Rand vs CDI:WS` = mean(sumscore_cor), # want sd(sumscore_cor) and sd(test_info) ?
-              `Rand Info` = round(mean(test_info),0))
-
-grid_tab <- left_join(swad_tab, rand_tab) %>%
-  relocate(`Rand vs CDI:WS`, .after=`S-CDI vs CDI:WS`) %>%
-  relocate(`Rand Info`, .after=`S-CDI Info`)
-
-grid_tab %>% select(-swad_diff_sd) %>%
-  #mutate(d_diff = mean_diff - swad_mean_diff,
-  #       info_diff = round(`S-CDI Info` - `Rand Info`,0)) %>%
-  rename(`Mean d` = mean_diff, 
-         `S-CDI pool` = swad_n,
-         `S-CDI Mean d` = swad_mean_diff,
-         `S-CDI per form` = N_avail) %>%
-  kableExtra::kable(digits=3) %>%
-    html_table_width(rep(72, ncol(swad_agg)+2))
-```
-
-
 ## Swadesh CDI vs. Full CDI:WS
 
-For the 26 languages that the IRT models were trained on:
+For the 32 languages that the IRT models were trained on:
 
 ```{r, results='asis'}
-load(here("data/Swadesh_comparisons.Rdata"))
-
+#load(here("data/Swadesh_comparisons.Rdata"))
+#xx <- readRDS(here("data/intermediates/full_vs_swadesh_fscores_allforms.rds"))
+xx <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rds"))
 #xx_tab <- xtable::xtable(xx, digits=c(3), 
-#                       caption = "Swadesh CDI vs. Full CDI:WS scores for 26 training languages.")
+#                       caption = "Swadesh CDI vs. Full CDI:WS scores for 32 training languages.")
 #print(xx_tab, type="html", comment = F, table.placement = "H", include.rownames=FALSE)
 
-xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 26 training languages.") %>%
+xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 32 training languages.") %>%
   html_table_width(rep(70, ncol(xx)))
 ```
 
@@ -176,15 +140,16 @@ Note that many proposed Swadesh items are not actually on the CDI:WS forms avail
 #                       caption = "Swadesh CDI with difficult words vs. Full CDI:WS scores for 8 generalization languages.")
 #print(gen_ext_tab, type="html", comment = F, table.placement = "H",
 #      include.rownames=FALSE)
+load(here("data/intermediates/generalization_results.rds")) # gen_res, gen_res_sum
 
-gen_xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 8 generalization languages.") %>%
+gen_xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 10 generalization languages.") %>%
   html_table_width(rep(70, ncol(gen_xx)))
 ```
 
 
 ## Swadesh-CDI Items
 
-Below we show the full list of 229 Swadesh CDI uni-lemmas, along with their average cross-linguistic difficulty (d_m), variability in difficulty (d_sd), number of CDI:WS forms they appear on (n, out of 26), semantic category, and lexical category. The semantic and lexical categories are based on American English, as uni-lemmas sometimes appear in different categories on different forms, as appropriate.
+Below we show the full list of 100 Swadesh CDI uni-lemmas, along with their average cross-linguistic difficulty (d_m), variability in difficulty (d_sd), number of CDI:WS forms they appear on (n, out of 32), semantic category, and lexical category. The semantic and lexical categories are based on American English, as uni-lemmas sometimes appear in different categories on different forms, as appropriate.
 
 ```{r}
 #swad_freq[1:50] # appearing on 22-25 Swadesh lists
