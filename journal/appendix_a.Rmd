@@ -3,11 +3,30 @@ title: "Appendix to _Measuring children's early vocabulary in low-resource langu
 date: "March 23, 2025"
 ---
 
+```{r, include=F}
+require(here)
+require(tidyverse)
+```
+
 
 # Cross-validation Results
 
-```{r plot-crossval-fscores, fig.width=7, fig.height=9, fig.cap="Difficulty correlation and overlap by k for the different sublist selection methods."}
+```{r plot-crossval-fscores, fig.width=7, fig.height=9, fig.cap="Difficulty correlation and overlap by k for the different sublist selection methods.", echo=F}
 cv_res_sum <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rds"))
+
+cv_output <- cv_res_sum |> 
+  group_by(k, sublist) |> 
+  summarise(num_overlap = mean(num_overlap, na.rm = TRUE),
+            difficulty_cor = mean(difficulty_cor, na.rm = TRUE),
+            rmse = mean(rmse, na.rm=T))
+
+best_k <- cv_output |>
+  ungroup() |> group_by(sublist) |>
+  filter(difficulty_cor == max(difficulty_cor, na.rm = TRUE)) |>
+  slice(1) |> ungroup() |> arrange(desc(difficulty_cor)) |>
+  relocate(sublist, .before = k) |>
+  select(-rmse) |>
+  mutate(sublist = ifelse(sublist=="category", "semantic", sublist))
 
 p1 <- ggplot(cv_res_sum,
        aes(x = k, y = num_overlap, col = sublist)) +

@@ -68,6 +68,7 @@ heatmap.2(olap, dendrogram = "none", margins=c(10,10))
 # sounds2 (JP) -> "sounds" ?
 # prepositional_pronouns -> ... "connecting_words" ?
 
+# ToDo: remake with just Swadesh list
 prod_cat <- xldf_clean %>% group_by(language, category) %>%
   filter(!is.na(d), !is.na(category),
          !is.element(category, c("final_particles", "directions", "numbers", "articles", "other",
@@ -123,10 +124,10 @@ For the 32 languages that the IRT models were trained on:
 #xx <- readRDS(here("data/intermediates/full_vs_swadesh_fscores_allforms.rds"))
 xx <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rds"))
 #xx_tab <- xtable::xtable(xx, digits=c(3), 
-#                       caption = "Swadesh CDI vs. Full CDI:WS scores for 32 training languages.")
+#                       caption = "Swadesh CDI vs. Full CDI scores for 32 training languages.")
 #print(xx_tab, type="html", comment = F, table.placement = "H", include.rownames=FALSE)
 
-xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 32 training languages.") %>%
+xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI scores for 32 training languages.") %>%
   html_table_width(rep(70, ncol(xx)))
 ```
 
