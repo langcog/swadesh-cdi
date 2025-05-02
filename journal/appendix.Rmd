@@ -1,7 +1,7 @@
 ---
 title: "Appendix to _Measuring Children's Early Vocabulary in Low-Resource Languages Using a Swadesh-style Word List_"
 author: "[redacted for anonymous review]"
-date: "February 1, 2023"
+date: "April 30, 2025"
 output:
   html_document: default
 ---
@@ -191,7 +191,7 @@ Developing a CDI for a new language is a substantial task requiring specific lin
 Many recommendations and caveats have been enumerated by the CDI Advisory Board, here: [https://mb-cdi.stanford.edu/adaptations.html](https://mb-cdi.stanford.edu/adaptations.html)
 Rather than recapitulate the process and caveats already itemized there, we suggest how the Swadesh CDI can be used to jump-start the process.
 
-1. As a starting point, take the above 229 uni-lemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
+1. As a starting point, take the above XX uni-lemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
 2. Consider adding uni-lemmas that are frequently included on other CDIs, and especially focus on categories that are less well-represented on the Swadesh CDI, including question words, quantifiers, helping verbs, and pronouns. We recommending adding 10-20 items across these categories, including the 10-item extension chosen from the original Swadesh list that we tested, which are present on nearly all existing CDI:WS forms ("I", "you", "we", "this", "that", "who", "what", "not", "all").
 3. Do a pilot study, including several children at the upper and lower intended ages, and revise if there are many children at floor or ceiling.
 
