@@ -27,8 +27,8 @@ abstract: >
     from existing CDIs, we propose a list of 100 concepts that have low variability in their 
     cross-linguistic learning difficulty. This pool of common concepts---analogous to the Swadesh lists, 
     which are basic vocabulary lists used in glottochronology for cross-language comparison---can be used 
-    as a starting point for future CDI adaptations. We test how well the proposed list generalizes to data 
-    from 10 additional languages.
+    as a starting point for future CDI adaptations. We test how well the proposed Swadesh-CDI list generalizes 
+    to data from 10 additional languages.
     
 keywords: >
     early language learning; CDI; psychometrics; cross-linguistic comparison; Swadesh vocabulary
@@ -123,14 +123,15 @@ Following the guidelines[^1] from the MacArthur-Bates CDI Advisory Board, the pr
 While the process can begin with identifying translation equivalents (i.e., items that capture the same general concept in both languages, e.g., "dog" in English, and "perro" in Spanish), the final item set must then be filtered so that all items appropriately reflect the linguistic and sociocultural context of the children learning that language. 
 This process usually requires considerable time and effort by researchers who are both native speakers of the language and who have experience with children, to first select and identify translation equivalents and to then iteratively add, refine, and pilot the new CDI in the target language. 
 Because the goal is to obtain the set of items that best capture general trends and individual differences in that language, the items across CDIs in different languages do not necessarily overlap to a great extent. 
-For example, the American English CDI:WS and Mexican Spanish CDI:WS forms each have 680 words, but only have 463 overlapping concepts (68%).
+For example, the American English CDI:WS and Mexican Spanish CDI:WS forms each have 680 words, but only have 463 overlapping concepts (68%). 
+<!-- See appendix for overlap between other CDI forms. -->
 
 [^1]: [https://mb-cdi.stanford.edu/adaptations.htm](https://mb-cdi.stanford.edu/adaptations.htm)
 
 While CDI adaptations now exist for many languages, there remain important gaps in language coverage.
 For example, the CDI has been adapted to only very few languages in India and Africa, despite the large number of speakers of some of these overlooked languages (e.g., Punjabi, Marathi, Telugu, Hausa, and Amharic, all of which have over 50 million speakers [@eberhard2025]). 
 Moreover, the CDI has not been adapted to any of the thousands of languages spoken by indigenous peoples around the world.
-The lack of CDIs in these languages is a significant barrier to understanding the diversity of language development across the world, which is crucial for developing and validating theories of language acquisition that are purportedly universal [@kidd2022; @singh2023].
+The dearth of CDIs in these languages is a significant barrier to understanding the diversity of language development across the world, which is crucial for developing and validating theories of language acquisition that are purportedly universal [@kidd2022; @singh2023].
 More broadly, many of these languages are under-resourced, and lack a language resource ecosystem---not only vocabulary assessment instruments, but also corpora, acquisition descriptions, computational tools, and other resources supporting language development research [@hellwig2021].
 The absence of these resources also makes CDI development more difficult---for example, examining corpora of child and child-directed language is a common method for selecting items for a new CDI [@jaruskova2023]; this approach would not be possible if such corpora do not exist, or are not appropriately pre-processed and made accessible.
 
@@ -147,14 +148,14 @@ CAT-based CDIs presenting 50 or fewer items have been found to strongly correlat
 A general method for creating CDI CATs that work well across a broader age range (12--36 months) has been proposed, and tested for American English and Mexican Spanish [@Kachergis2022]. 
 However, the IRT model driving each CAT needs to be trained on a large and normative dataset (that is, a sample that is representative of a target population), which may not be available in a given language. 
 To date, the IRT models are fitted separately for each language, and the fitted parameters (e.g., word difficulty) are likely to vary across languages.
-Importantly, this work has also revealed that scores on random subsets of items from a CDI form are highly-correlated with scores on the full CDI [e.g., for English, full CDI vs. 100 random items $r=0.989$; @Kachergis2022], making random selection an important baseline comparison for any other proposed method.
+Importantly, this work has also revealed that scores on random subsets of items from a CDI form are highly-correlated with scores on the full CDI (e.g., for English, full CDI vs. 100 random items $r=0.989$; @Kachergis2022), making random selection an important baseline comparison for any other proposed method.
 However, random items from a single form are not guaranteed to be 1) relevant in other languages, 2) of similar difficulty in other languages, or 3) representative of the overall proportion of semantic categories present on the full CDI (for a given language, let alone all languages). 
 
 
 The goal of the current study is to use IRT modeling in conjunction with data from Wordbank to examine whether there might be a core set of concepts that are frequently included on CDIs, and---importantly---whether enough of them are of roughly equal difficulty across many languages to allow them to be used as candidate items in new languages. 
 This work takes its inspiration from the fields of lexicostatistics and glottochronology, where researchers [notably, @Swadesh1971] have proposed lists of common concepts that exist in all catalogued languages, in order to quantify the genealogical relatedness and dates of divergence of languages. 
 For example, the original Swadesh list contains 100 words, comprised of categories including common pronouns (_I_, _you_, _we_), animals (_man_, _fish_, _bird_, _dog_), objects (_tree_, _leaf_, _sun_, _mountain_), and verbs (_die_, _see_, _sleep_, _kill_). 
-Extending this work to the development of a universal CDI, or “Swadesh CDI,” would include many of the concepts that researchers have chosen to include on several CDI:WS adaptations, and which have relatively similar difficulty across many languages. 
+Extending this work to the development of a universal CDI, or “Swadesh CDI,” would include many of the concepts that researchers have chosen to include on several CDI adaptations, and which have relatively similar difficulty across many languages. 
 If such a list were generalizable to other languages, it could serve as a helpful starting point for the development of new CDI adaptations, since the constituent words would already have good cross-linguistic difficulty estimates.
 It would also provide a method of approximating children's language abilities even in the absence of a large normative study.
 
@@ -226,7 +227,7 @@ All unilemmas are accessible from Wordbank; details about the recent update can 
 ### Participants
 
 
-The Wordbank[^2] datasets consisted of CDI:WG and CDI:WS production data for `r sum(all_tab$N)` children aged 8--30 months `r sum(all_tab$items)` items across `r nrow(all_tab)` languages (release: `wordbank_20240111`).[^3]
+The Wordbank[^2] datasets consisted of CDI:WG and CDI:WS production data for `r sum(all_tab$N)` children aged 8--30 months `r sum(all_tab$items)` items across `r nrow(all_tab)` languages (release: `wordbank_20240111`).<!--[^3]-->
 Note that the distributions of demographic variables (age, sex, etc.) of these datasets are not matched, so comparing overall language ability estimates across languages would be ill-advised. 
 (See @frank2021 for a discussion of effects of demographic variables on vocabulary development.) 
 Thus, we focused only on the estimated item parameters, and in particular the variability of item difficulty ($b_i$).
@@ -672,7 +673,7 @@ prod_cat |> mutate(Items = ifelse(SwadeshCDI==1, "Swadesh", "non-Swadesh")) |>
   tidyboot::tidyboot_mean(d, na.rm=T) |>
   ggplot(aes(x=reorder(semantic_category, mean), y=mean, group=Items, color=Items)) + 
   geom_point(alpha=.7, position = position_dodge2(.4)) +
-  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7, position = position_dodge2(.2)) +
+  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7, position = position_dodge2(.4)) +
   coord_flip() + theme_classic() + ylab("Mean item difficulty") + xlab("Semantic Category") +
   theme(legend.position="bottom")
 ```
@@ -734,10 +735,12 @@ However, note that this is _not_ a viable method to create a new CDI, as in a tr
 Thus, if the S-CDI comes close to performing as well as a random sample from manually curated CDIs, we consider it a success.
 Indeed, the random tests had a mean correlation with full CDI scores of $r=0.997$, only $\epsilon=0.001$ higher than the S-CDI.
 
+<!-- 
 Next, we measured the total test information yielded by the two baselines (recalling that total test information was one criterion for the construction of the S-CDI).
 This metric reflects how well the S-CDI would be able to differentiate the ability of children across different ability levels.
 As reported above, the S-CDI yielded a mean total test information of 66085, while the random unilemmas baseline yielded a total test information of 66374. 
-Although test information was slightly lower for the S-CDI, the values were virtually indistinguishable.
+Although test information was slightly lower for the S-CDI, the values were virtually indistinguishable. 
+-->
 
 ## Testing Generalization of the Swadesh CDI 
 
@@ -823,10 +826,13 @@ Nonetheless, our original `r length(train_langs)` datasets include 7 FixMe non-I
 Such a robustness also corroborates with results from @floccia2018vocabulary, who demonstrated that a bilingual vocabulary model based on a set of 30 unilemmas had good predictive validity on non-target languages, even those from other language families.
 
 Developing a list of appropriate vocabulary words is not the only challenge researchers face when seeking to develop and use parent-report measures in a new language and culture. 
-The pragmatics of language between children and adults can differ greatly across cultures, and has been found to interfere with administration of parent-report measures of early vocabulary, for example in Kiswahili [@alcock2017production] and Wolof [@weber2018]. <!-- TODO: FOR EXAMPLE... -->
+The pragmatics of language between children and adults can differ greatly across cultures, and has been found to interfere with administration of parent-report measures of early vocabulary, for example in Kiswahili [@alcock2017production] and Wolof [@weber2018], where the ways that children are expected to produce language differ from Western norms. 
 As such, local cultural knowledge remains essential in appropriately developing and administering novel CDI adaptations.
 
-ToDo: discuss bi/multilingualism - e.g. generalizing approach used in DLL EN-ES (Tamis-Lemonda2023)...
+Contexts in which children are learning more than one language simultaneously present another obstacle in the creation of a universal CDI, as cultural knowledge is needed to adjudicate which concepts and translation-equivalents are appropriate for inclusion.
+The psychometric approach used for the Swadish-CDI generalizes the method used to develop the DLL EN-ES [@tamislemonda2024dll], a measure intended for English-Spanish bilingual language learners. 
+Developing those instruments involved an iterative process of identifying translation-equivalent items with large discrepancy in cross-linguistic (English vs. Spanish) difficulty (e.g., "hat" and "sombrero"), and replacing them with CDI items that were appropriate in both languages (informed by researchers with local knowledge), and had minimal difference in cross-linguistic difficulty.
+We strongly recommend that the Swadesh CDI list serve only as a starting point for developing a new CDI, and that researchers use an iterative process that takes into account local expert knowledge of the target language, as well as the potential multilingual learning context to select appropriate items.
 
 Despite the myriad challenges that remain in creating new measures of early language development, we believe that the proposed Swadesh CDI list will give researchers a solid foundation to start from, lowering the barrier to the adaptation of CDI forms in new languages, since these are often time-consuming and challenging to construct.
 Expanding the number of languages with effective vocabulary measures would be a critical step in addressing issues related to the under-representation of linguistic diversity in language acquisition research [@kidd2022]. 
