@@ -241,7 +241,7 @@ Thus, we focused only on the estimated item parameters, and in particular the va
 
 When a CDI:WG form was administered, caregivers were asked to indicate for each vocabulary item whether their child 1) understands that word ("comprehends") or 2) both understands and says ("produces") that word. 
 Leaving the item blank indicates that the child neither comprehends nor produces that word.
-When a CDI:WS forms was administered, caregivers were asked to indicate for each vocabulary item on the instrument whether or not their child can recognizably produce (say) the given word in an appropriate context.
+When a CDI form was administered, caregivers were asked to indicate for each vocabulary item on the instrument whether or not their child can recognizably produce (say) the given word in an appropriate context.
 
 "Produces" responses were coded as 1 and all other responses were coded as 0.
 Our datasets consisted of a dichotomous-valued response matrix for each language, of size $N$ subjects $\times$ $W$ words.
