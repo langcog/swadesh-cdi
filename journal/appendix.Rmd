@@ -33,6 +33,14 @@ load(here("data/intermediates/xldf_clean_allforms.Rdata"))
 # xldf_clean, prod_pars
 # 42 languages, 28541 parameters
 
+xldf_clean <- xldf_clean |> 
+  mutate(uni_lemma = ifelse(uni_lemma=="glue", "glue (object)", uni_lemma)) |>
+  mutate(d = -d) # easiness -> difficulty
+
+prod_pars <- prod_pars |> 
+  mutate(uni_lemma = ifelse(uni_lemma=="glue", "glue (object)", uni_lemma)) |>
+  mutate(d = -d) # easiness -> difficulty
+
 load(file=here("data/intermediates/generalization_results.rds"))
 # gen_res_sum, gen_res
 
