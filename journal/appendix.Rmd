@@ -35,11 +35,23 @@ load(here("data/intermediates/xldf_clean_allforms.Rdata"))
 
 xldf_clean <- xldf_clean |> 
   mutate(uni_lemma = ifelse(uni_lemma=="glue", "glue (object)", uni_lemma)) |>
-  mutate(d = -d) # easiness -> difficulty
+  mutate(d = -d) |> # easiness -> difficulty
+  mutate(category = case_when(category=="directions" ~ "locations", # Mandarin
+                              category=="sounds2" ~ "sounds", # Japanese - oink
+                              category=="conversations" ~ "games_routines", # Japanese - ok, no, hello
+                              category=="others" & uni_lemma=="also" ~ "quantifiers", # Japanese
+                              category=="others" & uni_lemma=="already" ~ "time_words", # Japanese
+                              TRUE ~ category))
 
 prod_pars <- prod_pars |> 
   mutate(uni_lemma = ifelse(uni_lemma=="glue", "glue (object)", uni_lemma)) |>
-  mutate(d = -d) # easiness -> difficulty
+  mutate(d = -d) |> # easiness -> difficulty
+  mutate(semantic_category = case_when(semantic_category=="directions" ~ "locations",
+                              semantic_category=="sounds2" ~ "sounds",
+                              semantic_category=="conversations" ~ "games_routines",
+                              semantic_category=="others" & uni_lemma=="also" ~ "quantifiers",
+                              semantic_category=="others" & uni_lemma=="already" ~ "time_words",
+                              TRUE ~ semantic_category))
 
 load(file=here("data/intermediates/generalization_results.rds"))
 # gen_res_sum, gen_res
@@ -79,8 +91,8 @@ heatmap.2(olap, dendrogram = "none", margins=c(10,10))
 # ToDo: remake with just Swadesh list
 prod_cat <- xldf_clean %>% group_by(language, category) %>%
   filter(!is.na(d), !is.na(category),
-         !is.element(category, c("final_particles", "directions", "numbers", "articles", "other",
-                                 "others", "conversations", "sounds2", "prepositional_pronouns",
+         !is.element(category, c("final_particles", "numbers", "articles", "other",
+                                 "prepositional_pronouns",
                                  "descriptive_words (adverbs)", "states", "unknown",
                                  "verb_endings", "verb_modifiers",
                                  "classifiers", "locations_quantities_adverbs"))) %>%
@@ -200,7 +212,7 @@ Many recommendations and caveats have been enumerated by the CDI Advisory Board,
 Rather than recapitulate the process and caveats already itemized there, we suggest how the Swadesh CDI can be used to jump-start the process.
 
 1. As a starting point, take the above XX uni-lemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
-2. Consider adding uni-lemmas that are frequently included on other CDIs, and especially focus on categories that are less well-represented on the Swadesh CDI, including question words, quantifiers, helping verbs, and pronouns. We recommending adding 10-20 items across these categories, including the 10-item extension chosen from the original Swadesh list that we tested, which are present on nearly all existing CDI:WS forms ("I", "you", "we", "this", "that", "who", "what", "not", "all").
+2. Consider adding uni-lemmas that are frequently included on other CDIs, and especially focus on categories that are less well-represented on the Swadesh CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10-20 items across these categories, including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "chalk", "toy").
 3. Do a pilot study, including several children at the upper and lower intended ages, and revise if there are many children at floor or ceiling.
 
 <!--
