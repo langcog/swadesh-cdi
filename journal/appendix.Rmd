@@ -1,7 +1,7 @@
 ---
 title: "Appendix to _Measuring Children's Early Vocabulary in Low-Resource Languages Using a Swadesh-style Word List_"
 author: "[redacted for anonymous review]"
-date: "April 30, 2025"
+date: "May 7, 2025"
 output:
   html_document: default
 ---
@@ -153,15 +153,18 @@ xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI scores for 32 training 
 
 ### Generalization Test
 
-Comparison to the eight low-data languages. <!--, with the 10 additional difficult words added. -->
+Comparison to the 10 low-data languages [ToDo: with the 10 additional difficult words added]. 
 Note that many proposed Swadesh items are not actually on the CDI:WS forms available to test generalization. 
 
 ```{r, results='asis'}
-#gen_tab <- xtable::xtable(gen_xx_ext, digits=c(3), 
-#                       caption = "Swadesh CDI with difficult words vs. Full CDI:WS scores for 8 generalization languages.")
-#print(gen_ext_tab, type="html", comment = F, table.placement = "H",
-#      include.rownames=FALSE)
+# ToDo: get generalization results with 10-item extension
 load(here("data/intermediates/generalization_results.rds")) # gen_res, gen_res_sum
+
+gen_xx <- gen_res_sum |> 
+  filter(language %in% gen_langs) |>
+  group_by(sublist) |>
+  rename(Method = sublist) |>
+  pivot_wider(id_cols = language, names_from = Method, values_from = sumscore_cor)
 
 gen_xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 10 generalization languages.") %>%
   html_table_width(rep(70, ncol(gen_xx)))
@@ -172,37 +175,30 @@ gen_xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 10 ge
 
 Below we show the full list of 100 Swadesh CDI uni-lemmas, along with their average cross-linguistic difficulty (d_m), variability in difficulty (d_sd), number of CDI:WS forms they appear on (n, out of 32), semantic category, and lexical category. The semantic and lexical categories are based on American English, as uni-lemmas sometimes appear in different categories on different forms, as appropriate.
 
-```{r}
-#swad_freq[1:50] # appearing on 22-25 Swadesh lists
-#swad_freq[51:100] # 18-22 lists
-#swad_freq[101:153] # 14-18
+```{r, show-swadesh-list}
+load(here("data/intermediates/best_k_swadesh_lists.rds"))
+# unstrat_sublist, category_sublist, syntactic_sublist, strat2_sublist
 
-# 8 words appeared on all 25 lists: airplane, cold, dirty, door, key, sing, TV, wait 
-# 18 words appeared on 24 of the 25 lists: ant, banana, cat, dance, doctor, dog, eat, finger, lion, milk, mommy, moon, nose, paper, telephone, tongue, tooth, yes -- all of which on k=9 list
-# 19 appeared on 23/25 lists: -- all on k=9 list
-# 18 appeared on 22/25 lists: -- all on k=9 list
-# 15 appeared on 21/25:  -- all on k=9 list
-# 7 appeared on 20/25: -- all on k=9 list
-# 10 appeared on 19/25: -- all on k=9 list
-# 16 appeared on 18/25: -- al on k=9 list
-# 9 on 17/25 -- all on k=9 list
+uni_sem_cats <- prod_pars |> group_by(uni_lemma) |>
+  count(semantic_category) |> arrange(uni_lemma, desc(n)) |>
+  group_by(uni_lemma) |> slice(1)
+
+uni_syn_cats <- prod_pars |> group_by(uni_lemma) |>
+  count(syntactic_category) |> arrange(uni_lemma, desc(n)) |>
+  group_by(uni_lemma) |> slice(1)
+
+swadesh_sublist <- syntactic_sublist |> select(-category, -count, -mean_prop) |>
+  left_join(uni_sem_cats |> select(uni_lemma, semantic_category)) 
 
 
-#names(swad_freq[which(swad_freq==22)])
-#length(intersect(names(swad_freq[which(swad_freq==21)]), good_prod$uni_lemma))
-
-# length(intersect(names(swad_freq[which(swad_freq>17)]), good_prod$uni_lemma)) # 111 
-
-good_prod <- swad_lists[[9]]
-
-en_good_prod <- good_prod %>% 
-  left_join(xldf %>% 
-              filter(language=="English (American)") %>% 
-              select(uni_lemma, category, lexical_category)) %>%
-  arrange(category, desc(d_m))
+en_good_prod <- swadesh_sublist |> 
+  left_join(prod_pars |> 
+              filter(language=="English (American)") |>  
+              select(uni_lemma, semantic_category, syntactic_category)) |> 
+  arrange(semantic_category, desc(mean_d))
 #kableExtra::kable(en_good_prod, digits=2)
-en_good_prod %>% DT::datatable() %>%
-  DT::formatRound(columns=2:3, digits=3)
+en_good_prod %>% DT::datatable() |> 
+  DT::formatRound(columns=3:4, digits=2)
 ```
 
 ## Guide to Developing a Swadesh-based CDI
@@ -211,22 +207,22 @@ Developing a CDI for a new language is a substantial task requiring specific lin
 Many recommendations and caveats have been enumerated by the CDI Advisory Board, here: [https://mb-cdi.stanford.edu/adaptations.html](https://mb-cdi.stanford.edu/adaptations.html)
 Rather than recapitulate the process and caveats already itemized there, we suggest how the Swadesh CDI can be used to jump-start the process.
 
-1. As a starting point, take the above XX uni-lemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
-2. Consider adding uni-lemmas that are frequently included on other CDIs, and especially focus on categories that are less well-represented on the Swadesh CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10-20 items across these categories, including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "chalk", "toy").
+1. As a starting point, take the 100 Swadesh-CDI uni-lemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
+2. Consider adding uni-lemmas that are frequently included on other CDIs, and especially focus on semantic categories that are less well-represented on the S-CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10-20 items across these categories, including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "chalk", "toy").
 3. Do a pilot study, including several children at the upper and lower intended ages, and revise if there are many children at floor or ceiling.
 
-<!--
+
 ## Comparison of Swadesh CDI Concepts to Other Lists
 
 
 28 of the Swadesh CDI candidates are on the 100-item CDI:WS short (form A), and 26 of the Swadesh candidates are on the WS short (form B).
-(Actually lower than expected by chance? 27%, and we have selected 34% of the length of the EN CDI:WS)
-26 Swadesh CDI concepts are also on the original Swadesh-100 list---and 12 are overlapping with the ASJP (a subset of the Swadesh-100 that performs as well as the Swadesh-100 for purposes of glottochronology).
--->
+22 Swadesh CDI concepts are also on the original Swadesh-100 list---and 7 are overlapping with the ASJP (a subset of the Swadesh-100 that performs as well as the Swadesh-100 for purposes of glottochronology).
+
 
 ```{r swadesh-comparison, echo=F}
 # https://en.wikipedia.org/wiki/Swadesh_list
-swadesh100 = c("I","you","we","this","that","who","what","not","all","many","one","two","big","long","small",
+# "I","you","we",
+swadesh100 = c("1SG","2SG","we","this","that","who","what","not","all","many","one","two","big","long","small",
                "woman","man","person","fish","bird","dog","louse","tree","seed","leaf","root","bark","skin","flesh","blood",
                "bone","grease","egg","horn","tail","feather","hair","head","ear","eye","nose","mouth","tooth","tongue","claw",
                "foot","knee","hand","belly","neck","breasts","heart","liver","drink (action)","eat","bite","see","hear","know","sleep",
@@ -243,19 +239,12 @@ asjp = c("eye","ear","nose","tongue","tooth","hand","knee","blood","bone","breas
          "person","name", # People; match "name" to "child's own name" / "babysitter's name" / "pet's name" ?
          "sun","star","water (not beverage)","fire","stone","path","mountain","night", # Nature
          "drink (action)","die","see","hear","come", # Verbs and adjectives
-         "new","full","one","two","I","you","we")
+         "new","full","one","two","1SG","2SG","we")
 
-#intersect(asjp, good_prod$uni_lemma) 
-# "eye"            "nose"           "tongue"         "tooth"          "hand"           "knee"           "dog"           
-# "sun"            "star"           "drink (action)" "see"            "hear"  
-# 12 out of 40 -- wow!
+#length(intersect(swadesh_sublist$uni_lemma, swadesh100))
+#length(intersect(swadesh_sublist$uni_lemma, asjp))
 
-# intersect(swadesh100, good_prod$uni_lemma) 
-# "dog"            "head"           "eye"            "nose"           "mouth"          "tooth"          "tongue"        
-# "knee"           "hand"           "drink (action)" "eat"            "bite"           "see"            "hear"          
-# "sleep"          "swim"           "sun"            "moon"           "star"           "cloud"          "red"           
-# "green"          "yellow"         "white"          "black"          "cold"  
-# 26 out of 100 !
+
 # intersect(swadesh100, subset(xldf, language=="English (American)")$uni_lemma) 
 # 55 Swadesh words on English CDI (with "I")
 # intersect(swadesh100, xldf$uni_lemma) 

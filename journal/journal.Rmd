@@ -815,7 +815,6 @@ ggarrange(p1, p2, ncol=1, common.legend = T)
 ```
 
 ```{r gen-results, results='asis'}
-# ToDo: filter to generalization languages?
 gen_xx <- gen_res_sum |> 
   filter(language %in% gen_langs) |>
   group_by(sublist) |>
