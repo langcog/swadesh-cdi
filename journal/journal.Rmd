@@ -33,7 +33,7 @@ abstract: >
 keywords: >
     early language learning; CDI; psychometrics; cross-linguistic comparison; Swadesh vocabulary
 
-appendix: "appendix_a.Rmd"
+appendix: "appendix.Rmd"
 
 output:
   pdf_document: default

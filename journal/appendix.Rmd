@@ -135,9 +135,65 @@ heatmap.2(prod_cors, col=Colors, margins=c(10,10))
 ```
 
 
+# Cross-validation Results
+
+```{r plot-crossval-fscores, fig.width=7, fig.height=9, fig.cap="Difficulty correlation and overlap by k for the different sublist selection methods.", echo=F}
+cv_res_sum <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rds"))
+
+cv_output <- cv_res_sum |> 
+  group_by(k, sublist) |> 
+  summarise(num_overlap = mean(num_overlap, na.rm = TRUE),
+            difficulty_cor = mean(difficulty_cor, na.rm = TRUE),
+            rmse = mean(rmse, na.rm=T))
+
+best_k <- cv_output |>
+  ungroup() |> group_by(sublist) |>
+  filter(difficulty_cor == max(difficulty_cor, na.rm = TRUE)) |>
+  slice(1) |> ungroup() |> arrange(desc(difficulty_cor)) |>
+  relocate(sublist, .before = k) |>
+  select(-rmse) |>
+  mutate(sublist = ifelse(sublist=="category", "semantic", sublist))
+
+p1 <- ggplot(cv_res_sum,
+       aes(x = k, y = num_overlap, col = sublist)) +
+  geom_jitter(aes(col = sublist),
+              alpha = .1) +
+  geom_boxplot(aes(group = interaction(k, sublist))) +
+  labs(y = "Overlap") + theme_classic()
+
+p2 <- ggplot(cv_res_sum,
+       aes(x = k, y = difficulty_cor, col = sublist)) +
+  geom_jitter(aes(col = sublist),
+              alpha = .1) +
+  geom_boxplot(aes(group = interaction(k, sublist))) +
+  labs(y = "Difficulty correlation") + theme_classic()
+
+# full vs. Swadesh fscore correlation for k=23
+fscore_cor_t <- t.test(subset(cv_res_sum, sublist=="unstratified" & k==23)$fscore_cor - 
+                       subset(cv_res_sum, sublist=="Random" & k==23)$fscore_cor) # n.s.
+
+cv_res_sum$best_k = F
+for(i in 1:nrow(best_k)) {
+  idx <- which(cv_res_sum$k==best_k[i,]$k & cv_res_sum$sublist==best_k[i,]$sublist)
+  cv_res_sum[idx,]$best_k = T
+}
+
+p3 <- cv_res_sum |>
+  filter(best_k==T) |>
+  filter(sublist!="4 strata", sublist!="5 strata") |>
+  ggplot(aes(x = language, y = fscore_cor, group = sublist, col = sublist)) +
+  geom_point(alpha=.7) + # geom_jitter
+  labs(y = "Fscore correlation") +
+  theme(legend.position = "bottom") + theme_classic() + 
+  theme(axis.text.x = element_text(angle = 45, hjust=0.95, vjust=0.9)) 
+# ToDo: maybe sort these by the difference (Swadesh - random) ? 
+
+ggpubr::ggarrange(p1, p2, ncol=1, common.legend = T) # , p3
+```
+
 ## Swadesh CDI vs. Full CDI:WS
 
-For the 32 languages that the IRT models were trained on:
+The table below shows the correlation between full CDI and Swadesh-CDI for syntactic category stratification method, for items on at least $k=27$ CDIs, for each of the 32 languages that the IRT models were trained on.
 
 ```{r, results='asis'}
 #load(here("data/Swadesh_comparisons.Rdata"))
@@ -147,8 +203,14 @@ xx <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rds")
 #                       caption = "Swadesh CDI vs. Full CDI scores for 32 training languages.")
 #print(xx_tab, type="html", comment = F, table.placement = "H", include.rownames=FALSE)
 
-xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI scores for 32 training languages.") %>%
-  html_table_width(rep(70, ncol(xx)))
+# ToDo: maybe pivot_wider to show difficulty_cor for the top 3 selection methods?
+xx |> filter(k==27, sublist=="syntactic") |>
+  rename(`Full vs. S-CDI r` = fscore_cor,
+         Language = language,
+         Overlap = num_overlap) |>
+  select(Language, Overlap, `Full vs. S-CDI r`) |>
+  kable(digits=3, caption="Swadesh CDI vs. Full CDI scores for 32 training languages.") |>
+  html_table_width(rep(80, ncol(xx)))
 ```
 
 ### Generalization Test
