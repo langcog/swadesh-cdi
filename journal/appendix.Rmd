@@ -315,3 +315,21 @@ asjp = c("eye","ear","nose","tongue","tooth","hand","knee","blood","bone","breas
 # "I" "fly" "fish" - "belly" (belly button?) "louse" "seed" "root" "skin" "flesh" "grease"  "horn"   
 # "feather" "claw" "breasts" "liver" "kill" "lie" "water" "ash" "dry" 
 ```
+
+
+```{r}
+floccia30wordCDI <- c("elephant", "fish (animal)", "lion", "airplane", "car", "ball", "book", "milk", "nose",
+                      "shoe", "sock", "bed", "chair", "door", "table", "cup", "scissors", "soap", "flower",
+                      "sky", "tree", "mommy", "fall (action)", "play", "big", "cold", "dirty", "hot",
+                      "what", "where (question)")
+
+intersect(asjp, floccia30wordCDI)
+# "nose"          "fish (animal)" "tree" 
+
+intersect(swadesh100, floccia30wordCDI) # 6
+# "what" "big"  "tree" "nose" "hot"  "cold"
+
+intersect(swadesh_sublist$uni_lemma, floccia30wordCDI) # 11
+# "what"     "mommy"    "airplane" "milk"     "lion"     "nose"     "elephant" "cold"     "dirty"   "hot" 
+```
+
