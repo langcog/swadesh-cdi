@@ -67,12 +67,32 @@ xldf_train <- xldf_clean %>% filter(!is.element(language, gen_langs)) # 22217
 olap <- get_uni_lemma_overlap(xldf_clean)
 ```
 
-## Uni-lemma Overlap on CDI Forms
+## Unilemma Operationalisation and Updating
+
+Unilemmas are rough cross-linguistic conceptual mappings for words. 
+For example, "dog" (English), "perro" (Spanish), and "chien" (French) all seem like they describe the same concept, _dog_. 
+We thus have _dog_ as the unilemma for this concept, allowing mapping between different forms in different languages.
+
+Decisions about which words correspond to which unilemmas are necessarily somewhat arbitrary. 
+Our design intention for unilemmas was to provide reasonable mappings, lumping together many meanings rather than splitting them, allowing us to build predictive models of cross-linguistic similarities and differences in acquisition.
+If we split the conceptual world too finely, it would be difficult to understand how similar the information sources are; if we split too coarsely, we can at least discover that languages differ by the differences in predictors.
+
+However, we also preserve distinctions for concepts that are _prima facie_ similar, but that play very different cultural roles.
+For example, although "pan" (Spanish) and "tortilla" (Spanish) are relatively similar, they plan different cultural roles in Mexican Spanish, and hence we err towards splitting these into separate categories.
+
+There remained other issues regarding unilemma definitions, including cases of polysemy, handling syntactic categories, and pronouns; in each case, we made decisions based on our best guess of the most basic or common interpretation in the child language context.
+Further details can be found in our unilemma policy document, available at [https://github.com/langcog/update_unilemmas/blob/main/unilemma_policy.md](https://github.com/langcog/update_unilemmas/blob/main/unilemma_policy.md).
+
+We then recruited native or advanced proficient speakers of all the languages in Wordbank to help verify and correct unilemmas for the CDI forms. 
+Subsequently, two of the authors (GK, AWMT) reviewed the suggestions and made decisions about conflicts, and standardized unilemmas into a canonical form across all instruments.
+More details about the recent update can be found at [https://github.com/langcog/update_unilemmas](https://github.com/langcog/update_unilemmas).
+
+## Unilemma Overlap on CDI Forms
 
 Number of overlapping concepts on each pair of CDI forms.
-American English has the highest average degree of overlap (458 uni-lemmas), which may be driven in large part by it being the oldest form, from which many others were adapted.
-The form with the lowest average degree of overlap is Chilean Spanish, with only 314 uni-lemmas shared with other forms, on average.
-The median of the average overlap per language is 393 uni-lemmas.
+American English has the highest average degree of overlap (458 unilemmas), which may be driven in large part by it being the oldest form, from which many others were adapted.
+The form with the lowest average degree of overlap is Chilean Spanish, with only 314 unilemmas shared with other forms, on average.
+The median of the average overlap per language is 393 unilemmas.
 
 ```{r, fig.width=10, fig.height=10}
 # sort(rowMeans(olap))
@@ -235,7 +255,7 @@ gen_xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 10 ge
 
 ## Swadesh-CDI Items
 
-Below we show the full list of 100 Swadesh CDI uni-lemmas, along with their average cross-linguistic difficulty (d_m), variability in difficulty (d_sd), number of CDI:WS forms they appear on (n, out of 32), semantic category, and lexical category. The semantic and lexical categories are based on American English, as uni-lemmas sometimes appear in different categories on different forms, as appropriate.
+Below we show the full list of 100 Swadesh CDI unilemmas, along with their average cross-linguistic difficulty (d_m), variability in difficulty (d_sd), number of CDI:WS forms they appear on (n, out of 32), semantic category, and lexical category. The semantic and lexical categories are based on American English, as unilemmas sometimes appear in different categories on different forms, as appropriate.
 
 ```{r, show-swadesh-list}
 load(here("data/intermediates/best_k_swadesh_lists.rds"))
@@ -269,8 +289,8 @@ Developing a CDI for a new language is a substantial task requiring specific lin
 Many recommendations and caveats have been enumerated by the CDI Advisory Board, here: [https://mb-cdi.stanford.edu/adaptations.html](https://mb-cdi.stanford.edu/adaptations.html)
 Rather than recapitulate the process and caveats already itemized there, we suggest how the Swadesh CDI can be used to jump-start the process.
 
-1. As a starting point, take the 100 Swadesh-CDI uni-lemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
-2. Consider adding uni-lemmas that are frequently included on other CDIs, and especially focus on semantic categories that are less well-represented on the S-CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10-20 items across these categories, including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "chalk", "toy").
+1. As a starting point, take the 100 Swadesh-CDI unilemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
+2. Consider adding unilemmas that are frequently included on other CDIs, and especially focus on semantic categories that are less well-represented on the S-CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10-20 items across these categories, including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "chalk", "toy").
 3. Do a pilot study, including several children at the upper and lower intended ages, and revise if there are many children at floor or ceiling.
 
 
@@ -310,7 +330,7 @@ asjp = c("eye","ear","nose","tongue","tooth","hand","knee","blood","bone","breas
 # intersect(swadesh100, subset(xldf, language=="English (American)")$uni_lemma) 
 # 55 Swadesh words on English CDI (with "I")
 # intersect(swadesh100, xldf$uni_lemma) 
-# 83 Swadesh words on full list of uni-lemmas
+# 83 Swadesh words on full list of unilemmas
 #setdiff(swadesh100, unique(xldf$uni_lemma))
 # "I" "fly" "fish" - "belly" (belly button?) "louse" "seed" "root" "skin" "flesh" "grease"  "horn"   
 # "feather" "claw" "breasts" "liver" "kill" "lie" "water" "ash" "dry" 

@@ -255,7 +255,7 @@ As such, each item on the CDI:WS for each language was mapped onto a set of “u
 For example, “chat” (French) and “gato” (Spanish) both correspond to the same unilemma, _cat_. 
 These mappings were recently updated to improve their quality and systematicity, and to increase coverage across items and languages. 
 This new set of unilemmas was constructed based on glosses provided by the original contributors of the Wordbank datasets, which were then verified by native or advanced proficient speakers of the language, and cleaned to increase their consistency across languages. 
-All unilemmas are accessible from Wordbank; details about the recent update can be found at [https://github.com/langcog/update_unilemmas](https://github.com/langcog/update_unilemmas).
+All unilemmas are accessible from Wordbank; additional details about unilemmas can be found in the Appendix.
 
 ### Participants
 
