@@ -865,7 +865,15 @@ Using real-data simulations, we showed that administering this set of Swadesh CD
 Moreover, the Swadesh CDI items resulted in comparable total test information to tests of the same length composed of randomly-selected unilemmas from the target test---a challenging baseline to beat and a construction method impossible to use when creating a new CDI.
 The Swadesh CDI contains items with relatively stable cross-linguistic difficulty estimates and, in the absence of researchers who are familiar with relevant local cultures and concepts, they may serve as a rapid, simple means of approximating children's ability levels, even when a large norming dataset is not available.
 
-The Swadesh CDI items were significantly easier than other items, meaning that older children may perform at ceiling if given only the Swadesh CDI items.
+It is notable that, regardless of our stratification procedure, the number of selected overlapping items and the cross-validated difficulty correlations were all relatively high.
+In other words, a fairly large number of items had similar difficulties across languages, meaning that they are acquired at similar ages.
+This result corroborates and extends previous findings from @tardif2008baby and @frank2021, who found substantial consistency in children's early vocabularies across languages.
+As in @frank2021, we also found that the Swadesh CDI items were easier than other items in general, suggesting that earlier-acquired vocabulary items are more consistent than later ones. 
+Furthermore, it is interesting to observe the distribution of Swadesh CDI items across semantic categories; notably, our final list underrepresented toys, food and drink, and things found outside, all of which may be more culturally contingent, and thus more variable than other categories.
+Similarly the Swadesh CDI also underrepresented quantifiers, auxiliary verbs, and locatives, which are grammatical items that may exhibit more cross-linguistic variability than other categories.
+The distribution of Swadesh CDI items supports the idea that early vocabularies are conditioned both on broad similarities in early childhood experience, as well as cultural and linguistic differences in accessible concepts and words. 
+
+As previously mentioned, the Swadesh CDI items were significantly easier than other items, meaning that older children may perform at ceiling if given only the Swadesh CDI items.
 (This may be unsurprising from the perspective that Swadesh words are meant to be universal, and are therefore more frequent and basic---both within and across individual children's experiences.)
 Thus, our suggested use case for the Swadesh CDI list is as a starting point for researchers seeking to develop a CDI in a new language, rather than as a complete short-form CDI based on existing long-form CDI data.
 In particular, researchers should seek to add relevant unilemmas from categories that were less well-represented on the S-CDI, including helping verbs, locatives, quantifiers, and toys.
@@ -875,7 +883,7 @@ Researchers adapting the S-CDI to new languages should also consider replacing n
 
 Another potential limitation of this work is that most existing CDIs (and most datsets available in Wordbank) target languages in the Indo-European language family. <!-- add sentence about cultural bias -->
 It is not clear to what extent this bias in the existing data might interfere with generalizing to non-Indo-European languages.
-Nonetheless, our original `r length(train_langs)` datasets include 11 non-Indo-European languages (3 Sino-Tibetan, 3 Uralic, 2 Afro-Asiatic, 1 Japonic, 1 Koreanic, 1 Turkic), and the generalization datasets 2 sign languages and 2 Niger-Congo languages (not represented in the original datasets); the broad consistency across language families thus suggests that the effectiveness of the S-CDI may be sufficiently robust.
+Nonetheless, our original `r length(train_langs)` datasets include 11 non-Indo-European languages (3 Sino-Tibetan, 3 Uralic, 2 Afro-Asiatic, 1 Japonic, 1 Koreanic, 1 Turkic), and the generalization datasets include 2 sign languages and 2 Niger-Congo languages (not represented in the original datasets); the broad consistency across language families thus suggests that the effectiveness of the S-CDI may be sufficiently robust.
 Such a robustness also corroborates with results from @floccia2018vocabulary, who demonstrated that a bilingual vocabulary model based on a set of 30 unilemmas had good predictive validity on non-target languages, even those from other language families.
 
 Developing a list of appropriate vocabulary words is not the only challenge researchers face when seeking to develop and use parent-report measures in a new language and culture. 
