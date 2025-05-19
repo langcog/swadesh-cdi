@@ -14,7 +14,7 @@ author-information: >
       ^{2}Department of Speech and Hearing Sciences, University of New Mexico}
 
 abstract: >
-    Early language skill is predictive of later life outcomes, and is thus of great interest to
+    Early language skill is predictive of many later life outcomes, and is thus of great interest to
     developmental psychologists and clinicians. The MacArthur-Bates Communicative Development Inventories (CDIs),
     parent report instruments typically containing inventories of hundreds of children's vocabulary words, have proven to be valid 
     and reliable instruments for measuring children's early language skill. The CDIs have been
@@ -128,7 +128,7 @@ The MacArthur-Bates Communicative Development Inventories [CDIs, @Fenson2007; @m
 Parent report is a relatively quick and low-cost method to assess early language skills as it takes advantage of the fact that parents are "natural observers" of their child's skills and it does not depend on a child engaging with an unfamiliar experimenter.
 
 Over the years, the CDIs have been adapted to dozens of languages, with forms now available in English, Spanish, French, Hebrew, and Mandarin, to name just a few.
-Recently, data from `r sum(all_tab$N)` CDIs in `r length(languages)` languages have been archived in a central repository [Wordbank, @frank2017]. 
+At present, data from `r sum(all_tab$N)` CDIs in `r length(languages)` languages have been archived in a central repository [Wordbank, @frank2017]. 
 Analyses of these data revealed both cross-linguistic consistency and variability in early language skills, with insights from these patterns informing theories of early language learning [@frank2021]. 
 For example, cross-linguistic analyses indicate that measures of vocabulary size are tightly correlated with other aspects of early language skill, like gesture and grammatical competence. 
 Thus, over development, the language system is "tightly woven" [@bates1994; @frank2021] and early vocabulary size serves as a good proxy measure of children's overall language skill.
