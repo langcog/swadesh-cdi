@@ -283,19 +283,8 @@ en_good_prod %>% DT::datatable() |>
   DT::formatRound(columns=3:4, digits=2)
 ```
 
-## Guide to Developing a Swadesh-based CDI
-
-Developing a CDI for a new language is a substantial task requiring specific linguistic and cultural knowledge -- even with the new Swadesh-CDI recommendations in hand.
-Many recommendations and caveats have been enumerated by the CDI Advisory Board, here: [https://mb-cdi.stanford.edu/adaptations.html](https://mb-cdi.stanford.edu/adaptations.html)
-Rather than recapitulate the process and caveats already itemized there, we suggest how the Swadesh CDI can be used to jump-start the process.
-
-1. As a starting point, take the 100 Swadesh-CDI unilemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
-2. Consider adding unilemmas that are frequently included on other CDIs, and especially focus on semantic categories that are less well-represented on the S-CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10-20 items across these categories, including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "chalk", "toy").
-3. Do a pilot study, including several children at the upper and lower intended ages, and revise if there are many children at floor or ceiling.
-
 
 ## Comparison of Swadesh CDI Concepts to Other Lists
-
 
 28 of the Swadesh CDI candidates are on the 100-item CDI:WS short (form A), and 26 of the Swadesh candidates are on the WS short (form B).
 22 Swadesh CDI concepts are also on the original Swadesh-100 list---and 7 are overlapping with the ASJP (a subset of the Swadesh-100 that performs as well as the Swadesh-100 for purposes of glottochronology).

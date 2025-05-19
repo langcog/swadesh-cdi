@@ -155,7 +155,7 @@ For example, the CDIs have been adapted to only very few languages in India and 
 Moreover, the CDIs have not been adapted to any of the thousands of languages spoken by indigenous peoples around the world.
 The dearth of CDIs in these languages is a significant barrier to understanding the diversity of language development across the world, which is crucial for developing and validating theories of language acquisition that are purportedly universal [@kidd2022; @singh2023].
 More broadly, the research and clinical communities speaking these languages are often under-resourced and may lack a language resource ecosystem which would provide not only vocabulary assessment instruments, but also corpora, acquisition descriptions, computational tools, and other resources that support language development research and clinical practice [@hellwig2021].
-The absence of these resources also makes adaptations of the CDIs more difficult. For example, examining corpora of child and child-directed language is a common method for selecting items for a new CDI [@jaruskova2023] and this approach would not be possible if such corpora do not exist, or are not appropriately pre-processed and made widely accessible.
+The absence of these resources also makes adaptations of the CDIs more difficult. For example, examining corpora of child and child-directed language is a common method for selecting items for a new CDI [@jaruskova2023] and this approach would not be possible if such corpora do not exist, or are not appropriately pre-processed and made accessible.
 
 The importance and challenge of adapting the CDI to new, low-resource languages prompts the following question: Can we find a less resource-intensive way to create new CDIs that are valid and reliable?
 One possible approach is to identify a small set of items that are learned consistently across many languages, and which would meet the criteria for inclusion on many CDIs.
@@ -170,7 +170,7 @@ CAT-based CDIs presenting 50 or fewer items have been found to strongly correlat
 A general method for creating CDI CATs that works well across a broader age range (12--36 months) has been proposed and tested for American English and Mexican Spanish [@Kachergis2022]. 
 Note that the IRT model driving each CAT needs to be trained on a large and normative dataset (that is, a sample that is representative of a target population), which may not be available in a given language. 
 To date, the IRT models are fitted separately for each language and the fitted parameters (e.g., word difficulty) are likely to vary across languages.
-Importantly, this work has also revealed that scores on random subsets of items from a CDI form are highly correlated with scores on the full CDI (e.g., for English, full CDI vs. 100 random items $r=0.989$; @Kachergis2022), making random selection an important baseline comparison for any other proposed method.
+Notably, this work has also revealed that scores on random subsets of items from a CDI form are highly correlated with scores on the full CDI (e.g., for English, full CDI vs. 100 random items $r=0.989$; @Kachergis2022), making random selection an important baseline comparison for any other proposed method.
 However, random items from a single form are not guaranteed to be (1) of similar difficulty across all (or most) languages, (2) representative of the semantic categories on the full CDI, and (3) linguistically and culturally relevant across languages.  
 
 The goal of the current study is to use IRT modeling in conjunction with data from Wordbank to examine whether there is a core set of concepts that are frequently included on CDIs, and---importantly---whether enough of them are of roughly equal difficulty across many languages to allow them to be used as candidate items in new CDI adaptations. 
@@ -604,7 +604,7 @@ The substantial overlap in the unilemmas selected across methods points to a con
 
 <!-- THIS is labeled "figure" but it is actually a table, no?  Also, the font is ginormous in the pdf. -->
 
-```{r, fig.width=5.5, fig.cap=c("The 100-item Swadesh-CDI list by semantic category, along with 10 recommended items from under-represented semantic categories (in gray)."), echo=FALSE}
+```{r, fig.width=5.5, fig.height=5.5, fig.cap=c("The 100-item Swadesh-CDI list by semantic category, along with 10 recommended items from under-represented semantic categories (in gray)."), echo=FALSE}
 knitr::include_graphics("figs/SwadeshCDI_list.pdf")
 ```
 
@@ -630,7 +630,8 @@ prod_pars <- prod_pars |>
 
 
 
-```{r, fig.cap=c("The relative frequency of categories on the English CDI:WS form (e.g. n=103 action words / 680 total items = 0.15), and the relative frequency of categories represented in the 100-item Swadesh list."), echo=FALSE}
+```{r, echo=FALSE}
+# Table 3
 #knitr::include_graphics("figs/SwadeshCDI_list.pdf")
 
 prod_pars <- prod_pars |>
@@ -660,10 +661,15 @@ missing_from_swadesh <- setdiff(en_cats$semantic_category, swad_cats$semantic_ca
 # "locations"  "helping_verbs" "toys". "quantifiers"
 #setdiff(swad_cats$semantic_category, en_cats$semantic_category)
 
-en_cats %>% left_join(swad_cats) %>% kable(digits=2)
+en_cats |> left_join(swad_cats) |> 
+  rename(`Semantic Category` = semantic_category, 
+         `Proportion of EN CDI` = EN_freq,
+         `Proportion of S-CDI` = Swad_freq) |>
+  #replace_na('none') |> # or can we get a "-"?
+  kable(digits=2, caption=c("The proportion of items per semantic category on the English CDI:WS form (e.g. n=103 action words / 680 total items = 0.15), and the proportion of items per category on the 100-item Swadesh-CDI."))
 ```
 
-The `r S_LEN` S-CDI items, shown in Figure 2, represented `r nrow(na.omit(swad_cats))` of the 22 semantic categories present on the original American English CDI:WS form, with concrete nouns being most prevalent, followed by adjectives and verbs,
+The `r S_LEN` S-CDI items, shown in Figure 1, represented `r nrow(na.omit(swad_cats))` of the 22 semantic categories present on the original American English CDI:WS form, with concrete nouns being most prevalent, followed by adjectives and verbs,
 and some categories entirely unrepresented: locations, helping verbs, quantifiers, and toys (but see proposed extension below).
 43% of the S-CDI concepts were nouns, 20% were predicates (verbs and adjectives), 14% were function words, and the remaining concepts belonged to other lexical categories.
 These proportions are broadly similar to the lexical category proportions on the 680-item English CDI:WS (46% nouns, 24% predicates, 15% function words, and 5% other).
@@ -672,7 +678,7 @@ The S-CDI items were also present on more forms than typical in the selection se
 <!-- Finally, X S-CDI unilemmas were not present on the American English CDI:WS: ... -->
 
 Figure 2 shows the average cross-linguistic difficulty of CDI items by semantic category, for both Swadesh and non-Swadesh items. 
-The difficulty of Swadesh items generally tracked with that of non-Swadesh items.
+The difficulty of Swadesh-CDI items generally tracked with that of non-Swadesh items.
 
 ```{r difficulty-by-category, fig.env = "figure", fig.pos = "h", fig.height=4.5, fig.width=3.6, fig.align = "center", fig.cap = "Mean cross-linguistic difficulty of CDI words by semantic category, showing that selection of Swadesh concepts broadly maintained representative difficulty. Bars represent bootstrapped 95\\% confidence intervals."}
 
@@ -704,7 +710,7 @@ prod_cat <- xldf_clean |>
 prod_cat |> mutate(Items = ifelse(SwadeshCDI==1, "Swadesh", "non-Swadesh")) |>
   group_by(semantic_category, Items) |>
   tidyboot::tidyboot_mean(d, na.rm=T) |>
-  ggplot(aes(x=reorder(semantic_category, mean), y=mean, group=Items, color=Items)) + 
+  ggplot(aes(x=reorder(semantic_category, mean, decreasing=T), y=mean, group=Items, color=Items)) + 
   geom_point(alpha=.7, position = position_dodge2(.4)) +
   geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7, position = position_dodge2(.4)) +
   coord_flip() + theme_classic() + ylab("Mean item difficulty") + xlab("Semantic Category") +
@@ -763,7 +769,7 @@ xs <- swad_ext |> group_by(uni_lemma) |>
 Comparing the IRT parameters (across all CDI forms) showed that the discrimination parameter (i.e., slope) of the S-CDI items did not significantly differ from that of the non-Swadish items, suggesting that the S-CDI items could measure ability as well as non-Swadesh items.
 However, S-CDI items were significantly easier than the non-Swadish items (mean S-CDI $d=$ `r round(tmp[2,"d"], 2)`, others' mean $d=$ `r round(tmp[1,"d"], 2)`, `r report_ttest(swad_diff_ttest)`), which could result in older/more-skilled children being at ceiling on the test.
 
-To mitigate the likelihood of a ceiling effect, we propose extending the S-CDI with 11 additional low-variability unilemmas chosen to fill unrepresented semantic cagegories in the S-CDI, including a helping verb (_try_), locatives (_under, in, out_), quantifiers (_a lot, all, many, not_), and toys (_chalk, glue, toy_).
+To mitigate the likelihood of a ceiling effect, we propose extending the S-CDI with 11 additional low-variability unilemmas chosen to fill unrepresented semantic cagegories in the S-CDI, including a helping verb (_try_), locatives (_under, in, out_), quantifiers (_a lot, all, many, not_), and toys (_chalk, toy_).
 These unilemmas are included on a mean of `r round(mean(xs$n), 1)` of the 26 forms, but are of greater difficulty (mean $d=$ `r round(mean(xs$mean_d), 2)`), and cross-linguistic variability (mean $sd(d)=$ `r round(mean(xs$sd_d), 2)`).
 
 <!-- THERE IS NO MENTION OF FIGURE 3 IN THE TEXT BUT I THINK IT IS SUPPOSED TO GO HERE? -->
@@ -792,11 +798,12 @@ Although test information was slightly lower for the S-CDI, the values were virt
 
 We then evaluated the S-CDI's performance in a test of generalization to `r length(gen_langs)` more CDI datasets.
 For the `r length(gen_langs)` low-data languages, a comparison of simulated S-CDI scores to full CDI:WS revealed that the S-CDI's raw scores were again strongly related (mean $r=0.990$), with an average of $N=91$ S-CDI items appearing per list.
-Table 2 shows the results of this comparison, alongside the upper bound random baseline.
+Table 4 shows the results of this comparison, alongside the upper bound random baseline.
 Once again, the S-CDI performed nearly as well as a random sample of the actual CDI (random mean $r=0.994$).
 With the 10-item extension, the S-CDI's correlation rose to mean $r=0.993$, demonstrating the value of including items from the more difficult (and variable) categories that were underrepresented on the original list.
 
-```{r plot-swadesh-generalization-results, fig.width=6, fig.height=7, fig.cap="Correlation of each sublist's ability scores vs. full CDI sumscores and overlap in the generalization test."}
+```{r plot-swadesh-generalization-results, fig.width=6, fig.height=7, fig.cap="Correlation of each sublist's ability scores vs. full CDI sumscores and overlap in the generalization test.", include=F}
+# p1 is already shown in Table 4; p2 (overlap) is not very informative...maybe report as table in the Appendix?
 p1 <- ggplot(gen_res_sum,
        aes(x = language, y = sumscore_cor, fill = sublist)) +
   geom_col(position = "dodge") +
@@ -869,14 +876,14 @@ It is notable that, regardless of our stratification procedure, the number of se
 In other words, a fairly large number of items had similar difficulties across languages, meaning that they are acquired at similar ages.
 This result corroborates and extends previous findings from @tardif2008baby and @frank2021, who found substantial consistency in children's early vocabularies across languages.
 As in @frank2021, we also found that the Swadesh CDI items were easier than other items in general, suggesting that earlier-acquired vocabulary items are more consistent than later ones. 
-Furthermore, it is interesting to observe the distribution of Swadesh CDI items across semantic categories; notably, our final list underrepresented toys, food and drink, and things found outside, all of which may be more culturally contingent, and thus more variable than other categories.
+Furthermore, it is interesting to observe the distribution of Swadesh-CDI items across semantic categories; notably, our final list underrepresented toys, food and drink, and things found outside, all of which may be more culturally contingent, and thus more variable than other categories.
 Similarly the Swadesh CDI also underrepresented quantifiers, auxiliary verbs, and locatives, which are grammatical items that may exhibit more cross-linguistic variability than other categories.
 The distribution of Swadesh CDI items supports the idea that early vocabularies are conditioned both on broad similarities in early childhood experience, as well as cultural and linguistic differences in accessible concepts and words. 
 
 As previously mentioned, the Swadesh CDI items were significantly easier than other items, meaning that older children may perform at ceiling if given only the Swadesh CDI items.
 (This may be unsurprising from the perspective that Swadesh words are meant to be universal, and are therefore more frequent and basic---both within and across individual children's experiences.)
 Thus, our suggested use case for the Swadesh CDI list is as a starting point for researchers seeking to develop a CDI in a new language, rather than as a complete short-form CDI based on existing long-form CDI data.
-In particular, researchers should seek to add relevant unilemmas from categories that were less well-represented on the S-CDI, including helping verbs, locatives, quantifiers, and toys.
+In particular, researchers should seek to add relevant unilemmas relevant for the new language from categories that are less well-represented on the S-CDI, including helping verbs, locatives, quantifiers, and toys.
 These categories also tended to be more difficult, so adding items from them is likely to increase the difficulty of the form and limit ceiling effects. 
 Indeed, the inclusion of 10 low-variability items that representing these missing semantic categories increased generalization performance.
 Researchers adapting the S-CDI to new languages should also consider replacing nouns that may be less appropriate in some contexts (e.g. TV, washing machine, elephant, dog).
@@ -894,6 +901,19 @@ Contexts in which children are learning more than one language simultaneously pr
 The psychometric approach used for the Swadish-CDI generalizes the method used to develop the DLL EN-ES [@tamislemonda2024dll], a measure intended for English-Spanish bilingual language learners. 
 Developing those instruments involved an iterative process of identifying translation-equivalent items with large discrepancy in cross-linguistic (English vs. Spanish) difficulty (e.g., "hat" and "sombrero"), and replacing them with CDI items that were appropriate in both languages (informed by researchers with local knowledge), and had minimal difference in cross-linguistic difficulty.
 We strongly recommend that the Swadesh CDI list serve only as a starting point for developing a new CDI, but that researchers also use an iterative process that takes into account local expert knowledge of the target language, as well as the potential for multilingual learning contexts in order to select appropriate items.
+While keeping these limitations and considerations in mind, below we propose a procedure for developing a Swadesh-based CDI.
+
+## Guide to Developing a Swadesh-based CDI
+
+Developing a CDI for a new language is a substantial task requiring specific linguistic and cultural knowledge -- even with the new Swadesh-CDI recommendations in hand.
+Many recommendations and caveats have been enumerated by the CDI Advisory Board, here: [https://mb-cdi.stanford.edu/adaptations.html](https://mb-cdi.stanford.edu/adaptations.html)
+Rather than recapitulate the process and caveats already itemized there, we suggest how the Swadesh CDI can be used to jump-start the process.
+
+1. As a starting point, take the 100 Swadesh-CDI unilemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
+2. Consider adding unilemmas that are frequently included on other CDIs, and especially focus on semantic categories that are less well-represented on the S-CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10-20 items across these categories, including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "chalk", "toy").
+3. Do a pilot study, including several children at the upper and lower intended ages, and revise if there are many children at floor or ceiling.
+
+## Conclusion
 
 Despite the myriad challenges that remain in creating new measures of early language development, we believe that the proposed Swadesh CDI list will give researchers a solid foundation from which to start, lowering the barrier to the adaptation of CDI forms in new languages, since these are often time-consuming and challenging to construct.
 Expanding the number of languages with effective vocabulary measures would be a critical step in addressing issues related to the under-representation of linguistic diversity in language acquisition research [@kidd2022]. 
