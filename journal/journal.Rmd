@@ -151,7 +151,7 @@ For example, the American English CDI:WS and Mexican Spanish CDI:WS forms each h
 [^1]: [https://mb-cdi.stanford.edu/adaptations.htm](https://mb-cdi.stanford.edu/adaptations.htm)
 
 While CDI adaptations now exist for many languages, there remain important gaps in language coverage.
-For example, the CDIs have been adapted to only very few languages in India and Africa, despite the large number of speakers of some of these overlooked languages (e.g., Punjabi, Marathi, Telugu, Hausa, and Amharic, all of which have over 50 million speakers, see @eberhard2025). 
+For example, the CDIs have been adapted to very few languages in India and Africa, despite the large number of speakers of some of these overlooked languages (e.g., Punjabi, Marathi, Telugu, Hausa, and Amharic, all of which have over 50 million speakers, see @eberhard2025). 
 Moreover, the CDIs have not been adapted to any of the thousands of languages spoken by indigenous peoples around the world.
 The dearth of CDIs in these languages is a significant barrier to understanding the diversity of language development across the world, which is crucial for developing and validating theories of language acquisition that are purportedly universal [@kidd2022; @singh2023].
 More broadly, the research and clinical communities speaking these languages are often under-resourced and may lack a language resource ecosystem which would provide not only vocabulary assessment instruments, but also corpora, acquisition descriptions, computational tools, and other resources that support language development research and clinical practice [@hellwig2021].
@@ -171,7 +171,7 @@ A general method for creating CDI CATs that works well across a broader age rang
 Note that the IRT model driving each CAT needs to be trained on a large and normative dataset (that is, a sample that is representative of a target population), which may not be available in a given language. 
 To date, the IRT models are fitted separately for each language and the fitted parameters (e.g., word difficulty) are likely to vary across languages.
 Notably, this work has also revealed that scores on random subsets of items from a CDI form are highly correlated with scores on the full CDI (e.g., for English, full CDI vs. 100 random items $r=0.989$; @Kachergis2022), making random selection an important baseline comparison for any other proposed method.
-However, random items from a single form are not guaranteed to be (1) of similar difficulty across all (or most) languages, (2) representative of the semantic categories on the full CDI, and (3) linguistically and culturally relevant across languages.  
+However, random items from a single form are not guaranteed to be (1) developmentally and culturaly appropriate in other languages, (2) of similar difficulty in other languages, (3) representative of the semantic or syntactic categories on the full CDI.  
 
 The goal of the current study is to use IRT modeling in conjunction with data from Wordbank to examine whether there is a core set of concepts that are frequently included on CDIs, and---importantly---whether enough of them are of roughly equal difficulty across many languages to allow them to be used as candidate items in new CDI adaptations. 
 This work takes its inspiration from the fields of lexicostatistics and glottochronology, where researchers [notably, @Swadesh1971] have proposed lists of common concepts that exist in all catalogued languages in order to quantify the genealogical relatedness and dates of divergence of languages. 
@@ -213,7 +213,7 @@ In the 2PL model, the probability of child $j$ producing a given item $i$ is
  
  $$P_{i}(x_i = 1 | b_{i},a_{i},\theta_j ) = \frac{1}{1 + e^{-D a_{i}(\theta_j - b_i )}}$$
 
-where $D$ is a scaling parameter ($D=1.702$) which makes the logistic more closely match the ogive function used in a standard factor analysis [@R-mirt; @reckase2009].
+where $D$ is a scaling parameter (here, $D=1.702$) which makes the logistic more closely match the ogive function used in a standard factor analysis [@R-mirt; @reckase2009].
 Children with high latent ability ($\theta$) will be more likely to produce any given item than children with lower latent ability, and more difficult items will be produced by fewer children (at any given $\theta$) than easier items.
 The discrimination ($a_i$) adjusts the slope of the logistic (in the classic 1-parameter logistic "1PL" model, the slope is always 1). 
 Items with higher discrimination (i.e., slopes) better distinguish children above vs. below that item's difficulty level, and hence are generally more useful.
@@ -271,9 +271,9 @@ Thus, we focused only on the estimated item parameters, and in particular the va
 
 ### Instruments
 
-When a CDI:WG form was administered, caregivers were asked to indicate for each vocabulary item whether their child 1) understands that word ("comprehends") or 2) both understands and says ("produces") that word. 
+When a CDI:WG form is administered, caregivers are asked to indicate for each vocabulary item whether their child 1) understands that word ("comprehends") or 2) both understands and says ("produces") that word. 
 Leaving the item blank indicates that the child neither comprehends nor produces that word. For these analyses, we were interested only in vocabulary words that children were reported to produce.
-When a CDI:WS form was administered, caregivers were asked to indicate for each vocabulary item whether or not their child can produce (say) the given word. "Produces" responses were coded as 1 and all other responses were coded as 0.
+When a CDI:WS form is administered, caregivers are asked to indicate for each vocabulary item whether or not their child can produce (say) the given word. "Produces" responses were coded as 1 and all other responses were coded as 0.
 Our datasets consisted of a dichotomous-valued response matrix for each language, of size $N$ subjects $\times$ $W$ words.
 All models, data, and code for reproducing this paper are available on OSF[^3].
 
@@ -305,8 +305,8 @@ report_ttest <- function(ttest) {
 
 ```{r, singleton-analysis, include=F}
 # 2084
-uni_ag <- xldf_clean %>% filter(uni_lemma!="NA") %>%
-  group_by(uni_lemma) %>% # category <- but many unilemmas are categorized differently across languages
+uni_ag <- xldf_clean |>
+  group_by(uni_lemma) |> # category <- but many unilemmas are categorized differently across languages
   summarise(d_m=mean(d), a1_m=mean(a1), d_sd = sd(d), a1_sd = sd(a1), n=n())
 
 # The more times a unilemma appears, the easier it tends to be:
@@ -329,10 +329,10 @@ report_cor(cor.test(uni_ag_gt1$d_m, uni_ag_gt1$d_sd)) # r=.02 n.s.
 
 <!-- ToDo: update the language in this paragraph to be about CDI items per language (not just CDI:WS) -- or could add range of WG items -->
 Across the `r length(languages)` IRT models for different languages' CDI forms, difficulty and discrimination parameters for a total of `r nrow(xldf_clean)` items were fitted.
-Of those items, 95.5% had unilemmas defined, with a median of `r median(table(xldf_clean$language))` per language (range: 440 in Chilean Spanish to 1061 in Mandarin Chinese). 
-A total of `r length(unique(xldf_clean$uni_lemma))` unique unilemmas were defined across the forms, but `r nrow(uni1)` of these were singletons, appearing on only one of the forms.\footnote{These singletons were significantly more difficult than the `r nrow(uni_ag_gt1)` unilemmas appearing on more than one language form ($M_1=$ `r round(-mean(uni1$d_m),2)`; $M_{>1}=$ `r round(-mean(uni_ag_gt1$d_m),2)`; `r report_ttest(t.test(uni1$d_m, uni_ag_gt1$d_m))`).} 
+A median of `r median(table(xldf_clean$language))` were identified per language (range: 440 in Chilean Spanish to 1061 in Mandarin Chinese), for a total of `r length(unique(xldf_clean$uni_lemma))` unique unilemmas defined across the forms. 
+While the average unilemma appeared on `r round(mean(table(xldf_clean$uni_lemma)), 2)` forms (median: `r median(table(xldf_clean$uni_lemma))`), `r nrow(uni1)` unilemmas were singletons, appearing on only one of the forms, and are thus not promising candidates for generality.\footnote{These singletons were significantly more difficult than the `r nrow(uni_ag_gt1)` unilemmas appearing on more than one language form ($M_1=$ `r round(-mean(uni1$d_m),1)`; $M_{>1}=$ `r round(-mean(uni_ag_gt1$d_m),2)`; `r report_ttest(t.test(uni1$d_m, uni_ag_gt1$d_m))`).} 
 There was a significant relation between the number of forms on which a unilemma appears and its difficulty: the more number of languages, the _easier_ it tended to be (`r report_cor(cor.test(uni_ag$d_m, uni_ag$n))`).
-Moreover, there was a weak but significant relation between the number of forms on which a unilemma appears and its cross-linguistic variability (`r report_cor(cor.test(uni_ag$d_sd, uni_ag$n))`, for unilemmas appearing more than once).
+Moreover, there was a weak but significant relation between the number of forms on which a unilemma appears and its cross-linguistic variability in difficulty (`r report_cor(cor.test(uni_ag$d_sd, uni_ag$n))`, for unilemmas appearing more than once).
 It is perhaps intuitive that lower-variability items tend to be earlier learned, and are thus often selected to be on CDI forms, echoing prior work characterizing the consistency of children's first words across several languages [@tardif2008baby].
 However, these modest but significant correlations were also important to keep in mind as we chose our Swadesh CDI candidates, as selecting too many easy items could result in older children being at ceiling.
 
@@ -368,22 +368,22 @@ There were two key desiderata for a Swadesh CDI list:
 2. Comprehensive measurement of a child's vocabulary.
 
 To satisfy the generalizability criterion, we aimed to choose unilemmas with low cross-linguistic variability in their difficulty---that is, unilemmas that are similarly difficult to learn across languages, operationalized as having the lowest standard deviation across languages in item difficulty.
-To satisfy the comprehensiveness criterion, we select the lowest variability unilemmas. stratified by three diversity criteria used in previous short form constructions: item difficulties, semantic category representation, and syntactic categories representation.
+To satisfy the comprehensiveness criterion, we select the lowest variability unilemmas, stratified by three alternative diversity criteria that have been used in previous short form constructions: item difficulties, semantic category representation, and syntactic categories representation. After testing each of these comprehensiveness criteria, we will evaluate and choose the best seletion method.
 
-We arbitrarily selected a list size of 100 items[^4], noting that the same procedure could be followed to generate lists of larger or smaller sizes. 
-We thus wanted to select the 100 unilemmas with the least variability in item difficulty across all unilemmas (i.e., unstratified), or stratified by difficulty, by semantic category, or by syntactic category.
-For difficulty stratification, we binned the unilemmas into 2--5 quantiles by difficulty, and an equal number of the least variable items per strata were selected. 
-For semantic category stratification, we considered the semantic categories (e.g., animals, furniture, outside things) that were the most common across all languages.
-For syntactic category stratification, we classified all items as nouns, predicates (verbs and adjectives), function words, or other (e.g., onomatopoeia, routinized phrases).
+We arbitrarily selected a list size of 100 items[^4], although the same procedure could be followed to generate lists of larger or smaller sizes. 
+We thus wanted to select the 100 unilemmas with the least variability in item difficulty across all unilemmas (i.e., unstratified), or stratified by difficulty, by semantic category, or by syntactic category, as explained here:
+
+- __difficulty stratification (2-5)__: unilemmas were binned into 2, 3, 4, or 5 quantiles by difficulty, and an equal number of the least variable items per strata were selected. For example, for 2 difficulty strata, the unilemmas are median split by difficulty, and the least variable 50 of each bin were selected.
+- __semantic category stratification__: selected the mean number of items per semantic category from the categories (e.g., animals, furniture, outside things) that were most commonly included on CDIs across all languages.
+- __syntactic category stratification__, selected the mean number of items per syntactic category, with items classified as nouns, predicates (verbs and adjectives), function words, or other (e.g., onomatopoeia, routinized phrases).
 <!--I assume this was a typo:, closed class, adverbs). -->
 In each case, we calculated the mean proportion of each semantic or syntactic category across all languages.
 The mean proportions were then rounded to fit 100 items, resulting in quotas for each category; least variable items were drawn within each category to satisfy the quotas.
 For example, 9.7% of unilemmas are classified as food/drink, so a quota of 10 food/drink items would be selected for the semantic category stratified Swadesh lists.
 On average, a language's CDI has 20.5 semantic categories (median = 21); across all languages, 31 unique categories are used.
-The 31 semantic categories and 4 syntactic categories used in these analyses are listed in Appendix A.
+The 31 semantic categories used in these analyses are listed in Appendix A.
 
-The method of choosing the lowest variability items tended to prefer items that appear on fewer forms, since it was more likely for two items to coincidentally have very similar difficulties than for 20 items to have similar difficulties, even though this measure of variability was likely to be an underestimate of true cross-linguistic variability in the former case. 
-<-- THIS PRIOR SENTENCE IS CONFUSING! -->
+We note that choosing the least variable items introduced a bias to select items that appear on fewer forms, since it was more likely for two items to coincidentally have very similar difficulties than for 20 items to have similar difficulties (though we also note that having fewer measures of an item is more likely to underestimate true cross-linguistic variability).
 As such, we also used a threshold $k$, reflecting the minimum number of current languages which must contain the unilemma (i.e., for $k = 5$, we included only unilemmas that appeared on the forms of at least 5 languages). 
 
 [^4]: Note that, even though most CDI short-forms are of this length, 100 items yields, on balance, a reliable measure of children's early vocabulary without being too time-consuming for parents to complete.
@@ -769,7 +769,7 @@ xs <- swad_ext |> group_by(uni_lemma) |>
 Comparing the IRT parameters (across all CDI forms) showed that the discrimination parameter (i.e., slope) of the S-CDI items did not significantly differ from that of the non-Swadish items, suggesting that the S-CDI items could measure ability as well as non-Swadesh items.
 However, S-CDI items were significantly easier than the non-Swadish items (mean S-CDI $d=$ `r round(tmp[2,"d"], 2)`, others' mean $d=$ `r round(tmp[1,"d"], 2)`, `r report_ttest(swad_diff_ttest)`), which could result in older/more-skilled children being at ceiling on the test.
 
-To mitigate the likelihood of a ceiling effect, we propose extending the S-CDI with 11 additional low-variability unilemmas chosen to fill unrepresented semantic cagegories in the S-CDI, including a helping verb (_try_), locatives (_under, in, out_), quantifiers (_a lot, all, many, not_), and toys (_chalk, toy_).
+To mitigate the likelihood of a ceiling effect, we propose extending the S-CDI with 10 additional low-variability unilemmas chosen to fill unrepresented semantic cagegories in the S-CDI, including a helping verb (_try_), locatives (_under, in, out_), quantifiers (_a lot, all, many, not_), and toys (_chalk, toy_).
 These unilemmas are included on a mean of `r round(mean(xs$n), 1)` of the 26 forms, but are of greater difficulty (mean $d=$ `r round(mean(xs$mean_d), 2)`), and cross-linguistic variability (mean $sd(d)=$ `r round(mean(xs$sd_d), 2)`).
 
 <!-- THERE IS NO MENTION OF FIGURE 3 IN THE TEXT BUT I THINK IT IS SUPPOSED TO GO HERE? -->
@@ -888,7 +888,7 @@ These categories also tended to be more difficult, so adding items from them is 
 Indeed, the inclusion of 10 low-variability items that representing these missing semantic categories increased generalization performance.
 Researchers adapting the S-CDI to new languages should also consider replacing nouns that may be less appropriate in some contexts (e.g. TV, washing machine, elephant, dog).
 
-Another potential limitation of this work is that most existing CDIs (and most datsets available in Wordbank) target languages in the Indo-European language family. <!-- add sentence about cultural bias -->
+Another potential limitation of this work is that most existing CDIs (and most datasets available in Wordbank) target languages in the Indo-European language family. <!-- add sentence about cultural bias -->
 It is not clear to what extent this bias in the existing data might interfere with generalizing to non-Indo-European languages.
 Nonetheless, our original `r length(train_langs)` datasets include 11 non-Indo-European languages (3 Sino-Tibetan, 3 Uralic, 2 Afro-Asiatic, 1 Japonic, 1 Koreanic, 1 Turkic), and the generalization datasets include 2 sign languages and 2 Niger-Congo languages (not represented in the original datasets); the broad consistency across language families thus suggests that the effectiveness of the S-CDI may be sufficiently robust.
 Such a robustness also corroborates with results from @floccia2018vocabulary, who demonstrated that a bilingual vocabulary model based on a set of 30 unilemmas had good predictive validity on non-target languages, even those from other language families.
