@@ -697,7 +697,7 @@ gen_res_sum <- gen_res |>
 save(gen_res_sum, gen_res, file="data/intermediates/generalization_results.rds")
 ```
 
-```{r, generate-candidate-swadesh-lists}
+```{r, generate-candidate-swadesh-lists, echo=F}
 load("data/intermediates/generalization_results.rds")
 
 unstrat_sublist <- make_swadesh_sublist(prod_semantic_sum, S_LEN, 23)
@@ -755,12 +755,14 @@ venn.diagram(
   output=TRUE
 )
 
+
+swadesh_sublist <- syntactic_sublist
 ```
 
 
 Weighted vote (by difficulty correlation) on which items should be included on final Swadesh list
 
-```{r}
+```{r, eval=F}
 # top 4 methods -- that is, the best of each class
 all_swadesh <- bind_rows(category_sublist |> mutate(method = "category") |> select(-n, -wanted, -count, -mean_prop), 
                          unstrat_sublist |> mutate(method = "unstratified"),
@@ -783,10 +785,6 @@ ToDo: run generalization test again on final Swadesh list..? (vs. equal-length r
 
 
 Difficulty distribution by method (and vs. overall)
-
-```{r}
-
-```
 
 
 
@@ -820,6 +818,9 @@ ToDo: make these ANOVAs...?
 
 The Swadesh sublist selection methods are not significantly different than random in terms of sumscore correlation:
 ```{r}
+aov(sumscore_cor ~ sublist, data=gen_res_sum)
+aov(num_overlap ~ sublist, data=gen_res_sum)
+
 t.test(gen_res_sum |> filter(sublist == "unstratified") |> pull(sumscore_cor),
        gen_res_sum |> filter(sublist == "Random") |> pull(sumscore_cor),
        paired = TRUE)
@@ -858,6 +859,13 @@ t.test(gen_res_sum |> filter(sublist == "2 strata") |> pull(num_overlap),
 
 All of the methods result in sublists that are significantly easier than all items
 ```{r}
+prod_sum <- prod_pars |> 
+  filter(language %in% train_langs) |> 
+  group_by(uni_lemma) |> 
+  summarise(num_langs = n(),
+            mean_d = mean(d, na.rm = TRUE),
+            sd_d = sd(d, na.rm = TRUE))
+
 t.test(unstrat_sublist$mean_d,
        prod_sum$mean_d)
 ```
@@ -905,7 +913,7 @@ unstrat_sublist |> mutate(sublist = "unstratified") |>
 
 # look into NAs...kind of a lot of 'em
 
-cat_freq <- xldf %>% # @Alvin filter to canonical categories?
+cat_freq <- xldf_clean %>% # @Alvin filter to canonical categories?
   filter(#!is.na(category), 
          category!="locations_quantities_adverbs",
          category!="sounds2",
@@ -925,7 +933,6 @@ cat_freq %>% ggplot(aes(x=freq, y=category, group=language)) +
 is sd(d) predicted by variance in distributed semantic models across languages?
 (animals -- and other concrete nouns -- but body partologies differ a lot cross-linguistically; and pronouns and prepositions even more)
 - back uni-lemmas (or just use CDI definitions) and pick favorite multilingual LLM..(but prob can't get all languages)
-
 - sd(d) vs. concreteness? (we know it's correlated with d..)
 
 
@@ -977,27 +984,20 @@ heatmap.2(swad_dif_cors, col=Colors)
 
 ## Baseline language similarity data
 
-From [Bella, Batsuren, and Giunchiglia (2021)](http://ukc.disi.unitn.it/index.php/lexsim/).
+From [Bella, Batsuren, and Giunchiglia (2021)](http://ukc.disi.unitn.it/index.php/lexsim/) [@bella2021]
+Similarity is a value between 0 and 100, confidence (Robustness) can be Low, Medium, or High. 
+The confidence of a result depends on the sizes of the lexicons over which the similarity value was computed: the smaller the lexicon sizes, the lower the confidence.
+Missing languages: ASL, BSL, Estonian, Latvian, Kiswahili (or Swahili), or Kigiriama
 
 ```{r}
-# citation:
-# Gábor Bella, Khuyagbaatar Batsuren, and Fausto Giunchiglia. (2021). A Database and Visualization of the Similarity of Contemporary Lexicons. 24th International Conference on Text, Speech, and Dialogue. Olomouc, Czech Republic. Retrieved from http://ukc.disi.unitn.it/index.php/lexsim/ January 18, 2024.
 lang_sims <- read.csv(file="data/similarities_1.0.tsv", sep='\t') 
-# Similarity is a value between 0 and 100, confidence (Robustness) can be Low, Medium, or High. 
-# The confidence of a result depends on the sizes of the lexicons over which the similarity value was computed: the smaller the lexicon sizes, the lower the confidence.
-
 sort(unique(lang_sims$LangName_1))
 
-# not existing: ASL, Estonian, BSL, Kiswahili, Kigiriama, 
-
-str_split(language, " (")
+#str_split(language, " (")
 
 matches = intersect(unique(lang_sims$LangName_1), languages) # 18
 names(matches) = matches
-setdiff(unique(xldf$lang_mapped), unique(lang_sims$LangName_1))
 
-
-# they don't have: "American Sign Language","British Sign Language","Kiswahili" (or Swahili), "Kigiriama", Greek (Cypriot/not),
 language_mapping <- c(matches, c(
   "Mandarin (Beijing)" = "Mandarin Chinese", "Mandarin (Taiwanese)" = "Mandarin Chinese",
   "Cantonese" = "Yue Chinese",
@@ -1013,24 +1013,26 @@ language_mapping <- c(matches, c(
   "Greek (Cypriot)" = "Modern Greek",
   "Arabic (Saudi)" = "Standard Arabic" # or Egyptian / Moroccan ?
 ))
-xldf <- xldf %>%
+
+xldf_clean <- xldf_clean %>%
   mutate(lang_mapped = coalesce(language_mapping[language], language))
 
-matches = intersect(unique(lang_sims$LangName_1), unique(xldf$lang_mapped)) # 26
-langs_to_remove <- setdiff(unique(xldf$lang_mapped), unique(lang_sims$LangName_1))
+setdiff(unique(xldf$lang_mapped), unique(lang_sims$LangName_1))
+
+matches = intersect(unique(lang_sims$LangName_1), unique(xldf_clean$lang_mapped)) # 26
+langs_to_remove <- setdiff(unique(xldf_clean$lang_mapped), unique(lang_sims$LangName_1))
 
 # Replace NA values if the language doesn't have a mapping
-xldf$lang_mapped[is.na(xldf$lang_mapped)] <- xldf$language[is.na(xldf$lang_mapped)]
+xldf_clean$lang_mapped[is.na(xldf_clean$lang_mapped)] <- xldf$language[is.na(xldf_clean$lang_mapped)]
 
 lang_sims <- lang_sims %>%
   filter(is.element(LangName_1, language_mapping) & 
          is.element(LangName_2, language_mapping))
 
 # table(lang_sims$Robustness) # mostly high confidence, a few medium
-
 ```
 
-# Compare dendrogams of 
+# Compare dendrogams of historic language relations and CDI word difficulty
 
 ```{r}
 # compare dendrograms: https://cran.r-project.org/web/packages/dendextend/vignettes/dendextend.html
@@ -1048,32 +1050,34 @@ lang_sims_mat <- lang_sims_long %>%
 rownames(lang_sims_mat) = lang_sims_mat$LangName_2
 lang_sims_mat$LangName_2 = NULL
 
-lang_sim_d <- dist(lang_sims_mat)
-lang_sim_cl <- hclust(lang_sim_d, method = "average")
+lang_sim_d <- dist(scale(lang_sims_mat))
+lang_sim_cl <- hclust(lang_sim_d, method = "ward.D2") # method = "average"
 lang_sim_dend <- as.dendrogram(lang_sim_cl)
 
-#pdf("lang_sim_dendrogram.pdf", height=100, width=10)
+pdf("lang_sim_dendrogram.pdf", height=8, width=12)
 dendextend::plot_horiz.dendrogram(lang_sim_dend)
-#dev.off()
+dev.off()
 
-# ToDo: do we need to use xldf_clean ?
-swad_lang_sims_long <- xldf %>% 
+swad_lang_sims_long <- xldf_clean %>% 
   filter(!is.element(language, langs_to_remove)) %>%
   select(-language) %>% rename(language = lang_mapped) %>%
   filter(is.element(uni_lemma, swadesh_sublist$uni_lemma))
 setdiff(unique(swad_lang_sims_long$language), names(lang_sims_mat)) # "Yue Chinese" ??
-swad_dif_mat <- get_xling_difficulty_similarity(swad_lang_sims_long)
+swad_dif_mat <- get_xling_difficulty_similarity(swad_lang_sims_long) # for Swadesh list items
+#dif_cors # for all items
 
-swad_d <- dist(swad_dif_mat)
-swad_cl <- hclust(swad_d, method = "average")
+swad_d <- dist(scale(swad_dif_mat))
+swad_cl <- hclust(swad_d, method = "ward.D2") # method = "average"
 swad_dend <- as.dendrogram(swad_cl)
 
+pdf("swad_sim_dendrogram.pdf", height=8, width=12)
 dendextend::plot_horiz.dendrogram(swad_dend)
-
+dev.off()
 
 dend_diff(swad_dend, lang_sim_dend)
 # more ways to distinguish differences: help(highlight_distinct_edges)
 ```
+
 ## Tanglegram!
 
 - "unique" nodes are highlighted with dashed lines (i.e.: nodes which contains a combination of labels/items, which are not present in the other tree)
@@ -1090,13 +1094,57 @@ tanglegram(dends)
 
 
 ```{r}
-dends %>% untangle(method = "step1side") %>% 
-   tanglegram(common_subtrees_color_branches = TRUE)
+pdf("swad_dif_vs_lang_sim_tanglegram.pdf", height=8, width=14)
+dends |> untangle(method = "step1side") |> 
+  tanglegram(
+    lab.cex = 1, margin_inner = 8,
+    highlight_distinct_edges = FALSE, # Turn-off dashed lines
+    common_subtrees_color_lines = FALSE, # Turn-off line colors
+    common_subtrees_color_branches = TRUE) |> # Color common branches 
+  entanglement() # alignment quality (lower is better)
+dev.off()
+# 0.26
 
 # ToDo: some of the languages appear only in one column:
 # setdiff(unique(lang_sims$LangName_2), unique(lang_sims$LangName_1))
 #  "Yue Chinese"
 # setdiff(unique(lang_sims$LangName_1), unique(lang_sims$LangName_2))
 #  "Standard Arabic"
+
+# https://cran.r-project.org/web/packages/dendextend/vignettes/dendextend.html
+
+# Cophenetic correlation coefficient
+cor_cophenetic(dends) # .18
+
+# Baker correlation coefficient
+cor_bakers_gamma(dends) # .20
+```
+
+
+```{r}
+bakers_gamma_perm_test <- function(dend1, dend2, R=200) {
+  the_cor <- cor_bakers_gamma(dend1, dend2)
+  the_cor2 <- cor_bakers_gamma(dend2, dend1)
+  cor_bakers_gamma_results <- numeric(R)
+  dend_mixed <- dend1
+  for(i in 1:R) {
+     dend_mixed <- sample.dendrogram(dend_mixed, replace = FALSE)
+     cor_bakers_gamma_results[i] <- cor_bakers_gamma(dend2, dend_mixed)
+  }
+  plot(density(cor_bakers_gamma_results),
+     main = "Baker's gamma distribution under H0",
+     xlim = c(-1,1))
+  abline(v = 0, lty = 2)
+  abline(v = the_cor, lty = 2, col = 2)
+  abline(v = the_cor2, lty = 2, col = 4)
+  legend("topleft", legend = c("cor", "cor2"), fill = c(2,4))
+  round(sum(the_cor2 < cor_bakers_gamma_results)/ R, 4)
+  title(sub = paste("One sided p-value:",
+                  "cor =",  round(sum(the_cor < cor_bakers_gamma_results)/ R, 4),
+                  " ; cor2 =",  round(sum(the_cor2 < cor_bakers_gamma_results)/ R, 4)
+                  ))
+}
+
+bakers_gamma_perm_test(swad_dend, lang_sim_dend)
 ```
 
