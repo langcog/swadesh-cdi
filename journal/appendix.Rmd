@@ -1,7 +1,7 @@
 ---
 title: "Appendix to _Measuring Children's Early Vocabulary in Low-Resource Languages Using a Swadesh-style Word List_"
 author: "[redacted for anonymous review]"
-date: "May 7, 2025"
+date: "June 20, 2025"
 output:
   html_document: default
 ---
@@ -34,24 +34,10 @@ load(here("data/intermediates/xldf_clean_allforms.Rdata"))
 # 42 languages, 28541 parameters
 
 xldf_clean <- xldf_clean |> 
-  mutate(uni_lemma = ifelse(uni_lemma=="glue", "glue (object)", uni_lemma)) |>
-  mutate(d = -d) |> # easiness -> difficulty
-  mutate(category = case_when(category=="directions" ~ "locations", # Mandarin
-                              category=="sounds2" ~ "sounds", # Japanese - oink
-                              category=="conversations" ~ "games_routines", # Japanese - ok, no, hello
-                              category=="others" & uni_lemma=="also" ~ "quantifiers", # Japanese
-                              category=="others" & uni_lemma=="already" ~ "time_words", # Japanese
-                              TRUE ~ category))
+  mutate(d = -d)  # easiness -> difficulty
 
 prod_pars <- prod_pars |> 
-  mutate(uni_lemma = ifelse(uni_lemma=="glue", "glue (object)", uni_lemma)) |>
-  mutate(d = -d) |> # easiness -> difficulty
-  mutate(semantic_category = case_when(semantic_category=="directions" ~ "locations",
-                              semantic_category=="sounds2" ~ "sounds",
-                              semantic_category=="conversations" ~ "games_routines",
-                              semantic_category=="others" & uni_lemma=="also" ~ "quantifiers",
-                              semantic_category=="others" & uni_lemma=="already" ~ "time_words",
-                              TRUE ~ semantic_category))
+  mutate(d = -d)  # easiness -> difficulty
 
 load(file=here("data/intermediates/generalization_results.rds"))
 # gen_res_sum, gen_res
@@ -284,7 +270,7 @@ en_good_prod %>% DT::datatable() |>
 ```
 
 
-## Comparison of Swadesh CDI Concepts to Other Lists
+## Comparison of Swadesh CDI Items to Other Lists
 
 28 of the Swadesh CDI candidates are on the 100-item CDI:WS short (form A), and 26 of the Swadesh candidates are on the WS short (form B).
 22 Swadesh CDI concepts are also on the original Swadesh-100 list---and 7 are overlapping with the ASJP (a subset of the Swadesh-100 that performs as well as the Swadesh-100 for purposes of glottochronology).

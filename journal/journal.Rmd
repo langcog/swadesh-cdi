@@ -83,24 +83,10 @@ load(here("data/intermediates/xldf_clean_allforms.Rdata"))
 # 42 languages, 28541 parameters
 
 xldf_clean <- xldf_clean |> 
-  mutate(uni_lemma = ifelse(uni_lemma=="glue", "glue (object)", uni_lemma)) |>
-  mutate(d = -d) |> # easiness -> difficulty
-  mutate(category = case_when(category=="directions" ~ "locations", # Mandarin
-                              category=="sounds2" ~ "sounds", # Japanese - oink
-                              category=="conversations" ~ "games_routines", # Japanese - ok, no, hello
-                              category=="others" & uni_lemma=="also" ~ "quantifiers", # Japanese
-                              category=="others" & uni_lemma=="already" ~ "time_words", # Japanese
-                              TRUE ~ category))
+  mutate(d = -d) # easiness -> difficulty
 
 prod_pars <- prod_pars |> 
-  mutate(uni_lemma = ifelse(uni_lemma=="glue", "glue (object)", uni_lemma)) |>
-  mutate(d = -d) |> # easiness -> difficulty
-  mutate(semantic_category = case_when(semantic_category=="directions" ~ "locations",
-                              semantic_category=="sounds2" ~ "sounds",
-                              semantic_category=="conversations" ~ "games_routines",
-                              semantic_category=="others" & uni_lemma=="also" ~ "quantifiers",
-                              semantic_category=="others" & uni_lemma=="already" ~ "time_words",
-                              TRUE ~ semantic_category))
+  mutate(d = -d) # easiness -> difficulty
 
 # TEDS.twos has all NA for category...
 # should category="directions" all be "locations? (on, under, inside, front, behind.)
@@ -376,8 +362,6 @@ We thus wanted to select the 100 unilemmas with the least variability in item di
 - __Difficulty stratification (2--5)__: Unilemmas were binned into 2, 3, 4, or 5 quantiles by difficulty, and an equal number of the least variable items per strata were selected. For example, for 2 difficulty strata, the unilemmas were median split by difficulty, and the least variable 50 of each bin were selected.
 - __Semantic category stratification__: We calculated the mean proportion of items that belonged to each semantic categories (e.g., animals, furniture, outside things) across the CDI forms, rounded to fit 100 items, resulting in quotas for each category. We then selected the least variable items within each category to satisfy the category quotas. For example, 9.7% of unilemmas are classified as food/drink, so a quota of 10 food/drink items would be selected for the semantic category stratified Swadesh lists. On average, a language's CDI has 20.5 semantic categories (median = 21); across all languages, 31 unique categories are used. The 31 semantic categories used in these analyses are listed in Appendix A.
 - __Syntactic category stratification__: We calculated the mean proportion of items that belonged to each syntactic category across the CDI forms, with items classified as nouns, predicates (verbs and adjectives), function words, or other (e.g., onomatopoeia, routinized phrases), rounded to fit 100 items, resulting in quotas for each category. We then selected the least variable items within each category to satisfy the category quotas.
-<!--I assume this was a typo:, closed class, adverbs). -->
-
 
 We note that choosing the least variable items introduced a bias to select items that appear on fewer forms, since it was more likely for two items to coincidentally have very similar difficulties than for 20 items to have similar difficulties (though we also note that having fewer measures of an item is more likely to underestimate true cross-linguistic variability).
 As such, we also used a threshold $k$, reflecting the minimum number of current languages which must contain the unilemma (i.e., for $k = 5$, we included only unilemmas that appeared on the forms of at least 5 languages). 
@@ -483,7 +467,7 @@ cv_res_sum <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allfor
 
 cv_output <- cv_res_sum |> 
   group_by(k, sublist) |> 
-  summarise(num_overlap = mean(num_overlap, na.rm = TRUE),
+  summarise(num_overlap = round(mean(num_overlap, na.rm = TRUE), 1),
             difficulty_cor = mean(difficulty_cor, na.rm = TRUE),
             rmse = mean(rmse, na.rm=T))
 
@@ -658,6 +642,8 @@ missing_from_swadesh <- setdiff(en_cats$semantic_category, swad_cats$semantic_ca
 # "locations"  "helping_verbs" "toys". "quantifiers"
 #setdiff(swad_cats$semantic_category, en_cats$semantic_category)
 
+options(knitr.kable.NA = '-')
+
 en_cats |> left_join(swad_cats) |> 
   mutate(semantic_category = semantic_category |> 
            str_replace_all("_", " ") |> 
@@ -718,6 +704,33 @@ prod_cat |> mutate(Items = ifelse(SwadeshCDI==1, "Swadesh", "non-Swadesh")) |>
 ```
 
 
+```{r, swadesh-vs-non-swadesh-diff, echo=F}
+tmp <- xldf_clean |> 
+  group_by(SwadeshCDI) |>
+  filter(!is.na(d)) |>
+  summarise(sd_d = sd(d), d = -mean(d), 
+            sd_a1 = sd(a1), a1 = -mean(a1))
+# mean difficulty of Swadesh words: -.18; mean difficulty of other words: -.94
+# (mean of all: mean(xldf_clean$d, na.rm=T) .81
+
+swad_discrim = t.test(subset(xldf_clean, SwadeshCDI==1)$a1, 
+                      subset(xldf_clean, SwadeshCDI==0)$a1) 
+
+swad_diff_ttest = t.test(-subset(xldf_clean, SwadeshCDI==1)$d, 
+                         -subset(xldf_clean, SwadeshCDI==0)$d)
+
+swad_extension_unis <- c("try", "under", "in", "out", 
+                         "glue (object)", "toy (object)",  # chalk only on 14 forms, try on 13
+                         "all", "many", "not", "a lot")
+
+# ToDo: create swadesh_sublist_extended 
+
+swad_ext <- xldf_clean |> filter(is.element(uni_lemma, swad_extension_unis))
+
+xs <- swad_ext |> group_by(uni_lemma) |>
+  summarise(n = n(), mean_d = mean(d), sd_d = sd(d))
+```
+
 ```{r fig-mean-swadesh-item-diff, fig.cap=c("Mean item difficulty of Swadesh vs. non-Swadesh CDI items per language. Swadesh items are consistently easier than non-Swadesh items, but show the same difficulty trend as non-Swadesh items across languages. Bars represent bootstrapped 95\\% confidence intervals."), fig.height=5.5, fig.width=4.0}
 
 swad_d_m <- xldf_clean %>% 
@@ -734,7 +747,6 @@ swad_d_m %>% mutate(Swadesh = ifelse(SwadeshCDI, "Swadesh", "non-Swadesh")) %>%
         legend.margin=margin(c(2,5,3,2))) + # legend.margin=margin(c(1,5,5,5)) # top right bottom left
   xlab("Language") + ylab("Mean item difficulty")
 ```
-
 
 
 ```{r, swadesh-vs-non-swadesh-diff, echo=F}
@@ -768,7 +780,7 @@ xs <- swad_ext |> group_by(uni_lemma) |>
 Comparing the IRT parameters (across all CDI forms) showed that the discrimination parameter (i.e., slope) of the S-CDI items did not significantly differ from that of the non-Swadesh items, suggesting that the S-CDI items could measure ability as well as non-Swadesh items.
 However, as shown in Figure 3, S-CDI items were significantly easier than the non-Swadesh items (mean S-CDI $d=$ `r round(tmp[2,"d"], 2)`, mean non-S-CDI $d=$ `r round(tmp[1,"d"], 2)`, `r report_ttest(swad_diff_ttest)`), which could result in older/more-skilled children being at ceiling on the test.
 
-To mitigate the likelihood of a ceiling effect, we propose extending the S-CDI with 10 additional low-variability unilemmas chosen to fill unrepresented semantic cagegories in the S-CDI, including a helping verb ("try"), locatives ("under", "in", "out"), quantifiers ("a lot", "all", "many", "not"), and toys ("chalk", "toy").
+To mitigate the likelihood of a ceiling effect, we propose extending the S-CDI with 10 additional low-variability unilemmas chosen to fill unrepresented semantic cagegories in the S-CDI, including a helping verb ("try"), locatives ("under", "in", "out"), quantifiers ("a lot", "all", "many", "not"), and toys ("glue", "toy").
 These unilemmas are included on a mean of `r round(mean(xs$n), 1)` of the 32 forms, but are of greater difficulty (mean $d=$ `r round(mean(xs$mean_d), 2)`), and cross-linguistic variability (mean $sd(d)=$ `r round(mean(xs$sd_d), 2)`).
 
 ## Validating the Swadesh CDI
@@ -909,7 +921,7 @@ Many recommendations and caveats have been enumerated by the CDI Advisory Board.
 Rather than recapitulate the process and caveats already itemized there, we suggest how the Swadesh CDI can be used to jump-start the process.
 
 1. As a starting point, take the 100 Swadesh-CDI unilemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
-2. Consider adding unilemmas that are frequently included on other CDIs, and especially focus on semantic categories that are less well-represented on the S-CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10--20 items across these categories, possibly including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "chalk", "toy").
+2. Consider adding unilemmas that are frequently included on other CDIs, and especially focus on semantic categories that are less well-represented on the S-CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10-20 items across these categories, including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "glue (object)", "toy").
 3. Do a pilot study, including several children at the upper and lower intended ages, and revise if there are many children at floor or ceiling.
 
 ## Conclusion

@@ -155,11 +155,17 @@ xldf <- readRDS("data/intermediates/xldf_prod_allforms.rds")
 model_stats <- readRDS("data/intermediates/model_stats.rds")
 ```
 
-Clean IRT parameters (`xldf`)
+Clean IRT parameters (`xldf` -> `xldf_clean`).
 ```{r}
 xldf_clean <- xldf |> 
   filter(!is.na(uni_lemma), !is.na(d)) |> 
+  mutate(uni_lemma = ifelse(uni_lemma=="glue", "glue (object)", uni_lemma)) |>
   mutate(category = case_when(
+    category=="directions" ~ "locations", # Mandarin
+    category=="sounds2" ~ "sounds", # Japanese - oink
+    category=="conversations" ~ "games_routines", # Japanese - ok, no, hello
+    category=="others" & uni_lemma=="also" ~ "quantifiers", # Japanese
+    category=="others" & uni_lemma=="already" ~ "time_words", # Japanese
     uni_lemma == "yes" & language == "Slovak" ~ "games_routines",
     uni_lemma == "no" & language == "Slovak" ~ "games_routines",
     uni_lemma == "peekaboo" & language == "Slovak" ~ "games_routines",
