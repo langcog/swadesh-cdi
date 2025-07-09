@@ -723,8 +723,6 @@ swad_extension_unis <- c("try", "under", "in", "out",
                          "glue (object)", "toy (object)",  # chalk only on 14 forms, try on 13
                          "all", "many", "not", "a lot")
 
-# ToDo: create swadesh_sublist_extended 
-
 swad_ext <- xldf_clean |> filter(is.element(uni_lemma, swad_extension_unis))
 
 xs <- swad_ext |> group_by(uni_lemma) |>
@@ -749,33 +747,6 @@ swad_d_m %>% mutate(Swadesh = ifelse(SwadeshCDI, "Swadesh", "non-Swadesh")) %>%
 ```
 
 
-```{r, swadesh-vs-non-swadesh-diff, echo=F}
-tmp <- xldf_clean |> 
-  group_by(SwadeshCDI) |>
-  filter(!is.na(d)) |>
-  summarise(sd_d = sd(d), d = -mean(d), 
-            sd_a1 = sd(a1), a1 = -mean(a1))
-# mean difficulty of Swadesh words: -.18; mean difficulty of other words: -.94
-# (mean of all: mean(xldf_clean$d, na.rm=T) .81
-
-swad_discrim = t.test(subset(xldf_clean, SwadeshCDI==1)$a1, 
-                      subset(xldf_clean, SwadeshCDI==0)$a1) 
-
-swad_diff_ttest = t.test(-subset(xldf_clean, SwadeshCDI==1)$d, 
-                         -subset(xldf_clean, SwadeshCDI==0)$d)
-
-swad_extension_unis <- c("try", "under","in","out", 
-                    "chalk", "toy (object)", # remove "glue"---only on 2 forms
-                    "a lot","all","many","not")
-
-# ToDo: create swadesh_sublist_extended 
-
-swad_ext <- xldf_clean |> filter(is.element(uni_lemma, swad_extension_unis))
-
-xs <- swad_ext |> group_by(uni_lemma) |>
-  summarise(n = n_distinct(language), mean_d = mean(d), sd_d = sd(d))
-
-```
 
 Comparing the IRT parameters (across all CDI forms) showed that the discrimination parameter (i.e., slope) of the S-CDI items did not significantly differ from that of the non-Swadesh items, suggesting that the S-CDI items could measure ability as well as non-Swadesh items.
 However, as shown in Figure 3, S-CDI items were significantly easier than the non-Swadesh items (mean S-CDI $d=$ `r round(tmp[2,"d"], 2)`, mean non-S-CDI $d=$ `r round(tmp[1,"d"], 2)`, `r report_ttest(swad_diff_ttest)`), which could result in older/more-skilled children being at ceiling on the test.
@@ -806,10 +777,10 @@ Although test information was slightly lower for the S-CDI, the values were virt
 ## Testing Generalization of the Swadesh CDI 
 
 We then evaluated the S-CDI's performance in a test of generalization to `r length(gen_langs)` more CDI datasets.
-For the `r length(gen_langs)` low-data languages, a comparison of simulated S-CDI scores to full CDI:WS revealed that the S-CDI's raw scores were again strongly related (mean $r=0.990$), with an average of $N=91$ S-CDI items appearing per list.
+For the `r length(gen_langs)` low-data languages, a comparison of simulated S-CDI scores to full CDI:WS revealed that the S-CDI's raw scores were again strongly related (mean $r=0.975$), with an average of $N=87.4$ S-CDI items appearing per list.
 Table 4 shows the results of this comparison, alongside the upper bound random baseline.
-Once again, the S-CDI performed nearly as well as a random sample of the actual CDI (random mean $r=0.994$).
-With the 10-item extension, the S-CDI's correlation rose to mean $r=0.993$, demonstrating the value of including items from the more difficult (and variable) categories that were underrepresented on the original list.
+Once again, the S-CDI performed approximately as well as a random sample of the actual CDI (random mean $r=0.966$).
+The 110-item extended S-CDI's correlation rose to mean $r=0.976$ (mean items per language: $N=94.5$), demonstrating the value of including items from the more difficult semantic categories that were underrepresented on the original list.
 
 ```{r plot-swadesh-generalization-results, fig.width=6, fig.height=7, fig.cap="Correlation of each sublist's ability scores vs. full CDI sumscores and overlap in the generalization test.", include=F}
 # p1 is already shown in Table 4; p2 (overlap) is not very informative...maybe report as table in the Appendix?
@@ -833,17 +804,30 @@ ggarrange(p1, p2, ncol=1, common.legend = T)
 ```{r gen-results, results='asis'}
 gen_xx <- gen_res_sum |> 
   filter(language %in% gen_langs) |>
-  mutate(sublist = str_to_sentence(sublist)) |> 
+  #mutate(sublist = str_to_sentence(sublist)) |> 
   group_by(sublist) |>
   rename(Method = sublist,
          Language = language) |>
+  mutate(Method = ifelse(Method=="Random", "random", ifelse(Method=="S-CDI110", "S-CDI 110", Method))) |>
   pivot_wider(id_cols = Language, names_from = Method, values_from = sumscore_cor)
 # sumscore_cor_t
 
-gen_tab <- xtable::xtable(gen_xx, digits=c(2), 
-                       caption = "Generalization test results (r vs. full CDI scores).")
-print(gen_tab, type="latex", comment = F, table.placement = "H",
-      include.rownames=FALSE, size="\\fontsize{9pt}{10pt}\\selectfont")
+# computer summary row
+mean_row <- gen_xx |> 
+  select(-Language) |> 
+  summarise(across(everything(), ~mean(.x, na.rm = TRUE))) |> 
+  mutate(Language = "Mean") |> 
+  select(Language, everything())  # Make sure Language is first
+
+gen_xx_with_mean <- bind_rows(gen_xx, mean_row) |>
+  select(Language, `S-CDI 110`, `syntactic`, `2 strata`, `unstratified`, `category`, `random`) 
+
+gen_tab <- xtable::xtable(gen_xx_with_mean, digits = c(3), 
+                          caption = "Generalization test results (r vs. full CDI scores).")
+
+print(gen_tab, type = "latex", comment = FALSE, table.placement = "H",
+      include.rownames = FALSE, size = "\\fontsize{9pt}{10pt}\\selectfont",
+      add.to.row = list(pos = list(nrow(gen_xx)), command = "\\hline "))
 ```
 
 

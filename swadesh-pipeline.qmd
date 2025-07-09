@@ -493,7 +493,7 @@ best_k |> kableExtra::kable(digits=3)
 # k=26, 2 strata, num_overlap=93.2, diff_cor=.842
 ```
 
-10/7/24: We believe we prefer difficulty correlation over RMSE since the samples (and thus language parameters) are not directly comparable (but should be correlated)
+10/7/24: We prefer difficulty correlation over RMSE since the samples (and thus language parameters) are not directly comparable (but should be correlated)
 
 ```{r, best-by-rmse, eval=F}
 # selecting by RMSE doesn't favor high overlap (and k is less consistent)
@@ -523,7 +523,7 @@ cv_res_sum |>
   stat_summary(aes(group = interaction(k, sublist)), fun="median", position=position_dodge(.5)) + # maybe horizontal bar ?
   #geom_boxplot(aes(group = interaction(k, sublist))) +
   labs(y = "Difficulty correlation") +
-  theme(legend.position = "bottom") + theme_classic()
+  theme(legend.position = "bottom") + theme_classic() 
 ```
 
 ToDo: not full boxplot, just show medians ?
@@ -670,11 +670,18 @@ category_cors <- generate_sublist_cors(make_proportional_sublist, sublist_name =
 unstrat_cors <- generate_sublist_cors(make_swadesh_sublist, sublist_name = "unstratified", this_k = 23,
                                       prod_semantic_sum)
 
+prod_sum <- prod_pars |> 
+  filter(language %in% train_langs) |> 
+  group_by(uni_lemma) |> 
+  summarise(num_langs = n(),
+            mean_d = mean(d, na.rm = TRUE),
+            sd_d = sd(d, na.rm = TRUE))
+
 # Random
 rand_cors <- lapply(gen_langs, \(lang) {
   rand_cors <- sapply(1:N_RAND, \(comp) {
     sublist <- make_random_sublist(prod_sum, S_LEN, BEST_K)
-    get_sumscore_cor(sublist, xldf, all_prod, lang)
+    get_sumscore_cor(sublist, xldf, all_prod, lang) # ...or xldf_clean ?
   }) |> t() |> 
     `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
     as_tibble() |> 
@@ -685,8 +692,24 @@ rand_cors <- lapply(gen_langs, \(lang) {
   mutate(sublist = "Random")
 
 
+# Final list: syntactic-stratified + 10-item extension
+syntactic_sublist <- make_proportional_sublist(prod_syntactic_sum, S_LEN, 27, syntactic_props) 
+swad_extension_unis <- c("try", "under", "in", "out", 
+                         "glue (object)", "toy (object)",  # chalk only on 14 forms, try on 13
+                         "all", "many", "not", "a lot")
+swad_extension <- prod_syntactic_sum |> filter(is.element(uni_lemma, swad_extension_unis))
+swad_extended <- syntactic_sublist |> bind_rows(swad_extension)
+
+swad_ext_cors <- sapply(gen_langs, \(lang) {
+    get_sumscore_cor(swad_extended, xldf_clean, all_prod, lang)
+  }) |> t() |>
+    `colnames<-`(c("num_overlap", "sumscore_cor")) |> 
+    as_tibble(rownames = "language") |> 
+    mutate(sublist = "S-CDI110")
+
 # Combine all results
-gen_res <- bind_rows(unstrat_cors, syntactic_cors, category_cors, rand_cors, strat2_cors)
+gen_res <- bind_rows(unstrat_cors, syntactic_cors, category_cors, 
+                     rand_cors, strat2_cors, swad_ext_cors)
 
 gen_res_sum <- gen_res |> 
   group_by(language, sublist) |> 
@@ -695,6 +718,12 @@ gen_res_sum <- gen_res |>
   mutate(sumscore_cor_t = atanh(sumscore_cor)) # Fisher transform
 
 save(gen_res_sum, gen_res, file="data/intermediates/generalization_results.rds")
+
+gen_res_sum |> group_by(sublist) |>
+  summarise(num_overlap = mean(num_overlap),
+            sumscore_cor = mean(sumscore_cor), 
+            sumscore_cor_t = mean(sumscore_cor_t)) |>
+  arrange(desc(sumscore_cor))
 ```
 
 ```{r, generate-candidate-swadesh-lists, echo=F}
@@ -780,9 +809,6 @@ View(all_swadesh)
 write_csv(all_swadesh, file="weighted_votes_swadesh_list.csv")
 ```
 
-ToDo: run generalization test again on final Swadesh list..? (vs. equal-length random...?)
-(and only report generalization language results for this final (weighted-vote) Swadesh list vs random)
-
 
 Difficulty distribution by method (and vs. overall)
 
@@ -859,13 +885,6 @@ t.test(gen_res_sum |> filter(sublist == "2 strata") |> pull(num_overlap),
 
 All of the methods result in sublists that are significantly easier than all items
 ```{r}
-prod_sum <- prod_pars |> 
-  filter(language %in% train_langs) |> 
-  group_by(uni_lemma) |> 
-  summarise(num_langs = n(),
-            mean_d = mean(d, na.rm = TRUE),
-            sd_d = sd(d, na.rm = TRUE))
-
 t.test(unstrat_sublist$mean_d,
        prod_sum$mean_d)
 ```
