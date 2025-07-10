@@ -83,10 +83,10 @@ load(here("data/intermediates/xldf_clean_allforms.Rdata"))
 # 42 languages, 28541 parameters
 
 xldf_clean <- xldf_clean |> 
-  mutate(d = -d) # easiness -> difficulty
+  mutate(d = -d / a1) # easiness -> difficulty
 
 prod_pars <- prod_pars |> 
-  mutate(d = -d) # easiness -> difficulty
+  mutate(d = -d / a1) # easiness -> difficulty
 
 # TEDS.twos has all NA for category...
 # should category="directions" all be "locations? (on, under, inside, front, behind.)

@@ -34,10 +34,10 @@ load(here("data/intermediates/xldf_clean_allforms.Rdata"))
 # 42 languages, 28541 parameters
 
 xldf_clean <- xldf_clean |> 
-  mutate(d = -d)  # easiness -> difficulty
+  mutate(d = -d / a1)  # easiness -> difficulty
 
 prod_pars <- prod_pars |> 
-  mutate(d = -d)  # easiness -> difficulty
+  mutate(d = -d / a1)  # easiness -> difficulty
 
 load(file=here("data/intermediates/generalization_results.rds"))
 # gen_res_sum, gen_res
@@ -64,7 +64,9 @@ Our design intention for unilemmas was to provide reasonable mappings, lumping t
 If we split the conceptual world too finely, it would be difficult to understand how similar the information sources are; if we split too coarsely, we can at least discover that languages differ by the differences in predictors.
 
 However, we also preserve distinctions for concepts that are _prima facie_ similar, but that play very different cultural roles.
-For example, although "pan" (Spanish) and "tortilla" (Spanish) are relatively similar, they plan different cultural roles in Mexican Spanish, and hence we err towards splitting these into separate categories.
+For example, although "pan" (Spanish) and "tortilla" (Mexican Spanish[^1]) are relatively similar, they play different cultural roles in Mexican Spanish, and hence we err towards splitting these into separate categories. 
+
+[^1]: Note that "tortilla" in European Spanish refers not to flatbread, but to an egg and potato omelette.
 
 There remained other issues regarding unilemma definitions, including cases of polysemy, handling syntactic categories, and pronouns; in each case, we made decisions based on our best guess of the most basic or common interpretation in the child language context.
 Further details can be found in our unilemma policy document, available at [https://github.com/langcog/update_unilemmas/blob/main/unilemma_policy.md](https://github.com/langcog/update_unilemmas/blob/main/unilemma_policy.md).
@@ -80,35 +82,58 @@ American English has the highest average degree of overlap (458 unilemmas), whic
 The form with the lowest average degree of overlap is Chilean Spanish, with only 314 unilemmas shared with other forms, on average.
 The median of the average overlap per language is 393 unilemmas.
 
-```{r, fig.width=10, fig.height=10}
+```{r, fig.width=10, fig.height=10, include=F}
 # sort(rowMeans(olap))
 # show heatmap of overlap between each CDI:WS
+
+overlap_table <- bind_cols(diag(olap), rowMeans(olap), olap[,"English (American)"])
+names(overlap_table) = c("# of items", "mean overlap", "EN overlap")
+
 heatmap.2(olap, dendrogram = "none", margins=c(10,10))
 ```
 
 
 ## Word Difficulty by Semantic Category and Language
 
-```{r semantic-cats-by-lang, fig.width=10, fig.height=18, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Mean difficulty of CDI words by semantic category and language. Bars represent bootstrapped 95\\% confidence intervals."}
+```{r semantic-cats-by-lang, fig.width=5, fig.height=7, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Mean difficulty of CDI words by semantic category. Bars represent bootstrapped 95\\% confidence intervals."}
 # conversations (JP) -> "games_routines" ?
 # sounds2 (JP) -> "sounds" ?
 # prepositional_pronouns -> ... "connecting_words" ?
+excluded_cats <- c("final_particles", "numbers", "articles", "other",
+                   "prepositional_pronouns", "descriptive_words (adverbs)", "states", "unknown",
+                   "verb_endings", "verb_modifiers", "classifiers", "locations_quantities_adverbs")
 
 # ToDo: remake with just Swadesh list
-prod_cat <- xldf_clean %>% group_by(language, category) %>%
-  filter(!is.na(d), !is.na(category),
-         !is.element(category, c("final_particles", "numbers", "articles", "other",
-                                 "prepositional_pronouns",
-                                 "descriptive_words (adverbs)", "states", "unknown",
-                                 "verb_endings", "verb_modifiers",
-                                 "classifiers", "locations_quantities_adverbs"))) %>%
+prod_cat <- xldf_clean |> 
+  filter(!is.na(d), !is.na(category), !is.infinite(d),
+         !is.element(category, excluded_cats)) |>
+  group_by(category) |>
   tidyboot::tidyboot_mean(d, na.rm=T)
 
-prod_cat %>% ggplot(aes(x=reorder(language, mean), y=mean)) + geom_point(alpha=.7) +
-  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7) +
-  facet_wrap(. ~ category) + coord_flip() + 
-  theme_classic() + ylab("Mean item easiness") + xlab("Language")
-#ggsave("xling_diff_by_category_WSprod.pdf", width=11, height=16)
+cat_lang_means <- xldf_clean |> 
+  filter(!is.na(d), !is.na(category), !is.infinite(d),
+         !is.element(category, excluded_cats)) |>
+  group_by(category, language) |>
+  summarise(mean_d = mean(d, na.rm = TRUE), .groups = "drop")
+
+prod_cat |>
+  ggplot(aes(x=reorder(category, mean), y=mean)) + # group=language, color=language
+  geom_point(alpha=.7) + geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7) +
+  coord_flip() +
+  theme_classic() + ylab("Mean item difficulty") + xlab("Semantic category")
+
+# a couple languages with discrepant item difficulties -- in locations, outside, and sounds
+# ggplot(prod_cat, aes(x = reorder(category, mean), y = mean)) +
+#   geom_point(data = cat_lang_means,
+#              aes(x = category, y = mean_d, color = language),
+#              position = position_jitter(width = 0.2), size = 2.2, alpha = 0.8) +
+#   geom_point(alpha = 0.9, color = "black") +
+#   geom_linerange(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.9, color = "black") +
+#   coord_flip() +
+#   theme_classic() +
+#   ylab("Mean item difficulty") +
+#   xlab("Semantic category") +
+#   theme(legend.position = "none")
 ```
 
 
@@ -221,7 +246,7 @@ xx |> filter(k==27, sublist=="syntactic") |>
 
 ### Generalization Test
 
-Comparison to the 10 low-data languages [ToDo: with the 10 additional difficult words added]. 
+Comparison to the 10 low-data languages.
 Note that many proposed Swadesh items are not actually on the CDI:WS forms available to test generalization. 
 
 ```{r, results='asis'}

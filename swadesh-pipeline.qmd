@@ -255,7 +255,7 @@ xldf_clean <- xldf_clean |>
 
 prod_pars <- xldf_clean |> 
   arrange(language, uni_lemma, desc(a1)) |> # get most discriminating uni_lemma per lang
-  select(uni_lemma, language, uid, category, language, d) |>
+  select(uni_lemma, language, uid, category, language, d, a1) |>
   group_by(uni_lemma, language) |>
   slice(1) |> 
   ungroup() |>
