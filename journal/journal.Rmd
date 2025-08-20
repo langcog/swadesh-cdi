@@ -432,7 +432,7 @@ Thus, this random baseline would serve as a strong benchmark for the Swadesh CDI
 
 ```{r, echo=F, include=F}
 # mean proportion of each semantic category (across all forms)
-cat_props <- read_csv("../data/category_proportions.csv") %>%
+cat_props <- read_csv("data/category_proportions.csv") %>%
   mutate(desired_n = round(mean_prop * 100, 0)) %>% # rounding gets N=98
   arrange(desc(desired_n))
 # TODO: report in table..? add props to Swadesh list figure? - MOVE TO APPENDIX?
@@ -586,7 +586,7 @@ The substantial overlap in the unilemmas selected across methods points to a con
 <!-- THIS is labeled "figure" but it is actually a table, no?  Also, the font is ginormous in the pdf. -->
 
 ```{r, fig.width=5.5, fig.height=5.5, fig.cap=c("The 100-item Swadesh-CDI list by semantic category, along with 10 recommended items from under-represented semantic categories (in gray)."), echo=FALSE}
-knitr::include_graphics("figs/SwadeshCDI_list.pdf")
+knitr::include_graphics("journal/figs/SwadeshCDI_list.pdf")
 ```
 
 ```{r add-missing-labels, echo=F}
@@ -916,7 +916,7 @@ Certainly, increasing the diversity of languages studied is a critical step towa
 
 # Acknowledgements
 
-We would like to thank all of the contributors to Wordbank, from the researchers who created and adapted the CDIs to those who collected the data (as well as the participants), to those who have created and maintained Wordbank over the years.
+We would like to thank all of the contributors to Wordbank, from the researchers who created and adapted the CDIs to those who collected the data as well as all participants.
 
 # References 
 
