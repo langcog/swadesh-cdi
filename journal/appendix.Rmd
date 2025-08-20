@@ -75,97 +75,6 @@ We then recruited native or advanced proficient speakers of all the languages in
 Subsequently, two of the authors (GK, AWMT) reviewed the suggestions and made decisions about conflicts, and standardized unilemmas into a canonical form across all instruments.
 More details about the recent update can be found at [https://github.com/langcog/update_unilemmas](https://github.com/langcog/update_unilemmas).
 
-## Unilemma Overlap on CDI Forms
-
-Number of overlapping concepts on each pair of CDI forms.
-American English has the highest average degree of overlap (458 unilemmas), which may be driven in large part by it being the oldest form, from which many others were adapted.
-The form with the lowest average degree of overlap is Chilean Spanish, with only 314 unilemmas shared with other forms, on average.
-The median of the average overlap per language is 393 unilemmas.
-
-```{r, fig.width=10, fig.height=10, include=F}
-# sort(rowMeans(olap))
-# show heatmap of overlap between each CDI:WS
-
-overlap_table <- bind_cols(diag(olap), rowMeans(olap), olap[,"English (American)"])
-names(overlap_table) = c("# of items", "mean overlap", "EN overlap")
-
-heatmap.2(olap, dendrogram = "none", margins=c(10,10))
-```
-
-
-## Word Difficulty by Semantic Category and Language
-
-```{r semantic-cats-by-lang, fig.width=5, fig.height=7, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap = "Mean difficulty of CDI words by semantic category. Bars represent bootstrapped 95\\% confidence intervals."}
-# conversations (JP) -> "games_routines" ?
-# sounds2 (JP) -> "sounds" ?
-# prepositional_pronouns -> ... "connecting_words" ?
-excluded_cats <- c("final_particles", "numbers", "articles", "other",
-                   "prepositional_pronouns", "descriptive_words (adverbs)", "states", "unknown",
-                   "verb_endings", "verb_modifiers", "classifiers", "locations_quantities_adverbs")
-
-# ToDo: remake with just Swadesh list
-prod_cat <- xldf_clean |> 
-  filter(!is.na(d), !is.na(category), !is.infinite(d),
-         !is.element(category, excluded_cats)) |>
-  group_by(category) |>
-  tidyboot::tidyboot_mean(d, na.rm=T)
-
-cat_lang_means <- xldf_clean |> 
-  filter(!is.na(d), !is.na(category), !is.infinite(d),
-         !is.element(category, excluded_cats)) |>
-  group_by(category, language) |>
-  summarise(mean_d = mean(d, na.rm = TRUE), .groups = "drop")
-
-prod_cat |>
-  ggplot(aes(x=reorder(category, mean), y=mean)) + # group=language, color=language
-  geom_point(alpha=.7) + geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7) +
-  coord_flip() +
-  theme_classic() + ylab("Mean item difficulty") + xlab("Semantic category")
-
-# a couple languages with discrepant item difficulties -- in locations, outside, and sounds
-# ggplot(prod_cat, aes(x = reorder(category, mean), y = mean)) +
-#   geom_point(data = cat_lang_means,
-#              aes(x = category, y = mean_d, color = language),
-#              position = position_jitter(width = 0.2), size = 2.2, alpha = 0.8) +
-#   geom_point(alpha = 0.9, color = "black") +
-#   geom_linerange(aes(ymin = ci_lower, ymax = ci_upper), alpha = 0.9, color = "black") +
-#   coord_flip() +
-#   theme_classic() +
-#   ylab("Mean item difficulty") +
-#   xlab("Semantic category") +
-#   theme(legend.position = "none")
-```
-
-
-## Cross-linguistic similarities 
-
-We look at the Spearman correlation between the item difficulty of each language compared to each other language. 
-We might expect this to recapitulate the historical relationship between languages, with more similar languages having more similar item difficulties (e.g., Quebecois and European French).
-
-```{r xling-sim, fig.width=10, fig.height=10, set.cap.width=T, num.cols.cap=2, fig.cap = "Cross-linguistic similarity (Spearman correlation) of IRT item difficulty from the CDI."}
-# parm diffs in low- vs. high-data langs
-#t.test(xldf$d, xldf_lowd$d) # -.45 vs. -.02 (closer to prior of 0 in low-data langs)
-#t.test(xldf$a1, xldf_lowd$a1) # higher discrim in high-data langs
-
-tmp <- get_cross_ling_difficulty_cors(xldf_clean)
-prod_cors = tmp$prod_cors
-prod_sims = tmp$prod_sims
-
-Colors = brewer.pal(11,"Spectral")
-diag(prod_cors) = NA
-
-#pdf(file="xling_difficulty_similarity.pdf", width=13, height=13)
-heatmap.2(prod_cors, col=Colors, margins=c(10,10))
-#dev.off()
-
-# compare to one of these?
-# http://www.elinguistics.net/
-# https://www.ezglot.com/most-similar-languages.php
-# 28 x 28 = 784 values...scrape?
-
-```
-
-
 # Cross-validation Results
 
 ```{r plot-crossval-fscores, fig.width=7, fig.height=9, fig.cap="Difficulty correlation and overlap by k for the different sublist selection methods.", echo=F}
@@ -222,11 +131,13 @@ p3 <- cv_res_sum |>
 ggpubr::ggarrange(p1, p2, ncol=1, common.legend = T) # , p3
 ```
 
+Figure \@ref(fig:plot-crossval-fscores) shows the full cross-validation results for the different sublist selection methods, showing the number of overlapping items and item-wise correlations in difficulty as a function of $k$, the minimum number of languages in which the items apear.
+
 ## Swadesh CDI vs. Full CDI:WS
 
-The table below shows the correlation between full CDI and Swadesh-CDI for syntactic category stratification method, for items on at least $k=27$ CDIs, for each of the 32 languages that the IRT models were trained on.
+Table \@ref(tbl:full-correl) shows the correlation between full CDI and Swadesh-CDI for syntactic category stratification method, for items on at least $k=27$ CDIs, for each of the 32 languages that the IRT models were trained on.
 
-```{r, results='asis'}
+```{r full-correl, results='asis'}
 #load(here("data/Swadesh_comparisons.Rdata"))
 #xx <- readRDS(here("data/intermediates/full_vs_swadesh_fscores_allforms.rds"))
 xx <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rds"))
@@ -244,31 +155,11 @@ xx |> filter(k==27, sublist=="syntactic") |>
   html_table_width(rep(80, ncol(xx)))
 ```
 
-### Generalization Test
+<!-- ## Swadesh-CDI Items -->
 
-Comparison to the 10 low-data languages.
-Note that many proposed Swadesh items are not actually on the CDI:WS forms available to test generalization. 
+<!-- Below we show the full list of 100 Swadesh CDI unilemmas, along with their average cross-linguistic difficulty (d_m), variability in difficulty (d_sd), number of CDI:WS forms they appear on (n, out of 32), semantic category, and lexical category. The semantic and lexical categories are based on American English, as unilemmas sometimes appear in different categories on different forms, as appropriate. -->
 
-```{r, results='asis'}
-# ToDo: get generalization results with 10-item extension
-load(here("data/intermediates/generalization_results.rds")) # gen_res, gen_res_sum
-
-gen_xx <- gen_res_sum |> 
-  filter(language %in% gen_langs) |>
-  group_by(sublist) |>
-  rename(Method = sublist) |>
-  pivot_wider(id_cols = language, names_from = Method, values_from = sumscore_cor)
-
-gen_xx %>% kable(digits=3, caption="Swadesh CDI vs. Full CDI:WS scores for 10 generalization languages.") %>%
-  html_table_width(rep(70, ncol(gen_xx)))
-```
-
-
-## Swadesh-CDI Items
-
-Below we show the full list of 100 Swadesh CDI unilemmas, along with their average cross-linguistic difficulty (d_m), variability in difficulty (d_sd), number of CDI:WS forms they appear on (n, out of 32), semantic category, and lexical category. The semantic and lexical categories are based on American English, as unilemmas sometimes appear in different categories on different forms, as appropriate.
-
-```{r, show-swadesh-list}
+```{r show-swadesh-list, eval=F}
 load(here("data/intermediates/best_k_swadesh_lists.rds"))
 # unstrat_sublist, category_sublist, syntactic_sublist, strat2_sublist
 

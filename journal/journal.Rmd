@@ -1,7 +1,5 @@
 ---
 title: "Measuring children's early vocabulary in low-resource languages using a Swadesh-style word list"
-# A Swadesh-Inspired Approach to Measuring Early Vocabulary (in Low-Resource Languages)
-# Toward Universal Vocabulary Assessment: A Swadesh-Style Word List (for Low-Resource Languages)
 bibliography: library.bib
 document-params: "10pt, letterpaper"
 
@@ -10,8 +8,9 @@ author-information: >
     \AND {\large \bf Alvin Wei Ming Tan* (tanawm@stanford.edu)}^{1}
     \AND {\large \bf Virginia A. Marchman (marchman@stanford.edu)}^{1} 
     \AND {\large \bf Philip S. Dale (dalep@unm.edu)}^{2}
-    \AND {\large \bf Michael C. Frank (mcfrank@stanford.edu)}^1 \\ ^{1}Department of Psychology, Stanford University \\
-      ^{2}Department of Speech and Hearing Sciences, University of New Mexico}
+    \AND {\large \bf Michael C. Frank (mcfrank@stanford.edu)}^1 \\ 
+    ^{1}Department of Psychology, Stanford University \\
+    ^{2}Department of Speech and Hearing Sciences, University of New Mexico}
 
 abstract: >
     Early language skill is predictive of many later life outcomes, and is thus of great interest to
@@ -40,30 +39,32 @@ output:
 ---
 
 ```{r global_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=3, fig.height=3, fig.crop = F, 
-                      fig.pos = "tb", fig.path='figs/',
-                      echo=F, warning=F, cache=F, 
-                      message=F, sanitize = T)
+knitr::opts_chunk$set(
+  fig.width = 3, fig.height = 3, fig.crop = F,
+  fig.pos = "tb", fig.path = "figs/",
+  echo = F, warning = F, cache = F,
+  message = F, sanitize = T
+)
 ```
 
 ```{r, libraries}
 library(png)
 library(grid)
 library(xtable)
-require(mirt)
-require(tidyverse)
-require(ggpubr)
-require(tidyboot)
-require(here)
-require(kableExtra)
+library(mirt)
+library(tidyverse)
+library(ggpubr)
+library(tidyboot)
+library(here)
+library(kableExtra)
 library(patchwork)
 
 source(here("scripts/04-cross-ling-comparison-helpers.R"))
 source(here("scripts/03-sublist-evaluation.R"))
 
 set.seed(42)
-S_LEN = 100 # Swadesh list length
-N_RAND = 100 # number of random sublists to compare to
+S_LEN <- 100 # Swadesh list length
+N_RAND <- 100 # number of random sublists to compare to
 ```
 
 ```{r, load-data}
@@ -71,37 +72,41 @@ languages <- list.files(here("data/all_forms")) |> str_sub(end = -10)
 
 models <- list()
 coefs <- list()
-for(lang in languages) {
-  tmp <- readRDS(here(paste0("data/prod_models/",lang,"_2PL_allforms_prod_fits.rds")))
-  models[[lang]] = tmp$model
-  coefs[[lang]] = tmp$coefs
+for (lang in languages) {
+  tmp <- readRDS(here(paste0("data/prod_models/", lang, "_2PL_allforms_prod_fits.rds")))
+  models[[lang]] <- tmp$model
+  coefs[[lang]] <- tmp$coefs
 }
 
 # production fits
-load(here("data/intermediates/xldf_clean_allforms.Rdata")) 
+load(here("data/intermediates/xldf_clean_allforms.Rdata"))
 # xldf_clean, prod_pars
 # 42 languages, 28541 parameters
 
-xldf_clean <- xldf_clean |> 
-  mutate(d = -d / a1) # easiness -> difficulty
+xldf_clean <- xldf_clean |>
+  mutate(d = -d / a1) |> # easiness -> difficulty
+  filter(a1 != 0) # remove Inf
 
-prod_pars <- prod_pars |> 
-  mutate(d = -d / a1) # easiness -> difficulty
+prod_pars <- prod_pars |>
+  mutate(d = -d / a1) |> # easiness -> difficulty
+  filter(a1 != 0)
 
 # TEDS.twos has all NA for category...
 # should category="directions" all be "locations? (on, under, inside, front, behind.)
 
-load(file=here("data/intermediates/generalization_results.rds"))
+load(file = here("data/intermediates/generalization_results.rds"))
 # gen_res_sum, gen_res
 
 model_stats <- readRDS(here("data/intermediates/model_stats.rds"))
 
-gen_langs <- model_stats |> filter(participants < 300) |> pull(language)
+gen_langs <- model_stats |>
+  filter(participants < 300) |>
+  pull(language)
 
 train_langs <- setdiff(languages, gen_langs)
 
 xldf_lowd <- xldf_clean %>% filter(is.element(language, gen_langs)) # 5624
-#xldf <- xldf_clean %>% filter(!is.element(language, gen_langs)) # 20015
+# xldf <- xldf_clean %>% filter(!is.element(language, gen_langs)) # 20015
 
 all_tab <- get_item_n_subject_counts(models)
 ```
@@ -171,16 +176,21 @@ We can ask: Which semantic categories, e.g., animals, household objects, food an
 These types of cross-linguistic comparisons may give new insight into theoretical questions surrounding the similarity and differences between language experience and development in different cultural and linguistic contexts.--> <!-- ToDo: consider adding an analysis of this sort---both for our Swadesh list (discuss which categories are over-/under-represented), and perhaps for all unilemmas?  -->
 
 ```{r, include=F}
-xx <- xldf_clean |> group_by(uni_lemma, category) |>
+xx <- xldf_clean |>
+  group_by(uni_lemma, category) |>
   summarise(n = n(), mean_d = mean(d), sd_d = sd(d)) |>
   group_by(category) |>
-  summarise(mean_d = mean(mean_d, na.rm=T), mean_sd_d = mean(sd_d, na.rm=T))
+  summarise(mean_d = mean(mean_d, na.rm = T), mean_sd_d = mean(sd_d, na.rm = T))
 
 xx |>
-  ggplot(aes(x=mean_d, y=reorder(category, -mean_d))) + geom_point() + theme_bw()
+  ggplot(aes(x = mean_d, y = reorder(category, -mean_d))) +
+  geom_point() +
+  theme_bw()
 
 xx |>
-  ggplot(aes(x=mean_sd_d, y=reorder(category, -mean_sd_d))) + geom_point() + theme_bw()
+  ggplot(aes(x = mean_sd_d, y = reorder(category, -mean_sd_d))) +
+  geom_point() +
+  theme_bw()
 ```
 
 
@@ -211,20 +221,29 @@ While other standard IRT models exist (e.g., the 3PL model adds a "guessing" par
 
 ```{r, show-data-new, echo=F, results="asis"}
 # ToDo: split out WS and WG items (and Ns), or not?
-it_tab <- model_stats |> select(-iterations) |>
+it_tab <- model_stats |>
+  select(-iterations) |>
   arrange(desc(participants)) |>
-  rename(Language = language,
-         Participants = participants, 
-         Items = items)
+  rename(
+    Language = language,
+    Participants = participants,
+    Items = items
+  )
 
-bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+bold <- function(x) {
+  paste("{\\textbf{", x, "}}", sep = "")
+}
 
-tab1 <- xtable::xtable(it_tab, digits=c(0), 
-                       caption = "Total CDI items and participants per dataset (language). The final 10 datasets did not have enough participants to be analyzed with IRT and therefore, were used for a generalization test.")
-print(tab1, type="latex", comment = F, 
-      sanitize.colnames.function=bold, # bold the header row
-      table.placement = "H", hline.after=length(train_langs),
-      include.rownames=FALSE, size="\\fontsize{9pt}{10pt}\\selectfont")
+tab1 <- xtable::xtable(it_tab,
+  digits = c(0),
+  caption = "Total CDI items and participants per dataset (language). The final 10 datasets did not have enough participants to be analyzed with IRT and therefore, were used for a generalization test."
+)
+print(tab1,
+  type = "latex", comment = F,
+  sanitize.colnames.function = bold, # bold the header row
+  table.placement = "H", hline.after = length(train_langs),
+  include.rownames = FALSE, size = "\\fontsize{9pt}{10pt}\\selectfont"
+)
 ```
 
 
@@ -265,25 +284,27 @@ All models, data, and code for reproducing this paper are available on OSF[^3].
 
 # Results
 
-
 ```{r, reporting-helper-functions, echo=F}
 pval_str <- function(pval) {
-  p_str = ifelse(pval<.001, "<.001", 
-                ifelse(pval<.01, "<.01", 
-                       ifelse(pval<.05, "<.05", 
-                              paste0("=",round(pval, 2)))))
+  p_str <- ifelse(pval < .001, "<.001",
+    ifelse(pval < .01, "<.01",
+      ifelse(pval < .05, "<.05",
+        paste0("=", round(pval, 2))
+      )
+    )
+  )
   return(p_str)
 }
 
 # given a cor.test(), return the in-line reporting, e.g. "$r=-0.37$, $t(1950)=-17.64$, $p<.001$" )
 report_cor <- function(ctest) {
-  pval = pval_str(ctest$p.value)
-  paste0("$r=",round(ctest$estimate,2),"$, $t(",ctest$parameter,")=",round(ctest$statistic, 2),"$, $p",pval,"$")
+  pval <- pval_str(ctest$p.value)
+  paste0("$r=", round(ctest$estimate, 2), "$, $t(", ctest$parameter, ")=", round(ctest$statistic, 2), "$, $p", pval, "$")
 }
 
 report_ttest <- function(ttest) {
-  pval = pval_str(ttest$p.value)
-  paste0("$t(",round(ttest$parameter,0),")=",round(ttest$statistic, 2),"$, $p",pval,"$")
+  pval <- pval_str(ttest$p.value)
+  paste0("$t(", round(ttest$parameter, 0), ")=", round(ttest$statistic, 2), "$, $p", pval, "$")
 }
 
 # variability in difficulty also correlated number of forms unilemma is on
@@ -293,17 +314,20 @@ report_ttest <- function(ttest) {
 # 2084
 uni_ag <- xldf_clean |>
   group_by(uni_lemma) |> # category <- but many unilemmas are categorized differently across languages
-  summarise(d_m=mean(d), a1_m=mean(a1), d_sd = sd(d), a1_sd = sd(a1), n=n())
+  summarise(
+    d_m = mean(d, na.rm = T), a1_m = mean(a1, na.rm = T),
+    d_sd = sd(d, na.rm = T), a1_sd = sd(a1, na.rm = T), n = n()
+  )
 
 # The more times a unilemma appears, the easier it tends to be:
 cor.test(uni_ag$d_m, uni_ag$n) # t(2082) = -16.83, r=-.35, p<.001
-#plot(uni_ag$d_m, uni_ag$n)
+# plot(uni_ag$d_m, uni_ag$n)
 
 # 478 singletons
-uni1 <- uni_ag %>% filter(n==1) 
+uni1 <- uni_ag %>% filter(n == 1)
 mean(uni1$d_m) # 1.88
 
-uni_ag_gt1 <- uni_ag %>% filter(n>1) # 1606
+uni_ag_gt1 <- uni_ag %>% filter(n > 1) # 1606
 
 # singletons are harder than unis appearing on multiple forms?
 report_ttest(t.test(uni1$d_m, uni_ag_gt1$d_m)) # yes, -1.88 vs. 1.30 p<.001
@@ -327,19 +351,22 @@ However, these modest but significant correlations were also important to keep i
 ```{r fig-mean-item-diff, eval=F, fig.cap=c("Mean item difficulty for each CDI form. Bars represent bootstrapped 95\\% confidence intervals. Color shows mean age (months) of the sample, which is correlated with mean word difficulty (r=.57)."), fig.height=5.5, fig.width=3.6}
 # re: Philip's question of are item difficulties comparable across languages:
 lang_d_m <- xldf_clean %>%
-  group_by(language) %>% 
-  tidyboot::tidyboot_mean(d, na.rm=T) %>%
+  group_by(language) %>%
+  tidyboot::tidyboot_mean(d, na.rm = T) %>%
   arrange(desc(mean))
 
-#lang_d_m <- lang_d_m %>% left_join(demo_age %>% select(language, age))
+# lang_d_m <- lang_d_m %>% left_join(demo_age %>% select(language, age))
 # problem: average item difficulty per language is strongly related to mean sample age
 # cor.test(lang_d_m$mean, lang_d_m$age) # r=.57  t(24) = 3.44, p = 0.002
 
-lang_d_m %>% ggplot(aes(x=reorder(language, -mean), y=mean)) + coord_flip() + 
-  geom_point() + theme_classic() + # aes(color=age)
-  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7) +
-  theme(legend.position="bottom") +
-  xlab("Language") + ylab("Mean item difficulty")
+lang_d_m %>% ggplot(aes(x = reorder(language, -mean), y = mean)) +
+  coord_flip() +
+  geom_point() +
+  theme_classic() + # aes(color=age)
+  geom_linerange(aes(ymin = ci_lower, ymax = ci_upper), alpha = .7) +
+  theme(legend.position = "bottom") +
+  xlab("Language") +
+  ylab("Mean item difficulty")
 ```
 
 
@@ -379,27 +406,31 @@ Finally, we re-ran the selection procedure using the best $k$ values across all 
 
 ```{r eval-random-unilemma-lists, eval=F}
 # when selecting 100 random unilemmas, how many forms would those unilemmas appear on? (on average)
-# how many categories would be covered? how many unique unilemmas would be selected? 
-evaluate_random_lists <- function(xldf, n=100, nsim=1000) {
+# how many categories would be covered? how many unique unilemmas would be selected?
+evaluate_random_lists <- function(xldf, n = 100, nsim = 1000) {
   dat <- tibble()
-  for(i in 1:nsim) {
-    samp <- xldf[sample(1:nrow(xldf), size=n),]
-    tot_langs = 0
-    for(s in 1:nrow(samp)) {
-      tot_langs = tot_langs + length(unique(subset(xldf, uni_lemma==samp[s,]$uni_lemma)$language)) - 1
+  for (i in 1:nsim) {
+    samp <- xldf[sample(1:nrow(xldf), size = n), ]
+    tot_langs <- 0
+    for (s in 1:nrow(samp)) {
+      tot_langs <- tot_langs + length(unique(subset(xldf, uni_lemma == samp[s, ]$uni_lemma)$language)) - 1
     }
-    dat <- bind_rows(dat, 
-                     bind_cols(ncats = length(unique(samp$category)),
-                        nlangs = length(unique(samp$language)),
-                        nunique_unis = length(unique(samp$uni_lemma)),
-                        mean_other_langs = tot_langs / n))
+    dat <- bind_rows(
+      dat,
+      bind_cols(
+        ncats = length(unique(samp$category)),
+        nlangs = length(unique(samp$language)),
+        nunique_unis = length(unique(samp$uni_lemma)),
+        mean_other_langs = tot_langs / n
+      )
+    )
   }
   return(dat)
 }
 
 rand_lists_stats <- evaluate_random_lists(xldf_clean)
 colMeans(rand_lists_stats)
-#   ncats     nlangs    nunique_unis  mean_other_langs 
+#   ncats     nlangs    nunique_unis  mean_other_langs
 #   20.09     37.87     94.53         27.03
 # On average, a random set of 100 unilemmas has 94.5 unique unilemmas covering 20 (out of 31) semantic categories, and each unilemma on average is on 27 other forms.
 ```
@@ -416,7 +447,8 @@ This increased the liklihood that the same number of items per language would ap
 ```{r, eval=F}
 # xldf_clean |> filter(is.na(category)) |> pull(uni_lemma) # 109 with missing category
 sort(unique(xldf_clean$category)) # "sounds2", NA, "other" ... "locations_quantities_adverbs"
-tmp <- xldf_clean %>% group_by(language) %>%
+tmp <- xldf_clean %>%
+  group_by(language) %>%
   summarise(categories = length(unique(category))) %>%
   arrange(desc(categories)) # 15-24 semantic categories per form
 # Forms have a median of 21 semantic categories (mean = 20.5).
@@ -437,8 +469,9 @@ cat_props <- read_csv("data/category_proportions.csv") %>%
   arrange(desc(desired_n))
 # TODO: report in table..? add props to Swadesh list figure? - MOVE TO APPENDIX?
 
-# only want 1 
-uni_per_form <- xldf_clean %>% arrange(desc(language), desc(uni_lemma), desc(a1)) %>% # get most discriminating uni_lemma per lang
+# only want 1
+uni_per_form <- xldf_clean %>%
+  arrange(desc(language), desc(uni_lemma), desc(a1)) %>% # get most discriminating uni_lemma per lang
   select(uni_lemma, category, language, d) %>% # lexical_category, ToDo: add lexical_class to xldf
   group_by(uni_lemma, language) %>%
   slice(1) %>%
@@ -446,8 +479,9 @@ uni_per_form <- xldf_clean %>% arrange(desc(language), desc(uni_lemma), desc(a1)
   summarise(d_m = mean(d), d_sd = sd(d), n = n()) %>%
   filter(!is.na(d_m)) # one unilemma: "look for"
 
-uni_per_form %>% ggplot(aes(x=jitter(n), y=d_sd, color=d_m)) + 
-  geom_point(alpha=.3) + theme_bw()
+uni_per_form %>% ggplot(aes(x = jitter(n), y = d_sd, color = d_m)) +
+  geom_point(alpha = .3) +
+  theme_bw()
 ```
 
 
@@ -465,22 +499,27 @@ full_fscores <- readRDS(here("data/intermediates/full_fscores_allforms.rds"))
 
 cv_res_sum <- readRDS(here("data/intermediates/full_vs_swadesh_cv_fscores_allforms.rds"))
 
-cv_output <- cv_res_sum |> 
-  group_by(k, sublist) |> 
-  summarise(num_overlap = round(mean(num_overlap, na.rm = TRUE), 1),
-            difficulty_cor = mean(difficulty_cor, na.rm = TRUE),
-            rmse = mean(rmse, na.rm=T))
+cv_output <- cv_res_sum |>
+  group_by(k, sublist) |>
+  summarise(
+    num_overlap = round(mean(num_overlap, na.rm = TRUE), 1),
+    difficulty_cor = mean(difficulty_cor, na.rm = TRUE),
+    rmse = mean(rmse, na.rm = T)
+  )
 
 best_k <- cv_output |>
-  ungroup() |> group_by(sublist) |>
+  ungroup() |>
+  group_by(sublist) |>
   filter(difficulty_cor == max(difficulty_cor, na.rm = TRUE)) |>
-  slice(1) |> ungroup() |> arrange(desc(difficulty_cor)) |>
+  slice(1) |>
+  ungroup() |>
+  arrange(desc(difficulty_cor)) |>
   relocate(sublist, .before = k) |>
   select(-rmse) |>
-  mutate(sublist = ifelse(sublist=="category", "semantic", sublist) |> 
-           str_to_sentence())
-names(best_k) = c("Selection Method", "Best k", "Avg. Overlap", "Difficulty r")
-best_k |> kableExtra::kable(digits=3)
+  mutate(sublist = ifelse(sublist == "category", "semantic", sublist) |>
+    str_to_sentence())
+names(best_k) <- c("Selection Method", "Best k", "Avg. Overlap", "Difficulty r")
+best_k |> kableExtra::kable(digits = 3)
 ```
 
 <!-- plot-crossval-fscores moved to Appendix --> 
@@ -493,52 +532,65 @@ best_k |> kableExtra::kable(digits=3)
 load(here("data/intermediates/best_k_swadesh_lists.rds"))
 # unstrat_sublist, category_sublist, syntactic_sublist, strat2_sublist
 
-uni_sem_cats <- prod_pars |> group_by(uni_lemma) |>
-  count(semantic_category) |> arrange(uni_lemma, desc(n)) |>
-  group_by(uni_lemma) |> slice(1)
+uni_sem_cats <- prod_pars |>
+  group_by(uni_lemma) |>
+  count(semantic_category) |>
+  arrange(uni_lemma, desc(n)) |>
+  group_by(uni_lemma) |>
+  slice(1)
 
-uni_syn_cats <- prod_pars |> group_by(uni_lemma) |>
-  count(syntactic_category) |> arrange(uni_lemma, desc(n)) |>
-  group_by(uni_lemma) |> slice(1)
+uni_syn_cats <- prod_pars |>
+  group_by(uni_lemma) |>
+  count(syntactic_category) |>
+  arrange(uni_lemma, desc(n)) |>
+  group_by(uni_lemma) |>
+  slice(1)
 
-syntactic_sublist <- syntactic_sublist |> select(-category, -count, -mean_prop) |>
+syntactic_sublist <- syntactic_sublist |>
+  select(-category, -count, -mean_prop) |>
   left_join(uni_sem_cats |> select(uni_lemma, semantic_category)) |>
-  rename(category = semantic_category) 
+  rename(category = semantic_category)
 
-all_swadesh <- bind_rows(category_sublist |> mutate(method = "Semantic") |> select(-n, -wanted, -count, -mean_prop), 
-                         unstrat_sublist |> mutate(method = "Unstratified"),
-                         syntactic_sublist |> mutate(method = "Syntactic"),
-                         strat2_sublist |> mutate(method = "2 difficulties") |> select(-bin)) |>
+all_swadesh <- bind_rows(
+  category_sublist |> mutate(method = "Semantic") |> select(-n, -wanted, -count, -mean_prop),
+  unstrat_sublist |> mutate(method = "Unstratified"),
+  syntactic_sublist |> mutate(method = "Syntactic"),
+  strat2_sublist |> mutate(method = "2 difficulties") |> select(-bin)
+) |>
   rename(semantic_category = category) |>
   left_join(uni_syn_cats |> select(uni_lemma, syntactic_category))
-#write_csv(all_swadesh, file="Swadesh_items_from_4_methods.csv")
+# write_csv(all_swadesh, file="Swadesh_items_from_4_methods.csv")
 
 length(unique(all_swadesh$uni_lemma)) # 156 unique items across 4 methods
 votes <- sort(table(all_swadesh$uni_lemma))
-length(which(votes==4)) # 53
-length(which(votes==3)) # 31
-length(which(votes==2)) # 23
+length(which(votes == 4)) # 53
+length(which(votes == 3)) # 31
+length(which(votes == 2)) # 23
 
-all_swadesh |> group_by(semantic_category, method) |>
+all_swadesh |>
+  group_by(semantic_category, method) |>
   summarise(n = n()) |>
-  ggplot(aes(y=semantic_category, x=n)) +
-  geom_col() + theme_classic() +
-  facet_grid(cols=vars(method))
+  ggplot(aes(y = semantic_category, x = n)) +
+  geom_col() +
+  theme_classic() +
+  facet_grid(cols = vars(method))
 
-all_swadesh |> group_by(syntactic_category, method) |>
+all_swadesh |>
+  group_by(syntactic_category, method) |>
   summarise(n = n()) |>
-  ggplot(aes(y=syntactic_category, x=n)) +
-  geom_col() + theme_classic() +
-  facet_grid(cols=vars(method))
+  ggplot(aes(y = syntactic_category, x = n)) +
+  geom_col() +
+  theme_classic() +
+  facet_grid(cols = vars(method))
 
 
-#library(wordcloud2)
-#swad_counts <- all_swadesh |> count(uni_lemma)
-#wordcloud2(data=data.frame(word = names(swad_counts$uni_lemma), 
+# library(wordcloud2)
+# swad_counts <- all_swadesh |> count(uni_lemma)
+# wordcloud2(data=data.frame(word = names(swad_counts$uni_lemma),
 #                           freq = as.vector(swad_counts$n)), size=.5, color='random-dark')
 
 # Vote method: include any item that is selected by at least 2 of the top methods (N=107)
-#swadesh_sublist <- all_swadesh |> count(uni_lemma) |>
+# swadesh_sublist <- all_swadesh |> count(uni_lemma) |>
 #  filter(n>1)
 
 # Our decision is to use syntactic category stratification:
@@ -548,29 +600,31 @@ swadesh_sublist <- syntactic_sublist
 ```{r simulate-overlap-of-random-selection-methods-by-k, eval=F, include=F}
 # with N items, if you select 100 items 4 times (with replacement), what is the expected # of items that were selected 0, 1, 2, 3, or 4 times?
 
-tmp <- xldf_clean |> group_by(uni_lemma) |> summarise(n = n())
-Nitems = nrow(tmp |> filter(n>=27)) # 483 unilemmas for k=27
+tmp <- xldf_clean |>
+  group_by(uni_lemma) |>
+  summarise(n = n())
+Nitems <- nrow(tmp |> filter(n >= 27)) # 483 unilemmas for k=27
 
-run_rand_sim <- function(Nitems, test_length=100, n_tests=4) {
-  items = 1:Nitems
-  result = data.frame()
-  for(i in 1:100) {
-    selections = c()
-    for(t in 1:n_tests) {
-      t = sample(items, test_length, replace=F)
-      selections = c(selections, t)
+run_rand_sim <- function(Nitems, test_length = 100, n_tests = 4) {
+  items <- 1:Nitems
+  result <- data.frame()
+  for (i in 1:100) {
+    selections <- c()
+    for (t in 1:n_tests) {
+      t <- sample(items, test_length, replace = F)
+      selections <- c(selections, t)
     }
-    result = bind_rows(result, table(table(selections)))
+    result <- bind_rows(result, table(table(selections)))
   }
   result
 }
 
 sim_result <- run_rand_sim(483)
-sim_result[which(is.na(sim_result[,4])),4] = 0
+sim_result[which(is.na(sim_result[, 4])), 4] <- 0
 colMeans(sim_result)
 # example result:
-#      1      2      3      4 
-# 199.73  77.89  13.83   0.75 
+#      1      2      3      4
+# 199.73  77.89  13.83   0.75
 ```
 
 
@@ -585,171 +639,221 @@ The substantial overlap in the unilemmas selected across methods points to a con
 
 <!-- THIS is labeled "figure" but it is actually a table, no?  Also, the font is ginormous in the pdf. -->
 
-```{r, fig.width=5.5, fig.height=5.5, fig.cap=c("The 100-item Swadesh-CDI list by semantic category, along with 10 recommended items from under-represented semantic categories (in gray)."), echo=FALSE}
+```{r, eval=F, fig.width=5.5, fig.height=5.5, fig.cap=c("The 100-item Swadesh-CDI list by semantic category, along with 10 recommended items from under-represented semantic categories (in gray)."), echo=FALSE}
 knitr::include_graphics("journal/figs/SwadeshCDI_list.pdf")
 ```
 
+```{r scdi-list, tab.cap="The 100-item Swadesh-CDI list by semantic category, along with 10 recommended items from under-represented semantic categories in italics."}
+read_csv("data/scdi_list.csv") |>
+  kable()
+```
+
+
 ```{r add-missing-labels, echo=F}
 prod_pars <- prod_pars |>
-  mutate(syntactic_category = case_when(language=="Irish" & uni_lemma=="1SG" ~ "function_words",
-                                        language=="Irish" & uni_lemma=="2SG" ~ "function_words",
-                                        language=="English (British)" & uni_lemma=="because" ~ "function_words",
-                                        language=="English (British)" & uni_lemma=="black" ~ "predicates",
-                                        language=="English (British)" & uni_lemma=="chin" ~ "nouns",
-                                        language=="English (British)" & uni_lemma=="mommy" ~ "other",
-                                        language=="English (British)" & uni_lemma=="yesterday" ~ "other",
-                                        TRUE ~ syntactic_category),
-         semantic_category = case_when(language=="Irish" & uni_lemma=="1SG" ~ "pronouns",
-                                       language=="Irish" & uni_lemma=="2SG" ~ "pronouns",
-                                       language=="English (British)" & uni_lemma=="because" ~ "connecting_words",
-                                       language=="English (British)" & uni_lemma=="black" ~ "descriptive_words",
-                                       language=="English (British)" & uni_lemma=="chin" ~ "body_parts",
-                                       language=="English (British)" & uni_lemma=="mommy" ~ "people",
-                                       language=="English (British)" & uni_lemma=="yesterday" ~ "time_words",
-                                       TRUE ~ semantic_category))
+  mutate(
+    syntactic_category = case_when(
+      language == "Irish" & uni_lemma == "1SG" ~ "function_words",
+      language == "Irish" & uni_lemma == "2SG" ~ "function_words",
+      language == "English (British)" & uni_lemma == "because" ~ "function_words",
+      language == "English (British)" & uni_lemma == "black" ~ "predicates",
+      language == "English (British)" & uni_lemma == "chin" ~ "nouns",
+      language == "English (British)" & uni_lemma == "mommy" ~ "other",
+      language == "English (British)" & uni_lemma == "yesterday" ~ "other",
+      TRUE ~ syntactic_category
+    ),
+    semantic_category = case_when(
+      language == "Irish" & uni_lemma == "1SG" ~ "pronouns",
+      language == "Irish" & uni_lemma == "2SG" ~ "pronouns",
+      language == "English (British)" & uni_lemma == "because" ~ "connecting_words",
+      language == "English (British)" & uni_lemma == "black" ~ "descriptive_words",
+      language == "English (British)" & uni_lemma == "chin" ~ "body_parts",
+      language == "English (British)" & uni_lemma == "mommy" ~ "people",
+      language == "English (British)" & uni_lemma == "yesterday" ~ "time_words",
+      TRUE ~ semantic_category
+    )
+  )
 ```
 
 
 
-```{r, echo=FALSE}
+```{r cat-list, echo=FALSE}
 # Table 3
-#knitr::include_graphics("figs/SwadeshCDI_list.pdf")
+# knitr::include_graphics("figs/SwadeshCDI_list.pdf")
 
 prod_pars <- prod_pars |>
-  mutate(SwadeshCDI=ifelse(is.element(uni_lemma, swadesh_sublist$uni_lemma), 1, 0))
+  mutate(SwadeshCDI = ifelse(is.element(uni_lemma, swadesh_sublist$uni_lemma), 1, 0))
 
-swad_per_lang <- prod_pars |> filter(SwadeshCDI==1) |> group_by(semantic_category, language) |>
-  summarise(n=n()) |>
+swad_per_lang <- prod_pars |>
+  filter(SwadeshCDI == 1) |>
+  group_by(semantic_category, language) |>
+  summarise(n = n()) |>
   group_by(semantic_category) |>
-  summarise(n = mean(n)) |> arrange(desc(n))
+  summarise(n = mean(n)) |>
+  arrange(desc(n))
 
-swad_lex_cat <- prod_pars |> filter(SwadeshCDI==1) |> group_by(syntactic_category, language) |>
-  summarise(n=n()) |>
+swad_lex_cat <- prod_pars |>
+  filter(SwadeshCDI == 1) |>
+  group_by(syntactic_category, language) |>
+  summarise(n = n()) |>
   group_by(syntactic_category) |>
-  summarise(n = mean(n)) |> arrange(desc(n))
+  summarise(n = mean(n)) |>
+  arrange(desc(n))
 # sum(swad_lex_cat$n) # 96 words
 
-en_cats <- prod_pars |> filter(language=="English (American)") |> select(semantic_category) |> 
-  group_by(semantic_category) |> summarise(n = n()) |> arrange(desc(n)) |>
+en_cats <- prod_pars |>
+  filter(language == "English (American)") |>
+  select(semantic_category) |>
+  group_by(semantic_category) |>
+  summarise(n = n()) |>
+  arrange(desc(n)) |>
   mutate(EN_freq = n / sum(n))
 
-swadesh_sublist <- swadesh_sublist |> 
-  left_join(prod_pars |> filter(language=="English (American)") |>select(uni_lemma, semantic_category))
-swad_cats <- swadesh_sublist |> group_by(semantic_category) |> summarise(n = n()) |> 
-  mutate(Swad_freq = n / sum(n)) |> select(-n)
+swadesh_sublist <- swadesh_sublist |>
+  left_join(prod_pars |> filter(language == "English (American)") |> select(uni_lemma, semantic_category))
+swad_cats <- swadesh_sublist |>
+  group_by(semantic_category) |>
+  summarise(n = n()) |>
+  mutate(Swad_freq = n / sum(n)) |>
+  select(-n)
 
 missing_from_swadesh <- setdiff(en_cats$semantic_category, swad_cats$semantic_category)
 # "locations"  "helping_verbs" "toys". "quantifiers"
-#setdiff(swad_cats$semantic_category, en_cats$semantic_category)
+# setdiff(swad_cats$semantic_category, en_cats$semantic_category)
 
-options(knitr.kable.NA = '-')
+options(knitr.kable.NA = "-")
 
-en_cats |> left_join(swad_cats) |> 
-  mutate(semantic_category = semantic_category |> 
-           str_replace_all("_", " ") |> 
-           str_to_sentence()) |> 
-  rename(`Semantic Category` = semantic_category, 
-         `Proportion of EN CDI` = EN_freq,
-         `Proportion of S-CDI` = Swad_freq) |>
-  #replace_na('none') |> # or can we get a "-"?
-  kable(digits=2, caption=c("The proportion of items per semantic category on the English CDI:WS form (e.g. n=103 action words / 680 total items = 0.15), and the proportion of items per category on the 100-item Swadesh-CDI."))
+en_cats |>
+  left_join(swad_cats) |>
+  mutate(semantic_category = semantic_category |>
+    str_replace_all("_", " ") |>
+    str_to_sentence()) |>
+  rename(
+    `Semantic Category` = semantic_category,
+    `Proportion of EN CDI` = EN_freq,
+    `Proportion of S-CDI` = Swad_freq
+  ) |>
+  # replace_na('none') |> # or can we get a "-"?
+  kable(digits = 2, caption = c("The proportion of items per semantic category on the English CDI:WS form (e.g. n=103 action words / 680 total items = 0.15), and the proportion of items per category on the 100-item Swadesh-CDI."))
 ```
 
-The `r S_LEN` S-CDI items, shown in Figure 1, represented `r nrow(na.omit(swad_cats))` of the 22 semantic categories present on the original American English CDI:WS form, with concrete nouns being most prevalent, followed by adjectives and verbs,
-and some categories entirely unrepresented: locations, helping verbs, quantifiers, and toys (but see proposed extension below).
+The `r S_LEN` S-CDI items, shown in Table \@ref(tbl:scdi-list), represented `r nrow(na.omit(swad_cats))` of the 22 semantic categories present on the original American English CDI:WS form, with concrete nouns being most prevalent, followed by adjectives and verbs, and some categories entirely unrepresented: locations, helping verbs, quantifiers, and toys, as shown in Table \@ref(tbl:cat-list) (but see proposed extension below).
 43% of the S-CDI concepts were nouns, 20% were predicates (verbs and adjectives), 14% were function words, and the remaining concepts belonged to other lexical categories.
 These proportions are broadly similar to the lexical category proportions on the 680-item English CDI:WS (46% nouns, 24% predicates, 15% function words, and 5% other).
 The S-CDI items were also present on more forms than typical in the selection set: on average, each item appeared on `r round(mean(swadesh_sublist$num_langs), 0)` forms, despite only being required to appear on at least 27 forms.
 <!-- Finally, X S-CDI unilemmas were not present on the American English CDI:WS: ... -->
 
-Figure 2 shows the average cross-linguistic difficulty of CDI items by semantic category, for both Swadesh and non-Swadesh items. 
+Figure \@ref(fig:difficulty-by-category) shows the average cross-linguistic difficulty of CDI items by semantic category, for both Swadesh and non-Swadesh items. 
 The difficulty of Swadesh-CDI items generally tracked with that of non-Swadesh items.
 
 ```{r difficulty-by-category, fig.env = "figure", fig.pos = "h", fig.height=4.5, fig.width=3.6, fig.align = "center", fig.cap = "Mean cross-linguistic difficulty of CDI words by semantic category, showing that selection of Swadesh concepts broadly maintained representative difficulty. Bars represent bootstrapped 95\\% confidence intervals."}
-
 xldf_clean <- xldf_clean |>
   rename(semantic_category = category) |>
-  mutate(semantic_category = case_when(language=="Irish" & uni_lemma=="1SG" ~ "pronouns",
-                                       language=="Irish" & uni_lemma=="2SG" ~ "pronouns",
-                                       language=="English (British)" & uni_lemma=="because" ~ "connecting_words",
-                                       language=="English (British)" & uni_lemma=="black" ~ "descriptive_words",
-                                       language=="English (British)" & uni_lemma=="chin" ~ "body_parts",
-                                       language=="English (British)" & uni_lemma=="mommy" ~ "people",
-                                       language=="English (British)" & uni_lemma=="yesterday" ~ "time_words",
-                                       TRUE ~ semantic_category)) |>
+  mutate(semantic_category = case_when(
+    language == "Irish" & uni_lemma == "1SG" ~ "pronouns",
+    language == "Irish" & uni_lemma == "2SG" ~ "pronouns",
+    language == "English (British)" & uni_lemma == "because" ~ "connecting_words",
+    language == "English (British)" & uni_lemma == "black" ~ "descriptive_words",
+    language == "English (British)" & uni_lemma == "chin" ~ "body_parts",
+    language == "English (British)" & uni_lemma == "mommy" ~ "people",
+    language == "English (British)" & uni_lemma == "yesterday" ~ "time_words",
+    TRUE ~ semantic_category
+  )) |>
   mutate(SwadeshCDI = ifelse(uni_lemma %in% swadesh_sublist$uni_lemma, 1, 0))
 
 # remove categories that only exist in 1 or 2 languages:
 prod_cat <- xldf_clean |>
-  filter(!is.na(d), !is.na(semantic_category),
-         !is.element(semantic_category, c("final_particles", "numbers", "articles", "other",
-                                 "descriptive_words (adverbs)", "states", "unknown",
-                                 "prepositional_pronouns",
-                                 "verb_endings", "verb_modifiers", 
-                                 "classifiers", "locations_quantities_adverbs"))) |>
+  filter(
+    !is.na(d), !is.na(semantic_category),
+    !is.element(semantic_category, c(
+      "final_particles", "numbers", "articles", "other",
+      "descriptive_words (adverbs)", "states", "unknown",
+      "prepositional_pronouns",
+      "verb_endings", "verb_modifiers",
+      "classifiers", "locations_quantities_adverbs"
+    ))
+  ) |>
   group_by(language, semantic_category, SwadeshCDI) |>
   summarise(d = mean(d), a1 = mean(a1))
 
 
 # mean variability of each category, across languages
-prod_cat |> mutate(Items = ifelse(SwadeshCDI==1, "Swadesh", "non-Swadesh")) |>
+prod_cat |>
+  mutate(Items = ifelse(SwadeshCDI == 1, "Swadesh", "non-Swadesh")) |>
   group_by(semantic_category, Items) |>
-  tidyboot::tidyboot_mean(d, na.rm=T) |>
-  ggplot(aes(x=reorder(semantic_category, mean, decreasing=T), y=mean, group=Items, color=Items)) + 
-  geom_point(alpha=.7, position = position_dodge2(.4)) +
-  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7, position = position_dodge2(.4)) +
-  coord_flip() + theme_classic() + ylab("Mean item difficulty") + xlab("Semantic Category") +
-  theme(legend.position="bottom", legend.title=element_blank(),
-        legend.margin=margin(c(2,5,3,2))) 
+  tidyboot::tidyboot_mean(d, na.rm = T) |>
+  ggplot(aes(x = reorder(semantic_category, mean, decreasing = T), y = mean, group = Items, color = Items)) +
+  geom_point(alpha = .7, position = position_dodge2(.4)) +
+  geom_linerange(aes(ymin = ci_lower, ymax = ci_upper), alpha = .7, position = position_dodge2(.4)) +
+  coord_flip() +
+  theme_classic() +
+  ylab("Mean item difficulty") +
+  xlab("Semantic Category") +
+  theme(
+    legend.position = "bottom", legend.title = element_blank(),
+    legend.margin = margin(c(2, 5, 3, 2))
+  )
 ```
 
 
 ```{r, swadesh-vs-non-swadesh-diff, echo=F}
-tmp <- xldf_clean |> 
+tmp <- xldf_clean |>
   group_by(SwadeshCDI) |>
   filter(!is.na(d)) |>
-  summarise(sd_d = sd(d), d = -mean(d), 
-            sd_a1 = sd(a1), a1 = -mean(a1))
+  summarise(
+    sd_d = sd(d), d = -mean(d),
+    sd_a1 = sd(a1), a1 = -mean(a1)
+  )
 # mean difficulty of Swadesh words: -.18; mean difficulty of other words: -.94
 # (mean of all: mean(xldf_clean$d, na.rm=T) .81
 
-swad_discrim = t.test(subset(xldf_clean, SwadeshCDI==1)$a1, 
-                      subset(xldf_clean, SwadeshCDI==0)$a1) 
+swad_discrim <- t.test(
+  subset(xldf_clean, SwadeshCDI == 1)$a1,
+  subset(xldf_clean, SwadeshCDI == 0)$a1
+)
 
-swad_diff_ttest = t.test(-subset(xldf_clean, SwadeshCDI==1)$d, 
-                         -subset(xldf_clean, SwadeshCDI==0)$d)
+swad_diff_ttest <- t.test(
+  -subset(xldf_clean, SwadeshCDI == 1)$d,
+  -subset(xldf_clean, SwadeshCDI == 0)$d
+)
 
-swad_extension_unis <- c("try", "under", "in", "out", 
-                         "glue (object)", "toy (object)",  # chalk only on 14 forms, try on 13
-                         "all", "many", "not", "a lot")
+swad_extension_unis <- c(
+  "try", "under", "in", "out",
+  "glue (object)", "toy (object)", # chalk only on 14 forms, try on 13
+  "all", "many", "not", "a lot"
+)
 
 swad_ext <- xldf_clean |> filter(is.element(uni_lemma, swad_extension_unis))
 
-xs <- swad_ext |> group_by(uni_lemma) |>
+xs <- swad_ext |>
+  group_by(uni_lemma) |>
   summarise(n = n(), mean_d = mean(d), sd_d = sd(d))
 ```
 
 ```{r fig-mean-swadesh-item-diff, fig.cap=c("Mean item difficulty of Swadesh vs. non-Swadesh CDI items per language. Swadesh items are consistently easier than non-Swadesh items, but show the same difficulty trend as non-Swadesh items across languages. Bars represent bootstrapped 95\\% confidence intervals."), fig.height=5.5, fig.width=4.0}
-
-swad_d_m <- xldf_clean %>% 
-  group_by(language, SwadeshCDI) %>% 
-  tidyboot::tidyboot_mean(d, na.rm=T) %>%
+swad_d_m <- xldf_clean %>%
+  group_by(language, SwadeshCDI) %>%
+  tidyboot::tidyboot_mean(d, na.rm = T) %>%
   arrange(desc(mean))
 
 
-swad_d_m %>% mutate(Swadesh = ifelse(SwadeshCDI, "Swadesh", "non-Swadesh")) %>%
-  ggplot(aes(x=reorder(language, -mean), y=mean, color=Swadesh)) + coord_flip() + 
-  geom_point() + theme_classic() +
-  geom_linerange(aes(ymin=ci_lower, ymax=ci_upper), alpha=.7) +
-  theme(legend.position="bottom", legend.title=element_blank(),
-        legend.margin=margin(c(2,5,3,2))) + # legend.margin=margin(c(1,5,5,5)) # top right bottom left
-  xlab("Language") + ylab("Mean item difficulty")
+swad_d_m %>%
+  mutate(Swadesh = ifelse(SwadeshCDI, "Swadesh", "non-Swadesh")) %>%
+  ggplot(aes(x = reorder(language, -mean), y = mean, color = Swadesh)) +
+  coord_flip() +
+  geom_point() +
+  theme_classic() +
+  geom_linerange(aes(ymin = ci_lower, ymax = ci_upper), alpha = .7) +
+  theme(
+    legend.position = "bottom", legend.title = element_blank(),
+    legend.margin = margin(c(2, 5, 3, 2))
+  ) + # legend.margin=margin(c(1,5,5,5)) # top right bottom left
+  xlab("Language") +
+  ylab("Mean item difficulty")
 ```
 
-
-
 Comparing the IRT parameters (across all CDI forms) showed that the discrimination parameter (i.e., slope) of the S-CDI items did not significantly differ from that of the non-Swadesh items, suggesting that the S-CDI items could measure ability as well as non-Swadesh items.
-However, as shown in Figure 3, S-CDI items were significantly easier than the non-Swadesh items (mean S-CDI $d=$ `r round(tmp[2,"d"], 2)`, mean non-S-CDI $d=$ `r round(tmp[1,"d"], 2)`, `r report_ttest(swad_diff_ttest)`), which could result in older/more-skilled children being at ceiling on the test.
+However, as shown in Figure \@ref(fig:fig-mean-swadesh-item-diff), S-CDI items were significantly easier than the non-Swadesh items (mean S-CDI $d=$ `r round(tmp[2,"d"], 2)`, mean non-S-CDI $d=$ `r round(tmp[1,"d"], 2)`, `r report_ttest(swad_diff_ttest)`), which could result in older/more-skilled children being at ceiling on the test.
 
 To mitigate the likelihood of a ceiling effect, we propose extending the S-CDI with 10 additional low-variability unilemmas chosen to fill unrepresented semantic cagegories in the S-CDI, including a helping verb ("try"), locatives ("under", "in", "out"), quantifiers ("a lot", "all", "many", "not"), and toys ("glue", "toy").
 These unilemmas are included on a mean of `r round(mean(xs$n), 1)` of the 32 forms, but are of greater difficulty (mean $d=$ `r round(mean(xs$mean_d), 2)`), and cross-linguistic variability (mean $sd(d)=$ `r round(mean(xs$sd_d), 2)`).
@@ -778,81 +882,95 @@ Although test information was slightly lower for the S-CDI, the values were virt
 
 We then evaluated the S-CDI's performance in a test of generalization to `r length(gen_langs)` more CDI datasets.
 For the `r length(gen_langs)` low-data languages, a comparison of simulated S-CDI scores to full CDI:WS revealed that the S-CDI's raw scores were again strongly related (mean $r=0.975$), with an average of $N=87.4$ S-CDI items appearing per list.
-Table 4 shows the results of this comparison, alongside the upper bound random baseline.
+Table \@ref(tbl:gen-results) shows the results of this comparison, alongside the upper bound random baseline.
 Once again, the S-CDI performed approximately as well as a random sample of the actual CDI (random mean $r=0.966$).
 The 110-item extended S-CDI's correlation rose to mean $r=0.976$ (mean items per language: $N=94.5$), demonstrating the value of including items from the more difficult semantic categories that were underrepresented on the original list.
 
 ```{r plot-swadesh-generalization-results, fig.width=6, fig.height=7, fig.cap="Correlation of each sublist's ability scores vs. full CDI sumscores and overlap in the generalization test.", include=F}
 # p1 is already shown in Table 4; p2 (overlap) is not very informative...maybe report as table in the Appendix?
-p1 <- ggplot(gen_res_sum,
-       aes(x = language, y = sumscore_cor, fill = sublist)) +
+p1 <- ggplot(
+  gen_res_sum,
+  aes(x = language, y = sumscore_cor, fill = sublist)
+) +
   geom_col(position = "dodge") +
   labs(y = "Sumscore correlation") +
-  theme_classic() + 
-  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) 
-
-p2 <- ggplot(gen_res_sum,
-       aes(x = language, y = num_overlap, fill = sublist)) +
-  geom_col(position = "dodge") +
-  labs(y = "Overlap size") +
-  theme_classic() + 
+  theme_classic() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
 
-ggarrange(p1, p2, ncol=1, common.legend = T)
+p2 <- ggplot(
+  gen_res_sum,
+  aes(x = language, y = num_overlap, fill = sublist)
+) +
+  geom_col(position = "dodge") +
+  labs(y = "Overlap size") +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+
+ggarrange(p1, p2, ncol = 1, common.legend = T)
 ```
 
 ```{r gen-results, results='asis'}
-gen_xx <- gen_res_sum |> 
+gen_xx <- gen_res_sum |>
   filter(language %in% gen_langs) |>
-  #mutate(sublist = str_to_sentence(sublist)) |> 
+  # mutate(sublist = str_to_sentence(sublist)) |>
   group_by(sublist) |>
-  rename(Method = sublist,
-         Language = language) |>
-  mutate(Method = ifelse(Method=="Random", "random", ifelse(Method=="S-CDI110", "S-CDI 110", Method))) |>
+  rename(
+    Method = sublist,
+    Language = language
+  ) |>
+  mutate(Method = ifelse(Method == "Random", "random", ifelse(Method == "S-CDI110", "S-CDI 110", Method))) |>
   pivot_wider(id_cols = Language, names_from = Method, values_from = sumscore_cor)
 # sumscore_cor_t
 
 # computer summary row
-mean_row <- gen_xx |> 
-  select(-Language) |> 
-  summarise(across(everything(), ~mean(.x, na.rm = TRUE))) |> 
-  mutate(Language = "Mean") |> 
-  select(Language, everything())  # Make sure Language is first
+mean_row <- gen_xx |>
+  select(-Language) |>
+  summarise(across(everything(), ~ mean(.x, na.rm = TRUE))) |>
+  mutate(Language = "Mean") |>
+  select(Language, everything()) # Make sure Language is first
 
 gen_xx_with_mean <- bind_rows(gen_xx, mean_row) |>
-  select(Language, `S-CDI 110`, `syntactic`, `2 strata`, `unstratified`, `category`, `random`) 
+  select(Language, `S-CDI 110`, `syntactic`, `2 strata`, `unstratified`, `category`, `random`)
 
-gen_tab <- xtable::xtable(gen_xx_with_mean, digits = c(3), 
-                          caption = "Generalization test results (r vs. full CDI scores).")
+gen_tab <- xtable::xtable(gen_xx_with_mean,
+  digits = c(3),
+  caption = "Generalization test results (r vs. full CDI scores)."
+)
 
-print(gen_tab, type = "latex", comment = FALSE, table.placement = "H",
-      include.rownames = FALSE, size = "\\fontsize{9pt}{10pt}\\selectfont",
-      add.to.row = list(pos = list(nrow(gen_xx)), command = "\\hline "))
+print(gen_tab,
+  type = "latex", comment = FALSE, table.placement = "H",
+  include.rownames = FALSE, size = "\\fontsize{9pt}{10pt}\\selectfont",
+  add.to.row = list(pos = list(nrow(gen_xx)), command = "\\hline ")
+)
 ```
 
 
 
 ```{r comparison-to-short-cdi, include=F}
 short_wsA <- read_csv(here("data/eng-ws-shortA.csv")) |>
-  mutate(word = ifelse(word=="mommy*", "mommy", word))
+  mutate(word = ifelse(word == "mommy*", "mommy", word))
 short_wsB <- read_csv(here("data/eng-ws-shortB.csv")) |>
-  mutate(word = ifelse(word=="mommy*", "mommy", word))
+  mutate(word = ifelse(word == "mommy*", "mommy", word))
 
-scdi_items <- c(setdiff(swadesh_sublist$uni_lemma, 
-                        c("where (question)","when (question)","1SG","2SG","2SG.POSS","3SG")), 
-                 c("where","when","you","I","yours","she"))
+scdi_items <- c(
+  setdiff(
+    swadesh_sublist$uni_lemma,
+    c("where (question)", "when (question)", "1SG", "2SG", "2SG.POSS", "3SG")
+  ),
+  c("where", "when", "you", "I", "yours", "she")
+)
 # 2SG = you, 1SG = I, 2SG.POSS = yours, 3SG = he/she
 
 # extension:
 sort(intersect(short_wsA$word, unique(swad_ext$uni_lemma))) # 2 - all, under
 sort(intersect(short_wsB$word, unique(swad_ext$uni_lemma))) # 0
 
-wsA_int = sort(intersect(short_wsA$word, scdi_items)) # 17
-# "airplane"  "baa baa"   "broom"     "candy"     "cat"       "chin"      "cold"      "dog"       "horse"    
+wsA_int <- sort(intersect(short_wsA$word, scdi_items)) # 17
+# "airplane"  "baa baa"   "broom"     "candy"     "cat"       "chin"      "cold"      "dog"       "horse"
 # "hot"       "meow"      "milk"   "mommy"   "school"    "this"   "where"   "woof woof"
-wsB_int = sort(intersect(short_wsB$word, scdi_items)) # 15
-#"baa baa"     "black"       "dirty"       "jump"        "nose"        "quack quack" "she" "sit"
-# "telephone"  "today"       "tomorrow"    "tongue"      "truck"       "why" 
+wsB_int <- sort(intersect(short_wsB$word, scdi_items)) # 15
+# "baa baa"     "black"       "dirty"       "jump"        "nose"        "quack quack" "she" "sit"
+# "telephone"  "today"       "tomorrow"    "tongue"      "truck"       "why"
 
 # intersect(wsA_int, wsB_int) # 2 "baa baa" "mommy"
 ```
@@ -905,13 +1023,13 @@ Many recommendations and caveats have been enumerated by the CDI Advisory Board.
 Rather than recapitulate the process and caveats already itemized there, we suggest how the Swadesh CDI can be used to jump-start the process.
 
 1. As a starting point, take the 100 Swadesh-CDI unilemmas, and consider their linguistic and cultural appropriateness for the target language. Include as many as are relevant.
-2. Consider adding unilemmas that are frequently included on other CDIs, and especially focus on semantic categories that are less well-represented on the S-CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10-20 items across these categories, including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "glue (object)", "toy").
+2. Consider adding unilemmas that are frequently included on other CDIs, and especially focus on semantic categories that are less well-represented on the S-CDI, including helping verbs, quantifiers, locatives, and toys. We recommend adding 10--20 items across these categories, including the 10-item extension we tested, which are present on most existing CDI forms ("try", "under", "in", "out", "a lot", "all", "many", "not", "glue (object)", "toy").
 3. Do a pilot study, including several children at the upper and lower intended ages, and revise if there are many children at floor or ceiling.
 
 ## Conclusion
 
 Despite the myriad challenges that remain in creating new measures of early language development, we believe that the proposed Swadesh CDI list will give researchers a solid foundation from which to start, lowering the barrier to the adaptation of CDI forms in new languages, since these are often time-consuming and challenging to construct.
-Expanding the number of languages with effective vocabulary measures would be a critical step in addressing issues related to the under-representation of linguistic diversity in language acquisition research [@kidd2022]. 
+Expanding the number of languages with effective vocabulary measures would be a critical step in addressing issues related to the under-representation of linguistic diversity in language acquisition research [@kidd2022].
 Certainly, increasing the diversity of languages studied is a critical step towards developing a truly general understanding of how young children learn language.
 
 # Acknowledgements
