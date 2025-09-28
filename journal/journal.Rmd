@@ -47,7 +47,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r, libraries}
+```{r libraries}
 library(png)
 library(grid)
 library(xtable)
@@ -67,7 +67,7 @@ S_LEN <- 100 # Swadesh list length
 N_RAND <- 100 # number of random sublists to compare to
 ```
 
-```{r, load-data}
+```{r load-data}
 languages <- list.files(here("data/all_forms")) |> str_sub(end = -10)
 
 models <- list()
@@ -84,11 +84,11 @@ load(here("data/intermediates/xldf_clean_allforms.Rdata"))
 # 42 languages, 28541 parameters
 
 xldf_clean <- xldf_clean |>
-  mutate(d = -d / a1) |> # easiness -> difficulty
+  mutate(d = -d) |> # easiness -> difficulty
   filter(a1 != 0) # remove Inf
 
 prod_pars <- prod_pars |>
-  mutate(d = -d / a1) |> # easiness -> difficulty
+  mutate(d = -d) |> # easiness -> difficulty
   filter(a1 != 0)
 
 # TEDS.twos has all NA for category...

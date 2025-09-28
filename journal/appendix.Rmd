@@ -11,12 +11,12 @@ knitr::opts_chunk$set(echo = FALSE, warning=F, message=F)
 
 library(png)
 library(grid)
-#library(xtable)
-require(mirt)
-require(tidyverse)
-require(ggpubr)
-require(tidyboot)
-require(here)
+library(gt)
+library(mirt)
+library(tidyverse)
+library(ggpubr)
+library(tidyboot)
+library(here)
 library(RColorBrewer)
 library(gplots)
 library(kableExtra)
@@ -34,10 +34,10 @@ load(here("data/intermediates/xldf_clean_allforms.Rdata"))
 # 42 languages, 28541 parameters
 
 xldf_clean <- xldf_clean |> 
-  mutate(d = -d / a1)  # easiness -> difficulty
+  mutate(d = -d)  # easiness -> difficulty
 
 prod_pars <- prod_pars |> 
-  mutate(d = -d / a1)  # easiness -> difficulty
+  mutate(d = -d)  # easiness -> difficulty
 
 load(file=here("data/intermediates/generalization_results.rds"))
 # gen_res_sum, gen_res
@@ -131,7 +131,7 @@ p3 <- cv_res_sum |>
 ggpubr::ggarrange(p1, p2, ncol=1, common.legend = T) # , p3
 ```
 
-Figure \@ref(fig:plot-crossval-fscores) shows the full cross-validation results for the different sublist selection methods, showing the number of overlapping items and item-wise correlations in difficulty as a function of $k$, the minimum number of languages in which the items apear.
+Figure \@ref(fig:plot-crossval-fscores) shows the full cross-validation results for the different sublist selection methods, showing the number of overlapping items and item-wise correlations in difficulty as a function of $k$, the minimum number of languages in which the items appear.
 
 ## Swadesh CDI vs. Full CDI:WS
 
@@ -188,59 +188,49 @@ en_good_prod %>% DT::datatable() |>
 
 ## Comparison of Swadesh CDI Items to Other Lists
 
-28 of the Swadesh CDI candidates are on the 100-item CDI:WS short (form A), and 26 of the Swadesh candidates are on the WS short (form B).
-22 Swadesh CDI concepts are also on the original Swadesh-100 list---and 7 are overlapping with the ASJP (a subset of the Swadesh-100 that performs as well as the Swadesh-100 for purposes of glottochronology).
+There are several short vocabulary lists of 100 items that have been constructed for different purposes, which serve as useful comparisons to the Swadesh CDI list.
+Here, we list the items on the S-CDI list, and whether they also occur in other short vocabulary lists---namely, lists used in lexicostatistics (the original Swadesh-100 list CITE, the Leipzig--Jakarta list CITE), short form CDI lists used for vocabulary assessment (the American English CDI:WS Short Forms A and B CITE, and the Oxford Short Form CDI), and lists used for pedagogical instruction (the Fry-100 Sight Words list CITE, and the Children's Picture Book Sight Words list CITE).
+These lists range in overlap with the S-CDI, from 13 items (Fry-100 and Children's Picture Book) to 25 items (Oxford Short Form CDI); the overlap in items suggests that the S-CDI list captures some of the relevant dimensions of vocabulary (consistency across languages, utility in assessment, and pedagogical importance).
 
+```{r form-compare, tab.cap="Comparison of the S-CDI list with other 100-item vocabulary lists."}
+form_comparison <- read_csv(here("data", "form_comparison.csv"))
 
-```{r swadesh-comparison, echo=F}
-# https://en.wikipedia.org/wiki/Swadesh_list
-# "I","you","we",
-swadesh100 = c("1SG","2SG","we","this","that","who","what","not","all","many","one","two","big","long","small",
-               "woman","man","person","fish","bird","dog","louse","tree","seed","leaf","root","bark","skin","flesh","blood",
-               "bone","grease","egg","horn","tail","feather","hair","head","ear","eye","nose","mouth","tooth","tongue","claw",
-               "foot","knee","hand","belly","neck","breasts","heart","liver","drink (action)","eat","bite","see","hear","know","sleep",
-               "die","kill","swim","fly","walk","come","lie","sit","stand","give","say","sun","moon","star","water",
-               "rain","stone","sand","earth","cloud","smoke","fire","ash","burn","path","mountain","red","green","yellow","white",
-               "black","night","hot","cold","full","new","good","round","dry","name")
-
-# https://en.wikipedia.org/wiki/Automated_Similarity_Judgment_Program#Word_list
-# ASJP subset of 40 Swadesh items that perform as well as full list
-# categories: Body parts, Animals and plants, People, Nature, Verbs and adjectives, Numerals and pronouns
-asjp = c("eye","ear","nose","tongue","tooth","hand","knee","blood","bone","breast","liver","skin",
-         "louse", # "bug" ?
-         "dog","fish (animal)","horn","tree","leaf",
-         "person","name", # People; match "name" to "child's own name" / "babysitter's name" / "pet's name" ?
-         "sun","star","water (not beverage)","fire","stone","path","mountain","night", # Nature
-         "drink (action)","die","see","hear","come", # Verbs and adjectives
-         "new","full","one","two","1SG","2SG","we")
-
-#length(intersect(swadesh_sublist$uni_lemma, swadesh100))
-#length(intersect(swadesh_sublist$uni_lemma, asjp))
-
-
-# intersect(swadesh100, subset(xldf, language=="English (American)")$uni_lemma) 
-# 55 Swadesh words on English CDI (with "I")
-# intersect(swadesh100, xldf$uni_lemma) 
-# 83 Swadesh words on full list of unilemmas
-#setdiff(swadesh100, unique(xldf$uni_lemma))
-# "I" "fly" "fish" - "belly" (belly button?) "louse" "seed" "root" "skin" "flesh" "grease"  "horn"   
-# "feather" "claw" "breasts" "liver" "kill" "lie" "water" "ash" "dry" 
-```
-
-
-```{r}
-floccia30wordCDI <- c("elephant", "fish (animal)", "lion", "airplane", "car", "ball", "book", "milk", "nose",
-                      "shoe", "sock", "bed", "chair", "door", "table", "cup", "scissors", "soap", "flower",
-                      "sky", "tree", "mommy", "fall (action)", "play", "big", "cold", "dirty", "hot",
-                      "what", "where (question)")
-
-intersect(asjp, floccia30wordCDI)
-# "nose"          "fish (animal)" "tree" 
-
-intersect(swadesh100, floccia30wordCDI) # 6
-# "what" "big"  "tree" "nose" "hot"  "cold"
-
-intersect(swadesh_sublist$uni_lemma, floccia30wordCDI) # 11
-# "what"     "mommy"    "airplane" "milk"     "lion"     "nose"     "elephant" "cold"     "dirty"   "hot" 
+form_comparison |> 
+  bind_rows(
+    form_comparison |> 
+      summarise(across(where(is.numeric), 
+                       list(`S-CDI overlap` = \(x) sum(x & !str_starts(`S-CDI items`, "_"), na.rm = TRUE),
+                            `S-CDI-E overlap` = \(x) sum(x, na.rm = TRUE)),
+                       .names = "{.col}.{.fn}")) |> 
+      pivot_longer(cols = everything()) |> 
+      separate_wider_delim(cols = name, delim = ".", names = c("form", "Semantic category")) |> 
+      pivot_wider(names_from = form, values_from = value) |> 
+      mutate(`S-CDI items` = "")
+  ) |> 
+  mutate(across(everything(), 
+                \(x) x |> as.character() |> replace_na("") |> str_replace("^1$", "✓")),
+         `Semantic category` = ifelse(`Semantic category` != lag(`Semantic category`) | 
+                                        is.na(lag(`Semantic category`)), 
+                                      `Semantic category`, "")) |> 
+  gt() |> 
+  tab_spanner_delim("_") |> 
+  fmt_markdown(columns = everything()) |> 
+  cols_align(align = "center", columns = -c(`Semantic category`, `S-CDI items`)) |> 
+  # cols_merge(
+  #   columns = c(`Semantic category`, `S-CDI items`),
+  #   pattern = "{1}",
+  #   rows = c(1:)
+  # ) |>
+  tab_style(
+    style = cell_borders(
+      sides = "top",
+      color = "black",
+      weight = px(1.5),
+      style = "solid"
+    ),
+    locations = cells_body(
+      rows = `Semantic category` == "S-CDI overlap"
+    )
+  )
 ```
 

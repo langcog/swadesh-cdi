@@ -211,6 +211,9 @@ xldf_clean <- xldf |>
     uni_lemma == "fishtank" ~ "household",
     uni_lemma == "he" ~ "pronouns",
     uni_lemma == "might" ~ "helping_verbs",
+    uni_lemma == "have" & language == "Slovak" ~ "helping_verbs",
+    definition == "musieť" ~ "helping_verbs",
+    uni_lemma == "want" & language == "Slovak" ~ "helping_verbs",
     .default = category)) |>
   mutate(uni_lemma = case_when(
     definition == "haber (hay)" ~ "have",
@@ -243,14 +246,6 @@ xldf_clean <- xldf |>
     uni_lemma == "forger" ~ "forget",
     uni_lemma == "fries" ~ "french fries",
     .default = uni_lemma
-  ))
-
-xldf_clean <- xldf_clean |>
-  mutate(category = case_when(
-    uni_lemma == "have" & language == "Slovak" ~ "helping_verbs",
-    definition == "musieť" ~ "helping_verbs",
-    uni_lemma == "want" & language == "Slovak" ~ "helping_verbs",
-    .default = category
   ))
 
 prod_pars <- xldf_clean |> 
@@ -320,8 +315,6 @@ syntactic_props <- read_csv("data/syntactic_proportions.csv") |>
   rename(category = lexical_category)
 ```
 
-
-
 ```{r, eval=F}
 all_fscores <- readRDS("data/intermediates/full_fscores_allforms.rds")
 
@@ -332,114 +325,93 @@ syn_cats <- read_csv("data/categories.csv",
 
 create_cors <- function(full_model, full_fscores, lang, prod_sum, prod_test, 
                         sublist_func, sublist_name, bins = NULL) {
-  if (sublist_name=="Random") {
-    lapply(2:(length(train_langs)-1), \(k) {
+  
+  compute_metrics <- function(k, sublist) {
+    fscore_cor <- if (is.element(k, BEST_Ks)) {
+      tryCatch({
+        get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
+      }, error = \(e) {
+        message(glue("Error in get_fscore_cor for language {lang}, k {k}: {e$message}"))
+        NA
+      })
+    } else {
+      NA
+    }
+    c(get_difficulty_metrics(sublist, prod_test), fscore_cor)
+  }
+  
+  create_sublist <- function(k) {
+    if (sublist_name == "syntactic") {
+      sublist_func(prod_sum, S_LEN, k, syntactic_props)
+    } else if (sublist_name == "category") {
+      sublist_func(prod_sum, S_LEN, k, category_props)
+    } else if (is.null(bins)) {
+      sublist_func(prod_sum, S_LEN, k)
+    } else {
+      sublist_func(prod_sum, S_LEN, k, n_bins = bins)
+    }
+  }
+  
+  k_values <- 2:(length(train_langs) - 1)
+  
+  if (sublist_name == "Random") {
+    result <- lapply(k_values, \(k) {
       sapply(1:N_RAND, \(comp) {
-        sublist <- sublist_func(prod_sum, S_LEN, k)
-        if (is.element(k, BEST_Ks)) { 
-          fscore_cor <- tryCatch({
-            get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
-          }, error = function(e) {
-            message(glue("Error in get_fscore_cor for language {lang}, k {k}: {e$message}"))
-            NA
-          })
-        } else {
-          fscore_cor <- NA
-        }
-        c(get_difficulty_metrics(sublist, prod_test), fscore_cor)
-      }) |> t() |> 
+        sublist <- create_sublist(k)
+        compute_metrics(k, sublist)
+      }) |> 
+        t() |> 
         `colnames<-`(c("num_overlap", "difficulty_cor", "rmse", "fscore_cor")) |> 
         as_tibble() |> 
         mutate(run = 1:N_RAND, k = k)
-    }) |> bind_rows() |> 
+    }) |> 
+      bind_rows() |> 
       mutate(language = lang, sublist = sublist_name)
-  } else if(sublist_name=='syntactic' | sublist_name=='category') {
-    if(sublist_name=="syntactic") { 
-      cat_props = syntactic_props 
-    } else {
-      cat_props = category_props
-    }
-    sapply(2:(length(train_langs)-1), \(k) {
-      sublist <- sublist_func(prod_sum, S_LEN, k, cat_props) 
-      if (is.element(k, BEST_Ks)) { 
-        fscore_cor <- tryCatch({
-          get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
-        }, error = function(e) {
-          message(glue("Error in get_fscore_cor for language {lang}, k {k}: {e$message}"))
-          NA
-        })
-      } else {
-        fscore_cor <- NA
-      }
-      c(get_difficulty_metrics(sublist, prod_test), fscore_cor) 
-    }) |> t() |> 
-      `colnames<-`(c("num_overlap", "difficulty_cor", "rmse", "fscore_cor")) |> 
-      as_tibble() |> 
-      mutate(run = NA, k = 2:(length(train_langs)-1), language = lang, sublist = sublist_name)
   } else {
-    sapply(2:(length(train_langs)-1), \(k) {
-      sublist <- if (is.null(bins)) sublist_func(prod_sum, S_LEN, k) else sublist_func(prod_sum, S_LEN, k, n_bins = bins)
-      if (is.element(k, BEST_Ks)) { 
-        fscore_cor <- tryCatch({
-          get_fscore_cor(sublist, xldf_clean, lang, full_fscores)
-        }, error = function(e) {
-          message(glue("Error in get_fscore_cor for language {lang}, k {k}: {e$message}"))
-          NA
-        })
-      } else {
-        fscore_cor <- NA
-      }
-      c(get_difficulty_metrics(sublist, prod_test), fscore_cor)
-    }) |> t() |> 
+    result <- sapply(k_values, \(k) {
+      sublist <- create_sublist(k)
+      compute_metrics(k, sublist)
+    }) |> 
+      t() |> 
       `colnames<-`(c("num_overlap", "difficulty_cor", "rmse", "fscore_cor")) |> 
       as_tibble() |> 
-      mutate(run = NA, k = 2:(length(train_langs)-1), language = lang, sublist = sublist_name)
+      mutate(run = NA, k = k_values, language = lang, sublist = sublist_name)
   }
+  
+  result
 }
 
 # needs to know whether to use syn_props or cat_props...
 cv_res <- lapply(train_langs, \(lang) {
   message(glue("Calculating for {lang}..."))
   
-  # semantic cats
-  prod_semantic_cats <- prod_pars |> 
-    filter(language %in% train_langs, language != lang) |> 
-    group_by(uni_lemma) |> 
-    count(semantic_category) |> 
-    arrange(desc(semantic_category)) |> 
-    slice(1)
+  create_category_summary <- function(data, category_column) {
+    cats <- data |> 
+      filter(language %in% train_langs, language != lang) |> 
+      group_by(uni_lemma) |> 
+      count(.data[[category_column]]) |> 
+      arrange(desc(.data[[category_column]])) |> 
+      slice(1)
+    
+    data |> 
+      filter(language %in% train_langs, language != lang) |> 
+      group_by(uni_lemma) |> 
+      summarise(num_langs = n(),
+                mean_d = mean(d, na.rm = TRUE),
+                sd_d = sd(d, na.rm = TRUE),
+                .groups = "drop") |> 
+      left_join(cats |> select(-n), by = join_by(uni_lemma)) |>
+      rename(category = all_of(category_column))
+  }
   
-  # syntactic cats
-  prod_syntactic_cats <- prod_pars |> 
-    filter(language %in% train_langs, language != lang) |> 
-    group_by(uni_lemma) |> 
-    count(syntactic_category) |> 
-    arrange(desc(syntactic_category)) |> 
-    slice(1)
-  
-  prod_semantic_sum <- prod_pars |> 
-    filter(language %in% train_langs, language != lang) |> 
-    group_by(uni_lemma) |> 
-    summarise(num_langs = n(),
-              mean_d = mean(d, na.rm = TRUE),
-              sd_d = sd(d, na.rm = TRUE)) |> 
-    left_join(prod_semantic_cats |> select(-n), by = join_by(uni_lemma)) |>
-    rename(category=semantic_category)
-  
-  prod_syntactic_sum <- prod_pars |> 
-    filter(language %in% train_langs, language != lang) |> 
-    group_by(uni_lemma) |> 
-    summarise(num_langs = n(),
-              mean_d = mean(d, na.rm = TRUE),
-              sd_d = sd(d, na.rm = TRUE)) |> 
-    left_join(prod_syntactic_cats |> select(-n), by = join_by(uni_lemma)) |>
-    rename(category=syntactic_category)
+  prod_semantic_sum <- create_category_summary(prod_pars, "semantic_category")
+  prod_syntactic_sum <- create_category_summary(prod_pars, "syntactic_category")
   
   prod_test <- prod_pars |> filter(language == lang)
   
   # calculate full fscores once (rather than once per comparison)
   full_model <- readRDS(glue("data/prod_models/{lang}_2PL_allforms_prod_fits.rds"))
-  #full_fscores <- all_fscores[[lang]]
+  
   full_fscores <- fscores(full_model$model, 
                           response.pattern = full_model$model@Data$data, 
                           method = "MAP")[,1] 

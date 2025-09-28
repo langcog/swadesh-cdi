@@ -1,4 +1,4 @@
-﻿Semantic category,$N$,S-CDI items
+﻿Semantic category,$n$,S-CDI items
 Actions,11,"blow, cry, dance, eat, fall, help, jump, push, sing, sit, wait"
 Animals,15,"animal, ant, bee, cat, cow, dog, elephant, horse, lion, monkey, owl, sheep, tiger, turtle, wolf"
 Body parts,6,"chin, eye, mouth, nose, tongue, tooth"
@@ -18,5 +18,5 @@ Quantifiers,0 _(4)_,"_a lot, all, many, not_"
 Question words,6,"how, what, when, where, who, why"
 Sounds,6,"baa baa, cockadoodledoo, meow, quack quack, vroom, woof woof"
 Time words,4,"now, today, tomorrow, yesterday"
-Toys,0 _(2)_,"_chalk, toy_"
+Toys,0 _(2)_,"_glue, toy_"
 Vehicles,4,"airplane, bicycle, helicopter, truck"
